@@ -1,1 +1,1 @@
-require("./scripts/plugin.js")
+require("./scripts/plugin.js");

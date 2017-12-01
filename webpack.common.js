@@ -1,6 +1,6 @@
-const path = require("path")
-const ExtractTextPlugin = require("extract-text-webpack-plugin")
-var HtmlWebpackPlugin = require("html-webpack-plugin")
+const path = require("path");
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: ["./src/index.scss", "./src/index.js"],
@@ -25,7 +25,8 @@ module.exports = {
       }, {
         test: /\.(html)$/,
         use: {
-          loader: "html-loader?interpolate=require",
+          loader: "html-loader",
+          options: { interpolate: "require" }
         }
       }
     ]
@@ -33,11 +34,7 @@ module.exports = {
   plugins: [
     new ExtractTextPlugin("styles.css"),
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "src/index.html")
+      template: path.resolve(__dirname, "src/index.html"),
     })
   ],
-  devServer: {
-    contentBase: path.join(__dirname, "dist"),
-    port: 9000
-  }
-}
+};
