@@ -1,1 +1,3 @@
-body { color: orange; }
+@import "./styles/color-palette.scss";
+
+body { color: $red; }

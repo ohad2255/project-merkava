@@ -1,3 +1,1 @@
-require("./templates/header.html")
-
-console.log("Hello World!")
+require("./scripts/plugin.js")
