@@ -29,7 +29,23 @@ module.exports = {
           loader: "html-loader",
           options: { interpolate: "require" }
         }
-      }
+      },
+      {
+        test: /\.(ico|jpg|jpeg|gif|webp)(\?.*)?$/,
+        loader: "file-loader",
+        options: {
+          name: "assets/[name].[hash:8].[ext]",
+        },
+
+      },
+      {
+        test: /\.(png|svg|woff|woff2)(\?.*)?$/,
+        loader: "url-loader",
+        options: {
+          limit: 10000,
+          name: "assets/[name].[hash:8].[ext]",
+        },
+      },
     ]
   },
   plugins: [
