@@ -2,19 +2,60 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mercava</title>
+    <title>merkava</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="index.scss">
+    <link rel="stylesheet" type="text/css" href="index.scss"> 
   </head>
   <body>
   	<header>
-  		${require("./templates/header.html")}
-  	</header>
-  	<section>
+    <div class="top-sec d-flex container">
+        <div class="top-sec-container d-flex justify-content-between">
+            <div class="logo d-flex">
+                <img src="img/logo-mobile.png"
+                 srcset="img/logo-mobile@2x.png 2x,
+                         img/logo-mobile@3x.png 3x"
+                 class="LogoMobile">
+                 <div class="logo-head-container d-flex flex-column justify-content-center">
+                     <div class="first-head">מינהל הרכש הממשלתי</div>
+                     <div class="second-head">Government Grocurement Administration</div>
+                 </div>
+            </div>
+            <button class="nav-button d-flex justify-content-center align-items-center">
+                  <img src="img/menu.svg">
+            </button>
+        </div>
+    </div>
+    <div class="middle-sec d-flex container justify-content-between align-items-center">
+        <div class="font-size-container d-flex">
+            <div class="font-size Abig">א</div>
+            <div class="font-size Asmall">א</div>
+        </div>
+        <div class="middle-sec-left d-flex">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle lng-btn d-flex align-items-center justify-content-center" type="button" id="dropdownMenuButton"    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    עברית
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">English</a>
+                </div>
+            </div>
+            <button class="ent-button">
+                כניסה
+            </button>
+        </div>
+    </div>
+    <div>
+        
+    </div>
+    <div>
+        
+    </div>
+</header>
+  	<!-- <section>
   		${require("./templates/body.html")}
   	</section> 
   	<footer>
   		${require("./templates/footer.html")}
-  	</footer>
+  	</footer> -->
   </body>
 </html>

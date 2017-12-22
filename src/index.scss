@@ -3,10 +3,9 @@
 body {
  	direction: rtl;
  }
+
  header {
- object-fit: contain;
- background-color: #0077bf;
- box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
+	 
 }
 
 .container {
@@ -14,10 +13,13 @@ body {
 }
 
 header {
-	
+	object-fit: contain;
+	background-color: #0077bf;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
+
 	.top-sec {
 
-		.top-sec.container {
+		.container {
 			margin: 19px 4px 19px 13px;
 			width: 100%;
 
