@@ -19,7 +19,7 @@ header {
 
 	.top-sec {
 
-		.container {
+		.top-sec-container {
 			margin: 19px 4px 19px 13px;
 			width: 100%;
 
@@ -113,6 +113,17 @@ header {
 						margin: 3px 13px 0 0;
 					}
 				}
+			}
+
+			.ent-btn {
+				color: #fff;
+				width: 107px;
+				height: 40px;
+				object-fit: contain;
+				border-radius: 3px;
+				background-color: #f5891b;
+				box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+				border: solid 1px #ecba88;
 			}
 		}
 	} 

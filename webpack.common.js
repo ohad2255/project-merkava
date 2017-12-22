@@ -2,6 +2,7 @@ const path = require("path");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -49,6 +50,7 @@ module.exports = {
     ]
   },
   plugins: [
+    new CopyWebpackPlugin([{ from: "src/img", to: "img" }]),
     new ExtractTextPlugin("[name].css"),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "src/index.html"),
