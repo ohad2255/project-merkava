@@ -1,4 +1,6 @@
 @import "./styles/color-palette.scss";
+$screen-md-min: 768px;
+
 
 body {
  	direction: rtl;
@@ -13,14 +15,16 @@ body {
 }
 
 header {
+	height: contain;
 	object-fit: contain;
 	background-color: #0077bf;
 	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
+	padding-bottom: 37px;
 
 	.top-sec {
 
 		.top-sec-container {
-			margin: 19px 4px 19px 13px;
+			margin: 19px 7.5px 19px 9.5px;
 			width: 100%;
 
 			.logo {
@@ -69,7 +73,7 @@ header {
 	.middle-sec {
 
 		.font-size-container {
-			margin-right: 10px;
+			margin-right: 13.5px;
 			height: fit-content;
 
 			.Abig {
@@ -101,17 +105,34 @@ header {
 		}
 
 		.middle-sec-left {
-			margin-left: 13px;
+			margin-left: 8.5px;
+
+			@media screen and (min-width: 768px) {
+				margin: 18px 0 0 6;
+			}
 
 			.dropdown {
 				.lng-btn {
+					padding: 0;
+					width: 71px;
+  					height: 16px;
 					background-color: transparent;
 					border: none;
 					margin-left: 13px;
+					object-fit: contain;
+					font-family: FbReforma;
+					font-size: 20px;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 0.8;
+					letter-spacing: normal;
+					text-align: right;
+					color: #ffffff;
+				}
 
-					::after {
-						margin: 3px 13px 0 0;
-					}
+				.lng-btn::after {
+					margin: 3px 13px 0 0;
 				}
 			}
 
@@ -124,7 +145,57 @@ header {
 				background-color: #f5891b;
 				box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
 				border: solid 1px #ecba88;
+				box-sizing: border-box;
+				padding: 0;
 			}
+		}
+	}
+	.input-sec {
+		width: fit-content;
+		background-color: #fff;
+		margin: 43px auto 0;
+		width: fit-content;
+		height: 60px;
+
+
+		.dropdown {
+
+			.input-toggle {
+				object-fit: contain;
+				font-family: FbReforma;
+				font-size: 20px;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 0.8;
+				letter-spacing: normal;
+				text-align: right;
+				color: #666666;
+				background-color: #fff;
+				border: none;
+				border-left: rgba(102,102,102,0.3) solid 1px; 
+				border-radius: 0;
+				margin-right: 26px;
+				padding-left: 20px;
+			}
+
+			.input-toggle::after {
+				margin:0 11px 0 1px; 
+			}
+		}
+
+		.main-input {
+			border: 0;
+			padding-right: 20px;
+			width: 164px;
+		}
+
+		.search-input {
+			height: 100%;
+			margin:0 9px 0 25px;
+			background-color: transparent;
+			padding: 0;
+			border: 0;
 		}
 	} 
 }
