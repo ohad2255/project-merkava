@@ -6,37 +6,65 @@ body {
  	direction: rtl;
  }
 
- header {
-	 
-}
-
 .custom-container {
 	padding: 0 23px;
 	@media screen and (min-width: 768px) {
 		padding: 0 18px;
 	}
+
+	@media screen and (min-width: 1280px) {
+		max-width: 1222px;
+	}
 }
 
 header {
-	height: contain;
 	object-fit: contain;
 	background-color: #0077bf;
 	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
 	padding-bottom: 37px;
+	position: relative;
+
+	@media screen and (min-width: 768px) {
+		padding-bottom: 22px
+	}
+
+		@media screen and (min-width: 768px) {
+		padding: 0px
+	}
+
+	.gery-line {
+		position: absolute; 
+		top: 75px;
+		height: 2px;
+		width: 100%;
+		object-fit: contain;
+		border: solid 1px #1c6897; 
+		@media screen and (min-width: 768px) {
+			display: block!important;
+		}
+	}
 
 	.main-container {
 		margin-bottom: 43px;
 
 		@media screen and (min-width: 768px) {
-			margin-bottom: 29px;
+			margin-bottom: 22px;
 		}
 
+		@media screen and (min-width: 1280px) {
+			margin: 0 auto 22px;
+			padding: 0;
+		}
 
 		.top-sec {
 			margin: 19px 0;
 
 			@media screen and (min-width: 768px) {
-				margin:17px 11px 0 0;
+				margin: 17px 11px 0 0;
+			}
+
+			@media screen and (min-width: 1280px) {
+				margin: 22px 0 0 0;
 			}
 
 			.top-sec-container {
@@ -50,6 +78,9 @@ header {
 
 					img {
 						height: 44px;
+						@media screen and (min-width: 768px) {
+							height: 32px;
+						}	
 					}
 
 					.logo-head-container {
@@ -65,6 +96,13 @@ header {
 							letter-spacing: 1.3px;
 							text-align: right;
 							color: #ffffff;
+
+							@media screen and (min-width: 768px) {
+								font-family: FbReforma;
+								font-size: 16px;
+								line-height: 1;
+								letter-spacing: 1.5px;
+							}
 						}
 
 						.second-head {
@@ -77,6 +115,12 @@ header {
 							letter-spacing: 1.3px;
 							text-align: right;
 							color: #ffffff;
+							@media screen and (min-width: 768px) {
+								font-family: OpenSans;
+								font-size: 14px;
+								line-height: 1.14;
+								letter-spacing: 1.5px;
+							}
 						}
 					}
 				}
@@ -96,16 +140,29 @@ header {
 
 	.middle-sec {
 		padding: 18px 0 0;
+
 		@media screen and (min-width: 768px) {
 			margin-left: 3px;
+			width: 209px;
+		}
+
+		@media screen and (min-width: 992px) {
+			margin-left: 0;
+			width: fit-content;
 		}
 
 		.font-size-container {
 			margin-right: 5px;
+			margin-left: auto;
 			height: fit-content;
 
 			@media screen and (min-width: 768px) {
-				margin-left: 5px;
+				margin: 38px auto 0 5px;
+				order: 1;
+			}
+
+			@media screen and (min-width: 992px) {
+				margin: 0 0 0 38px;
 			}
 
 
@@ -137,11 +194,17 @@ header {
 			}
 		}
 
-		.middle-sec-left {
+		.middle-sec-container {
+			width: 100%;
 
 			 @media screen and (min-width: 768px) {
-				margin-bottom: 38px;
+	
 			 }
+
+			 @media screen and (min-width: 992px) {
+				margin: 0;
+			 }
+
 
 			.dropdown {
 				.lng-btn {
@@ -161,6 +224,9 @@ header {
 					letter-spacing: normal;
 					text-align: right;
 					color: #ffffff;
+					@media screen and (min-width: 768px) {
+						margin-left: 31px;
+					}
 				}
 
 				.lng-btn::after {
@@ -179,6 +245,9 @@ header {
 				border: solid 1px #ecba88;
 				box-sizing: border-box;
 				padding: 0;
+				@media screen and (min-width: 992px) {
+					order: 1;
+				}
 			}
 		}
 	}
@@ -186,6 +255,10 @@ header {
 		width: fit-content;
 		height: 60px;
    		width: 100%;
+   		@media screen and (min-width: 992px) {
+			margin: 42px auto 0;
+			padding: 0;
+		}
 
 		.input-container {
 			background-color: #fff;
@@ -217,6 +290,13 @@ header {
 				}
 			}
 
+			// .font-size-container-lg {
+
+			// 	@media screen and (min-width: 992px) {
+			// 		display: block;
+			// 	}
+			// }
+
 			.main-input {
 				border: 0;
 				padding-right: 20px;
@@ -238,6 +318,35 @@ header {
 				}
 			}
 		} 
+	}
+
+	.main-nav {
+		margin: 0 auto;
+		padding: 30px 0;
+		@media screen and (min-width: 1280px) {
+			display: block;
+		}
+
+		ul {
+			width: 100%;
+			padding: 0;
+			li {
+
+				.nav-link {
+					font-family: FbReforma;
+					font-size: 20px;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 0.8;
+					letter-spacing: normal;
+					text-align: right;
+					color: #ffffff;
+					text-decoration: none;
+					padding: 0;
+				}
+			}
+		}
 	}
 }
 
