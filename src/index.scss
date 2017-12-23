@@ -10,8 +10,11 @@ body {
 	 
 }
 
-.container {
-	
+.custom-container {
+	padding: 0 23px;
+	@media screen and (min-width: 768px) {
+		padding: 0 18px;
+	}
 }
 
 header {
@@ -21,60 +24,90 @@ header {
 	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
 	padding-bottom: 37px;
 
-	.top-sec {
+	.main-container {
+		margin-bottom: 43px;
 
-		.top-sec-container {
-			margin: 19px 7.5px 19px 9.5px;
-			width: 100%;
+		@media screen and (min-width: 768px) {
+			margin-bottom: 29px;
+		}
 
-			.logo {
-				img {
-					height: 44px;
-				}
 
-				.logo-head-container {
-					margin-right: 8px;
+		.top-sec {
+			margin: 19px 0;
 
-					.first-head {
-						font-family: FbReforma;
-						font-size: 12px;
-						font-weight: normal;
-						font-style: normal;
-						font-stretch: normal;
-						line-height: 1.33;
-						letter-spacing: 1.3px;
-						text-align: right;
-						color: #ffffff;
-					}
-
-					.second-head {
-						font-family: OpenSans;
-						font-size: 10px;
-						font-weight: normal;
-						font-style: normal;
-						font-stretch: normal;
-						line-height: 1.6;
-						letter-spacing: 1.3px;
-						text-align: right;
-						color: #ffffff;
-					}
-				}
+			@media screen and (min-width: 768px) {
+				margin:17px 11px 0 0;
 			}
 
-			.nav-button {
-				padding: 0;
-				margin: 0;
-				border: 0;
-				background-color: transparent;
+			.top-sec-container {
+				// margin: 19px 7.5px 19px 9.5px;
+				width: 100%;
+
+				.logo {
+					@media screen and (min-width: 768px) {
+						
+					}		
+
+					img {
+						height: 44px;
+					}
+
+					.logo-head-container {
+						margin-right: 8px;
+
+						.first-head {
+							font-family: FbReforma;
+							font-size: 12px;
+							font-weight: normal;
+							font-style: normal;
+							font-stretch: normal;
+							line-height: 1.33;
+							letter-spacing: 1.3px;
+							text-align: right;
+							color: #ffffff;
+						}
+
+						.second-head {
+							font-family: OpenSans;
+							font-size: 10px;
+							font-weight: normal;
+							font-style: normal;
+							font-stretch: normal;
+							line-height: 1.6;
+							letter-spacing: 1.3px;
+							text-align: right;
+							color: #ffffff;
+						}
+					}
+				}
+
+				.nav-button {
+					padding: 0;
+					margin: 0;
+					border: 0;
+					background-color: transparent;
+					@media screen and (min-width: 768px) {
+						margin-right: 4px;
+					}
+				}
 			}
 		}
 	}
 
 	.middle-sec {
+		padding: 18px 0 0;
+		@media screen and (min-width: 768px) {
+			margin-left: 3px;
+		}
 
 		.font-size-container {
-			margin-right: 13.5px;
+			margin-right: 5px;
 			height: fit-content;
+
+			@media screen and (min-width: 768px) {
+				margin-left: 5px;
+			}
+
 
 			.Abig {
 				object-fit: contain;
@@ -105,11 +138,10 @@ header {
 		}
 
 		.middle-sec-left {
-			margin-left: 8.5px;
 
-			@media screen and (min-width: 768px) {
-				margin: 18px 0 0 6;
-			}
+			 @media screen and (min-width: 768px) {
+				margin-bottom: 38px;
+			 }
 
 			.dropdown {
 				.lng-btn {
@@ -152,52 +184,61 @@ header {
 	}
 	.input-sec {
 		width: fit-content;
-		background-color: #fff;
-		margin: 43px auto 0;
-		width: fit-content;
 		height: 60px;
+   		width: 100%;
 
+		.input-container {
+			background-color: #fff;
+			width: 100%;
 
-		.dropdown {
+			.dropdown {
 
-			.input-toggle {
-				object-fit: contain;
-				font-family: FbReforma;
-				font-size: 20px;
-				font-weight: normal;
-				font-style: normal;
-				font-stretch: normal;
-				line-height: 0.8;
-				letter-spacing: normal;
-				text-align: right;
-				color: #666666;
-				background-color: #fff;
-				border: none;
-				border-left: rgba(102,102,102,0.3) solid 1px; 
-				border-radius: 0;
-				margin-right: 26px;
-				padding-left: 20px;
+				.input-toggle {
+					object-fit: contain;
+					font-family: FbReforma;
+					font-size: 20px;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 0.8;
+					letter-spacing: normal;
+					text-align: right;
+					color: #666666;
+					background-color: #fff;
+					border: none;
+					border-left: rgba(102,102,102,0.3) solid 1px; 
+					border-radius: 0;
+					margin-right: 26px;
+					padding-left: 20px;
+				}
+
+				.input-toggle::after {
+					margin:0 11px 0 1px; 
+				}
 			}
 
-			.input-toggle::after {
-				margin:0 11px 0 1px; 
+			.main-input {
+				border: 0;
+				padding-right: 20px;
+				flex: 1;
 			}
-		}
 
-		.main-input {
-			border: 0;
-			padding-right: 20px;
-			width: 164px;
-		}
+			.search-input {
+				height: 100%;
+				background-color: transparent;
+				padding: 0;
+				border: 0;
 
-		.search-input {
-			height: 100%;
-			margin:0 9px 0 25px;
-			background-color: transparent;
-			padding: 0;
-			border: 0;
-		}
-	} 
+				@media screen and (min-width: 768px) {
+					padding: 0 22px;
+				}
+
+				img {
+					
+				}
+			}
+		} 
+	}
 }
 
 
