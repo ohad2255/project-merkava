@@ -389,17 +389,21 @@ header {
 }
 
 section {
-
-	padding: 0 35px;
+	margin: 0 35px 30px;
+	padding-bottom: 52px;
+	object-fit: contain;
+  	border-bottom: solid 1px #e0e0e0;
 
 	@media (min-width: $screen-md-min) {
-		padding: 0 18px;
+		margin: 0 18px 30px;
+		padding-bottom: 76px;
 	}
 
 	@media (min-width: $screen-xl-min) {
 		max-width: 1260px;
-		margin: 20px auto 0;
-		padding: 0 18px;
+		margin: 20px auto 30px;
+		padding-bottom: 71px;
+		//padding: 0 18px;
 	}
 	.top-sec-wrapper {
 		padding-top: 37px;
