@@ -1,19 +1,30 @@
 @import "./styles/color-palette.scss";
-$screen-md-min: 768px;
 
+$screen-md-min: 768px;
+$screen-xl-min: 1200px;
+$main-font: FbReforma;
+
+@font-face {
+	font-family: "FbReforma";
+	src: url("/fonts/FbReforma-Medium.otf") format("OpenType"),
+	     url("/fonts/FbReforma-Regular.otf") format("OpenType");
+}
 
 body {
  	direction: rtl;
+ 	font-family: $main-font;
  }
 
 .custom-container {
 	padding: 0 23px;
-	@media screen and (min-width: 768px) {
+
+	@media (min-width: $screen-md-min) {
 		padding: 0 18px;
 	}
 
-	@media screen and (min-width: 1280px) {
+	@media (min-width: $screen-xl-min) {
 		max-width: 1222px;
+		padding: 0 20px;
 	}
 }
 
@@ -24,46 +35,39 @@ header {
 	padding-bottom: 37px;
 	position: relative;
 
-	@media screen and (min-width: 768px) {
+	@media (min-width: $screen-md-min) {
 		padding-bottom: 22px
 	}
 
-		@media screen and (min-width: 768px) {
-		padding: 0px
-	}
-
-	.gery-line {
-		position: absolute; 
+	.gery-line { 
+		position: absolute;
 		top: 75px;
 		height: 2px;
 		width: 100%;
 		object-fit: contain;
-		border: solid 1px #1c6897; 
-		@media screen and (min-width: 768px) {
-			display: block!important;
-		}
+		border: solid 1px #1c6897;
 	}
 
 	.main-container {
 		margin-bottom: 43px;
 
-		@media screen and (min-width: 768px) {
+		@media (min-width: $screen-md-min) {
 			margin-bottom: 22px;
 		}
 
-		@media screen and (min-width: 1280px) {
+		@media (min-width: $screen-xl-min) {
 			margin: 0 auto 22px;
-			padding: 0;
+			padding: 0 20px;
 		}
 
 		.top-sec {
 			margin: 19px 0;
 
-			@media screen and (min-width: 768px) {
+			@media (min-width: $screen-md-min) {
 				margin: 17px 11px 0 0;
 			}
 
-			@media screen and (min-width: 1280px) {
+			@media (min-width: $screen-xl-min) {
 				margin: 22px 0 0 0;
 			}
 
@@ -72,13 +76,15 @@ header {
 				width: 100%;
 
 				.logo {
-					@media screen and (min-width: 768px) {
+
+					@media (min-width: $screen-md-min) {
 						
 					}		
 
 					img {
 						height: 44px;
-						@media screen and (min-width: 768px) {
+
+						@media (min-width: $screen-xl-min) {
 							height: 32px;
 						}	
 					}
@@ -87,7 +93,7 @@ header {
 						margin-right: 8px;
 
 						.first-head {
-							font-family: FbReforma;
+							font-family: $main-font;
 							font-size: 12px;
 							font-weight: normal;
 							font-style: normal;
@@ -95,14 +101,20 @@ header {
 							line-height: 1.33;
 							letter-spacing: 1.3px;
 							text-align: right;
-							color: #ffffff;
+							color: $main-white;
 
-							@media screen and (min-width: 768px) {
-								font-family: FbReforma;
+							@media (min-width: $screen-md-min) {
+								font-size: 14px;
+								line-height: 1.14;
+								letter-spacing: 1.5px;
+							}
+
+							@media (min-width: $screen-xl-min) {
 								font-size: 16px;
 								line-height: 1;
 								letter-spacing: 1.5px;
 							}
+
 						}
 
 						.second-head {
@@ -114,9 +126,15 @@ header {
 							line-height: 1.6;
 							letter-spacing: 1.3px;
 							text-align: right;
-							color: #ffffff;
-							@media screen and (min-width: 768px) {
-								font-family: OpenSans;
+							color: $main-white;
+
+							@media (min-width: $screen-md-min) {
+								font-size: 12px;
+								line-height: 1.33;
+								letter-spacing: 1.5px;
+							}
+
+							@media (min-width: $screen-xl-min) {
 								font-size: 14px;
 								line-height: 1.14;
 								letter-spacing: 1.5px;
@@ -130,7 +148,7 @@ header {
 					margin: 0;
 					border: 0;
 					background-color: transparent;
-					@media screen and (min-width: 768px) {
+					@media (min-width: $screen-md-min) {
 						margin-right: 4px;
 					}
 				}
@@ -141,12 +159,12 @@ header {
 	.middle-sec {
 		padding: 18px 0 0;
 
-		@media screen and (min-width: 768px) {
+		@media (min-width: $screen-md-min) {
 			margin-left: 3px;
 			width: 209px;
 		}
 
-		@media screen and (min-width: 992px) {
+		@media (min-width: $screen-xl-min) {
 			margin-left: 0;
 			width: fit-content;
 		}
@@ -155,13 +173,14 @@ header {
 			margin-right: 5px;
 			margin-left: auto;
 			height: fit-content;
+			text-decoration: none;
 
-			@media screen and (min-width: 768px) {
+			@media (min-width: $screen-md-min) {
 				margin: 38px auto 0 5px;
 				order: 1;
 			}
 
-			@media screen and (min-width: 992px) {
+			@media (min-width: $screen-xl-min) {
 				margin: 0 0 0 38px;
 			}
 
@@ -176,11 +195,11 @@ header {
 				line-height: 0.62;
 				letter-spacing: normal;
 				text-align: right;
-				color: #ffffff;
+				color: $main-white;
 				margin-left: 8px;
 			}
 
-			.Asmall {
+			.Asmall{
 				object-fit: contain;
 				font-family: FbReforma;
 				font-size: 20px;
@@ -190,18 +209,18 @@ header {
 				line-height: 1;
 				letter-spacing: normal;
 				text-align: right;
-				color: #ffffff;
+				color: $main-white;
 			}
 		}
 
 		.middle-sec-container {
 			width: 100%;
 
-			 @media screen and (min-width: 768px) {
+			 @media (min-width: $screen-md-min) {
 	
 			 }
 
-			 @media screen and (min-width: 992px) {
+			 @media (min-width: $screen-xl-min) {
 				margin: 0;
 			 }
 
@@ -223,8 +242,8 @@ header {
 					line-height: 0.8;
 					letter-spacing: normal;
 					text-align: right;
-					color: #ffffff;
-					@media screen and (min-width: 768px) {
+					color: $main-white;
+					@media (min-width: $screen-md-min) {
 						margin-left: 31px;
 					}
 				}
@@ -245,8 +264,21 @@ header {
 				border: solid 1px #ecba88;
 				box-sizing: border-box;
 				padding: 0;
-				@media screen and (min-width: 992px) {
+				@media (min-width: $screen-xl-min) {
 					order: 1;
+					width: 107px;
+					height: 40px;
+					border-radius: 4px;
+					background-color: #ffffff;
+					box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+					font-size: 20px;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 0.8;
+					letter-spacing: normal;
+					text-align: center;
+					color: $ent-bnt-font-color;
 				}
 			}
 		}
@@ -256,13 +288,11 @@ header {
 		height: 60px;
    		width: 100%;
 
-   		@media screen and (min-width: 992px) {
+   		@media (min-width: $screen-xl-min) {
 			margin: 42px auto 0;
-			padding: 0 23px;
 		}
 
-		@media screen and (min-width: 1280px) {
-			padding: 0;
+		@media (min-width: $screen-xl-min) {
 		}
 
 		.input-container {
@@ -295,9 +325,9 @@ header {
 				}
 			}
 
-			// .font-size-container-lg {
+			// .font-size-container-xl {
 
-			// 	@media screen and (min-width: 992px) {
+			// 	@media (min-width: $screen-xl-min) {
 			// 		display: block;
 			// 	}
 			// }
@@ -308,7 +338,7 @@ header {
 				flex: 1;
 				width: 139px;
 
-				@media screen and (min-width: 768px) {
+				@media (min-width: $screen-md-min) {
 					width: 100%;
 				}
 			}
@@ -320,7 +350,7 @@ header {
 				border: 0;
 				padding: 0 22px;
 
-				@media screen and (min-width: 576px) {
+				@media (min-width: $screen-md-min) {
 					padding: 0 22px;
 				}
 
@@ -333,17 +363,14 @@ header {
 
 	.main-nav {
 		margin: 0 auto;
-		padding: 30px 0;
-		@media screen and (min-width: 1280px) {
-			display: block;
-		}
+		padding: 20px 20px 0;
 
 		ul {
 			width: 100%;
 			padding: 0;
 
 			li {
-				.nav-link {
+				#navLink {
 					font-family: FbReforma;
 					font-size: 20px;
 					font-weight: normal;
@@ -352,7 +379,7 @@ header {
 					line-height: 0.8;
 					letter-spacing: normal;
 					text-align: right;
-					color: #ffffff;
+					color: $main-white;
 					text-decoration: none;
 					padding: 0;
 				}
@@ -362,32 +389,42 @@ header {
 }
 
 section {
-	@media screen and (min-width: 1280px){
-		margin: 20px 0;
+
+	padding: 0 35px;
+
+	@media (min-width: $screen-md-min) {
+		padding: 0 18px;
 	}
-	.main-gallery-wrapper {
+
+	@media (min-width: $screen-xl-min) {
+		max-width: 1260px;
+		margin: 20px auto 0;
+		padding: 0 18px;
+	}
+	.top-sec-wrapper {
 		padding-top: 37px;
 
-		@media screen and (min-width: 768px) {
-			padding-top:20px;
+		@media (min-width: $screen-md-min) {
+    		padding: 20px 0 0;
 		}
 
-		@media screen and (min-width: 1280px){
+		@media (min-width: $screen-xl-min) {
 			padding: 0;
+			height: 320px;
 		}
 
 		.main-gallery {
 			width: 100%;
-			padding: 0 27.2px;
-			max-width: 750px;
-			@media screen and (min-width: 768px){
-				padding: 0 18px;
+
+			@media (min-width: $screen-md-min) {
+				padding: 0;
 			}
 
-			@media screen and (min-width: 1280px){ 
-				width: 621px;
+			@media (min-width: $screen-xl-min) { 
+				//width: 621px;
 				padding: 0;
-				margin-left: 20px;
+				padding-left: 10px;
+				width: 50%;
 			}
 
 			.swiper-container {
@@ -396,8 +433,8 @@ section {
 				.swiper-wrapper {
 					height: 460px;
 
-					@media screen and (min-width: 992px) {
-						height: 320px;
+					@media (min-width: $screen-xl-min) {
+						height: 100%;
 					}
 
 					.swiper-slide-1 {
@@ -411,63 +448,70 @@ section {
 			}
 		}
 
-		.main-gallery-2 {
+		.top-sec-left {
 			width: 100%;
-			padding: 0 27.2px;
-			max-width: 750px;
 
-			@media screen and (min-width: 768px){
-				padding: 0 18px;
+			@media (min-width: $screen-md-min){
+				padding: 0;
+				
 			}
 
-			@media screen and (min-width: 1280px){ 
+			@media (min-width: $screen-xl-min){ 
 				width: 621px;
 				padding: 0;
+				padding-right: 10px;
+				width: 50%;
 			}
 
-			.main-gallery-2-img {
+			.top-sec-left-img {
 				background-image: url("img/mainimg-gallery-copy.png");
 				background-repeat: no-repeat;
 				width: 100%;
 				height: 460px;
 				margin: 31px 0 0;
 				background-size: cover;
-				@media screen and (min-width: 992px) {
+
+				@media (min-width: $screen-md-min) {
+					margin: 20px 0 0;
+				}
+
+				@media (min-width: $screen-xl-min) {
 					margin: 0;
-					height: 320px;
+					height: 100%;
 				}
 			}
 		}
 	}
 
-	.reg-section {
-		padding: 0 27.2px;
+	.top-sec-bottom-wrapper {
 		// max-width: 1222px;
 
-		@media screen and (min-width: 768px) {
-			padding: 0 18px;
+		@media (min-width: $screen-md-min) {
+			padding: 0;
+			margin-top: 20px;
 		}
 
-		@media screen and (min-width: 1280px) {
-			max-width: 1260px;
-    		margin: 0 auto;
+		@media (min-width: $screen-xl-min) {
 			padding: 0;
 		}
 
-		.reg-section-container {
+		.sign-up-wrapper {
 			width: 100%;
+
+			@media (min-width: $screen-xl-min) {
+				margin-bottom: 20px;
+			}
 
 			.sign-up-container {
 				width: 100%;
-				max-width: 750px;
 				margin: 29px 0;
-				@media screen and (min-width: 768px) {
-					padding: 0 18px;
-					margin: 20px 0;
+				@media (min-width: $screen-md-min) {
+					margin:  0 0 20px 0;
 				}
 
-				@media screen and (min-width: 992px) {
+				@media (min-width: $screen-xl-min) {
 					padding: 0;
+					margin: 0;
 				}
 
 				
@@ -478,23 +522,26 @@ section {
 					width: 100%;
 					background-size: cover;
 					height: 212px;
-					@media screen and (min-width: 992px) {
+
+					@media (min-width: $screen-md-min) {
 						height: 280px;
-						margin-left: 19px;
+					}
+
+					@media (min-width: $screen-xl-min) {
+						margin-left: 10px;
 					}
 				}
 			}
 			.second-img-container {
 				width: 100%;
-				max-width: 750px;
 
-				@media screen and (min-width: 768px) {
-					padding: 0 18px;
+				@media (min-width: $screen-md-min) {
+					margin: 0 0 20px 0;
 				}
 
-				@media screen and (min-width: 992px) {
+				@media (min-width: $screen-xl-min) {
 					padding: 0;
-					margin-left: 19px;
+					margin: 0 10px;
 				}
 
 				.second-img {
@@ -505,23 +552,24 @@ section {
 					height: 212px;
 					margin: 0;
 
-					@media screen and (min-width: 992px) {
+					@media (min-width: $screen-md-min) {
 						height: 280px;
 					}
 				}
 			}
 			.third-img-container {
 				width: 100%;
-				max-width: 750px;
 				margin: 29px 0;
 
-				@media screen and (min-width: 768px) {
-					padding: 0 18px;
-					margin: 20px 0;
+				@media (min-width: $screen-md-min) {
+					margin:0 0 29px 0;
 				}
 
-				@media screen and (min-width: 992px) {
+				@media (min-width: $screen-xl-min) {
 					padding: 0;
+					margin-right: 10px;
+					margin-bottom: 0;
+
 				}
 
 				.third-img {
@@ -531,12 +579,157 @@ section {
 					background-size: cover;
 					height: 212px;
 
-					@media screen and (min-width: 992px) {
+					@media (min-width: $screen-md-min) {
 						height: 280px;
 					}
 				}
 			}
 		}
 	}	
+
+	.bottom-sec-p {
+		border-top: solid 1px #dddddd;
+		border-bottom: solid 1px #dddddd;
+
+		p {
+			padding: 24px 0;
+			margin: 0;
+			object-fit: contain;
+			font-size: 16px;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1.25;
+			letter-spacing: normal;
+			text-align: right;
+			color: #666666;
+
+			@media (min-width: $screen-md-min) {
+				font-size: 18px;
+				line-height: 1.33;
+				text-align: right;
+				color: #333333;
+			}
+
+			@media (min-width: $screen-xl-min) {
+				color: #4e5665;
+			}
+		}
+	}
+
+	.bottom-sec {
+		margin-top: 36px;
+
+		@media (min-width: $screen-md-min) {
+			margin-top: 29px;
+		}
+
+		@media (min-width: $screen-xl-min) {
+			margin-top: 20px;
+		}
+
+		.p-head-1, .p-head-2, .p-head-3 {
+			object-fit: contain;
+			font-family: FbReforma;
+			font-size: 20px;
+			font-weight: 500;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1.2;
+			letter-spacing: normal;
+			text-align: right;
+			color: #0477af;
+			margin: 8px 0 2px;
+
+			@media (min-width: $screen-md-min) {
+				margin: 11px 0 4px;
+			}
+		}
+
+		.bottom-sec-p-1, .bottom-sec-p-2, .bottom-sec-p-3 {
+			object-fit: contain;
+			font-family: FbReforma;
+			font-size: 16px;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1.13;
+			letter-spacing: normal;
+			text-align: right;
+			color: #595959;
+			margin: 0 0 20px;
+		}
+
+		.bottom-sec-wrapper-1 {
+
+			@media (min-width: $screen-xl-min) {
+				margin-left: 10px;
+			}
+
+			.bottom-sec-img-1 {
+				background-image: url("img/sign-up.png");
+				background-repeat: no-repeat;
+				width: 100%;
+				background-size: cover;
+				height: 212px;
+
+				@media (min-width: $screen-md-min) {
+					height: 280px;
+				}
+
+			}
+
+			.bottom-sec-p-wrapper-1 {
+					height: fit-content;
+
+			}
+		}
+
+		.bottom-sec-wrapper-2 {
+
+			@media (min-width: $screen-xl-min) {
+				margin: 0 10px;
+			}
+
+			.bottom-sec-img-2 {
+				background-image: url("img/rectangle-2-copy-6.png");
+				background-repeat: no-repeat;
+				width: 100%;
+				background-size: cover;
+				height: 212px;
+
+				@media (min-width: $screen-md-min) {
+					height: 280px;
+				}
+
+				.p-wrapper-2 {
+					margin: 0;
+				}
+			}
+		}
+		.bottom-sec-wrapper-3 {
+
+			@media (min-width: $screen-xl-min) {
+				margin-right: 10px;
+			}
+
+			.bottom-sec-img-3 {
+				background-image: url("img/rectangle-2-copy-7.png");
+				background-repeat: no-repeat;
+				width: 100%;
+				background-size: cover;
+				height: 212px;
+
+				@media (min-width: $screen-md-min) {
+					height: 280px;
+				}
+
+				.p-wrapper-3 {
+
+				}
+			}
+		}
+		
+	}
 }
 
