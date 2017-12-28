@@ -418,7 +418,7 @@ header {
 }
 
 section {
-	margin: 0 35px;
+	margin: 37 35px 30px;
 	padding-bottom: 52px;
 	object-fit: contain;
   	border-bottom: solid 1px #e0e0e0;
@@ -437,7 +437,6 @@ section {
 	}
 
 	.top-sec-wrapper {
-		padding-top: 37px;
 
 		@media (min-width: $screen-md-min) {
     		padding: 20px 0 0;
@@ -450,11 +449,7 @@ section {
 
 		.main-gallery {
 			width: 100%;
-			background-image: url("img/mainimg-gallery.jpg");
-		 	background-repeat: no-repeat;
-			object-fit: contain;
-			// background-size: 100%;
-			background-size: cover;
+			
 
 			@media (min-width: $screen-md-min) {
 				padding: 0;
@@ -480,8 +475,16 @@ section {
 
 					.swiper-slide-1 {
 
+						 @media (min-width: $screen-xl-min) {
+	  						// background-color: rgba(0, 0, 0, 0.4);
+	  						width: 100%;
+						}
 					 	.main-gallery-wrapper-s-1 {
 					 		height: 100%;
+					 		background-image: url("img/mainimg-gallery.jpg");
+						 	background-repeat: no-repeat;
+							object-fit: contain;
+							background-size: cover;
 					 		
 
 					 		.main-gallery-container-p-s-1 {
@@ -504,8 +507,10 @@ section {
 								.main-gallery-wrapper-p-s-1 {
 
 									@media (min-width: $screen-xl-min) {
-										margin: 18px 48px 5px;
-										max-width: 370px;
+										//max-width: 370px;
+										padding: 18px 48px 0px;
+									    height: 170px;
+									    background-color: rgba(0, 0, 0, 0.4); 
 									}
 
 							 		.main-gallery-sp-1 {
@@ -567,46 +572,343 @@ section {
 					}
 
 					.swiper-slide-2 {
-						.main-gallery-wrapper-s-2 {
-							height: 100%
-						}
-					}
+						background-image: url("img/mainimg-gallery.jpg");
+					 	background-repeat: no-repeat;
+						object-fit: contain;
+						background-size: cover;
 
+						.main-gallery-wrapper-s-2 {
+							height: 100%;
+
+
+							@media (min-width: $screen-xl-min) {
+								//max-width: 370px;
+								padding: 18px 48px 0px;
+							    height: 161px;
+							    background-color: rgba(0, 0, 0, 0.4); 
+							}
+
+							.main-gallery-container-p-s-2 {
+								max-width: 241px;
+    							margin: 0 23px 56px;
+							}
+
+						
+							.main-gallery-sp-1 {
+					 			object-fit: contain;
+								font-family: FbReforma;
+								font-size: 20px;
+								font-weight: 500;
+								font-style: normal;
+								font-stretch: normal;
+								line-height: 0.9;
+								letter-spacing: normal;
+								text-align: right;
+								color: $main-white;
+								margin-bottom: 12px;
+
+								@media (min-width: $screen-md-min) {
+									object-fit: contain;
+									font-size: 30px;
+									line-height: 0.93;
+								}
+
+								@media (min-width: $screen-xl-min) {
+									//margin: 18px 48px 5px;
+									width: 100%;
+									max-width: 400px;
+								}
+					 		}
+
+					 		.main-gallery-sp-2 {
+					 			object-fit: contain;
+								font-family: FbReforma;
+								font-size: 18px;
+								font-weight: normal;
+								font-style: normal;
+								font-stretch: normal;
+								line-height: 1;
+								letter-spacing: normal;
+								text-align: right;
+								color: $main-white;
+								margin-bottom: 5px;
+					 		}
+
+					 		.main-gallery-sp-3 {
+					 			object-fit: contain;
+								font-family: FbReforma;
+								font-size: 14px;
+								font-weight: normal;
+								font-style: normal;
+								font-stretch: normal;
+								line-height: 1.29;
+								letter-spacing: normal;
+								text-align: right;
+								color: $main-white;
+								margin: 0;
+					 		}
+						}
+					}		
 
 					.swiper-slide-3 {
+						background-image: url("img/mainimg-gallery.jpg");
+					 	background-repeat: no-repeat;
+						object-fit: contain;
+						background-size: cover;
+
+						.main-gallery-wrapper-s-3 {
+							height: 100%;
+
+
+							@media (min-width: $screen-xl-min) {
+								//max-width: 370px;
+								padding: 18px 48px 0px;
+							    height: 161px;
+							    background-color: rgba(0, 0, 0, 0.4); 
+							}
+
+							.main-gallery-container-p-s-3 {
+								max-width: 241px;
+    							margin: 0 23px 56px;
+							}
+
 						
+							.main-gallery-sp-1 {
+					 			object-fit: contain;
+								font-family: FbReforma;
+								font-size: 20px;
+								font-weight: 500;
+								font-style: normal;
+								font-stretch: normal;
+								line-height: 0.9;
+								letter-spacing: normal;
+								text-align: right;
+								color: $main-white;
+								margin-bottom: 12px;
+
+								@media (min-width: $screen-md-min) {
+									object-fit: contain;
+									font-size: 30px;
+									line-height: 0.93;
+								}
+
+								@media (min-width: $screen-xl-min) {
+									//margin: 18px 48px 5px;
+									width: 100%;
+									max-width: 400px;
+								}
+					 		}
+
+					 		.main-gallery-sp-2 {
+					 			object-fit: contain;
+								font-family: FbReforma;
+								font-size: 18px;
+								font-weight: normal;
+								font-style: normal;
+								font-stretch: normal;
+								line-height: 1;
+								letter-spacing: normal;
+								text-align: right;
+								color: $main-white;
+								margin-bottom: 5px;
+					 		}
+
+					 		.main-gallery-sp-3 {
+					 			object-fit: contain;
+								font-family: FbReforma;
+								font-size: 14px;
+								font-weight: normal;
+								font-style: normal;
+								font-stretch: normal;
+								line-height: 1.29;
+								letter-spacing: normal;
+								text-align: right;
+								color: $main-white;
+								margin: 0;
+					 		}
+						}
 					}
 
 					.swiper-slide-4 {
+						background-image: url("img/mainimg-gallery.jpg");
+					 	background-repeat: no-repeat;
+						object-fit: contain;
+						background-size: cover;
+
+						.main-gallery-wrapper-s-4 {
+							height: 100%;
+
+
+							@media (min-width: $screen-xl-min) {
+								//max-width: 370px;
+								padding: 18px 48px 0px;
+							    height: 161px;
+							    background-color: rgba(0, 0, 0, 0.4); 
+							}
+
+							.main-gallery-container-p-s-4 {
+								max-width: 241px;
+    							margin: 0 23px 56px;
+							}
+
 						
+							.main-gallery-sp-1 {
+					 			object-fit: contain;
+								font-family: FbReforma;
+								font-size: 20px;
+								font-weight: 500;
+								font-style: normal;
+								font-stretch: normal;
+								line-height: 0.9;
+								letter-spacing: normal;
+								text-align: right;
+								color: $main-white;
+								margin-bottom: 12px;
+
+								@media (min-width: $screen-md-min) {
+									object-fit: contain;
+									font-size: 30px;
+									line-height: 0.93;
+								}
+
+								@media (min-width: $screen-xl-min) {
+									//margin: 18px 48px 5px;
+									width: 100%;
+									max-width: 400px;
+								}
+					 		}
+
+					 		.main-gallery-sp-2 {
+					 			object-fit: contain;
+								font-family: FbReforma;
+								font-size: 18px;
+								font-weight: normal;
+								font-style: normal;
+								font-stretch: normal;
+								line-height: 1;
+								letter-spacing: normal;
+								text-align: right;
+								color: $main-white;
+								margin-bottom: 5px;
+					 		}
+
+					 		.main-gallery-sp-3 {
+					 			object-fit: contain;
+								font-family: FbReforma;
+								font-size: 14px;
+								font-weight: normal;
+								font-style: normal;
+								font-stretch: normal;
+								line-height: 1.29;
+								letter-spacing: normal;
+								text-align: right;
+								color: $main-white;
+								margin: 0;
+					 		}
+						}
 					}
 
 					.swiper-slide-5 {
+						background-image: url("img/mainimg-gallery.jpg");
+					 	background-repeat: no-repeat;
+						object-fit: contain;
+						background-size: cover;
+
+						.main-gallery-wrapper-s-5 {
+							height: 100%;
+
+
+							@media (min-width: $screen-xl-min) {
+								//max-width: 370px;
+								padding: 18px 48px 0px;
+							    height: 161px;
+							    background-color: rgba(0, 0, 0, 0.4); 
+							}
+
+							.main-gallery-container-p-s-5 {
+								max-width: 241px;
+    							margin: 0 23px 56px;
+							}
+
 						
+							.main-gallery-sp-1 {
+					 			object-fit: contain;
+								font-family: FbReforma;
+								font-size: 20px;
+								font-weight: 500;
+								font-style: normal;
+								font-stretch: normal;
+								line-height: 0.9;
+								letter-spacing: normal;
+								text-align: right;
+								color: $main-white;
+								margin-bottom: 12px;
+
+								@media (min-width: $screen-md-min) {
+									object-fit: contain;
+									font-size: 30px;
+									line-height: 0.93;
+								}
+
+								@media (min-width: $screen-xl-min) {
+									//margin: 18px 48px 5px;
+									width: 100%;
+									max-width: 400px;
+								}
+					 		}
+
+					 		.main-gallery-sp-2 {
+					 			object-fit: contain;
+								font-family: FbReforma;
+								font-size: 18px;
+								font-weight: normal;
+								font-style: normal;
+								font-stretch: normal;
+								line-height: 1;
+								letter-spacing: normal;
+								text-align: right;
+								color: $main-white;
+								margin-bottom: 5px;
+					 		}
+
+					 		.main-gallery-sp-3 {
+					 			object-fit: contain;
+								font-family: FbReforma;
+								font-size: 14px;
+								font-weight: normal;
+								font-style: normal;
+								font-stretch: normal;
+								line-height: 1.29;
+								letter-spacing: normal;
+								text-align: right;
+								color: $main-white;
+								margin: 0;
+					 		}
+						}
 					}
 				}
 
-				.swiper-p-background {
+				// .swiper-p-background {
 
-					@media (min-width: $screen-xl-min) {
-						height: 161px;
-	 					background-color: rgba(0, 0, 0, 0.4);
-	 					position: absolute;
-	 					bottom: 0;
-	 					width: 100%;
- 					}
+				// 	@media (min-width: $screen-xl-min) {
+				// 		height: 161px;
+	 		// 			background-color: rgba(0, 0, 0, 0.4);
+	 		// 			position: absolute;
+	 		// 			bottom: 0;
+	 		// 			width: 100%;
+ 			// 		}	
+				// }
+				.swiper-pagination {
+					position: absolute;
+					right: 29px;
+					bottom: 28px;
+					width: fit-content;
 
-					.swiper-pagination {
-						position: absolute;
-						right: 29px;
-						bottom: 28px;
-
-						@media (min-width: $screen-xl-min){ 
-							right: 48px;
-							bottom: 17px;
-						}
-					}	
-				}
+					@media (min-width: $screen-xl-min){ 
+						right: 48px;
+						bottom: 17px;
+					}
+				}	
 			}
 		}
 
