@@ -9,4 +9,4 @@ new Swiper('.swiper-container', {
 	},
 })
 
-$('.navbar-toggle').dropdown();
+$('.dropdown-toggle').dropdown()

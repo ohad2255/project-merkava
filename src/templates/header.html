@@ -14,10 +14,10 @@
                      </div>
                 </div>
                 <div class= "dropdown d-xl-none d-flex justify-content-center align-items-center justify-content-md-start">
-                    <button type="button"  class="btn nav-button navbar-toggle" data-toggle="collapse" data-target=".main-nav">
+                    <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn nav-button">
                           <img src="../img/menu.svg">
                     </button>
-                    <div class="dropdown-menu">
+                    <div class="dropdown-menu" aria-labelledby="dLabel">
                         ${require("./top-navigation.html")}
                     </div>
                 </div>
@@ -30,7 +30,7 @@
                     <a href=""><div class="font-size Asmall">א</div></a>
                 </div>
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle lng-btn d-flex align-items-center justify-content-center" type="button" id="dropdownMenuButton"    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button class="btn btn-secondary dropdown-toggle lng-btn d-flex align-items-center justify-content-center justify-content-lg-start" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         עברית
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">

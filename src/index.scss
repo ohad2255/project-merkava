@@ -38,6 +38,8 @@ a {
 	}
 }
 
+/* --header-- */
+
 header {
 	object-fit: contain;
 	background-color: $header-blue;
@@ -81,7 +83,6 @@ header {
 			}
 
 			.top-sec-container {
-				// margin: 19px 7.5px 19px 9.5px;
 				width: 100%;
 
 				.logo {
@@ -161,9 +162,34 @@ header {
 						margin-right: 4px;
 					}
 				}
+
+				.dropdown-menu {
+					background-color: $header-blue;
+					font-size: 1em;
+					width: 170px;
+
+					.main-nav {
+						margin: 0px 20px;
+						padding: 0;
+
+						li {
+							margin: 10px 0;
+						}
+
+						.first {
+
+						}
+
+						.last {
+
+						}
+					}
+				}
 			}
 		}
 	}
+
+	/* --middle section header-- */
 
 	.middle-sec {
 		padding: 18px 0 0;
@@ -235,13 +261,18 @@ header {
 
 
 			.dropdown {
+				width: fit-content;
+
+				@media (min-width: $screen-xl-min) {
+					
+				}
+
 				.lng-btn {
 					padding: 0;
-					width: 71px;
   					height: 16px;
 					background-color: transparent;
 					border: none;
-					margin-left: 13px;
+					margin-left: 25px;
 					object-fit: contain;
 					font-family: FbReforma;
 					font-size: 2em;
@@ -252,17 +283,38 @@ header {
 					letter-spacing: normal;
 					text-align: right;
 					color: $main-white;
+
 					@media (min-width: $screen-md-min) {
 						margin-left: 31px;
+					}
+
+					@media (min-width: $screen-xl-min) {
+						height: fit-content;
 					}
 				}
 
 				.lng-btn::after {
-					margin: 3px 13px 0 0;
+					margin: 1px 23px 0 0;
 					border-top: .5em solid;
 					border-right: .25em solid transparent;
 					border-bottom: 0;
 					border-left: .25em solid transparent;
+
+					@media (min-width: $screen-md-min) {
+						margin-left: 31px;
+					}
+
+					@media (min-width: $screen-xl-min) {
+						border: solid $main-white;
+					    border-width: 0 1.5px 1.5px 0;
+					    display: inline-block;
+					    transform: rotate(45deg);
+   						-webkit-transform: rotate(45deg);
+   						margin: 0;
+   						margin: 0 13px 8px 0;
+					    height: 10px;
+					    width: 10px;
+					}
 				}
 			}
 
@@ -296,6 +348,8 @@ header {
 			}
 		}
 	}
+
+	/* --input section-- */
 
 	.input-sec {
 		height: 60px;
@@ -337,12 +391,24 @@ header {
 				}	
 
 				.input-toggle::after {
-					margin: 5px 17px 0 1px; 
+					margin: 4px 17px 0 1px; 
 					color: $header-blue;
 					border-top: .5em solid;
 					border-right: .25em solid transparent;
 					border-bottom: 0;
 					border-left: .25em solid transparent;
+
+					@media (min-width: $screen-md-min) {
+						margin: 0 30px 5px 0;
+						border: solid $header-blue;
+					    border-width: 0 1.5px 1.5px 0;
+					    display: inline-block;
+					    padding: 3px;
+					    transform: rotate(45deg);
+   						-webkit-transform: rotate(45deg);
+   						height: 12px;
+    					width: 12;
+					}
 				}
 			}
 
@@ -397,6 +463,8 @@ header {
 		} 
 	}
 
+	/* --main navigation-- */
+
 	.main-nav {
 		margin: 0 auto;
 		padding: 20px 20px 0;
@@ -422,6 +490,8 @@ header {
 		}
 	}
 }
+
+/* --body-- */
 
 section {
 	margin: 37 35px 30px;
@@ -452,6 +522,8 @@ section {
 			padding: 0;
 			height: 340px;
 		}
+
+        /* --main gallery-- */
 
 		.main-gallery {
 			width: 100%;
@@ -1152,9 +1224,6 @@ section {
 						.sign-up-p-wrapper {
 
 							@media (min-width: $screen-xl-min) {
-								font-size: 2.4em;
-								font-weight: 500;
-								line-height: 1.67;
 								height: 100%;
 								padding: 2px 30px 0 23px;
 							}
@@ -1435,11 +1504,11 @@ section {
 	}
 
 	.bottom-sec {
-		margin-top: 36px;
+		margin-top: 29px;
 
-		@media (min-width: $screen-md-min) {
-			margin-top: 29px;
-		}
+		// @media (min-width: $screen-md-min) {
+		// 	margin-top: 29px;
+		// }
 
 		@media (min-width: $screen-xl-min) {
 			margin-top: 20px;
@@ -1549,6 +1618,8 @@ section {
 	}
 }
 
+/* --footer-- */
+
 footer {
 
 
@@ -1579,6 +1650,8 @@ footer {
 		@media (min-width: $screen-xl-min) {
 			margin-bottom: 155px;
 		}		
+
+		/* --footer navigation-- */
 
 		.footerNav {
 			margin: 0 0 0 8px;
