@@ -13,9 +13,14 @@
                          <div class="second-head">Government Grocurement Administration</div>
                      </div>
                 </div>
-                <button class="nav-button d-flex justify-content-center align-items-center justify-content-md-start d-xl-none">
-                      <img src="../img/menu.svg">
-                </button>
+                <div class= "dropdown d-xl-none d-flex justify-content-center align-items-center justify-content-md-start">
+                    <button type="button"  class="btn nav-button navbar-toggle" data-toggle="collapse" data-target=".main-nav">
+                          <img src="../img/menu.svg">
+                    </button>
+                    <div class="dropdown-menu">
+                        ${require("./top-navigation.html")}
+                    </div>
+                </div>
             </div>
         </div>
         <div class="middle-sec d-flex align-items-center flex-md-column-reverse flex-lg-row align-items-md-end">
@@ -54,35 +59,7 @@
             </button>
         </div>
     </div>
-    <nav class="navbar navbar-expand-lg custom-container main-nav d-none d-xl-flex justify-content-center">
-        <ul class="navbar-nav mr-auto d-flex justify-content-between">
-            <li class="nav-item active">
-                <a class="nav-link" id="navLink" href="#">דף הבית</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="navLink" href="#">אודות</a>
-            </li>
-             <li class="nav-item active">
-                <a class="nav-link" id="navLink" href="#">מכרזים</a>
-            </li>
-             <li class="nav-item active">
-                <a class="nav-link" id="navLink" href="#">הודעות פטור</a>
-            </li>
-             <li class="nav-item active">
-                <a class="nav-link" id="navLink" href="#">מרכז מינהל הרכש</a>
-            </li>
-             <li class="nav-item active">
-                <a class="nav-link" id="navLink" href="#">מידע מקצועי</a>
-            </li>
-             <li class="nav-item active">
-                <a class="nav-link" id="navLink" href="#">דוחות</a>
-            </li>
-             <li class="nav-item active">
-                <a class="nav-link" id="navLink" href="#">דיוור אישי</a>
-            </li>
-             <li class="nav-item active">
-                <a class="nav-link" id="navLink" href="#">צור קשר</a>
-            </li>
-        </ul>
-    </nav>
+    <div class="d-none d-xl-block main-nav-wrapper">
+        ${require("./top-navigation.html")}
+    </div>
 </header>

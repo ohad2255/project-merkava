@@ -13,6 +13,7 @@ $main-font: FbReforma;
 body {
  	direction: rtl;
  	font-family: $main-font;
+ 	font-size: 10px;
  }
 
 ul { 	
@@ -39,13 +40,12 @@ a {
 
 header {
 	object-fit: contain;
-	background-color: #0077bf;
-	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
+	background-color: $header-blue;
 	padding-bottom: 37px;
 	position: relative;
 
 	@media (min-width: $screen-md-min) {
-		padding-bottom: 22px
+		padding-bottom: 22px;
 	}
 
 	.gery-line { 
@@ -103,7 +103,7 @@ header {
 
 						.first-head {
 							font-family: $main-font;
-							font-size: 12px;
+							font-size: 1.2em;
 							font-weight: normal;
 							font-style: normal;
 							font-stretch: normal;
@@ -113,13 +113,13 @@ header {
 							color: $main-white;
 
 							@media (min-width: $screen-md-min) {
-								font-size: 14px;
+								font-size: 1.4em;
 								line-height: 1.14;
 								letter-spacing: 1.5px;
 							}
 
 							@media (min-width: $screen-xl-min) {
-								font-size: 16px;
+								font-size: 1.6em;
 								line-height: 1;
 								letter-spacing: 1.5px;
 							}
@@ -128,7 +128,7 @@ header {
 
 						.second-head {
 							font-family: OpenSans;
-							font-size: 10px;
+							font-size: 1em;
 							font-weight: normal;
 							font-style: normal;
 							font-stretch: normal;
@@ -138,13 +138,13 @@ header {
 							color: $main-white;
 
 							@media (min-width: $screen-md-min) {
-								font-size: 12px;
+								font-size: 1.2em;
 								line-height: 1.33;
 								letter-spacing: 1.5px;
 							}
 
 							@media (min-width: $screen-xl-min) {
-								font-size: 14px;
+								font-size: 1.4em;
 								line-height: 1.14;
 								letter-spacing: 1.5px;
 							}
@@ -197,7 +197,7 @@ header {
 			.Abig {
 				object-fit: contain;
 				font-family: FbReforma;
-				font-size: 26px;
+				font-size: 2.6em;
 				font-weight: normal;
 				font-style: normal;
 				font-stretch: normal;
@@ -211,7 +211,7 @@ header {
 			.Asmall{
 				object-fit: contain;
 				font-family: FbReforma;
-				font-size: 20px;
+				font-size: 2em;
 				font-weight: normal;
 				font-style: normal;
 				font-stretch: normal;
@@ -244,7 +244,7 @@ header {
 					margin-left: 13px;
 					object-fit: contain;
 					font-family: FbReforma;
-					font-size: 20px;
+					font-size: 2em;
 					font-weight: normal;
 					font-style: normal;
 					font-stretch: normal;
@@ -259,6 +259,10 @@ header {
 
 				.lng-btn::after {
 					margin: 3px 13px 0 0;
+					border-top: .5em solid;
+					border-right: .25em solid transparent;
+					border-bottom: 0;
+					border-left: .25em solid transparent;
 				}
 			}
 
@@ -280,7 +284,7 @@ header {
 					border-radius: 4px;
 					background-color: #ffffff;
 					box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-					font-size: 20px;
+					font-size: 2em;
 					font-weight: 500;
 					font-style: normal;
 					font-stretch: normal;
@@ -311,7 +315,7 @@ header {
 				.input-toggle {
 					object-fit: contain;
 					font-family: FbReforma;
-					font-size: 20px;
+					font-size: 2em;
 					font-weight: normal;
 					font-style: normal;
 					font-stretch: normal;
@@ -327,18 +331,23 @@ header {
 					padding-left: 20px;
 
 					@media (min-width: $screen-md-min) {
-						font-size: 24px;
+						font-size: 2.4em;
 						line-height: 0.67;
 					}
 				}	
 
 				.input-toggle::after {
-					margin:0 11px 0 1px; 
+					margin: 5px 17px 0 1px; 
+					color: $header-blue;
+					border-top: .5em solid;
+					border-right: .25em solid transparent;
+					border-bottom: 0;
+					border-left: .25em solid transparent;
 				}
 			}
 
 			.main-input {
-				font-size: 20px;
+				font-size: 2em;
 				font-weight: normal;
 				font-style: normal;
 				font-stretch: normal;
@@ -346,22 +355,6 @@ header {
 				letter-spacing: normal;
 				text-align: right;
 				color: #999999;
-
-				@media (min-width: $screen-md-min) {
-					object-fit: contain;
-					font-size: 30px;
-					line-height: 0.53;
-				}
-			}
-
-			// .font-size-container-xl {
-
-			// 	@media (min-width: $screen-xl-min) {
-			// 		display: block;
-			// 	}
-			// }
-
-			.main-input {
 				border: 0;
 				padding-right: 20px;
 				flex: 1;
@@ -370,7 +363,21 @@ header {
 				@media (min-width: $screen-md-min) {
 					width: 100%;
 				}
+
+				// @media (min-width: $screen-md-min) {
+				// 	object-fit: contain;
+				// 	font-size: 3em;
+				// 	line-height: 0.53;
+				// }
+
+				@media (min-width: $screen-xl-min) {
+					object-fit: contain;
+					font-size: 2.4em;
+					line-height: 0.67;
+				}
 			}
+
+			
 
 			.search-input {
 				height: 100%;
@@ -400,8 +407,7 @@ header {
 
 			li {
 				#navLink {
-					font-family: FbReforma;
-					font-size: 20px;
+      				font-size: 2em;
 					font-weight: normal;
 					font-style: normal;
 					font-stretch: normal;
@@ -485,6 +491,10 @@ section {
 						 	background-repeat: no-repeat;
 							object-fit: contain;
 							background-size: cover;
+
+							@media (min-width: $screen-xl-min) {
+								background-image: url("img/main-gallery.png");
+							}
 					 		
 
 					 		.main-gallery-container-p-s-1 {
@@ -516,7 +526,7 @@ section {
 							 		.main-gallery-sp-1 {
 							 			object-fit: contain;
 										font-family: FbReforma;
-										font-size: 20px;
+										font-size: 2em;
 										font-weight: 500;
 										font-style: normal;
 										font-stretch: normal;
@@ -528,7 +538,7 @@ section {
 
 										@media (min-width: $screen-md-min) {
 											object-fit: contain;
-											font-size: 30px;
+											font-size: 3em;
 											line-height: 0.93;
 										}
 
@@ -543,7 +553,7 @@ section {
 							 			margin-right: 2px;
 							 			object-fit: contain;
 										font-family: FbReforma;
-										font-size: 18px;
+										font-size: 1.8em;
 										font-weight: normal;
 										font-style: normal;
 										font-stretch: normal;
@@ -559,7 +569,7 @@ section {
 							 			margin-right: 2px;
 							 			object-fit: contain;
 										font-family: FbReforma;
-										font-size: 14px;
+										font-size: 1.4em;
 										font-weight: normal;
 										font-style: normal;
 										font-stretch: normal;
@@ -578,6 +588,10 @@ section {
 					 	background-repeat: no-repeat;
 						object-fit: contain;
 						background-size: cover;
+
+						@media (min-width: $screen-xl-min) {
+							background-image: url("img/banner-big.png");
+						}
 
 						.main-gallery-wrapper-s-2 {
 							height: 100%;
@@ -604,7 +618,7 @@ section {
 							.main-gallery-sp-1 {
 					 			object-fit: contain;
 								font-family: FbReforma;
-								font-size: 20px;
+								font-size: 2em;
 								font-weight: 500;
 								font-style: normal;
 								font-stretch: normal;
@@ -616,7 +630,7 @@ section {
 
 								@media (min-width: $screen-md-min) {
 									object-fit: contain;
-									font-size: 30px;
+									font-size: 3em;
 									line-height: 0.93;
 								}
 
@@ -631,7 +645,7 @@ section {
 					 			margin-right: 2px;
 					 			object-fit: contain;
 								font-family: FbReforma;
-								font-size: 18px;
+								font-size: 1.8em;
 								font-weight: normal;
 								font-style: normal;
 								font-stretch: normal;
@@ -647,7 +661,7 @@ section {
 								margin-right: 2px;
 					 			object-fit: contain;
 								font-family: FbReforma;
-								font-size: 14px;
+								font-size: 1.4em;
 								font-weight: normal;
 								font-style: normal;
 								font-stretch: normal;
@@ -660,10 +674,14 @@ section {
 					}		
 
 					.swiper-slide-3 {
-						background-image: url("img/mainimg-gallery.jpg");
+						background-image: url("img/mainimg-gallery-copy.png");
 					 	background-repeat: no-repeat;
 						object-fit: contain;
 						background-size: cover;
+
+						@media (min-width: $screen-xl-min) {
+							background-image: url("img/main-gallery.png");
+						}
 
 						.main-gallery-wrapper-s-3 {
 							height: 100%;
@@ -690,7 +708,7 @@ section {
 							.main-gallery-sp-1 {
 					 			object-fit: contain;
 								font-family: FbReforma;
-								font-size: 20px;
+								font-size: 2em;
 								font-weight: 500;
 								font-style: normal;
 								font-stretch: normal;
@@ -702,7 +720,7 @@ section {
 
 								@media (min-width: $screen-md-min) {
 									object-fit: contain;
-									font-size: 30px;
+									font-size: 3em;
 									line-height: 0.93;
 								}
 
@@ -717,7 +735,7 @@ section {
 					 			margin-right: 2px;
 					 			object-fit: contain;
 								font-family: FbReforma;
-								font-size: 18px;
+								font-size: 1.8em;
 								font-weight: normal;
 								font-style: normal;
 								font-stretch: normal;
@@ -733,7 +751,7 @@ section {
 								margin-right: 2px;
 					 			object-fit: contain;
 								font-family: FbReforma;
-								font-size: 14px;
+								font-size: 1.4em;
 								font-weight: normal;
 								font-style: normal;
 								font-stretch: normal;
@@ -750,6 +768,10 @@ section {
 					 	background-repeat: no-repeat;
 						object-fit: contain;
 						background-size: cover;
+
+						@media (min-width: $screen-xl-min) {
+							background-image: url("img/main-gallery.png");
+						}
 
 						.main-gallery-wrapper-s-4 {
 							height: 100%;
@@ -776,7 +798,7 @@ section {
 							.main-gallery-sp-1 {
 					 			object-fit: contain;
 								font-family: FbReforma;
-								font-size: 20px;
+								font-size: 2em;
 								font-weight: 500;
 								font-style: normal;
 								font-stretch: normal;
@@ -788,7 +810,7 @@ section {
 
 								@media (min-width: $screen-md-min) {
 									object-fit: contain;
-									font-size: 30px;
+									font-size: 3em;
 									line-height: 0.93;
 								}
 
@@ -803,7 +825,7 @@ section {
 					 			margin-right: 2px;
 					 			object-fit: contain;
 								font-family: FbReforma;
-								font-size: 18px;
+								font-size: 1.8em;
 								font-weight: normal;
 								font-style: normal;
 								font-stretch: normal;
@@ -819,7 +841,7 @@ section {
 					 			margin-right: 2px;					 			
 					 			object-fit: contain;
 								font-family: FbReforma;
-								font-size: 14px;
+								font-size: 1.4em;
 								font-weight: normal;
 								font-style: normal;
 								font-stretch: normal;
@@ -832,10 +854,14 @@ section {
 					}
 
 					.swiper-slide-5 {
-						background-image: url("img/mainimg-gallery.jpg");
+						background-image: url("img/mainimg-gallery-copy.png");
 					 	background-repeat: no-repeat;
 						object-fit: contain;
 						background-size: cover;
+
+						@media (min-width: $screen-xl-min) {
+							background-image: url("img/main-gallery.png");
+						}
 
 						.main-gallery-wrapper-s-5 {
 							height: 100%;
@@ -862,7 +888,7 @@ section {
 							.main-gallery-sp-1 {
 					 			object-fit: contain;
 								font-family: FbReforma;
-								font-size: 20px;
+								font-size: 2em;
 								font-weight: 500;
 								font-style: normal;
 								font-stretch: normal;
@@ -874,7 +900,7 @@ section {
 
 								@media (min-width: $screen-md-min) {
 									object-fit: contain;
-									font-size: 30px;
+									font-size: 3em;
 									line-height: 0.93;
 								}
 
@@ -889,7 +915,7 @@ section {
 					 			margin-right: 2px;
 					 			object-fit: contain;
 								font-family: FbReforma;
-								font-size: 18px;
+								font-size: 1.8em;
 								font-weight: normal;
 								font-style: normal;
 								font-stretch: normal;
@@ -905,7 +931,7 @@ section {
 					 			margin-right: 2px;
 					 			object-fit: contain;
 								font-family: FbReforma;
-								font-size: 14px;
+								font-size: 1.4em;
 								font-weight: normal;
 								font-style: normal;
 								font-stretch: normal;
@@ -925,8 +951,8 @@ section {
 					width: fit-content;
 					direction: ltr;
 
-					@media (min-width: $screen-xl-min){ 
-						right: 48px;
+					@media (min-width: $screen-xl-min) { 
+						right: 50px;
 						bottom: 17px;
 					}
 
@@ -962,7 +988,7 @@ section {
 			}
 
 			.top-sec-left-img {
-				background-image: url("img/mainimg-gallery-copy.png");
+				background-image: url("img/banner-big.png");
 				background-repeat: no-repeat;
 				width: 100%;
 				height: 460px;
@@ -1006,7 +1032,7 @@ section {
 						.topSecP-1 {
 							object-fit: contain;
 							font-family: FbReforma;
-							font-size: 20px;
+							font-size: 2em;
 							font-weight: 500;
 							font-style: normal;
 							font-stretch: normal;
@@ -1018,7 +1044,7 @@ section {
 
 							@media (min-width: $screen-md-min) {
 								object-fit: contain;
-								font-size: 30px;
+								font-size: 3em;
 								line-height: 0.93;
 							}
 
@@ -1028,7 +1054,7 @@ section {
 						.topSecP-2 {
 							object-fit: contain;
 							font-family: FbReforma;
-							font-size: 18px;
+							font-size: 1.8em;
 							font-weight: normal;
 							font-style: normal;
 							font-stretch: normal;
@@ -1043,7 +1069,7 @@ section {
 						.topSecP-3 {
 							object-fit: contain;
 							font-family: FbReforma;
-							font-size: 14px;
+							font-size: 1.4em;
 							font-weight: normal;
 							font-style: normal;
 							font-stretch: normal;
@@ -1126,7 +1152,7 @@ section {
 						.sign-up-p-wrapper {
 
 							@media (min-width: $screen-xl-min) {
-								font-size: 24px;
+								font-size: 2.4em;
 								font-weight: 500;
 								line-height: 1.67;
 								height: 100%;
@@ -1135,7 +1161,7 @@ section {
 
 							.sign-up-p-1 {
 								object-fit: contain;
-								font-size: 24px;
+								font-size: 2.4em;
 								font-weight: 500;
 								font-style: normal;
 								font-stretch: normal;
@@ -1147,14 +1173,14 @@ section {
 
 								@media (min-width: $screen-md-min) {
 									margin-bottom: 23px;
-									font-size: 30px;
+									font-size: 3em;
 									font-weight: 500;
 									line-height: 0.93;
 								}
 
 								@media (min-width: $screen-xl-min) {
 									margin-bottom: 0;
-									font-size: 24px;
+									font-size: 2.4em;
 									font-weight: 500;
 									line-height: 1.67;
 								}
@@ -1162,7 +1188,7 @@ section {
 
 							.sign-up-p-2 {
 								object-fit: contain;
-								font-size: 18px;
+								font-size: 1.8em;
 								font-weight: normal;
 								font-style: normal;
 								font-stretch: normal;
@@ -1186,7 +1212,7 @@ section {
 								background-color: #f8a12e;
 								box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
 								border: solid 1px #f3cd9b;
-								font-size: 20px;
+								font-size: 2em;
 								font-weight: 500;
 								font-style: normal;
 								font-stretch: normal;
@@ -1198,14 +1224,14 @@ section {
 									width: 150px;
 									height: 56px;
 									margin-bottom: 23px;
-									font-size: 40px;
+									font-size: 4em;
 									line-height: 0.4;
 								}
 
 								@media (min-width: $screen-xl-min) {
 									width: 69px;
 									height: 40px;
-									font-size: 20px;
+									font-size: 2em;
 									font-weight: 500;
 									line-height: 2;
 									text-align: right;
@@ -1269,7 +1295,7 @@ section {
 
 						.second-img-p-1 {
 							object-fit: contain;
-							font-size: 24px;
+							font-size: 2.4em;
 							font-weight: 500;
 							font-style: normal;
 							font-stretch: normal;
@@ -1283,7 +1309,7 @@ section {
 
 						.second-img-p-2 {
 							object-fit: contain;
-							font-size: 18px;
+							font-size: 1.8em;
 							font-weight: normal;
 							font-style: normal;
 							font-stretch: normal;
@@ -1346,7 +1372,7 @@ section {
 
 						.third-img-p-1 {
 							object-fit: contain;
-							font-size: 24px;
+							font-size: 2.4em;
 							font-weight: 500;
 							font-style: normal;
 							font-stretch: normal;
@@ -1359,7 +1385,7 @@ section {
 
 						.third-img-p-2 {
 							object-fit: contain;
-							font-size: 18px;
+							font-size: 1.8em;
 							font-weight: normal;
 							font-style: normal;
 							font-stretch: normal;
@@ -1386,7 +1412,7 @@ section {
 			padding: 24px 0;
 			margin: 0;
 			object-fit: contain;
-			font-size: 16px;
+			font-size: 1.6em;
 			font-weight: normal;
 			font-style: normal;
 			font-stretch: normal;
@@ -1396,7 +1422,7 @@ section {
 			color: #666666;
 
 			@media (min-width: $screen-md-min) {
-				font-size: 18px;
+				font-size: 1.8em;
 				line-height: 1.33;
 				color: #333333;
 			}
@@ -1422,7 +1448,7 @@ section {
 		.p-head-1, .p-head-2, .p-head-3 {
 			object-fit: contain;
 			font-family: FbReforma;
-			font-size: 20px;
+			font-size: 2em;
 			font-weight: 500;
 			font-style: normal;
 			font-stretch: normal;
@@ -1440,7 +1466,7 @@ section {
 		.bottom-sec-p-1, .bottom-sec-p-2, .bottom-sec-p-3 {
 			object-fit: contain;
 			font-family: FbReforma;
-			font-size: 16px;
+			font-size: 1.6em;
 			font-weight: normal;
 			font-style: normal;
 			font-stretch: normal;
@@ -1565,7 +1591,7 @@ footer {
 				li {
 					object-fit: contain;
 					font-family: FbReforma;
-					font-size: 16px;
+					font-size: 1.6em;
 					font-weight: normal;
 					font-style: normal;
 					font-stretch: normal;

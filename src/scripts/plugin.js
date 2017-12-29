@@ -7,6 +7,6 @@ new Swiper('.swiper-container', {
 	pagination: {
 		el: '.swiper-pagination',
 	},
-
-
 })
+
+$('.navbar-toggle').dropdown();
