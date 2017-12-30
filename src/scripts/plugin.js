@@ -10,3 +10,4 @@ new Swiper('.swiper-container', {
 })
 
 $('.lng-btn.dropdown-toggle').dropdown()
+$('.input-toggle.dropdown-toggle').dropdown()
