@@ -4,17 +4,28 @@ $screen-md-min: 768px;
 $screen-xl-min: 1200px;
 $main-font: FbReforma;
 
+
 @font-face {
 	font-family: "FbReforma";
-	src: url("/fonts/FbReforma-Medium.otf") format("OpenType"),
-	     url("/fonts/FbReforma-Regular.otf") format("OpenType");
+	src: url("./fonts/FbReforma-Regular.otf") format("opentype");
+	font-weight: 400;
 }
 
-body {
- 	direction: rtl;
+@font-face {
+	font-family: "FbReforma";
+	src: url("./fonts/FbReforma-Medium.otf") format("opentype");
+	font-weight: 500;
+}
+
+html {
+	direction: rtl;
  	font-family: $main-font;
  	font-size: 10px;
  }
+
+body {
+ 	
+}
 
 ul { 	
 	text-decoration: none;
@@ -49,6 +60,12 @@ header {
 	@media (min-width: $screen-md-min) {
 		padding-bottom: 22px;
 	}
+
+	@media (min-width: $screen-xl-min) {
+		padding-bottom: 0;
+	}
+
+
 
 	.gery-line { 
 		position: absolute;
@@ -103,7 +120,6 @@ header {
 						margin-right: 8px;
 
 						.first-head {
-							font-family: $main-font;
 							font-size: 1.2em;
 							font-weight: normal;
 							font-style: normal;
@@ -152,6 +168,8 @@ header {
 						}
 					}
 				}
+
+				/* --main nav mobile-- */
 
 				.nav-button {
 					padding: 0;
@@ -205,8 +223,7 @@ header {
 		}
 
 		.font-size-container {
-			margin-right: 5px;
-			margin-left: auto;
+			margin: 3px 5px 0 auto;
 			height: fit-content;
 			text-decoration: none;
 
@@ -241,7 +258,7 @@ header {
 				font-weight: normal;
 				font-style: normal;
 				font-stretch: normal;
-				line-height: 1;
+				line-height: 0.7;
 				letter-spacing: normal;
 				text-align: right;
 				color: $main-white;
@@ -269,10 +286,10 @@ header {
 
 				.lng-btn {
 					padding: 0;
-  					height: 16px;
+  					height: 12px;
 					background-color: transparent;
 					border: none;
-					margin-left: 25px;
+					margin-left: 24px;
 					object-fit: contain;
 					font-family: FbReforma;
 					font-size: 2em;
@@ -286,6 +303,7 @@ header {
 
 					@media (min-width: $screen-md-min) {
 						margin-left: 31px;
+						width: 71px;
 					}
 
 					@media (min-width: $screen-xl-min) {
@@ -294,7 +312,7 @@ header {
 				}
 
 				.lng-btn::after {
-					margin: 1px 23px 0 0;
+					margin: 1px 18px 4px 0;
 					border-top: .5em solid;
 					border-right: .25em solid transparent;
 					border-bottom: 0;
@@ -383,27 +401,32 @@ header {
 					border-radius: 0;
 					margin-right: 26px;
 					padding-left: 20px;
+					padding-top: 9px;
+				    height: 32px;
+				    
 
-					@media (min-width: $screen-md-min) {
+					@media (min-width: $screen-xl-min) {
 						font-size: 2.4em;
 						line-height: 0.67;
+						padding-top: 7px;
 					}
 				}	
 
 				.input-toggle::after {
-					margin: 3px 17px 0 1px; 
+					margin: 0px 17px 0 1px; 
 					color: $header-blue;
 					border-top: .5em solid;
 					border-right: .25em solid transparent;
 					border-bottom: 0;
 					border-left: .25em solid transparent;
+					padding-bottom: 2px;
 
 					@media (min-width: $screen-md-min) {
-						margin: 0 30px 5px 0;
+						margin: 0 50px 5px 0;
 						border: solid $header-blue;
 					    border-width: 0 1.5px 1.5px 0;
 					    display: inline-block;
-					    padding: 3px;
+					    //padding: 3px;
 					    transform: rotate(45deg);
    						-webkit-transform: rotate(45deg);
    						height: 12px;
@@ -423,6 +446,7 @@ header {
 				color: #999999;
 				border: 0;
 				padding-right: 20px;
+				padding-bottom: 5px;
 				flex: 1;
 				width: 139px;
 
@@ -467,7 +491,7 @@ header {
 
 	.main-nav {
 		margin: 0 auto;
-		padding: 20px 20px 0;
+		padding: 30px 20px;
 
 		ul {
 			width: 100%;
@@ -1623,7 +1647,7 @@ section {
 footer {
 
 
-	.LogoMerkavaWarpper {
+	.logo-merkava-warpper {
 		margin: 30px 0;
 
 		@media (min-width: $screen-md-min) {
@@ -1637,9 +1661,9 @@ footer {
 		}
 	}
 
-	.footerNavWrapper {
+	.footer-nav-wrapper {
 
-		max-width: 225px;
+		max-width: 285px;
 		margin-bottom: 73px;
 
 		@media (min-width: $screen-md-min) {
@@ -1653,7 +1677,7 @@ footer {
 
 		/* --footer navigation-- */
 
-		.footerNav {
+		.footer-nav {
 			margin: 0 0 0 8px;
 			padding: 0;
 
