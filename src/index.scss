@@ -4,17 +4,29 @@ $screen-md-min: 768px;
 $screen-xl-min: 1200px;
 $main-font: FbReforma;
 
+
 @font-face {
 	font-family: "FbReforma";
-	src: url("/fonts/FbReforma-Medium.otf") format("OpenType"),
-	     url("/fonts/FbReforma-Regular.otf") format("OpenType");
+	src: url("./fonts/FbReforma-Regular.otf") format("opentype");
+	font-weight: 400;
 }
 
-body {
- 	direction: rtl;
+@font-face {
+	font-family: "FbReforma";
+	src: url("./fonts/FbReforma-Medium.otf") format("opentype");
+	font-weight: 500;
+}
+
+html {
+	direction: rtl;
  	font-family: $main-font;
  	font-size: 10px;
+ 	text-align: right;
  }
+
+body {
+ 	text-align: right;
+}
 
 ul { 	
 	text-decoration: none;
@@ -23,6 +35,11 @@ ul {
 
 a {
 	text-decoration: none;
+}
+
+p {
+	font-family: $main-font;
+	text-align: right;
 }
 
 .custom-container {
@@ -45,10 +62,17 @@ header {
 	background-color: $header-blue;
 	padding-bottom: 37px;
 	position: relative;
+	font-family: $main-font;
 
 	@media (min-width: $screen-md-min) {
 		padding-bottom: 22px;
 	}
+
+	@media (min-width: $screen-xl-min) {
+		padding-bottom: 0;
+	}
+
+
 
 	.gery-line { 
 		position: absolute;
@@ -103,14 +127,13 @@ header {
 						margin-right: 8px;
 
 						.first-head {
-							font-family: $main-font;
 							font-size: 1.2em;
 							font-weight: normal;
 							font-style: normal;
 							font-stretch: normal;
 							line-height: 1.33;
 							letter-spacing: 1.3px;
-							text-align: right;
+							
 							color: $main-white;
 
 							@media (min-width: $screen-md-min) {
@@ -135,7 +158,6 @@ header {
 							font-stretch: normal;
 							line-height: 1.6;
 							letter-spacing: 1.3px;
-							text-align: right;
 							color: $main-white;
 
 							@media (min-width: $screen-md-min) {
@@ -153,6 +175,8 @@ header {
 					}
 				}
 
+				/* --main nav mobile-- */
+
 				.nav-button {
 					padding: 0;
 					margin: 0;
@@ -166,7 +190,8 @@ header {
 				.dropdown-menu {
 					background-color: $header-blue;
 					font-size: 1em;
-					width: 170px;
+					width: 205px;
+					white-space: nowrap;
 
 					.main-nav {
 						margin: 0px 20px;
@@ -205,8 +230,7 @@ header {
 		}
 
 		.font-size-container {
-			margin-right: 5px;
-			margin-left: auto;
+			margin: 0px 5px 7px auto;
 			height: fit-content;
 			text-decoration: none;
 
@@ -216,34 +240,32 @@ header {
 			}
 
 			@media (min-width: $screen-xl-min) {
-				margin: 0 0 0 38px;
+				margin: 0 0 3px 38px;
+				height: fit-content;
 			}
 
 
 			.Abig {
 				object-fit: contain;
-				font-family: FbReforma;
 				font-size: 2.6em;
 				font-weight: normal;
 				font-style: normal;
 				font-stretch: normal;
 				line-height: 0.62;
 				letter-spacing: normal;
-				text-align: right;
 				color: $main-white;
 				margin-left: 8px;
+				margin-bottom: 1px;
 			}
 
 			.Asmall{
 				object-fit: contain;
-				font-family: FbReforma;
 				font-size: 2em;
 				font-weight: normal;
 				font-style: normal;
 				font-stretch: normal;
-				line-height: 1;
+				line-height: 0.7;
 				letter-spacing: normal;
-				text-align: right;
 				color: $main-white;
 			}
 		}
@@ -260,41 +282,45 @@ header {
 			 }
 
 
-			.dropdown {
+			.lng-dropdown {
 				width: fit-content;
 
 				@media (min-width: $screen-xl-min) {
-					
+					margin-bottom: 4px;
 				}
 
 				.lng-btn {
 					padding: 0;
-  					height: 16px;
+				    padding-bottom: 4px;
+				    height: fit-content;
+				    width: fit-content;
 					background-color: transparent;
 					border: none;
-					margin-left: 25px;
+					margin-left: 24px;
 					object-fit: contain;
-					font-family: FbReforma;
 					font-size: 2em;
 					font-weight: normal;
 					font-style: normal;
 					font-stretch: normal;
 					line-height: 0.8;
 					letter-spacing: normal;
-					text-align: right;
 					color: $main-white;
+					
 
 					@media (min-width: $screen-md-min) {
 						margin-left: 31px;
+						width: 71px;
 					}
 
 					@media (min-width: $screen-xl-min) {
+						width: fit-content;
 						height: fit-content;
+						padding-bottom: 0;
 					}
 				}
 
 				.lng-btn::after {
-					margin: 1px 23px 0 0;
+					margin: 2px 18px 4px 0;
 					border-top: .5em solid;
 					border-right: .25em solid transparent;
 					border-bottom: 0;
@@ -311,39 +337,55 @@ header {
 					    transform: rotate(45deg);
    						-webkit-transform: rotate(45deg);
    						margin: 0;
-   						margin: 0 13px 8px 0;
+   						margin: 0px 13px 8px 0;
 					    height: 10px;
 					    width: 10px;
+					}
+				}
+
+				.lng-dropdown-menu {
+					background-color: $header-blue;
+
+					.lng-dropdown-item-1 {
+						font-size: 2em;
+						font-weight: normal;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: 0.8;
+						letter-spacing: normal;
+						color: $main-white;
+						text-align: right;
+					}
+
+					.lng-dropdown-item-1:hover {
+						background-color: $main-white;
+						color: $header-blue;	
 					}
 				}
 			}
 
 			.ent-btn {
-				color: #fff;
 				width: 107px;
 				height: 40px;
 				object-fit: contain;
-				border-radius: 3px;
-				background-color: #f5891b;
-				box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+				border-radius: 4px;
 				border: solid 1px #ecba88;
 				box-sizing: border-box;
 				padding: 0;
+				object-fit: contain;
+				font-size: 2em;
+				text-align: center;
+				font-weight: 500;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 0.8;
+				letter-spacing: normal;
+				background-color: $main-white;
+				box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
+				color: $ent-bnt-font-color;
+
 				@media (min-width: $screen-xl-min) {
 					order: 1;
-					width: 107px;
-					height: 40px;
-					border-radius: 4px;
-					background-color: #ffffff;
-					box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-					font-size: 2em;
-					font-weight: 500;
-					font-style: normal;
-					font-stretch: normal;
-					line-height: 0.8;
-					letter-spacing: normal;
-					text-align: center;
-					color: $ent-bnt-font-color;
 				}
 			}
 		}
@@ -361,53 +403,89 @@ header {
 
 
 		.input-container {
-			background-color: #fff;
+			background-color: $main-white;
 			width: 100%;
 
-			.dropdown {
+			.input-dropdown {
 
 				.input-toggle {
 					object-fit: contain;
-					font-family: FbReforma;
 					font-size: 2em;
 					font-weight: normal;
 					font-style: normal;
 					font-stretch: normal;
 					line-height: 0.8;
 					letter-spacing: normal;
-					text-align: right;
-					color: #666666;
-					background-color: #fff;
+					color: $input-toggle-text;
+					background-color: $main-white;
 					border: none;
 					border-left: rgba(102,102,102,0.3) solid 1px; 
 					border-radius: 0;
-					margin-right: 26px;
-					padding-left: 20px;
+					padding: 4px 26px 0  20px;
+				    height: 32px;
+				    
 
-					@media (min-width: $screen-md-min) {
+					@media (min-width: $screen-xl-min) {
 						font-size: 2.4em;
 						line-height: 0.67;
+						padding-top: 0;
 					}
 				}	
 
 				.input-toggle::after {
-					margin: 4px 17px 0 1px; 
+					margin: 0px 17px 0 1px; 
 					color: $header-blue;
 					border-top: .5em solid;
 					border-right: .25em solid transparent;
 					border-bottom: 0;
 					border-left: .25em solid transparent;
+					padding-bottom: 2px;
 
 					@media (min-width: $screen-md-min) {
-						margin: 0 30px 5px 0;
+						margin: 0 50px 7px 0;
 						border: solid $header-blue;
 					    border-width: 0 1.5px 1.5px 0;
 					    display: inline-block;
-					    padding: 3px;
 					    transform: rotate(45deg);
    						-webkit-transform: rotate(45deg);
-   						height: 12px;
-    					width: 12;
+   						height: 10px;
+    					width: 10px;
+					}
+				}
+
+				.input-dropdown-menu {
+					width: 140px;
+					text-align: right;
+
+					.input-dropdown-item-1 {
+						font-size: 2em;
+						font-weight: normal;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: 0.8;
+						letter-spacing: normal;
+						color: $input-toggle-text;
+						background-color: $main-white;
+						border: none;
+						margin-bottom: 15px;
+						margin-top: 10px;
+
+						@media (min-width: $screen-xl-min) {
+							
+						}
+					}
+
+					.input-dropdown-item-2 {
+						font-size: 2em;
+						font-weight: normal;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: 0.8;
+						letter-spacing: normal;
+						color: $input-toggle-text;
+						background-color: $main-white;
+						border: none;
+						margin-bottom: 10px;
 					}
 				}
 			}
@@ -419,10 +497,10 @@ header {
 				font-stretch: normal;
 				line-height: 0.8;
 				letter-spacing: normal;
-				text-align: right;
-				color: #999999;
+				color: $main-input-text;
 				border: 0;
 				padding-right: 20px;
+				padding-bottom: 5px;
 				flex: 1;
 				width: 139px;
 
@@ -440,10 +518,9 @@ header {
 					object-fit: contain;
 					font-size: 2.4em;
 					line-height: 0.67;
+					padding-bottom: 0;
 				}
 			}
-
-			
 
 			.search-input {
 				height: 100%;
@@ -467,7 +544,7 @@ header {
 
 	.main-nav {
 		margin: 0 auto;
-		padding: 20px 20px 0;
+		padding: 30px 20px;
 
 		ul {
 			width: 100%;
@@ -481,10 +558,10 @@ header {
 					font-stretch: normal;
 					line-height: 0.8;
 					letter-spacing: normal;
-					text-align: right;
 					color: $main-white;
 					text-decoration: none;
 					padding: 0;
+					font-family: $main-font;
 				}
 			}
 		}
@@ -494,7 +571,7 @@ header {
 /* --body-- */
 
 section {
-	margin: 37 35px 30px;
+	margin: 37 20px 30px;
 	padding-bottom: 52px;
 	object-fit: contain;
   	border-bottom: solid 1px #e0e0e0;
@@ -521,6 +598,10 @@ section {
 		@media (min-width: $screen-xl-min) {
 			padding: 0;
 			height: 340px;
+		}
+
+		a {
+			text-decoration: none;
 		}
 
         /* --main gallery-- */
@@ -551,10 +632,13 @@ section {
 						height: 100%;
 					}
 
+					.swiper-slide-2-container, .swiper-slide-3-container, .swiper-slide-4-container, .swiper-slide-5-container {
+						height: 100%;
+					}
+
 					.swiper-slide-1 {
 
 						 @media (min-width: $screen-xl-min) {
-	  						// background-color: rgba(0, 0, 0, 0.4);
 	  						width: 100%;
 						}
 					 	.main-gallery-wrapper-s-1 {
@@ -570,8 +654,7 @@ section {
 					 		
 
 					 		.main-gallery-container-p-s-1 {
-							    max-width: 241px;
-							    margin: 0 23px 56px;
+							    //margin: 0 23px 56px;
 
 							    @media (min-width: $screen-md-min) {
 								    margin: 0 49px 87px;
@@ -579,7 +662,7 @@ section {
 								}
 
 							    @media (min-width: $screen-xl-min) {
-			  						// background-color: rgba(0, 0, 0, 0.4);
+			  						
 			  						height: 161px;
 			  						max-width: 100%;
 			  						width: 100%;
@@ -587,24 +670,26 @@ section {
 								}
 
 								.main-gallery-wrapper-p-s-1 {
+									background-color: $background-p-img; 
+									height: 161px;
+									padding-right: 20px;
+									padding-top: 19px;
 
 									@media (min-width: $screen-xl-min) {
-										//max-width: 370px;
 										padding: 18px 48px 0px;
 									    height: 170px;
-									    background-color: rgba(0, 0, 0, 0.4); 
+									   
 									}
 
 							 		.main-gallery-sp-1 {
 							 			object-fit: contain;
-										font-family: FbReforma;
 										font-size: 2em;
 										font-weight: 500;
 										font-style: normal;
 										font-stretch: normal;
 										line-height: 0.9;
 										letter-spacing: normal;
-										text-align: right;
+										max-width: 241px;
 										color: $main-white;
 										margin-bottom: 12px;
 
@@ -624,14 +709,12 @@ section {
 							 		.main-gallery-sp-2 {
 							 			margin-right: 2px;
 							 			object-fit: contain;
-										font-family: FbReforma;
 										font-size: 1.8em;
 										font-weight: normal;
 										font-style: normal;
 										font-stretch: normal;
 										line-height: 1;
 										letter-spacing: normal;
-										text-align: right;
 										color: $main-white;
 										margin-bottom: 5px;
 							 		}
@@ -640,14 +723,12 @@ section {
 							 			margin: 0;
 							 			margin-right: 2px;
 							 			object-fit: contain;
-										font-family: FbReforma;
 										font-size: 1.4em;
 										font-weight: normal;
 										font-style: normal;
 										font-stretch: normal;
 										line-height: 1.29;
 										letter-spacing: normal;
-										text-align: right;
 										color: $main-white;
 							 		}
 						 		}
@@ -673,30 +754,34 @@ section {
 								//max-width: 370px;
 								padding: 18px 48px 0px;
 							    height: 161px;
-							    background-color: rgba(0, 0, 0, 0.4); 
+							    background-color: $background-p-img; 
 							}
 
 							.main-gallery-container-p-s-2 {
-								max-width: 241px;
-    							margin: 0 23px 56px;
+								background-color: $background-p-img; 
+								height: 161px;
+								padding-right: 20px;
+								padding-top: 19px;
 
     							@media (min-width: $screen-xl-min) {
 									max-width: 100%;
-									margin: 0
+									height: fit-content;
+									margin: 0;
+									padding: 0;
+									background-color: transparent;
 								}
 							}
 
 						
 							.main-gallery-sp-1 {
 					 			object-fit: contain;
-								font-family: FbReforma;
 								font-size: 2em;
 								font-weight: 500;
 								font-style: normal;
 								font-stretch: normal;
 								line-height: 0.9;
 								letter-spacing: normal;
-								text-align: right;
+								
 								color: $main-white;
 								margin-bottom: 12px;
 
@@ -716,14 +801,13 @@ section {
 					 		.main-gallery-sp-2 {
 					 			margin-right: 2px;
 					 			object-fit: contain;
-								font-family: FbReforma;
 								font-size: 1.8em;
 								font-weight: normal;
 								font-style: normal;
 								font-stretch: normal;
 								line-height: 1;
 								letter-spacing: normal;
-								text-align: right;
+								
 								color: $main-white;
 								margin-bottom: 5px;
 					 		}
@@ -732,14 +816,12 @@ section {
 								margin: 0;
 								margin-right: 2px;
 					 			object-fit: contain;
-								font-family: FbReforma;
 								font-size: 1.4em;
 								font-weight: normal;
 								font-style: normal;
 								font-stretch: normal;
 								line-height: 1.29;
 								letter-spacing: normal;
-								text-align: right;
 								color: $main-white;
 					 		}
 						}
@@ -763,30 +845,34 @@ section {
 								//max-width: 370px;
 								padding: 18px 48px 0px;
 							    height: 161px;
-							    background-color: rgba(0, 0, 0, 0.4); 
+							    background-color: $background-p-img; 
 							}
 
 							.main-gallery-container-p-s-3 {
-								max-width: 241px;
-    							margin: 0 23px 56px;
+								background-color: $background-p-img; 
+								height: 161px;
+								padding-right: 20px;
+								padding-top: 19px;
 
     							@media (min-width: $screen-xl-min) {
 									max-width: 100%;
-									margin: 0
+									height: fit-content;
+									margin: 0;
+									padding: 0;
+									background-color: transparent;
 								}
 							}
 
 						
 							.main-gallery-sp-1 {
 					 			object-fit: contain;
-								font-family: FbReforma;
 								font-size: 2em;
 								font-weight: 500;
 								font-style: normal;
 								font-stretch: normal;
 								line-height: 0.9;
 								letter-spacing: normal;
-								text-align: right;
+								
 								color: $main-white;
 								margin-bottom: 12px;
 
@@ -806,14 +892,13 @@ section {
 					 		.main-gallery-sp-2 {
 					 			margin-right: 2px;
 					 			object-fit: contain;
-								font-family: FbReforma;
 								font-size: 1.8em;
 								font-weight: normal;
 								font-style: normal;
 								font-stretch: normal;
 								line-height: 1;
 								letter-spacing: normal;
-								text-align: right;
+								
 								color: $main-white;
 								margin-bottom: 5px;
 					 		}
@@ -822,14 +907,12 @@ section {
 								margin: 0;
 								margin-right: 2px;
 					 			object-fit: contain;
-								font-family: FbReforma;
 								font-size: 1.4em;
 								font-weight: normal;
 								font-style: normal;
 								font-stretch: normal;
 								line-height: 1.29;
 								letter-spacing: normal;
-								text-align: right;
 								color: $main-white;
 					 		}
 						}
@@ -853,30 +936,34 @@ section {
 								//max-width: 370px;
 								padding: 18px 48px 0px;
 							    height: 161px;
-							    background-color: rgba(0, 0, 0, 0.4); 
+							    background-color: $background-p-img; 
 							}
 
 							.main-gallery-container-p-s-4 {
-								max-width: 241px;
-    							margin: 0 23px 56px;
+								background-color: $background-p-img; 
+								height: 161px;
+								padding-right: 20px;
+								padding-top: 19px;
+
 
     							@media (min-width: $screen-xl-min) {
 									max-width: 100%;
-									margin: 0
+									height: fit-content;
+									margin: 0;
+									padding: 0;
+									background-color: transparent;
 								}
 							}
 
 						
 							.main-gallery-sp-1 {
 					 			object-fit: contain;
-								font-family: FbReforma;
 								font-size: 2em;
 								font-weight: 500;
 								font-style: normal;
 								font-stretch: normal;
 								line-height: 0.9;
 								letter-spacing: normal;
-								text-align: right;
 								color: $main-white;
 								margin-bottom: 12px;
 
@@ -896,14 +983,12 @@ section {
 					 		.main-gallery-sp-2 {
 					 			margin-right: 2px;
 					 			object-fit: contain;
-								font-family: FbReforma;
 								font-size: 1.8em;
 								font-weight: normal;
 								font-style: normal;
 								font-stretch: normal;
 								line-height: 1;
 								letter-spacing: normal;
-								text-align: right;
 								color: $main-white;
 								margin-bottom: 5px;
 					 		}
@@ -912,14 +997,12 @@ section {
 					 			margin: 0;
 					 			margin-right: 2px;					 			
 					 			object-fit: contain;
-								font-family: FbReforma;
 								font-size: 1.4em;
 								font-weight: normal;
 								font-style: normal;
 								font-stretch: normal;
 								line-height: 1.29;
 								letter-spacing: normal;
-								text-align: right;
 								color: $main-white;
 					 		}
 						}
@@ -943,30 +1026,34 @@ section {
 								//max-width: 370px;
 								padding: 18px 48px 0px;
 							    height: 161px;
-							    background-color: rgba(0, 0, 0, 0.4); 
+							    background-color: $background-p-img; 
 							}
 
 							.main-gallery-container-p-s-5 {
-								max-width: 241px;
-    							margin: 0 23px 56px;
+								background-color: $background-p-img; 
+								height: 161px;
+								padding-right: 20px;
+								padding-top: 19px;
+
 
     							@media (min-width: $screen-xl-min) {
 									max-width: 100%;
-									margin: 0
+									height: fit-content;
+									margin: 0;
+									padding: 0;
+									background-color: transparent;
 								}
 							}
 
 						
 							.main-gallery-sp-1 {
 					 			object-fit: contain;
-								font-family: FbReforma;
 								font-size: 2em;
 								font-weight: 500;
 								font-style: normal;
 								font-stretch: normal;
 								line-height: 0.9;
 								letter-spacing: normal;
-								text-align: right;
 								color: $main-white;
 								margin-bottom: 12px;
 
@@ -986,14 +1073,12 @@ section {
 					 		.main-gallery-sp-2 {
 					 			margin-right: 2px;
 					 			object-fit: contain;
-								font-family: FbReforma;
 								font-size: 1.8em;
 								font-weight: normal;
 								font-style: normal;
 								font-stretch: normal;
 								line-height: 1;
 								letter-spacing: normal;
-								text-align: right;
 								color: $main-white;
 								margin-bottom: 5px;
 					 		}
@@ -1002,14 +1087,12 @@ section {
 					 			margin: 0;
 					 			margin-right: 2px;
 					 			object-fit: contain;
-								font-family: FbReforma;
 								font-size: 1.4em;
 								font-weight: normal;
 								font-style: normal;
 								font-stretch: normal;
 								line-height: 1.29;
 								letter-spacing: normal;
-								text-align: right;
 								color: $main-white;
 					 		}
 						}
@@ -1018,10 +1101,9 @@ section {
 
 				.swiper-pagination {
 					position: absolute;
-					right: 29px;
+					right: 26px;
 					bottom: 28px;
 					width: fit-content;
-					direction: ltr;
 
 					@media (min-width: $screen-xl-min) { 
 						right: 50px;
@@ -1078,8 +1160,6 @@ section {
 
 				.topSecP-container {
 
-					max-width: 241px;
-					margin: 0 23px 56px;
 
 					@media (min-width: $screen-md-min) {
 						margin: 0 49px 87px;
@@ -1087,7 +1167,7 @@ section {
 					}
 
 					@media (min-width: $screen-xl-min) {
-  						background-color: rgba(0, 0, 0, 0.4);
+  						background-color: $background-p-img;
   						height: 161px;
   						max-width: 100%;
   						width: 100%;
@@ -1095,22 +1175,23 @@ section {
 					}
 
 					.topSecP-wrapper {
+						background-color: $background-p-img; 
+						height: 161px;
+						padding-right: 20px;
+						padding-top: 19px;
 
 						@media (min-width: $screen-xl-min) {
-							margin: 18px 48px 5px;
-							max-width: 370px;
+							padding: 18px 48px 0px;
 						}
 
 						.topSecP-1 {
 							object-fit: contain;
-							font-family: FbReforma;
 							font-size: 2em;
 							font-weight: 500;
 							font-style: normal;
 							font-stretch: normal;
 							line-height: 0.9;
 							letter-spacing: normal;
-							text-align: right;
 							color: $main-white;
 							margin-bottom: 12px;
 
@@ -1118,6 +1199,7 @@ section {
 								object-fit: contain;
 								font-size: 3em;
 								line-height: 0.93;
+								max-width: 340px;
 							}
 
 							
@@ -1125,14 +1207,12 @@ section {
 
 						.topSecP-2 {
 							object-fit: contain;
-							font-family: FbReforma;
 							font-size: 1.8em;
 							font-weight: normal;
 							font-style: normal;
 							font-stretch: normal;
 							line-height: 1;
 							letter-spacing: normal;
-							text-align: right;
 							color: $main-white;
 							margin-bottom: 5px;
 							margin-right: 2px;
@@ -1140,14 +1220,12 @@ section {
 
 						.topSecP-3 {
 							object-fit: contain;
-							font-family: FbReforma;
 							font-size: 1.4em;
 							font-weight: normal;
 							font-style: normal;
 							font-stretch: normal;
 							line-height: 1.29;
 							letter-spacing: normal;
-							text-align: right;
 							color: $main-white;
 							margin: 0;
 							margin-right: 2px;
@@ -1171,6 +1249,10 @@ section {
 			margin: 20px 0;
 		}
 
+		a {
+			text-decoration: none;
+		}
+
 		.sign-up-wrapper {
 			width: 100%;
 
@@ -1184,6 +1266,7 @@ section {
 				background-image: url("img/sign-up.png");
 				background-repeat: no-repeat;
 				background-size: cover;
+				height: 212px;
 		
 				@media (min-width: $screen-md-min) {
 					margin:  0 0 20px 0;
@@ -1192,11 +1275,15 @@ section {
 				@media (min-width: $screen-xl-min) {
 					padding: 0;
 					margin: 0 0 0 10px;
+					height: fit-content;
+				}
+
+				a {
+					width: 100%;
 				}
 
 				.sign-up {
 					width: 100%;
-					height: 212px;
 
 					@media (min-width: $screen-md-min) {
 						height: 280px;
@@ -1207,8 +1294,9 @@ section {
 					}
 
 					.sign-up-p-sec {
-
-						margin: 45px 23px 20px;
+						height: 161px;
+						width: 100%;
+						background-color: $background-p-img;
 
 						@media (min-width: $screen-md-min) {
 							margin: 76px 84px 0;
@@ -1217,11 +1305,13 @@ section {
 						@media (min-width: $screen-xl-min) {
 							margin: 0;
 							height: 118px;
-							background-color: rgba(0, 0, 0, 0.4);
+							background-color: $background-p-img;
 							width: 100%;
 						}
 
 						.sign-up-p-wrapper {
+							padding-right: 22px;
+							padding-top: 8px;
 
 							@media (min-width: $screen-xl-min) {
 								height: 100%;
@@ -1230,13 +1320,12 @@ section {
 
 							.sign-up-p-1 {
 								object-fit: contain;
-								font-size: 2.4em;
+								font-size: 2em;
 								font-weight: 500;
 								font-style: normal;
 								font-stretch: normal;
-								line-height: 1.67;
+								line-height: 2;
 								letter-spacing: normal;
-								text-align: right;
 								color: $main-white;
 								margin-bottom: 0;
 
@@ -1263,9 +1352,9 @@ section {
 								font-stretch: normal;
 								line-height: 0.89;
 								letter-spacing: normal;
-								text-align: right;
 								color: $main-white;
 								margin-bottom: 18px;
+								max-width: 270px;
 
 								@media (min-width: $screen-xl-min) {
 									margin-bottom: 0;
@@ -1274,13 +1363,9 @@ section {
 							}
 
 							.sign-up-button {
-								width: 107px;
-								height: 40px;
 								object-fit: contain;
 								border-radius: 3px;
 								background-color: #f8a12e;
-								box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
-								border: solid 1px #f3cd9b;
 								font-size: 2em;
 								font-weight: 500;
 								font-style: normal;
@@ -1288,10 +1373,14 @@ section {
 								line-height: 0.8;
 								letter-spacing: normal;
 								color: $main-white;
+								color: #d57b07;
+								background-color: transparent;
+								border: 0;
+								padding: 0;
+								margin: 0;
+								text-align: right;
 
 								@media (min-width: $screen-md-min) {
-									width: 150px;
-									height: 56px;
 									margin-bottom: 23px;
 									font-size: 4em;
 									line-height: 0.4;
@@ -1303,7 +1392,6 @@ section {
 									font-size: 2em;
 									font-weight: 500;
 									line-height: 2;
-									text-align: right;
 									color: #d57b07;
 									background-color: transparent;
 									border: 0;
@@ -1338,7 +1426,6 @@ section {
 					width: 100%;
 					height: 100%;
 					margin: 0;
-					padding: 45px 23px 27px;
 
 					@media (min-width: $screen-md-min) {
 						height: 280px;
@@ -1351,12 +1438,16 @@ section {
 
 
 					.second-img-p-wrapper {
-						max-width: 355px;
+						height: 161px;
+					    width: 100%;
+					    background-color: rgba(0, 0, 0, 0.4);
+					    padding-right: 25px;
+						padding-top: 9px;
 
 						@media (min-width: $screen-xl-min) {
 							margin: 0;
 							height: 118px;
-							background-color: rgba(0, 0, 0, 0.4);
+							background-color: $background-p-img;
 							max-width: 100%;
 							width: 100%;
 							padding: 3px 30px 10px;
@@ -1364,13 +1455,13 @@ section {
 
 						.second-img-p-1 {
 							object-fit: contain;
-							font-size: 2.4em;
+							font-size: 2em;
 							font-weight: 500;
 							font-style: normal;
 							font-stretch: normal;
-							line-height: 1.67;
+							line-height: 2;
 							letter-spacing: normal;
-							text-align: right;
+							
 							color: $main-white;	
 							margin: 0;
 
@@ -1384,7 +1475,8 @@ section {
 							font-stretch: normal;
 							line-height: 0.89;
 							letter-spacing: normal;
-							text-align: right;
+							max-width: 270px;
+							
 							color: $main-white;
 							margin-bottom: 0;
 
@@ -1415,7 +1507,6 @@ section {
 				.third-img-wrapper  {					
 					width: 100%;					
 					height: 212px;
-					padding: 45px 23px 27px;
 
 					@media (min-width: $screen-md-min) {
 						height: 280px;
@@ -1427,13 +1518,17 @@ section {
 					}
 
 					.third-img-p-wrapper {
-						max-width: 355px;
+						height: 161px;
+					    width: 100%;
+					    background-color: rgba(0, 0, 0, 0.4);
+					    padding-right: 22px;
+						padding-top: 9px;
 
 						@media (min-width: $screen-xl-min) {
 							height: 100%;
 							margin: 0;
 							height: 118px;
-							background-color: rgba(0, 0, 0, 0.4);
+							background-color: $background-p-img;
 							max-width: 100%;
 							width: 100%;
 							padding: 3px 30px 10px;
@@ -1441,13 +1536,13 @@ section {
 
 						.third-img-p-1 {
 							object-fit: contain;
-							font-size: 2.4em;
+							font-size: 2em;
 							font-weight: 500;
 							font-style: normal;
 							font-stretch: normal;
-							line-height: 1.67;
+							line-height: 2;
 							letter-spacing: normal;
-							text-align: right;
+							
 							color: $main-white;	
 							margin-bottom: 0;
 						}
@@ -1460,7 +1555,7 @@ section {
 							font-stretch: normal;
 							line-height: 0.89;
 							letter-spacing: normal;
-							text-align: right;
+							max-width: 270px;
 							color: $main-white;
 							margin-bottom: 0;
 							@media (min-width: $screen-xl-min) {
@@ -1487,7 +1582,7 @@ section {
 			font-stretch: normal;
 			line-height: 1.25;
 			letter-spacing: normal;
-			text-align: right;
+			
 			color: #666666;
 
 			@media (min-width: $screen-md-min) {
@@ -1514,16 +1609,20 @@ section {
 			margin-top: 20px;
 		}
 
+		a {
+			text-decoration: none;
+		}
+
 		.p-head-1, .p-head-2, .p-head-3 {
 			object-fit: contain;
-			font-family: FbReforma;
+			
 			font-size: 2em;
 			font-weight: 500;
 			font-style: normal;
 			font-stretch: normal;
 			line-height: 1.2;
 			letter-spacing: normal;
-			text-align: right;
+			
 			color: #0477af;
 			margin: 8px 0 2px;
 
@@ -1534,14 +1633,13 @@ section {
 
 		.bottom-sec-p-1, .bottom-sec-p-2, .bottom-sec-p-3 {
 			object-fit: contain;
-			font-family: FbReforma;
 			font-size: 1.6em;
 			font-weight: normal;
 			font-style: normal;
 			font-stretch: normal;
 			line-height: 1.13;
 			letter-spacing: normal;
-			text-align: right;
+			
 			color: #595959;
 			margin: 0 0 20px;
 		}
@@ -1623,7 +1721,7 @@ section {
 footer {
 
 
-	.LogoMerkavaWarpper {
+	.logo-merkava-warpper {
 		margin: 30px 0;
 
 		@media (min-width: $screen-md-min) {
@@ -1637,9 +1735,9 @@ footer {
 		}
 	}
 
-	.footerNavWrapper {
+	.footer-nav-wrapper {
 
-		max-width: 225px;
+		max-width: 285px;
 		margin-bottom: 73px;
 
 		@media (min-width: $screen-md-min) {
@@ -1653,7 +1751,7 @@ footer {
 
 		/* --footer navigation-- */
 
-		.footerNav {
+		.footer-nav {
 			margin: 0 0 0 8px;
 			padding: 0;
 
@@ -1663,7 +1761,6 @@ footer {
 
 				li {
 					object-fit: contain;
-					font-family: FbReforma;
 					font-size: 1.6em;
 					font-weight: normal;
 					font-style: normal;
