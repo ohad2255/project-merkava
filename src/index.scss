@@ -729,7 +729,6 @@ section {
 										font-stretch: normal;
 										line-height: 1.29;
 										letter-spacing: normal;
-										
 										color: $main-white;
 							 		}
 						 		}
@@ -766,7 +765,10 @@ section {
 
     							@media (min-width: $screen-xl-min) {
 									max-width: 100%;
-									margin: 0
+									height: fit-content;
+									margin: 0;
+									padding: 0;
+									background-color: transparent;
 								}
 							}
 
@@ -854,7 +856,10 @@ section {
 
     							@media (min-width: $screen-xl-min) {
 									max-width: 100%;
-									margin: 0
+									height: fit-content;
+									margin: 0;
+									padding: 0;
+									background-color: transparent;
 								}
 							}
 
@@ -943,7 +948,10 @@ section {
 
     							@media (min-width: $screen-xl-min) {
 									max-width: 100%;
-									margin: 0
+									height: fit-content;
+									margin: 0;
+									padding: 0;
+									background-color: transparent;
 								}
 							}
 
@@ -1030,7 +1038,10 @@ section {
 
     							@media (min-width: $screen-xl-min) {
 									max-width: 100%;
-									margin: 0
+									height: fit-content;
+									margin: 0;
+									padding: 0;
+									background-color: transparent;
 								}
 							}
 
@@ -1164,15 +1175,13 @@ section {
 					}
 
 					.topSecP-wrapper {
-
 						background-color: $background-p-img; 
 						height: 161px;
 						padding-right: 20px;
 						padding-top: 19px;
 
 						@media (min-width: $screen-xl-min) {
-							margin: 18px 48px 5px;
-							max-width: 370px;
+							padding: 18px 48px 0px;
 						}
 
 						.topSecP-1 {
@@ -1190,6 +1199,7 @@ section {
 								object-fit: contain;
 								font-size: 3em;
 								line-height: 0.93;
+								max-width: 340px;
 							}
 
 							
