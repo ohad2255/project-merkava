@@ -6,7 +6,9 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: {
-    index: ["./src/index.scss", "./src/index.js"]
+    index: ["./src/index.scss", "./src/index.js"],
+    home: ["./src/home/home.scss", "./src/home/home.js"],
+    about: ["./src/about/about.scss", "./src/about/about.js"],
   },
   output: {
     filename: "[name].min.js",
@@ -40,7 +42,7 @@ module.exports = {
 
       },
       {
-        test: /\.(png|svg|woff|woff2)(\?.*)?$/,
+        test: /\.(otf|ttf|png|svg|woff|woff2)(\?.*)?$/,
         loader: "url-loader",
         options: {
           limit: 10000,
@@ -53,7 +55,17 @@ module.exports = {
     new CopyWebpackPlugin([{ from: "src/img", to: "img" }]),
     new ExtractTextPlugin("[name].css"),
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "src/index.html"),
+      template: path.resolve(__dirname, "src/index.html")
+    }),
+    new HtmlWebpackPlugin({
+      chunks: ['home'],
+      filename: path.resolve(__dirname, "dist/home/index.html"),
+      template: path.resolve(__dirname, "src/home/index.html")
+    }),
+    new HtmlWebpackPlugin({
+        chunks: ['about'],
+        filename: path.resolve(__dirname, "dist/about/index.html"),
+        template: path.resolve(__dirname, "src/about/about.html")
     }),
     new UglifyJsPlugin({
       sourceMap: true,
