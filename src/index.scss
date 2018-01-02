@@ -516,10 +516,9 @@ section {
   	border-bottom: solid 1px #e0e0e0;
 
 	@media (min-width: $screen-lg-min) {
-		max-width: 1260px;
+		max-width: 1280px;
 		margin: 20px auto 35px;
 		padding-bottom: 71px;
-		//padding: 0 18px;
 	}
 
 	.top-sec-wrapper {
@@ -527,6 +526,7 @@ section {
 		@media (min-width: $screen-lg-min) {
 			padding: 0;
 			height: 340px;
+			margin: 0 20px;
 		}
 
 		a {
@@ -1043,7 +1043,7 @@ section {
 					height: 100%;
 				}
 
-				.topSecP-container {
+				.top-sec-p-container {
 
 					@media (min-width: $screen-lg-min) {
   						background-color: $background-p-img;
@@ -1053,7 +1053,7 @@ section {
   						margin: 0;
 					}
 
-					.topSecP-wrapper {
+					.top-sec-p-wrapper {
 						background-color: $background-p-img; 
 						height: 161px;
 						padding-right: 20px;
@@ -1063,7 +1063,7 @@ section {
 							padding: 18px 48px 0px;
 						}
 
-						.topSecP-1 {
+						.top-sec-p-1 {
 							object-fit: contain;
 							font-size: 2em;
 							font-weight: 500;
@@ -1073,8 +1073,9 @@ section {
 							letter-spacing: normal;
 							color: $main-white;
 							margin-bottom: 12px;
+							max-width: 240px;
 
-							@media (min-width: $screen-md-min) {
+							@media (min-width: $screen-lg-min) {
 								object-fit: contain;
 								font-size: 3em;
 								line-height: 0.93;
@@ -1084,7 +1085,7 @@ section {
 							
 						}
 
-						.topSecP-2 {
+						.top-sec-p-2 {
 							object-fit: contain;
 							font-size: 1.8em;
 							font-weight: normal;
@@ -1097,7 +1098,7 @@ section {
 							margin-right: 2px;
 						}
 
-						.topSecP-3 {
+						.top-sec-p-3 {
 							object-fit: contain;
 							font-size: 1.4em;
 							font-weight: normal;
@@ -1116,15 +1117,10 @@ section {
 	}
 
 	.top-sec-bottom-wrapper {
-		// max-width: 1222px;
+		max-width: 1280px;
 
-		@media (min-width: $screen-md-min) {
-			padding: 0;
-			margin-top: 20px;
-		}
-
-		@media (min-width: $screen-xl-min) {
-			padding: 0;
+		@media (min-width: $screen-lg-min) {
+			padding: 0 20px;
 			margin: 20px 0;
 		}
 
@@ -1135,7 +1131,7 @@ section {
 		.sign-up-wrapper {
 			width: 100%;
 
-			@media (min-width: $screen-xl-min) {
+			@media (min-width: $screen-lg-min) {
 
 			}
 
@@ -1146,12 +1142,8 @@ section {
 				background-repeat: no-repeat;
 				background-size: cover;
 				height: 212px;
-		
-				@media (min-width: $screen-md-min) {
-					margin:  0 0 20px 0;
-				}
 
-				@media (min-width: $screen-xl-min) {
+				@media (min-width: $screen-lg-min) {
 					padding: 0;
 					margin: 0 0 0 10px;
 					height: fit-content;
@@ -1164,12 +1156,8 @@ section {
 				.sign-up {
 					width: 100%;
 
-					@media (min-width: $screen-md-min) {
+					@media (min-width: $screen-lg-min) {
 						height: 280px;
-					}
-
-					@media (min-width: $screen-xl-min) {
-						
 					}
 
 					.sign-up-p-sec {
@@ -1177,11 +1165,7 @@ section {
 						width: 100%;
 						background-color: $background-p-img;
 
-						@media (min-width: $screen-md-min) {
-							margin: 76px 84px 0;
-						}
-
-						@media (min-width: $screen-xl-min) {
+						@media (min-width: $screen-lg-min) {
 							margin: 0;
 							height: 118px;
 							background-color: $background-p-img;
@@ -1192,9 +1176,9 @@ section {
 							padding-right: 22px;
 							padding-top: 8px;
 
-							@media (min-width: $screen-xl-min) {
+							@media (min-width: $screen-lg-min) {
 								height: 100%;
-								padding: 2px 30px 0 23px;
+								padding: 3px 30px 0 22px;
 							}
 
 							.sign-up-p-1 {
@@ -1208,18 +1192,10 @@ section {
 								color: $main-white;
 								margin-bottom: 0;
 
-								@media (min-width: $screen-md-min) {
-									margin-bottom: 23px;
-									font-size: 3em;
-									font-weight: 500;
-									line-height: 0.93;
-								}
-
-								@media (min-width: $screen-xl-min) {
+								@media (min-width: $screen-lg-min) {
 									margin-bottom: 0;
-									font-size: 2.4em;
+									font-size: 2em;
 									font-weight: 500;
-									line-height: 1.67;
 								}
 							}
 
@@ -1235,9 +1211,9 @@ section {
 								margin-bottom: 18px;
 								max-width: 270px;
 
-								@media (min-width: $screen-xl-min) {
+								@media (min-width: $screen-lg-min) {
 									margin-bottom: 0;
-									//max-width: 365px;
+									max-width: 100%;
 								}
 							}
 
@@ -1258,25 +1234,24 @@ section {
 								padding: 0;
 								margin: 0;
 								text-align: right;
+								font-family: $main-font;
 
-								@media (min-width: $screen-md-min) {
-									margin-bottom: 23px;
-									font-size: 4em;
-									line-height: 0.4;
-								}
-
-								@media (min-width: $screen-xl-min) {
+								@media (min-width: $screen-lg-min) {
 									width: 69px;
 									height: 40px;
 									font-size: 2em;
 									font-weight: 500;
-									line-height: 2;
+									line-height: 1.2;
 									color: #d57b07;
 									background-color: transparent;
 									border: 0;
 									box-shadow: none;
 									padding: 0;
 									margin: 0;
+								}
+
+								@media (min-width: $screen-xl-min) {
+										
 								}
 							}
 						}
@@ -1291,14 +1266,10 @@ section {
 				background-size: cover;
 				height: 212px;
 
-				@media (min-width: $screen-md-min) {
-					margin: 0 0 20px 0;
-					height: 280px;
-				}
-
-				@media (min-width: $screen-xl-min) {
+				@media (min-width: $screen-lg-min) {
 					padding: 0;
 					margin: 0 10px;
+					height: 280px;
 				}
 
 				.second-img-wrapper {
@@ -1306,13 +1277,9 @@ section {
 					height: 100%;
 					margin: 0;
 
-					@media (min-width: $screen-md-min) {
-						height: 280px;
-						padding: 0 40px 40px 0;
-					}
-
-					@media (min-width: $screen-xl-min) {
+					@media (min-width: $screen-lg-min) {
 						padding:0;
+						height: 280px;
 					}
 
 
@@ -1323,7 +1290,7 @@ section {
 					    padding-right: 25px;
 						padding-top: 9px;
 
-						@media (min-width: $screen-xl-min) {
+						@media (min-width: $screen-lg-min) {
 							margin: 0;
 							height: 118px;
 							background-color: $background-p-img;
@@ -1340,7 +1307,6 @@ section {
 							font-stretch: normal;
 							line-height: 2;
 							letter-spacing: normal;
-							
 							color: $main-white;	
 							margin: 0;
 
@@ -1355,11 +1321,10 @@ section {
 							line-height: 0.89;
 							letter-spacing: normal;
 							max-width: 270px;
-							
 							color: $main-white;
 							margin-bottom: 0;
 
-							@media (min-width: $screen-xl-min) {
+							@media (min-width: $screen-lg-min) {
 								max-width: 305px;
 							}
 						}
@@ -1373,27 +1338,18 @@ section {
 				background-repeat: no-repeat;
 				background-size: cover;
 
-				@media (min-width: $screen-md-min) {
-					margin:0 0 29px 0;
-				}
-
-				@media (min-width: $screen-xl-min) {
+				@media (min-width: $screen-lg-min) {
 					padding: 0;
-					margin-right: 10px;
-					margin-bottom: 0;
+					margin:0 10px 0 0;
 				}
 
 				.third-img-wrapper  {					
 					width: 100%;					
 					height: 212px;
 
-					@media (min-width: $screen-md-min) {
-						height: 280px;
-						padding: 0 40px 40px 0;
-					}
-
-					@media (min-width: $screen-xl-min) {
+					@media (min-width: $screen-lg-min) {
 						padding: 0;
+						height: 280px;
 					}
 
 					.third-img-p-wrapper {
@@ -1403,7 +1359,7 @@ section {
 					    padding-right: 22px;
 						padding-top: 9px;
 
-						@media (min-width: $screen-xl-min) {
+						@media (min-width: $screen-lg-min) {
 							height: 100%;
 							margin: 0;
 							height: 118px;
@@ -1421,7 +1377,6 @@ section {
 							font-stretch: normal;
 							line-height: 2;
 							letter-spacing: normal;
-							
 							color: $main-white;	
 							margin-bottom: 0;
 						}
@@ -1437,7 +1392,8 @@ section {
 							max-width: 270px;
 							color: $main-white;
 							margin-bottom: 0;
-							@media (min-width: $screen-xl-min) {
+
+							@media (min-width: $screen-lg-min) {
 								max-width: 305px;
 							}
 						}
@@ -1450,6 +1406,11 @@ section {
 	.bottom-sec-p {
 		border-top: solid 1px #dddddd;
 		border-bottom: solid 1px #dddddd;
+		max-width: 1280px;
+
+		@media (min-width: $screen-lg-min) {
+			margin: 0 20px;
+		}
 
 		p {
 			padding: 24px 0;
@@ -1461,31 +1422,24 @@ section {
 			font-stretch: normal;
 			line-height: 1.25;
 			letter-spacing: normal;
-			
 			color: #666666;
 
-			@media (min-width: $screen-md-min) {
-				font-size: 1.8em;
-				line-height: 1.33;
-				color: #333333;
-			}
-
-			@media (min-width: $screen-xl-min) {
+			@media (min-width: $screen-lg-min) {
 				color: #4e5665;
 				text-align: center;
+				font-size: 1.8em;
+				line-height: 1.33;
 			}
 		}
 	}
 
 	.bottom-sec {
 		margin-top: 29px;
+		max-width: 1280px;
 
-		// @media (min-width: $screen-md-min) {
-		// 	margin-top: 29px;
-		// }
-
-		@media (min-width: $screen-xl-min) {
+		@media (min-width: $screen-lg-min) {
 			margin-top: 20px;
+			padding: 0 20px;
 		}
 
 		a {
@@ -1494,18 +1448,16 @@ section {
 
 		.p-head-1, .p-head-2, .p-head-3 {
 			object-fit: contain;
-			
 			font-size: 2em;
 			font-weight: 500;
 			font-style: normal;
 			font-stretch: normal;
 			line-height: 1.2;
 			letter-spacing: normal;
-			
 			color: #0477af;
 			margin: 8px 0 2px;
 
-			@media (min-width: $screen-md-min) {
+			@media (min-width: $screen-lg-min) {
 				margin: 11px 0 4px;
 			}
 		}
@@ -1518,14 +1470,13 @@ section {
 			font-stretch: normal;
 			line-height: 1.13;
 			letter-spacing: normal;
-			
 			color: #595959;
 			margin: 0 0 20px;
 		}
 
 		.bottom-sec-wrapper-1 {
 
-			@media (min-width: $screen-xl-min) {
+			@media (min-width: $screen-lg-min) {
 				margin-left: 10px;
 			}
 
@@ -1536,7 +1487,7 @@ section {
 				background-size: cover;
 				height: 212px;
 
-				@media (min-width: $screen-md-min) {
+				@media (min-width: $screen-lg-min) {
 					height: 280px;
 				}
 
@@ -1550,7 +1501,7 @@ section {
 
 		.bottom-sec-wrapper-2 {
 
-			@media (min-width: $screen-xl-min) {
+			@media (min-width: $screen-lg-min) {
 				margin: 0 10px;
 			}
 
@@ -1561,7 +1512,7 @@ section {
 				background-size: cover;
 				height: 212px;
 
-				@media (min-width: $screen-md-min) {
+				@media (min-width: $screen-lg-min) {
 					height: 280px;
 				}
 
@@ -1572,7 +1523,7 @@ section {
 		}
 		.bottom-sec-wrapper-3 {
 
-			@media (min-width: $screen-xl-min) {
+			@media (min-width: $screen-lg-min) {
 				margin-right: 10px;
 			}
 
@@ -1583,7 +1534,7 @@ section {
 				background-size: cover;
 				height: 212px;
 
-				@media (min-width: $screen-md-min) {
+				@media (min-width: $screen-lg-min) {
 					height: 280px;
 				}
 
