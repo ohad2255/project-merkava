@@ -5,7 +5,7 @@ new Swiper('.swiper-container', {
 	speed: 1000,
 
 	pagination: {
-		el: '.swiper-pagination',
+		el: '.main-pagination.swiper-pagination',
 	},
 })
 
