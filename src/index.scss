@@ -491,6 +491,7 @@ header {
 			padding: 0;
 
 			li {
+				
 				#navLink {
       				font-size: 2em;
 					font-weight: normal;
@@ -502,6 +503,55 @@ header {
 					text-decoration: none;
 					padding: 0;
 					font-family: $main-font;
+				}
+			}
+
+			.dropdown {
+
+				.dropdown-menu {
+				background-color: $header-blue;
+
+					.nav-dropdown-item-1 {
+						font-size: 2em;
+						font-weight: normal;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: 0.8;
+						letter-spacing: normal;
+						color: $main-white;
+						text-align: center;
+						border-bottom: solid 1px #1c6897;
+						height: 100%;
+						height: 50px;
+					}
+
+					.nav-dropdown-item-1:hover {
+						background-color: $main-white;
+						color: $header-blue;	
+					}
+				}
+
+				.nav-dropdown-item-2 {
+						font-size: 2em;
+						font-weight: normal;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: 0.8;
+						letter-spacing: normal;
+						color: $main-white;
+						text-align: center;
+						border-bottom: solid 1px #1c6897;
+						height: 100%;
+						height: 50px;
+					}
+
+					.nav-dropdown-item-2:hover {
+						background-color: $main-white;
+						color: $header-blue;	
+					}
+
+				.nav-toggle::after {
+					display: none;
 				}
 			}
 		}
