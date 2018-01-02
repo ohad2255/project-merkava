@@ -1,6 +1,7 @@
 @import "./styles/color-palette.scss";
 
 $screen-md-min: 768px;
+$screen-lg-min: 992px;
 $screen-xl-min: 1200px;
 $main-font: FbReforma;
 
@@ -64,11 +65,7 @@ header {
 	position: relative;
 	font-family: $main-font;
 
-	@media (min-width: $screen-md-min) {
-		padding-bottom: 22px;
-	}
-
-	@media (min-width: $screen-xl-min) {
+	@media (min-width: $screen-lg-min) {
 		padding-bottom: 0;
 	}
 
@@ -86,11 +83,8 @@ header {
 	.main-container {
 		margin-bottom: 43px;
 
-		@media (min-width: $screen-md-min) {
-			margin-bottom: 22px;
-		}
 
-		@media (min-width: $screen-xl-min) {
+		@media (min-width: $screen-lg-min) {
 			margin: 0 auto 22px;
 			padding: 0 20px;
 		}
@@ -98,11 +92,7 @@ header {
 		.top-sec {
 			margin: 19px 0;
 
-			@media (min-width: $screen-md-min) {
-				margin: 17px 11px 0 0;
-			}
-
-			@media (min-width: $screen-xl-min) {
+			@media (min-width: $screen-lg-min) {
 				margin: 22px 0 0 0;
 			}
 
@@ -111,14 +101,10 @@ header {
 
 				.logo {
 
-					@media (min-width: $screen-md-min) {
-						
-					}		
-
 					img {
 						height: 44px;
 
-						@media (min-width: $screen-xl-min) {
+						@media (min-width: $screen-lg-min) {
 							height: 32px;
 						}	
 					}
@@ -133,16 +119,9 @@ header {
 							font-stretch: normal;
 							line-height: 1.33;
 							letter-spacing: 1.3px;
-							
 							color: $main-white;
 
-							@media (min-width: $screen-md-min) {
-								font-size: 1.4em;
-								line-height: 1.14;
-								letter-spacing: 1.5px;
-							}
-
-							@media (min-width: $screen-xl-min) {
+							@media (min-width: $screen-lg-min) {
 								font-size: 1.6em;
 								line-height: 1;
 								letter-spacing: 1.5px;
@@ -160,13 +139,7 @@ header {
 							letter-spacing: 1.3px;
 							color: $main-white;
 
-							@media (min-width: $screen-md-min) {
-								font-size: 1.2em;
-								line-height: 1.33;
-								letter-spacing: 1.5px;
-							}
-
-							@media (min-width: $screen-xl-min) {
+							@media (min-width: $screen-lg-min) {
 								font-size: 1.4em;
 								line-height: 1.14;
 								letter-spacing: 1.5px;
@@ -182,9 +155,6 @@ header {
 					margin: 0;
 					border: 0;
 					background-color: transparent;
-					@media (min-width: $screen-md-min) {
-						margin-right: 4px;
-					}
 				}
 
 				.dropdown-menu {
@@ -219,12 +189,8 @@ header {
 	.middle-sec {
 		padding: 18px 0 0;
 
-		@media (min-width: $screen-md-min) {
-			margin-left: 3px;
-			width: 209px;
-		}
 
-		@media (min-width: $screen-xl-min) {
+		@media (min-width: $screen-lg-min) {
 			margin-left: 0;
 			width: fit-content;
 		}
@@ -234,12 +200,7 @@ header {
 			height: fit-content;
 			text-decoration: none;
 
-			@media (min-width: $screen-md-min) {
-				margin: 38px auto 0 5px;
-				order: 1;
-			}
-
-			@media (min-width: $screen-xl-min) {
+			@media (min-width: $screen-lg-min) {
 				margin: 0 0 3px 38px;
 				height: fit-content;
 			}
@@ -273,11 +234,7 @@ header {
 		.middle-sec-container {
 			width: 100%;
 
-			 @media (min-width: $screen-md-min) {
-	
-			 }
-
-			 @media (min-width: $screen-xl-min) {
+			 @media (min-width: $screen-lg-min) {
 				margin: 0;
 			 }
 
@@ -285,7 +242,7 @@ header {
 			.lng-dropdown {
 				width: fit-content;
 
-				@media (min-width: $screen-xl-min) {
+				@media (min-width: $screen-lg-min) {
 					margin-bottom: 4px;
 				}
 
@@ -307,12 +264,7 @@ header {
 					color: $main-white;
 					
 
-					@media (min-width: $screen-md-min) {
-						margin-left: 31px;
-						width: 71px;
-					}
-
-					@media (min-width: $screen-xl-min) {
+					@media (min-width: $screen-lg-min) {
 						width: fit-content;
 						height: fit-content;
 						padding-bottom: 0;
@@ -325,10 +277,6 @@ header {
 					border-right: .25em solid transparent;
 					border-bottom: 0;
 					border-left: .25em solid transparent;
-
-					@media (min-width: $screen-md-min) {
-						margin-left: 31px;
-					}
 
 					@media (min-width: $screen-xl-min) {
 						border: solid $main-white;
@@ -397,7 +345,7 @@ header {
 		height: 60px;
    		width: 100%;
 
-   		@media (min-width: $screen-xl-min) {
+   		@media (min-width: $screen-lg-min) {
 			margin: 42px auto 0;
 		}
 
@@ -421,11 +369,11 @@ header {
 					border: none;
 					border-left: rgba(102,102,102,0.3) solid 1px; 
 					border-radius: 0;
-					padding: 4px 26px 0  20px;
+					padding: 1px 26px 0  20px;
 				    height: 32px;
 				    
 
-					@media (min-width: $screen-xl-min) {
+					@media (min-width: $screen-lg-min) {
 						font-size: 2.4em;
 						line-height: 0.67;
 						padding-top: 0;
@@ -441,7 +389,7 @@ header {
 					border-left: .25em solid transparent;
 					padding-bottom: 2px;
 
-					@media (min-width: $screen-md-min) {
+					@media (min-width: $screen-lg-min) {
 						margin: 0 50px 7px 0;
 						border: solid $header-blue;
 					    border-width: 0 1.5px 1.5px 0;
@@ -501,24 +449,15 @@ header {
 				border: 0;
 				padding-right: 20px;
 				padding-bottom: 5px;
+				padding: 5px 20px;
 				flex: 1;
 				width: 139px;
 
-				@media (min-width: $screen-md-min) {
-					width: 100%;
-				}
-
-				// @media (min-width: $screen-md-min) {
-				// 	object-fit: contain;
-				// 	font-size: 3em;
-				// 	line-height: 0.53;
-				// }
-
-				@media (min-width: $screen-xl-min) {
+				@media (min-width: $screen-lg-min) {
 					object-fit: contain;
 					font-size: 2.4em;
 					line-height: 0.67;
-					padding-bottom: 0;
+					//padding-bottom: 0;
 				}
 			}
 
@@ -529,7 +468,7 @@ header {
 				border: 0;
 				padding: 0 22px;
 
-				@media (min-width: $screen-md-min) {
+				@media (min-width: $screen-lg-min) {
 					padding: 0 22px;
 				}
 
