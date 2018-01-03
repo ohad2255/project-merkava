@@ -217,7 +217,7 @@ header {
         letter-spacing: normal;
         color: $main-white;
         margin-left: 8px;
-        margin-bottom: 1px;
+        margin-bottom: 0;
       }
 
       .Asmall{
@@ -587,7 +587,7 @@ header {
 
       .main-gallery {
         width: 100%;
-        
+        height: 100%;
 
         @media (min-width: $screen-lg-min) { 
           //width: 621px;
@@ -1073,6 +1073,7 @@ header {
 
       .top-sec-left {
         width: 100%;
+        height: 100%;
 
         @media (min-width: $screen-lg-min){
           padding: 0;
