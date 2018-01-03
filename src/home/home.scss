@@ -1,0 +1,1058 @@
+
+@import "../styles/color-palette.scss";
+
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
+$main-font: FbReforma;
+
+
+@font-face {
+  font-family: "FbReforma";
+  src: url("../fonts/FbReforma-Regular.otf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "FbReforma";
+  src: url("../fonts/FbReforma-Medium.otf") format("opentype");
+  font-weight: 500;
+}
+
+.home {
+  section {
+    margin: 37px 20px 52px;
+    padding-bottom: 52px;
+    object-fit: contain;
+    border-bottom: solid 1px #e0e0e0;
+
+    @media (min-width: $screen-lg-min) {
+      max-width: 1280px;
+      margin: 20px auto 38px;
+      padding-bottom: 71px;
+    }
+
+    .top-sec-wrapper {
+
+      @media (min-width: $screen-lg-min) {
+        padding: 0;
+        height: 340px;
+        margin: 0 20px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+          /* --main gallery-- */
+
+      .main-gallery {
+        width: 100%;
+        
+
+        @media (min-width: $screen-lg-min) { 
+          //width: 621px;
+          padding: 0;
+          margin-left: 10px;
+          width: 50%;
+          position: relative;
+        }
+
+        .swiper-container {
+          width: 100%;
+
+          .swiper-wrapper {
+            height: 460px;
+
+            @media (min-width: $screen-lg-min) {
+              height: 100%;
+            }
+
+            .swiper-slide-2-container, .swiper-slide-3-container, .swiper-slide-4-container, .swiper-slide-5-container {
+              height: 100%;
+            }
+
+            .swiper-slide-1 {
+
+               @media (min-width: $screen-lg-min) {
+                  width: 100%;
+              }
+              .main-gallery-wrapper-s-1 {
+                height: 100%;
+                background-image: url("/dist/img/mainimg-gallery.jpg");
+                background-repeat: no-repeat;
+                object-fit: contain;
+                background-size: cover;
+
+                @media (min-width: $screen-lg-min) {
+                  background-image: url("/dist/img/main-gallery.png");
+                }
+                
+
+                .main-gallery-container-p-s-1 {
+
+                    @media (min-width: $screen-lg-min) {
+                      height: 161px;
+                      max-width: 100%;
+                      width: 100%;
+                      margin: 0;
+                  }
+
+                  .main-gallery-wrapper-p-s-1 {
+                    background-color: $background-p-img; 
+                    height: 161px;
+                    padding-right: 20px;
+                    padding-top: 19px;
+
+                    @media (min-width: $screen-lg-min) {
+                      padding: 18px 48px 0px;
+                        height: 170px;
+                    }
+
+                    .main-gallery-sp-1 {
+                      object-fit: contain;
+                      font-size: 2em;
+                      font-weight: 500;
+                      font-style: normal;
+                      font-stretch: normal;
+                      line-height: 0.9;
+                      letter-spacing: normal;
+                      max-width: 241px;
+                      color: $main-white;
+                      margin-bottom: 12px;
+
+                      @media (min-width: $screen-lg-min) {
+                        width: 100%;
+                        max-width: 400px;
+                        font-size: 3em;
+                        line-height: 0.93;
+                        color: $main-white;
+                      }
+                    }
+
+                    .main-gallery-sp-2 {
+                      margin-right: 2px;
+                      object-fit: contain;
+                      font-size: 1.8em;
+                      font-weight: normal;
+                      font-style: normal;
+                      font-stretch: normal;
+                      line-height: 1;
+                      letter-spacing: normal;
+                      color: $main-white;
+                      margin-bottom: 5px;
+                    }
+
+                    .main-gallery-sp-3 {
+                      margin: 0;
+                      margin-right: 2px;
+                      object-fit: contain;
+                      font-size: 1.4em;
+                      font-weight: normal;
+                      font-style: normal;
+                      font-stretch: normal;
+                      line-height: 1.29;
+                      letter-spacing: normal;
+                      color: $main-white;
+                    }
+                  }
+                }
+              }
+            }
+
+            .swiper-slide-2 {
+              background-image: url("/dist/img/mainimg-gallery-copy.png");
+              background-repeat: no-repeat;
+              object-fit: contain;
+              background-size: cover;
+
+              @media (min-width: $screen-lg-min) {
+                background-image: url("/dist/img/banner-big.png");
+              }
+
+              .main-gallery-wrapper-s-2 {
+                height: 100%;
+
+
+                @media (min-width: $screen-lg-min) {
+                  //max-width: 370px;
+                  padding: 18px 48px 0px;
+                    height: 161px;
+                    background-color: $background-p-img; 
+                }
+
+                .main-gallery-container-p-s-2 {
+                  background-color: $background-p-img; 
+                  height: 161px;
+                  padding-right: 20px;
+                  padding-top: 19px;
+
+                    @media (min-width: $screen-lg-min) {
+                    max-width: 100%;
+                    height: fit-content;
+                    margin: 0;
+                    padding: 0;
+                    background-color: transparent;
+                  }
+                }
+
+              
+                .main-gallery-sp-1 {
+                  object-fit: contain;
+                  font-size: 2em;
+                  font-weight: 500;
+                  font-style: normal;
+                  font-stretch: normal;
+                  line-height: 0.9;
+                  letter-spacing: normal;
+                  max-width: 241px;
+                  color: $main-white;
+                  margin-bottom: 12px;
+
+                  @media (min-width: $screen-lg-min) {
+                    width: 100%;
+                    max-width: 400px;
+                    font-size: 3em;
+                    line-height: 0.93;
+                    color: $main-white;
+                  }
+                }
+
+                .main-gallery-sp-2 {
+                  margin-right: 2px;
+                  object-fit: contain;
+                  font-size: 1.8em;
+                  font-weight: normal;
+                  font-style: normal;
+                  font-stretch: normal;
+                  line-height: 1;
+                  letter-spacing: normal;
+                  color: $main-white;
+                  margin-bottom: 5px;
+                }
+
+                .main-gallery-sp-3 {
+                  margin: 0;
+                  margin-right: 2px;
+                  object-fit: contain;
+                  font-size: 1.4em;
+                  font-weight: normal;
+                  font-style: normal;
+                  font-stretch: normal;
+                  line-height: 1.29;
+                  letter-spacing: normal;
+                  color: $main-white;
+                }
+              }
+            }   
+
+            .swiper-slide-3 {
+              background-image: url("/dist/img/mainimg-gallery-copy.png");
+              background-repeat: no-repeat;
+              object-fit: contain;
+              background-size: cover;
+
+              @media (min-width: $screen-lg-min) {
+                background-image: url("/dist/img/main-gallery.png");
+              }
+
+              .main-gallery-wrapper-s-3 {
+                height: 100%;
+
+
+                @media (min-width: $screen-lg-min) {
+                  //max-width: 370px;
+                  padding: 18px 48px 0px;
+                    height: 161px;
+                    background-color: $background-p-img; 
+                }
+
+                .main-gallery-container-p-s-3 {
+                  background-color: $background-p-img; 
+                  height: 161px;
+                  padding-right: 20px;
+                  padding-top: 19px;
+
+                    @media (min-width: $screen-lg-min) {
+                    max-width: 100%;
+                    height: fit-content;
+                    margin: 0;
+                    padding: 0;
+                    background-color: transparent;
+                  }
+                }
+
+              
+                .main-gallery-sp-1 {
+                  object-fit: contain;
+                  font-size: 2em;
+                  font-weight: 500;
+                  font-style: normal;
+                  font-stretch: normal;
+                  line-height: 0.9;
+                  letter-spacing: normal;
+                  max-width: 241px;
+                  color: $main-white;
+                  margin-bottom: 12px;
+
+                  @media (min-width: $screen-lg-min) {
+                    width: 100%;
+                    max-width: 400px;
+                    font-size: 3em;
+                    line-height: 0.93;
+                    color: $main-white;
+                  }
+                }
+
+                .main-gallery-sp-2 {
+                  margin-right: 2px;
+                  object-fit: contain;
+                  font-size: 1.8em;
+                  font-weight: normal;
+                  font-style: normal;
+                  font-stretch: normal;
+                  line-height: 1;
+                  letter-spacing: normal;
+                  color: $main-white;
+                  margin-bottom: 5px;
+                }
+
+                .main-gallery-sp-3 {
+                  margin: 0;
+                  margin-right: 2px;
+                  object-fit: contain;
+                  font-size: 1.4em;
+                  font-weight: normal;
+                  font-style: normal;
+                  font-stretch: normal;
+                  line-height: 1.29;
+                  letter-spacing: normal;
+                  color: $main-white;
+                }
+              }
+            }
+
+            .swiper-slide-4 {
+              background-image: url("/dist/img/mainimg-gallery-copy.png");
+              background-repeat: no-repeat;
+              object-fit: contain;
+              background-size: cover;
+
+              @media (min-width: $screen-lg-min) {
+                background-image: url("/dist/img/main-gallery.png");
+              }
+
+              .main-gallery-wrapper-s-4 {
+                height: 100%;
+
+
+                @media (min-width: $screen-lg-min) {
+                  //max-width: 370px;
+                  padding: 18px 48px 0px;
+                    height: 161px;
+                    background-color: $background-p-img; 
+                }
+
+                .main-gallery-container-p-s-4 {
+                  background-color: $background-p-img; 
+                  height: 161px;
+                  padding-right: 20px;
+                  padding-top: 19px;
+
+
+                    @media (min-width: $screen-lg-min) {
+                    max-width: 100%;
+                    height: fit-content;
+                    margin: 0;
+                    padding: 0;
+                    background-color: transparent;
+                  }
+                }
+
+              
+                .main-gallery-sp-1 {
+                  object-fit: contain;
+                  font-size: 2em;
+                  font-weight: 500;
+                  font-style: normal;
+                  font-stretch: normal;
+                  line-height: 0.9;
+                  letter-spacing: normal;
+                  max-width: 241px;
+                  color: $main-white;
+                  margin-bottom: 12px;
+
+                  @media (min-width: $screen-lg-min) {
+                    width: 100%;
+                    max-width: 400px;
+                    font-size: 3em;
+                    line-height: 0.93;
+                    color: $main-white;
+                  }
+                }
+
+                .main-gallery-sp-2 {
+                  margin-right: 2px;
+                  object-fit: contain;
+                  font-size: 1.8em;
+                  font-weight: normal;
+                  font-style: normal;
+                  font-stretch: normal;
+                  line-height: 1;
+                  letter-spacing: normal;
+                  color: $main-white;
+                  margin-bottom: 5px;
+                }
+
+                .main-gallery-sp-3 {
+                  margin: 0;
+                  margin-right: 2px;                
+                  object-fit: contain;
+                  font-size: 1.4em;
+                  font-weight: normal;
+                  font-style: normal;
+                  font-stretch: normal;
+                  line-height: 1.29;
+                  letter-spacing: normal;
+                  color: $main-white;
+                }
+              }
+            }
+
+            .swiper-slide-5 {
+              background-image: url("/dist/img/mainimg-gallery-copy.png");
+              background-repeat: no-repeat;
+              object-fit: contain;
+              background-size: cover;
+
+              @media (min-width: $screen-lg-min) {
+                background-image: url("/dist/img/main-gallery.png");
+              }
+
+              .main-gallery-wrapper-s-5 {
+                height: 100%;
+
+                @media (min-width: $screen-lg-min) {
+                  //max-width: 370px;
+                  padding: 18px 48px 0px;
+                    height: 161px;
+                    background-color: $background-p-img; 
+                }
+
+                .main-gallery-container-p-s-5 {
+                  background-color: $background-p-img; 
+                  height: 161px;
+                  padding-right: 20px;
+                  padding-top: 19px;
+
+                    @media (min-width: $screen-lg-min) {
+                    max-width: 100%;
+                    height: fit-content;
+                    margin: 0;
+                    padding: 0;
+                    background-color: transparent;
+                  }
+                }
+
+              
+                .main-gallery-sp-1 {
+                  object-fit: contain;
+                  font-size: 2em;
+                  font-weight: 500;
+                  font-style: normal;
+                  font-stretch: normal;
+                  line-height: 0.9;
+                  letter-spacing: normal;
+                  max-width: 241px;
+                  color: $main-white;
+                  margin-bottom: 12px;
+
+                  @media (min-width: $screen-lg-min) {
+                    width: 100%;
+                    max-width: 400px;
+                    font-size: 3em;
+                    line-height: 0.93;
+                    color: $main-white;
+                  }
+                }
+
+                .main-gallery-sp-2 {
+                  margin-right: 2px;
+                  object-fit: contain;
+                  font-size: 1.8em;
+                  font-weight: normal;
+                  font-style: normal;
+                  font-stretch: normal;
+                  line-height: 1;
+                  letter-spacing: normal;
+                  color: $main-white;
+                  margin-bottom: 5px;
+                }
+
+                .main-gallery-sp-3 {
+                  margin: 0;
+                  margin-right: 2px;
+                  object-fit: contain;
+                  font-size: 1.4em;
+                  font-weight: normal;
+                  font-style: normal;
+                  font-stretch: normal;
+                  line-height: 1.29;
+                  letter-spacing: normal;
+                  color: $main-white;
+                }
+              }
+            }
+          }
+
+          .swiper-pagination {
+            position: absolute;
+            right: 26px;
+            bottom: 28px;
+            width: fit-content;
+
+            @media (min-width: $screen-lg-min) { 
+              right: 50px;
+              bottom: 17px;
+            }
+
+            .swiper-pagination-bullet {
+              width: 10px;
+              height: 10px;
+              object-fit: contain;
+              background-color: $swiper-bullet;
+              margin: 0;
+              margin-left: 3px;
+            }
+
+            .swiper-pagination-bullet-active {
+              background-color: $main-white;
+            }
+          } 
+        }
+      }
+
+      .top-sec-left {
+        width: 100%;
+
+        @media (min-width: $screen-lg-min){
+          padding: 0;
+          margin-right: 10px;
+          width: 50%;
+        }
+
+        .top-sec-left-img {
+          background-image: url("/dist/img/banner-big.png");
+          background-repeat: no-repeat;
+          width: 100%;
+          height: 460px;
+          margin: 31px 0 0;
+          background-size: cover;
+
+          @media (min-width: $screen-lg-min) {
+            margin: 0;
+            height: 100%;
+          }
+
+          .top-sec-p-container {
+
+            @media (min-width: $screen-lg-min) {
+                background-color: $background-p-img;
+                height: 161px;
+                max-width: 100%;
+                width: 100%;
+                margin: 0;
+            }
+
+            .top-sec-p-wrapper {
+              background-color: $background-p-img; 
+              height: 161px;
+              padding-right: 20px;
+              padding-top: 19px;
+
+              @media (min-width: $screen-lg-min) {
+                padding: 18px 48px 0px;
+              }
+
+              .top-sec-p-1 {
+                object-fit: contain;
+                font-size: 2em;
+                font-weight: 500;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 0.9;
+                letter-spacing: normal;
+                color: $main-white;
+                margin-bottom: 12px;
+                max-width: 240px;
+
+                @media (min-width: $screen-lg-min) {
+                  object-fit: contain;
+                  font-size: 3em;
+                  line-height: 0.93;
+                  max-width: 340px;
+                }
+
+                
+              }
+
+              .top-sec-p-2 {
+                object-fit: contain;
+                font-size: 1.8em;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1;
+                letter-spacing: normal;
+                color: $main-white;
+                margin-bottom: 5px;
+                margin-right: 2px;
+              }
+
+              .top-sec-p-3 {
+                object-fit: contain;
+                font-size: 1.4em;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.29;
+                letter-spacing: normal;
+                color: $main-white;
+                margin: 0;
+                margin-right: 2px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .top-sec-bottom-wrapper {
+      max-width: 1280px;
+
+      @media (min-width: $screen-lg-min) {
+        padding: 0 20px;
+        margin: 20px 0;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .sign-up-wrapper {
+        width: 100%;
+
+        @media (min-width: $screen-lg-min) {
+
+        }
+
+        .sign-up-container {
+          width: 100%;
+          margin: 29px 0;
+          background-image: url("/dist/img/sign-up.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 212px;
+
+          @media (min-width: $screen-lg-min) {
+            padding: 0;
+            margin: 0 0 0 10px;
+            height: fit-content;
+          }
+
+          a {
+            width: 100%;
+          }
+
+          .sign-up {
+            width: 100%;
+
+            @media (min-width: $screen-lg-min) {
+              height: 280px;
+            }
+
+            .sign-up-p-sec {
+              height: 161px;
+              width: 100%;
+              background-color: $background-p-img;
+
+              @media (min-width: $screen-lg-min) {
+                margin: 0;
+                height: 118px;
+                background-color: $background-p-img;
+                width: 100%;
+              }
+
+              .sign-up-p-wrapper {
+                padding-right: 22px;
+                padding-top: 8px;
+
+                @media (min-width: $screen-lg-min) {
+                  height: 100%;
+                  padding: 3px 30px 0 22px;
+                }
+
+                .sign-up-p-1 {
+                  object-fit: contain;
+                  font-size: 2em;
+                  font-weight: 500;
+                  font-style: normal;
+                  font-stretch: normal;
+                  line-height: 2;
+                  letter-spacing: normal;
+                  color: $main-white;
+                  margin-bottom: 0;
+
+                  @media (min-width: $screen-lg-min) {
+                    margin-bottom: 0;
+                    font-size: 2em;
+                    font-weight: 500;
+                  }
+                }
+
+                .sign-up-p-2 {
+                  object-fit: contain;
+                  font-size: 1.8em;
+                  font-weight: normal;
+                  font-style: normal;
+                  font-stretch: normal;
+                  line-height: 0.89;
+                  letter-spacing: normal;
+                  color: $main-white;
+                  margin-bottom: 18px;
+                  max-width: 270px;
+
+                  @media (min-width: $screen-lg-min) {
+                    margin-bottom: 0;
+                    max-width: 100%;
+                  }
+                }
+
+                .sign-up-button {
+                  object-fit: contain;
+                  border-radius: 3px;
+                  background-color: #f8a12e;
+                  font-size: 2em;
+                  font-weight: 500;
+                  font-style: normal;
+                  font-stretch: normal;
+                  line-height: 0.8;
+                  letter-spacing: normal;
+                  color: $main-white;
+                  color: #d57b07;
+                  background-color: transparent;
+                  border: 0;
+                  padding: 0;
+                  margin: 0;
+                  text-align: right;
+                  font-family: $main-font;
+
+                  @media (min-width: $screen-lg-min) {
+                    width: 69px;
+                    height: 40px;
+                    font-size: 2em;
+                    font-weight: 500;
+                    line-height: 1.2;
+                    color: #d57b07;
+                    background-color: transparent;
+                    border: 0;
+                    box-shadow: none;
+                    padding: 0;
+                    margin: 0;
+                  }
+
+                  @media (min-width: $screen-xl-min) {
+                      
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .second-img-container {
+          width: 100%;
+          background-image: url("/dist/img/rectangle-2-copy-6.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 212px;
+
+          @media (min-width: $screen-lg-min) {
+            padding: 0;
+            margin: 0 10px;
+            height: 280px;
+          }
+
+          .second-img-wrapper {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+
+            @media (min-width: $screen-lg-min) {
+              padding:0;
+              height: 280px;
+            }
+
+
+            .second-img-p-wrapper {
+              height: 161px;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.4);
+                padding-right: 25px;
+              padding-top: 9px;
+
+              @media (min-width: $screen-lg-min) {
+                margin: 0;
+                height: 118px;
+                background-color: $background-p-img;
+                max-width: 100%;
+                width: 100%;
+                padding: 3px 30px 10px;
+              }
+
+              .second-img-p-1 {
+                object-fit: contain;
+                font-size: 2em;
+                font-weight: 500;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 2;
+                letter-spacing: normal;
+                color: $main-white; 
+                margin: 0;
+
+              }
+
+              .second-img-p-2 {
+                object-fit: contain;
+                font-size: 1.8em;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 0.89;
+                letter-spacing: normal;
+                max-width: 270px;
+                color: $main-white;
+                margin-bottom: 0;
+
+                @media (min-width: $screen-lg-min) {
+                  max-width: 305px;
+                }
+              }
+            }
+          }
+        }
+        .third-img-container {
+          width: 100%;
+          margin: 29px 0;
+          background-image: url("/dist/img/rectangle-2-copy-7.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+
+          @media (min-width: $screen-lg-min) {
+            padding: 0;
+            margin:0 10px 0 0;
+          }
+
+          .third-img-wrapper  {         
+            width: 100%;          
+            height: 212px;
+
+            @media (min-width: $screen-lg-min) {
+              padding: 0;
+              height: 280px;
+            }
+
+            .third-img-p-wrapper {
+              height: 161px;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.4);
+                padding-right: 22px;
+              padding-top: 9px;
+
+              @media (min-width: $screen-lg-min) {
+                height: 100%;
+                margin: 0;
+                height: 118px;
+                background-color: $background-p-img;
+                max-width: 100%;
+                width: 100%;
+                padding: 3px 30px 10px;
+              }
+
+              .third-img-p-1 {
+                object-fit: contain;
+                font-size: 2em;
+                font-weight: 500;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 2;
+                letter-spacing: normal;
+                color: $main-white; 
+                margin-bottom: 0;
+              }
+
+              .third-img-p-2 {
+                object-fit: contain;
+                font-size: 1.8em;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 0.89;
+                letter-spacing: normal;
+                max-width: 270px;
+                color: $main-white;
+                margin-bottom: 0;
+
+                @media (min-width: $screen-lg-min) {
+                  max-width: 305px;
+                }
+              }
+            }
+          }
+        }
+      }
+    } 
+
+    .bottom-sec-p {
+      border-top: solid 1px #dddddd;
+      border-bottom: solid 1px #dddddd;
+      max-width: 1280px;
+
+      @media (min-width: $screen-lg-min) {
+        margin: 0 20px;
+      }
+
+      p {
+        padding: 24px 0;
+        margin: 0;
+        object-fit: contain;
+        font-size: 1.6em;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.25;
+        letter-spacing: normal;
+        color: $input-toggle-text;
+
+        @media (min-width: $screen-lg-min) {
+          color: #4e5665;
+          font-size: 1.8em;
+          line-height: 1.33;
+        }
+      }
+    }
+
+    .bottom-sec {
+      margin-top: 29px;
+      max-width: 1280px;
+
+      @media (min-width: $screen-lg-min) {
+        margin-top: 20px;
+        padding: 0 20px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .p-head-1, .p-head-2, .p-head-3 {
+        object-fit: contain;
+        font-size: 2em;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        color: #0477af;
+        margin: 8px 0 2px;
+
+        @media (min-width: $screen-lg-min) {
+          margin: 11px 0 4px;
+        }
+      }
+
+      .bottom-sec-p-1, .bottom-sec-p-2, .bottom-sec-p-3 {
+        object-fit: contain;
+        font-size: 1.6em;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.13;
+        letter-spacing: normal;
+        color: #595959;
+        margin: 0 0 20px;
+      }
+
+      .bottom-sec-wrapper-1 {
+
+        @media (min-width: $screen-lg-min) {
+          margin-left: 10px;
+        }
+
+        .bottom-sec-img-1 {
+          background-image: url("/dist/img/sign-up.png");
+          background-repeat: no-repeat;
+          width: 100%;
+          background-size: cover;
+          height: 212px;
+
+          @media (min-width: $screen-lg-min) {
+            height: 280px;
+          }
+
+        }
+
+        .bottom-sec-p-wrapper-1 {
+            height: fit-content;
+
+        }
+      }
+
+      .bottom-sec-wrapper-2 {
+
+        @media (min-width: $screen-lg-min) {
+          margin: 0 10px;
+        }
+
+        .bottom-sec-img-2 {
+          background-image: url("/dist/img/rectangle-2-copy-6.png");
+          background-repeat: no-repeat;
+          width: 100%;
+          background-size: cover;
+          height: 212px;
+
+          @media (min-width: $screen-lg-min) {
+            height: 280px;
+          }
+
+          .p-wrapper-2 {
+            margin: 0;
+          }
+        }
+      }
+      .bottom-sec-wrapper-3 {
+
+        @media (min-width: $screen-lg-min) {
+          margin-right: 10px;
+        }
+
+        .bottom-sec-img-3 {
+          background-image: url("/dist/img/rectangle-2-copy-7.png");
+          background-repeat: no-repeat;
+          width: 100%;
+          background-size: cover;
+          height: 212px;
+
+          @media (min-width: $screen-lg-min) {
+            height: 280px;
+          }
+
+          .p-wrapper-3 {
+
+          }
+        }
+      }
+    }
+  }
+}   
