@@ -51,7 +51,7 @@ p {
 		padding: 0 18px;
 	}
 
-	@media (min-width: $screen-xl-min) {
+	@media (min-width: $screen-lg-min) {
 		max-width: 1222px;
 		padding: 0 20px;
 	}
@@ -279,7 +279,7 @@ header {
 					border-bottom: 0;
 					border-left: .25em solid transparent;
 
-					@media (min-width: $screen-xl-min) {
+					@media (min-width: $screen-lg-min) {
 						border: solid $main-white;
 					    border-width: 0 1.5px 1.5px 0;
 					    display: inline-block;

@@ -8,6 +8,7 @@ module.exports = {
   entry: {
     index: ["./src/index.scss", "./src/index.js"],
     home: ["./src/home/home.scss", "./src/home/home.js"],
+    signin: ["./src/signin/signin.scss", "./src/signin/signin.js"],
     about: ["./src/about/about.scss", "./src/about/about.js"],
   },
   output: {
@@ -63,10 +64,16 @@ module.exports = {
       template: path.resolve(__dirname, "src/home/index.html")
     }),
     new HtmlWebpackPlugin({
+      chunks: ['signin'],
+      filename: path.resolve(__dirname, "dist/signin/index.html"),
+      template: path.resolve(__dirname, "src/signin/index.html")
+    }),
+    new HtmlWebpackPlugin({
         chunks: ['about'],
         filename: path.resolve(__dirname, "dist/about/index.html"),
         template: path.resolve(__dirname, "src/about/index.html")
     }),
+
     new UglifyJsPlugin({
       sourceMap: true,
       test: /\.js$/
