@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הרשמה לשירות</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.6/css/swiper.css">
+  </head>
+  <body class="registration">
+    ${require("../templates/header.html")} 
+    <section class="d-flex align-items-center justify-content-center">
+      <div class="registration-container d-flex custom-container">
+        <div class="registration-wrapper d-flex flex-column align-items-center">
+          <div class="registration-p-wrapper">
+            <p class="registration-head">
+              להצטרפות לשירות
+            </p>
+            <p class="registration-p">
+              על מנת להצטרף לשרות ולקבל את הפרסומים ישירות לתיבת הדואר האלקטרוני, יש להירשם לקבלת עדכונים:
+            </p>
+          </div>
+          <div class="form-group">
+            <div class="form-inline row">
+              <div class="form-group form-inline row">
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="כתובת דוא״ל לא תקינה" required>
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" id="inputEmailConfirm" data-match="inputEmail" data-match-error="כתובת דוא״ל אינה תואמת" placeholder="Confirm" required>
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+          </div>    
+          <div class="form-group">
+            <div class="form-inline row">
+              <div class="form-group">
+                <input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required>
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="הסיסמה אינה תואמת" placeholder="Confirm" required>
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+          </div>
+          <!-- <input type="password" placeholder="סיסמא" id="password" required>
+          <input type="password" placeholder="אימות סיסמא" id="confirm_password" required> -->
+          <div class="registration-button">
+            <button class="btn btn-primary">הירשם</button>
+          </div>
+        </div>
+      </div>
+    </section> 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.6/js/swiper.min.js">
+    </script>
+    <footer>
+      ${require("../templates/footer.html")}
+    </footer>
+  </body>
+</html>

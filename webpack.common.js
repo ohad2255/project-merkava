@@ -9,6 +9,7 @@ module.exports = {
     index: ["./src/index.scss", "./src/index.js"],
     home: ["./src/home/home.scss", "./src/home/home.js"],
     signin: ["./src/signin/signin.scss", "./src/signin/signin.js"],
+    registration: ["./src/registration/registration.scss", "./src/registration/registration.js"],
     about: ["./src/about/about.scss", "./src/about/about.js"],
   },
   output: {
@@ -67,6 +68,11 @@ module.exports = {
       chunks: ['signin'],
       filename: path.resolve(__dirname, "dist/signin/index.html"),
       template: path.resolve(__dirname, "src/signin/index.html")
+    }),
+    new HtmlWebpackPlugin({
+      chunks: ['registration'],
+      filename: path.resolve(__dirname, "dist/registration/index.html"),
+      template: path.resolve(__dirname, "src/registration/index.html")
     }),
     new HtmlWebpackPlugin({
         chunks: ['about'],
