@@ -65,7 +65,7 @@ module.exports = {
     new HtmlWebpackPlugin({
         chunks: ['about'],
         filename: path.resolve(__dirname, "dist/about/index.html"),
-        template: path.resolve(__dirname, "src/about/about.html")
+        template: path.resolve(__dirname, "src/about/index.html")
     }),
     new UglifyJsPlugin({
       sourceMap: true,

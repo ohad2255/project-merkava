@@ -1473,11 +1473,10 @@ section {
 			font-stretch: normal;
 			line-height: 1.25;
 			letter-spacing: normal;
-			color: #666666;
+			color: $input-toggle-text;
 
 			@media (min-width: $screen-lg-min) {
 				color: #4e5665;
-				text-align: center;
 				font-size: 1.8em;
 				line-height: 1.33;
 			}
