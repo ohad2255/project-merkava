@@ -2,7 +2,7 @@
 @import "../common/common.scss";
 
 .registration {
-	
+
 	section {
 		background-image: url('../common/img/sign-up.png');
 		margin-bottom: 40px;
@@ -68,7 +68,9 @@
 						line-height: normal;
 						letter-spacing: 0.5px;
 						color: #6a768a;
+						padding-right: 25px;
 					}
+
 
 					.language {
 						position: relative;
@@ -99,15 +101,56 @@
 							color: rgba(106,118,138,0.8);
 							-webkit-appearance: none;
 							-moz-appearance: none;
+							padding-right: 25px;
 						}
 					}
 
-					select::after {
-						color: $header-blue;
-						border-top: .5em solid;
-						border-right: .25em solid transparent;
-						border-bottom: 0;
-						border-left: .25em solid transparent;
+					.email {
+						position: relative;
+
+						.input-bullet {
+							position: absolute;
+							width: 6px;
+							height: 6px;
+							background-color: $header-blue;
+							-moz-border-radius: 3px;
+							-webkit-border-radius: 3px;
+							border-radius: 50%;
+							right: 11px;
+							bottom: 21px;
+						}
+					}
+
+					.password {
+						position: relative;
+
+						.input-bullet {
+							position: absolute;
+							width: 6px;
+							height: 6px;
+							background-color: $header-blue;
+							-moz-border-radius: 3px;
+							-webkit-border-radius: 3px;
+							border-radius: 50%;
+							right: 11px;
+							bottom: 21px;
+						}	
+					}
+
+					.password-confirm {
+						position: relative;
+
+						.input-bullet {
+							position: absolute;
+							width: 6px;
+							height: 6px;
+							background-color: $header-blue;
+							-moz-border-radius: 3px;
+							-webkit-border-radius: 3px;
+							border-radius: 50%;
+							right: 11px;
+							bottom: 21px;
+						}	
 					}
 
 					.name-lng-wrapper, .email-wrapper {

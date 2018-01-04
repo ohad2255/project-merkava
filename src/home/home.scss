@@ -352,7 +352,6 @@
                   }
                 }
 
-              
                 .main-gallery-sp-1 {
                   object-fit: contain;
                   font-size: 2em;
@@ -491,12 +490,12 @@
           .swiper-pagination {
             position: absolute;
             right: 26px;
-            bottom: 28px;
+            bottom: 23px;
             width: fit-content;
 
             @media (min-width: $screen-lg-min) { 
               right: 50px;
-              bottom: 17px;
+              bottom: 14px;
             }
 
             .swiper-pagination-bullet {
