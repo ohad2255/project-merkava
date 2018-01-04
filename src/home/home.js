@@ -1,1 +1,1 @@
-console.log("sketch");
+require('../common/common');
