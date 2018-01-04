@@ -7,8 +7,7 @@ module.exports = {
     entry: {
         'home/home': ["./src/home/home.scss", "./src/home/home.js"],
         'signin/signin': ["./src/signin/signin.scss", "./src/signin/signin.js"],
-        'registration/registration': ["./src/registration/registration.scss", "./src/registration/registration.js"],
-        'about/about': ["./src/about/about.scss", "./src/about/about.js"]
+        'registration/registration': ["./src/registration/registration.scss", "./src/registration/registration.js"]
     },
     output: {
         filename: "[name].min.js",
@@ -53,13 +52,10 @@ module.exports = {
     },
     plugins: [
         new CopyWebpackPlugin([
-            { from: "src/img", to: "img" },
+            { from: "src/common/img", to: "common/img" },
             { from: "src/fonts", to: "fonts" }
         ]),
         new ExtractTextPlugin("[name].css"),
-        new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, "src/index.html")
-        }),
         new HtmlWebpackPlugin({
             chunks: ['home/home'],
             filename: path.resolve(__dirname, "dist/home/index.html"),
@@ -74,11 +70,6 @@ module.exports = {
             chunks: ['registration/registration'],
             filename: path.resolve(__dirname, "dist/registration/index.html"),
             template: path.resolve(__dirname, "src/registration/index.html")
-        }),
-        new HtmlWebpackPlugin({
-            chunks: ['about/about'],
-            filename: path.resolve(__dirname, "dist/about/index.html"),
-            template: path.resolve(__dirname, "src/about/index.html")
-        })
+        })  
     ]
 };
