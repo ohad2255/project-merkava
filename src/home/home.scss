@@ -1,5 +1,7 @@
 
 @import "../styles/color-palette.scss";
+@import "../footer/footer.scss";
+@import "../header/header.scss";
 
 $screen-md-min: 768px;
 $screen-lg-min: 992px;
@@ -599,6 +601,7 @@ header {
 
         .swiper-container {
           width: 100%;
+          height: 100%;
 
           .swiper-wrapper {
             height: 460px;
@@ -616,6 +619,7 @@ header {
                @media (min-width: $screen-lg-min) {
                   width: 100%;
               }
+
               .main-gallery-wrapper-s-1 {
                 height: 100%;
                 background-image: url("../img/mainimg-gallery.jpg");
@@ -627,7 +631,6 @@ header {
                   background-image: url("../img/main-gallery.png");
                 }
                 
-
                 .main-gallery-container-p-s-1 {
 
                     @media (min-width: $screen-lg-min) {

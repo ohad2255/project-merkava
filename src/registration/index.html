@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>הרשמה לשירות</title>
+    <title>הצטרפות לשירות</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.6/css/swiper.css">
   </head>
@@ -19,25 +19,36 @@
               על מנת להצטרף לשרות ולקבל את הפרסומים ישירות לתיבת הדואר האלקטרוני, יש להירשם לקבלת עדכונים:
             </p>
           </div>
-          <div class="form-group">
-            <div class="form-inline row">
-              <div class="form-group form-inline row">
-                <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="כתובת דוא״ל לא תקינה" required>
+          <div class="form-wrapper">
+            <div class="d-flex name-lng-wrapper">
+              <div class="form-group name">
+                  <input class="form-control" type="text" placeholder= "שם פרטי ומשפחה" id="example-text-input">
+              </div>
+              <div class="form-group language">
+                <div class="blue-arrow"></div>
+                <select class="form-control language-select" id="language-reg" placeholder= "שפה">
+                  <option>עברית</option>
+                  <option>אנגלית</option>
+                </select>
+                <i class="glyphicon glyphicon-menu-down blue"></i>
+              </div>
+            </div> 
+            <div class="form-group email-wrapper d-flex">
+              <div class="form-group email">
+                <input type="email" class="form-control" id="inputEmail" placeholder="דוא״ל" data-error="כתובת דוא״ל לא תקינה" required>
                 <div class="help-block with-errors"></div>
               </div>
-              <div class="form-group">
-                <input type="email" class="form-control" id="inputEmailConfirm" data-match="inputEmail" data-match-error="כתובת דוא״ל אינה תואמת" placeholder="Confirm" required>
+              <div class="form-group email-confirm">
+                <input type="email" class="form-control" id="inputEmailConfirm" data-match="inputEmail" data-match-error="כתובת דוא״ל אינה תואמת" placeholder="אימות דוא״ל" required>
                 <div class="help-block with-errors"></div>
               </div>
-            </div>
-          </div>    
-          <div class="form-group">
-            <div class="form-inline row">
-              <div class="form-group">
-                <input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required>
+            </div>    
+            <div class="form-group password-wrapper d-flex">
+              <div class="form-group password">
+                <input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="סיסמא" required>
               </div>
-              <div class="form-group">
-                <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="הסיסמה אינה תואמת" placeholder="Confirm" required>
+              <div class="form-group password-confirm">
+                <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="הסיסמה אינה תואמת" placeholder="אימות סיסמא" required>
                 <div class="help-block with-errors"></div>
               </div>
             </div>
