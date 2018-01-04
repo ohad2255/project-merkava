@@ -618,13 +618,13 @@ header {
               }
               .main-gallery-wrapper-s-1 {
                 height: 100%;
-                background-image: url("/dist/img/mainimg-gallery.jpg");
+                background-image: url("../img/mainimg-gallery.jpg");
                 background-repeat: no-repeat;
                 object-fit: contain;
                 background-size: cover;
 
                 @media (min-width: $screen-lg-min) {
-                  background-image: url("/dist/img/main-gallery.png");
+                  background-image: url("../img/main-gallery.png");
                 }
                 
 
@@ -700,13 +700,13 @@ header {
             }
 
             .swiper-slide-2 {
-              background-image: url("/dist/img/mainimg-gallery-copy.png");
+              background-image: url("../img/mainimg-gallery-copy.png");
               background-repeat: no-repeat;
               object-fit: contain;
               background-size: cover;
 
               @media (min-width: $screen-lg-min) {
-                background-image: url("/dist/img/banner-big.png");
+                background-image: url("../img/banner-big.png");
               }
 
               .main-gallery-wrapper-s-2 {
@@ -786,13 +786,13 @@ header {
             }   
 
             .swiper-slide-3 {
-              background-image: url("/dist/img/mainimg-gallery-copy.png");
+              background-image: url("../img/mainimg-gallery-copy.png");
               background-repeat: no-repeat;
               object-fit: contain;
               background-size: cover;
 
               @media (min-width: $screen-lg-min) {
-                background-image: url("/dist/img/main-gallery.png");
+                background-image: url("../img/main-gallery.png");
               }
 
               .main-gallery-wrapper-s-3 {
@@ -872,13 +872,13 @@ header {
             }
 
             .swiper-slide-4 {
-              background-image: url("/dist/img/mainimg-gallery-copy.png");
+              background-image: url("../img/mainimg-gallery-copy.png");
               background-repeat: no-repeat;
               object-fit: contain;
               background-size: cover;
 
               @media (min-width: $screen-lg-min) {
-                background-image: url("/dist/img/main-gallery.png");
+                background-image: url("../img/main-gallery.png");
               }
 
               .main-gallery-wrapper-s-4 {
@@ -959,13 +959,13 @@ header {
             }
 
             .swiper-slide-5 {
-              background-image: url("/dist/img/mainimg-gallery-copy.png");
+              background-image: url("../img/mainimg-gallery-copy.png");
               background-repeat: no-repeat;
               object-fit: contain;
               background-size: cover;
 
               @media (min-width: $screen-lg-min) {
-                background-image: url("/dist/img/main-gallery.png");
+                background-image: url("../img/main-gallery.png");
               }
 
               .main-gallery-wrapper-s-5 {
@@ -1082,7 +1082,7 @@ header {
         }
 
         .top-sec-left-img {
-          background-image: url("/dist/img/banner-big.png");
+          background-image: url("../img/banner-big.png");
           background-repeat: no-repeat;
           width: 100%;
           height: 460px;
@@ -1189,7 +1189,7 @@ header {
         .sign-up-container {
           width: 100%;
           margin: 29px 0;
-          background-image: url("/dist/img/sign-up.png");
+          background-image: url("../img/sign-up.png");
           background-repeat: no-repeat;
           background-size: cover;
           height: 212px;
@@ -1312,7 +1312,7 @@ header {
 
         .second-img-container {
           width: 100%;
-          background-image: url("/dist/img/rectangle-2-copy-6.png");
+          background-image: url("../img/rectangle-2-copy-6.png");
           background-repeat: no-repeat;
           background-size: cover;
           height: 212px;
@@ -1385,7 +1385,7 @@ header {
         .third-img-container {
           width: 100%;
           margin: 29px 0;
-          background-image: url("/dist/img/rectangle-2-copy-7.png");
+          background-image: url("../img/rectangle-2-copy-7.png");
           background-repeat: no-repeat;
           background-size: cover;
 
@@ -1531,7 +1531,7 @@ header {
         }
 
         .bottom-sec-img-1 {
-          background-image: url("/dist/img/sign-up.png");
+          background-image: url("../img/sign-up.png");
           background-repeat: no-repeat;
           width: 100%;
           background-size: cover;
@@ -1556,7 +1556,7 @@ header {
         }
 
         .bottom-sec-img-2 {
-          background-image: url("/dist/img/rectangle-2-copy-6.png");
+          background-image: url("../img/rectangle-2-copy-6.png");
           background-repeat: no-repeat;
           width: 100%;
           background-size: cover;
@@ -1578,7 +1578,7 @@ header {
         }
 
         .bottom-sec-img-3 {
-          background-image: url("/dist/img/rectangle-2-copy-7.png");
+          background-image: url("../img/rectangle-2-copy-7.png");
           background-repeat: no-repeat;
           width: 100%;
           background-size: cover;
