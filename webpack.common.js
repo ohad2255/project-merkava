@@ -7,7 +7,8 @@ module.exports = {
     entry: {
         'home/home': ["./src/home/home.scss", "./src/home/home.js"],
         'signin/signin': ["./src/signin/signin.scss", "./src/signin/signin.js"],
-        'registration/registration': ["./src/registration/registration.scss", "./src/registration/registration.js"]
+        'registration/registration': ["./src/registration/registration.scss", "./src/registration/registration.js"],
+        'profile/profile': ["./src/profile/profile.scss", "./src/profile/profile.js"]
     },
     output: {
         filename: "[name].min.js",
@@ -70,6 +71,11 @@ module.exports = {
             chunks: ['registration/registration'],
             filename: path.resolve(__dirname, "dist/registration/index.html"),
             template: path.resolve(__dirname, "src/registration/index.html")
+        }), 
+        new HtmlWebpackPlugin({
+            chunks: ['profile/profile'],
+            filename: path.resolve(__dirname, "dist/profile/index.html"),
+            template: path.resolve(__dirname, "src/profile/index.html")
         })  
     ]
 };

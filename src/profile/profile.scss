@@ -1,0 +1,143 @@
+@import "../common/common.scss";
+
+.profile-form-wrapper {
+	max-width: 880px;
+	width: 100%;
+	margin-top: 20px;
+
+	.form-group {
+		width: 100%;
+		margin-bottom: 0;
+	}
+
+
+	input {
+		width: 100%;
+		height: 50px;
+		font-size: 1.5em;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: 0.5px;
+		color: #6a768a;
+		padding-right: 25px;
+	}
+
+
+	.language {
+		position: relative;
+
+		.blue-arrow {
+			width: 12px;
+			height: 12px;
+			position: absolute;
+			border: solid $header-blue;
+		    border-width: 0 1.5px 1.5px 0;
+		    display: inline-block;
+		    transform: rotate(45deg);
+		    -webkit-transform: rotate(45deg);
+		    pointer-events: none;
+		    top: 17px;
+		    left: 17px;
+		}
+
+		select {
+			width: 100%;
+			height: 50px;
+			font-size: 1.5em;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: normal;
+			letter-spacing: 0.5px;
+			color: rgba(106,118,138,0.8);
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			padding-right: 25px;
+		}
+	}
+
+	.email {
+		position: relative;
+
+		.input-bullet {
+			position: absolute;
+			width: 6px;
+			height: 6px;
+			background-color: $header-blue;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;
+			border-radius: 50%;
+			right: 11px;
+			bottom: 21px;
+		}
+	}
+
+	.password {
+		position: relative;
+
+		.input-bullet {
+			position: absolute;
+			width: 6px;
+			height: 6px;
+			background-color: $header-blue;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;
+			border-radius: 50%;
+			right: 11px;
+			bottom: 21px;
+		}	
+	}
+
+	.password-confirm {
+		position: relative;
+
+		.input-bullet {
+			position: absolute;
+			width: 6px;
+			height: 6px;
+			background-color: $header-blue;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;
+			border-radius: 50%;
+			right: 11px;
+			bottom: 21px;
+		}	
+	}
+
+	.name-lng-wrapper, .email-wrapper {
+		margin-bottom: 25px;
+	}
+
+	.password-wrapper {
+		margin-bottom: 40px;
+	}
+
+	.name, .email, .password {
+		margin-left: 20px;
+	} 
+
+	.language, .email-confirm, .password-confirm {
+		margin-right: 20px;
+	}
+}
+
+	.registration-button {
+
+		button {
+			width: 330px;
+				height: 50px;
+			border-radius: 3px;
+			background-color: #0a7bb6;
+			box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
+			font-size: 2em;
+			font-weight: 500;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: normal;
+			letter-spacing: 0.5px;
+			text-align: center;
+			color: $main-white;
+		}
+	}
