@@ -5,43 +5,74 @@
     <title>פרטי משתמש</title>
     ${require("../common/common-stylesheet.html")}
   </head>
-  <body class="profile-details">
+  <body class="profile">
     ${require("../common/header/header.html")} 
-    <section>
-      <div class="profile-form-wrapper">
-        <div class="d-flex name-lng-wrapper">
-          <div class="form-group name">
-              <input class="form-control" type="text" placeholder= "שם פרטי ומשפחה" id="example-text-input">
+    <section class="profile-top-sec d-flex flex-column align-items-center">
+      <div class="top-sec-container custom-container d-flex flex-column justify-content-center">
+        <div class="profile-breadcrumb-wrapper">
+          <nav class="breadcrumb profile-breadcrumb">
+            <a class="breadcrumb-item" href="#">מנהל הרכש הממשלתי ››</a>
+            <a class="breadcrumb-item" href="#">דיוור אישי ››</a>
+            <a class="breadcrumb-item" href="#">עדכון פרטים ››</a>
+          </nav>
+        </div>
+        <div class="profile-p-sec d-flex align-items-start">
+          <div class="profile-icon-wrapper">
+            <img src="../common/img/icon.svg"
+            class="icon">
           </div>
-          <div class="form-group language">
-            <div class="blue-arrow"></div>
-            <select class="form-control language-select" id="language-reg" placeholder= "שפה">
-              <option>עברית</option>
-              <option>אנגלית</option>
-            </select>
+          <div class="profile-p-wrapper">
+            <p class="profile-head">
+              שלום שמעון
+            </p>
+            <p class="profile-p">
+              הגעת לאיזור האישי שלך בו תוכל להגדיר את הפרטים האישיים שלך.
+              לורם איפסום דולור סיט אמט, ונסקטורר אדיפיסינג אלית קונסקטורר אדיפיסינג 
+            </p>
           </div>
-        </div> 
-        <div class="form-group email-wrapper d-flex">
-          <div class="form-group email">
-            <div class="input-bullet"></div>
-            <input type="email" class="form-control" id="inputEmail" placeholder="דוא״ל" data-error="כתובת דוא״ל לא תקינה" required>
-            <div class="help-block with-errors"></div>
+        </div>
+      </div>
+    </section>
+    <section class="profile-body d-flex flex-column align-items-center">
+      <div class="profile-body-wrapper custom-container">
+        <div class="profile-form-wrapper">
+          <div class="d-flex name-lng-wrapper">
+            <div class="form-group name">
+                <input class="form-control" type="text" placeholder= "שם פרטי ומשפחה" id="example-text-input">
+            </div>
+            <div class="form-group language">
+              <div class="blue-arrow"></div>
+              <select class="form-control language-select" id="language-reg" placeholder= "שפה">
+                <option>עברית</option>
+                <option>אנגלית</option>
+              </select>
+            </div>
+          </div> 
+          <div class="form-group email-wrapper d-flex">
+            <div class="form-group email">
+              <div class="input-bullet"></div>
+              <input type="email" class="form-control" id="inputEmail" placeholder="דוא״ל" data-error="כתובת דוא״ל לא תקינה" required>
+              <div class="help-block with-errors"></div>
+            </div>
+            <div class="form-group email-confirm">
+              <input type="email" class="form-control" id="inputEmailConfirm" data-match="inputEmail" data-match-error="כתובת דוא״ל אינה תואמת" placeholder="אימות דוא״ל" required>
+              <div class="help-block with-errors"></div>
+            </div>
+          </div>    
+          <div class="form-group password-wrapper d-flex">
+            <div class="form-group password">
+              <div class="input-bullet"></div>
+              <input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="סיסמא" required>
+            </div>
+            <div class="form-group password-confirm">
+              <div class="input-bullet"></div>
+              <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="הסיסמה אינה תואמת" placeholder="אימות סיסמא" required>
+              <div class="help-block with-errors"></div>
+            </div>
           </div>
-          <div class="form-group email-confirm">
-            <input type="email" class="form-control" id="inputEmailConfirm" data-match="inputEmail" data-match-error="כתובת דוא״ל אינה תואמת" placeholder="אימות דוא״ל" required>
-            <div class="help-block with-errors"></div>
-          </div>
-        </div>    
-        <div class="form-group password-wrapper d-flex">
-          <div class="form-group password">
-            <div class="input-bullet"></div>
-            <input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="סיסמא" required>
-          </div>
-          <div class="form-group password-confirm">
-            <div class="input-bullet"></div>
-            <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="הסיסמה אינה תואמת" placeholder="אימות סיסמא" required>
-            <div class="help-block with-errors"></div>
-          </div>
+        </div>
+        <div class="save-details-button d-flex justify-content-end">
+          <button class="btn btn-primary">שמור</button>
         </div>
       </div>
     </section>
