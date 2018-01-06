@@ -82,9 +82,13 @@
 						height: 28px;
 						-webkit-appearance: none;
 						border-radius: 2px;
-						background-color: $main-white;
+						background: $main-white;
 						border: solid 1px #d4d4d4;
 						margin-top: 0;
+					}
+
+					.form-check-input:checked {
+						content: "\2713";
 					}
 
 					.form-check-label {
