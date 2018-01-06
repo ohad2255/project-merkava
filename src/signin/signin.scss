@@ -77,22 +77,26 @@
 						color: #6a768a;
 					}
 
-					.form-check-input {
+					#form-check-input {
 						width: 29px;
-						height: 28px;
-						-webkit-appearance: none;
+						// height: 28px;
+						// -webkit-appearance: none;
 						border-radius: 2px;
 						background: $main-white;
 						border: solid 1px #d4d4d4;
-						margin-top: 0;
+						//margin-top: 0;
+						position:relative;
+					    background:#40464b;
+					    height:100%;
+					    padding:40px 30%;
+					    margin:0;
 					}
 
-					.form-check-input:checked {
-						content: "\2713";
+					input[type="checkbox"] {
+					    display:none;
 					}
 
-					.form-check-label {
-						margin-right: 43px;
+					input[type="checkbox"] + label {
 						font-size: 1.6em;
 						font-weight: 500;
 						font-style: normal;
@@ -103,6 +107,45 @@
 						font-family: $main-font;
 					}
 
+					input[type="checkbox"] + label span {
+					    display:inline-block;
+					    width: 28px;
+					    height: 28px;
+					    vertical-align: middle;
+					    background:$main-white left top no-repeat;
+					    cursor:pointer;
+					    margin-left: 11px;
+					    margin-bottom: 1px;
+					}
+
+					input[type="checkbox"]:checked + label span {
+						 display:inline-block;
+  
+					  &:after{
+					    content: '';
+					    display: block;
+					    margin: 0 auto;
+						width: 11px;
+					    height: 22px;
+					    border: solid $header-blue;
+					    border-width: 0 3px 3px 0;
+					    transform: rotate(45deg);
+					  }
+					}
+
+
+					// .form-check-label {
+					// 	margin-right: 43px;
+					// 	font-size: 1.6em;
+					// 	font-weight: 500;
+					// 	font-style: normal;
+					// 	font-stretch: normal;
+					// 	line-height: 1.75;
+					// 	letter-spacing: normal;
+					// 	color: #4e5665;
+					// 	font-family: $main-font;
+					// }
+
 					.forgot-password {
 						font-size: 1.6em;
 						font-weight: 500;
@@ -111,6 +154,7 @@
 						line-height: 1.75;
 						letter-spacing: normal;
 						color: #0a7bb6;
+						padding-bottom: 4px;
 					}
 				}
 
