@@ -2,8 +2,24 @@
 .profile {
 
 	.profile-top-sec {
+		position: relative;
 		height: 308px;
 		background-color: $profile-top-sec-backround;
+
+		.background-img-top-sec {
+			background-image: url('../common/img/placeholde.svg');
+			position: absolute; 
+			bottom: 0;
+			width: 90%;
+  			height: 90%;
+			object-fit: contain;
+			opacity: 0.5;
+			mix-blend-mode: overlay;
+			background-size: contain;
+			background-repeat: no-repeat;
+			bottom: 0;
+			left: 0;
+		}
 
 		.top-sec-container {
 			max-width: 1222px; 
@@ -70,9 +86,6 @@
 
 	.profile-body {
 		height: 567px;
-		object-fit: contain;
-  		border: solid 1px #dddddd;
-  		//margin-right: 124px;
 
 		.profile-body-wrapper {
 			width: 100%;
@@ -102,6 +115,21 @@
 				padding-right: 25px;
 			}
 
+			.name {
+				position: relative;
+
+				.input-bullet {
+					position: absolute;
+					width: 6px;
+					height: 6px;
+					background-color: $header-blue;
+					-moz-border-radius: 3px;
+					-webkit-border-radius: 3px;
+					border-radius: 50%;
+					right: 11px;
+					bottom: 21px;
+				}
+			}
 
 			.language {
 				position: relative;
@@ -134,9 +162,37 @@
 					-moz-appearance: none;
 					padding-right: 25px;
 				}
+
+				.input-bullet {
+					position: absolute;
+					width: 6px;
+					height: 6px;
+					background-color: $header-blue;
+					-moz-border-radius: 3px;
+					-webkit-border-radius: 3px;
+					border-radius: 50%;
+					right: 11px;
+					bottom: 21px;
+				}
 			}
 
 			.email {
+				position: relative;
+
+				.input-bullet {
+					position: absolute;
+					width: 6px;
+					height: 6px;
+					background-color: $header-blue;
+					-moz-border-radius: 3px;
+					-webkit-border-radius: 3px;
+					border-radius: 50%;
+					right: 11px;
+					bottom: 21px;
+				}
+			}
+
+			.email-confirm {
 				position: relative;
 
 				.input-bullet {
@@ -223,3 +279,11 @@
 		}
 	}
 }	
+
+.profile-footer {
+	border-top: solid 1px #dddddd;;
+  	object-fit: contain;
+  	max-width: 1270px;
+  	padding: 30px 165px 0;
+  	margin: 0 auto;
+}
