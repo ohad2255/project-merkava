@@ -21,11 +21,15 @@
           <div class="registration-form-wrapper">
             <div class="d-flex name-lng-wrapper">
               <div class="form-group name">
-                  <input class="form-control" type="text" placeholder= "שם פרטי ומשפחה" id="nameInput">
+                <div class="input-bullet"></div>
+                  <input class="form-control" type="text" placeholder= "שם פרטי ומשפחה" id="nameInputReg">
+                  <label class="sr-only" for="nameInputReg">
               </div>
               <div class="form-group language">
+                <div class="input-bullet"></div>
                 <div class="blue-arrow"></div>
-                <select class="form-control language-select" id="languagReg" placeholder= "שפה">
+                <select class="form-control language-select" id="languagReg" title="שפה">
+                  <option value="0">שפה</option>
                   <option>עברית</option>
                   <option>אנגלית</option>
                 </select>
@@ -34,28 +38,31 @@
             <div class="form-group email-wrapper d-flex">
               <div class="form-group email">
                 <div class="input-bullet"></div>
-                <input type="email" class="form-control" id="inputEmail" placeholder="דוא״ל" data-error="כתובת דוא״ל לא תקינה" required>
+                <input type="email" class="form-control" id="inputEmailReg" placeholder="דוא״ל" data-error="כתובת דוא״ל לא תקינה" required>
+                <label class="sr-only" for="inputEmailReg">              
                 <div class="help-block with-errors"></div>
               </div>
               <div class="form-group email-confirm">
-                <input type="email" class="form-control" id="inputEmailConfirm" data-match="inputEmail" data-match-error="כתובת דוא״ל אינה תואמת" placeholder="אימות דוא״ל" required>
+                <div class="input-bullet"></div>
+                <input type="email" class="form-control" id="inputEmailConfirmReg" data-match="inputEmail" data-match-error="כתובת דוא״ל אינה תואמת" placeholder="אימות דוא״ל" required>
+                <label class="sr-only" for="inputEmailConfirmReg">
                 <div class="help-block with-errors"></div>
               </div>
             </div>    
             <div class="form-group password-wrapper d-flex">
               <div class="form-group password">
                 <div class="input-bullet"></div>
-                <input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="סיסמא" required>
+                <input type="password" data-minlength="6" class="form-control" id="inputPasswordReg" placeholder="סיסמא" required>
+                <label class="sr-only" for="inputPasswordReg">
               </div>
               <div class="form-group password-confirm">
                 <div class="input-bullet"></div>
-                <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="הסיסמה אינה תואמת" placeholder="אימות סיסמא" required>
+                <input type="password" class="form-control" id="inputPasswordConfirmReg" data-match="#inputPassword" data-match-error="הסיסמה אינה תואמת" placeholder="אימות סיסמא" required>
+                <label class="sr-only" for="inputPasswordConfirmReg">
                 <div class="help-block with-errors"></div>
               </div>
             </div>
           </div>
-          <!-- <input type="password" placeholder="סיסמא" id="password" required>
-          <input type="password" placeholder="אימות סיסמא" id="confirm_password" required> -->
           <div class="registration-button">
             <button class="btn btn-primary">הירשם</button>
           </div>

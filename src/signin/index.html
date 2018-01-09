@@ -20,18 +20,21 @@
           </div>
           <form>
             <div class="form-group">
-              <input type="email" class="form-control email-input" id="InputEmail" aria-describedby="emailHelp" placeholder="כתובת אימייל">
+              <input type="email" class="form-control email-input" id="InputEmailSign" aria-describedby="emailHelp" placeholder="כתובת אימייל">
+              <label class="sr-only" for="InputEmailSign">
             </div>
             <div class="form-group">
-              <input type="password" class="form-control password-input" id="exampleInputPassword1" placeholder="סיסמא">
+              <input type="password" class="form-control password-input" id="InputPasswordSignIn" placeholder="סיסמא">
+              <label class="sr-only" for="InputEmailSignIn">
             </div>
             <div class="form-group">
-              <input type="password" class="form-control re-captcha-input" id="reCaptchaInput" placeholder="סיסמא">
+              <input type="re-captcha" class="form-control re-captcha-input" id="reCaptchaInput" placeholder="re-captcha">
+              <label class="sr-only" for="reCaptchaInput">
             </div>
             <div class= "signin-bottom-sec d-flex justify-content-between align-items-center">
               <div class="form-check signin-form-check d-flex align-items-center">
-                <input id="forCheckCnput" type="checkbox">
-                <label class="form-check-label d-flex justify-content-center align-items-center" for="forCheckCnput">
+                <input id="rememberMeCheckbox" type="checkbox">
+                <label class="form-check-label d-flex justify-content-center align-items-center" for="rememberMeCheckbox">
                   <span></span>
                   זכור אותי
                 </label>

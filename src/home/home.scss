@@ -44,6 +44,11 @@
           width: 100%;
           height: 100%;
 
+          &:hover {
+            transform: scale(1.015);
+            transition: all 0.4s ease;
+          }
+
           .swiper-wrapper {
             height: 460px;
 
@@ -532,10 +537,17 @@
           margin: 31px 0 0;
           background-size: cover;
 
+          &:hover {
+            transform: scale(1.015);
+            transition: all 0.4s ease;
+          }
+
           @media (min-width: $screen-lg-min) {
             margin: 0;
             height: 100%;
           }
+
+
 
           .top-sec-p-container {
 
@@ -621,6 +633,14 @@
       a {
         text-decoration: none;
       }
+
+      .sign-up-container, .second-img-container, .third-img-container,{
+
+        &:hover {
+          transform: scale(1.015);
+          transition: all 0.4s ease;
+        }
+      }  
 
       .sign-up-wrapper {
         width: 100%;
@@ -938,6 +958,14 @@
       a {
         text-decoration: none;
       }
+
+       .bottom-sec-wrapper-1, .bottom-sec-wrapper-2, .bottom-sec-wrapper-3 {
+
+          &:hover {
+            transform: scale(1.015);
+            transition: all 0.4s ease;
+          }
+        }  
 
       .p-head-1, .p-head-2, .p-head-3 {
         object-fit: contain;
