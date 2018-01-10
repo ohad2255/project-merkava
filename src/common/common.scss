@@ -494,104 +494,80 @@ header {
 			width: 100%;
 			padding: 0;
 
-			li {
+
+			li.nav-item {
+				width: 100%;
 				text-align: center;
 				padding: 0 30px;
 				width: fit-content;
 				height: 50px;
+				position: relative;
 
-				&:hover {
-					background-color: red; 
-				}
+					a.main-nav-list-container {
+						padding: 0;
+						border: 0;
+						border-radius: 0;
+						width: 100%;
+						height: 100%;
 
-			    &:nth-child(5) {
-
-			    }		
-
-				.nav-item {
-
+					}
 					
-				}
+					span {
+						font-size: 2em;
+						font-weight: normal;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: 0.8;
+						letter-spacing: normal;
+						color: $main-white;
+						text-decoration: none;
+						padding: 0;
+						font-family: $main-font;
+					}
 
-				a {
-					position: relative;
-				}
-				
-				#navLink {
-      				font-size: 2em;
-					font-weight: normal;
-					font-style: normal;
-					font-stretch: normal;
-					line-height: 0.8;
-					letter-spacing: normal;
-					color: $main-white;
-					text-decoration: none;
-					padding: 0;
-					font-family: $main-font;
-				}
+					ul {
+						height: 100%;
+						width: 100%;
+						bottom: 0;
+						visibility: hidden;
+						position: absolute;
+						z-index: 10;
+						background-color: $header-blue;
+						font-size: 2em;
+						font-weight: normal;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: 0.8;
+						letter-spacing: normal;
+						color: $main-white;
+						text-align: center;
+						top: 63px;
 
-				// &:nth-last-child(-n+3) {
-	  	// 		  text-align: left;
-				// }
+						li.list-item-wrapper {
+							font-size: 2em;
+							font-weight: normal;
+							font-style: normal;
+							font-stretch: normal;
+							line-height: 0.8;
+							letter-spacing: normal;
+							color: $main-white;
+							text-align: center;
+							border-bottom: solid 1px #1c6897;
+							height: 100%;
+							height: 50px;
+							border-top: 0;
+						}
+
+
+						.last-item {
+							border-bottom: 0;
+						}
+					}
 			}
 
-			.main-nav-dropdown {
-				position: relative; 
-
-				.dropdown-items-wrapper {
-					background-color: $header-blue;
-					padding: 0;
-					border: 0;
-					width: inherit;
-					margin-top: 13px;
-					border-radius: 0;
-				    position: absolute;
-				    z-index: 10;
-				    visibility: hidden;
-
-				    &:hover {
-				    	visibility: visible;
-				    }
-				}
-
-				.dropdown-menu.show {
-					&:hover {
-						display: block!important;
-					}
-				}
-
-				.dropdown-item {
-					font-size: 2em;
-					font-weight: normal;
-					font-style: normal;
-					font-stretch: normal;
-					line-height: 0.8;
-					letter-spacing: normal;
-					color: $main-white;
-					text-align: center;
-					border-bottom: solid 1px #1c6897;
-					height: 100%;
-					height: 50px;
-					border-top: 0;
-
-					a {
-						display: block;
-					}
-				}
-
-				.dropdown-item:hover {
-					background-color: $main-white;
-					color: $header-blue;
-					display: block;
-				}
-
-				.last-item {
-					border-bottom: 0;
-				}
-
-				.nav-toggle::after {
-					display: none;
-				}
+			.nav-item:hover ul {
+					visibility: visible;
+					
 			}
 		}
 	}
@@ -604,7 +580,6 @@ header {
 footer {
 
 	.logo-merkava-warpper {
-		margin-bottom: 11px;
 
 		.LogoMerkava {
 			height: 63px;
@@ -634,6 +609,7 @@ footer {
 			text-align: center;
 			color: $header-blue;
 			line-height: 0.8;
+			margin-top: 10px;
 		}	
 
 		/* --footer navigation-- */

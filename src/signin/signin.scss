@@ -15,40 +15,66 @@
 			margin: 54px 0;
 
 			.signin-sec-wrapper {
-				height: 601px;
-				border-radius:0 8px 8px 0;
+				height: fit-content;
 				background-color: #f6f6f6;
-				width: 50%;
+				padding-bottom: 30px;
+
+				@media (min-width: $screen-lg-min) {
+					height: 601px;
+					width: 50%;
+					border-radius:0 8px 8px 0;
+				}	
+
+				
 
 				.signin-p-wrapper {
-					margin: 53px 90px 0 0;
+					margin: 24px 20px 17px;
+
+					@media (min-width: $screen-lg-min) {
+						margin: 53px 90px 0 0;
+					}	
+
 					.signin-sec-head {
-						font-size: 6.2em;
-						font-weight: 500;
+						font-size: 3em;
 						font-style: normal;
 						font-stretch: normal;
 						line-height: normal;
 						letter-spacing: normal;
-						text-align: right;
+						text-align: center;
+						font-weight: 500;
 						color: #4e5665;
+
+						@media (min-width: $screen-lg-min) {
+							font-size: 6.2em;
+							text-align: right;
+						}	
 					}
 
 					.signin-sec-p {
-						max-width: 396px;
-						font-size: 1.6em;
 						font-weight: normal;
 						font-style: normal;
 						font-stretch: normal;
-						line-height: 1.75;
 						letter-spacing: normal;
-						text-align: right;
 						color: #4e5665;
+						line-height: 1.25;
+						font-size: 1.6em;
+						text-align: center;
+
+						@media (min-width: $screen-lg-min) {
+							max-width: 396px;
+							text-align: right;
+							line-height: 1.75;
+						}	
 					}
 				}
 
 				form {
-					margin:19px 90px 0 0;
-					width: 365px;
+					margin: 0 18px;
+
+					@media (min-width: $screen-lg-min) {
+						margin:19px 90px 0 0;
+						width: 365px;
+					}
 
 					.signin-bottom-sec {
 						margin-top: 25px;
@@ -133,19 +159,6 @@
 					  }
 					}
 
-
-					// .form-check-label {
-					// 	margin-right: 43px;
-					// 	font-size: 1.6em;
-					// 	font-weight: 500;
-					// 	font-style: normal;
-					// 	font-stretch: normal;
-					// 	line-height: 1.75;
-					// 	letter-spacing: normal;
-					// 	color: #4e5665;
-					// 	font-family: $main-font;
-					// }
-
 					.forgot-password {
 						font-size: 1.6em;
 						font-weight: 500;
@@ -162,7 +175,7 @@
 					margin-top: 31px;
 					
 					button {
-						width: 180px;
+						width: 100%;
 						height: 50px;
 						border-radius: 3px;
 						background-color: #0a7bb6;
@@ -175,49 +188,82 @@
 						letter-spacing: 0.5px;
 						text-align: center;
 						color: $main-white;
+
+						@media (min-width: $screen-lg-min) {
+							width: 180px;
+						}	
 					}
 				}
 			}
 
 			.reg-sec-wrapper {
-				height: 601px;
-				border-radius:8px 0 0 8px ;
 				background-color: #fff;
-				width: 50%;
+				height: fit-content;
+				width: 100%;
+				padding: 0 18px 40px; 
+
+				@media (min-width: $screen-lg-min) {
+					height: 601px;
+					border-radius:8px 0 0 8px ;
+					width: 50%;
+				}	
+
+
 
 				.reg-p-wrapper {
-					margin: 53px 90px 0 0;
+					margin: 26px auto 12px;
+
+					@media (min-width: $screen-lg-min) {
+						margin: 53px 90px 0 0;
+						max-width: 436px;
+					}	
 
 					.reg-sec-head {
-						font-size: 6.2em;
-						font-weight: 500;
+						font-size: 3em;
 						font-style: normal;
 						font-stretch: normal;
 						line-height: normal;
 						letter-spacing: normal;
-						text-align: right;
+						text-align: center;
+						font-weight: 500;
 						color: #4e5665;
+
+						@media (min-width: $screen-lg-min) {
+							font-size: 6.2em;
+							text-align: right;
+						}	
 					}
 
 					.reg-sec-p {
-						max-width: 396px;
-						font-size: 1.6em;
 						font-weight: normal;
 						font-style: normal;
 						font-stretch: normal;
-						line-height: 1.75;
 						letter-spacing: normal;
-						text-align: right;
 						color: #4e5665;
+						line-height: 1.25;
+						font-size: 1.6em;
+						text-align: center;
+						margin-bottom: 15px;
+
+						@media (min-width: $screen-lg-min) {
+							text-align: right;
+							line-height: 1.75;
+							margin-bottom: 0;
+						}	
 					}
 				}
 
 				.reg-button {
-					margin-right: 90px;
-					margin-top: 29px;
+					margin: 0;
+
+					@media (min-width: $screen-lg-min) {
+						margin-right: 90px;
+						margin-top: 29px;
+					}	
+					
 
 					button {
-						width: 180px;
+						width: 100%;
 						height: 50px;
 						border-radius: 3px;
 						background-color: #0a7bb6;
@@ -230,6 +276,10 @@
 						letter-spacing: 0.5px;
 						text-align: center;
 						color: $main-white;
+
+						@media (min-width: $screen-lg-min) {
+							width: 180px;
+						}	
 					}
 				}
 			}
