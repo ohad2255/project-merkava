@@ -45,11 +45,8 @@ p {
 }
 
 .custom-container {
-	padding: 0 23px;
+	padding: 0 18px;
 
-	@media (min-width: $screen-md-min) {
-		padding: 0 18px;
-	}
 
 	@media (min-width: $screen-lg-min) {
 		max-width: 1222px;
