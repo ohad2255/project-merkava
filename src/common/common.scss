@@ -20,13 +20,13 @@ $main-font: FbReforma;
 
 html {
 	direction: rtl;
- 	font-family: $main-font;
  	font-size: 10px;
  	text-align: right;
 }
 
 body {
  	text-align: right;
+	font-family: $main-font;
 }
 
 ul { 	
