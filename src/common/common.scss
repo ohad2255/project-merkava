@@ -46,8 +46,7 @@ p {
 
 .custom-container {
 	padding: 0 18px;
-
-
+	
 	@media (min-width: $screen-lg-min) {
 		max-width: 1222px;
 		padding: 0 20px;
@@ -570,16 +569,36 @@ header {
 	}
 }
 
+.breadcrumb {
+	background-color: transparent;
+	padding: 0;
+	margin: 32px 0 21px 0;
+	
+	.breadcrumb-item {
+		margin-left: 4px;
+		text-decoration: none;
+		font-size: 1.6em;
+		font-weight: 500;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.75;
+		letter-spacing: normal;
+		color: $main-white;
+	}
 
+	.breadcrumb-item::before {
+		content: none;
+	}
+}
 
 /* --footer-- */
 
 footer {
 
 	.logo-merkava-warpper {
-
-		.LogoMerkava {
-			height: 63px;
+		
+		.logo-merkava {
+			height: 35px;
 			object-fit: contain;
 		}
 	}
