@@ -1,4 +1,3 @@
-
 @import "../common/common.scss";
 
 .home {
@@ -644,7 +643,7 @@
         text-decoration: none;
       }
 
-      .sign-up-container, .second-img-container, .third-img-container,{
+      .sign-up-container, .second-img-container, .third-img-container {
 
         &:hover {
           transform: scale(1.015);
@@ -654,10 +653,6 @@
 
       .sign-up-wrapper {
         width: 100%;
-
-        @media (min-width: $screen-lg-min) {
-
-        }
 
         .sign-up-container {
           width: 100%;

@@ -1,0 +1,35 @@
+.main-content-wrapper {
+  display: block;
+  max-width: 100%;
+  transition: all 0.2s linear;
+  box-shadow: 0 0 70px #000;
+  background: #fff;
+  z-index: 1;
+  position: relative;
+}
+
+.mobile-menu-open .main-content-wrapper {
+  transform: translateX(320px);
+}
+
+.main-menu-mobile-container {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 320px;
+  position: fixed;
+  display: block;
+  background-color: $header-blue;
+  font-size: 1em;
+  white-space: nowrap;
+  overflow: auto;
+
+  .main-nav {
+    margin: 0 20px;
+    padding: 0;
+
+    li {
+      margin: 10px 0;
+    }
+  }
+}
