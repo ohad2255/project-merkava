@@ -1,6 +1,10 @@
 @import "../common/common.scss";
 .about {
 
+	.custom-container {
+		padding: 0 20px;
+	}
+
 	.nav-item-text-2 {
 		background-color: rgba(255, 255, 255, 0.19);
 	}
@@ -11,30 +15,34 @@
 		background-color: $main-white;
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
 		background-image: url('../common/img/group-13.png');
-		background-position-y: -3px;
 		background-repeat: no-repeat;
 		background-size: cover;
+		background-position-y: -4px;
 
 		@media (min-width: $screen-lg-min) {
 			background-image: url('../common/img/back-top-lg.svg');
 			height: fit-content;
-			background-position-y: 0;
 		}
 
 		.right-blue-line {
 			position: absolute;
 			right: 0;
 			top: -4px;
-			width: 11px;
+			width: 5px;
 			height: 104%;
 			border-radius: 4px;
 			background-color: #1c6897;
+
+			@media (min-width: $screen-lg-min) {
+				width: 11px;
+			}
 		}
 
 		.top-sec-container {
 			max-width: 1222px; 
 			width: 100%;
 			padding: 0;
+
 			@media (min-width: $screen-lg-min) {
 				padding: 0 20px;
 			}
@@ -62,7 +70,7 @@
 			}
 
 			.about-p-sec {
-				margin: 73px 15px 28px 0;
+				margin: 73px 20px 28px 0;
 
 				@media (min-width: $screen-lg-min) {
 					margin: 0;
@@ -103,7 +111,11 @@
 					line-height: 1.25;
 					letter-spacing: normal;
 					color: #4e5665;
-					max-width: 300px;
+					margin: 0 0 0 40px;
+
+					@media (min-width: $screen-md-min) {
+						max-width: 600px;
+					}	
 
 					@media (min-width: $screen-lg-min) {
 						max-width: 1222px;
@@ -125,9 +137,8 @@
 
 			.about-body-p-wrapper {
 				margin: 21px 0 30px;
-				max-width: 336px;
 
-				@media (min-width: $screen-lg-min) {
+				@media (min-width: $screen-md-min) {
 					max-width: 1222px;
 					padding: 0 10px;
 				}	
@@ -158,6 +169,24 @@
 					box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.15);
 					min-height: 140px;
 					margin-bottom: 32px;
+					position: relative;
+
+					@media (min-width: $screen-lg-min) {
+						min-height: 264px;
+						padding: 0 10px;
+					}
+
+					a.collapsed {
+						.collapse-arrow {
+							transform: rotate(90deg);
+						}
+					}
+
+					.collapsed-p {
+						@media (min-width: $screen-lg-min) {
+							margin-top: 88px;
+						}
+					}
 
 					.card-header {
 						border-radius: 0;
@@ -165,23 +194,49 @@
 					    margin-bottom: 0;
 					    background-color: $main-white;
 					    border-bottom: none;
+					    width: fit-content;
 					}
 
 					.top-sec-card-header {
-						padding: 9px 14px 10px 9px;
+						padding: 0 14px 10px 0;
+
+						@media (min-width: $screen-lg-min) {
+							padding: 0 91.5px 10px 0;
+						}	
+
+						img.icon-first-collaps-p {
+							width: 44px;
+							height: 44px;
+							position: absolute;
+							left: 9px;
+							top: 9px;
+
+							@media (min-width: $screen-lg-min) {
+								height: 170px;
+								width: 170px;
+								top: 46px;
+								left: 98px;
+							}	
+						}
 					}
 				
 					span {
-						font-size: 2em;
+						font-size: 2rem;
 						font-weight: normal;
 						font-style: normal;
 						font-stretch: normal;
 						line-height: 1.25;
 						letter-spacing: normal;
-						text-align: right;
 						color: #1c6897;
 						font-family: $main-font;
 						padding-top: 17px;
+						height: fit-content;
+
+						@media (min-width: $screen-lg-min) {
+							padding: 0;
+							font-size: 3.2rem;
+							line-height: 0.78;
+						}	
 					}
 
 					p, .card-block {
@@ -193,23 +248,14 @@
 						letter-spacing: normal;
 						color: #505050;
 						font-family: $main-font;
-						margin-bottom: 0;
-						max-width: 276px;
-						margin-right: 14px; 
+						margin:0 14px 0 60px; 
 
 						@media (min-width: $screen-lg-min) {
-							max-width: 970px;
+							max-width: 609px;
+							margin:0 91.5px 0 60px;
+							font-size: 1.6rem;
+							line-height: 1.75;
 						}	
-					}
-
-					a {
-					 	.Group-10 {
-					 		margin: 0 0 7px 10px;
-					 		width: 15px;
-  							height: 13px;
-					 	}
-
-					 	height: fit-content;
 					}
 
 					.spinEffect{
@@ -224,6 +270,24 @@
 					background-color: $main-white;
 					box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.15);
 					min-height: 140px;
+					position: relative;
+
+					@media (min-width: $screen-lg-min) {
+						min-height: 264px;
+						padding: 0 10px;
+					}	
+
+					a.collapsed {
+						.collapse-arrow {
+							transform: rotate(90deg);
+						}
+					}
+
+					.collapsed-p {
+						@media (min-width: $screen-lg-min) {
+							margin-top: 88px;
+						}
+					}
 
 					.card-header {
 						border-radius: 0;
@@ -231,22 +295,35 @@
 					    margin-bottom: 0;
 					    background-color: $main-white;
 					    border-bottom: none;
+					    width: fit-content;
+
+					    .icon-second-collaps-p {
+					    	width: 44px;
+							height: 46px;
+							position: absolute;
+							left: 9px;
+							top: 9px;
+
+							@media (min-width: $screen-lg-min) {
+								width: 169.4px;
+								height: 176px;
+								top: 46px;
+								left: 98px;
+							}	
+					    }
 					}
 
 					.top-sec-card-header {
 						padding: 9px 14px 10px 9px;
+						white-space: nowrap;
 
-						.icon-first-collaps-p {
-							width: 44px;
-							height: 44px;
-
-							@media (min-width: $screen-lg-min) {
-								height: 170px;
-								width: 170px;
-							}	
-						}
+						@media (min-width: $screen-lg-min) {
+							padding: 0 91.5px 10px 0;
+						}	
 					}
-				
+
+					
+			
 					span {
 						font-size: 2em;
 						font-weight: normal;
@@ -256,6 +333,12 @@
 						letter-spacing: normal;
 						color: #1c6897;
 						padding-top: 17px;
+
+						@media (min-width: $screen-lg-min) {
+							padding: 0;
+							font-size: 3.2rem;
+							line-height: 0.78;
+						}	
 					}
 
 					p, .card-block {
@@ -267,17 +350,31 @@
 						letter-spacing: normal;
 						color: #505050;
 						font-family: $main-font;
-						margin-bottom: 0;
-						max-width: 276px;
-						margin-right: 14px; 
+						margin:0 14px 0 60px; 
+
+						@media (min-width: $screen-lg-min) {
+							max-width: 609px;
+							margin:0 91.5px 0 60px;
+							font-size: 1.6rem;
+							line-height: 1.75;
+						}	 
 					}
 				}
 				.collapse-arrow {
-				 	 	
 			 		margin: 0 0 7px 10px;
 			 		width: 15px;
 					height: 13px; 
+
+					@media (min-width: $screen-lg-min) {
+						width: 30;
+    					height: 26px;
+    					margin: 37px 0 20px 15px;
+					}	 
 				}
+
+				.show .collapse-arrow {
+						transform: rotate(90deg);
+					}	
 			}
 		}
 	}
