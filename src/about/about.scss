@@ -1,12 +1,15 @@
 @import "../common/common.scss";
 .about {
 
+	.nav-item-text-2 {
+		background-color: rgba(255, 255, 255, 0.19);
+	}
+
 	.about-top-sec {
 		position: relative;
 		height: 205px;
 		background-color: $main-white;
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
-		//border-right: 5px solid #1c6897;
 		background-image: url('../common/img/group-13.png');
 		background-position-y: -3px;
 		background-repeat: no-repeat;
@@ -15,6 +18,7 @@
 		@media (min-width: $screen-lg-min) {
 			background-image: url('../common/img/back-top-lg.svg');
 			height: fit-content;
+			background-position-y: 0;
 		}
 
 		.right-blue-line {
@@ -78,6 +82,7 @@
 					line-height: 0.83;
 					letter-spacing: normal;
 					color: #1c6897;
+
 					@media (min-width: $screen-lg-min) {
 						font-size: 6.2rem;
 						font-weight: 500;
@@ -86,6 +91,7 @@
 						line-height: normal;
 						letter-spacing: normal;
 						color: #1c6897;
+						margin: 0 0 3px 0;
 					}	
 				}
 
@@ -190,6 +196,10 @@
 						margin-bottom: 0;
 						max-width: 276px;
 						margin-right: 14px; 
+
+						@media (min-width: $screen-lg-min) {
+							max-width: 970px;
+						}	
 					}
 
 					a {
@@ -225,6 +235,16 @@
 
 					.top-sec-card-header {
 						padding: 9px 14px 10px 9px;
+
+						.icon-first-collaps-p {
+							width: 44px;
+							height: 44px;
+
+							@media (min-width: $screen-lg-min) {
+								height: 170px;
+								width: 170px;
+							}	
+						}
 					}
 				
 					span {
@@ -254,10 +274,10 @@
 				}
 				.collapse-arrow {
 				 	 	
-				 		margin: 0 0 7px 10px;
-				 		width: 15px;
-						height: 13px; 
-					}
+			 		margin: 0 0 7px 10px;
+			 		width: 15px;
+					height: 13px; 
+				}
 			}
 		}
 	}
