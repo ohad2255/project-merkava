@@ -12,17 +12,63 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 
+		@media (min-width: $screen-lg-min) {
+			background-image: url('../common/img/back-top-lg.svg');
+			height: fit-content;
+		}
+
+		.right-blue-line {
+			position: absolute;
+			right: 0;
+			top: -4px;
+			width: 11px;
+			height: 104%;
+			border-radius: 4px;
+			background-color: #1c6897;
+		}
+
 		.top-sec-container {
 			max-width: 1222px; 
 			width: 100%;
 			padding: 0;
+			@media (min-width: $screen-lg-min) {
+				padding: 0 20px;
+			}
 
 			.about-breadcrumb-wrapper {
-				margin-right: 34px;	
+				margin:0 34px 0 0;	
+
+				@media (min-width: $screen-lg-min) {
+					margin:31px 10px 0 0;
+				}
+
+				.breadcrumb {
+					margin: 0;	
+				}
+
+				.breadcrumb-item  {
+					color: $header-blue;
+					font-size: 1.6rem;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.75;
+					letter-spacing: normal;
+				}
 			}
 
 			.about-p-sec {
 				margin: 73px 15px 28px 0;
+
+				@media (min-width: $screen-lg-min) {
+					margin: 0;
+				}	
+
+				.about-p-wrapper {
+					@media (min-width: $screen-lg-min) {
+						margin:29px 10px 116px 0;
+					}	
+				}	
 
 				.about-head {
 					font-size: 3em;
@@ -32,10 +78,19 @@
 					line-height: 0.83;
 					letter-spacing: normal;
 					color: #1c6897;
+					@media (min-width: $screen-lg-min) {
+						font-size: 6.2rem;
+						font-weight: 500;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: normal;
+						letter-spacing: normal;
+						color: #1c6897;
+					}	
 				}
 
 				.about-top-p {
-					font-size: 1.6em;
+					font-size: 1.6rem;
 					font-weight: normal;
 					font-style: normal;
 					font-stretch: normal;
@@ -43,6 +98,13 @@
 					letter-spacing: normal;
 					color: #4e5665;
 					max-width: 300px;
+
+					@media (min-width: $screen-lg-min) {
+						max-width: 1222px;
+						font-size: 3rem;
+						line-height: normal;
+						letter-spacing: normal;
+					}	
 				}
 			}
 		}
@@ -58,6 +120,11 @@
 			.about-body-p-wrapper {
 				margin: 21px 0 30px;
 				max-width: 336px;
+
+				@media (min-width: $screen-lg-min) {
+					max-width: 1222px;
+					padding: 0 10px;
+				}	
 			}
 
 			.about-body-first-p, .about-body-second-p{
