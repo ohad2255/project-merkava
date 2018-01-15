@@ -3,7 +3,11 @@
 .home {
 
   .nav-item-text-1 {
-    background-color: rgba(255, 255, 255, 0.19);
+
+    @media (min-width: $screen-lg-min) {
+      background-color: rgba(255, 255, 255, 0.19);
+      border-bottom: solid 1px #1c6897; 
+    } 
   }
 
   section {
