@@ -165,6 +165,12 @@
 				letter-spacing: 0.5px;
 				text-align: center;
 				color: $main-white;
+
+				&:active {
+		          background-color: #1c6897;
+		          color: $header-blue;
+		          border: 0;
+		        }
 			}
 		}
 	}
