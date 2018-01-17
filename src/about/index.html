@@ -1,132 +1,138 @@
 <html>
-<head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>אודות</title>
-    ${require("../common/common-stylesheet.html")}
-</head>
-<body class="about">
-${require("../common/header/header.html")}
-<section class="about-top-sec d-flex flex-column align-items-center">
-  <div class="right-blue-line"></div>
-  <div class="top-sec-container custom-container d-flex flex-column justify-content-center">
-      <div class="about-breadcrumb-wrapper d-none d-lg-block">
-          ${require("../common/breadcrumb/breadcrumb.html")}
-      </div>
-      <div class="about-p-sec d-flex align-items-start">
-          <div class="about-p-wrapper">
-              <h1 class="about-head">
-                  אודות מנהל הרכש הממשלתי
-              </h1>
-              <p class="about-top-p">
-                  לורם איפסום קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק.
-                  קולורס מונפרד אדנדום סילקוף, מרגשי.
-              </p>
-          </div>
-      </div>
-  </div>
-</section>
-<section class="about-body d-flex flex-column align-items-center">
-  <div class="about-body-wrapper custom-container">
-      <div class="about-body-p-wrapper">
-          <p class="about-body-first-p">
-              מינהל הרכש הממשלתי הינו גוף מטה בחטיבת נכסים רכש ולוגיסטיקה באגף החשב הכללי. תפקידו לבצע ולהתוות את
-              מדיניות הרכש והלוגיסטיקה הממשלתית. מינהל הרכש מתמחה בביצוע רכש מרכזי, בגיבוש מדיניות לביצוע רכש במגזר
-              הממשלתי ובסיוע לגופים ממשלתיים בביצוע ויישום מדיניות הרכש במשרדם.
-          </p>
-          <p class="about-body-second-p">
-              מטרתו העיקרית של מינהל הרכש למצות את כוח הקנייה של הממשלה באמצעות עריכת מכרזים מרכזיים עבור כלל משרדי
-              הממשלה. מיצוי יתרון זה מביא לחיסכון תקציבי ניכר בתקציבי הרכש של המשרדים.
-          </p>
-      </div>
-      <div class="about-accordion-wrapper" id="accordion" role="tablist" aria-multiselectable="true">
-
-          <div class="card card-one">
-            <a class="collapsed d-flex flex-column collapsed-p" data-toggle="collapse" data-target="#collapseOne"
-               href="#collapseOne"
-               aria-expanded="true" aria-controls="collapseOne">
-                <div class="card-header" role="tab" id="headingOne">
-                    <div class="card-header-wrapper d-lg-flex flex-column justify-content-center">
-                        <div class="top-sec-card-header d-flex justify-content-between">
-                            <h2>היתרונות בעריכת מכרזים מרכזיים</h2>
-                            <img src="../common/img/group-12.svg"
-                                 class="icon-first-collaps-p" alt="men-icon">
-                        </div>
-                        <p>מיצוי היתרון לגודל של הממשלה וכתוצאה מכך חיסכון בתקציבי הרכש הפחתת העלויות המנהלתיות
-                            הנובעות מביצוע
-                            מכרזים ע"י כל יחידה ממשלתית בנפרד שיפור הניהול,
-                        </p>
-                    </div>
+  <head>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>אודות</title>
+      ${require("../common/common-stylesheet.html")}
+  </head>
+  <body class="about">
+    <div class="main-menu-mobile-container d-lg-none" aria-labelledby="mainMobileNavTrigger">
+      <div class="main-menu-mobile-wrapper"></div>
+      ${require("../common/top-navigation/top-navigation.html")}
+    </div>
+    <div class="main-content-wrapper">
+      ${require("../common/header/header.html")}
+      <section class="about-top-sec d-flex flex-column align-items-center">
+        <div class="right-blue-line"></div>
+        <div class="top-sec-container custom-container d-flex flex-column justify-content-center">
+            <div class="about-breadcrumb-wrapper d-none d-lg-block">
+                ${require("../common/breadcrumb/breadcrumb.html")}
+            </div>
+            <div class="about-p-sec d-flex align-items-start">
+                <div class="about-p-wrapper">
+                    <h1 class="about-head">
+                        אודות מנהל הרכש הממשלתי
+                    </h1>
+                    <p class="about-top-p">
+                        לורם איפסום קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק.
+                        קולורס מונפרד אדנדום סילקוף, מרגשי.
+                    </p>
                 </div>
-                <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
-                    <div class="card-block">
-                        הפיקוח והבקרה על הספקים העובדים עם הממשלה הנחלת תורת רכש ותהליכי עבודה מתקדמים לתחום הרכש
-                        והלוגיסטיקה
-                        במשרדי הממשלה, תוך בחינה מתמדת והטמעה של שיטות ומודלים חדשים ואימוץ שיטות רכש מתקדמות ביותר
-                        כגון
-                        מכרזים מקוונים דינאמיים על גבי רשת האינטרנט התווית מדיניות אחידה בתחום הרכש והלוגיסטיקה לכלל
-                        הממשלה.
-                        יצירת אחידות זו מפשטת את ההליכים הבירוקראטיים ומגבירה את התחרות בתחום הרכש הממשלתי. הקמת
-                        מאגרי ידע
-                        ומידע בנושא הרכש הממשלתי. מינהל הרכש שוקד על הקמת מערכת מידע לניהול ותיעוד של הליכי הרכש
-                        בממשלה:
-                        המערכת תהווה מוקד מידע עבור כל העוסקים ברכש ותסייע לעורכי המכרזים בהכנה, בפרסום ובהפצה של
-                        המכרזים
-                        המערכת תאפשר לספקים להירשם כמנויים לקבלת מידע על פרסום מכרזים ולהזין את המענה למכרז באמצעים
-                        אלקטרונייםהמערכת תשמור את כל המידע על המכרזים, המענים למכרזים, הספקים, והערכת ביצועי הספקים
-                        במאגר מידע
-                        מרכזי שיהיה נגיש לכל בעלי העניין בממשלה שיפור תהליכי העבודה מול ספקי הממשלה. מינהל הרכש שואף
-                        לשיפור
-                        ממשק העבודה בין הממשלה לספקים באמצעות שקיפות מרבית בהליכי מכרזים והתקשרויות, הרחבת הנגישות
-                        למידע
-                        מעודכן אודות פעילות הרכש וקיצור ופישוט הבירוקרטיה בהליכי הרכש.
-                    </div>
-                </div>
-                <img src="../common/img/group-10.svg" class="collapse-arrow align-self-end">
-            </a>
-          </div>
+            </div>
+        </div>
+      </section>
+      <section class="about-body d-flex flex-column align-items-center">
+        <div class="about-body-wrapper custom-container">
+            <div class="about-body-p-wrapper">
+                <p class="about-body-first-p">
+                    מינהל הרכש הממשלתי הינו גוף מטה בחטיבת נכסים רכש ולוגיסטיקה באגף החשב הכללי. תפקידו לבצע ולהתוות את
+                    מדיניות הרכש והלוגיסטיקה הממשלתית. מינהל הרכש מתמחה בביצוע רכש מרכזי, בגיבוש מדיניות לביצוע רכש במגזר
+                    הממשלתי ובסיוע לגופים ממשלתיים בביצוע ויישום מדיניות הרכש במשרדם.
+                </p>
+                <p class="about-body-second-p">
+                    מטרתו העיקרית של מינהל הרכש למצות את כוח הקנייה של הממשלה באמצעות עריכת מכרזים מרכזיים עבור כלל משרדי
+                    הממשלה. מיצוי יתרון זה מביא לחיסכון תקציבי ניכר בתקציבי הרכש של המשרדים.
+                </p>
+            </div>
+            <div class="about-accordion-wrapper" id="accordion" role="tablist" aria-multiselectable="true">
 
-          <div class="card card-two">
-              <a class="collapsed d-flex flex-column collapsed-p" data-toggle="collapse" data-target="#collapseTwo"
-                 href="#collapseTwo"
-                 aria-expanded="true" aria-controls="collapseTwo">
-                  <div class="card-header" role="tab" id="headingTwo">
-                      <div class="card-header-wrapper">
-                          <div class="top-sec-card-header d-flex justify-content-between">
-                              <h2>מערך הכשרה בתחום הרכש</h2>
-                              <img src="../common/img/noun-528416-ffffff.svg" class="icon-second-collaps-p" alt="road-signs-icon">
+                <div class="card card-one">
+                  <a class="collapsed d-flex flex-column collapsed-p" data-toggle="collapse" data-target="#collapseOne"
+                     href="#collapseOne"
+                     aria-expanded="true" aria-controls="collapseOne">
+                      <div class="card-header" role="tab" id="headingOne">
+                          <div class="card-header-wrapper d-lg-flex flex-column justify-content-center">
+                              <div class="top-sec-card-header d-flex justify-content-between">
+                                  <h2>היתרונות בעריכת מכרזים מרכזיים</h2>
+                                  <img src="../common/img/group-12.svg"
+                                       class="icon-first-collaps-p" alt="men-icon">
+                              </div>
+                              <p>מיצוי היתרון לגודל של הממשלה וכתוצאה מכך חיסכון בתקציבי הרכש הפחתת העלויות המנהלתיות
+                                  הנובעות מביצוע
+                                  מכרזים ע"י כל יחידה ממשלתית בנפרד שיפור הניהול,
+                              </p>
                           </div>
-                          <p>מיצוי היתרון לגודל של הממשלה וכתוצאה מכך חיסכון בתקציבי הרכש הפחתת העלויות המנהלתיות
-                              הנובעות מביצוע מכרזים ע"י כל יחידה ממשלתית בנפרד שיפור הניהול,
-                          </p>
                       </div>
-                  </div>
-                  <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
-                      <div class="card-block">
-                          הפיקוח והבקרה על הספקים העובדים עם הממשלה הנחלת תורת רכש ותהליכי עבודה מתקדמים לתחום הרכש
-                          והלוגיסטיקה במשרדי הממשלה, תוך בחינה מתמדת והטמעה של שיטות ומודלים חדשים ואימוץ שיטות רכש
-                          מתקדמות ביותר כגון מכרזים מקוונים דינאמיים על גבי רשת האינטרנט התווית מדיניות אחידה בתחום
-                          הרכש והלוגיסטיקה לכלל הממשלה. יצירת אחידות זו מפשטת את ההליכים הבירוקראטיים ומגבירה את
-                          התחרות בתחום הרכש הממשלתי. הקמת מאגרי ידע ומידע בנושא הרכש הממשלתי. מינהל הרכש שוקד על הקמת
-                          מערכת מידע לניהול ותיעוד של הליכי הרכש בממשלה:
-                          המערכת תהווה מוקד מידע עבור כל העוסקים ברכש ותסייע לעורכי המכרזים בהכנה, בפרסום ובהפצה של
-                          המכרזים המערכת תאפשר לספקים להירשם כמנויים לקבלת מידע על פרסום מכרזים ולהזין את המענה למכרז
-                          באמצעים אלקטרונייםהמערכת תשמור את כל המידע על המכרזים, המענים למכרזים, הספקים, והערכת ביצועי
-                          הספקים במאגר מידע מרכזי שיהיה נגיש לכל בעלי העניין בממשלה שיפור תהליכי העבודה מול ספקי
-                          הממשלה. מינהל הרכש שואף לשיפור ממשק העבודה בין הממשלה לספקים באמצעות שקיפות מרבית בהליכי
-                          מכרזים והתקשרויות, הרחבת הנגישות למידע מעודכן אודות פעילות הרכש וקיצור ופישוט הבירוקרטיה
-                          בהליכי הרכש.
+                      <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+                          <div class="card-block">
+                              הפיקוח והבקרה על הספקים העובדים עם הממשלה הנחלת תורת רכש ותהליכי עבודה מתקדמים לתחום הרכש
+                              והלוגיסטיקה
+                              במשרדי הממשלה, תוך בחינה מתמדת והטמעה של שיטות ומודלים חדשים ואימוץ שיטות רכש מתקדמות ביותר
+                              כגון
+                              מכרזים מקוונים דינאמיים על גבי רשת האינטרנט התווית מדיניות אחידה בתחום הרכש והלוגיסטיקה לכלל
+                              הממשלה.
+                              יצירת אחידות זו מפשטת את ההליכים הבירוקראטיים ומגבירה את התחרות בתחום הרכש הממשלתי. הקמת
+                              מאגרי ידע
+                              ומידע בנושא הרכש הממשלתי. מינהל הרכש שוקד על הקמת מערכת מידע לניהול ותיעוד של הליכי הרכש
+                              בממשלה:
+                              המערכת תהווה מוקד מידע עבור כל העוסקים ברכש ותסייע לעורכי המכרזים בהכנה, בפרסום ובהפצה של
+                              המכרזים
+                              המערכת תאפשר לספקים להירשם כמנויים לקבלת מידע על פרסום מכרזים ולהזין את המענה למכרז באמצעים
+                              אלקטרונייםהמערכת תשמור את כל המידע על המכרזים, המענים למכרזים, הספקים, והערכת ביצועי הספקים
+                              במאגר מידע
+                              מרכזי שיהיה נגיש לכל בעלי העניין בממשלה שיפור תהליכי העבודה מול ספקי הממשלה. מינהל הרכש שואף
+                              לשיפור
+                              ממשק העבודה בין הממשלה לספקים באמצעות שקיפות מרבית בהליכי מכרזים והתקשרויות, הרחבת הנגישות
+                              למידע
+                              מעודכן אודות פעילות הרכש וקיצור ופישוט הבירוקרטיה בהליכי הרכש.
+                          </div>
                       </div>
-                  </div>
-                  <img src="../common/img/group-10.svg" class="collapse-arrow align-self-end">
-              </a>
-          </div>
-      </div>
-  </div>
-</section>
-<footer class="about-footer d-flex justify-content-center">
-    ${require("../common/footer/footer.html")}
-</footer>
-${require("../common/common.html")}
-</body>
+                      <img src="../common/img/group-10.svg" class="collapse-arrow align-self-end" alt="collapse-arrow">
+                  </a>
+                </div>
+
+                <div class="card card-two">
+                    <a class="collapsed d-flex flex-column collapsed-p" data-toggle="collapse" data-target="#collapseTwo"
+                       href="#collapseTwo"
+                       aria-expanded="true" aria-controls="collapseTwo">
+                        <div class="card-header" role="tab" id="headingTwo">
+                            <div class="card-header-wrapper">
+                                <div class="top-sec-card-header d-flex justify-content-between">
+                                    <h2>מערך הכשרה בתחום הרכש</h2>
+                                    <img src="../common/img/noun-528416-ffffff.svg" class="icon-second-collaps-p" alt="road-signs-icon">
+                                </div>
+                                <p>מיצוי היתרון לגודל של הממשלה וכתוצאה מכך חיסכון בתקציבי הרכש הפחתת העלויות המנהלתיות
+                                    הנובעות מביצוע מכרזים ע"י כל יחידה ממשלתית בנפרד שיפור הניהול,
+                                </p>
+                            </div>
+                        </div>
+                        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="card-block">
+                                הפיקוח והבקרה על הספקים העובדים עם הממשלה הנחלת תורת רכש ותהליכי עבודה מתקדמים לתחום הרכש
+                                והלוגיסטיקה במשרדי הממשלה, תוך בחינה מתמדת והטמעה של שיטות ומודלים חדשים ואימוץ שיטות רכש
+                                מתקדמות ביותר כגון מכרזים מקוונים דינאמיים על גבי רשת האינטרנט התווית מדיניות אחידה בתחום
+                                הרכש והלוגיסטיקה לכלל הממשלה. יצירת אחידות זו מפשטת את ההליכים הבירוקראטיים ומגבירה את
+                                התחרות בתחום הרכש הממשלתי. הקמת מאגרי ידע ומידע בנושא הרכש הממשלתי. מינהל הרכש שוקד על הקמת
+                                מערכת מידע לניהול ותיעוד של הליכי הרכש בממשלה:
+                                המערכת תהווה מוקד מידע עבור כל העוסקים ברכש ותסייע לעורכי המכרזים בהכנה, בפרסום ובהפצה של
+                                המכרזים המערכת תאפשר לספקים להירשם כמנויים לקבלת מידע על פרסום מכרזים ולהזין את המענה למכרז
+                                באמצעים אלקטרונייםהמערכת תשמור את כל המידע על המכרזים, המענים למכרזים, הספקים, והערכת ביצועי
+                                הספקים במאגר מידע מרכזי שיהיה נגיש לכל בעלי העניין בממשלה שיפור תהליכי העבודה מול ספקי
+                                הממשלה. מינהל הרכש שואף לשיפור ממשק העבודה בין הממשלה לספקים באמצעות שקיפות מרבית בהליכי
+                                מכרזים והתקשרויות, הרחבת הנגישות למידע מעודכן אודות פעילות הרכש וקיצור ופישוט הבירוקרטיה
+                                בהליכי הרכש.
+                            </div>
+                        </div>
+                        <img src="../common/img/group-10.svg" class="collapse-arrow align-self-end" alt="collapse-arrow">
+                    </a>
+                </div>
+            </div>
+        </div>
+      </section>
+      <footer class="about-footer d-flex justify-content-center">
+          ${require("../common/footer/footer.html")}
+      </footer>
+    </div>
+    ${require("../common/common.html")}
+  </body>
 </html>

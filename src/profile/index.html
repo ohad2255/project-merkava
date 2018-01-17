@@ -6,83 +6,84 @@
     ${require("../common/common-stylesheet.html")}
   </head>
   <body class="profile">
-    ${require("../common/header/header.html")} 
-    <section class="profile-top-sec d-flex flex-column align-items-center">
-      <div class="background-img-top-sec"></div>
-      <div class="top-sec-container custom-container d-flex flex-column justify-content-center">
-        <div class="profile-breadcrumb-wrapper">
-          ${require("../common/breadcrumb/breadcrumb.html")}
-          <!-- <nav class="breadcrumb profile-breadcrumb">
-            <a class="breadcrumb-item" href="#">מנהל הרכש הממשלתי ››</a>
-            <a class="breadcrumb-item" href="#">דיוור אישי ››</a>
-            <a class="breadcrumb-item" href="#">עדכון פרטים ››</a>
-          </nav> -->
-        </div>
-        <div class="profile-p-sec d-flex align-items-start">
-          <div class="profile-icon-wrapper">
-            <img src="../common/img/icon.svg"
-            class="icon">
+    <div class="main-menu-mobile-container d-lg-none" aria-labelledby="mainMobileNavTrigger">
+      <div class="main-menu-mobile-wrapper"></div>
+      ${require("../common/top-navigation/top-navigation.html")}
+    </div>
+    <div class="main-content-wrapper">
+      ${require("../common/header/header.html")} 
+      <section class="profile-top-sec d-flex flex-column align-items-center">
+        <!-- <div class="background-img-top-sec"></div> -->
+        <div class="top-sec-container custom-container d-flex flex-column justify-content-center">
+          <div class="profile-breadcrumb-wrapper">
+            ${require("../common/breadcrumb/breadcrumb.html")}
           </div>
-          <div class="profile-p-wrapper">
-            <p class="profile-head">
-              שלום שמעון
-            </p>
-            <p class="profile-p">
-              הגעת לאיזור האישי שלך בו תוכל להגדיר את הפרטים האישיים שלך.<br>
-              לורם איפסום דולור סיט אמט, ונסקטורר אדיפיסינג אלית קונסקטורר אדיפיסינג 
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="profile-body d-flex flex-column align-items-center">
-      <div class="profile-body-wrapper custom-container">
-        <div class="profile-form-wrapper">
-          <div class="d-flex name-lng-wrapper">
-            <div class="form-group name">
-              <input class="form-control" type="text" placeholder="שם פרטי ומשפחה" id="nameInput">
-              <label class="sr-only" for="nameInput">
+          <div class="profile-p-sec flex-column flex-lg-row d-flex align-items-start">
+            <div class="profile-icon-wrapper">
+              <img src="../common/img/icon.svg"
+              class="clipboard-icon" alt="clipboard-icon">
             </div>
-            <div class="form-group language">
-              <div class="blue-arrow"></div>
-              <select class="form-control language-select" id="language-reg" placeholder= "שפה">
-                <option>עברית</option>
-                <option>אנגלית</option>
-              </select>
-            </div>
-          </div> 
-          <div class="form-group email-wrapper d-flex">
-            <div class="form-group email">
-              <input type="email" class="form-control" id="inputEmail" placeholder="דוא״ל" data-error="כתובת דוא״ל לא תקינה" required>
-              <label class="sr-only" for="inputEmail">
-              <div class="help-block with-errors"></div>
-            </div>
-            <div class="form-group email-confirm">
-              <input type="email" class="form-control" id="inputEmailConfirm" data-match="inputEmail" data-match-error="כתובת דוא״ל אינה תואמת" placeholder="אימות דוא״ל" required>
-              <label class="sr-only" for="inputEmailConfirm">
-              <div class="help-block with-errors"></div>
-            </div>
-          </div>    
-          <div class="form-group password-wrapper d-flex">
-            <div class="form-group password">
-              <input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="סיסמא" required>
-              <label class="sr-only" for="inputPassword">
-            </div>
-            <div class="form-group password-confirm">
-              <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="הסיסמה אינה תואמת" placeholder="אימות סיסמא" required>
-              <label class="sr-only" for="inputPasswordConfirm">
-              <div class="help-block with-errors"></div>
+            <div class="profile-p-wrapper">
+              <h1 class="profile-head">
+                שלום שמעון
+              </h1>
+              <p class="profile-p">
+                הגעת לאיזור האישי שלך בו תוכל להגדיר את הפרטים האישיים שלך.<br class="d-none d-lg-static">
+                לורם איפסום דולור סיט אמט, ונסקטורר אדיפיסינג אלית קונסקטורר אדיפיסינג 
+              </p>
             </div>
           </div>
         </div>
-        <div class="save-details-button d-flex justify-content-end">
-          <button class="btn btn-primary">שמור</button>
+      </section>
+      <section class="profile-body d-flex flex-column align-items-center">
+        <div class="profile-body-wrapper custom-container">
+          <div class="profile-form-wrapper">
+            <div class="d-flex flex-column flex-lg-row name-lng-wrapper">
+              <div class="form-group name">
+                <input class="form-control" type="text" placeholder="שם פרטי ומשפחה" id="nameInput">
+                <label class="sr-only" for="nameInput">
+              </div>
+              <div class="form-group language">
+                <div class="blue-arrow"></div>
+                <select class="form-control language-select" id="language-reg" placeholder= "שפה">
+                  <option>עברית</option>
+                  <option>אנגלית</option>
+                </select>
+              </div>
+            </div> 
+            <div class="form-group email-wrapper d-flex flex-column flex-lg-row">
+              <div class="form-group email">
+                <input type="email" class="form-control" id="inputEmail" placeholder="דוא״ל" data-error="כתובת דוא״ל לא תקינה" required>
+                <label class="sr-only" for="inputEmail">
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group email-confirm">
+                <input type="email" class="form-control" id="inputEmailConfirm" data-match="inputEmail" data-match-error="כתובת דוא״ל אינה תואמת" placeholder="אימות דוא״ל" required>
+                <label class="sr-only" for="inputEmailConfirm">
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>    
+            <div class="form-group password-wrapper d-flex flex-column flex-lg-row">
+              <div class="form-group password">
+                <input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="סיסמא" required>
+                <label class="sr-only" for="inputPassword">
+              </div>
+              <div class="form-group password-confirm">
+                <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="הסיסמה אינה תואמת" placeholder="אימות סיסמא" required>
+                <label class="sr-only" for="inputPasswordConfirm">
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+          </div>
+          <div class="save-details-button d-flex justify-content-end">
+            <button class="btn btn-primary">שמור</button>
+          </div>
         </div>
-      </div>
-    </section>
-    <footer class="profile-footer d-flex justify-content-center">
-      ${require("../common/footer/footer.html")}
-    </footer>
+      </section>
+      <footer class="profile-footer d-flex justify-content-center">
+          ${require("../common/footer/footer.html")}
+      </footer>
+    </div>
     ${require("../common/common.html")}
   </body>
 </html>

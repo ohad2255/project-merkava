@@ -50,7 +50,7 @@ header {
             margin-right: 8px;
 
             .first-head {
-              font-size: 1.2em;
+              font-size: 1.2rem;
               font-weight: normal;
               font-style: normal;
               font-stretch: normal;
@@ -59,7 +59,7 @@ header {
               color: $main-white;
 
               @media (min-width: $screen-lg-min) {
-                font-size: 1.6em;
+                font-size: 1.6rem;
                 line-height: 1;
                 letter-spacing: 1.5px;
               }
@@ -68,7 +68,7 @@ header {
 
             .second-head {
               font-family: OpenSans;
-              font-size: 1em;
+              font-size: 1rem;
               font-weight: normal;
               font-style: normal;
               font-stretch: normal;
@@ -77,7 +77,7 @@ header {
               color: $main-white;
 
               @media (min-width: $screen-lg-min) {
-                font-size: 1.4em;
+                font-size: 1.4rem;
                 line-height: 1.14;
                 letter-spacing: 1.5px;
               }
@@ -123,7 +123,7 @@ header {
 
       .Abig {
         object-fit: contain;
-        font-size: 2.6em;
+        font-size: 2.6rem;
         font-weight: normal;
         font-style: normal;
         font-stretch: normal;
@@ -136,7 +136,7 @@ header {
 
       .Asmall {
         object-fit: contain;
-        font-size: 2em;
+        font-size: 2rem;
         font-weight: normal;
         font-style: normal;
         font-stretch: normal;
@@ -169,7 +169,7 @@ header {
           border: none;
           margin-left: 24px;
           object-fit: contain;
-          font-size: 2em;
+          font-size: 2rem;
           font-weight: normal;
           font-style: normal;
           font-stretch: normal;
@@ -210,7 +210,7 @@ header {
           padding: 0;
 
           .lng-dropdown-item-1 {
-            font-size: 2em;
+            font-size: 2rem;
             font-weight: normal;
             font-style: normal;
             font-stretch: normal;
@@ -220,11 +220,12 @@ header {
             text-align: center;
             padding: 5px;
             margin-top: 3px;
-          }
 
-          .lng-dropdown-item-1:hover {
-            background-color: $main-white;
-            color: $header-blue;
+            &:hover {
+              background-color: #1c6897;
+              color: #0a7bb6;
+              border: 0;
+            }
           }
         }
       }
@@ -238,7 +239,7 @@ header {
         box-sizing: border-box;
         padding: 0;
         object-fit: contain;
-        font-size: 2em;
+        font-size: 2rem;
         text-align: center;
         font-weight: 500;
         font-style: normal;
@@ -280,7 +281,7 @@ header {
 
         .input-toggle {
           object-fit: contain;
-          font-size: 2em;
+          font-size: 2rem;
           font-weight: normal;
           font-style: normal;
           font-stretch: normal;
@@ -295,7 +296,7 @@ header {
           height: 32px;
 
           @media (min-width: $screen-lg-min) {
-            font-size: 2.4em;
+            font-size: 2.4rem;
             line-height: 0.67;
             padding-top: 0;
           }
@@ -327,7 +328,7 @@ header {
           text-align: right;
 
           .input-dropdown-item-1 {
-            font-size: 2em;
+            font-size: 2rem;
             font-weight: normal;
             font-style: normal;
             font-stretch: normal;
@@ -345,7 +346,7 @@ header {
           }
 
           .input-dropdown-item-2 {
-            font-size: 2em;
+            font-size: 2rem;
             font-weight: normal;
             font-style: normal;
             font-stretch: normal;
@@ -360,7 +361,7 @@ header {
       }
 
       .main-input {
-        font-size: 2em;
+        font-size: 2rem;
         font-weight: normal;
         font-style: normal;
         font-stretch: normal;
@@ -376,7 +377,7 @@ header {
 
         @media (min-width: $screen-lg-min) {
           object-fit: contain;
-          font-size: 2.4em;
+          font-size: 2.4rem;
           line-height: 0.67;
           //padding-bottom: 0;
         }

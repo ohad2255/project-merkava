@@ -6,67 +6,73 @@
     ${require("../common/common-stylesheet.html")}
   </head>
   <body class="signin">
-    ${require("../common/header/header.html")} 
-    <section class="d-flex align-items-center justify-content-center">
-      <div class="signin-container d-flex custom-container flex-column flex-lg-row">
-        <div class="signin-sec-wrapper">
-          <div class="signin-p-wrapper">
-            <p class="signin-sec-head">
-              כניסה לרשומים
-            </p>
-            <p class="signin-sec-p">
-              אתר מינהל הרכש הממשלתי מפרסם מידי יום, את רשימת המכרזים, הפטורים והדיווחים של משרדי הממשלה ויחידות הסמך.
-            </p>
-          </div>
-          <form>
-            <div class="form-group">
-              <input type="email" class="form-control email-input" id="InputEmailSign" aria-describedby="emailHelp" placeholder="כתובת אימייל">
-              <label class="sr-only" for="InputEmailSign">
+    <div class="main-menu-mobile-container d-lg-none" aria-labelledby="mainMobileNavTrigger">
+      <div class="main-menu-mobile-wrapper"></div>
+      ${require("../common/top-navigation/top-navigation.html")}
+    </div>
+    <div class="main-content-wrapper">
+      ${require("../common/header/header.html")} 
+      <section class="d-flex align-items-center justify-content-center">
+        <div class="signin-container d-flex custom-container flex-column flex-lg-row">
+          <div class="signin-sec-wrapper">
+            <div class="signin-p-wrapper">
+              <h1 class="signin-sec-head">
+                כניסה לרשומים
+              </h1>
+              <p class="signin-sec-p">
+                אתר מינהל הרכש הממשלתי מפרסם מידי יום, את רשימת המכרזים, הפטורים והדיווחים של משרדי הממשלה ויחידות הסמך.
+              </p>
             </div>
-            <div class="form-group">
-              <input type="password" class="form-control password-input" id="InputPasswordSignIn" placeholder="סיסמא">
-              <label class="sr-only" for="InputEmailSignIn">
-            </div>
-            <div class="recaptcha-container">
-              <div class="g-recaptcha" data-sitekey="6LcTeEAUAAAAAEqaDHyi2iLhTbV5usvBszRIErrF"></div>
-            </div>
-            <div class= "signin-bottom-sec d-flex justify-content-between align-items-center">
-              <div class="form-check signin-form-check d-flex align-items-center">
-                <input id="rememberMeCheckbox" type="checkbox">
-                <label class="form-check-label d-flex justify-content-center align-items-center" for="rememberMeCheckbox">
-                  <span></span>
-                  זכור אותי
-                </label>
+            <form>
+              <div class="form-group">
+                <input type="email" class="form-control email-input" id="InputEmailSign" aria-describedby="emailHelp" placeholder="כתובת אימייל">
+                <label class="sr-only" for="InputEmailSign">
               </div>
-              <a href="">
-                <div class="forgot-password">
-                  שכחתי סיסמה >
+              <div class="form-group">
+                <input type="password" class="form-control password-input" id="InputPasswordSignIn" placeholder="סיסמא">
+                <label class="sr-only" for="InputEmailSignIn">
+              </div>
+              <div class="recaptcha-container">
+                <div class="g-recaptcha" data-sitekey="6LcTeEAUAAAAAEqaDHyi2iLhTbV5usvBszRIErrF"></div>
+              </div>
+              <div class= "signin-bottom-sec d-flex justify-content-between align-items-center">
+                <div class="form-check signin-form-check d-flex align-items-center">
+                  <input id="rememberMeCheckbox" type="checkbox">
+                  <label class="form-check-label d-flex justify-content-center align-items-center" for="rememberMeCheckbox">
+                    <span></span>
+                    זכור אותי
+                  </label>
                 </div>
-              </a>
-            </div>
-            <div class="signin-submit">
-              <button type="submit" class="btn btn-primary">שלח</button>
-            </div>
-          </form>
-        </div>
-        <div class="reg-sec-wrapper">
-          <div class="reg-p-wrapper">
-            <p class="reg-sec-head">
-              להצטרפות לשירות
-            </p>
-            <p class="reg-sec-p">
-              על מנת להצטרף לשרות ולקבל את הפרסומים ישירות לתיבת הדואר האלקטרוני, יש להירשם לקבלת עדכונים:
-            </p>
+                <a href="">
+                  <div class="forgot-password">
+                    שכחתי סיסמה >
+                  </div>
+                </a>
+              </div>
+              <div class="signin-submit">
+                <button type="submit" class="btn btn-primary">שלח</button>
+              </div>
+            </form>
           </div>
-          <div class="reg-button">
-            <button class="btn btn-primary">הירשם</button>
+          <div class="reg-sec-wrapper">
+            <div class="reg-p-wrapper">
+              <h1 class="reg-sec-head">
+                להצטרפות לשירות
+              </h1>
+              <p class="reg-sec-p">
+                על מנת להצטרף לשרות ולקבל את הפרסומים ישירות לתיבת הדואר האלקטרוני, יש להירשם לקבלת עדכונים:
+              </p>
+            </div>
+            <div class="reg-button">
+              <button class="btn btn-primary">הירשם</button>
+            </div>
           </div>
         </div>
-      </div>
-    </section> 
-    <footer>
-      ${require("../common/footer/footer.html")}
-    </footer>
+      </section> 
+      <footer>
+        ${require("../common/footer/footer.html")}
+      </footer>
+    </div>
     ${require("../common/common.html")}
   </body>
 </html>
