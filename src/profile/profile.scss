@@ -1,4 +1,5 @@
 @import "../common/common.scss";
+
 .profile {
 	
 	.profile-top-sec {
@@ -9,12 +10,6 @@
 
 		@media (min-width: $screen-lg-min) {
             height: 308px;
-            //background-image: url('../common/img/group-16.svg');
-            //object-fit: contain;
-			//opacity: 0.3;
-			//mix-blend-mode: overlay;
-			//background-size: cover;
-			//background-repeat: no-repeat;
        	}
 
 		.background-img-top-sec {
@@ -32,6 +27,12 @@
 			left: 0;
 			z-index: 1;
 			background-position-y: 22px;
+
+			@media (min-width: $screen-lg-min) {
+                background-image: url('../common/img/group-16.svg');
+           	}
+
+			
 		}
 
 		.top-sec-container {
