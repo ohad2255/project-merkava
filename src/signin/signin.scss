@@ -110,6 +110,11 @@
 
 					.recaptcha-container {
 						width: 100%;
+						margin:0 -8px 0 0;
+
+						@media (min-width: $screen-lg-min) {
+							margin: 0;
+						}
 
 						.g-recaptcha {
 							width: 364px;
