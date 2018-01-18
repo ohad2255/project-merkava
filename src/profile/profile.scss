@@ -1,7 +1,8 @@
 @import "../common/common.scss";
 
 .profile {
-	
+	min-width: 330px;
+
 	.profile-top-sec {
 		position: relative;
 		background-color: $profile-top-sec-backround;

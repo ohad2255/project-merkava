@@ -1,6 +1,11 @@
 @import "../common/common.scss";
 
 .green-r {
+	min-width: 330px;
+
+	#searchInput {
+		 padding: 0 0 0 22px;
+	}
 
 	.custom-container {
 		padding: 0 20px;
