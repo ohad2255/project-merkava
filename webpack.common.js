@@ -9,7 +9,8 @@ module.exports = {
         'signin/signin': ["./src/signin/signin.scss", "./src/signin/signin.js"],
         'registration/registration': ["./src/registration/registration.scss", "./src/registration/registration.js"],
         'profile/profile': ["./src/profile/profile.scss", "./src/profile/profile.js"],
-        'about/about': ["./src/about/about.scss", "./src/about/about.js"]
+        'about/about': ["./src/about/about.scss", "./src/about/about.js"],
+        'green-rechesh/green-rechesh': ["./src/green-rechesh/green-rechesh.scss", "./src/green-rechesh/green-rechesh.js"]
     },
     output: {
         filename: "[name].min.js",
@@ -82,6 +83,11 @@ module.exports = {
             chunks: ['about/about'],
             filename: path.resolve(__dirname, "dist/about/index.html"),
             template: path.resolve(__dirname, "src/about/index.html")
+        }),
+        new HtmlWebpackPlugin({
+            chunks: ['green-rechesh/green-rechesh'],
+            filename: path.resolve(__dirname, "dist/green-rechesh/index.html"),
+            template: path.resolve(__dirname, "src/green-rechesh/index.html")
         })    
     ]
 };

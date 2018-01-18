@@ -98,7 +98,7 @@
 						line-height: normal;
 						letter-spacing: 0.5px;
 						color: #6a768a;
-						padding-right: 25px;
+						padding: 4px 25px 0 0;
 					}
 
 					.name, .email, .email-confirm, .password, .password-confirm {
@@ -120,6 +120,10 @@
 
 					.language {
 						position: relative;
+
+						select {
+							padding: 4px 25px 0 0;
+						}
 
 						.blue-arrow {
 							width: 12px;
@@ -159,7 +163,7 @@
 							color: rgba(106,118,138,0.8);
 							-webkit-appearance: none;
 							-moz-appearance: none;
-							padding-right: 25px;
+							padding: 0 25px 0 0;
 						}
 					}
 
@@ -167,29 +171,27 @@
 						
 
 						@media (min-width: $screen-lg-min) {
-							margin-bottom: 25px;
+							margin: 0 0 25px 0;
 						}
 					}
 
 					.password-wrapper {
-						margin-bottom: 40px;
+						margin: 0 0 40px 0;
 					}
 
 					.name, .email, .password {
-						margin-bottom: 25px;
+						margin:0 0 25px 0;
 
 						@media (min-width: $screen-lg-min) {
-							margin-right: 20px;
-							margin-bottom: 0;
+							margin: 0 0 0 20px;
 						}
 					} 
 
 					.language, .email-confirm, .password-confirm {
-						margin-bottom: 25px;
+						margin:0 0 25px 0;
 
 						@media (min-width: $screen-lg-min) {
-							margin-right: 20px;
-							margin-bottom: 0;
+							margin:0 20px 0 0;
 						}
 					}
 
@@ -200,7 +202,7 @@
 
 				.registration-button {
 					width: 100%;
-					margin-bottom: 45px;
+					margin: 0 0 45px 0;
 
 					@media (min-width: $screen-lg-min) {
 						width: fit-content;

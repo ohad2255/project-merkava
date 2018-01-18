@@ -1,29 +1,30 @@
 @import "../common/common.scss";
-.about {
+
+.green-r {
 
 	.custom-container {
 		padding: 0 20px;
 	}
 
-	.nav-item-text-2 {
+	.nav-item-text-6 {
       background-color: rgba(255, 255, 255, 0.19);
       border-bottom: solid 1px #1c6897; 
 	}
 
-	.about-top-sec {
+	.green-r-top-sec {
 		position: relative;
 		height: 205px;
 		background-color: $main-white;
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
-		background-image: url('../common/img/group-13.png');
+		background-image: url('../common/img/background-pic-green-r.png');
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position-y: -4px;
 		background-position-x: 7px;
 
 		@media (min-width: $screen-lg-min) {
-			background-image: url('../common/img/back-top-lg.svg');
 			height: fit-content;
+			background-size: contain;
 		}
 
 		.right-line {
@@ -33,7 +34,7 @@
 			width: 5px;
 			height: 104%;
 			border-radius: 4px;
-			background-color: #1c6897;
+			background-color: $rechesh-green;
 
 			@media (min-width: $screen-lg-min) {
 				width: 11px;
@@ -44,17 +45,17 @@
 		.top-sec-container {
 			max-width: 1222px; 
 			width: 100%;
-			padding: 0;
+			padding: 29px 0 0 0;
 
 			@media (min-width: $screen-lg-min) {
-				padding: 0 20px;
+				height: 297px;
 			}
 
-			.about-breadcrumb-wrapper {
-				margin:0 34px 0 0;	
+			.green-r-breadcrumb-wrapper {
+				//margin:0 34px 0 0;	
 
 				@media (min-width: $screen-lg-min) {
-					margin:31px 20px 0 0;
+					margin:0 125px 35px 0;
 				}
 
 				.breadcrumb {
@@ -62,7 +63,7 @@
 				}
 
 				.breadcrumb-item  {
-					color: $header-blue;
+					color: $rechesh-green;
 					font-size: 1.6rem;
 					font-weight: 500;
 					font-style: normal;
@@ -72,42 +73,50 @@
 				}
 			}
 
-			.about-p-sec {
-				margin: 73px 25px 28px 0;
+			.green-r-p-sec {
+				//margin: 73px 25px 28px 0;
 
 				@media (min-width: $screen-lg-min) {
 					margin: 0;
 				}	
 
-				.about-p-wrapper {
+				.green-r-p-container {
 
 					@media (min-width: $screen-lg-min) {
-						margin:29px 20px 116px 0;
+						//margin:29px 20px 116px 0;
 					}	
+				}
+
+				.green-r-p-wrapper {
+					order: 2;
+					margin: 0 35px 0 0;
+				}
+
+				.green-top-icon {
+					order: 1;
+					width: 88px;
+					height: 116px;
+					object-fit: contain;
 				}	
 
-				.about-head {
+				.green-r-head {
 					font-size: 3rem;
 					font-weight: 500;
 					font-style: normal;
 					font-stretch: normal;
 					line-height: 0.83;
 					letter-spacing: normal;
-					color: #1c6897;
+					color: $rechesh-green;
 
 					@media (min-width: $screen-lg-min) {
 						font-size: 6.2rem;
 						font-weight: 500;
-						font-style: normal;
-						font-stretch: normal;
 						line-height: normal;
-						letter-spacing: normal;
-						color: #1c6897;
 						margin: 0 0 3px 0;
 					}	
 				}
 
-				.about-top-p {
+				.green-r-top-p {
 					font-size: 1.6rem;
 					font-weight: normal;
 					font-style: normal;
@@ -132,10 +141,10 @@
 		}
 	}
 
-	.about-body {
+	.green-r-body {
 		//height: 567px;
 
-		.about-body-wrapper {
+		.green-r-body-wrapper {
 			width: 100%;
 			margin:0 0 77px 0;
 
@@ -143,16 +152,16 @@
 				margin:0 0 81px 0;
 			}
 
-			.about-body-p-wrapper {
+			.green-r-body-p-wrapper {
 				margin: 21px 0 30px;
 
 				@media (min-width: $screen-lg-min) {
 					max-width: 1222px;
-					padding: 0 10px;
+					padding: 0;
 				}	
 			}
 
-			.about-body-first-p, .about-body-second-p{
+			.green-r-body-first-p {
 				margin-bottom: 0;
 				font-size: 1.6rem;
 				font-weight: normal;
@@ -164,14 +173,10 @@
 				color: #4e5665;
 			}
 
-			.about-body-second-p {
-				font-weight: 500;
-			}
+			.green-r-accordion-wrapper {
 
-			.about-accordion-wrapper {
-
-				.card-one, .card-two {
-					border-right: 5px solid #1c6897;
+				.card-1, .card-2, .card-3 {
+					border-right: 5px solid $rechesh-green;
 					border-radius: 2px;
 					background-color: $main-white;
 					box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.15);
@@ -181,7 +186,7 @@
 
 					@media (min-width: $screen-lg-min) {
 						min-height: 264px;
-						padding: 0 10px;
+						padding: 0;
 					}
 
 					.collapsed-p {
@@ -205,39 +210,10 @@
 						padding: 0 14px 10px 0;
 
 						@media (min-width: $screen-lg-min) {
-							padding: 0 91.5px 10px 0;
+							padding: 0 91.5px 20px 0;
 						}	
-
-						img.icon-first-collaps-p {
-							width: 44px;
-							height: 44px;
-							position: absolute;
-							left: 9px;
-							top: 9px;
-
-							@media (min-width: $screen-lg-min) {
-								height: 170px;
-								width: 170px;
-								top: 46px;
-								left: 98px;
-							}	
-						}
-
-						.icon-second-collaps-p {
-					    	width: 44px;
-							height: 46px;
-							position: absolute;
-							left: 9px;
-							top: 9px;
-
-							@media (min-width: $screen-lg-min) {
-								width: 171px;
-								height: 176px;
-								top: 38px;
-								left: 97px;
-							}	
-						}
 					}
+
 					h2 {
 						font-size: 2rem;
 						font-weight: normal;
@@ -245,7 +221,7 @@
 						font-stretch: normal;
 						line-height: 1.25;
 						letter-spacing: normal;
-						color: #1c6897;
+						color: $rechesh-green;
 						font-family: $main-font;
 						padding-top: 17px;
 						height: fit-content;
@@ -267,7 +243,7 @@
 						letter-spacing: normal;
 						color: #505050;
 						font-family: $main-font;
-						margin:0 14px 0 60px; 
+						margin: 0 14px 0 30px; 
 
 						@media (min-width: $screen-lg-min) {
 							max-width: 785px;
@@ -278,7 +254,7 @@
 					}
 				}
 
-				.card-two {
+				.card-3 {
 					margin: 0;
 				}
 
@@ -295,7 +271,7 @@
     					height: 26px;
     					margin: 0;
     					left: 25px;
-    					top: 187px;
+    					bottom: 23px;
 					}	 
 				}
 
@@ -306,7 +282,7 @@
 		}
 	}
 
-	.about-footer {
+	.green-r-footer {
 		padding: 69px 0 0 0;
 		margin: 0 46px 0;
 		border-top: solid 2px rgba(224,224,224,.3);
