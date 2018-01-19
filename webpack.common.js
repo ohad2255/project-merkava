@@ -11,7 +11,7 @@ module.exports = {
         'profile/profile': ["./src/profile/profile.scss", "./src/profile/profile.js"],
         'about/about': ["./src/about/about.scss", "./src/about/about.js"],
         'green-rechesh/green-rechesh': ["./src/green-rechesh/green-rechesh.scss", "./src/green-rechesh/green-rechesh.js"],
-        'q&a/q&a': ["./src/q&a/q&a.scss", "./src/q&a/q&a.js"]
+        'q-and-a/q-and-a': ["./src/q-and-a/q-and-a.scss", "./src/q-and-a/q-and-a.js"]
     },
     output: {
         filename: "[name].min.js",
@@ -91,9 +91,9 @@ module.exports = {
             template: path.resolve(__dirname, "src/green-rechesh/index.html")
         }),
         new HtmlWebpackPlugin({
-            chunks: ['q&a/q&a'],
-            filename: path.resolve(__dirname, "dist/q&a/index.html"),
-            template: path.resolve(__dirname, "src/q&a/index.html")
+            chunks: ['q-and-a/q-and-a'],
+            filename: path.resolve(__dirname, "dist/q-and-a/index.html"),
+            template: path.resolve(__dirname, "src/q-and-a/index.html")
         })    
     ]
 };

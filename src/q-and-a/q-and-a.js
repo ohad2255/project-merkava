@@ -1,5 +1,5 @@
 require('../common/common');
 
 $('#accordion .collapse-button').on('click', function () {
-    $('.collapsed-p .panel-collapse').collapse('toggle');
+    $('.panel-collapse').collapse('toggle');
 });
