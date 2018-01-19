@@ -1,0 +1,66 @@
+<html>
+  <head>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>שאלות ותשובות</title>
+      ${require("../common/common-stylesheet.html")}
+  </head>
+  <body class="q-and-a">
+    <div class="main-menu-mobile-container d-lg-none" aria-labelledby="mainMobileNavTrigger">
+      <div class="main-menu-mobile-wrapper"></div>
+      ${require("../common/top-navigation/top-navigation.html")}
+    </div>
+    <div class="main-content-wrapper">
+      ${require("../common/header/header.html")}
+      <section class="q-and-a-top-sec d-flex flex-column align-items-center">
+        <div class="right-line"></div>
+        <div class="top-sec-container custom-container d-flex flex-column justify-content-start">
+            <div class="q-and-a-breadcrumb-wrapper d-none d-lg-block">
+                ${require("../common/breadcrumb/breadcrumb.html")}
+            </div>
+            <div class="q-and-a-p-sec d-flex align-items-start">
+                <div class="q-and-a-p-container d-flex align-items-center">
+                    <div class="q-and-a-p-wrapper d-flex flex-column">
+                      <h1 class="q-and-a-head">
+                          שאלות ותשובות
+                      </h1>
+                      <p class="q-and-a-top-p">
+                          מנגנון שאלות ותשובות שלפניכם, מאפשר נגישות גבוהה לעובדי מינהל הרכש הממשלתי לצורך הפצה של מידע רלוונטי והעלאת סוגיות שונות ע"י המשתתפים.  
+                      </p>
+                    </div>
+                    <img src="../common/img/q&a-icon.svg" class="green-top-icon d-none d-lg-block" alt="green-leaf-icon">
+                </div>
+            </div>
+        </div>
+      </section>
+      <section class="q-and-a-body d-flex flex-column align-items-center">
+          <div class="card question custom-container">
+            <a class="collapsed d-flex flex-column collapsed-p" data-toggle="collapse" data-target="#collapseOne"
+              href="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              <div class="card-header d-flex" role="tab" id="headingOne">
+                <span class="closed">+</span>
+                <span class="open"></span>
+                <div class="question-wrapper d-lg-flex flex-column justify-content-center">
+                    <p class="question-p">​
+                      האם חובה לכתוב פרוטוקול מדיון ועדות מכרזים ולפרסם אותו?
+                    </p>
+                </div>
+              </div>
+              <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="card-block answer">
+                  בהתאם לתקנה 10(א) לתקנות חובת המכרזים תשנ"ג-1993, וכן הוראת תכ"ם מס' 7.2.2 שעניינה "ועדת המכרזים" והוראת תכ"מ מס' 7.1.2  שעניינה "דיווחים ופרסומים" , החלטות ועדת המכרזים ינומקו והן יירשמו בפרוטוקול שייחתם בידי חברי הועדה הנוכחים בישיבה. 
+                  ככלל פרסום החלטות הועדה יעשה בהתאם לעניין, ובכפוף להוראות התקנות והתכ"ם, ובכלל זה יפורסמו באתר האינטרנט הממשלתי זאת בשים לב להוראות תקנה 1ג(ב) לתח"מ.
+                  תאריך:21/07/2015
+                </div>
+              </div>
+            </a>
+          </div>
+      </section>
+      <footer class="q-and-a-footer d-flex justify-content-center">
+          ${require("../common/footer/footer.html")}
+      </footer>
+    </div>
+    ${require("../common/common.html")}
+  </body>
+</html>
