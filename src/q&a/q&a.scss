@@ -164,8 +164,8 @@
 		padding: 0;
 
 		@media (min-width: $screen-lg-min) {
-			padding: 32px 0 0 0;
-			margin: 66px auto 164px;
+			padding: 32px 0 100px 0;
+			margin: 66px auto 0;
 		}	
 
 		.cards-wrapper {
@@ -323,8 +323,14 @@
 		border-top: 0;
 
 		@media (min-width: $screen-lg-min) {
-			margin: 0 165px 0;
-			padding: 58px 0 0 0;
-		}	
+			margin: 0 auto 0;
+			padding: 38px 0 0 0;
+			border-top: solid 1px #dddddd;
+			max-width: 1271px;
+		}
+
+		.footer-nav-wrapper	{
+			margin:0 0 44px 0;
+		}
 	}
 }
