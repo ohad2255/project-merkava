@@ -16,6 +16,10 @@
 	letter-spacing: normal;
 	color: $main-white;
 
+	span {
+		padding: 0 0 3px 0;
+	}
+
 	@media (min-width: $screen-lg-min) {
 		font-size: 1.6rem;
 	}

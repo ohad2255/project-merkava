@@ -18,17 +18,18 @@
 
 	.q-and-a-top-sec {
 		position: relative;
-		height: 205px;
 		background-color: $main-white;
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
 		background-image: url('../common/img/q&a-background-pic.png');
 		background-repeat: no-repeat;
 		background-size: contain;
 		margin: 0 0 5px 0;
+		padding:0 0 28px 0;
 
 		@media (min-width: $screen-lg-min) {
 			height: fit-content;
 			margin: 0;
+			padding:0 0 60px 0;
 		}
 
 		.right-line {
@@ -52,7 +53,6 @@
 			height: fit-content;
 
 			@media (min-width: $screen-lg-min) {
-				height: 297px;
 				padding: 29px 30px 0;
 			}
 
@@ -314,6 +314,12 @@
 				background-color: #0a7bb6;
 				margin: 11px 0 0 0;
 			}
+		}
+
+		.collapse-button {
+			height: 25px;
+			width: 25px;
+			background-color: red;
 		}
 	}
 
