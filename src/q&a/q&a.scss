@@ -23,26 +23,25 @@
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
 		background-image: url('../common/img/q&a-background-pic.png');
 		background-repeat: no-repeat;
-		background-size: cover;
+		background-size: contain;
+		margin: 0 0 5px 0;
 
 		@media (min-width: $screen-lg-min) {
 			height: fit-content;
-			background-size: contain;
+			margin: 0;
 		}
 
 		.right-line {
 			position: absolute;
 			right: 0;
-			top: -4px;
+			top: 0;
 			width: 5px;
-			height: 104%;
+			height: 100%;
 			//border-radius: 4px;
 			background-color: $q-and-a-purple;
 
 			@media (min-width: $screen-lg-min) {
 				width: 11px;
-				top: 0;
-				height: 100%;
 			}
 		}
 
@@ -79,16 +78,18 @@
 			}
 
 			.q-and-a-p-sec {
-				margin: 73px 25px 15px;
+				margin: 20px 0 0 0;
+				padding: 0 20px;
 
 				@media (min-width: $screen-lg-min) {
 					margin: 0;
+					padding: 0;
 				}	
 
 				.q-and-a-p-container {
 
 					@media (min-width: $screen-lg-min) {
-						//margin:29px 20px 116px 0;
+						
 					}	
 				}
 
@@ -101,11 +102,18 @@
 					}
 				}
 
-				.green-top-icon {
+				.q-and-a-top-icon {
 					order: 1;
-					width: 136px;
-					height: 116px;
 					object-fit: contain;
+					width: 55px;
+					height: 47px;
+					margin: 0 0 6px 0;
+
+					@media (min-width: $screen-lg-min) {
+						width: 136px;
+						height: 116px;
+						margin: 0;
+					}
 				}	
 
 				.q-and-a-head {
@@ -152,6 +160,8 @@
 	}
 
 	.q-and-a-body {
+		margin: 0 0 70px 0;
+
 		@media (min-width: $screen-lg-min) {
 			padding: 32px 0 0 0;
 			margin: 0 0 164px 0;
@@ -160,19 +170,32 @@
 		.card {
 			border: 0;
 			width: 100%;
-		}
+			padding: 0;
 
+			@media (min-width: $screen-lg-min) {
+				padding: 0 0 35px 0;
+			}
+		}
 
 		.question {
 
 			.card-header {
+				background-color: $main-white;
+				padding: 0 20px;
+				min-height: 65px;
+				border-bottom: solid 1px $q-and-a-purple;
 		
 			    @media (min-width: $screen-lg-min) {
-					background-color: $main-white;
 					padding: 0 10px 0 0;
 				    margin: 0;
 				    border: 0;
+				    height: fit-content;
+				}
 
+				.q-and-a-arrow {
+					width: 14px;
+  					height: 8px;
+  					margin: -5px 0 0 0;
 				}
 			}
 
@@ -184,39 +207,55 @@
 				width: 100%;
 
 				.question-p {
-	   				margin: 0;
-	   				font-size: 2rem;
+	   				font-size: 1.6rem;
+					line-height: normal;
+					letter-spacing: normal;
+					color: #4e5666;
 					font-weight: 500;
 					font-style: normal;
 					font-stretch: normal;
-					line-height: 1.25;
 					letter-spacing: normal;
-					color: #4e5665;
+					padding: 0 0 0 15px;
+					margin: -5 0 0 0;
+					
 
 	   				@media (min-width: $screen-lg-min) {
 						padding: 0 12px 12px 0;
+						line-height: 1.25;
+						color: #4e5665;
+						font-size: 2rem;
+						margin: 0;
 					}
 	 			}
 			}
 
 			.card-block {
-				font-size: 2rem;
-				font-weight: normal;
-				font-style: normal;
-				font-stretch: normal;
-				line-height: 1.25;
-				letter-spacing: normal;
-				color: #4e5665;
+				background-color: $background-answer-mobile;
 
 				@media (min-width: $screen-lg-min) {
+					padding: 0 38px 36px 0;
 					background-color: $main-white;
-					padding: 0 38px 0 0;
 				}
 			}	
 		}
 
 		.answer {
-			border-bottom: solid 3px #6266a6;
+			font-size: 1.5rem;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			color: #4e5665;
+			border-bottom: solid 1px $bottom-border-question;
+			padding: 20px;
+
+			@media (min-width: $screen-lg-min) {
+				font-size: 2rem;
+				line-height: 1.25;
+				border-bottom: solid 3px $q-and-a-purple;
+				padding: 0;
+			}
 		}
 
 		.collapsed {
@@ -231,13 +270,23 @@
 			}
 
 			.closed {
-				display: block;
+				display: none;
+
+				@media (min-width: $screen-lg-min) {
+					display: block;
+				}
 			}
 
 			.question-p {
+				padding: 0;
+
 				@media (min-width: $screen-lg-min) {
 					padding: 0 12px 40px 0!important;
 				}
+			}
+
+			.q-and-a-arrow {
+				transform: rotate(180deg);
 			}
 		}
 
@@ -251,17 +300,22 @@
 		}
 
 		.open {
-			width: 12px;
-			height: 1.5px;
-			background-color: #0a7bb6;
-			margin: 11px 0 0 0;
+			display: none;
+			
+			@media (min-width: $screen-lg-min) {
+				display: block;
+				width: 12px;
+				height: 1.5px;
+				background-color: #0a7bb6;
+				margin: 11px 0 0 0;
+			}
 		}
 	}
 
 	.q-and-a-footer {
-		padding: 69px 0 0 0;
+		padding: 0;
 		margin: 0 46px 0;
-		border-top: solid 2px rgba(224,224,224,.3);
+		border-top: 0;
 
 		@media (min-width: $screen-lg-min) {
 			margin: 0 165px 0;
