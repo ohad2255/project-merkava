@@ -163,9 +163,10 @@
 		margin: 0 0 70px 0;
 		padding: 0;
 		position: relative;
+		max-width: 1232px;
 
 		@media (min-width: $screen-lg-min) {
-			padding: 32px 0 100px 0;
+			padding: 32px 10px 100px;
 			margin: 0px auto 0;
 		}	
 
@@ -321,6 +322,7 @@
 			position: absolute;
 			left: 0;
 			top: -41px;
+			padding: 0 10px;
 
 			.collapse-button-open, .collapse-button-close {
 				font-size: 1.6rem;

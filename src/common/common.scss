@@ -24,11 +24,13 @@ html {
   direction: rtl;
   font-size: 10px;
   text-align: right;
+  height: 100%;
 }
 
 body {
   text-align: right;
   font-family: $main-font;
+  height: 100%;
 }
 
 .custom-container {
