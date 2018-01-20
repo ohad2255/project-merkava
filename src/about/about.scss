@@ -7,8 +7,11 @@
 	}
 
 	.nav-item-text-2 {
-      background-color: rgba(255, 255, 255, 0.19);
-      border-bottom: solid 1px #1c6897; 
+		background-color: rgba(255, 255, 255, 0.19);
+
+		@media (min-width: $screen-lg-min) {
+			border-bottom: solid 1px #1c6897; 
+		 }
 	}
 
 	.about-top-sec {
@@ -284,7 +287,6 @@
 				}
 
 				.collapse-arrow {
-			 		//margin: 0 0 7px 10px;
 			 		width: 15px;
 					height: 13px; 
 					position: absolute;
@@ -292,7 +294,7 @@
 					bottom: 9px;
 
 					@media (min-width: $screen-lg-min) {
-						width: 30;
+						width: 30px;
     					height: 26px;
     					margin: 0;
     					left: 25px;

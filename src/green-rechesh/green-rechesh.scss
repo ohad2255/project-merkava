@@ -12,8 +12,11 @@
 	}
 
 	.nav-item-text-6 {
-      background-color: rgba(255, 255, 255, 0.19);
-      border-bottom: solid 1px #1c6897; 
+		background-color: rgba(255, 255, 255, 0.19);
+
+		@media (min-width: $screen-lg-min) {
+			border-bottom: solid 1px #1c6897; 
+		 }
 	}
 
 	.green-r-top-sec {
