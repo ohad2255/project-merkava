@@ -34,7 +34,7 @@
         </div>
       </section>
       <section class="contact-us-body d-flex flex-column align-items-center">
-        <div class="contact-us-body-wrapper custom-container">
+        <div class="contact-us-body-wrapper custom-container d-flex justify-content-between">
           <form class="contact-us-form-wrapper needs-validation" novalidate>
             <div class="d-flex flex-column flex-lg-row name-email-wrapper">
               <div class="form-group name">
@@ -54,8 +54,8 @@
                 <div class="blue-arrow"></div>
                 <select class="form-control subject-select" id="subjectSelect" placeholder= "נושא הפנייה">
                   <option value="" disabled selected hidden>נושא הפנייה</option>
-                  <option>פריט-1</option>
-                  <option>פריט-2</option>
+                  <option>נושא-1</option>
+                  <option>נושא-2</option>
                 </select>
               </div>
               <div class="form-group phone-number">
@@ -65,11 +65,43 @@
                   מספר טלפון לא תקין
                 </div>
               </div>
-            </div>    
+            </div> 
+            <div class="form-group subject-textarea">
+              <label class="sr-only" for="subjectTextarea"></label>
+              <textarea class="form-control" id="subjectTextarea" placeholder="פירוט הפנייה"></textarea>
+            </div>
+            <div class="upload-file-wrapper form-group">
+              <div class="file-input-wrapper">
+                <small>להעלת קובץ מצורף גרור לכאן או לחץ:</small>
+                <div class="file-button-wrapper d-flex align-items-center justify-content-center">
+                  <span class="file-button-text">צרף מסמך</span>
+                  <label class="sr-only" for="customFile"></label>
+                  <input type="file" class="custom-file-input" id="customFile">
+                    
+                    <!-- <span class="custom-file-control form-control-file"></span> -->
+                </div>
+              </div>
+            </div>
+            <div class="recaptcha-container">
+              <div class="g-recaptcha" data-sitekey="6LcTeEAUAAAAAEqaDHyi2iLhTbV5usvBszRIErrF"></div>
+            </div>  
             <div class="save-details-button d-flex justify-content-end">
               <button class="btn btn-primary" type="submit">שמור</button>
             </div>
           </form>
+          <div class="info-container">
+            <div class="right-line"></div>
+            <h2>אנחנו כאן בשבילך</h2>
+            <div class="info-wrapper">
+              <address>רחוב נתנאל לורך 1, קרית הממשלה, ירושלים</address>
+              <span>טלפון: 02-6663426</span>
+              <span>פקס: 02-5695368</span>
+              <p> 
+                דוא"ל: 
+                <a href="mailto:rechesh_support@mof.gov.il" target="_top" class="mail-info">rechesh_support@mof.gov.il</a>
+              </p>
+            </div>
+          </div>
         </div>
       </section>
       <footer class="contact-us-footer d-flex justify-content-center">

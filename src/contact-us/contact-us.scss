@@ -182,7 +182,7 @@
 			margin: 25px 0 0 0;
 
 			@media (min-width: $screen-lg-min) {
-                max-width: 880px;
+                max-width: 705px;
 				width: 100%;
 				margin: 44px 0 0 0;
            	}
@@ -204,7 +204,7 @@
 				line-height: normal;
 				letter-spacing: 0.5px;
 				color: #6a768a;
-				padding-right: 25px;
+				padding:0 23px 0 0;
 			}
 
 			.subject {
@@ -240,7 +240,7 @@
 					color: rgba(106,118,138,0.8);
 					-webkit-appearance: none;
 					-moz-appearance: none;
-					padding:0 25px 0 0;
+					padding:0 23px 0 0;
 				}
 			}
 
@@ -296,6 +296,153 @@
 			          color: $header-blue;
 			          border: 0;
 			        }
+				}
+			}
+
+			.subject-textarea {
+				height: 87px;
+				margin: 0 0 25px 0;
+
+				textarea {
+					height: 100%;
+					font-size: 1.5rem;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: normal;
+					letter-spacing: 0.5px;
+					color: #6a768a;
+					padding: 17px 23px 0 0;
+				}
+			}
+
+			.upload-file-wrapper {
+				height: 102px;
+				width: 100%;
+				border-radius: 3px;
+				background-color: #ffffff;
+				border: dashed 1px #d4d4d4;
+				margin: 0 0 25px 0;
+
+				.form-control-file {
+					&::before {
+						background-color: red;
+					}
+					&::after {
+						background-color: red;
+					}
+				}
+
+				.file-input-wrapper {
+					padding: 12px 23px 0 0;
+
+					small {
+						opacity: 0.6;
+						font-size: 1.5rem;
+						font-weight: normal;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: normal;
+						letter-spacing: 0.5px;
+						color: #4e5665;
+						margin: 0 0 13.5px 0;
+						display: block;
+					}
+				}
+
+				.file-button-wrapper {
+					height: 30px;
+					opacity: 0.6;
+					border-radius: 4px;
+					box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
+					border: solid 1px rgb(78, 86 ,101);
+					width: 100px;
+					position: relative;
+					
+					.file-button-text {
+						position: absolute;
+						opacity: 0.6;
+						font-size: 1.5rem;
+						font-weight: normal;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: 1.07;
+						letter-spacing: normal;
+						text-align: right;
+						color: #4e5665;
+						z-index: 0;
+					}
+
+					.custom-file-input {
+						cursor: pointer;
+						height: 30px;
+						width: 100%;
+						order: 2;
+						background-color: transparent;
+						padding: 0;
+						min-width: fit-content;
+					}
+
+					.custom-file-control {
+						
+					}
+				}	
+			}
+		}
+
+		.info-container {
+			width: 430px;
+			height: 342px;
+			border-radius: 3px;
+			background-color: $main-white;
+			box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+			margin: 35px 0 0 0;
+			position: relative;
+			padding: 68px 60px 0 0;
+
+			.right-line {
+				position: absolute;
+				right: 0;
+				top: 0px;
+				width: 4px;
+				height: 100%;
+				border-radius: 4px;
+				background-color: $cobalt;
+
+				@media (min-width: $screen-lg-min) {
+					width: 11px;
+				}
+			}
+
+			h2 {
+				font-size: 3.2rem;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.69;
+				letter-spacing: normal;
+				color: $cobalt;
+			}
+			.info-wrapper {
+				width: 270px;
+				height: 119px;
+				font-size: 16px;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.75;
+				letter-spacing: normal;
+				color: #4e5665;
+
+				address {
+					margin: 0;	
+				}
+
+				.mail-info {
+					font-family: HelveticaNeue;
+					font-size: 15px;
+					line-height: 1.87;
+					color: #0a7bb6;
 				}
 			}
 		}
