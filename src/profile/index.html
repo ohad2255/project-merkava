@@ -38,11 +38,11 @@
       </section>
       <section class="profile-body d-flex flex-column align-items-center">
         <div class="profile-body-wrapper custom-container">
-          <div class="profile-form-wrapper">
+          <form class="profile-form-wrapper needs-validation" novalidate>
             <div class="d-flex flex-column flex-lg-row name-lng-wrapper">
               <div class="form-group name">
                 <input class="form-control" type="text" placeholder="שם פרטי ומשפחה" id="nameInput">
-                <label class="sr-only" for="nameInput">
+                <label class="sr-only" for="nameInput"></label>
               </div>
               <div class="form-group language">
                 <div class="blue-arrow"></div>
@@ -54,32 +54,36 @@
             </div> 
             <div class="form-group email-wrapper d-flex flex-column flex-lg-row">
               <div class="form-group email">
+                <label class="sr-only" for="inputEmail"></label>
                 <input type="email" class="form-control" id="inputEmail" placeholder="דוא״ל" data-error="כתובת דוא״ל לא תקינה" required>
-                <label class="sr-only" for="inputEmail">
-                <div class="form-control-feedback">Success! You've done it.</div>
-                <div class="help-block with-errors"></div>
+                <div class="invalid-feedback">
+                  אימייל חייב להכיל @
+                </div>
+                  <!-- אימייל חייב להכיל @ -->
+                <!-- <div class="form-control-feedback">Success! You've done it.</div> -->
+                <!-- <div class="help-block with-errors"></div> -->
               </div>
               <div class="form-group email-confirm">
                 <input type="email" class="form-control" id="inputEmailConfirm" data-match="inputEmail" data-match-error="כתובת דוא״ל אינה תואמת" placeholder="אימות דוא״ל" required>
-                <label class="sr-only" for="inputEmailConfirm">
+                <label class="sr-only" for="inputEmailConfirm"></label>
                 <div class="help-block with-errors"></div>
               </div>
             </div>    
             <div class="form-group password-wrapper d-flex flex-column flex-lg-row">
               <div class="form-group password">
                 <input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="סיסמא" required>
-                <label class="sr-only" for="inputPassword">
+                <label class="sr-only" for="inputPassword"></label>
               </div>
               <div class="form-group password-confirm">
                 <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="הסיסמה אינה תואמת" placeholder="אימות סיסמא" required>
-                <label class="sr-only" for="inputPasswordConfirm">
+                <label class="sr-only" for="inputPasswordConfirm"></label>
                 <div class="help-block with-errors"></div>
               </div>
             </div>
-          </div>
-          <div class="save-details-button d-flex justify-content-end">
-            <button class="btn btn-primary" type="submit">שמור</button>
-          </div>
+            <div class="save-details-button d-flex justify-content-end">
+              <button class="btn btn-primary" type="submit">שמור</button>
+            </div>
+          </form>
         </div>
       </section>
       <footer class="profile-footer d-flex justify-content-center">
