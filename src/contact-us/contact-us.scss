@@ -151,7 +151,7 @@
 					font-stretch: normal;
 					line-height: normal;
 					letter-spacing: normal;
-					color: $cobalt;
+					color: #4e5665;
 					text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 					padding: 0;
 					margin:0 0 20px 0;
@@ -159,6 +159,7 @@
 					@media (min-width: $screen-lg-min) {
 	                    font-size: 3rem;
 	                    margin:0 0 10px 0;
+	                    color: $cobalt;
 	               	}
 				}
 			}
@@ -167,11 +168,12 @@
 
 	.contact-us-body {
 		height: fit-content;
-		padding: 0 0 45px 0;
+		padding: 0 0 20px 0;
 
 		@media (min-width: $screen-lg-min) {
     		height: 567px;
     		padding: 0;
+    		margin: 0 0 235px 0;
        	}
 
 		.contact-us-body-wrapper {
@@ -388,23 +390,37 @@
 					}
 				}	
 			}
+
+			.recaptcha-container {
+				margin: 0 0 48px 0;
+
+				@media (min-width: $screen-lg-min) {
+					margin: 0;
+				}
+			}
 		}
 
 		.info-container {
-			width: 430px;
-			height: 342px;
+			width: 100%;
+			height: 242px;
 			border-radius: 3px;
 			background-color: $main-white;
 			box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
 			margin: 35px 0 0 0;
 			position: relative;
-			padding: 68px 60px 0 0;
+			padding: 30px 30px 0 0;
+
+			@media (min-width: $screen-lg-min) {
+				width: 430px;
+				height: 342px;
+				padding: 68px 60px 0 20px;
+			}
 
 			.right-line {
 				position: absolute;
 				right: 0;
 				top: 0px;
-				width: 4px;
+				width: 7px;
 				height: 100%;
 				border-radius: 4px;
 				background-color: $cobalt;
@@ -452,5 +468,18 @@
 .contact-us-footer {
 	border-top: solid 1px #dddddd;;
   	object-fit: contain;
-  	padding: 30px 0 0;
+  	padding: 67px 0 0;
+  	margin: 0 46px;
+
+  	@media (min-width: $screen-lg-min) {
+		margin: 0 165px;
+	}
+
+	.footer-nav-wrapper {
+		margin: 0 0 87px 0;
+	}
+
+	@media (min-width: $screen-lg-min) {
+		margin: 0;
+	}
 }
