@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>פרטי משתמש</title>
+    ${require("../common/common-stylesheet.html")}
+  </head>
+  <body class="contact-us">
+    <div class="main-menu-mobile-container d-lg-none" aria-labelledby="mainMobileNavTrigger">
+      <div class="main-menu-mobile-wrapper"></div>
+      ${require("../common/top-navigation/top-navigation.html")}
+    </div>
+    <div class="main-content-wrapper">
+      ${require("../common/header/header.html")} 
+      <section class="contact-us-top-sec d-flex flex-column align-items-center">
+      <div class="right-line"></div>
+        <div class="top-sec-container custom-container d-flex flex-column justify-content-lg-start justify-content-center">
+          <div class="contact-us-p-sec flex-column flex-lg-row d-flex align-items-start">
+            <div class="contact-us-icon-wrapper">
+              <img src="../common/img/contact-us-icon.svg"
+              class="contact-us-icon" alt="paper-plane">
+            </div>
+            <div class="contact-us-p-wrapper">
+              <h1 class="contact-us-head">
+                צור קשר
+              </h1>
+              <p class="contact-us-p">
+                לורם איפסום קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה
+                שיצמה ברורק. קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact-us-body d-flex flex-column align-items-center">
+        <div class="contact-us-body-wrapper custom-container">
+          <form class="contact-us-form-wrapper needs-validation" novalidate>
+            <div class="d-flex flex-column flex-lg-row name-email-wrapper">
+              <div class="form-group name">
+                <input class="form-control" type="text" placeholder="שם פרטי ומשפחה" id="nameInput">
+                <label class="sr-only" for="nameInput"></label>
+              </div>
+              <div class="form-group email">
+                <label class="sr-only" for="inputEmail"></label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="דוא״ל" data-error="כתובת דוא״ל לא תקינה" required>
+                <div class="invalid-feedback">
+                  אימייל חייב להכיל @
+                </div>
+              </div>
+            </div> 
+            <div class="form-group subject-phone-wrapper d-flex flex-column flex-lg-row">
+              <div class="form-group subject">
+                <div class="blue-arrow"></div>
+                <select class="form-control subject-select" id="subjectSelect" placeholder= "נושא הפנייה">
+                  <option value="" disabled selected hidden>נושא הפנייה</option>
+                  <option>פריט-1</option>
+                  <option>פריט-2</option>
+                </select>
+              </div>
+              <div class="form-group phone-number">
+                <label class="sr-only" for="phoneNumber"></label>
+                <input type="tel" class="form-control" id="phoneNumber" placeholder="טלפון" data-error="מספר טלפון לא תקין" required>
+                <div class="invalid-feedback">
+                  מספר טלפון לא תקין
+                </div>
+              </div>
+            </div>    
+            <div class="save-details-button d-flex justify-content-end">
+              <button class="btn btn-primary" type="submit">שמור</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <footer class="contact-us-footer d-flex justify-content-center">
+          ${require("../common/footer/footer.html")}
+      </footer>
+    </div>
+    ${require("../common/common.html")}
+  </body>
+</html>

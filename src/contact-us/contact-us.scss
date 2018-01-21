@@ -1,20 +1,38 @@
 @import "../common/common.scss";
 
-.profile {
+.contact-us {
 	min-width: 330px;
 
-	.profile-top-sec {
+	.contact-us-top-sec {
 		position: relative;
-		background-color: $cobalt;
+		background-image:  url('../common/img/q-and-a-background-pic.png');
 		height: fit-content;
 		padding: 0;
+		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+		background-repeat: no-repeat;
+		background-size: contain;
 
 		@media (min-width: $screen-lg-min) {
-            height: 308px;
+            background-image: url('../common/img/q-and-a-background-pic.png');
        	}
 
+       	.right-line {
+			position: absolute;
+			right: 0;
+			top: -4px;
+			width: 5px;
+			height: 104%;
+			border-radius: 4px;
+			background-color: $cobalt;
+
+			@media (min-width: $screen-lg-min) {
+				width: 11px;
+				top: -7px;
+			}
+		}
+
 		.background-img-top-sec {
-			background-image: url('../common/img/placeholde.svg');
+			background-image: url('../common/img/contact-us-background-pic.svg');
 			position: absolute; 
 			bottom: 0;
 			width: 100%;
@@ -27,10 +45,10 @@
 			bottom: 0;
 			left: 0;
 			z-index: 1;
-			background-position-y: 22px;
+			//background-position-y: 22px;
 
 			@media (min-width: $screen-lg-min) {
-                background-image: url('../common/img/group-16.svg');
+                background-image: url('../common/img/contact-us-background-pic.svg');
            	}
 
 			
@@ -42,16 +60,12 @@
 			z-index: 2;
 
 			@media (min-width: $screen-lg-min) {
-                padding: 0 25px;
-                max-width: 1222px; 
+                padding: 80px 20px;
+    			max-width: 1304px;
            	}
 
-           	@media (min-width: $screen-xl-min) {
-                padding: 0 10px;
-                max-width: 1222px; 
-           	}
 
-			.profile-breadcrumb-wrapper {
+			.contact-us-breadcrumb-wrapper {
 				margin: 0 8px 0 0;	
 				font-size: 1.5rem;
 				position: absolute;
@@ -87,53 +101,57 @@
                	}
 			}
 
-			.profile-p-sec {
+			.contact-us-p-sec {
 				margin: 16px 8px 0 0;	
 
 				@media (min-width: $screen-lg-min) {
                     margin: 0;
                	}
 
-				.profile-icon-wrapper {
-					margin: 0 0 10px 0;
+				.contact-us-icon-wrapper {
+					margin: 0 0 2px 0;
 
 					@media (min-width: $screen-lg-min) {
-	                    margin: 24px 0 0 35px;
+	                    margin: 16px 0 0 43px;
 	               	}
 
 					img {
-						height: 41px;
+						width: 49px;
+  						height: 51px;
 
 						@media (min-width: $screen-lg-min) {
-		                   height: 98px;
+		                    width: 110px;
+							height: 115px;
+							object-fit: contain;
 		               	}
 					}
 				}
 
-				.profile-head {
+				.contact-us-head {
 					font-size: 3rem;
 					font-weight: 500;
 					font-style: normal;
 					font-stretch: normal;
 					line-height: normal;
 					letter-spacing: normal;
-					color: $main-white;
+					color: $cobalt;
 					text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 
 					@media (min-width: $screen-lg-min) {
+						margin: 0 0 11px 0;
 	                    font-size: 6.2rem;
 	               	}
 				}
 
-				.profile-p {
+				.contact-us-p {
 					max-width: 1070px;
-					font-size: 1.6rem;
+					font-size: 1.8rem;
 					font-weight: normal;
 					font-style: normal;
 					font-stretch: normal;
 					line-height: normal;
 					letter-spacing: normal;
-					color: $main-white;
+					color: $cobalt;
 					text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 					padding: 0;
 					margin:0 0 20px 0;
@@ -147,7 +165,7 @@
 		}
 	}
 
-	.profile-body {
+	.contact-us-body {
 		height: fit-content;
 		padding: 0 0 45px 0;
 
@@ -156,14 +174,19 @@
     		padding: 0;
        	}
 
-		.profile-body-wrapper {
+		.contact-us-body-wrapper {
 			width: 100%;
 		}
 
-		.profile-form-wrapper {
-			max-width: 880px;
-			width: 100%;
-			margin-top: 44px;
+		.contact-us-form-wrapper {
+			margin: 25px 0 0 0;
+
+			@media (min-width: $screen-lg-min) {
+                max-width: 880px;
+				width: 100%;
+				margin: 44px 0 0 0;
+           	}
+			
 
 			.form-group {
 				width: 100%;
@@ -184,8 +207,12 @@
 				padding-right: 25px;
 			}
 
-			.language {
+			.subject {
 				position: relative;
+
+				@media (min-width: $screen-lg-min) {
+                    
+               	}
 
 				.blue-arrow {
 					width: 12px;
@@ -201,7 +228,7 @@
 				    left: 17px;
 				}
 
-				#language-reg {
+				#subjectSelect {
 					width: 100%;
 					height: 50px;
 					font-size: 1.5rem;
@@ -213,81 +240,69 @@
 					color: rgba(106,118,138,0.8);
 					-webkit-appearance: none;
 					-moz-appearance: none;
-					padding-right: 25px;
+					padding:0 25px 0 0;
 				}
 			}
 
-			.name-lng-wrapper, .email-wrapper {
+			.subject-phone-wrapper, .name-email-wrapper {
 
 				@media (min-width: $screen-lg-min) {
-                    margin-bottom: 25px;
+                    margin:0 0 25px 0;
                     height: 50px;
                	}
 			}
 
-			.password-wrapper {
-				margin:0 0 40px 0;
-
-				@media (min-width: $screen-lg-min) {
-                    
-               	}
-			}
-
-			.name, .email, .password {
-				//margin-left: 20px;
+			.name, .subject {
 				margin: 0 0 25px 0;
 
 				@media (min-width: $screen-lg-min) {
-                    margin:0 0 0 20px;
-               	}
-			} 
-
-			.language, .email-confirm, .password-confirm {
-
-				@media (min-width: $screen-lg-min) {
-                    margin:0 20px 0 0;
+                    margin: 0 0 0 25px;
                	}
 			}
 
-			.language, .email-confirm {
-				margin-bottom: 20px;
-			}
-		}
+			.email, .phone-number {
+				 margin: 0 0 25px 0;
 
-		.save-details-button {
-			max-width: 882px;
-
-			button {
-				width: 100%;
-				height: 50px;
-				object-fit: contain;
-				border-radius: 3px;
-				background-color: $header-blue;
-				box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
-				font-size: 2rem;
-				font-weight: 500;
-				font-style: normal;
-				font-stretch: normal;
-				line-height: normal;
-				letter-spacing: 0.5px;
-				text-align: center;
-				color: $main-white;
-
-				@media (min-width: $screen-lg-min) {
-                    width: 180px;
+				 @media (min-width: $screen-lg-min) {
+                    margin: 0;
                	}
+			}
 
-				&:active {
-		          background-color: #1c6897;
-		          color: $header-blue;
-		          border: 0;
-		        }
+			.save-details-button {
+				max-width: 882px;
+
+				button {
+					width: 100%;
+					height: 50px;
+					object-fit: contain;
+					border-radius: 3px;
+					background-color: $header-blue;
+					box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
+					font-size: 2rem;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: normal;
+					letter-spacing: 0.5px;
+					text-align: center;
+					color: $main-white;
+
+					@media (min-width: $screen-lg-min) {
+	                    width: 180px;
+	               	}
+
+					&:active {
+			          background-color: #1c6897;
+			          color: $header-blue;
+			          border: 0;
+			        }
+				}
 			}
 		}
 	}
 }	
 
-.profile-footer {
+.contact-us-footer {
 	border-top: solid 1px #dddddd;;
   	object-fit: contain;
   	padding: 30px 0 0;
