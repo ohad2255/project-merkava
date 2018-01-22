@@ -20,3 +20,12 @@ $(document).ready(function() {
        this.classList.toggle("open");
     });
 });
+
+$('.main-nav-wrapper .nav-item').focus(function() {
+        $('.focus').removeClass('focus');
+    })
+
+    $('.main-nav-wrapper .main-nav-item-dropdown a').focus(function() {
+        $('.focus').removeClass('focus');
+        $(this).parent('.main-nav-item-dropdown').addClass('focus')
+    })
