@@ -252,7 +252,7 @@ header {
         box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
         color: $ent-bnt-font-color;
 
-        &:active {
+        &:active, &:focus {
           background-color: #1c6897;
           color: $header-blue;
           border: 0;

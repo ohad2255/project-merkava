@@ -80,14 +80,15 @@
 
               .main-gallery-wrapper-s-1 {
                 height: 100%;
-                background-image: url("../common/img/mainimg-gallery.jpg");
+                // background-image: url("../common/img/mainimg-gallery.jpg");
                 background-repeat: no-repeat;
                 object-fit: contain;
                 background-size: cover;
                 background-position: center;
+                position: relative;
 
                 @media (min-width: $screen-lg-min) {
-                  background-image: url("../common/img/main-gallery.png");
+                  // background-image: url("../common/img/main-gallery.png");
                 }
 
                 &:hover, &:focus {
@@ -95,8 +96,21 @@
                   //transition: all 0.4s ease;
                   background-size: 110%;
                 }
+
+                img {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  z-index: 0;
+
+                  &:hover, &:focus {
+                    transform: scale(1.1);
+                    transition: all .3s ease-in-out;
+                  }
+                }
                 
                 .main-gallery-container-p-s-1 {
+                  z-index: 1;
 
                     @media (min-width: $screen-lg-min) {
                       height: 161px;
@@ -167,6 +181,25 @@
               }
             }
 
+            .swiper-a-wrapper {
+              z-index: 2;
+              position: relative;
+
+              &:hover, &:focus {
+                img {
+                  transform: scale(1.1);
+                  transition: all .3s ease-in-out;
+                }
+              }
+
+              img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+              }
+            }
+
             .swiper-slide-2 {
               background-image: url("../common/img/mainimg-gallery-copy.png");
               background-repeat: no-repeat;
@@ -174,12 +207,12 @@
               background-size: cover;
 
               @media (min-width: $screen-lg-min) {
-                background-image: url("../common/img/banner-big.png");
+                //background-image: url("../common/img/banner-big.png");
               }
 
               .main-gallery-wrapper-s-2 {
                 height: 100%;
-
+                z-index: 1;
 
                 @media (min-width: $screen-lg-min) {
                   //max-width: 370px;
@@ -187,6 +220,7 @@
                   height: 161px;
                   background-color: $background-p-img; 
                 }
+
 
                 .main-gallery-container-p-s-2 {
                   background-color: $background-p-img; 
@@ -201,6 +235,8 @@
                     padding: 0;
                     background-color: transparent;
                   }
+
+
                 }
 
               
