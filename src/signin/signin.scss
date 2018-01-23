@@ -15,7 +15,7 @@
 			margin: 40px 0;
 
 			@media (min-width: $screen-lg-min) {
-				max-width: 1222px;
+				max-width: 1262px;
 				margin: 54px 0;
 			}	
 
@@ -82,6 +82,10 @@
 						width: 365px;
 					}
 
+					input {
+						padding: 3px 15px 0;
+					}
+
 					.signin-bottom-sec {
 						margin-top: 25px;
 					}
@@ -111,10 +115,14 @@
 
 					.recaptcha-container {
 						width: 100%;
-						margin:0 -8px 0 0;
 
 						@media (min-width: $screen-lg-min) {
 							margin: 0;
+						}
+
+						@media (max-width: 375px) {
+							transform: scale(0.84);
+    						margin-right: -17px;
 						}
 
 						.g-recaptcha {
@@ -219,7 +227,7 @@
 						text-align: center;
 						color: $main-white;
 
-						&:active {
+						&:active, &:focus {
 				          background-color: #1c6897;
 				          color: $header-blue;
 				          border: 0;
@@ -250,8 +258,13 @@
 					margin: 26px auto 12px;
 
 					@media (min-width: $screen-lg-min) {
-						margin: 53px 90px 0 0;
+						margin: 53px 53px 0 0;
 						max-width: 436px;
+					}	
+
+					@media (min-width: $screen-xl-min) {
+						margin: 53px 83px 0 0;
+						
 					}	
 
 					.reg-sec-head {
@@ -293,6 +306,11 @@
 					margin: 0;
 
 					@media (min-width: $screen-lg-min) {
+						margin-right: 53px;
+						margin-top: 29px;
+					}
+
+					@media (min-width: $screen-xl-min) {
 						margin-right: 90px;
 						margin-top: 29px;
 					}	
@@ -313,7 +331,7 @@
 						text-align: center;
 						color: $main-white;
 
-						&:active {
+						&:active, &:focus {
 				          background-color: #1c6897;
 				          color: $header-blue;
 				          border: 0;

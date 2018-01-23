@@ -37,11 +37,10 @@ body {
   padding: 0 18px;
 
   @media (min-width: $screen-lg-min) {
-    max-width: 1222px;
+    max-width: 1262px;
     padding: 0 20px;
   }
 }
-
 
 
 ul {
@@ -65,6 +64,11 @@ p {
 
 button {
 	cursor: pointer;
+}
+
+.mobile-menu-open .main-content-wrapper {
+  height: 100%;
+  overflow: hidden;
 }
 
 

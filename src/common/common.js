@@ -21,9 +21,9 @@ $(document).ready(function() {
     });
 });
 
-$('.main-nav-wrapper .nav-item').focus(function() {
+$(document).on('focusin', function() {
         $('.focus').removeClass('focus');
-    })
+    });
 
     $('.main-nav-wrapper .main-nav-item-dropdown a').focus(function() {
         $('.focus').removeClass('focus');

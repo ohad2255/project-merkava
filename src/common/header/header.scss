@@ -114,7 +114,7 @@ header {
     }
 
     .font-size-container {
-      margin: 0px 5px 7px auto;
+      margin: 0px 5px 0px auto;
       height: fit-content;
       text-decoration: none;
 
@@ -164,7 +164,6 @@ header {
 
         .lng-btn {
           padding: 0;
-          padding-bottom: 4px;
           height: fit-content;
           width: fit-content;
           background-color: transparent;
@@ -182,27 +181,20 @@ header {
           @media (min-width: $screen-lg-min) {
             width: fit-content;
             height: fit-content;
-            padding-bottom: 0;
           }
         }
 
         .lng-btn::after {
-          margin: 2px 18px 4px 0;
-          border-top: .5em solid;
-          border-right: .25em solid transparent;
-          border-bottom: 0;
-          border-left: .25em solid transparent;
+          margin: 0 17px 9px 0;
+          border: solid $main-white;
+          border-width: 0 1.5px 1.5px 0;
+          display: inline-block;
+          transform: rotate(45deg);
+          height: 9px;
+          width: 9px;
 
           @media (min-width: $screen-lg-min) {
-            border: solid $main-white;
-            border-width: 0 1.5px 1.5px 0;
-            display: inline-block;
-            transform: rotate(45deg);
-            -webkit-transform: rotate(45deg);
-            margin: 0;
             margin: 0px 13px 8px 0;
-            height: 10px;
-            width: 10px;
           }
         }
 
@@ -280,6 +272,16 @@ header {
       width: 100%;
 
       .input-dropdown {
+        height: 100%;
+        width: 114px;
+        padding: 14px 0;
+        position: relative;
+        min-width: 100px;
+
+        @media (min-width: $screen-lg-min) {
+          height: 60px;
+          width: 142px;
+        }
 
         .input-toggle {
           object-fit: contain;
@@ -292,10 +294,11 @@ header {
           color: $input-toggle-text;
           background-color: $main-white;
           border: none;
-          border-left: rgba(102, 102, 102, 0.3) solid 1px;
           border-radius: 0;
           padding: 1px 26px 0 20px;
-          height: 32px;
+          height: 100%;
+          border-left: rgba(102, 102, 102, 0.3) solid 1px;
+          
 
           @media (min-width: $screen-lg-min) {
             font-size: 2.4rem;
@@ -304,32 +307,29 @@ header {
           }
         }
 
-        .input-toggle::after {
-          margin: 0px 17px 0 1px;
+        .input-toggle-arrow {
+          position: absolute;
           color: $header-blue;
-          border-top: .5em solid;
-          border-right: .25em solid transparent;
-          border-bottom: 0;
-          border-left: .25em solid transparent;
-          padding-bottom: 2px;
+          z-index: 4;
+          left: 18px;
+          margin-top: -3px;
+          border: solid $header-blue;
+          border-width: 0 1.5px 1.5px 0;
+          display: inline-block;
+          transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+          height: 9px;
+          width: 9px;
 
           @media (min-width: $screen-lg-min) {
-            margin: 0 50px 7px 0;
-            border: solid $header-blue;
-            border-width: 0 1.5px 1.5px 0;
-            display: inline-block;
-            transform: rotate(45deg);
-            -webkit-transform: rotate(45deg);
-            height: 10px;
-            width: 10px;
+            
           }
         }
 
         .input-dropdown-menu {
           width: 100%;
-          text-align: right;
 
-          .input-dropdown-item-1 {
+          .input-dropdown-item {
             font-size: 2rem;
             font-weight: normal;
             font-style: normal;
@@ -339,25 +339,8 @@ header {
             color: $input-toggle-text;
             background-color: $main-white;
             border: none;
-            margin-bottom: 15px;
-            margin-top: 10px;
-
-            @media (min-width: $screen-xl-min) {
-
-            }
-          }
-
-          .input-dropdown-item-2 {
-            font-size: 2rem;
-            font-weight: normal;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: 0.8;
-            letter-spacing: normal;
-            color: $input-toggle-text;
-            background-color: $main-white;
-            border: none;
-            margin-bottom: 10px;
+            margin: 10px 0 15px 0;
+            height: 60px;
           }
         }
       }

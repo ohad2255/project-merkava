@@ -16,12 +16,15 @@
 	letter-spacing: normal;
 	color: $main-white;
 
-	span {
-		padding: 0 0 3px 0;
-	}
-
 	@media (min-width: $screen-lg-min) {
 		font-size: 1.6rem;
+	}
+
+	span {
+		font-size: 1.3rem;
+		position: relative;
+		top: -1px;
+		margin: 0 4px 0 0;
 	}
 }
 

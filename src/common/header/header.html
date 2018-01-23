@@ -47,13 +47,19 @@
     <div class="input-sec d-flex custom-container">
         <div class="input-container d-flex">   
             <div class="dropdown input-dropdown d-flex align-items-center">
-               <button class="btn btn-secondary dropdown-toggle input-toggle d-flex align-items-center justify-content-center" type="button" id="dropdownMenuButton"    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="input-toggle-arrow"></div>
+               <!-- <button class="btn btn-secondary dropdown-toggle input-toggle d-flex align-items-center justify-content-center" type="button" id="dropdownMenuButton"    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     הכל
                 </button>
                 <div class="dropdown-menu input-dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item input-dropdown-item-1" href="#">פריט-1</a>
                     <a class="dropdown-item input-dropdown-item-2" href="#">פריט-2</a>
-                </div> 
+                </div>  -->
+                <select class="form-control input-toggle" type="button" id="inputToggle" title="שפה">
+                        <option class="input-dropdown-item">הכל</option>
+                        <option class="input-dropdown-item">נושא-1</option>
+                        <option class="input-dropdown-item">נושא-2</option>
+                </select>
             </div>
             <input type="text" name="search" placeholder="חפש" class="main-input">
             <label class="sr-only">search</label>
