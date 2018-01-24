@@ -24,13 +24,13 @@
                 אתר מינהל הרכש הממשלתי מפרסם מידי יום, את רשימת המכרזים, הפטורים והדיווחים של משרדי הממשלה ויחידות הסמך.
               </p>
             </div>
-            <form>
+            <form id="signinForm" data-parsley-validate="">
               <div class="form-group">
-                <input type="email" class="form-control email-input" id="InputEmailSign" aria-describedby="emailHelp" placeholder="כתובת אימייל">
+                <input id="InputEmailSign" type="email" class="form-control email-input" placeholder="דוא״ל" name="email" data-parsley-trigger="change" required="">
                 <label class="sr-only" for="InputEmailSign"></label>
               </div>
               <div class="form-group">
-                <input type="password" class="form-control password-input" id="InputPasswordSignIn" placeholder="סיסמא">
+                <input type="password" class="form-control password-input" id="InputPasswordSignIn" placeholder="סיסמא" required="" data-toggle="password">
                 <label class="sr-only" for="InputEmailSignIn"></label>
               </div>
               <div class="recaptcha-container">
