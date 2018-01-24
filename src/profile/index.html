@@ -65,12 +65,12 @@
             </div>    
             <div class="form-group password-wrapper d-flex flex-column flex-lg-row">
               <div class="form-group password form-group-password">
-                <div id="showPassword">הצג סיסמא</div>
+                <div id="showPassword" role="button" tabindex="0">הצג סיסמא</div>
                 <input type="password" id="inputPasswordProfile" type="password" pattern="(?=.*\d)(?=.*[A-Z]).{8,}" class="form-control password-input" id="InputPasswordSignIn" placeholder="סיסמא" data-toggle="password" data-required="" data-parsley-validate-if-empty data-parsley-error-message="סיסמא צריכה להכיל 8 תווים לפחות, לכלול מספרים, תווים ולפחות אות אחת גדולה">
                 <label class="sr-only" for="inputPasswordProfile"></label>
               </div>
               <div class="form-group password-confirm">
-                <div id="showPasswordConfirm">הצג סיסמא</div>
+                <div id="showPasswordConfirm" role="button" tabindex="0">הצג סיסמא</div>
                 <input type="password" class="form-control" id="inputPasswordConfirmProfile"  placeholder="אימות סיסמא"  data-parsley-error-message="סיסמא אינה תואמת"  data-parsley-equalto="#inputPasswordProfile" required>
                 <label class="sr-only" for="inputPasswordConfirmProfile"></label>
               </div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="he">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,14 +24,15 @@
                 אתר מינהל הרכש הממשלתי מפרסם מידי יום, את רשימת המכרזים, הפטורים והדיווחים של משרדי הממשלה ויחידות הסמך.
               </p>
             </div>
-            <form id="signinForm" data-parsley-validate="">
+            <form id="signinForm" data-parsley-validate>
               <div class="form-group">
-                <input id="InputEmailSign" type="email" class="form-control email-input" placeholder="דוא״ל" name="email" data-parsley-trigger="change" required="">
-                <label class="sr-only" for="InputEmailSign"></label>
+                <input id="InputEmailSign" type="email" class="form-control email-input" placeholder="דוא״ל" name="email" data-required="" data-parsley-validate-if-empty data-parsley-error-message="אימייל חייב להכיל @">
+                <label class="sr-only" for="InputEmailSign" data-parsley-error-message="אימייל חייב להכיל @"></label>
               </div>
-              <div class="form-group">
-                <input type="password" class="form-control password-input" id="InputPasswordSignIn" placeholder="סיסמא" data-toggle="password" required="">
-                <label class="sr-only" for="InputEmailSignIn"></label>
+              <div class="form-group form-group-password">
+                <input type="password" pattern="(?=.*\d)(?=.*[A-Z]).{8,}" class="form-control password-input" id="InputPasswordSignIn" placeholder="סיסמא" data-toggle="password" data-required="" data-parsley-validate-if-empty data-parsley-error-message="סיסמא צריכה להכיל 8 תווים לפחות, לכלול מספרים, תווים ולפחות אות אחת גדולה">
+                <label class="sr-only" for="InputPasswordSignIn"></label>
+                <div id="showPassword" role="button" tabindex="0">הצג סיסמא</div>
               </div>
               <div class="recaptcha-container">
                 <div class="g-recaptcha" data-sitekey="6LcTeEAUAAAAAEqaDHyi2iLhTbV5usvBszRIErrF"></div>
@@ -46,7 +47,7 @@
                 </div>
                 <a href="">
                   <div class="forgot-password">
-                    שכחתי סיסמה >
+                    שכחתי סיסמא >
                   </div>
                 </a>
               </div>
