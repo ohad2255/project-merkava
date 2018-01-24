@@ -35,40 +35,34 @@
       </section>
       <section class="contact-us-body d-flex flex-column align-items-center">
         <div class="contact-us-body-wrapper custom-container d-flex flex-column flex-lg-row justify-content-between">
-          <form class="contact-us-form-wrapper needs-validation" novalidate>
+          <form class="contact-us-form-wrapper" id="registration-Form" data-parsley-validate>
             <div class="d-flex flex-column flex-lg-row name-email-wrapper">
               <div class="form-group name">
-                <input class="form-control" type="text" placeholder="שם פרטי ומשפחה" id="nameInput">
-                <label class="sr-only" for="nameInput"></label>
+                <input id="nameInputContactUs" class="form-control" type="text" placeholder="שם פרטי ומשפחה"  name="name" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty>
+                <label class="sr-only" for="nameInputContactUs"></label>
               </div>
               <div class="form-group email">
-                <label class="sr-only" for="inputEmail"></label>
-                <input type="email" class="form-control" id="inputEmail" placeholder="דוא״ל" data-error="כתובת דוא״ל לא תקינה" required>
-                <div class="invalid-feedback">
-                  אימייל חייב להכיל @
-                </div>
+                <input type="email" class="form-control" id="inputEmail" placeholder="דוא״ל"   id="inputEmailContactUs" class="form-control email-input" name="email" data-required="" data-parsley-validate-if-empty data-parsley-error-message="אימייל חייב להכיל @">
+                <label class="sr-only" for="inputEmailContactUs"></label>
               </div>
             </div> 
             <div class="form-group subject-phone-wrapper d-flex flex-column flex-lg-row">
               <div class="form-group subject">
                 <div class="blue-arrow"></div>
-                <select class="form-control subject-select" id="subjectSelect" placeholder= "נושא הפנייה">
+                <select class="form-control subject-select" id="subjectSelect" placeholder= "נושא הפנייה" data-parsley-error-message="שדה חובה" required>
                   <option value="" disabled selected hidden class="placeholder-subject-select">נושא הפנייה</option>
                   <option class="subject-select-option-1 subject-select-option">נושא-1</option>
                   <option class="subject-select-option-2 subject-select-option">נושא-2</option>
                 </select>
               </div>
               <div class="form-group phone-number">
+                <input type="tel" class="form-control" id="phoneNumber" placeholder="טלפון" data-parsley-error-message="מספר לא תקין" minlength="9" maxlength="10" required>
                 <label class="sr-only" for="phoneNumber"></label>
-                <input type="tel" class="form-control" id="phoneNumber" placeholder="טלפון" data-error="מספר טלפון לא תקין" required>
-                <div class="invalid-feedback">
-                  מספר טלפון לא תקין
-                </div>
               </div>
             </div> 
             <div class="form-group subject-textarea">
+              <textarea class="form-control" id="subjectTextarea" placeholder="פירוט הפנייה" required data-parsley-error-message="פירוט פנייה נדרש"></textarea>
               <label class="sr-only" for="subjectTextarea"></label>
-              <textarea class="form-control" id="subjectTextarea" placeholder="פירוט הפנייה"></textarea>
             </div>
             <div class="upload-file-wrapper form-group">
               <div class="file-input-wrapper">

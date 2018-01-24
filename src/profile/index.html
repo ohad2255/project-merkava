@@ -38,15 +38,15 @@
       </section>
       <section class="profile-body d-flex flex-column align-items-center">
         <div class="profile-body-wrapper custom-container">
-          <form class="profile-form-wrapper needs-validation" novalidate>
+          <form class="profile-form-wrapper" id="registration-Form" data-parsley-validate>
             <div class="d-flex flex-column flex-lg-row name-lng-wrapper">
               <div class="form-group name">
-                <input class="form-control" type="text" placeholder="שם פרטי ומשפחה" id="nameInput">
-                <label class="sr-only" for="nameInput"></label>
+                <input class="form-control" type="text" placeholder="שם פרטי ומשפחה" id="nameInputProfile" name="name" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty>
+                <label class="sr-only" for="nameInputProfile"></label>
               </div>
               <div class="form-group language">
                 <div class="blue-arrow"></div>
-                <select class="form-control language-select" id="language-reg" placeholder= "שפה">
+                <select class="form-control language-select" id="languageReg" placeholder= "שפה" required data-parsley-error-message="שדה חובה">
                   <option value="0" disabled selected hidden>שפה</option>
                   <option>עברית</option>
                   <option>אנגלית</option>
@@ -55,30 +55,24 @@
             </div> 
             <div class="form-group email-wrapper d-flex flex-column flex-lg-row">
               <div class="form-group email">
-                <label class="sr-only" for="inputEmail"></label>
-                <input type="email" class="form-control" id="inputEmail" placeholder="דוא״ל" data-error="כתובת דוא״ל לא תקינה" required>
-                <div class="invalid-feedback">
-                  אימייל חייב להכיל @
-                </div>
-                  <!-- אימייל חייב להכיל @ -->
-                <!-- <div class="form-control-feedback">Success! You've done it.</div> -->
-                <!-- <div class="help-block with-errors"></div> -->
+                <input type="email" class="form-control" id="inputEmailProfile" class="form-control email-input" placeholder="דוא״ל" name="email" data-required="" data-parsley-validate-if-empty data-parsley-error-message="אימייל חייב להכיל @">
+                <label class="sr-only" for="inputEmailProfile"></label>
               </div>
               <div class="form-group email-confirm">
-                <input type="email" class="form-control" id="inputEmailConfirm" data-match="inputEmail" data-match-error="כתובת דוא״ל אינה תואמת" placeholder="אימות דוא״ל" required>
-                <label class="sr-only" for="inputEmailConfirm"></label>
-                <div class="help-block with-errors"></div>
+                <input type="email" class="form-control" id="inputEmailConfirmProfile" data-match="inputEmailReg" data-parsley-error-message="דוא״ל לא תואם" placeholder="אימות דוא״ל" data-parsley-equalto="#inputEmailProfile" required>
+                <label class="sr-only" for="inputEmailConfirmProfile"></label>
               </div>
             </div>    
             <div class="form-group password-wrapper d-flex flex-column flex-lg-row">
-              <div class="form-group password">
-                <input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="סיסמא" required>
-                <label class="sr-only" for="inputPassword"></label>
+              <div class="form-group password form-group-password">
+                <div id="showPassword">הצג סיסמא</div>
+                <input type="password" id="inputPasswordProfile" type="password" pattern="(?=.*\d)(?=.*[A-Z]).{8,}" class="form-control password-input" id="InputPasswordSignIn" placeholder="סיסמא" data-toggle="password" data-required="" data-parsley-validate-if-empty data-parsley-error-message="סיסמא צריכה להכיל 8 תווים לפחות, לכלול מספרים, תווים ולפחות אות אחת גדולה">
+                <label class="sr-only" for="inputPasswordProfile"></label>
               </div>
               <div class="form-group password-confirm">
-                <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="הסיסמה אינה תואמת" placeholder="אימות סיסמא" required>
-                <label class="sr-only" for="inputPasswordConfirm"></label>
-                <div class="help-block with-errors"></div>
+                <div id="showPasswordConfirm">הצג סיסמא</div>
+                <input type="password" class="form-control" id="inputPasswordConfirmProfile"  placeholder="אימות סיסמא"  data-parsley-error-message="סיסמא אינה תואמת"  data-parsley-equalto="#inputPasswordProfile" required>
+                <label class="sr-only" for="inputPasswordConfirmProfile"></label>
               </div>
             </div>
             <div class="save-details-button d-flex justify-content-end">

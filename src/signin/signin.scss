@@ -37,7 +37,13 @@
 					margin: 24px 20px 17px;
 
 					@media (min-width: $screen-lg-min) {
+						margin: 53px 70px 0 0;
+						padding: 0 0 0 10px;
+					}	
+
+					@media (min-width: $screen-xl-min) {
 						margin: 53px 90px 0 0;
+						padding: 0;
 					}	
 
 					.signin-sec-head {
@@ -78,10 +84,56 @@
 					margin: 0 18px;
 
 					@media (min-width: $screen-lg-min) {
-						margin:19px 90px 0 0;
+						margin:19px 70px 0 0;
 						width: 365px;
+						padding: 0 0 0 10px;
 					}
 
+					@media (min-width: $screen-xl-min) {
+						margin:19px 90px 0 0;
+						width: 365px;
+						padding: 0;	
+					}
+
+					
+		            input.parsley-error {
+		              box-shadow: none;
+		              border-bottom: solid 2px #d53b4a;
+		            }
+
+		            .form-group-password {
+		            	display: relative;
+						.parsley-errors-list {
+							bottom: -27px;
+
+							@media (min-width: $screen-sm-min) {
+								bottom: -20px;
+							}
+
+							@media (min-width: $screen-lg-min) {
+								bottom: -30px;
+							}
+						}
+
+						input.parsley-error {
+							margin: 25px 0 35px 0;
+						}
+
+						#showPassword {
+							position: absolute;
+							left: 10px;
+							top: -22px;
+							font-size: 1.6rem;
+							font-weight: 500;
+							font-style: normal;
+							font-stretch: normal;
+							line-height: 1.75;
+							letter-spacing: normal;
+							color: #0a7bb6;
+							cursor: pointer;
+						}
+					}
+				
 					input {
 						padding: 3px 15px 0;
 					}
@@ -96,15 +148,6 @@
 
 					.password-input {
 						margin: 25px 0;
-
-
-						input.parsley-error,
-						select.parsley-error,
-						textarea.parsley-error {
-						  color: #B94A48;
-						  background-color: #F2DEDE;
-						  border: 1px solid #EED3D7;
-						}
 					}
 
 					.email-input, .password-input,{

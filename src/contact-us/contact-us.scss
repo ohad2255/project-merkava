@@ -415,6 +415,25 @@
 					margin-right: -17px;
 				}
 			}
+			
+			input.parsley-error {
+				box-shadow: none;
+				border-bottom: solid 2px #d53b4a;
+			}
+
+			.form-group-password {
+				.parsley-errors-list {
+					bottom: -27px;
+
+					@media (min-width: $screen-sm-min) {
+						bottom: -20px;
+					}
+
+					@media (min-width: $screen-lg-min) {
+						bottom: -30px;
+					}
+				}
+			}
 		}
 
 		.info-container {

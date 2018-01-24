@@ -25,52 +25,53 @@
               </p>
             </div>
             <div class="registration-form-wrapper">
-              <div class="d-flex flex-lg-row name-lng-wrapper flex-column">
-                <div class="form-group name">
-                  <div class="input-bullet"></div>
-                    <input class="form-control" type="text" placeholder= "שם פרטי ומשפחה" id="nameInputReg">
-                    <label class="sr-only" for="nameInputReg"></label>
+              <form id="registration-Form" data-parsley-validate  class="d-flex flex-column align-items-center">
+                <div class="d-flex flex-lg-row name-lng-wrapper flex-column">
+                  <div class="form-group name">
+                    <div class="input-bullet"></div>
+                      <input class="form-control" type="text" placeholder= "שם פרטי ומשפחה" id="nameInputReg" name="name" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty>
+                      <label class="sr-only" for="nameInputReg"></label>
+                  </div>
+                  <div class="form-group language">
+                    <div class="input-bullet"></div>
+                    <div class="blue-arrow"></div>
+                    <select class="form-control language-select" id="languagReg" title="שפה" required data-parsley-error-message="שדה חובה">
+                      <option value="0" disabled selected hidden>שפה</option>
+                      <option>עברית</option>
+                      <option>אנגלית</option>
+                    </select>
+                  </div>
+                </div> 
+                <div class="form-group email-wrapper d-flex flex-lg-row name-lng-wrapper flex-column">
+                  <div class="form-group email">
+                    <div class="input-bullet"></div>
+                    <input type="email" class="form-control" id="inputEmailReg" class="form-control email-input" placeholder="דוא״ל" name="email" data-required="" data-parsley-validate-if-empty data-parsley-error-message="אימייל חייב להכיל @">
+                    <label class="sr-only" for="inputEmailReg"></label>
+                  </div>
+                  <div class="form-group email-confirm">
+                    <div class="input-bullet"></div>
+                    <input type="email" class="form-control" id="inputEmailConfirmReg" data-match="inputEmailReg" data-parsley-error-message="דוא״ל לא תואם" placeholder="אימות דוא״ל" data-parsley-equalto="#inputEmailReg" required>
+                    <label class="sr-only" for="inputEmailConfirmReg"></label>
+                  </div>
+                </div>    
+                <div class="form-group password-wrapper d-flex flex-lg-row name-lng-wrapper flex-column">
+                  <div class="form-group password form-group-password">
+                    <div class="input-bullet"></div>
+                    <div id="showPassword">הצג סיסמא</div>
+                    <input type="password" id="inputPasswordReg" type="password" pattern="(?=.*\d)(?=.*[A-Z]).{8,}" class="form-control password-input" id="InputPasswordSignIn" placeholder="סיסמא" data-toggle="password" data-required="" data-parsley-validate-if-empty data-parsley-error-message="סיסמא צריכה להכיל 8 תווים לפחות, לכלול מספרים, תווים ולפחות אות אחת גדולה">
+                    <label class="sr-only" for="inputPasswordReg"></label>
+                  </div>
+                  <div class="form-group password-confirm">
+                    <div class="input-bullet"></div>
+                    <div id="showPasswordConfirm">הצג סיסמא</div>
+                    <input type="password" class="form-control" id="inputPasswordConfirmReg"  placeholder="אימות סיסמא"  data-parsley-error-message="סיסמא אינה תואמת"  data-parsley-equalto="#inputPasswordReg" required>
+                    <label class="sr-only" for="inputPasswordConfirmReg"></label>
+                  </div>
                 </div>
-                <div class="form-group language">
-                  <div class="input-bullet"></div>
-                  <div class="blue-arrow"></div>
-                  <select class="form-control language-select" id="languagReg" title="שפה">
-                    <option value="0" disabled selected hidden>שפה</option>
-                    <option>עברית</option>
-                    <option>אנגלית</option>
-                  </select>
+                <div class="registration-button">
+                  <button class="btn btn-primary">הירשם</button>
                 </div>
-              </div> 
-              <div class="form-group email-wrapper d-flex flex-lg-row name-lng-wrapper flex-column">
-                <div class="form-group email">
-                  <div class="input-bullet"></div>
-                  <input type="email" class="form-control" id="inputEmailReg" placeholder="דוא״ל" data-error="כתובת דוא״ל לא תקינה" required>
-                  <label class="sr-only" for="inputEmailReg"></label>
-                  <div class="help-block with-errors"></div>
-                </div>
-                <div class="form-group email-confirm">
-                  <div class="input-bullet"></div>
-                  <input type="email" class="form-control" id="inputEmailConfirmReg" data-match="inputEmail" data-match-error="כתובת דוא״ל אינה תואמת" placeholder="אימות דוא״ל" required>
-                  <label class="sr-only" for="inputEmailConfirmReg"></label>
-                  <div class="help-block with-errors"></div>
-                </div>
-              </div>    
-              <div class="form-group password-wrapper d-flex flex-lg-row name-lng-wrapper flex-column">
-                <div class="form-group password">
-                  <div class="input-bullet"></div>
-                  <input type="password" data-minlength="6" class="form-control" id="inputPasswordReg" placeholder="סיסמא" required>
-                  <label class="sr-only" for="inputPasswordReg"></label>
-                </div>
-                <div class="form-group password-confirm">
-                  <div class="input-bullet"></div>
-                  <input type="password" class="form-control" id="inputPasswordConfirmReg" data-match="#inputPassword" data-match-error="הסיסמה אינה תואמת" placeholder="אימות סיסמא" required>
-                  <label class="sr-only" for="inputPasswordConfirmReg"></label>
-                  <div class="help-block with-errors"></div>
-                </div>
-              </div>
-            </div>
-            <div class="registration-button">
-              <button class="btn btn-primary">הירשם</button>
+              </form>
             </div>
           </div>
         </div>

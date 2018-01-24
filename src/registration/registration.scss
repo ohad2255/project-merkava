@@ -83,6 +83,10 @@
 						max-width: 880px;
 					}
 
+					.registration-Form {
+						
+					}
+
 					.form-group {
 						width: 100%;
 						margin-bottom: 0;
@@ -102,7 +106,43 @@
 						padding: 2px 25px 0 0;
 					}
 
-					.name, .email, .email-confirm, .password, .password-confirm {
+					input.parsley-error {
+		              box-shadow: none;
+		              border-bottom: solid 2px #d53b4a;
+		            }
+
+		            .form-group-password {
+		            	position: relative;
+
+						.parsley-errors-list {
+							bottom: -27px;
+
+							@media (min-width: $screen-sm-min) {
+								bottom: -20px;
+							}
+
+							@media (min-width: $screen-lg-min) {
+								bottom: -30px;
+							}
+						}
+
+						#showPassword {
+							position: absolute;
+							left: 10px;
+							top: -23px;
+							font-size: 1.6rem;
+							font-weight: 500;
+							font-style: normal;
+							font-stretch: normal;
+							line-height: 1.75;
+							letter-spacing: normal;
+							color: #0a7bb6;
+							cursor: pointer;
+						}
+					}
+
+
+					.name, .email, .email-confirm, .form-group-password, .password-confirm {
 						position: relative;
 
 						.input-bullet {
@@ -166,7 +206,7 @@
 					}
 
 					.name-lng-wrapper, .email-wrapper {
-						
+						width: 100%;
 
 						@media (min-width: $screen-lg-min) {
 							margin: 0 0 25px 0;
@@ -177,7 +217,7 @@
 						margin: 0 0 40px 0;
 					}
 
-					.name, .email, .password {
+					.name, .email, .form-group-password {
 						margin:0 0 25px 0;
 
 						@media (min-width: $screen-lg-min) {
@@ -194,7 +234,22 @@
 					}
 
 					.password-confirm {
+						position: relative;
 						margin-bottom: 0;
+
+						#showPasswordConfirm {
+							position: absolute;
+							left: 10px;
+							top: -23px;
+							font-size: 1.6rem;
+							font-weight: 500;
+							font-style: normal;
+							font-stretch: normal;
+							line-height: 1.75;
+							letter-spacing: normal;
+							color: #0a7bb6;
+							cursor: pointer;
+						}
 					}
 				}
 

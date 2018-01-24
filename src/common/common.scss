@@ -1,7 +1,8 @@
+$screen-sm-min: 576px;
 $screen-md-min: 768px;
 $screen-lg-min: 992px;
 $screen-xl-min: 1200px;
-$main-font: FbReforma;
+$main-font: FbReforma, sans-serif;
 
 @import "/styles/color-palette";
 @import "/header/header";
@@ -64,6 +65,24 @@ p {
 
 button {
 	cursor: pointer;
+}
+
+.form-group {
+  position: relative;
+
+  .parsley-errors-list {
+    font-size: 1.2rem;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    color: #d53b4a;
+    position: absolute;
+    bottom: -15px;
+    right: 25px;
+    padding: 0 0 0 5px;
+  }
 }
 
 .mobile-menu-open .main-content-wrapper {
