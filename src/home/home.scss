@@ -66,14 +66,17 @@
               width: 100%;
               height: 100%;
               z-index: 0;
+
+              @media (min-width: $screen-lg-min) {
+                transform: scale(1);
+                transition: all .3s ease-in-out;
+              }
             }
 
             @media (min-width: $screen-lg-min) {
-           
               &:hover, &:focus {
                 img {
-                  transform: scale(1.1);
-                  transition: all .3s ease-in-out;
+                transform: scale(1.1);
                 }
               }
             }
@@ -182,17 +185,22 @@
               overflow: hidden;
 
               img {
-              position: absolute;
-              width: 100%;
-              height: 100%;
-              z-index: 0;
-            }
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+
+                @media (min-width: $screen-lg-min) {
+                  transform: scale(1);
+                  transition: all .3s ease-in-out;
+                }
+              }
 
             @media (min-width: $screen-lg-min) {
+    
               &:hover, &:focus {
                 img {
                   transform: scale(1.1);
-                  transition: all .3s ease-in-out;
                 }
               }
             }
@@ -324,18 +332,25 @@
           padding:0 10px 0 0;
           width: 50%;
           height: 100%;
+        }
 
-          a {
+        a {
+          img {
+
+            @media (min-width: $screen-lg-min){
+              transform: scale(1);
+              transition: all .3s ease-in-out;
+            }
+          }
+
+          @media (min-width: $screen-lg-min){
             &:hover, &:focus {
               img {
                 transform: scale(1.1);
-                transition: all .3s ease-in-out;
               }
             }
           }
         }
-
-        
 
         .top-sec-left-img {
           width: 100%;
@@ -371,8 +386,6 @@
             }
 
             .top-sec-p-wrapper {
-              background-color: $background-p-img; 
-              height: 161px;
               padding-right: 20px;
               padding-top: 19px;
 
@@ -470,13 +483,18 @@
               height: 100%;
               z-index: -1;
               top: 0;
+
+              @media (min-width: $screen-lg-min) {
+                transform: scale(1);
+                transition: all .3s ease-in-out;
+              }
             }
 
             @media (min-width: $screen-lg-min) {
-              &:hover, &:focus {
+
+               &:hover, &:focus {
                 img {
-                  transform: scale(1.1);
-                  transition: all .3s ease-in-out;
+                    transform: scale(1.1);
                 }
               }
             }
@@ -608,14 +626,15 @@
               width: 100%;
               height: 100%;
               z-index: 0;
-            }
 
-            @media (min-width: $screen-lg-min) {
-              &:hover, &:focus {
-                img {
-                  transform: scale(1.1);
-                  transition: all .3s ease-in-out;
-                }
+              @media (min-width: $screen-lg-min) {
+                transform: scale(1);
+                transition: all .3s ease-in-out;
+              }
+            }
+            &:hover, &:focus {
+              img {
+              transform: scale(1.1);
               }
             }
           }
@@ -701,13 +720,18 @@
               width: 100%;
               height: 100%;
               z-index: 0;
+
+              @media (min-width: $screen-lg-min) {
+                transform: scale(1);
+                transition: all .3s ease-in-out;
+              }
             }
 
             @media (min-width: $screen-lg-min) {
-              &:hover, &:focus {
-                img {
-                  transform: scale(1.1);
-                  transition: all .3s ease-in-out;
+            
+               &:hover, &:focus {
+                img{
+                    transform: scale(1.1);
                 }
               }
             }
@@ -831,13 +855,20 @@
       }
 
       .bottom-sec-a {
+        img {
+          @media (min-width: $screen-lg-min) {
+            transform: scale(1);
+            transition: all .3s ease-in-out;
+          }
+        }
+
         @media (min-width: $screen-lg-min) {
+          
           &:hover, &:focus {
             img {
               transform: scale(1.1);
-              transition: all .3s ease-in-out;
             }
-          }
+          }  
         }
       }
 
