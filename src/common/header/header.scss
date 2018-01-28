@@ -119,7 +119,7 @@ header {
       text-decoration: none;
 
       @media (min-width: $screen-lg-min) {
-        margin: 0 0 3px 38px;
+        margin: 0 0 3px 34px;
         height: fit-content;
       }
 
@@ -298,6 +298,10 @@ header {
           padding: 1px 26px 0 20px;
           height: 100%;
           border-left: rgba(102, 102, 102, 0.3) solid 1px;
+
+          &::-ms-expand {
+              display: none;
+          }
           
 
           @media (min-width: $screen-lg-min) {
@@ -312,7 +316,9 @@ header {
           color: $header-blue;
           z-index: 4;
           left: 18px;
-          margin-top: -3px;
+          display: relative;
+          top: 25px;
+          margin-top: -1px;
           border: solid $header-blue;
           border-width: 0 1.5px 1.5px 0;
           display: inline-block;

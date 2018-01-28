@@ -47,8 +47,6 @@
           height: 100%;
         }
 
-
-
         .swiper-container {
           width: 100%;
           height: 100%;
@@ -93,6 +91,14 @@
 
                @media (min-width: $screen-lg-min) {
                   width: 100%;
+              }
+
+              img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+                top: 0;
               }
 
               .main-gallery-wrapper-s-1 {
@@ -189,6 +195,7 @@
                 width: 100%;
                 height: 100%;
                 z-index: 0;
+                top: 0;
 
                 @media (min-width: $screen-lg-min) {
                   transform: scale(1);
@@ -337,6 +344,9 @@
         a {
           img {
 
+            position: absolute;
+            top: 0;
+
             @media (min-width: $screen-lg-min){
               transform: scale(1);
               transition: all .3s ease-in-out;
@@ -470,7 +480,7 @@
           @media (min-width: $screen-lg-min) {
             padding: 0;
             margin: 0 0 0 10px;
-            height: fit-content;
+            height: 100%;
           }
 
           a {
@@ -482,7 +492,7 @@
               width: 100%;
               height: 100%;
               z-index: -1;
-              top: 0;
+              
 
               @media (min-width: $screen-lg-min) {
                 transform: scale(1);
@@ -626,6 +636,7 @@
               width: 100%;
               height: 100%;
               z-index: 0;
+              top: 0;
 
               @media (min-width: $screen-lg-min) {
                 transform: scale(1);
@@ -714,12 +725,14 @@
 
           a {
             width: 100%;
+            
 
             img {
               position: absolute;
               width: 100%;
               height: 100%;
               z-index: 0;
+              top: 0;
 
               @media (min-width: $screen-lg-min) {
                 transform: scale(1);
