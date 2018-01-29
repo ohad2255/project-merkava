@@ -31,7 +31,7 @@
 		background-position-x: 7px;
 
 		@media (min-width: $screen-lg-min) {
-			height: fit-content;
+			height: auto;
 			background-size: contain;
 		}
 
@@ -54,7 +54,7 @@
 			max-width: 1322px;
 			width: 100%;
 			padding: 0;
-			height: fit-content;
+			height: auto;
 
 			@media (min-width: $screen-lg-min) {
 				height: 297px;
@@ -216,7 +216,7 @@
 					    margin-bottom: 0;
 					    background-color: $main-white;
 					    border-bottom: none;
-					    width: fit-content;
+					    width: auto;
 					}
 
 					.top-sec-card-header {
@@ -237,7 +237,7 @@
 						color: $rechesh-green;
 						font-family: $main-font;
 						padding-top: 17px;
-						height: fit-content;
+						height: auto;
 						margin: 0;
 
 						@media (min-width: $screen-lg-min) {

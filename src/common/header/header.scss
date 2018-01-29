@@ -115,12 +115,11 @@ header {
 
     .font-size-container {
       margin: 0px 5px 0px auto;
-      height: fit-content;
+      height: auto;
       text-decoration: none;
 
       @media (min-width: $screen-lg-min) {
         margin: 0 0 3px 34px;
-        height: fit-content;
       }
 
       .Abig {
@@ -142,7 +141,7 @@ header {
         font-weight: normal;
         font-style: normal;
         font-stretch: normal;
-        line-height: 0.7;
+        line-height: 0.55;
         letter-spacing: normal;
         color: $main-white;
       }
@@ -164,8 +163,8 @@ header {
 
         .lng-btn {
           padding: 0;
-          height: fit-content;
-          width: fit-content;
+          height: auto;
+          width: auto;
           background-color: transparent;
           border: none;
           margin-left: 24px;
@@ -180,18 +179,18 @@ header {
 
           @media (min-width: $screen-lg-min) {
             width: fit-content;
-            height: fit-content;
+            height: auto;
           }
         }
 
         .lng-btn::after {
-          margin: 0 17px 9px 0;
           border: solid $main-white;
           border-width: 0 1.5px 1.5px 0;
           display: inline-block;
           transform: rotate(45deg);
           height: 9px;
           width: 9px;
+          margin: 5px 17px 9px 0;
 
           @media (min-width: $screen-lg-min) {
             margin: 0px 13px 8px 0;
@@ -277,6 +276,8 @@ header {
         padding: 14px 0;
         position: relative;
         min-width: 100px;
+        bottom: 0;
+        overflow: hidden;
 
         @media (min-width: $screen-lg-min) {
           height: 60px;
@@ -302,12 +303,15 @@ header {
           &::-ms-expand {
               display: none;
           }
-          
 
           @media (min-width: $screen-lg-min) {
             font-size: 2.4rem;
             line-height: 0.67;
             padding-top: 0;
+          }
+
+          @media (max-width: 340px) {
+            padding: 1px 10px 0 20px;
           }
         }
 
@@ -356,15 +360,14 @@ header {
         font-weight: normal;
         font-style: normal;
         font-stretch: normal;
-        line-height: 0.8;
+        line-height: 1.1;
         letter-spacing: normal;
         color: $main-input-text;
         border: 0;
-        padding-right: 20px;
-        padding-bottom: 5px;
-        padding: 5px 20px;
+        padding: 0 20px;
         flex: 1;
         width: 139px;
+        opacity: 0.8;
 
         @media (min-width: $screen-lg-min) {
           object-fit: contain;
@@ -386,7 +389,8 @@ header {
         }
 
         img {
-
+          width: 20px;
+          height: 19px;
         }
       }
     }

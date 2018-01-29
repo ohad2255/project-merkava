@@ -30,9 +30,9 @@
 		padding:0 0 28px 0;
 
 		@media (min-width: $screen-lg-min) {
-			height: fit-content;
+			height: auto;
 			margin: 0 0 66px 0;
-			padding:0 0 60px 0;
+			padding:0 100px 60px 0;
 		}
 
 		.right-line {
@@ -53,16 +53,16 @@
 			max-width: 1302px; 
 			width: 100%;
 			padding: 0;
-			height: fit-content;
+			height: auto;
 
 			@media (min-width: $screen-lg-min) {
-				padding: 29px 30px 0;
+				padding: 29px 111px 0 30px;;
 			}
 
-			.q-and-a-breadcrumb-wrapper {	
+			.q-and-a-breadcrumb-wrapper {
 
 				@media (min-width: $screen-lg-min) {
-					margin: 0 174px 35px 0;
+					margin: 0 0 35px 0;
 				}
 
 				.breadcrumb {
@@ -92,7 +92,7 @@
 				.q-and-a-p-container {
 
 					@media (min-width: $screen-lg-min) {
-						
+						position: relative;
 					}	
 				}
 
@@ -100,14 +100,14 @@
 					order: 2;
 					margin: 0;
 
+
 					@media (min-width: $screen-lg-min) {
-						margin: 0 35px 0 0;
+						
 					}
 				}
 
 				.q-and-a-top-icon {
 					order: 1;
-					object-fit: contain;
 					width: 55px;
 					height: 47px;
 					margin: 0 0 6px 0;
@@ -116,6 +116,10 @@
 						width: 136px;
 						height: 116px;
 						margin: 0;
+						position: absolute;
+						top: 0;  
+					    right: -168px;
+					    top: 10px;
 					}
 				}	
 
@@ -146,16 +150,17 @@
 					color: #4e5665;
 					margin: 0 0 0 40px;
 
-					@media (min-width: $screen-md-min) {
-						max-width: 600px;
-					}	
-
 					@media (min-width: $screen-lg-min) {
-						max-width: 1262px;
 						font-size: 3rem;
 						line-height: normal;
 						letter-spacing: normal;
-						margin: 0 0 0 145px;
+						padding: 0 0 0 30px;
+						margin: 0;
+					}	
+
+					@media (min-width: $screen-xl-min) {
+						padding: 0 0 0 165px;
+						max-width: 1262px;
 					}	
 				}
 			}

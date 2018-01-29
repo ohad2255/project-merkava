@@ -11,7 +11,7 @@
 
 		@media (min-width: $screen-lg-min) {
 			border-bottom: solid 1px #1c6897; 
-		 }
+		}
 	}
 
 	.about-top-sec {
@@ -27,7 +27,12 @@
 
 		@media (min-width: $screen-lg-min) {
 			background-image: url('../common/img/back-top-lg.svg');
-			height: fit-content;
+			height: auto;
+		}
+
+		@media (max-width: 340px) {
+			height: 240px;
+			box-shadow: none;
 		}
 
 		.right-line {
@@ -42,6 +47,11 @@
 			@media (min-width: $screen-lg-min) {
 				width: 11px;
 				top: -7px;
+			}
+
+			@media (max-width: 340px) {
+				top: -6px;
+				height: 100%;
 			}
 		}
 
@@ -260,6 +270,10 @@
 							font-size: 3.2rem;
 							line-height: 0.78;
 						}	
+
+						@media (max-width: 340px) {
+							font-size: 1.57rem
+						}
 					}
 
 					p, .card-block {

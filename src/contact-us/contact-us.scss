@@ -3,6 +3,14 @@
 .contact-us {
 	min-width: 330px;
 
+	.nav-item-text-9 {
+		background-color: rgba(255, 255, 255, 0.19);
+
+			@media (min-width: $screen-lg-min) {
+				border-bottom: solid 1px #1c6897; 
+			 }
+		}
+
 	.contact-us-top-sec {
 		position: relative;
 		background-image:  url('../common/img/q-and-a-background-pic.png');
@@ -255,6 +263,10 @@
 					-webkit-appearance: none;
 					-moz-appearance: none;
 					padding:0 23px 0 0;
+
+					&::-ms-expand {
+			           display: none;
+			        }
 				}
 			}
 
@@ -338,14 +350,6 @@
 				border: dashed 1px #d4d4d4;
 				margin: 0 0 25px 0;
 
-				.form-control-file {
-					&::before {
-						background-color: red;
-					}
-					&::after {
-						background-color: red;
-					}
-				}
 
 				.file-input-wrapper {
 					padding: 12px 23px 0 0;
@@ -385,6 +389,7 @@
 						text-align: right;
 						color: #4e5665;
 						z-index: 0;
+						padding: 6px 18px;
 					}
 
 					.custom-file-input {

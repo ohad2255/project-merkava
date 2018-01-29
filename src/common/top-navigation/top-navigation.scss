@@ -30,9 +30,9 @@
       outline: none;
 
       @media (min-width: $screen-lg-min) {
-        width: fit-content;
+        width: auto;
         position: relative;
-        height: fit-content;
+        height: auto;
         border-bottom: 0;
         padding: 12px 0;
 
@@ -99,6 +99,7 @@
 
         @media (min-width: $screen-lg-min) {
           position: absolute;
+          right: 0;
         }
 
         .main-nav-item-link {
@@ -116,7 +117,7 @@
           font-weight: normal;
           font-style: normal;
           font-stretch: normal;
-          line-height: 0.8;
+          line-height: 1;
           letter-spacing: normal;
           color: $main-white;
           text-align: center;
@@ -203,7 +204,7 @@
 
 
   @media (max-width: 340px) {
-    transform: translateX(300px);
+    transform: translateX(280px);
   }
 }
 
@@ -220,6 +221,11 @@
   font-size: 1rem;
   white-space: nowrap;
   overflow: auto;
+  visibility: hidden;
+
+  @media (max-width: 340px) {
+    width: 300px;
+  }
 
   .main-menu-mobile-wrapper {
     width: 100%;
@@ -239,4 +245,8 @@
       width: 100%;
     }
   }
+}
+
+.mobile-menu-open .main-menu-mobile-container {
+  visibility: visible;
 }
