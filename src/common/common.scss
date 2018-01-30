@@ -11,19 +11,9 @@ $main-font: FbReforma, sans-serif;
 
 @font-face {
   font-family: 'FbReforma';
-  src: url("../fonts/FbReforma-Regular.otf") format("embedded-opentype");
-  //src: url('../fonts/FbReforma-Regular.eot'); /* IE9 Compat Modes */
-  //src: url('../fonts/FbReforma-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       //url('../fonts/FbReforma-Regular.woff') format('woff'), /* Modern Browsers */
-       //url('../fonts/FbReforma-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-       font-weight: 400;
+  src: url("../fonts/FbReforma-Regular.otf") format("opentype");
+  font-weight: 400;
 }
-
-// @font-face {
-//   font-family: "FbReforma";
-//   src: url("../fonts/FbReforma-Regular.otf") format("opentype");
-//   font-weight: 400;
-// }
 
 
 @font-face {

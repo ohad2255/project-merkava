@@ -278,7 +278,7 @@
                	}
 			}
 
-			.name, .subject {
+			.name, .phone-number {
 				margin: 0 0 25px 0;
 
 				@media (min-width: $screen-lg-min) {
@@ -286,7 +286,7 @@
                	}
 			}
 
-			.email, .phone-number {
+			.email, .subject {
 				 margin: 0 0 25px 0;
 
 				 @media (min-width: $screen-lg-min) {
@@ -354,7 +354,7 @@
 					border-radius: 50%;
 					right: 11px;
 					top: 27px;
-					margin: -3px 0 0 0;
+					margin: -5px 0 0 0;
 				}
 			}
 

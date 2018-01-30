@@ -49,6 +49,10 @@
               </div>
             </div> 
             <div class="form-group subject-phone-wrapper d-flex flex-column flex-lg-row">
+              <div class="form-group phone-number">
+                <input type="tel" class="form-control" id="phoneNumber" placeholder="טלפון" data-parsley-error-message="מספר לא תקין" minlength="9" maxlength="10" required>
+                <label class="sr-only" for="phoneNumber"></label>
+              </div>
               <div class="form-group subject">
                 <div class="blue-arrow"></div>
                 <select class="form-control subject-select" id="subjectSelect" placeholder= "נושא הפנייה" data-parsley-error-message="שדה חובה" required>
@@ -58,10 +62,7 @@
                 </select>
                 <div class="input-bullet"></div>
               </div>
-              <div class="form-group phone-number">
-                <input type="tel" class="form-control" id="phoneNumber" placeholder="טלפון" data-parsley-error-message="מספר לא תקין" minlength="9" maxlength="10" required>
-                <label class="sr-only" for="phoneNumber"></label>
-              </div>
+              
             </div> 
             <div class="form-group subject-textarea">
               <textarea class="form-control" id="subjectTextarea" placeholder="פירוט הפנייה" required data-parsley-error-message="פירוט פנייה נדרש"></textarea>
