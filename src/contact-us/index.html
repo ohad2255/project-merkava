@@ -40,10 +40,12 @@
               <div class="form-group name">
                 <input id="nameInputContactUs" class="form-control" type="text" placeholder="שם פרטי ומשפחה"  name="name" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty>
                 <label class="sr-only" for="nameInputContactUs"></label>
+                <div class="input-bullet"></div>
               </div>
               <div class="form-group email">
                 <input type="email" class="form-control" id="inputEmail" placeholder="דוא״ל"   id="inputEmailContactUs" class="form-control email-input" name="email" data-required="" data-parsley-validate-if-empty data-parsley-error-message="אימייל חייב להכיל @">
                 <label class="sr-only" for="inputEmailContactUs"></label>
+                <div class="input-bullet"></div>
               </div>
             </div> 
             <div class="form-group subject-phone-wrapper d-flex flex-column flex-lg-row">
@@ -54,6 +56,7 @@
                   <option class="subject-select-option-1 subject-select-option">נושא-1</option>
                   <option class="subject-select-option-2 subject-select-option">נושא-2</option>
                 </select>
+                <div class="input-bullet"></div>
               </div>
               <div class="form-group phone-number">
                 <input type="tel" class="form-control" id="phoneNumber" placeholder="טלפון" data-parsley-error-message="מספר לא תקין" minlength="9" maxlength="10" required>
@@ -63,15 +66,20 @@
             <div class="form-group subject-textarea">
               <textarea class="form-control" id="subjectTextarea" placeholder="פירוט הפנייה" required data-parsley-error-message="פירוט פנייה נדרש"></textarea>
               <label class="sr-only" for="subjectTextarea"></label>
+              <div class="input-bullet"></div>
             </div>
-            <div class="upload-file-wrapper form-group">
+            <div class="upload-file-wrapper form-group d-flex d-lg-block align-items-center">
               <div class="file-input-wrapper">
-                <small>להעלת קובץ מצורף גרור לכאן או לחץ:</small>
+                <small class="d-none d-lg-block">להעלת קובץ מצורף גרור לכאן או לחץ:</small>
                 <div class="file-button-wrapper">
                   <span class="file-button-text">צרף מסמך</span>
                   <label class="sr-only" for="customFile"></label>
                   <input type="file" class="custom-file-input" id="customFile">
-                    <!-- <span class="custom-file-control form-control-file"></span> -->
+                  <div class="three-upload-file-dots d-flex justify-content-between d-lg-none"> 
+                    <span class="upload-file-dot"></span> 
+                    <span class="upload-file-dot"></span> 
+                    <span class="upload-file-dot"></span>
+                  </div>  
                 </div>
               </div>
             </div>

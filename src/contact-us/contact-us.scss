@@ -213,7 +213,7 @@
 				font-stretch: normal;
 				line-height: normal;
 				letter-spacing: 0.5px;
-				color: #6a768a;
+				color: $contact-us-input-text;
 				padding:0 23px 0 0;
 			}
 
@@ -328,6 +328,7 @@
 			.subject-textarea {
 				height: 87px;
 				margin: 0 0 25px 0;
+				position: relative;
 
 				textarea {
 					height: 100%;
@@ -337,22 +338,43 @@
 					font-stretch: normal;
 					line-height: normal;
 					letter-spacing: 0.5px;
-					color: #6a768a;
-					padding: 17px 23px 0 0;
+					color: $contact-us-input-text;
+					padding: 17px 23px 5px 10px;
+				}
+
+				.input-bullet {
+					position: absolute;
+					width: 6px;
+					height: 6px;
+					background-color: $header-blue;
+					border-radius: 50%;
+					right: 11px;
+					top: 27px;
+					margin: -3px 0 0 0;
 				}
 			}
 
 			.upload-file-wrapper {
-				height: 102px;
 				width: 100%;
-				border-radius: 3px;
-				background-color: #ffffff;
-				border: dashed 1px #d4d4d4;
+				height: 43px;
+				border: solid 1px #d4d4d4;
 				margin: 0 0 25px 0;
+
+				@media (min-width: $screen-lg-min) {
+                    height: 102px;
+					border-radius: 3px;
+					background-color: #ffffff;
+					border: dashed 1px #d4d4d4;
+               	}
 
 
 				.file-input-wrapper {
-					padding: 12px 23px 0 0;
+					height: 100%;
+					width: 100%;
+
+					@media (min-width: $screen-lg-min) {
+			            padding: 12px 23px 0 0;
+			       	}
 
 					small {
 						opacity: 0.6;
@@ -366,44 +388,80 @@
 						margin: 0 0 13.5px 0;
 						display: block;
 					}
+
+					.file-button-wrapper {
+						height: 100%;
+
+						@media (min-width: $screen-lg-min) {
+		                    height: auto;
+		               	}
+					}
 				}
 
 				.file-button-wrapper {
-					height: 30px;
-					opacity: 0.6;
-					border-radius: 4px;
-					box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
-					border: solid 1px rgb(78, 86 ,101);
-					width: 100px;
 					position: relative;
 					
+
+					@media (min-width: $screen-lg-min) {
+	                    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
+						border: solid 1px rgb(78, 86 ,101);
+						border-radius: 4px;
+						opacity: 0.6;
+						height: 30px;
+						width: 100px;
+	               	}
+
+	               	.three-upload-file-dots { 
+	               		position: absolute;	
+	               		width: 20px;
+	               		height: auto;
+	               		left: 11px;
+						top: 50%;
+						margin: -2px 0 0 0;
+
+                    	.upload-file-dot {
+							width: 4px;
+							height: 4px;
+							background-color: $header-blue;
+							border-radius: 50%;	
+                    	}
+					}
+
 					.file-button-text {
 						position: absolute;
-						opacity: 0.6;
+						opacity: 0.8;
 						font-size: 1.5rem;
 						font-weight: normal;
 						font-style: normal;
 						font-stretch: normal;
 						line-height: 1.07;
 						letter-spacing: normal;
-						text-align: right;
-						color: #4e5665;
+						color: $contact-us-input-text;
 						z-index: 0;
-						padding: 6px 18px;
+						padding: 0;
+						top: 50%;
+						right: 18px;
+						margin: -9px 0 0 0;
+
+						@media (min-width: $screen-lg-min) {
+		                    padding: 6px 18px;
+		                    top: 0;
+							right: 0;
+							margin: 0;
+		               	}
 					}
 
 					.custom-file-input {
 						cursor: pointer;
-						height: 30px;
-						width: 100%;
 						order: 2;
 						background-color: transparent;
-						padding: 0;
-						min-width: fit-content;
-					}
+						height: 100%;
 
-					.custom-file-control {
-						
+						@media (min-width: $screen-lg-min) {
+							height: 30px;
+							width: 100%;
+							padding: 0;
+		               	}
 					}
 				}	
 			}
@@ -438,6 +496,21 @@
 						bottom: -30px;
 					}
 				}
+			}
+		}
+
+		.name, .email, .subject, {
+			position: relative;
+
+			.input-bullet {
+				position: absolute;
+				width: 6px;
+				height: 6px;
+				background-color: $header-blue;
+				border-radius: 50%;
+				right: 11px;
+				top: 50%;
+				margin: -3px 0 0 0;
 			}
 		}
 
