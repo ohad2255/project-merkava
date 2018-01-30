@@ -87,7 +87,7 @@
               <div class="g-recaptcha" data-sitekey="6LcTeEAUAAAAAEqaDHyi2iLhTbV5usvBszRIErrF"></div>
             </div>  
             <div class="save-details-button d-flex justify-content-end">
-              <button class="btn btn-primary" type="submit">שמור</button>
+              <button class="btn btn-primary" type="submit" data-target="#myModal" data-toggle="modal" >שמור</button>
             </div>
           </form>
           <div class="info-container">
@@ -108,6 +108,21 @@
       <footer class="contact-us-footer d-flex justify-content-center">
           ${require("../common/footer/footer.html")}
       </footer>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button type="button" class="btn btn-default close-btn" data-dismiss="modal">
+            <img src="../common/img/close.svg" class="close-img" alt="close-button">
+          </button>
+          <div class="modal-body d-flex flex-column align-items-center">
+            <img src="../common/img/contact-us-icon.svg"
+              class="dialog-icon" alt="dialog-icon">
+            <h4>פנייתך התקבלה בהצלחה!</h4>
+            <p>לורם איפסום קינץ תתיח לרעחלת צשחמי צש בליא, מנסוטו צמלח לביקו ננביצמוקו בלוקריה שיצמה ברורק. קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח.</p>
+          </div>
+        </div>
+      </div>
     </div>
     ${require("../common/common.html")}
   </body>
