@@ -32,7 +32,7 @@
 		@media (min-width: $screen-lg-min) {
 			height: auto;
 			margin: 0 0 66px 0;
-			padding:0 100px 81px 0;
+			padding:0 100px 0 0;
 		}
 
 		.right-line {
@@ -54,15 +54,16 @@
 			width: 100%;
 			padding: 0;
 			height: auto;
+			position: relative;
 
 			@media (min-width: $screen-lg-min) {
-				padding: 29px 111px 0 30px;;
+				padding: 31px 111px 81px 30px;
 			}
 
 			.dictionary-breadcrumb-wrapper {
 
 				@media (min-width: $screen-lg-min) {
-					margin: 0 0 35px 0;
+					margin: 0 0 29px 0;
 				}
 
 				.breadcrumb {
@@ -81,11 +82,11 @@
 			}
 
 			.dictionary-p-sec {
-				margin: 20px 0 0 0;
+				margin: 20px 0 0 23px;
 				padding: 0 20px;
 
 				@media (min-width: $screen-lg-min) {
-					margin: 0;
+					margin: 0 0 23px 0;
 					padding: 0;
 				}	
 
@@ -108,9 +109,9 @@
 
 				.dictionary-top-icon {
 					order: 1;
-					width: 55px;
+					width: 47px;
 					height: 47px;
-					margin: 0 0 6px 0;
+					margin: 0 1px 6px 0;
 
 					@media (min-width: $screen-lg-min) {
 						width: 116px;
@@ -164,35 +165,59 @@
 					}	
 				}
 			}
-		}
 
-		.alphabet-lg {
-			position: absolute;
-			bottom: 0;
-			width: 100%;
-			max-width: 934px;
+			.alphabet-nav {
+				padding: 0;
+			}
 
-			ul {
+			.alphabet-lg {
+				position: absolute;
 				width: 100%;
+				max-width: 1045px;
+				margin: 0 0 18px 0;
+				bottom: 0;
+				right: 0;
+				padding: 0 111px 0;
 
-				.alphabet-item {
-
-					a {
-						height: 100%;
-						width: 100%;
-						font-size: 30px;
-						font-weight: normal;
-						font-style: normal;
-						font-stretch: normal;
-						line-height: normal;
-						letter-spacing: normal;
-						text-align: right;
-						color: #6266a6;
-					}
-				}
-
-				.alphabet-item-1 {
+				ul {
 					width: 100%;
+
+					.alphabet-item {
+						height: 42px;
+						width: 42px;
+
+						a {
+							height: 100%;
+							width: 100%;
+							font-size: 3rem;
+							font-weight: 500;
+							font-style: normal;
+							font-stretch: normal;
+							line-height: normal;
+							letter-spacing: normal;
+							text-align: right;
+							color: #6266a6;
+							display: inline-block;
+
+							&:active, &:hover, &:focus {
+
+					        	color: #ffffff;
+								font-weight: 500;
+								background-color: $q-and-a-purple;
+								background-position: center;
+					        }
+						}
+					}
+
+					.alphabet-item-1 {
+
+	  					a {
+	  						color: #ffffff;
+	  						font-weight: 500;
+		  					background-color: $q-and-a-purple;
+		  					background-position: center;
+	  					}
+					}
 				}
 			}
 		}
@@ -208,7 +233,64 @@
 			padding: 32px 10px 100px;
 			margin: 0px auto 0;
 			max-width: 1262px;
-		}	
+		}
+
+		.alphabet-nav {
+			padding: 0;
+			width: 20px;
+			height: 550px;
+			z-index: 99;
+		}
+
+			.alphabet-mobile {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: -5px;
+				right: 0;
+
+				ul {
+					background-color: $main-white;
+					height: 100%;
+
+					.alphabet-item {
+						height: 20px;
+						width: 20px;
+
+						a {
+							height: 100%;
+							width: 100%;
+							font-size: 2rem;
+							font-weight: 500;
+							font-style: normal;
+							font-stretch: normal;
+							line-height: 3;
+							letter-spacing: normal;
+							text-align: center;
+							color: #6266a6;
+							display: inline-block;
+
+							&:active, &:hover, &:focus {
+
+					        	color: #ffffff;
+								font-weight: 500;
+								background-color: $q-and-a-purple;
+								background-position: center;
+					        }
+						}
+					}
+
+					.alphabet-item-1 {
+
+	  					a {
+	  						color: #ffffff;
+	  						font-weight: 500;
+		  					background-color: $q-and-a-purple;
+		  					background-position: center;
+	  					}
+					}
+				}
+			}	
 
 		.cards-wrapper {
 			width: 100%;
@@ -220,7 +302,7 @@
 			padding: 0;
 
 			@media (min-width: $screen-lg-min) {
-				padding: 0 0 35px 0;
+
 			}
 		}
 
@@ -228,18 +310,18 @@
 
 			.card-header {
 				background-color: $main-white;
-				padding: 0 20px;
-				min-height: 65px;
+				padding: 0 33px 0 20px;
+				height: 59px;
 				border-bottom: solid 1px $q-and-a-purple;
 		
 			    @media (min-width: $screen-lg-min) {
 					padding: 0 10px 0 0;
 				    margin: 0;
 				    border: 0;
-				    height: fit-content;
+				    height: 52px;
 				}
 
-				.dictionary-arrow {
+				.collapse-arrow {
 					width: 14px;
   					height: 8px;
   					margin: -5px 0 0 0;
@@ -253,6 +335,10 @@
 			.expression-wrapper {
 				width: 100%;
 
+				@media (min-width: $screen-lg-min) {
+					padding: 0 12px 0 0;
+				}
+
 				.expression-p {
 	   				font-size: 1.6rem;
 					line-height: normal;
@@ -263,15 +349,14 @@
 					font-stretch: normal;
 					letter-spacing: normal;
 					padding: 0 0 0 15px;
-					margin: -5 0 0 0;
+					margin: 0;
 					
 
 	   				@media (min-width: $screen-lg-min) {
-						padding: 0 12px 12px 0;
+						padding: 0;
 						line-height: 1.25;
 						color: #4e5665;
 						font-size: 2rem;
-						margin: 0;
 					}
 	 			}
 			}
@@ -280,26 +365,26 @@
 				background-color: $background-answer-mobile;
 
 				@media (min-width: $screen-lg-min) {
-					padding: 0 38px 36px 0;
+					padding: 0 38px 36px 22px;
 					background-color: $main-white;
 				}
 			}	
 		}
 
 		.answer {
-			font-size: 1.5rem;
+			font-size: 1.6rem;
 			font-weight: normal;
 			font-style: normal;
 			font-stretch: normal;
 			line-height: normal;
 			letter-spacing: normal;
-			color: #4e5665;
+			color: #4e5666;
 			border-bottom: solid 1px $bottom-border-question;
-			padding: 20px;
+			padding: 33px;
 
 			@media (min-width: $screen-lg-min) {
-				font-size: 2rem;
-				line-height: 1.25;
+				font-size: 1.6rem;
+				line-height: 1.75;
 				border-bottom: solid 3px $q-and-a-purple;
 				padding: 0;
 			}
@@ -328,11 +413,11 @@
 				padding: 0;
 
 				@media (min-width: $screen-lg-min) {
-					padding: 0 12px 40px 0!important;
+					padding: 0!important;
 				}
 			}
 
-			.dictionary-arrow {
+			.collapse-arrow {
 				transform: rotate(180deg);
 			}
 		}
@@ -340,8 +425,9 @@
 		.closed  {
 			font-size: 2.1rem;
 			height: 24px;
+			width: auto;
 			line-height: 0;
-			padding: 12px 0 0 0;
+			padding: 11px 0 0 0;
 			font-family:  Serif;
 			color: #0a7bb6;
 		}
@@ -352,9 +438,8 @@
 			@media (min-width: $screen-lg-min) {
 				display: block;
 				width: 12px;
-				height: 1.5px;
+				height: 1px;
 				background-color: #0a7bb6;
-				margin: 11px 0 0 0;
 			}
 		}
 
