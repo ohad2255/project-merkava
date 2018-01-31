@@ -257,7 +257,7 @@
 					font-weight: normal;
 					font-style: normal;
 					font-stretch: normal;
-					line-height: normal;
+					line-height: 1.7;
 					letter-spacing: 0.5px;
 					color: rgba(106,118,138,0.8);
 					-webkit-appearance: none;
@@ -336,7 +336,7 @@
 					font-weight: normal;
 					font-style: normal;
 					font-stretch: normal;
-					line-height: normal;
+					line-height: 0.9;
 					letter-spacing: 0.5px;
 					color: $contact-us-input-text;
 					padding: 17px 23px 5px 10px;
@@ -353,8 +353,8 @@
 					background-color: $header-blue;
 					border-radius: 50%;
 					right: 11px;
-					top: 27px;
-					margin: -5px 0 0 0;
+					top: 20px;
+					//margin: -5px 0 0 0;
 				}
 			}
 

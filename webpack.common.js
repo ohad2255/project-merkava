@@ -12,7 +12,8 @@ module.exports = {
         'about/about': ["./src/about/about.scss", "./src/about/about.js"],
         'green-rechesh/green-rechesh': ["./src/green-rechesh/green-rechesh.scss", "./src/green-rechesh/green-rechesh.js"],
         'q-and-a/q-and-a': ["./src/q-and-a/q-and-a.scss", "./src/q-and-a/q-and-a.js"],
-        'contact-us/contact-us': ["./src/contact-us/contact-us.scss", "./src/contact-us/contact-us.js"]
+        'contact-us/contact-us': ["./src/contact-us/contact-us.scss", "./src/contact-us/contact-us.js"],
+        'dictionary/dictionary': ["./src/dictionary/dictionary.scss", "./src/dictionary/dictionary.js"]
     },
     output: {
         filename: "[name].min.js",
@@ -100,6 +101,11 @@ module.exports = {
             chunks: ['contact-us/contact-us'],
             filename: path.resolve(__dirname, "dist/contact-us/index.html"),
             template: path.resolve(__dirname, "src/contact-us/index.html")
+        }),
+        new HtmlWebpackPlugin({
+            chunks: ['dictionary/dictionary'],
+            filename: path.resolve(__dirname, "dist/dictionary/index.html"),
+            template: path.resolve(__dirname, "src/dictionary/index.html")
         })   
     ]
 };
