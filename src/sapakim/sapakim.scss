@@ -360,6 +360,11 @@
 					line-height: normal;
 					letter-spacing: normal;
 					color: $ent-bnt-font-color;
+
+					@media (min-width: $screen-lg-min) {
+						font-size: 2rem;
+						line-height: 1.25;
+					}
 				}
 			}
 
