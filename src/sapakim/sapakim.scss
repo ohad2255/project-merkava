@@ -236,6 +236,12 @@
 					width: 180px;
 					margin: 21px 0 0 0;
 				}
+
+				&:active, &:focus {
+		          background-color: #1c6897;
+		          color: $header-blue;
+		          border: 0;
+		        }
 			}
 		}
 		
@@ -422,7 +428,7 @@
 			@media (min-width: $screen-lg-min) {
 				display: block;
 				width: 12px;
-				height: 2px;
+				height: 1px;
 				background-color: #0a7bb6;
 			}
 		}
