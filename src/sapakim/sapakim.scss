@@ -1,6 +1,6 @@
 @import "../common/common.scss";
 
-.q-and-a {
+.sapakim {
 	min-width: 330px;
 
 	#searchInput {
@@ -19,7 +19,7 @@
 		 } 
 	}
 
-	.q-and-a-top-sec {
+	.sapakim-top-sec {
 		position: relative;
 		background-color: $main-white;
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
@@ -31,8 +31,8 @@
 
 		@media (min-width: $screen-lg-min) {
 			height: auto;
-			margin: 0 0 66px 0;
-			padding:0 100px 60px 0;
+			margin: 0 0 53px 0;
+			padding:0 100px 0 0;
 		}
 
 		.right-line {
@@ -54,15 +54,16 @@
 			width: 100%;
 			padding: 0;
 			height: auto;
+			position: relative;
 
 			@media (min-width: $screen-lg-min) {
-				padding: 29px 111px 0 30px;;
+				padding: 31px 111px 81px 30px;
 			}
 
-			.q-and-a-breadcrumb-wrapper {
+			.sapakim-breadcrumb-wrapper {
 
 				@media (min-width: $screen-lg-min) {
-					margin: 0 0 35px 0;
+					margin: 0 0 29px 0;
 				}
 
 				.breadcrumb {
@@ -80,23 +81,23 @@
 				}
 			}
 
-			.q-and-a-p-sec {
-				margin: 20px 0 0 0;
+			.sapakim-p-sec {
+				margin: 20px 0 0 23px;
 				padding: 0 20px;
 
 				@media (min-width: $screen-lg-min) {
-					margin: 0;
+					margin: 0 0 23px 0;
 					padding: 0;
 				}	
 
-				.q-and-a-p-container {
+				.sapakim-p-container {
 
 					@media (min-width: $screen-lg-min) {
 						position: relative;
 					}	
 				}
 
-				.q-and-a-p-wrapper {
+				.sapakim-p-wrapper {
 					order: 2;
 					margin: 0;
 
@@ -106,24 +107,24 @@
 					}
 				}
 
-				.q-and-a-top-icon {
+				.sapakim-top-icon {
 					order: 1;
-					width: 55px;
+					width: 47px;
 					height: 47px;
-					margin: 0 0 6px 0;
+					margin: 0 1px 6px 0;
 
 					@media (min-width: $screen-lg-min) {
-						width: 136px;
-						height: 116px;
+						width: 116px;
+  						height: 116px;
 						margin: 0;
 						position: absolute;
 						top: 0;  
-					    right: -168px;
+					    right: -150px;
 					    top: 10px;
 					}
 				}	
 
-				.q-and-a-head {
+				.sapakim-head {
 					font-size: 3rem;
 					font-weight: 500;
 					font-style: normal;
@@ -140,7 +141,7 @@
 					}	
 				}
 
-				.q-and-a-top-p {
+				.sapakim-top-p {
 					font-size: 1.6rem;
 					font-weight: normal;
 					font-style: normal;
@@ -167,20 +168,84 @@
 		}
 	}
 
-	.q-and-a-body {
+	.sapakim-body {
 		margin: 0 0 70px 0;
 		padding: 0;
 		position: relative;
 		
 
 		@media (min-width: $screen-lg-min) {
-			padding: 32px 10px 100px;
+			padding: 0 10px 100px;
 			margin: 0px auto 0;
 			max-width: 1262px;
-		}	
+		}
+
+		.sapakim-body-top-sec {
+			margin: 21px 0 40px 0;
+
+			@media (min-width: $screen-lg-min) {
+				margin: 0 0 61px 0;
+			}
+
+			h2 {
+				font-size: 2rem;
+				font-weight: 500;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1;
+				letter-spacing: normal;
+				color: #4e5665;
+
+				@media (min-width: $screen-lg-min) {
+					line-height: 2.7;
+				}
+			}
+
+			p {
+				font-size: 1.6rem;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.25;
+				letter-spacing: normal;
+				color: #4e5665;
+				margin: 0;
+
+				@media (min-width: $screen-lg-min) {
+					line-height: 1.75;
+				}
+			}
+
+			.contact-us-button {
+				border-radius: 3px;
+				background-color: #0a7bb6;
+				box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
+				height: 50px;
+				width: 100%;
+				margin: 38px 0 0 0;
+				font-size: 2rem;
+				font-weight: 500;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: normal;
+				letter-spacing: 0.5px;
+				text-align: center;
+				color: $main-white;
+
+				@media (min-width: $screen-lg-min) {
+					width: 180px;
+					margin: 21px 0 0 0;
+				}
+			}
+		}
+		
 
 		.cards-wrapper {
 			width: 100%;
+
+			@media (min-width: $screen-lg-min) {
+				padding: 0 20px 0 8px;
+			}
 		}
 
 		.card {
@@ -189,29 +254,38 @@
 			padding: 0;
 
 			@media (min-width: $screen-lg-min) {
-				padding: 0 0 35px 0;
+
 			}
 		}
 
-		.question {
+		.card-1 {
+			border-top: solid 1px $bottom-border-question; 
+
+			@media (min-width: $screen-lg-min) {
+				border-top: 0;
+			}
+		}
+
+		.supplier {
 
 			.card-header {
 				background-color: $main-white;
 				padding: 0 20px;
-				min-height: 65px;
+				height: 59px;
 				border-bottom: solid 1px $main-purple;
 		
 			    @media (min-width: $screen-lg-min) {
-					padding: 0 10px 0 0;
+					padding: 0 17px 0 0;
 				    margin: 0;
 				    border: 0;
-				    height: fit-content;
+				    height: 65px;
+				    border-bottom: solid 3px $main-purple;
 				}
 
 				.collapse-arrow {
 					width: 14px;
   					height: 8px;
-  					margin: -5px 0 0 0;
+  					margin: 0;
 				}
 			}
 
@@ -219,10 +293,14 @@
 				display: none;
 			}
 
-			.question-wrapper {
+			.supplier-wrapper {
 				width: 100%;
 
-				.question-p {
+				@media (min-width: $screen-lg-min) {
+					padding: 0 12px 0 0;
+				}
+
+				.supplier-h4 {
 	   				font-size: 1.6rem;
 					line-height: normal;
 					letter-spacing: normal;
@@ -232,45 +310,61 @@
 					font-stretch: normal;
 					letter-spacing: normal;
 					padding: 0 0 0 15px;
-					margin: -5 0 0 0;
+					margin: 0;
 					
 
 	   				@media (min-width: $screen-lg-min) {
-						padding: 0 12px 12px 0;
+						padding: 0;
 						line-height: 1.25;
 						color: #4e5665;
 						font-size: 2rem;
-						margin: 0;
 					}
 	 			}
 			}
-
-			.card-block {
-				background-color: $background-answer-mobile;
-
-				@media (min-width: $screen-lg-min) {
-					padding: 0 38px 36px 0;
-					background-color: $main-white;
-				}
-			}	
 		}
 
-		.answer {
-			font-size: 1.5rem;
+		.suppliers-list {
+			background-color: $main-white;
+			font-size: 1.6rem;
 			font-weight: normal;
 			font-style: normal;
 			font-stretch: normal;
 			line-height: normal;
 			letter-spacing: normal;
-			color: #4e5665;
+			color: #4e5666;
 			border-bottom: solid 1px $bottom-border-question;
-			padding: 20px;
+			padding: 0;
 
 			@media (min-width: $screen-lg-min) {
-				font-size: 2rem;
-				line-height: 1.25;
+				font-size: 1.6rem;
+				line-height: 1.75;
 				border-bottom: solid 3px $main-purple;
 				padding: 0;
+			}
+
+			.supplier-link-wrapper {
+				height: 59px;
+				border-bottom: solid 1px $bottom-border-question;
+				padding: 0 23px;
+
+				@media (min-width: $screen-lg-min) {
+					padding: 0 45px 0 0;
+					height: 65px;
+				}
+
+				.supplier-link {
+					font-size: 1.6rem;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: normal;
+					letter-spacing: normal;
+					color: $ent-bnt-font-color;
+				}
+			}
+
+			&:last-child {
+				border-bottom: 0;
 			}
 		}
 
@@ -293,24 +387,26 @@
 				}
 			}
 
-			.question-p {
+			.supplier-p {
 				padding: 0;
 
 				@media (min-width: $screen-lg-min) {
-					padding: 0 12px 40px 0!important;
+					padding: 0!important;
 				}
 			}
 
 			.collapse-arrow {
 				transform: rotate(180deg);
+				margin: 0;
 			}
 		}
 
 		.closed  {
 			font-size: 2.1rem;
 			height: 24px;
+			width: auto;
 			line-height: 0;
-			padding: 12px 0 0 0;
+			padding: 11px 0 0 0;
 			font-family:  Serif;
 			color: #0a7bb6;
 		}
@@ -321,38 +417,14 @@
 			@media (min-width: $screen-lg-min) {
 				display: block;
 				width: 12px;
-				height: 1.5px;
+				height: 2px;
 				background-color: #0a7bb6;
-				margin: 11px 0 0 0;
-			}
-		}
-
-		.collapse-buttons-wrapper {
-			position: absolute;
-			left: 0;
-			top: -41px;
-			padding: 0 10px;
-			margin:0 0 0 10px;
-
-			.collapse-button-open, .collapse-button-close {
-				font-size: 1.6rem;
-				font-weight: 500;
-				font-style: normal;
-				font-stretch: normal;
-				line-height: 1.75;
-				letter-spacing: normal;
-				text-align: left;
-				color: $main-purple;
-				background-color: transparent;
-				border: 0;
-				padding: 0;
-				
 			}
 		}
 	}
 
 
-	.q-and-a-footer {
+	.sapakim-footer {
 		padding: 0;
 		margin: 0 46px 0;
 		border-top: 0;

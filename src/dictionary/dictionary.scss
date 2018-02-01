@@ -42,7 +42,7 @@
 			width: 5px;
 			height: 100%;
 			//border-radius: 4px;
-			background-color: $q-and-a-purple;
+			background-color: $main-purple;
 
 			@media (min-width: $screen-lg-min) {
 				width: 11px;
@@ -71,7 +71,7 @@
 				}
 
 				.breadcrumb-item  {
-					color: $q-and-a-purple;
+					color: $main-purple;
 					font-size: 1.6rem;
 					font-weight: 500;
 					font-style: normal;
@@ -131,7 +131,7 @@
 					font-stretch: normal;
 					line-height: 0.83;
 					letter-spacing: normal;
-					color: $q-and-a-purple;
+					color: $main-purple;
 
 					@media (min-width: $screen-lg-min) {
 						font-size: 6.2rem;
@@ -203,7 +203,7 @@
 
 					        	color: #ffffff;
 								font-weight: 500;
-								background-color: $q-and-a-purple;
+								background-color: $main-purple;
 								background-position: center;
 					        }
 						}
@@ -214,7 +214,7 @@
 	  					a {
 	  						color: #ffffff;
 	  						font-weight: 500;
-		  					background-color: $q-and-a-purple;
+		  					background-color: $main-purple;
 		  					background-position: center;
 	  					}
 					}
@@ -274,7 +274,7 @@
 
 					        	color: #ffffff;
 								font-weight: 500;
-								background-color: $q-and-a-purple;
+								background-color: $main-purple;
 								background-position: center;
 					        }
 						}
@@ -285,7 +285,7 @@
 	  					a {
 	  						color: #ffffff;
 	  						font-weight: 500;
-		  					background-color: $q-and-a-purple;
+		  					background-color: $main-purple;
 		  					background-position: center;
 	  					}
 					}
@@ -312,7 +312,7 @@
 				background-color: $main-white;
 				padding: 0 33px 0 20px;
 				height: 59px;
-				border-bottom: solid 1px $q-and-a-purple;
+				border-bottom: solid 1px $main-purple;
 		
 			    @media (min-width: $screen-lg-min) {
 					padding: 0 10px 0 0;
@@ -385,7 +385,7 @@
 			@media (min-width: $screen-lg-min) {
 				font-size: 1.6rem;
 				line-height: 1.75;
-				border-bottom: solid 3px $q-and-a-purple;
+				border-bottom: solid 3px $main-purple;
 				padding: 0;
 			}
 		}
@@ -458,7 +458,7 @@
 				line-height: 1.75;
 				letter-spacing: normal;
 				text-align: left;
-				color: $q-and-a-purple;
+				color: $main-purple;
 				background-color: transparent;
 				border: 0;
 				padding: 0;
