@@ -31,6 +31,22 @@ $(document).ready(function() {
     }
 
     $('#accordion').append(html);
+
+    $('.alphabet-nav .alphabet-item').on('click', function() {
+        var latter = this.getAttribute('letter');
+        var cards = CARDS[latter];
+        var source = document.getElementById("card-template").innerHTML;
+        var template = Handlebars.compile(source);
+        var html;
+        for (var i = 0; i < cards.length; i++) {
+            var context = CARDS[latter][i];
+            context.index = i;
+            html += template(context);
+        }
+
+        $('#accordion').append(html);
+    });
+
     $('#accordion .collapse-button').on('click', function() {
         var toggleClass;
         if (this.classList.contains('collapse-button-open')) {
