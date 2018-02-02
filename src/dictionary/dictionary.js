@@ -18,18 +18,27 @@ var CARDS = {
     }]
 };
 
+function getAllCards() {
+    var allCards = [];
+    Object.keys(CARDS).forEach(function(key) {
+        allCards = allCards.concat(CARDS[key])
+    });
+    return allCards;
+}
+
 function addCards(letter) {
     var accordion = $('#accordion');
 
     accordion.empty();
 
     var latter = letter;
-    var cards = CARDS[latter];
+    var cards = latter ? CARDS[latter] : getAllCards();
     var source = document.getElementById("card-template").innerHTML;
     var template = Handlebars.compile(source);
     var html = '';
+
     for (var i = 0; i < cards.length; i++) {
-        var context = CARDS[latter][i];
+        var context = cards[i];
         context.index = i;
         html += template(context);
     }
@@ -38,7 +47,7 @@ function addCards(letter) {
 }
 
 $(document).ready(function() {
-    addCards('a')
+    addCards();
 
     $('.alphabet-nav .alphabet-item').on('click', function() {
         addCards(this.getAttribute('letter'));
