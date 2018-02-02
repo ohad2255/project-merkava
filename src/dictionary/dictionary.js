@@ -18,33 +18,30 @@ var CARDS = {
     }]
 };
 
-$(document).ready(function() {
-    var latter = 'a';
+function addCards(letter) {
+    var accordion = $('#accordion');
+
+    accordion.empty();
+
+    var latter = letter;
     var cards = CARDS[latter];
     var source = document.getElementById("card-template").innerHTML;
     var template = Handlebars.compile(source);
-    var html;
+    var html = '';
     for (var i = 0; i < cards.length; i++) {
         var context = CARDS[latter][i];
         context.index = i;
         html += template(context);
     }
 
-    $('#accordion').append(html);
+    accordion.append(html);
+}
+
+$(document).ready(function() {
+    addCards('a')
 
     $('.alphabet-nav .alphabet-item').on('click', function() {
-        var latter = this.getAttribute('letter');
-        var cards = CARDS[latter];
-        var source = document.getElementById("card-template").innerHTML;
-        var template = Handlebars.compile(source);
-        var html;
-        for (var i = 0; i < cards.length; i++) {
-            var context = CARDS[latter][i];
-            context.index = i;
-            html += template(context);
-        }
-
-        $('#accordion').append(html);
+        addCards(this.getAttribute('letter'));
     });
 
     $('#accordion .collapse-button').on('click', function() {
