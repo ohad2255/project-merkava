@@ -143,12 +143,14 @@
       width: 100%;
 
        &:focus, {
-        
           background-color: rgba(255, 255, 255, 0.19);
         }
     }
 
     .nav-item.open {
+      .nav-item-text {
+        background-color: rgba(255, 255, 255, 0.19);
+      }
 
       .mobile-arrow {
         transform: rotate(45deg);
@@ -170,10 +172,6 @@
       .main-nav-item-dropdown.focus,
       .nav-item:hover .main-nav-item-dropdown, .nav-item:focus .main-nav-item-dropdown {
         height: auto;
-      }
-
-      .nav-item.open {
-        background-color: rgba(255, 255, 255, 0.19);
       }
     }
 
@@ -199,8 +197,9 @@
 
 .mobile-menu-open .main-content-wrapper {
   transform: translateX(320px);
-
-
+  position: absolute;
+  overflow: hidden;
+  
   @media (max-width: 340px) {
     transform: translateX(280px);
   }

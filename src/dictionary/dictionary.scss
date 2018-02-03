@@ -57,7 +57,7 @@
 			position: relative;
 
 			@media (min-width: $screen-lg-min) {
-				padding: 31px 111px 81px 30px;
+				padding: 31px 111px 55px 30px;
 			}
 
 			.dictionary-breadcrumb-wrapper {
@@ -185,38 +185,51 @@
 					.alphabet-item {
 						height: 42px;
 						width: 42px;
+						font-size: 3rem;
+						font-weight: 500;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: normal;
+						letter-spacing: normal;
+						color: #6266a6;
+						cursor: pointer;
 
-						a {
-							height: 100%;
-							width: 100%;
-							font-size: 3rem;
+						&:active, &:hover, &:focus {
+
+				        	color: #ffffff;
 							font-weight: 500;
-							font-style: normal;
-							font-stretch: normal;
-							line-height: normal;
-							letter-spacing: normal;
-							text-align: right;
-							color: #6266a6;
-							display: inline-block;
+							background-color: $main-purple;
+							background-position: center;
+				        }
 
-							&:active, &:hover, &:focus {
+						// a {
+						// 	height: 100%;
+						// 	width: 100%;
+						// 	font-size: 3rem;
+						// 	font-weight: 500;
+						// 	font-style: normal;
+						// 	font-stretch: normal;
+						// 	line-height: normal;
+						// 	letter-spacing: normal;
+						// 	text-align: right;
+						// 	color: #6266a6;
+						// 	display: inline-block;
 
-					        	color: #ffffff;
-								font-weight: 500;
-								background-color: $main-purple;
-								background-position: center;
-					        }
-						}
+						// 	&:active, &:hover, &:focus {
+
+					 //        	color: #ffffff;
+						// 		font-weight: 500;
+						// 		background-color: $main-purple;
+						// 		background-position: center;
+					 //        }
+						// }
 					}
 
 					.alphabet-item-1 {
-
-	  					a {
-	  						color: #ffffff;
-	  						font-weight: 500;
-		  					background-color: $main-purple;
-		  					background-position: center;
-	  					}
+  						color: #ffffff;
+  						font-weight: 500;
+	  					background-color: $main-purple;
+	  					background-position: center;
 					}
 				}
 			}
@@ -227,12 +240,14 @@
 		margin: 0 0 70px 0;
 		padding: 0;
 		position: relative;
+		min-height: 465px;
 		
 
 		@media (min-width: $screen-lg-min) {
 			padding: 32px 10px 100px;
 			margin: 0px auto 0;
 			max-width: 1262px;
+			min-height: 100%;
 		}
 
 		.alphabet-nav {
@@ -256,28 +271,23 @@
 					.alphabet-item {
 						height: 20px;
 						width: 20px;
+						font-size: 2rem;
+						font-weight: 500;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: 3;
+						letter-spacing: normal;
+						text-align: center;
+						color: #6266a6;
+						display: inline-block;
 
-						a {
-							height: 100%;
-							width: 100%;
-							font-size: 2rem;
+						&:active, &:focus {
+
+				        	color: #ffffff;
 							font-weight: 500;
-							font-style: normal;
-							font-stretch: normal;
-							line-height: 3;
-							letter-spacing: normal;
-							text-align: center;
-							color: #6266a6;
-							display: inline-block;
-
-							&:active, &:hover, &:focus {
-
-					        	color: #ffffff;
-								font-weight: 500;
-								background-color: $main-purple;
-								background-position: center;
-					        }
-						}
+							background-color: $main-purple;
+							background-position: center;
+				        }
 					}
 
 					.alphabet-item-1 {
@@ -450,7 +460,7 @@
 			padding: 0 10px;
 			margin:0 0 0 10px;
 
-			.collapse-button-open, .collapse-button-close {
+			.collapse-button-open, .collapse-button-close, .collapse-button-show-all {
 				font-size: 1.6rem;
 				font-weight: 500;
 				font-style: normal;
