@@ -8,6 +8,7 @@ $main-font: FbReforma, sans-serif;
 @import "/header/header";
 @import "/top-navigation/top-navigation";
 @import "/breadcrumb/breadcrumb";
+@import "/footer/footer";
 
 @font-face {
   font-family: 'FbReforma';
@@ -21,6 +22,7 @@ $main-font: FbReforma, sans-serif;
   src: url("../fonts/FbReforma-Medium.otf") format("opentype");
   font-weight: 500;
 }
+
 
 html {
   direction: rtl;
@@ -95,116 +97,6 @@ button {
 }
 
 
-/* --footer-- */
 
-footer {
-
-  .logo-merkava-warpper {
-
-    .logo-merkava {
-      height: 35px;
-      object-fit: contain;
-    }
-  }
-
-  .footer-nav-wrapper {
-
-    max-width: 285px;
-    margin-bottom: 75px;
-
-    @media (min-width: $screen-lg-min) {
-      //margin-bottom: 155px;
-      max-width: 100%;
-    }
-
-    .merkava-p {
-      object-fit: contain;
-      font-size: 1.6em;
-      font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      //line-height: 1.38;
-      letter-spacing: normal;
-      text-align: center;
-      color: $header-blue;
-      line-height: 0.8;
-      margin-top: 10px;
-    }
-
-    /* --footer navigation-- */
-
-    .footer-nav {
-      margin: 0;
-      padding: 0;
-
-      a {
-        height: fit-content;
-        text-decoration: none;
-
-        li {
-          object-fit: contain;
-          font-size: 1.6em;
-          font-weight: normal;
-          font-style: normal;
-          font-stretch: normal;
-          //line-height: 1.38;
-          letter-spacing: normal;
-          text-align: center;
-          color: $header-blue;
-          line-height: 0.8;
-        }
-      }
-
-      .first {
-        border-left: 1px solid $header-blue;
-        padding-left: 10px;
-        margin: 0 0 10px 10px;
-
-        @media (min-width: $screen-lg-min) {
-          margin: 0 0 0 10px;
-        }
-      }
-
-      .second {
-        margin-bottom: 10px;
-
-        @media (min-width: $screen-lg-min) {
-          margin: 0 0 0 10px;
-          border-left: 1px solid $header-blue;
-          padding-left: 10px;
-        }
-      }
-
-      .third {
-        padding-left: 10px;
-
-      }
-
-      .last {
-        border-right: 1px solid $header-blue;
-        padding-right: 10px;
-
-        @media (min-width: $screen-lg-min) {
-          border-left: 1px solid $header-blue;
-          padding-left: 10px;
-          margin-left: 10px;
-        }
-      }
-
-      .last-xl {
-
-      }
-    }
-  }
-
-  .logo-merkava-lg {
-    opacity: 0.8;
-    height: 44px;
-    width: 39px;
-    object-fit: contain;
-    opacity: 0.7;
-    margin-right: 8px;
-  }
-}
 
 
