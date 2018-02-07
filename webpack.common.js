@@ -14,7 +14,8 @@ module.exports = {
         'q-and-a/q-and-a': ["./src/q-and-a/q-and-a.scss", "./src/q-and-a/q-and-a.js"],
         'contact-us/contact-us': ["./src/contact-us/contact-us.scss", "./src/contact-us/contact-us.js"],
         'dictionary/dictionary': ["./src/dictionary/dictionary.scss", "./src/dictionary/dictionary.js"],
-        'sapakim/sapakim': ["./src/sapakim/sapakim.scss", "./src/sapakim/sapakim.js"]
+        'sapakim/sapakim': ["./src/sapakim/sapakim.scss", "./src/sapakim/sapakim.js"],
+        'mepharsemim/mepharsemim': ["./src/mepharsemim/mepharsemim.scss", "./src/mepharsemim/mepharsemim.js"]
     },
     output: {
         filename: "[name].min.js",
@@ -117,6 +118,11 @@ module.exports = {
             chunks: ['sapakim/sapakim'],
             filename: path.resolve(__dirname, "dist/sapakim/index.html"),
             template: path.resolve(__dirname, "src/sapakim/index.html")
-        })   
+        }),
+        new HtmlWebpackPlugin({
+            chunks: ['mepharsemim/mepharsemim'],
+            filename: path.resolve(__dirname, "dist/mepharsemim/index.html"),
+            template: path.resolve(__dirname, "src/mepharsemim/index.html")
+        })      
     ]
 };
