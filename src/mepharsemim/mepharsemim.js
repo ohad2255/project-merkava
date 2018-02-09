@@ -1,42 +1,146 @@
 require('../common/common');
 
-$(document).ready(function(){
-	$('.first-tab-a').addClass('active');
+$(document).ready(function() {
 
-    var $checkboxes = $('#mepharsemimformMain input[type="checkbox"], #mepharsemimformSub input[type="checkbox"]');
-        
-    $checkboxes.change(function(){
-        var countCheckedCheckboxes = $checkboxes.filter(':checked').length;
-        $('#count-checked-checkboxes').text(countCheckedCheckboxes);
-        
-        $('#edit-count-checked-checkboxes').val(countCheckedCheckboxes);
-    });
+	// All Elements in the UI
+	var $elements = {
+		mepharsemim: $(".mepharsemim"),
+		subjects: $(".subject"),
+		subjectOptions: $(".subject-option"),
+		toggleAllMepharsemim: $(".toggle-all-mepharsemim"),
+		toggleAllSubjectsOptions: $(".toggle-all-subject-options"),
+		myListCount: $(".my-list-count"),
+		subjectWrapper: $(".subject-wrapper")
+	}
 
-    $('#checkBox1').click(function() {
-	    if ($(this).is(':checked')) {
-	        $('.form-checkbox-a').attr('checked', true);
-	    } else {
-	        $('.form-checkbox-a').attr('checked', false);
-	    }
-	});
+	// All the data for the UI
+	var myList = {
+		selectedSubjectOptions: 0,
+		$elements: {
+			mepharsemim: $(),
+			subjects: $(),
+			subjectOptions: $()
+		}
+	}
 
-    $('#checkBox1B').click(function() {
-	    if ($(this).is(':checked')) {
-	        $('.form-checkbox-b').attr('checked', true);
-	    } else {
-	        $('.form-checkbox-b').attr('checked', false);
-	    }
-	});
+	// User actions
+	$elements.toggleAllMepharsemim.click(toggleAllMepharsemim)
+	$elements.mepharsemim.click(toggleMepharsem)
+	$elements.toggleAllSubjectsOptions.click(toggleAllSubjectsOptions)
+	$elements.subjectWrapper.click(toggleSubjectOptions);
 
-	$('#checkBox2B').click(function() {
-	    if ($(this).is(':checked')) {
-	        $('.subject-option').attr('checked', true);
-	    } else {
-	        $('.subject-option').attr('checked', false);
-	    }
-	});
+	// Update the UI
+	function updateCheckBoxes() {
+		var isAllMepharsemimSelected = $elements.mepharsemim.length === myList.$elements.mepharsemim.length;
+		var isAllSubjectsOptionsSelected = $elements.subjectOptions.length === myList.$elements.subjectOptions.length;
 
-	$('.form-type-checkbox-2').click(function() {
-		$('.subject-options').toggleClass('d-flex');
-	});
+		// Empty everything before updating the UI
+		Object.keys($elements).forEach(function(elementKey) {
+			$elements[elementKey].prop('checked', false);
+		})
+
+		// Select everything from myList
+		Object.keys(myList.$elements).forEach(function(elementKey) {
+			myList.$elements[elementKey].prop('checked', true);
+		})
+
+		// Update count
+		$elements.myListCount.html(myList.selectedSubjectOptions);
+
+		// Update toggleAll checkboxes
+		$elements.toggleAllMepharsemim.prop('checked', isAllMepharsemimSelected);
+		$elements.toggleAllSubjectsOptions.prop('checked', isAllSubjectsOptionsSelected);
+	}
+
+	// user action functions
+	function toggleAllMepharsemim() {
+
+		// take the clicked element
+		var $clicked = $(this);
+
+		// Select everything
+		if ($clicked.prop("checked")) {
+			Object.keys(myList.$elements).forEach(function(elementKey) {
+				myList.$elements[elementKey] = $elements[elementKey];
+			})
+			myList.selectedSubjectOptions = $elements.subjectOptions.length;
+		}
+
+		// Deselect everything
+		else {
+			Object.keys(myList.$elements).forEach(function(elementKey) {
+				myList.$elements[elementKey] = $();
+			})
+			myList.selectedSubjectOptions = 0;
+		}
+
+		// Call for UI update
+		updateCheckBoxes()
+	}
+
+	function toggleAllSubjectsOptions() {
+
+		// take the clicked element
+		var $clicked = $(this);
+
+		// Select all subjects options
+		if ($clicked.prop("checked")) {
+			["subjects", "subjectOptions"].forEach(function(elementKey) {
+				myList.$elements[elementKey] = $elements[elementKey];
+			})
+			myList.selectedSubjectOptions = $elements.subjectOptions.length;
+		}
+
+		// Deselect everything
+		else {
+			Object.keys(myList.$elements).forEach(function(elementKey) {
+				myList.$elements[elementKey] = $();
+			})
+			myList.selectedSubjectOptions = 0;
+		}
+
+		// Call for UI update
+		updateCheckBoxes()
+	}
+
+	function toggleMepharsem() {
+		// take the clicked element
+		var $clicked = $(this);
+		var mepharsemId = $clicked.prop("id");
+		var mepharsemSubjects = $("[mepharsemId='" + mepharsemId + "']")
+		var mepharsemSubjectsOptions = mepharsemSubjects.parents(".form-item-wrapper").find(".subject-option")
+
+		//select mepharsem
+		if ($clicked.prop("checked")) {
+			$.merge(myList.$elements.mepharsemim, $clicked.get())
+			$.merge(myList.$elements.subjects, mepharsemSubjects.get())
+			$.merge(myList.$elements.subjectOptions, mepharsemSubjectsOptions.get())
+		}
+
+		// Deselect mepharsem
+		else {
+			var filteredMepharsemim = $($.grep(myList.$elements.mepharsemim, function(mepharsem) {
+				return $clicked.get(0) !== mepharsem 
+			}))
+
+			var filteredSubject = $($.grep(myList.$elements.subjects, function(subject){
+				return !mepharsemSubjects.has(subject);
+			}))
+
+			var filteredSubjectOption = $($.grep(myList.$elements.subjectOptions, function(subjectOption){
+				return !mepharsemSubjectsOptions.has(subjectOption);
+			}))	
+
+			myList.$elements.mepharsemim = filteredMepharsemim;
+			myList.$elements.subjects = filteredSubject;
+			myList.$elements.subjectOptions = filteredSubjectOption;
+		}
+
+		// Call for UI update
+		updateCheckBoxes()
+	}
+
+	function toggleSubjectOptions() {
+		$(this).next().toggleClass('d-flex');
+	}
 });

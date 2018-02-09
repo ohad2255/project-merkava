@@ -1,6 +1,7 @@
 @import "../common/common.scss";
 
-.mepharsemim {
+.mepharsemim-container
+ {
 	min-width: 330px;
 
 	#searchInput {
@@ -334,7 +335,7 @@
 				}
 
 
-				.form-item-select-all, .form-item-select-all-subject {
+				.select-all-wrapper {
 					height: 67px;
 					font-size: 1.5rem;
 					font-weight: 500;

@@ -6,14 +6,21 @@
       <title>מפרסמים</title>
       ${require("../common/common-stylesheet.html")}
   </head>
-  <body class="mepharsemim">
+
+  <body class="mepharsemim-container">
+    
     <div class="main-menu-mobile-container d-lg-none" aria-labelledby="mainMobileNavTrigger">
       <div class="main-menu-mobile-wrapper"></div>
       ${require("../common/top-navigation/top-navigation.html")}
     </div>
+    
     <div class="main-content-wrapper">
+      
       ${require("../common/header/header.html")}
-      <section class="mepharsemim-top-sec d-flex flex-column align-items-center">
+
+      <!-- top-section -->
+
+      <!-- <section class="mepharsemim-top-sec d-flex flex-column align-items-center">
         <div class="top-sec-container custom-container d-flex flex-column justify-content-start">
           <div class="mepharsemim-breadcrumb-wrapper">
             <nav class="breadcrumb d-flex align-items-center justify-content-start">
@@ -32,107 +39,125 @@
             <img src="../common/img/mepharsemim-icon.svg" class="mepharsemim-top-icon" alt="mepharsemim-icon">
           </div>
         </div>
-      </section>
+      </section> -->
       <section class="mepharsemim-body d-flex flex-column align-items-center">
+
+        <!-- my-list-section  -->
+
         <div class="mepharsemim-body-top">
           <div class="list-drop-wrapper d-flex justify-content-center">
             <div class="count-checkboxes-wrapper">
-              הרשימה שלי  <span id="count-checked-checkboxes">0</span> 
+              הרשימה שלי  
+              <span class="my-list-count">0</span> 
             </div>
             <div class="list-drop-arrows">
               <span class="first"></span><br><span></span>
             </div>
           </div>
         </div>
+
+        <!-- main-checkboxes-wrapper -->
+
         <div class="main-checkboxes-wrapper">
+          
+          <!-- tabs -->
+
           <ul class="nav nav-tabs">
-            <li class="mepharsemim-tab active"><a data-toggle="tab" href="#mepharsemimformMain" class="first-tab-a">מפרסמים</a></li>
+            <li class="mepharsemim-tab">
+              <a data-toggle="tab" href="#mepharsemimformMain" class="first-tab-a active">  מפרסמים
+              </a>
+            </li>
             <li class="subject-tab"><a data-toggle="tab" href="#mepharsemimformSub" class="second-tab-a">נושאים</a></li>
           </ul>
+
           <div class="checkboxes-wrapper tab-content">
+            
+            <!-- mepharsemim-tab -->
+
             <div class="tab-pane in active" id="mepharsemimformMain">
               <form action="/admin/config/development/generate/content" method="post"  accept-charset="UTF-8">
                 <div>
-                  <div class="form-item-select-all form-type-checkbox d-flex align-items-center">
-                      <input type="checkbox" id="checkBox1" name="checkBox1" class="form-checkbox form-checkbox-a d-flex align-items-center justify-content-center" />
+
+                  <!-- select-all-mepharsemim -->
+
+                  <div class="form-item-select-all select-all-wrapper form-type-checkbox d-flex align-items-center">
+                      <input type="checkbox" id="checkBox1" name="checkBox1" class="form-checkbox toggle-all-mepharsemim d-flex align-items-center justify-content-center" />
                       <label for="checkBox1">בחר הכל</label>
                   </div>
-                  <div class="form-item form-type-checkbox  d-flex align-items-center">
-                      <input type="checkbox" id="checkBox2" name="checkBox2" class="form-checkbox form-checkbox-a d-flex align-items-center justify-content-center" />
-                      <label for="checkBox2">משרד האוצר</label>
+
+                  <!-- mepharsemim-list -->
+
+                  <div class="form-item form-type-checkbox d-flex align-items-center">
+                      <input type="checkbox" id="mepharsem1" name="mepharsem1" class="form-checkbox mepharsemim d-flex align-items-center justify-content-center" />
+                      <label for="mepharsem1">משרד האוצר</label>
                   </div>
                   <div class="form-item form-type-checkbox d-flex align-items-center">
-                      <input type="checkbox" id="checkBox3" name="checkBox3" class="form-checkbox form-checkbox-a d-flex align-items-center justify-content-center" />
-                      <label for="checkBox3">משרד הכלכלה</label>
+                      <input type="checkbox" id="mepharsem2" name="mepharsem2" class="form-checkbox mepharsemim d-flex align-items-center justify-content-center" />
+                      <label for="mepharsem2">משרד הכלכלה</label>
                   </div>
-                  <div class="form-item form-type-checkbox d-flex align-items-center">
-                      <input type="checkbox" id="checkBox4" name="checkBox4" class="form-checkbox form-checkbox-a d-flex align-items-center justify-content-center" />
-                      <label for="checkBox4">משרד החינוך</label>
-                  </div>
-                  <div class="form-item form-type-checkbox d-flex align-items-center">
-                      <input type="checkbox" id="checkBox5" name="checkBox5" class="form-checkbox form-checkbox-a d-flex align-items-center justify-content-center" />
-                      <label for="checkBox5">משרד האוצר</label>
-                  </div>
-                  <div class="form-item form-type-checkbox d-flex align-items-center">
-                      <input type="checkbox" id="checkBox6" name="checkBox6" class="form-checkbox form-checkbox-a d-flex align-items-center justify-content-center" />
-                      <label for="checkBox6">משרד האוצר</label>
-                  </div>
-                  <div class="form-item form-type-checkbox d-flex align-items-center">
-                      <input type="checkbox" id="checkBox7" name="checkBox7" class="form-checkbox form-checkbox-a d-flex align-items-center justify-content-center" />
-                      <label for="checkBox7">משרד האוצר</label>
-                  </div>
+               
                 </div>   
                 <div class="save-details-button d-flex justify-content-center">
                   <button class="btn btn-primary" type="submit">המשך</button>
                 </div>
               </form>
             </div>
+
+            <!-- subjects-tab -->
+
             <div class="tab-pane" id="mepharsemimformSub">
               <form action="/admin/config/development/generate/content" method="post" accept-charset="UTF-8">
                 <div>
-                  <div class="form-item-select-all-subject form-type-checkbox d-flex align-items-center">
-                      <input type="checkbox" id="checkBox1B" name="checkBox1" class="form-checkbox form-checkbox-b d-flex align-items-center justify-content-center" />
+
+                  <!-- select-all-subjects -->
+
+                  <div class="select-all-wrapper form-type-checkbox d-flex align-items-center">
+                      <input type="checkbox" id="checkBox1B" name="checkBox1" class="form-checkbox toggle-all-subject-options d-flex align-items-center justify-content-center" />
                       <label for="checkBox1B">בחר הכל</label>
                   </div>
+
+                  <!-- subjects-list -->
+
                   <div class="form-item-wrapper">
-                    <div class="form-item form-type-checkbox form-type-checkbox-2 d-flex align-items-center">
-                      <input type="checkbox" id="checkBox2B" name="checkBox2B" class="form-checkbox form-checkbox-b d-flex align-items-center justify-content-center" />
-                      <label for="checkBox2B">מכונות וציוד לחציבה,כרייה וקידוח</label>
+                    
+                    <!-- subject -->
+
+                    <div class="subject-wrapper form-item form-type-checkbox d-flex align-items-center">
+                      <input type="checkbox" id="subject1" name="subject1" class="form-checkbox subject d-flex align-items-center justify-content-center"
+                      mepharsemId="mepharsem1" />
+                      <label for="subject1">מכונות וציוד לחציבה,כרייה וקידוח</label>
                     </div>
+
+                    <!-- subject-options -->
+
                     <div class="subject-options flex-column">
                       <div class="subject-option-wrapper d-flex align-items-center">
-                        <input class="subject-option form-checkbox" type="checkbox" id="checkBox2bOption" name="checkBox2bOption"/>
-                        <label for="checkBox2bOption">אפשרות-1 </label>
+                        <input class="subject-option form-checkbox" type="checkbox" id="subjectOption1" name="subjectOption1"/>
+                        <label for="subjectOption1">אפשרות-1 </label>
                       </div>
                       <div class="subject-option-wrapper d-flex align-items-center">
-                        <input class="subject-option form-checkbox" type="checkbox" id="checkBox3bOption" name="checkBox3bOption"/>
-                        <label for="checkBox3bOption">אפשרות-2 </label>
-                      </div>
-                      <div class="subject-option-wrapper d-flex align-items-center">
-                        <input class="subject-option form-checkbox" type="checkbox" id="checkBox4bOption" name="checkBox4bOption"/>
-                        <label for="checkBox4bOption">אפשרות-3 </label>
+                        <input class="subject-option form-checkbox" type="checkbox" id="subjectOption2" name="subjectOption2"/>
+                        <label for="subjectOption2">אפשרות-2 </label>
                       </div>
                     </div>
                   </div>
-                  <div class="form-item form-type-checkbox d-flex align-items-center">
-                      <input type="checkbox" id="checkBox3B" name="checkBox3B" class="form-checkbox form-checkbox-b d-flex align-items-center justify-content-center" />
-                      <label for="checkBox3B">מכונות וציוד לחציבה,כרייה וקידוח</label>
+
+                  <div class="subject-wrapper form-item form-type-checkbox d-flex align-items-center">
+                      <input type="checkbox" id="subject2" name="subject2" class="form-checkbox subject d-flex align-items-center justify-content-center" />
+                      <label for="subject2">מכונות וציוד לחציבה,כרייה וקידוח</label>
                   </div>
-                  <div class="form-item form-type-checkbox d-flex align-items-center">
-                      <input type="checkbox" id="checkBox4B" name="checkBox4B" class="form-checkbox form-checkbox-b d-flex align-items-center justify-content-center" />
-                      <label for="checkBox4B">מכונות וציוד לחציבה,כרייה וקידוח</label>
-                  </div>
-                  <div class="form-item form-type-checkbox d-flex align-items-center">
-                      <input type="checkbox" id="checkBox5B" name="checkBox5B" class="form-checkbox form-checkbox-b d-flex align-items-center justify-content-center" />
-                      <label for="checkBox5B">מכונות וציוד לחציבה,כרייה וקידוח</label>
-                  </div>
-                  <div class="form-item form-type-checkbox d-flex align-items-center">
-                      <input type="checkbox" id="checkBox6B" name="checkBox6B" class="form-checkbox form-checkbox-b d-flex align-items-center justify-content-center" />
-                      <label for="checkBox6B">מכונות וציוד לחציבה,כרייה וקידוח</label>
-                  </div>
-                  <div class="form-item form-type-checkbox d-flex align-items-center">
-                      <input type="checkbox" id="checkBox7B" name="checkBox7B" class="form-checkbox form-checkbox-b d-flex align-items-center justify-content-center" />
-                      <label for="checkBox7B">מכונות וציוד לחציבה,כרייה וקידוח</label>
+
+                  <!-- subject-options -->
+
+                  <div class="subject-options flex-column">
+                    <div class="subject-option-wrapper d-flex align-items-center">
+                      <input class="subject-option form-checkbox" type="checkbox" id="subjectOption1" name="subjectOption1"/>
+                      <label for="subjectOption1">אפשרות-1 </label>
+                    </div>
+                    <div class="subject-option-wrapper d-flex align-items-center">
+                      <input class="subject-option form-checkbox" type="checkbox" id="subjectOption2" name="subjectOption2"/>
+                      <label for="subjectOption2">אפשרות-2 </label>
+                    </div>
                   </div>
                 </div>   
                 <div class="save-details-button d-flex justify-content-center">
