@@ -26,7 +26,7 @@ $(document).ready(function() {
 	// User actions
 	$elements.toggleAllMepharsemim.click(toggleAllMepharsemim)
 	$elements.mepharsemim.click(toggleMepharsem)
-	$elements.toggleAllSubjectsOptions.click(toggleAllSubjectsOptions)
+	$elements.toggleAllSubjectsOptions.click(toggleAllMepharsemim)
 	$elements.subjectWrapper.click(toggleSubjectOptions);
 
 	// Update the UI
@@ -45,6 +45,7 @@ $(document).ready(function() {
 		})
 
 		// Update count
+		myList.selectedSubjectOptions = myList.$elements.subjectOptions.length;
 		$elements.myListCount.html(myList.selectedSubjectOptions);
 
 		// Update toggleAll checkboxes
@@ -63,7 +64,6 @@ $(document).ready(function() {
 			Object.keys(myList.$elements).forEach(function(elementKey) {
 				myList.$elements[elementKey] = $elements[elementKey];
 			})
-			myList.selectedSubjectOptions = $elements.subjectOptions.length;
 		}
 
 		// Deselect everything
@@ -71,32 +71,6 @@ $(document).ready(function() {
 			Object.keys(myList.$elements).forEach(function(elementKey) {
 				myList.$elements[elementKey] = $();
 			})
-			myList.selectedSubjectOptions = 0;
-		}
-
-		// Call for UI update
-		updateCheckBoxes()
-	}
-
-	function toggleAllSubjectsOptions() {
-
-		// take the clicked element
-		var $clicked = $(this);
-
-		// Select all subjects options
-		if ($clicked.prop("checked")) {
-			["subjects", "subjectOptions"].forEach(function(elementKey) {
-				myList.$elements[elementKey] = $elements[elementKey];
-			})
-			myList.selectedSubjectOptions = $elements.subjectOptions.length;
-		}
-
-		// Deselect everything
-		else {
-			Object.keys(myList.$elements).forEach(function(elementKey) {
-				myList.$elements[elementKey] = $();
-			})
-			myList.selectedSubjectOptions = 0;
 		}
 
 		// Call for UI update
@@ -108,7 +82,7 @@ $(document).ready(function() {
 		var $clicked = $(this);
 		var mepharsemId = $clicked.prop("id");
 		var mepharsemSubjects = $("[mepharsemId='" + mepharsemId + "']")
-		var mepharsemSubjectsOptions = mepharsemSubjects.parents(".form-item-wrapper").find(".subject-option")
+		var mepharsemSubjectsOptions = mepharsemSubjects.parents(".subject-wrapper").find(".subject-option")
 
 		//select mepharsem
 		if ($clicked.prop("checked")) {
@@ -124,11 +98,11 @@ $(document).ready(function() {
 			}))
 
 			var filteredSubject = $($.grep(myList.$elements.subjects, function(subject){
-				return !mepharsemSubjects.has(subject);
+				return mepharsemSubjects.get().indexOf(subject) === -1;
 			}))
 
 			var filteredSubjectOption = $($.grep(myList.$elements.subjectOptions, function(subjectOption){
-				return !mepharsemSubjectsOptions.has(subjectOption);
+				return mepharsemSubjectsOptions.get().indexOf(subjectOption) === -1;
 			}))	
 
 			myList.$elements.mepharsemim = filteredMepharsemim;
@@ -141,6 +115,6 @@ $(document).ready(function() {
 	}
 
 	function toggleSubjectOptions() {
-		$(this).next().toggleClass('d-flex');
+		$(this).find(".subject-options").toggleClass('d-flex');
 	}
 });
