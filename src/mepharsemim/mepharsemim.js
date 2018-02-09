@@ -176,16 +176,24 @@ $(document).ready(function() {
 		var isMepharsemInMyList = myList.$elements.mepharsemim.get().indexOf($mepharsem.get(0)) > -1;
 		var isSubjectInMyList = myList.$elements.subjects.get().indexOf($subject.get(0)) > -1;
 		var allMepharsemSubjectsOptions = $("[data-mepharsem-id='" + mepharsemId + "']").parents(".subject-wrapper").find(".subject-option")
+		var allSubjectsOptions = $subject.parents(".subject-wrapper").find(".subject-option")
 		var mepharsemSubjectOptionsInMyList = $($.grep(allMepharsemSubjectsOptions, function(subjectOption){
+			return $.inArray(subjectOption, myList.$elements.subjectOptions) > -1
+		})).length;
+		var subjectOptionsInMyList = $($.grep(allSubjectsOptions, function(subjectOption){
 			return $.inArray(subjectOption, myList.$elements.subjectOptions) > -1
 		})).length;
 
 		//select subject option
 		if ($clicked.prop("checked")) {
 			if (!mepharsemSubjectOptionsInMyList) {
-				$.merge(myList.$elements.mepharsemim, $mepharsem.get())
-				$.merge(myList.$elements.subjects, $subject.get())				
+				$.merge(myList.$elements.mepharsemim, $mepharsem.get())				
+			} 
+
+			if (!subjectOptionsInMyList) {
+				$.merge(myList.$elements.subjects, $subject.get())
 			}
+
 			$.merge(myList.$elements.subjectOptions, $clicked.get())
 
 			if (myList.$elements.subjectOptions.length === $elements.subjectOptions.length) {
@@ -207,7 +215,7 @@ $(document).ready(function() {
 			}
 
 			var filteredSubjects;
-			if (mepharsemSubjectOptionsInMyList === 1) {
+			if (subjectOptionsInMyList === 1) {
 				filteredSubjects = $($.grep(myList.$elements.subjects, function(subject){
 					return $subject.get(0) !== subject;
 				}))
