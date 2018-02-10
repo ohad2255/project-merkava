@@ -14,7 +14,16 @@ $(document).ready(function() {
 		myList: $(".my-list"),
 		myListSubjectsList: $(".my-list-subjects-list"),
 		myListMepharsemimList: $(".my-list-mepharsemim-list"),
-		myListToggle: $(".count-checkboxes-wrapper")
+		myListToggle: $(".count-checkboxes-wrapper"),
+		closeListButtonWrapper: $(".close-list-button-wrapper"),
+		closeListButton: $(".close-list-button"),
+		openSubjectsInList: $(".my-list-subjects-wrapper"),
+		subjectsInList: $(".my-list-subjects-list"),
+		openMepharsemimInList: $(".my-list-mepharsemim-wrapper"),
+		mepharsemimInList: $(".my-list-mepharsemim-list"),
+		mainBodyWapper: $(".main-checkboxes-wrapper"),
+		openCloseArrow: $(".arrow")
+
 	}
 
 	// All the data for the UI
@@ -36,6 +45,10 @@ $(document).ready(function() {
 	$elements.subjectWrapper.click(toggleSubjectOptions)
 	$elements.myList.delegate(".my-list-item", "click", removeFromMyList)
 	$elements.myListToggle.click(toggleMyList)
+	$elements.myListToggle.click(closeMyList)
+	$elements.closeListButton.click(closeMyListWithButton)
+	$elements.openSubjectsInList.click(openCloseSubjectsInList)
+	$elements.openMepharsemimInList.click(openCloseMepharsemimInList)
 
 
 	// Update the UI
@@ -369,7 +382,37 @@ $(document).ready(function() {
 
 	function toggleMyList() {
 
-		$(".my-list").toggleClass(".d-block");
+		$(".my-list").toggleClass("d-block");
+		$elements.closeListButtonWrapper.addClass("d-none");
+		$elements.mainBodyWapper.toggleClass("d-none");
+
+		// if (myList.selectedSubjectOptions.length>0) {
+		// 	$(".my-list").toggleClass("d-block");
+		// 	$elements.closeListButtonWrapper.addClass("d-none");
+		// 	$elements.mainBodyWapper.toggleClass("d-none");
+		// } 
+	}
+
+	function closeMyList() {
+		$elements.closeListButtonWrapper.toggleClass("d-block");
+	}
+
+	function closeMyListWithButton() {
+		$(".my-list").removeClass("d-block");
+		$(".my-list").addClass("d-none");
+		$elements.closeListButtonWrapper.removeClass("d-block");
+		$elements.closeListButtonWrapper.addClass("d-none");
+		$elements.mainBodyWapper.toggleClass("d-none");
+
+	}
+
+	function openCloseSubjectsInList() {
+		$elements.subjectsInList.toggleClass("d-block");
+		$elements.openCloseArrow.toggleClass("rotate");
+	}
+
+	function openCloseMepharsemimInList() {
+		$elements.mepharsemimInList.toggleClass("d-block");
 	}
 
 	// $(".count-checkboxes-wrapper").click(function() {

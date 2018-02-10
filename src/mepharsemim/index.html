@@ -66,15 +66,20 @@
             <!-- my-list -->
 
             <div class="my-list">
-              
+
               <!-- my-list-subjects-list -->
-              
-              <div class="my-list-subjects-wrapper">
-                
-                <!-- list-title -->
-                
-                <div class="my-list-subjects-title">
-                  נושאים
+
+              <div class="my-list-subjects-container w-100">
+                <div class="my-list-subjects-wrapper w-100 d-flex align-items-center justify-content-between">
+                  
+                  <!-- list-title -->
+                  
+                  <div class="my-list-subjects-title">
+                    נושאים
+                  </div>
+                  <div class="arrow">
+                    <img src="../common/img/mepharsemim-main-arrow.svg" class="drop-arrow" alt="arrow">
+                  </div>
                 </div>
 
                 <!-- list-subjects -->
@@ -84,25 +89,27 @@
                   <!-- DYNAMIC CONTENT -->
                   
                 </div>
+
               </div>
 
               <!-- my-list-mepharsemim-list -->
 
-              <div class="my-list-mepharsemim-wrapper">
-                
-                <!-- list-title -->
-                
-                <div class="my-list-subjects-title">
-                  מפרסמים
+              <div class="my-list-mepharsemim-container w-100">
+                <div class="my-list-mepharsemim-wrapper w-100 d-flex align-items-center">
+                  
+                  <!-- list-title -->
+                  
+                  <div class="my-list-mepharsemim-title">
+                    מפרסמים
+                  </div>
                 </div>
-
                 <!-- list-mefarsemim -->
                 
-                <div class="my-list-mepharsemim-list">
+                  <div class="my-list-mepharsemim-list">
 
-                  <!-- DYNAMIC CONTENT -->
+                    <!-- DYNAMIC CONTENT -->
 
-                </div>
+                  </div>
               </div>
             </div>
           </div>   
@@ -328,6 +335,9 @@
       <footer class="mepharsemim-footer d-flex justify-content-center">
           ${require("../common/footer/footer.html")}
       </footer>
+      <div class="close-list-button-wrapper fixed-bottom">
+        <button class="close-list-button btn btn-primary">סגור</button>
+      </div>
     </div>
     ${require("../common/common.html")}
   </body>

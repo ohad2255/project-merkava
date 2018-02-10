@@ -1,8 +1,12 @@
 @import "../common/common.scss";
 
-.mepharsemim-container
- {
+.mepharsemim-container {
 	min-width: 330px;
+
+	.main-content-wrapper {
+		height: 100%;
+		overflow: auto;
+	}
 
 	#searchInput {
 		padding: 0 0 0 22px;
@@ -158,6 +162,7 @@
 				padding: 28px 0 0 0;
 				background-repeat: no-repeat;
     			background-size: cover;
+    			z-index: 10;
 
     			 @media (max-width: $screen-sm-min) {
 			      background-size: contain;
@@ -212,6 +217,46 @@
 				width: 100%;
 				top: 0;
 				display: none;
+				z-index: 9;
+				top: 58px;
+				padding: 10px 5px 187px;
+
+				.my-list-mepharsemim-container, .my-list-subjects-container {
+					background-color: rgba(233, 235, 240, 0.5);
+					padding: 0 15px;
+				}
+
+				.my-list-mepharsemim-wrapper, .my-list-subjects-wrapper {
+					height: 67px;
+					object-fit: contain;
+					margin: 0 0 6px 0;
+				}
+
+				.my-list-subject-wrapper {
+					order: 1;
+				}
+
+				.my-list-subjects-list, .my-list-mepharsemim-list  {
+					display: none;
+				}
+
+				.my-list-mepharsemim-title, .my-list-subjects-title {
+					font-size: 3.2rem;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: normal;
+					letter-spacing: normal;
+					color: $text-dark-grey;
+				}
+
+				.rotate {
+					transform: rotate(-90deg);
+				}
+
+				.my-list-subjects-list {
+					//position: absolute;
+				}
 			}
 		}
 
@@ -412,6 +457,44 @@
 
 		.footer-nav-wrapper	{
 			margin:0 0 44px 0;
+		}
+	}
+
+	.close-list-button-wrapper {
+		width: 100%;
+		padding: 47px 20px 0;
+		height: 122px;
+		background-color: $main-white;
+		display: none;
+
+		@media (min-width: $screen-lg-min) {
+			width: fit-content;
+		}
+
+		button {
+			width: 100%;
+			height: 50px;
+			border-radius: 3px;
+			background-color: #0a7bb6;
+			box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
+			font-size: 2rem;
+			font-weight: 500;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: normal;
+			letter-spacing: 0.5px;
+			text-align: center;
+			color: $main-white;
+
+			&:active, &:focus {
+	          background-color: #1c6897;
+	          color: $header-blue;
+	          border: 0;
+	        }
+
+			@media (min-width: $screen-lg-min) {
+				width: 330px;
+			}
 		}
 	}
 }
