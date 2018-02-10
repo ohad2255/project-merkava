@@ -149,6 +149,7 @@
 			height: 144px;
 			width: 100%;
 
+
 			.list-drop-wrapper {
 				background-image: url('../common/img/mephrsemim-mobile-drop-background.svg');
 				height: 89px;
@@ -158,6 +159,10 @@
 				background-repeat: no-repeat;
     			background-size: cover;
 
+    			 @media (max-width: $screen-sm-min) {
+			      background-size: contain;
+			    }
+
 				.count-checkboxes-wrapper {
 					font-size: 2rem;
 					font-weight: normal;
@@ -166,41 +171,51 @@
 					line-height: normal;
 					letter-spacing: normal;
 					color: $main-white;
+					position: relative;
+
+					.list-drop-arrows {
+						position: absolute;
+						right: 50%;
+						bottom: 12px;
+						margin: 0 -4.5px 0 0;
+						z-index: 10;
+
+						.first {
+							margin: 0 0 -12px 0;
+						}
+
+						span {
+							transform: rotate(-90deg);
+							border: solid $main-white;
+							border-width: 0 3px 3px 0;
+							display: inline-block;
+							transform: rotate(45deg);
+							height: 9px;
+							width: 9px;
+							display: inline-block;
+						}
+					}
 				}
 
-				.list-drop-arrows {
-					position: absolute;
-					right: 50%;
-					bottom: 12px;
-					margin: 0 -4.5px 0 0;
-					z-index: 10;
-
-					.first {
-						margin: 0 0 -6px 0;
-					}
-
-					span {
-						transform: rotate(-90deg);
-						border: solid $main-white;
-						border-width: 0 3px 3px 0;
-						display: inline-block;
-						transform: rotate(45deg);
-						height: 9px;
-						width: 9px;
-						display: inline-block;
-					}
-				}
+				
 			}
 		}
 
-		.my-list {
-			position: absolute;
-			z-index: 1;
-			background-color: white;
-			font-size: 16px;
-			width: 100%;
-			top: 0;
+		.my-list-wrapper {
+			position: relative;
+
+			.my-list {
+				position: absolute;
+				z-index: 1;
+				background-color: white;
+				font-size: 16px;
+				width: 100%;
+				top: 0;
+				display: none;
+			}
 		}
+
+		
 
 		.main-checkboxes-wrapper {
 			position: relative;

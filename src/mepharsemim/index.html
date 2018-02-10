@@ -20,7 +20,7 @@
 
       <!-- top-section -->
 
-      <!-- <section class="mepharsemim-top-sec d-flex flex-column align-items-center">
+      <section class="mepharsemim-top-sec d-flex flex-column align-items-center">
         <div class="top-sec-container custom-container d-flex flex-column justify-content-start">
           <div class="mepharsemim-breadcrumb-wrapper">
             <nav class="breadcrumb d-flex align-items-center justify-content-start">
@@ -39,7 +39,7 @@
             <img src="../common/img/mepharsemim-icon.svg" class="mepharsemim-top-icon" alt="mepharsemim-icon">
           </div>
         </div>
-      </section> -->
+      </section>
       <section class="mepharsemim-body d-flex flex-column align-items-center">
 
         <!-- my-list-section  -->
@@ -53,13 +53,14 @@
             <!-- my-list-toggle -->
           
             <div class="list-drop-wrapper d-flex justify-content-center">
-              <div class="count-checkboxes-wrapper">
+              <div class="count-checkboxes-wrapper"  role="button" tabindex="0">
                 הרשימה שלי  
                 <span class="my-list-count">0</span> 
+                <div class="list-drop-arrows">
+                  <span class="first"></span><br><span></span>
+                </div>
               </div>
-              <div class="list-drop-arrows">
-                <span class="first"></span><br><span></span>
-              </div>
+              
             </div> 
 
             <!-- my-list -->
@@ -119,7 +120,11 @@
               <a data-toggle="tab" href="#mepharsemimformMain" class="first-tab-a active">  מפרסמים
               </a>
             </li>
-            <li class="subject-tab"><a data-toggle="tab" href="#mepharsemimformSub" class="second-tab-a">נושאים</a></li>
+            <li class="subject-tab">
+              <a data-toggle="tab" href="#mepharsemimformSub" class="second-tab-a">
+                נושאים
+              </a>
+            </li>
           </ul>
 
           <div class="checkboxes-wrapper tab-content">
@@ -146,6 +151,10 @@
                   <div class="form-item form-type-checkbox d-flex align-items-center">
                       <input type="checkbox" id="mepharsem2" name="mepharsem2" class="form-checkbox mepharsemim d-flex align-items-center justify-content-center" />
                       <label for="mepharsem2">משרד הכלכלה</label>
+                  </div>
+                  <div class="form-item form-type-checkbox d-flex align-items-center">
+                      <input type="checkbox" id="mepharsem3" name="mepharsem3" class="form-checkbox mepharsemim d-flex align-items-center justify-content-center" />
+                      <label for="mepharsem3">משרד החינוך</label>
                   </div>
                
                 </div>   
@@ -176,21 +185,67 @@
 
                     <div class="subject-wrapper form-type-checkbox d-flex align-items-center flex-column w-100">
                       <div class="subject-item form-item w-100 d-flex align-items-center">
-                        <input type="checkbox" id="subject1" name="subject1" class="form-checkbox subject d-flex align-items-center justify-content-center"
+                        <input type="checkbox" id="mepharsem1-subject1" name="mepharsem1-subject1" class="form-checkbox subject d-flex align-items-center justify-content-center"
                         data-mepharsem-id="mepharsem1" />
-                        <label for="subject1">מכונות וציוד לחציבה,כרייה וקידוח</label>
+                        <label for="mepharsem1-subject1">מכונות וציוד לחציבה,כרייה וקידוח</label>
                       </div>
 
                       <!-- subject-options -->
 
                       <div class="subject-options flex-column w-100">
                         <div class="subject-option-wrapper d-flex align-items-center">
-                          <input class="subject-option form-checkbox" type="checkbox" id="subject1Option1" name="subject1Option1"/>
-                          <label for="subject1Option1">אפשרות-1 </label>
+                          <input class="subject-option form-checkbox" type="checkbox" id="m1subject1Option1" name="m1subject1Option1"/>
+                          <label for="m1subject1Option1">אפשרות-1 </label>
                         </div>
                         <div class="subject-option-wrapper d-flex align-items-center">
-                          <input class="subject-option form-checkbox" type="checkbox" id="subject1Option2" name="subject1Option2"/>
-                          <label for="subject1Option2">אפשרות-2 </label>
+                          <input class="subject-option form-checkbox" type="checkbox" id="m1subject1Option2" name="m1subject1Option2"/>
+                          <label for="m1subject1Option2">אפשרות-2 </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- subject -->
+
+                    <div class="subject-wrapper form-type-checkbox d-flex align-items-center flex-column w-100">
+                      <div class="subject-item form-item w-100 d-flex align-items-center">
+                        <input type="checkbox" id="mepharsem1-subject2" name="mepharsem1-subject2" class="form-checkbox subject d-flex align-items-center justify-content-center"
+                        data-mepharsem-id="mepharsem1" />
+                        <label for="mepharsem1-subject2">מכונות וציוד לבנייה והרכבה</label>
+                      </div>
+
+                      <!-- subject-options -->
+
+                      <div class="subject-options flex-column w-100">
+                        <div class="subject-option-wrapper d-flex align-items-center">
+                          <input class="subject-option form-checkbox" type="checkbox" id="m1subject2Option1" name="m1subject2Option1"/>
+                          <label for="m1subject2Option1">אפשרות-1 </label>
+                        </div>
+                        <div class="subject-option-wrapper d-flex align-items-center">
+                          <input class="subject-option form-checkbox" type="checkbox" id="m1subject2Option2" name="m1subject2Option2"/>
+                          <label for="m1subject2Option2">אפשרות-2 </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- subject -->
+
+                    <div class="subject-wrapper form-type-checkbox d-flex align-items-center flex-column w-100">
+                      <div class="subject-item form-item w-100 d-flex align-items-center">
+                        <input type="checkbox" id="mepharsem2-subject1" name="mepharsem2-subject1" class="form-checkbox subject d-flex align-items-center justify-content-center"
+                        data-mepharsem-id="mepharsem2" />
+                        <label for="mepharsem2-subject1">מכונות וציוד לחציבה,כרייה וקידוח</label>
+                      </div>
+
+                      <!-- subject-options -->
+
+                      <div class="subject-options flex-column w-100">
+                        <div class="subject-option-wrapper d-flex align-items-center">
+                          <input class="subject-option form-checkbox" type="checkbox" id="m2subject1Option1" name="m2subject1Option1"/>
+                          <label for="m2subject1Option1">אפשרות-1 </label>
+                        </div>
+                        <div class="subject-option-wrapper d-flex align-items-center">
+                          <input class="subject-option form-checkbox" type="checkbox" id="m2subject2Option1" name="m2subject2Option1"/>
+                          <label for="m2subject2Option1">אפשרות-2 </label>
                         </div>
                       </div>
                     </div>
@@ -198,23 +253,67 @@
                     <!-- subject -->
 
                     <div class="subject-wrapper form-type-checkbox d-flex flex-column align-items-center w-100">
-                    <div class="subject-item form-item w-100 d-flex align-items-center">
-                      <input type="checkbox" id="subject2" name="subject2" data-mepharsem-id="mepharsem1" class="form-checkbox subject d-flex align-items-center justify-content-center" />
-                      <label for="subject2">מכונות וציוד לחציבה,כרייה וקידוח</label>
-                    </div>
+                      <div class="subject-item form-item w-100 d-flex align-items-center">
+                        <input type="checkbox" id="mepharsem2subject2" name="mepharsem2subject2" data-mepharsem-id="mepharsem2" class="form-checkbox subject d-flex align-items-center justify-content-center" />
+                        <label for="mepharsem2subject2">מכונות וציוד לבנייה והרכבה</label>
+                      </div>
                     
-                    <!-- subject-options -->
+                      <!-- subject-options -->
 
-                    <div class="subject-options flex-column w-100">
-                      <div class="subject-option-wrapper d-flex align-items-center w-100">
-                        <input class="subject-option form-checkbox" type="checkbox" id="subject2Option1" name="subject2Option1"/>
-                        <label for="subject2Option1">אפשרות-1 </label>
-                      </div>
-                      <div class="subject-option-wrapper d-flex align-items-center">
-                        <input class="subject-option form-checkbox" type="checkbox" id="subject2Option2" name="subject2Option2"/>
-                        <label for="subject2Option2">אפשרות-2 </label>
+                      <div class="subject-options flex-column w-100">
+                        <div class="subject-option-wrapper d-flex align-items-center w-100">
+                          <input class="subject-option form-checkbox" type="checkbox" id="m2subject2Option1" name="m2subject2Option1"/>
+                          <label for="m2subject2Option1">אפשרות-1 </label>
+                        </div>
+                        <div class="subject-option-wrapper d-flex align-items-center">
+                          <input class="subject-option form-checkbox" type="checkbox" id="m2subject2Option2" name="m2subject2Option2"/>
+                          <label for="m2subject2Option2">אפשרות-2 </label>
+                        </div>
                       </div>
                     </div>
+
+                    <!-- subject -->
+
+                    <div class="subject-wrapper form-type-checkbox d-flex flex-column align-items-center w-100">
+                      <div class="subject-item form-item w-100 d-flex align-items-center">
+                        <input type="checkbox" id="mepharsem3subject1" name="mepharsem3subject1" data-mepharsem-id="mepharsem3" class="form-checkbox subject d-flex align-items-center justify-content-center" />
+                        <label for="mepharsem3subject1">מכונות וציוד לחציבה,כרייה וקידוח</label>
+                      </div>
+                    
+                      <!-- subject-options -->
+
+                      <div class="subject-options flex-column w-100">
+                        <div class="subject-option-wrapper d-flex align-items-center w-100">
+                          <input class="subject-option form-checkbox" type="checkbox" id="m3subject1Option1" name="m3subject1Option1"/>
+                          <label for="m3subject1Option1">אפשרות-1 </label>
+                        </div>
+                        <div class="subject-option-wrapper d-flex align-items-center">
+                          <input class="subject-option form-checkbox" type="checkbox" id="m3subject1Option2" name="m3subject1Option2"/>
+                          <label for="m3subject1Option2">אפשרות-2 </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- subject -->
+
+                    <div class="subject-wrapper form-type-checkbox d-flex flex-column align-items-center w-100">
+                      <div class="subject-item form-item w-100 d-flex align-items-center">
+                        <input type="checkbox" id="mepharsem3subject2" name="mepharsem3subject2" data-mepharsem-id="mepharsem3" class="form-checkbox subject d-flex align-items-center justify-content-center" />
+                        <label for="mepharsem3subject2">מכונות וציוד לבנייה והרכבה</label>
+                      </div>
+                    
+                      <!-- subject-options -->
+
+                      <div class="subject-options flex-column w-100">
+                        <div class="subject-option-wrapper d-flex align-items-center w-100">
+                          <input class="subject-option form-checkbox" type="checkbox" id="m3subject2Option1" name="m3subject2Option1"/>
+                          <label for="m3subject2Option1">אפשרות-1 </label>
+                        </div>
+                        <div class="subject-option-wrapper d-flex align-items-center">
+                          <input class="subject-option form-checkbox" type="checkbox" id="m3subject2Option2" name="m3subject2Option2"/>
+                          <label for="m3subject2Option2">אפשרות-2 </label>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>   
@@ -226,9 +325,9 @@
           </div>
         </div>
       </section>
-      <!-- <footer class="mepharsemim-footer d-flex justify-content-center">
+      <footer class="mepharsemim-footer d-flex justify-content-center">
           ${require("../common/footer/footer.html")}
-      </footer> -->
+      </footer>
     </div>
     ${require("../common/common.html")}
   </body>
