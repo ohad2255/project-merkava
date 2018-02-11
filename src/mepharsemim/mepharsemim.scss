@@ -6,6 +6,7 @@
 	.main-content-wrapper {
 		height: 100%;
 		overflow: auto;
+		padding: 0 0 250px 0;
 	}
 
 	#searchInput {
@@ -556,8 +557,8 @@
 
 	.save-list-button-wrapper {
 		width: 100%;
-		padding: 47px 20px 0;
-		height: 122px;
+		padding: 4px 20px 0;
+		height: 108px;
 		background-color: $main-white;
 		display: none;
 
@@ -653,6 +654,30 @@
 			@media (min-width: $screen-lg-min) {
 				width: 330px;
 			}
+		}
+	}
+
+	.scroll-down-button-wrapper {
+		width: 47px;
+		height: 40px;
+		border-radius: 4px;
+		background-color: #ffffff;
+		box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
+		position: fixed;
+		z-index: 10;
+		bottom: 125px;
+		right: 0;
+
+		.blue-arrow {
+			width: 12px;
+			height: 12px;
+			border: solid $header-blue;
+		    border-width: 0 3px 3px 0;
+		    display: inline-block;
+		    transform: rotate(45deg);
+		    -webkit-transform: rotate(45deg);
+		    pointer-events: none; 
+		    margin: -6px 0 0 0;
 		}
 	}
 }

@@ -25,7 +25,7 @@ $(document).ready(function() {
 		openCloseArrowSubjects: $("#subjectsArrow"),
 		openCloseArrowMepharsemim: $("#mepharsemimArrow"),
 		optionsArrow: $(".blue-arrow"),
-		saveListButton: $(".save-list-button")
+		//saveListButton: $(".save-list-button")
 	}
 
 	// All the data for the UI
@@ -427,17 +427,24 @@ $(document).ready(function() {
 	}
 
 	function checkItemsForSubmitButton() {
-		if 	($(".my-list-subjects-list").length>0) {
-			$elements.saveListButton.removeClass("disabled");
-			$elements.saveListButton.addClass("enable");
+		if ($(".my-list-subjects-list-subject").length>0) {
+			$(".save-list-button").removeClass("disabled");
+			$(".save-list-button").addClass("enable");
 		}
 	}
 
-	checkItemsForSubmitButton()
-
-	// $(".count-checkboxes-wrapper").click(function() {
-	//   	$(".my-list-count").addclass(".d-none");
+	// $(".down").click(function() {
+	// 	$("html").scroll()
 	// });
+
+	// $(function() {
+	//     $('.down').click (function() {
+	//       $('html, body').animate({scrollTop: $('.scroll-to').offset().top }, 'slow');
+	//       return false;
+	//     });
+ //  });
+
+	checkItemsForSubmitButton()
 });
 
 
