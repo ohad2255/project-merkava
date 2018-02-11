@@ -22,8 +22,10 @@ $(document).ready(function() {
 		openMepharsemimInList: $(".my-list-mepharsemim-wrapper"),
 		mepharsemimInList: $(".my-list-mepharsemim-list"),
 		mainBodyWapper: $(".main-checkboxes-wrapper"),
-		openCloseArrow: $(".arrow")
-
+		openCloseArrowSubjects: $("#subjectsArrow"),
+		openCloseArrowMepharsemim: $("#mepharsemimArrow"),
+		optionsArrow: $(".blue-arrow"),
+		saveListButton: $(".save-list-button")
 	}
 
 	// All the data for the UI
@@ -49,7 +51,6 @@ $(document).ready(function() {
 	$elements.closeListButton.click(closeMyListWithButton)
 	$elements.openSubjectsInList.click(openCloseSubjectsInList)
 	$elements.openMepharsemimInList.click(openCloseMepharsemimInList)
-
 
 	// Update the UI
 	function updateUI() {
@@ -116,12 +117,12 @@ $(document).ready(function() {
 					var subjectOptionId = $subjectOption.prop("id");
 					var subjectOptionName = $subjectOption.next().text()
 					var subjectOptionTemplate = `
-					  <div class="my-list-option-wrapper">
+					  <div class="my-list-option-wrapper d-flex align-items-center">
 						  <div 
 						    class="my-list-item my-list-option-delete" 
 						    data-related-checkbox-id="${subjectOptionId}"
 						    data-type="option"
-						  >delete</div>
+						  ><img src="../common/img/x.svg" class="delete-img" alt="delete-x"></div>
 						  <div class="my-list-option-name">${subjectOptionName}</div>
 					  </div>
 					`
@@ -132,12 +133,12 @@ $(document).ready(function() {
 
 			var subjectTemplate = `
 				<div class="my-list-subjects-list-subject">
-		            <div class="my-list-subject-wrapper">  
+		            <div class="my-list-subject-wrapper d-flex align-items-center">  
 		              <div 
 		                class="my-list-item my-list-subject-delete" 
 		                data-related-checkbox-id="${subjectId}"
 		                data-type="subject"
-		              >delete</div>
+		              ><img src="../common/img/x.svg" class="delete-img" alt="delete-x"></div>
 		              <div class="my-list-subject-name">${subjectName}</div>
 		            </div>
 
@@ -161,12 +162,14 @@ $(document).ready(function() {
 			var mepharsemName = $mepharsem.next().text()
 			var mepharsemTemplate = `
 				<div class="my-list-mepharsemim-list-mepharsem">
-		            <div class="my-list-mepharsem-wrapper">  
+		            <div class="my-list-mepharsem-wrapper d-flex align-items-center">  
 		              <div 
 		                class="my-list-item my-list-mepharsem-delete" 
 		                data-related-checkbox-id="${mepharsemId}"
 		                data-type="mepharsem"
-		              >delete</div>
+		              >
+		              	<img src="../common/img/x.svg" class="delete-img" alt="delete-x">
+		              </div>
 		              <div class="my-list-mepharsem-name">${mepharsemName}</div>
 		            </div>
 		        </div>
@@ -373,6 +376,7 @@ $(document).ready(function() {
 	function toggleSubjectOptions() {
 		if (event.target.classList.contains("subject-item")) {
 			$(this).find(".subject-options").toggleClass('d-flex');
+			$(this).find($elements.optionsArrow).toggleClass('rotate');
 		}
 	}
 
@@ -407,13 +411,29 @@ $(document).ready(function() {
 	}
 
 	function openCloseSubjectsInList() {
-		$elements.subjectsInList.toggleClass("d-block");
-		$elements.openCloseArrow.toggleClass("rotate");
+		if ($(".my-list-subjects-list-subject").length>0) {
+			$elements.subjectsInList.toggleClass("d-block");
+			$elements.openCloseArrowSubjects.toggleClass("rotate");
+			$elements.openSubjectsInList.toggleClass("change-background-color");
+		}
 	}
 
 	function openCloseMepharsemimInList() {
-		$elements.mepharsemimInList.toggleClass("d-block");
+		if ($(".my-list-mepharsemim-list-mepharsem").length>0) {
+			$elements.mepharsemimInList.toggleClass("d-block");
+			$elements.openCloseArrowMepharsemim.toggleClass("rotate");
+			$elements.openMepharsemimInList.toggleClass("change-background-color");
+		}
 	}
+
+	function checkItemsForSubmitButton() {
+		if 	($(".my-list-subjects-list").length>0) {
+			$elements.saveListButton.removeClass("disabled");
+			$elements.saveListButton.addClass("enable");
+		}
+	}
+
+	checkItemsForSubmitButton()
 
 	// $(".count-checkboxes-wrapper").click(function() {
 	//   	$(".my-list-count").addclass(".d-none");
