@@ -56,6 +56,7 @@ $(document).ready(function() {
 	function updateUI() {
 		updateCheckBoxes()
 		updateMyList()
+		checkItemsForSubmitButton()
 	}
 
 	function updateCheckBoxes() {
@@ -376,10 +377,11 @@ $(document).ready(function() {
 	function toggleSubjectOptions() {
 		if (event.target.classList.contains("subject-item")) {
 			$(this).find(".subject-options").toggleClass('d-flex');
+			$(this).find(".subject-options").toggleClass('active');
 			$(this).find($elements.optionsArrow).toggleClass('rotate');
 		}
 	}
-
+	
 	// function toggleMyList() {
 	// 	$elements.myListToggle.addclass(".d-block");
 	// }
@@ -402,8 +404,8 @@ $(document).ready(function() {
 	}
 
 	function closeMyListWithButton() {
-		$(".my-list").removeClass("d-block");
-		$(".my-list").addClass("d-none");
+		$elements.myList.removeClass("d-block");
+		$elements.myList.addClass("d-none");
 		$elements.closeListButtonWrapper.removeClass("d-block");
 		$elements.closeListButtonWrapper.addClass("d-none");
 		$elements.mainBodyWapper.toggleClass("d-none");
@@ -411,7 +413,7 @@ $(document).ready(function() {
 	}
 
 	function openCloseSubjectsInList() {
-		if ($(".my-list-subjects-list-subject").length>0) {
+		if (myList.$elements.subjectOptions.length>0) {
 			$elements.subjectsInList.toggleClass("d-block");
 			$elements.openCloseArrowSubjects.toggleClass("rotate");
 			$elements.openSubjectsInList.toggleClass("change-background-color");
@@ -419,7 +421,7 @@ $(document).ready(function() {
 	}
 
 	function openCloseMepharsemimInList() {
-		if ($(".my-list-mepharsemim-list-mepharsem").length>0) {
+		if (myList.$elements.subjectOptions.length>0) {
 			$elements.mepharsemimInList.toggleClass("d-block");
 			$elements.openCloseArrowMepharsemim.toggleClass("rotate");
 			$elements.openMepharsemimInList.toggleClass("change-background-color");
@@ -427,11 +429,13 @@ $(document).ready(function() {
 	}
 
 	function checkItemsForSubmitButton() {
-		if ($(".my-list-subjects-list-subject").length>0) {
+		if (myList.$elements.subjectOptions.length>0) {
 			$(".save-list-button").removeClass("disabled");
-			$(".save-list-button").addClass("enable");
+		} else {
+			$(".save-list-button").addClass("disabled");
 		}
 	}
+	
 
 	// $(".down").click(function() {
 	// 	$("html").scroll()
@@ -439,12 +443,9 @@ $(document).ready(function() {
 
 	// $(function() {
 	//     $('.down').click (function() {
-	//       $('html, body').animate({scrollTop: $('.scroll-to').offset().top }, 'slow');
-	//       return false;
+	//       $('body').animate({ scrollTop: $('body').height() }, 800);
 	//     });
  //  });
-
-	checkItemsForSubmitButton()
 });
 
 
