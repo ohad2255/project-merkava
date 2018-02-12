@@ -15,7 +15,8 @@ $(document).ready(function() {
 		myListSubjectsList: $(".my-list-subjects-list"),
 		myListMepharsemimList: $(".my-list-mepharsemim-list"),
 		myListToggle: $("#countCheckboxesWrapperMobile"),
-		myListToggleLg: $("#countCheckboxesWrapperLg"),
+		myListToggleLg: $(".list-drop-wrapper-lg"),
+		myListLg: $(".my-list-wrapper-lg"),
 		closeListButtonWrapper: $(".close-list-button-wrapper"),
 		closeListButton: $(".close-list-button"),
 		openSubjectsInList: $(".my-list-subjects-wrapper"),
@@ -432,8 +433,7 @@ $(document).ready(function() {
 	}
 
 	function toggleMyListLg() {
-
-		$(".my-list-lg").toggleClass("d-block");
+		$elements.myListLg.toggleClass("d-block");
 	}
 
 	function closeMyList() {
