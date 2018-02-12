@@ -27,8 +27,8 @@ $(document).ready(function() {
 		openCloseArrowSubjects: $("#subjectsArrow"),
 		openCloseArrowMepharsemim: $("#mepharsemimArrow"),
 		optionsArrow: $(".blue-arrow"),
-		$subjectsForm: $("#subjectsForm")
-		//saveListButton: $(".save-list-button")
+		$subjectsForm: $("#subjectsForm"),
+		backToSubjectsButton: $(".back-to-subjects-button")
 	}
 
 	// All the data for the UI
@@ -58,6 +58,8 @@ $(document).ready(function() {
 	$elements.closeListButton.click(closeMyListWithButton)
 	$elements.openSubjectsInList.click(openCloseSubjectsInList)
 	$elements.openMepharsemimInList.click(openCloseMepharsemimInList)
+	$elements.backToSubjectsButton.click(backToSubjects)
+
 
 	// Update the UI
 	function updateUI() {
@@ -81,6 +83,9 @@ $(document).ready(function() {
             $openSubject.removeClass("disabled").addClass("active");
             $openSubject.find(".subject-options").addClass("d-flex");
             $openSubject.find(".blue-arrow").addClass("rotate");
+            $elements.mainBodyWapper.find($(".save-list-button")).addClass("d-none");
+            $elements.mainBodyWapper.find($(".save-list-button")).removeClass("d-block");
+            $elements.mainBodyWapper.find($(".back-to-subjects-button")).addClass("d-block");
 
 		} else {
 
@@ -88,6 +93,8 @@ $(document).ready(function() {
 			$elements.subjectWrapper.removeClass("disabled active");
 			$elements.subjectWrapper.find(".subject-options").removeClass("d-flex");
             $elements.subjectWrapper.find(".blue-arrow").removeClass("rotate");
+            $elements.mainBodyWapper.find($(".save-list-button")).removeClass("d-none");
+            $elements.mainBodyWapper.find($(".back-to-subjects-button")).removeClass("d-block");
 		}
 	}
 
@@ -472,6 +479,14 @@ $(document).ready(function() {
 		} else {
 			$(".save-list-button").addClass("disabled");
 		}
+	}
+
+	function backToSubjects() {
+		 $elements.mainBodyWapper.find($(".subject-wrapper")).removeClass("disabled");
+		 $elements.mainBodyWapper.find($(".save-list-button")).addClass("d-block");
+		 $(this).removeClass("d-block");
+		 $elements.mainBodyWapper.find($(".subject-options")).removeClass("d-flex");
+		 $elements.mainBodyWapper.find($(".blue-arrow")).removeClass("rotate");
 	}
 	
 
