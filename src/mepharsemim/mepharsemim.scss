@@ -751,6 +751,13 @@
 
 				.disabled {
 					display: none!important;
+
+					@media (min-width: $screen-lg-min) {				
+					    opacity: 0.35;
+  						background-color: rgba(233, 235, 240, 0.5);
+					    pointer-events: none;
+					    display: block!important;
+					}
 				}
 
 				// .btn {

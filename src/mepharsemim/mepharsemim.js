@@ -454,7 +454,7 @@ $(document).ready(function() {
 		$elements.closeListButtonWrapper.removeClass("d-block");
 		$elements.closeListButtonWrapper.addClass("d-none");
 		$elements.mainBodyWapper.toggleClass("d-none");
-
+		$(".list-drop-arrows").removeClass("rotate-list-arrows");
 	}
 
 	function openCloseSubjectsInList() {
