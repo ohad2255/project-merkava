@@ -35,6 +35,7 @@
   "dependencies": {
     "bootstrap-show-password": "^1.1.2",
     "handlebars": "^4.0.11",
+    "jquery": "^3.1.1",
     "parsleyjs": "^2.8.0"
   }
 }
