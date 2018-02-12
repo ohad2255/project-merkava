@@ -21,13 +21,13 @@
       <!-- top-section -->
 
       <section class="mepharsemim-top-sec d-flex flex-column align-items-center">
-        <div class="top-sec-container custom-container d-flex flex-column justify-content-start">
+        <div class="top-sec-container d-flex flex-column justify-content-start">
           <div class="mepharsemim-breadcrumb-wrapper">
             <nav class="breadcrumb d-flex align-items-center justify-content-start">
               <a class="breadcrumb-item breadcrumb-item-1 d-flex align-items-center justify-content-center" href="../profile/index.html"">לעדכון פרטים <span>››</span></a>
             </nav>
           </div>
-          <div class="mepharsemim-p-sec d-flex flex-column align-items-start">
+          <div class="mepharsemim-p-sec d-flex flex-column align-items-start align-items-lg-center flex-lg-row">
             <div class="mepharsemim-p-wrapper d-flex flex-column">
               <h1 class="mepharsemim-head">
                   שלום שמעון
@@ -36,32 +36,38 @@
                   הגעת לאיזור האישי שלך בו תוכל להגדיר את כל תחומי העניין עליהם תרצה לקבל עדכונים במייל. צפה/י בלושנית - נושאים ו/או מפרסמים ובחר מתוך הרשימות.   
               </p>
             </div>
-            <img src="../common/img/mepharsemim-icon.svg" class="mepharsemim-top-icon" alt="mepharsemim-icon">
+            <img src="../common/img/mepharsemim-icon.svg" class="mepharsemim-top-icon d-lg-none" alt="mepharsemim-icon">
+            <img src="../common/img/mepharsemim-top-icon-lg.svg" class="mepharsemim-top-icon-lg d-none d-lg-inline-block" alt="mepharsemim-icon">
           </div>
         </div>
       </section>
-      <section class="mepharsemim-body d-flex flex-column align-items-center">
+      <section class="mepharsemim-body d-flex flex-column align-items-center custom-container">
 
         <!-- my-list-section  -->
 
-        <div class="mepharsemim-body-top">
+        <div class="mepharsemim-body-top d-lg-none">
           
           <!-- my-list-wrapper -->
 
           <div class="my-list-wrapper">
             
             <!-- my-list-toggle -->
-          
-            <div class="list-drop-wrapper d-flex justify-content-center">
-              <div class="count-checkboxes-wrapper"  role="button" tabindex="0">
-                הרשימה שלי  
-                <span class="my-list-count">0</span> 
-                <div class="list-drop-arrows">
-                  <span class="first"></span><br><span></span>
+            <div class="list-drop-container">
+              <div class="list-drop-wrapper d-flex justify-content-center">
+                <div class="count-checkboxes-wrapper" role="button" tabindex="0">
+                  הרשימה שלי  
+                  <span class="my-list-count">(0)</span> 
+                  <div class="list-drop-arrows-wrapper">
+                    <div class="list-drop-arrows">
+                      <span class="first"></span><br><span></span>
+                    </div>
+                  </div>
                 </div>
+              </div> 
+              <div class="blue-circle">
+                
               </div>
-              
-            </div> 
+            </div>
 
             <!-- my-list -->
 
@@ -151,7 +157,7 @@
 
             <div class="tab-pane in active" id="mepharsemimformMain">
               <form action="/admin/config/development/generate/content" method="post"  accept-charset="UTF-8">
-                <div>
+                <div class="body-checkboxes-wrapper">
 
                   <!-- select-all-mepharsemim -->
 
@@ -182,7 +188,7 @@
 
             <div class="tab-pane" id="mepharsemimformSub">
               <form action="/admin/config/development/generate/content" method="post" accept-charset="UTF-8">
-                <div>
+                <div class="main-subjects-tab">
 
                   <!-- select-all-subjects -->
 
@@ -206,15 +212,16 @@
                       </div>
 
                       <!-- subject-options -->
-
-                      <div class="subject-options flex-column w-100">
-                        <div class="subject-option-wrapper d-flex align-items-center">
-                          <input class="subject-option d-flex align-items-center justify-content-center form-checkbox" type="checkbox" id="m1subject1Option1" name="m1subject1Option1"/>
-                          <label for="m1subject1Option1">אפשרות-1 </label>
-                        </div>
-                        <div class="subject-option-wrapper d-flex align-items-center">
-                          <input class="subject-option d-flex align-items-center justify-content-center form-checkbox" type="checkbox" id="m1subject1Option2" name="m1subject1Option2"/>
-                          <label for="m1subject1Option2">אפשרות-2 </label>
+                      <div class="subject-option-container w-100">
+                        <div class="subject-options flex-column w-100">
+                          <div class="subject-option-wrapper d-flex align-items-center">
+                            <input class="subject-option d-flex align-items-center justify-content-center form-checkbox" type="checkbox" id="m1subject1Option1" name="m1subject1Option1"/>
+                            <label for="m1subject1Option1">אפשרות-1 </label>
+                          </div>
+                          <div class="subject-option-wrapper d-flex align-items-center">
+                            <input class="subject-option d-flex align-items-center justify-content-center form-checkbox" type="checkbox" id="m1subject1Option2" name="m1subject1Option2"/>
+                            <label for="m1subject1Option2">אפשרות-2 </label>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -230,15 +237,16 @@
                       </div>
 
                       <!-- subject-options -->
-
-                      <div class="subject-options flex-column w-100">
-                        <div class="subject-option-wrapper d-flex align-items-center">
-                          <input class="subject-option d-flex align-items-center justify-content-center form-checkbox" type="checkbox" id="m1subject2Option1" name="m1subject2Option1"/>
-                          <label for="m1subject2Option1">אפשרות-1 </label>
-                        </div>
-                        <div class="subject-option-wrapper d-flex align-items-center">
-                          <input class="subject-option d-flex align-items-center justify-content-center form-checkbox" type="checkbox" id="m1subject2Option2" name="m1subject2Option2"/>
-                          <label for="m1subject2Option2">אפשרות-2 </label>
+                      <div class="subject-option-container w-100">
+                        <div class="subject-options flex-column w-100">
+                          <div class="subject-option-wrapper d-flex align-items-center">
+                            <input class="subject-option d-flex align-items-center justify-content-center form-checkbox" type="checkbox" id="m1subject2Option1" name="m1subject2Option1"/>
+                            <label for="m1subject2Option1">אפשרות-1 </label>
+                          </div>
+                          <div class="subject-option-wrapper d-flex align-items-center">
+                            <input class="subject-option d-flex align-items-center justify-content-center form-checkbox" type="checkbox" id="m1subject2Option2" name="m1subject2Option2"/>
+                            <label for="m1subject2Option2">אפשרות-2 </label>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -255,14 +263,16 @@
 
                       <!-- subject-options -->
 
-                      <div class="subject-options flex-column w-100">
-                        <div class="subject-option-wrapper d-flex align-items-center">
-                          <input class="subject-option d-flex align-items-center justify-content-center form-checkbox" type="checkbox" id="m2subject1Option1" name="m2subject1Option1"/>
-                          <label for="m2subject1Option1">אפשרות-1 </label>
-                        </div>
-                        <div class="subject-option-wrapper d-flex align-items-center">
-                          <input class="subject-option d-flex align-items-center justify-content-center form-checkbox" type="checkbox" id="m2subject2Option1" name="m2subject2Option1"/>
-                          <label for="m2subject2Option1">אפשרות-2 </label>
+                      <div class="subject-option-container w-100">
+                        <div class="subject-options flex-column w-100">
+                          <div class="subject-option-wrapper d-flex align-items-center">
+                            <input class="subject-option d-flex align-items-center justify-content-center form-checkbox" type="checkbox" id="m2subject1Option1" name="m2subject1Option1"/>
+                            <label for="m2subject1Option1">אפשרות-1 </label>
+                          </div>
+                          <div class="subject-option-wrapper d-flex align-items-center">
+                            <input class="subject-option d-flex align-items-center justify-content-center form-checkbox" type="checkbox" id="m2subject2Option1" name="m2subject2Option1"/>
+                            <label for="m2subject2Option1">אפשרות-2 </label>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -278,14 +288,16 @@
                     
                       <!-- subject-options -->
 
-                      <div class="subject-options flex-column w-100">
-                        <div class="subject-option-wrapper d-flex align-items-center w-100">
-                          <input class="subject-option d-flex align-items-center justify-content-center form-checkbox" type="checkbox" id="m2subject2Option1" name="m2subject2Option1"/>
-                          <label for="m2subject2Option1">אפשרות-1 </label>
-                        </div>
-                        <div class="subject-option-wrapper d-flex align-items-center">
-                          <input class="subject-option d-flex align-items-center justify-content-center form-checkbox" type="checkbox" id="m2subject2Option2" name="m2subject2Option2"/>
-                          <label for="m2subject2Option2">אפשרות-2 </label>
+                      <div class="subject-option-container w-100">
+                        <div class="subject-options flex-column w-100">
+                          <div class="subject-option-wrapper d-flex align-items-center w-100">
+                            <input class="subject-option d-flex align-items-center justify-content-center form-checkbox" type="checkbox" id="m2subject2Option1" name="m2subject2Option1"/>
+                            <label for="m2subject2Option1">אפשרות-1 </label>
+                          </div>
+                          <div class="subject-option-wrapper d-flex align-items-center">
+                            <input class="subject-option d-flex align-items-center justify-content-center form-checkbox" type="checkbox" id="m2subject2Option2" name="m2subject2Option2"/>
+                            <label for="m2subject2Option2">אפשרות-2 </label>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -301,14 +313,16 @@
                     
                       <!-- subject-options -->
 
-                      <div class="subject-options flex-column w-100">
-                        <div class="subject-option-wrapper d-flex align-items-center w-100">
-                          <input class="subject-option d-flex align-items-center justify-content-center form-checkbox" type="checkbox" id="m3subject1Option1" name="m3subject1Option1"/>
-                          <label for="m3subject1Option1">אפשרות-1 </label>
-                        </div>
-                        <div class="subject-option-wrapper d-flex align-items-center">
-                          <input class="subject-option d-flex align-items-center justify-content-center form-checkbox" type="checkbox" id="m3subject1Option2" name="m3subject1Option2"/>
-                          <label for="m3subject1Option2">אפשרות-2 </label>
+                      <div class="subject-option-container w-100">
+                        <div class="subject-options flex-column w-100">
+                          <div class="subject-option-wrapper d-flex align-items-center w-100">
+                            <input class="subject-option d-flex align-items-center justify-content-center form-checkbox" type="checkbox" id="m3subject1Option1" name="m3subject1Option1"/>
+                            <label for="m3subject1Option1">אפשרות-1 </label>
+                          </div>
+                          <div class="subject-option-wrapper d-flex align-items-center">
+                            <input class="subject-option d-flex align-items-center justify-content-center form-checkbox" type="checkbox" id="m3subject1Option2" name="m3subject1Option2"/>
+                            <label for="m3subject1Option2">אפשרות-2 </label>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -324,14 +338,16 @@
                     
                       <!-- subject-options -->
 
-                      <div class="subject-options flex-column w-100">
-                        <div class="subject-option-wrapper d-flex align-items-center w-100">
-                          <input class="subject-option d-flex align-items-center justify-content-center form-checkbox" type="checkbox" id="m3subject2Option1" name="m3subject2Option1"/>
-                          <label for="m3subject2Option1">אפשרות-1 </label>
-                        </div>
-                        <div class="subject-option-wrapper d-flex align-items-center">
-                          <input class="subject-option d-flex align-items-center justify-content-center form-checkbox" type="checkbox" id="m3subject2Option2" name="m3subject2Option2"/>
-                          <label for="m3subject2Option2">אפשרות-2 </label>
+                      <div class="subject-option-container w-100">
+                        <div class="subject-options flex-column w-100">
+                          <div class="subject-option-wrapper d-flex align-items-center w-100">
+                            <input class="subject-option d-flex align-items-center justify-content-center form-checkbox" type="checkbox" id="m3subject2Option1" name="m3subject2Option1"/>
+                            <label for="m3subject2Option1">אפשרות-1 </label>
+                          </div>
+                          <div class="subject-option-wrapper d-flex align-items-center">
+                            <input class="subject-option d-flex align-items-center justify-content-center form-checkbox" type="checkbox" id="m3subject2Option2" name="m3subject2Option2"/>
+                            <label for="m3subject2Option2">אפשרות-2 </label>
+                          </div>
                         </div>
                       </div>
                     </div>

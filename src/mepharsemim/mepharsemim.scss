@@ -30,7 +30,9 @@
 		
 
 		@media (min-width: $screen-lg-min) {
-			
+			height: 248px;
+			background-color: $cobalt;
+			padding: 0;
 		}
 
 		.top-sec-container {
@@ -38,7 +40,9 @@
 			position: relative;
 
 			@media (min-width: $screen-lg-min) {
-				
+				padding: 33px 0 0 0;
+				width: 100%;
+				max-width: 1322px;
 			}
 
 			.mepharsemim-breadcrumb-wrapper {
@@ -48,6 +52,9 @@
 
 				@media (min-width: $screen-lg-min) {
 					margin: 0 0 35px 0;
+					right: 310px;
+					top: 62px;
+					width: 110px;
 				}
 
 				.breadcrumb {
@@ -62,13 +69,19 @@
 					font-stretch: normal;
 					line-height: 1.75;
 					letter-spacing: normal;
+					text-align: left;
+
+					@media (min-width: $screen-lg-min) {
+						color: $main-white;
+						font-size: 1.5rem;
+					}
 				}
 			}
 
 			.mepharsemim-p-sec {
 
 				@media (min-width: $screen-lg-min) {
-					
+					width: 100%;
 				}	
 
 				.mepharsemim-p-wrapper {
@@ -98,6 +111,13 @@
 					}
 				}	
 
+				.mepharsemim-top-icon-lg {
+					height: 102px;
+					width: 116px;
+					margin: 0 ;
+					margin: 0 0 0 35px;
+				}
+
 				.mepharsemim-head {
 					font-size: 3rem;
 					font-weight: 500;
@@ -109,10 +129,11 @@
 					margin: 0 0 13px 0;
 
 					@media (min-width: $screen-lg-min) {
-						font-size: 6.2rem;
+						font-size: 3.2rem;
 						font-weight: 500;
 						line-height: normal;
-						margin: 0 0 3px 0;
+						margin: 0 0 6px 0;
+						color: $main-white;
 					}	
 				}
 
@@ -127,27 +148,26 @@
 					padding: 0 0 0 12px;
 
 					@media (min-width: $screen-lg-min) {
-						font-size: 3rem;
+						font-size: 1.5rem;
 						line-height: normal;
-						letter-spacing: normal;
+						letter-spacing: 0.5px;
 						padding: 0 0 0 30px;
 						margin: 0;
-					}	
-
-					@media (min-width: $screen-xl-min) {
-						padding: 0 0 0 165px;
-						max-width: 1262px;
-					}	
+						color: $main-white;
+						max-width: 625px;
+					}
 				}
 			}
 		}
 	}
 
 	.mepharsemim-body {
-		
+		padding: 0;
+
 		@media (min-width: $screen-lg-min) {
 			margin: 0px auto 0;
 			max-width: 1262px;
+			padding: 0 20px;
 		}	
 
 		.mepharsemim-body-top {
@@ -155,16 +175,32 @@
 			height: 144px;
 			width: 100%;
 
+			.list-drop-container {
+				height: 89px;
+				position: relative;
+
+				.blue-circle {
+					height: 88px;
+					width: 88px;
+					border-radius: 50%;
+					position: absolute;
+					right: 50%;
+					top: 0;
+					margin: 0 -44px 0 0;
+					background-color: #0077bf;
+					z-index: 11;
+				}
+			}
+
 
 			.list-drop-wrapper {
-				background-image: url('../common/img/mephrsemim-mobile-drop-background.svg');
-				height: 89px;
+				background-color: #0077bf;
+				height: 60px;
 				width: 100%;
 				position: relative;
 				padding: 28px 0 0 0;
 				background-repeat: no-repeat;
     			background-size: cover;
-    			z-index: 10;
 
     			 @media (max-width: $screen-sm-min) {
 			      background-size: contain;
@@ -179,28 +215,36 @@
 					letter-spacing: normal;
 					color: $main-white;
 					position: relative;
+					min-height: 61px;
+    				z-index: 20;
 
-					.list-drop-arrows {
+					.list-drop-arrows-wrapper {
 						position: absolute;
 						right: 50%;
-						bottom: 12px;
+						bottom: 15px;
 						margin: 0 -4.5px 0 0;
 						z-index: 10;
 
-						.first {
-							margin: 0 0 -12px 0;
-						}
 
-						span {
-							transform: rotate(-90deg);
-							border: solid $main-white;
-							border-width: 0 3px 3px 0;
-							display: inline-block;
-							transform: rotate(45deg);
-							height: 9px;
-							width: 9px;
-							display: inline-block;
+						.list-drop-arrows {
+							line-height: 0;
+
+							span {
+								transform: rotate(-90deg);
+								border: solid $main-white;
+								border-width: 0 3px 3px 0;
+								display: inline-block;
+								transform: rotate(45deg);
+								height: 9px;
+								width: 9px;
+								display: inline-block;
+								line-height: normal;
+							}
 						}
+					}
+
+					.rotate-list-arrows {
+						transform: rotate(180deg);
 					}
 				}
 			}
@@ -231,6 +275,7 @@
 					object-fit: contain;
 					margin: 0 0 6px 0;
 					padding: 0 15px;
+					cursor: pointer;
 				}
 
 				.change-background-color {
@@ -251,6 +296,7 @@
 					.my-list-subject-wrapper,  {
 						padding: 0 21px;
 						margin: 0 0 5px 0; 
+						cursor: pointer;
 
 						.my-list-subject-delete {
 							margin: 0 0 0 19px;
@@ -421,7 +467,22 @@
 				border: 0;
 				top: -30px;
 				right: 20px;
-				height: 42px;	
+				height: 42px;
+				width: 100%;	
+
+				@media (min-width: $screen-lg-min) {
+					height: 65px;
+					top: -45px;
+					right: 0;
+				}
+			}
+
+			.body-checkboxes-wrapper {
+				max-width: 100%;
+
+				@media (min-width: $screen-lg-min) {
+					max-width: 591px;;
+				}
 			}
 
 			.subject-tab a, .mepharsemim-tab a {
@@ -436,12 +497,18 @@
 				text-align: center;
 				color: rgba(78,86,101,0.25);
 				background-color: $main-white;
-				text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 				display: inline-block;
 				height: 100%;
 				margin: 4px 0 0 0;
 				padding: 4px 0 0 0;
 				//border-top: solid 7px $cobalt;
+
+				@media (min-width: $screen-lg-min) {
+					width: 190px;
+					padding: 11px 0 0 0;
+					font-size: 2rem;
+					letter-spacing: 0.5px;
+				}
 			}
 
 			.first-tab-a.active, .second-tab-a.active {
@@ -453,6 +520,11 @@
 				border-radius: 2.4px;
 				margin: 0;
 				padding: 8px 0 0 0;
+				text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+
+				@media (min-width: $screen-lg-min) {
+					padding: 13px 0 0 0;
+				}
 			}
 
 			.mepharsemim-tab {
@@ -462,6 +534,18 @@
 			.checkboxes-wrapper {
 				width: 100%;
 				padding: 0 5px;
+
+				@media (min-width: $screen-lg-min) {
+					padding: 0;
+				}
+
+				.main-subjects-tab {
+					max-width: 100%;
+
+					@media (min-width: $screen-lg-min) {
+						max-width: 591px;
+					}
+				}
 
 				.form-checkbox {
 					margin: 0 0 0 20px;
@@ -501,8 +585,27 @@
 					margin: 0;
 				}
 
+				.subject-wrapper {
+					@media (min-width: $screen-lg-min) {
+						position: relative;
+					}
+				}
+
+				.subject-option-container {
+					@media (min-width: $screen-lg-min) {
+						position: absolute!important;
+						max-width: 591px;
+						right: 596px;
+						top: 0;
+					}
+				}
+
 				.subject-options {
 					display: none;
+
+					@media (min-width: $screen-lg-min) {
+						
+					}
 
 					.subject-option-wrapper {
 						height: 67px;
@@ -579,16 +682,22 @@
 					letter-spacing: 0.5px;
 					color: $text-dark-grey;
 					padding: 0 12px 0 10px;
+
+					@media (min-width: $screen-lg-min) {
+						padding: 0 20px 0 17px;
+					}
 				}
 
-				.btn {
-					width: 335px;
-					height: 50px;
-					border-radius: 3px;
-					background-color: #9ca0a6;
-					box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
-					border: 0;
-				}
+				// .btn {
+				// 	width: 335px;
+				// 	height: 50px;
+				// 	border-radius: 3px;
+				// 	background-color: #9ca0a6;
+				// 	box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
+				// 	border: 0;
+				// }
+
+
 			}
 
 			.blue-arrow {

@@ -381,7 +381,7 @@ $(document).ready(function() {
 			$(this).find($elements.optionsArrow).toggleClass('rotate');
 		}
 	}
-	
+
 	// function toggleMyList() {
 	// 	$elements.myListToggle.addclass(".d-block");
 	// }
@@ -401,6 +401,7 @@ $(document).ready(function() {
 
 	function closeMyList() {
 		$elements.closeListButtonWrapper.toggleClass("d-block");
+		$(".list-drop-arrows").toggleClass("rotate-list-arrows");
 	}
 
 	function closeMyListWithButton() {
@@ -413,19 +414,19 @@ $(document).ready(function() {
 	}
 
 	function openCloseSubjectsInList() {
-		if (myList.$elements.subjectOptions.length>0) {
+		// if (myList.$elements.subjectOptions.length>0) {
 			$elements.subjectsInList.toggleClass("d-block");
 			$elements.openCloseArrowSubjects.toggleClass("rotate");
 			$elements.openSubjectsInList.toggleClass("change-background-color");
-		}
+		// }
 	}
 
 	function openCloseMepharsemimInList() {
-		if (myList.$elements.subjectOptions.length>0) {
+		//if (myList.$elements.subjectOptions.length>0) {
 			$elements.mepharsemimInList.toggleClass("d-block");
 			$elements.openCloseArrowMepharsemim.toggleClass("rotate");
 			$elements.openMepharsemimInList.toggleClass("change-background-color");
-		}
+		//}
 	}
 
 	function checkItemsForSubmitButton() {
