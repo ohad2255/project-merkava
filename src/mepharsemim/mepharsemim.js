@@ -26,6 +26,7 @@ $(document).ready(function() {
 		openCloseArrowSubjects: $("#subjectsArrow"),
 		openCloseArrowMepharsemim: $("#mepharsemimArrow"),
 		optionsArrow: $(".blue-arrow"),
+		$subjectsForm: $("#subjectsForm")
 		//saveListButton: $(".save-list-button")
 	}
 
@@ -37,7 +38,10 @@ $(document).ready(function() {
 			subjects: $(),
 			subjectOptions: $()
 		}
-	}
+	};
+	var lists = {
+		openSubjectIndex: -1
+	};
 
 	// User actions
 	$elements.toggleAllMepharsemim.click(toggleAllMepharsemim)
@@ -59,6 +63,31 @@ $(document).ready(function() {
 		updateCheckBoxes()
 		updateMyList()
 		checkItemsForSubmitButton()
+		handleSubjectsDisplay()
+	}
+
+	function handleSubjectsDisplay() {
+		var $openSubject;
+		if (lists.openSubjectIndex > -1) {
+
+            // Close all subjects
+            $elements.subjectWrapper.addClass("disabled").removeClass("active");
+            $elements.subjectWrapper.find(".subject-options").removeClass("d-flex");
+            $elements.subjectWrapper.find(".blue-arrow").removeClass("rotate");
+
+            // Open current subject
+            $openSubject = $elements.subjectWrapper.eq(lists.openSubjectIndex);
+            $openSubject.removeClass("disabled").addClass("active");
+            $openSubject.find(".subject-options").addClass("d-flex");
+            $openSubject.find(".blue-arrow").addClass("rotate");
+
+		} else {
+
+			// Restore all subjects to default
+			$elements.subjectWrapper.removeClass("disabled active");
+			$elements.subjectWrapper.find(".subject-options").removeClass("d-flex");
+            $elements.subjectWrapper.find(".blue-arrow").removeClass("rotate");
+		}
 	}
 
 	function updateCheckBoxes() {
@@ -378,9 +407,10 @@ $(document).ready(function() {
 
 	function toggleSubjectOptions() {
 		if (event.target.classList.contains("subject-item")) {
-			$(this).find(".subject-options").toggleClass('d-flex');
-			$(this).find(".subject-options").toggleClass('active');
-			$(this).find($elements.optionsArrow).toggleClass('rotate');
+			var $subjectWrapper = $(this);
+			var shouldClose = $subjectWrapper.hasClass("active");
+			lists.openSubjectIndex = shouldClose ? -1 : $subjectWrapper.index();
+            updateUI();
 		}
 	}
 
