@@ -28,11 +28,29 @@
 
 	.mepharsemim-top-sec {
 		
-
 		@media (min-width: $screen-lg-min) {
 			height: 248px;
 			background-color: $cobalt;
 			padding: 0;
+			position: relative;
+		}
+
+		.list-drop-wrapper-lg {
+			position: absolute;
+			left: 25px;
+			top: 67px;
+			font-size: 3.2rem;
+			font-weight: 500;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			color: $main-white;
+			margin: 0 0 0 15px;
+
+			.count-checkboxes-wrapper {
+				height: auto;
+			}
 		}
 
 		.top-sec-container {
@@ -82,6 +100,7 @@
 
 				@media (min-width: $screen-lg-min) {
 					width: 100%;
+					position: relative;
 				}	
 
 				.mepharsemim-p-wrapper {
