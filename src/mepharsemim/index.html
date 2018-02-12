@@ -22,11 +22,74 @@
 
       <section class="mepharsemim-top-sec d-flex flex-column align-items-center">
           <div class="list-drop-wrapper-lg justify-content-center d-none d-lg-flex">
-            <div class="count-checkboxes-wrapper" role="button" tabindex="0">
+            <div class="count-checkboxes-wrapper" role="button" tabindex="0" id="countCheckboxesWrapperLg">
               הרשימה שלי  
               <span class="my-list-count">(0)</span> 
             </div>
             <img src="../common/img/list-icon.svg" class="list-icon" alt="list-icon">
+             <div class="my-list-wrapper my-list-wrapper-lg">
+
+            <!-- my-list -->
+
+            <div class="my-list my-list-lg">
+
+              <!-- my-list-subjects-list -->
+
+              <div class="my-list-subjects-container w-100">
+                <div class="my-list-subjects-wrapper w-100 d-flex align-items-center justify-content-between">
+                  
+                  <!-- list-title -->
+                  
+                  <div class="my-list-subjects-title">
+                    נושאים
+                  </div>
+                  <div class="arrow" id="subjectsArrow">
+                    <img src="../common/img/mepharsemim-main-arrow.svg" class="drop-arrow" alt="arrow">
+                  </div>
+                </div>
+
+                <!-- list-subjects -->
+                
+                <div class="my-list-subjects-list">
+
+                  <!-- DYNAMIC CONTENT -->
+                  
+                </div>
+
+              </div>
+
+              <!-- my-list-mepharsemim-list -->
+
+              <div class="my-list-mepharsemim-container w-100">
+                <div class="my-list-mepharsemim-wrapper w-100 d-flex align-items-center justify-content-between">
+                  
+                  <!-- list-title -->
+                  
+                  <div class="my-list-mepharsemim-title">
+                    מפרסמים
+                  </div>
+
+                  <div class="arrow" id="mepharsemimArrow">
+                    <img src="../common/img/mepharsemim-main-arrow.svg" class="drop-arrow" alt="arrow">
+                  </div>
+                </div>
+                <!-- list-mefarsemim -->
+                
+                  <div class="my-list-mepharsemim-list">
+
+                    <!-- DYNAMIC CONTENT -->
+
+                  </div>
+              </div>
+              <div class="close-list-button-wrapper fixed-bottom d-flex align-items-center justify-content-center">
+              <button class="close-list-button btn btn-primary" type="button">סגור
+                <div class="white-x-wrapper"> 
+                    <img src="../common/img/white-x.svg" class="white-x" alt="close-list-button">
+                </div>
+              </button>
+            </div>
+            </div>
+          </div> 
           </div>
         <div class="top-sec-container d-flex flex-column justify-content-start">
           <div class="mepharsemim-breadcrumb-wrapper">
@@ -62,7 +125,7 @@
             <!-- my-list-toggle -->
             <div class="list-drop-container">
               <div class="list-drop-wrapper d-flex justify-content-center">
-                <div class="count-checkboxes-wrapper" role="button" tabindex="0">
+                <div class="count-checkboxes-wrapper" role="button" tabindex="0" id="countCheckboxesWrapperMobile">
                   הרשימה שלי  
                   <span class="my-list-count">(0)</span> 
                   <div class="list-drop-arrows-wrapper">
@@ -364,20 +427,21 @@
               </form>
             </div>
           </div>
-          <div class="save-list-button-wrapper fixed-bottom d-flex justify-content-center align-items-center">
+          <div class="save-list-button-wrapper fixed-bottom d-flex justify-content-center align-items-center d-lg-none">
             <button class="btn btn-primary save-list-button disabled" type="submit">המשך</button>
           </div>
         </div>
        
-        <div class="scroll-down-button-wrapper down d-flex align-items-center justify-content-center">
+        <div class="scroll-down-button-wrapper down d-flex d-lg-none align-items-center justify-content-center">
           <div class="blue-arrow">
             
           </div>
         </div>
       </section>
-      <!-- <footer class="mepharsemim-footer d-flex justify-content-center">
+      <button class="btn btn-primary save-list-button save-list-button-lg disabled d-none d-lg-block" type="submit">שמור</button>
+      <footer class="mepharsemim-footer d-none d-lg-flex justify-content-center align-items-center fixed-bottom">
           ${require("../common/footer/footer.html")}
-      </footer> -->
+      </footer>
     </div>
     ${require("../common/common.html")}
     <div class="scroll-to"></div>

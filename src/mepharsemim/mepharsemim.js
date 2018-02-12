@@ -14,7 +14,8 @@ $(document).ready(function() {
 		myList: $(".my-list"),
 		myListSubjectsList: $(".my-list-subjects-list"),
 		myListMepharsemimList: $(".my-list-mepharsemim-list"),
-		myListToggle: $(".count-checkboxes-wrapper"),
+		myListToggle: $("#countCheckboxesWrapperMobile"),
+		myListToggleLg: $("#countCheckboxesWrapperLg"),
 		closeListButtonWrapper: $(".close-list-button-wrapper"),
 		closeListButton: $(".close-list-button"),
 		openSubjectsInList: $(".my-list-subjects-wrapper"),
@@ -47,6 +48,7 @@ $(document).ready(function() {
 	$elements.subjectWrapper.click(toggleSubjectOptions)
 	$elements.myList.delegate(".my-list-item", "click", removeFromMyList)
 	$elements.myListToggle.click(toggleMyList)
+	$elements.myListToggleLg.click(toggleMyListLg)
 	$elements.myListToggle.click(closeMyList)
 	$elements.closeListButton.click(closeMyListWithButton)
 	$elements.openSubjectsInList.click(openCloseSubjectsInList)
@@ -397,6 +399,11 @@ $(document).ready(function() {
 		// 	$elements.closeListButtonWrapper.addClass("d-none");
 		// 	$elements.mainBodyWapper.toggleClass("d-none");
 		// } 
+	}
+
+	function toggleMyListLg() {
+
+		$(".my-list-lg").toggleClass("d-block");
 	}
 
 	function closeMyList() {
