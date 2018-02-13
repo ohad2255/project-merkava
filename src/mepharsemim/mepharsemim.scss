@@ -162,7 +162,7 @@
 						}
 
 						.my-list-options-wrapper {
-							display: none;
+							//display: none;
 						}
 
 						.my-list-option-wrapper {
@@ -215,7 +215,7 @@
 						font-weight: 500;
 						font-style: normal;
 						font-stretch: normal;
-						line-height: 0;
+						line-height: 1;
 						letter-spacing: 0.5px;
 						color: $text-dark-grey;
 					}
@@ -820,6 +820,8 @@
 						max-width: 591px;
 						right: 596px;
 						top: 0;
+						background-color: $main-white;
+						z-index: 20;
 					}
 				}
 

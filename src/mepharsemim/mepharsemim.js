@@ -30,7 +30,9 @@ $(document).ready(function() {
 		$subjectsForm: $("#subjectsForm"),
 		backToSubjectsButton: $(".back-to-subjects-button"),
 		//myListSubjectWrapper: $(".my-list-subject-wrapper"),
-		deleteButtonLg: $(".delete-button-lg")
+		deleteButtonLg: $(".delete-button-lg"),
+		saveListButton: $(".save-list-button"),
+		body: $("body")
 	}
 
 	// All the data for the UI
@@ -81,6 +83,7 @@ $(document).ready(function() {
             $elements.subjectWrapper.find(".subject-options").removeClass("d-flex");
             $elements.subjectWrapper.find(".blue-arrow").removeClass("rotate");
 
+
             // Open current subject
             $openSubject = $elements.subjectWrapper.eq(lists.openSubjectIndex);
             $openSubject.removeClass("disabled").addClass("active");
@@ -89,6 +92,7 @@ $(document).ready(function() {
             $elements.mainBodyWapper.find($(".save-list-button")).addClass("d-none");
             $elements.mainBodyWapper.find($(".save-list-button")).removeClass("d-block");
             $elements.mainBodyWapper.find($(".back-to-subjects-button")).addClass("d-block");
+            
 
 		} else {
 
