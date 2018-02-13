@@ -11,7 +11,7 @@
 		min-height: 1050px;
 
 		@media (min-width: $screen-lg-min) {
-			min-height: 1140px;
+			//min-height: 1140px;
 			padding: 0;
 		}
 	}
@@ -68,8 +68,181 @@
 				box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.06);
 				border: solid 1px #f4f5f7;
 
+
 				.my-list-lg {
+					color: $text-dark-grey;
+					background-color: $main-white;
+					position: relative;
+
+					.delete-button-lg {
+						font-size: 15px;
+						font-weight: normal;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: 1;
+						letter-spacing: 0.5px;
+						color: $main-white;
+						position: absolute;
+						//height: 20px;
+						//width: 35px;
+						background-color: transperent;
+						top: -22px;
+						right: 4px;
+					}
+
+				
+					.delete-x-lg {
+					    width: 12px;
+					    height: 12px;
+					    position: relative;
+					    margin: 0 0 -3px 0;
+					}
+
+					.delete-x-lg:after {
+					    content: '';
+					    height: 12px;
+					    border-left: 1.5px solid #fff;
+					    position: absolute;
+					    transform: rotate(45deg);
+					    //left: 28px;
+					}
+
+					.delete-x-lg:before {
+					    content: '';
+					    height: 12px;
+					    border-left: 1.5px solid #fff;
+					    position: absolute;
+					    transform: rotate(-45deg);
+					    //left: 28px;
+					}
 					
+
+					.my-list-mepharsemim-container, .my-list-subjects-container {
+					background-color: rgba(233, 235, 240, 0.5);
+					//margin: 0 0 0 0;
+					}
+
+					.my-list-mepharsemim-wrapper, .my-list-subjects-wrapper {
+						height: 67px;
+						object-fit: contain;
+						margin: 0 0 6px 0;
+						padding: 0 15px;
+						cursor: pointer;
+					}
+
+					.change-background-color {
+						background-color: $main-white;
+						margin: 0;
+					}
+
+					.my-list-subject-wrapper, .my-list-mepharsem-wrapper {
+						order: 1;
+						height: 67px;
+						object-fit: contain;
+						background-color: rgba(233, 235, 240, 0.5);
+					}
+
+					.my-list-subjects-list {
+						display: none;
+
+						.my-list-subject-wrapper,  {
+							padding: 0 21px;
+							margin: 0 0 5px 0; 
+							cursor: pointer;
+
+							.my-list-subject-delete {
+								margin: 0 0 0 19px;
+								font-size: 0;
+							}
+
+							.delete-img {
+								width: 8px;
+								height: 8px;
+							}
+						}
+
+						.my-list-options-wrapper {
+							display: none;
+						}
+
+						.my-list-option-wrapper {
+							height: 67px;
+							object-fit: contain;
+							background-color: #e6f1f7;
+							margin: 5px 0;
+							padding: 0 21px;
+
+
+							.my-list-option-delete {
+								margin: 0 0 0 19px;
+								font-size: 0;
+							}
+
+							.delete-img {
+								width: 8px;
+								height: 8px;
+							}
+						}
+
+						&:first-child {
+							margin: 0;
+						}
+					}
+
+					.my-list-mepharsemim-list {
+						display: none;
+
+						.my-list-mepharsem-wrapper {
+							padding: 0 21px;
+							margin:  0 0 5px 0;
+
+							.my-list-mepharsem-delete {
+								margin: 0 0 0 19px;
+								//font-size: 0;
+							}
+
+							.delete-img {
+								width: 13px;
+								height: 13px;
+							}
+
+							
+						}
+					}
+
+					.my-list-mepharsem-name, .my-list-subject-name, .my-list-option-name  {
+						font-size: 1.5rem;
+						font-weight: 500;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: 0;
+						letter-spacing: 0.5px;
+						color: $text-dark-grey;
+					}
+
+					.my-list-option-name {
+						font-weight: 400;
+					}
+
+					.my-list-mepharsemim-title, .my-list-subjects-title {
+						font-size: 3.2rem;
+						font-weight: normal;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: normal;
+						letter-spacing: normal;
+						color: $text-dark-grey;
+					}
+
+					.rotate {
+						transform: rotate(-90deg);
+						background-color: $main-white;
+					}
+
+					.my-list-subjects-list {
+						//position: absolute;
+					}
+			
 				}
 			}
 		}
@@ -270,7 +443,6 @@
 							line-height: 0;
 
 							span {
-								transform: rotate(-90deg);
 								border: solid $main-white;
 								border-width: 0 3px 3px 0;
 								display: inline-block;
@@ -786,6 +958,10 @@
 
 			.rotate {
 				transform: rotate(45deg);
+
+				@media (min-width: $screen-lg-min) {
+			 		transform: rotate(135deg)
+			 	}
 			}
 		}
 	}

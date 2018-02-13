@@ -28,7 +28,9 @@ $(document).ready(function() {
 		openCloseArrowMepharsemim: $("#mepharsemimArrow"),
 		optionsArrow: $(".blue-arrow"),
 		$subjectsForm: $("#subjectsForm"),
-		backToSubjectsButton: $(".back-to-subjects-button")
+		backToSubjectsButton: $(".back-to-subjects-button"),
+		//myListSubjectWrapper: $(".my-list-subject-wrapper"),
+		deleteButtonLg: $(".delete-button-lg")
 	}
 
 	// All the data for the UI
@@ -59,7 +61,8 @@ $(document).ready(function() {
 	$elements.openSubjectsInList.click(openCloseSubjectsInList)
 	$elements.openMepharsemimInList.click(openCloseMepharsemimInList)
 	$elements.backToSubjectsButton.click(backToSubjects)
-
+	//$elements.myListSubjectWrapper.click(openSubjectOptionsInList)
+	$elements.deleteButtonLg.click(closeListWithButtonLg)
 
 	// Update the UI
 	function updateUI() {
@@ -440,7 +443,11 @@ $(document).ready(function() {
 	}
 
 	function toggleMyListLg() {
-		$elements.myListLg.toggleClass("d-block");
+		$elements.myListLg.addClass("d-block");
+	}
+
+	function closeListWithButtonLg() {
+		$(".my-list-wrapper-lg").removeClass("d-block");
 	}
 
 	function closeMyList() {
@@ -488,20 +495,33 @@ $(document).ready(function() {
 		 $elements.mainBodyWapper.find($(".subject-options")).removeClass("d-flex");
 		 $elements.mainBodyWapper.find($(".blue-arrow")).removeClass("rotate");
 	}
-	
+
+
+	// function openSubjectOptionsInList() {
+	// 	// if (myList.$elements.subjectOptions.length>0) {
+	// 		$(".my-list-options-wrapper").toggleClass("d-block");
+	// 		//$elements.openCloseArrowSubjects.toggleClass("rotate");
+	// 		//$elements.openSubjectsInList.toggleClass("change-background-color");
+	// 	// }
+	// }
+
+	$(".my-list-subjects-list-subject").click(function() {
+		$(this).find($(".subject-options")).toggleClass("d-block");
+	});
+		
 
 	// $(".down").click(function() {
 	// 	$("html").scroll()
 	// });
 
 	// $(function() {
-	//     $('.down').click (function() {
+	//     $('.scroll-down-button-wrapper').click (function() {
 	//       $('body').animate({ scrollTop: $('body').height() }, 800);
 	//     });
- //  });
+ //  	});
+
+ //  	document.getElementByClass('.scroll-down-button-wrapper').scrollIntoView({block: 'start', behavior: 'smooth'});
 });
-
-
 
 // <!-- list-subject -->
 
