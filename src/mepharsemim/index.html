@@ -7,7 +7,7 @@
       ${require("../common/common-stylesheet.html")}
   </head>
 
-  <body class="mepharsemim-container">
+  <body class="mepharsemim-container" data-spy="scroll" data-target=".navbar" data-offset="50">
     
     <div class="main-menu-mobile-container d-lg-none" aria-labelledby="mainMobileNavTrigger">
       <div class="main-menu-mobile-wrapper"></div>
@@ -32,7 +32,7 @@
                 <!-- my-list -->
 
                 <div class="my-list my-list-lg">
-
+                  <div class="delete-button-lg d-flex"><div class="delete-x-lg"></div>סגור</div>
                   <!-- my-list-subjects-list -->
 
                   <div class="my-list-subjects-container w-100">
@@ -439,7 +439,7 @@
           </div>
         </div>
       </section>
-      <button class="btn btn-primary save-list-button save-list-button-lg disabled d-none d-lg-block" type="submit">שמור</button>
+      <button class="btn btn-primary save-list-button save-list-button-lg disabled d-none d-lg-block" type="submit">המשך</button>
       <footer class="mepharsemim-footer d-none d-lg-flex justify-content-center align-items-center fixed-bottom">
           ${require("../common/footer/footer.html")}
       </footer>
