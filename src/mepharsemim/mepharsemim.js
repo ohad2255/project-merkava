@@ -15,8 +15,8 @@ $(document).ready(function() {
 		myListSubjectsList: $(".my-list-subjects-list"),
 		myListMepharsemimList: $(".my-list-mepharsemim-list"),
 		myListToggle: $("#countCheckboxesWrapperMobile"),
-		myListToggleLg: $(".list-drop-wrapper-lg"),
-		myListLg: $(".my-list-wrapper-lg"),
+		//myListToggleLg: $(".list-drop-wrapper-lg"),
+		//myListLg: $(".my-list-wrapper-lg"),
 		closeListButtonWrapper: $(".close-list-button-wrapper"),
 		closeListButton: $(".close-list-button"),
 		openSubjectsInList: $(".my-list-subjects-wrapper"),
@@ -29,7 +29,7 @@ $(document).ready(function() {
 		optionsArrow: $(".blue-arrow"),
 		$subjectsForm: $("#subjectsForm"),
 		backToSubjectsButton: $(".back-to-subjects-button"),
-		//myListSubjectWrapper: $(".my-list-subject-wrapper"),
+		myListSubjectWrapper: $(".my-list-subjects-list-subject"),
 		deleteButtonLg: $(".delete-button-lg"),
 		saveListButton: $(".save-list-button"),
 		body: $("body")
@@ -57,7 +57,7 @@ $(document).ready(function() {
 	$elements.subjectWrapper.click(toggleSubjectOptions)
 	$elements.myList.delegate(".my-list-item", "click", removeFromMyList)
 	$elements.myListToggle.click(toggleMyList)
-	$elements.myListToggleLg.click(toggleMyListLg)
+	//$elements.myListToggleLg.click(toggleMyListLg)
 	$elements.myListToggle.click(closeMyList)
 	$elements.closeListButton.click(closeMyListWithButton)
 	$elements.openSubjectsInList.click(openCloseSubjectsInList)
@@ -92,7 +92,8 @@ $(document).ready(function() {
             $elements.mainBodyWapper.find($(".save-list-button")).addClass("d-none");
             $elements.mainBodyWapper.find($(".save-list-button")).removeClass("d-block");
             $elements.mainBodyWapper.find($(".back-to-subjects-button")).addClass("d-block");
-            
+            $elements.mainBodyWapper.find($(".select-all-wrapper")).addClass("disappear");
+
 
 		} else {
 
@@ -102,6 +103,8 @@ $(document).ready(function() {
             $elements.subjectWrapper.find(".blue-arrow").removeClass("rotate");
             $elements.mainBodyWapper.find($(".save-list-button")).removeClass("d-none");
             $elements.mainBodyWapper.find($(".back-to-subjects-button")).removeClass("d-block");
+            $elements.mainBodyWapper.find($(".select-all-wrapper")).removeClass("disappear");
+            //$elements.mainBodyWapper.find($(".my-list-options-wrapper")).removeClass("d-block");
 		}
 	}
 
@@ -446,12 +449,9 @@ $(document).ready(function() {
 		// } 
 	}
 
-	function toggleMyListLg() {
-		$elements.myListLg.addClass("d-block");
-	}
 
 	function closeListWithButtonLg() {
-		$(".my-list-wrapper-lg").removeClass("d-block");
+		$elements.myList.removeClass("d-block");
 	}
 
 	function closeMyList() {
@@ -503,14 +503,16 @@ $(document).ready(function() {
 
 	// function openSubjectOptionsInList() {
 	// 	// if (myList.$elements.subjectOptions.length>0) {
-	// 		$(".my-list-options-wrapper").toggleClass("d-block");
+	// 		//$(this).find($(".subject-options")).addClass("d-block");
 	// 		//$elements.openCloseArrowSubjects.toggleClass("rotate");
 	// 		//$elements.openSubjectsInList.toggleClass("change-background-color");
+	// 		//$(".subject-options").toggleClass("d-block");
+	// 		($(".my-list-options-wrapper")).addClass("d-block");
 	// 	// }
 	// }
 
 	$(".my-list-subjects-list-subject").click(function() {
-		$(this).find($(".subject-options")).toggleClass("d-block");
+	 	$(this).find($(".subject-options")).addClass("d-block");
 	});
 		
 
@@ -543,3 +545,75 @@ $(document).ready(function() {
 // <!-- list-subject-option -->
 
 // </div>
+
+
+   // <div class="list-drop-wrapper-lg justify-content-center d-none d-lg-flex">
+   //          <div class="count-checkboxes-wrapper" role="button" tabindex="0" id="countCheckboxesWrapperLg">
+   //            הרשימה שלי  
+   //            <span class="my-list-count">(0)</span> 
+   //          </div>
+   //          <img src="../common/img/list-icon.svg" class="list-icon" alt="list-icon">
+   //          <div class="my-list-wrapper my-list-wrapper-lg d-none">
+
+   //              <!-- my-list -->
+
+   //              <div class="my-list my-list-lg">
+   //                <div class="delete-button-lg d-flex"><div class="delete-x-lg"></div>סגור</div>
+   //                <!-- my-list-subjects-list -->
+
+   //                <div class="my-list-subjects-container w-100">
+   //                  <div class="my-list-subjects-wrapper w-100 d-flex align-items-center justify-content-between">
+                      
+   //                    <!-- list-title -->
+                      
+   //                    <div class="my-list-subjects-title">
+   //                      נושאים
+   //                    </div>
+   //                    <div class="arrow" id="subjectsArrow">
+   //                      <img src="../common/img/mepharsemim-main-arrow.svg" class="drop-arrow" alt="arrow">
+   //                    </div>
+   //                  </div>
+
+   //                  <!-- list-subjects -->
+                    
+   //                  <div class="my-list-subjects-list">
+
+   //                    <!-- DYNAMIC CONTENT -->
+                      
+   //                  </div>
+
+   //                </div>
+
+   //                <!-- my-list-mepharsemim-list -->
+
+   //                <div class="my-list-mepharsemim-container w-100">
+   //                  <div class="my-list-mepharsemim-wrapper w-100 d-flex align-items-center justify-content-between">
+                      
+   //                    <!-- list-title -->
+                      
+   //                    <div class="my-list-mepharsemim-title">
+   //                      מפרסמים
+   //                    </div>
+
+   //                    <div class="arrow" id="mepharsemimArrow">
+   //                      <img src="../common/img/mepharsemim-main-arrow.svg" class="drop-arrow" alt="arrow">
+   //                    </div>
+   //                  </div>
+   //                  <!-- list-mefarsemim -->
+                    
+   //                    <div class="my-list-mepharsemim-list">
+
+   //                      <!-- DYNAMIC CONTENT -->
+
+   //                    </div>
+   //                </div>
+   //                <div class="close-list-button-wrapper fixed-bottom d-flex align-items-center justify-content-center">
+   //                  <button class="close-list-button btn btn-primary" type="button">סגור
+   //                    <div class="white-x-wrapper"> 
+   //                        <img src="../common/img/white-x.svg" class="white-x" alt="close-list-button">
+   //                    </div>
+   //                  </button>
+   //                </div>
+   //              </div>
+   //          </div> 
+   //        </div>
