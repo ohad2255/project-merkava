@@ -367,6 +367,10 @@
 						padding: 0 0 0 30px;
 						margin: 0;
 						color: $main-white;
+						max-width: 600px;
+					}
+
+					@media (min-width: $screen-xl-min) {
 						max-width: 625px;
 					}
 				}
@@ -433,14 +437,16 @@
 			      position: static;
 			    }
 
-			   
-
 			    @media (min-width: $screen-lg-min) {
 			    	position: absolute;				
 			    	width: 280px;
 			    	top: -153px;
     				background-color: transparent;
 			    	padding: 0;
+			    	left: 0;
+				}
+
+				@media (min-width: $screen-xl-min) {
 			    	left: 25px;
 				}
 
@@ -509,7 +515,11 @@
 					img {
 						width: 29px;
 						height: 21px;
-						margin: 8px 16px 0 0;
+						margin: 3px 16px 0 0;
+
+						@media (min-width: $screen-xl-min) {
+					    	margin: 8px 16px 0 0;
+						}
 					}
 
 					.rotate-list-arrows {
