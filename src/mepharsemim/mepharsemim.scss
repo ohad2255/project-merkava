@@ -294,7 +294,7 @@
 
 				@media (min-width: $screen-lg-min) {
 					width: 100%;
-					position: relative;
+					//position: relative;
 				}	
 
 				.mepharsemim-p-wrapper {
@@ -402,6 +402,7 @@
 					height: 0;
 					position: absolute;
 					left: 0;
+
 				}
 
 				.blue-circle {
@@ -429,6 +430,7 @@
 
     			 @media (max-width: $screen-sm-min) {
 			      background-size: contain;
+			      position: static;
 			    }
 
 			   
@@ -439,12 +441,9 @@
 			    	top: -153px;
     				background-color: transparent;
 			    	padding: 0;
-			    	left: 50px;
+			    	left: 25px;
 				}
 
-				 @media (min-width: $screen-xl-min) {
-			    	left: -180px;
-				}
 
 
 				.count-checkboxes-wrapper {
@@ -526,6 +525,7 @@
 			 @media (min-width: $screen-lg-min) {
 		    	position: absolute;				
 		    	width: 600px;
+		    	left: 0;
 			}
 
 			.my-list {
@@ -543,18 +543,17 @@
 
 				 @media (min-width: $screen-lg-min) {
 			    	padding: 0;
-			    	width: 300px;
+			    	width: 400px;
 					background-color: #ffffff;
 					box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.06);
 					border: solid 1px #f4f5f7;
 					top: -110px;
 					min-height: 400px;
-					left: 50px;
+					left: 0;
 				}
 
 				@media (min-width: $screen-xl-min) {
 			    	top: -110px;
-					left: -200px;
 					width: 600px;
 				}
 
