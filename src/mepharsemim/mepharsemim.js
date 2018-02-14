@@ -92,7 +92,7 @@ $(document).ready(function() {
             $elements.mainBodyWapper.find($(".save-list-button")).addClass("d-none");
             $elements.mainBodyWapper.find($(".save-list-button")).removeClass("d-block");
             $elements.mainBodyWapper.find($(".back-to-subjects-button")).addClass("d-block");
-            $elements.mainBodyWapper.find($(".select-all-wrapper")).addClass("disappear");
+            $elements.mainBodyWapper.find($(".select-all-wrapper-subjects")).addClass("disappear");
 
 
 		} else {
@@ -103,7 +103,7 @@ $(document).ready(function() {
             $elements.subjectWrapper.find(".blue-arrow").removeClass("rotate");
             $elements.mainBodyWapper.find($(".save-list-button")).removeClass("d-none");
             $elements.mainBodyWapper.find($(".back-to-subjects-button")).removeClass("d-block");
-            $elements.mainBodyWapper.find($(".select-all-wrapper")).removeClass("disappear");
+            $elements.mainBodyWapper.find($(".select-all-wrapper-subjects")).removeClass("disappear");
             //$elements.mainBodyWapper.find($(".my-list-options-wrapper")).removeClass("d-block");
 		}
 	}
