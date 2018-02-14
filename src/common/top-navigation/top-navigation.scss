@@ -195,6 +195,10 @@
   position: relative;
 }
 
+#closeMenuButton {
+  display: none;
+}
+
 .mobile-menu-open .main-content-wrapper {
   transform: translateX(320px);
   position: absolute;
@@ -202,6 +206,18 @@
   
   @media (max-width: 340px) {
     transform: translateX(280px);
+  }
+
+  #mainMobileNavTrigger {
+    #menuButton {
+      visibility: hidden;
+    }
+
+    #closeMenuButton {
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+    }
   }
 }
 
