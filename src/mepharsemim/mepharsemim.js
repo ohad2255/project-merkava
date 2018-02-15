@@ -520,11 +520,20 @@ $(document).ready(function() {
 	// 	$("html").scroll()
 	// });
 
+	// $('.scroll-down-button-wrapper').animateScroll();
+
+
 	// $(function() {
 	//     $('.scroll-down-button-wrapper').click (function() {
-	//       $('body').animate({ scrollTop: $('body').height() }, 800);
+	//       $('body').animateScroll({ scrollTop: $('body').height() }, 800);
 	//     });
  //  	});
+
+ //  	$('.scroll-down-button-wrapper').animateScroll({
+	//   $container: $('body'),
+	//   speed: 1000,
+	//   offset: -100
+	// });
 
  //  	document.getElementByClass('.scroll-down-button-wrapper').scrollIntoView({block: 'start', behavior: 'smooth'});
 });
@@ -542,78 +551,3 @@ $(document).ready(function() {
 //   <div class="my-list-subject-name">subject</div>
 // </div>
 
-// <!-- list-subject-option -->
-
-// </div>
-
-
-   // <div class="list-drop-wrapper-lg justify-content-center d-none d-lg-flex">
-   //          <div class="count-checkboxes-wrapper" role="button" tabindex="0" id="countCheckboxesWrapperLg">
-   //            הרשימה שלי  
-   //            <span class="my-list-count">(0)</span> 
-   //          </div>
-   //          <img src="../common/img/list-icon.svg" class="list-icon" alt="list-icon">
-   //          <div class="my-list-wrapper my-list-wrapper-lg d-none">
-
-   //              <!-- my-list -->
-
-   //              <div class="my-list my-list-lg">
-   //                <div class="delete-button-lg d-flex"><div class="delete-x-lg"></div>סגור</div>
-   //                <!-- my-list-subjects-list -->
-
-   //                <div class="my-list-subjects-container w-100">
-   //                  <div class="my-list-subjects-wrapper w-100 d-flex align-items-center justify-content-between">
-                      
-   //                    <!-- list-title -->
-                      
-   //                    <div class="my-list-subjects-title">
-   //                      נושאים
-   //                    </div>
-   //                    <div class="arrow" id="subjectsArrow">
-   //                      <img src="../common/img/mepharsemim-main-arrow.svg" class="drop-arrow" alt="arrow">
-   //                    </div>
-   //                  </div>
-
-   //                  <!-- list-subjects -->
-                    
-   //                  <div class="my-list-subjects-list">
-
-   //                    <!-- DYNAMIC CONTENT -->
-                      
-   //                  </div>
-
-   //                </div>
-
-   //                <!-- my-list-mepharsemim-list -->
-
-   //                <div class="my-list-mepharsemim-container w-100">
-   //                  <div class="my-list-mepharsemim-wrapper w-100 d-flex align-items-center justify-content-between">
-                      
-   //                    <!-- list-title -->
-                      
-   //                    <div class="my-list-mepharsemim-title">
-   //                      מפרסמים
-   //                    </div>
-
-   //                    <div class="arrow" id="mepharsemimArrow">
-   //                      <img src="../common/img/mepharsemim-main-arrow.svg" class="drop-arrow" alt="arrow">
-   //                    </div>
-   //                  </div>
-   //                  <!-- list-mefarsemim -->
-                    
-   //                    <div class="my-list-mepharsemim-list">
-
-   //                      <!-- DYNAMIC CONTENT -->
-
-   //                    </div>
-   //                </div>
-   //                <div class="close-list-button-wrapper fixed-bottom d-flex align-items-center justify-content-center">
-   //                  <button class="close-list-button btn btn-primary" type="button">סגור
-   //                    <div class="white-x-wrapper"> 
-   //                        <img src="../common/img/white-x.svg" class="white-x" alt="close-list-button">
-   //                    </div>
-   //                  </button>
-   //                </div>
-   //              </div>
-   //          </div> 
-   //        </div>
