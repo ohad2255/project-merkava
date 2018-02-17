@@ -1,4 +1,5 @@
 require('../common/common');
+require('jquery-animate-scroll');
 
 $(document).ready(function() {
 
@@ -14,7 +15,7 @@ $(document).ready(function() {
 		myList: $(".my-list"),
 		myListSubjectsList: $(".my-list-subjects-list"),
 		myListMepharsemimList: $(".my-list-mepharsemim-list"),
-		myListToggle: $("#countCheckboxesWrapperMobile"),
+		myListToggle: $("#countCheckboxesWrapper"),
 		//myListToggleLg: $(".list-drop-wrapper-lg"),
 		//myListLg: $(".my-list-wrapper-lg"),
 		closeListButtonWrapper: $(".close-list-button-wrapper"),
@@ -32,7 +33,11 @@ $(document).ready(function() {
 		myListSubjectWrapper: $(".my-list-subjects-list-subject"),
 		deleteButtonLg: $(".delete-button-lg"),
 		saveListButton: $(".save-list-button"),
-		body: $("body")
+		body: $("body"),
+		checkbox: $('.form-checkbox'),
+		formCheckboxWrapper: $('.form-item'),
+		bodyCheckboxesWrapper: $('.body-checkboxes-wrapper')
+
 	}
 
 	// All the data for the UI
@@ -500,7 +505,48 @@ $(document).ready(function() {
 		 $elements.mainBodyWapper.find($(".blue-arrow")).removeClass("rotate");
 	}
 
+	$('.scroll-down-button-wrapper').on('click', function() {
+		$('.scroll-down-button-wrapper').animateScroll({ scrollTop: $('.main-checkboxes-wrapper').height() }, 800);
+	});
 
+	$($elements.checkbox).bind('input', function () {
+        var cart = $elements.myListToggle;
+        var containerDrag = $(this).parent($elements.bodyCheckboxesWrapper).find($elements.formCheckboxWrapper).eq(0);
+        if (containerDrag) {
+            var checkboxClone = containerDrag.clone()
+                .offset({
+                top: containerDrag.offset().top,
+                left: containerDrag.offset().left
+            })
+                .css({
+                'opacity': '0.5',
+                    'position': 'absolute',
+                    'height': '150px',
+                    'width': '150px',
+                    'z-index': '100'
+            })
+                .appendTo($('body'))
+                .animate({
+                'top': cart.offset().top + 10,
+                    'left': cart.offset().left + 10,
+                    'width': 75,
+                    'height': 75
+            }, 1000, 'easeInOutExpo');
+            
+            setTimeout(function () {
+                cart.effect("shake", {
+                    times: 2
+                }, 200);
+            }, 1500);
+
+            checkboxClone.animate({
+                'width': 0,
+                    'height': 0
+            }, function () {
+                $(this).detach()
+            });
+        }
+    });
 	// function openSubjectOptionsInList() {
 	// 	// if (myList.$elements.subjectOptions.length>0) {
 	// 		//$(this).find($(".subject-options")).addClass("d-block");
@@ -511,14 +557,10 @@ $(document).ready(function() {
 	// 	// }
 	// }
 
-	$(".my-list-subjects-list-subject").click(function() {
-	 	$(this).find($(".subject-options")).addClass("d-block");
-	});
-		
-
-	// $(".down").click(function() {
-	// 	$("html").scroll()
+	// $(".my-list-subjects-list-subject").click(function() {
+	//  	$(this).find($(".subject-options")).addClass("d-block");
 	// });
+});
 
 	// $('.scroll-down-button-wrapper').animateScroll();
 
@@ -536,7 +578,6 @@ $(document).ready(function() {
 	// });
 
  //  	document.getElementByClass('.scroll-down-button-wrapper').scrollIntoView({block: 'start', behavior: 'smooth'});
-});
 
 // <!-- list-subject -->
 
