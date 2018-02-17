@@ -100,6 +100,23 @@ button {
 }
 
 
-
+@keyframes myCartArrowAction {
+    0% {
+      top: 15px;
+      opacity: 1;
+    }
+    49% {
+      top: 50px;
+      opacity: 0;
+    }
+    50% {
+      top: -50px;
+      opacity: 0;
+    }
+    100% {
+      top: 15px;
+      opacity: 1;
+    }
+  }
 
 
