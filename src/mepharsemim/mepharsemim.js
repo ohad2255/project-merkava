@@ -30,13 +30,14 @@ $(document).ready(function() {
 		optionsArrow: $(".blue-arrow"),
 		$subjectsForm: $("#subjectsForm"),
 		backToSubjectsButton: $(".back-to-subjects-button"),
-		myListSubjectWrapper: $(".my-list-subjects-list-subject"),
+		myListSubjectWrapper: $(".my-list-subject-wrapper"),
 		deleteButtonLg: $(".delete-button-lg"),
 		saveListButton: $(".save-list-button"),
 		body: $("body"),
 		checkbox: $('.form-checkbox'),
 		formCheckboxWrapper: $('.form-item'),
 		bodyCheckboxesWrapper: $('.body-checkboxes-wrapper')
+
 
 	}
 
@@ -62,13 +63,11 @@ $(document).ready(function() {
 	$elements.subjectWrapper.click(toggleSubjectOptions)
 	$elements.myList.delegate(".my-list-item", "click", removeFromMyList)
 	$elements.myListToggle.click(toggleMyList)
-	//$elements.myListToggleLg.click(toggleMyListLg)
 	$elements.myListToggle.click(closeMyList)
 	$elements.closeListButton.click(closeMyListWithButton)
 	$elements.openSubjectsInList.click(openCloseSubjectsInList)
 	$elements.openMepharsemimInList.click(openCloseMepharsemimInList)
 	$elements.backToSubjectsButton.click(backToSubjects)
-	//$elements.myListSubjectWrapper.click(openSubjectOptionsInList)
 	$elements.deleteButtonLg.click(closeListWithButtonLg)
 	$elements.checkbox.click(animateMyList)
 
@@ -438,23 +437,12 @@ $(document).ready(function() {
 		}
 	}
 
-	// function toggleMyList() {
-	// 	$elements.myListToggle.addclass(".d-block");
-	// }
-
 	function toggleMyList() {
 
 		$(".my-list").toggleClass("d-block");
 		$elements.closeListButtonWrapper.addClass("d-none");
 		$elements.mainBodyWapper.toggleClass("d-none");
-
-		// if (myList.selectedSubjectOptions.length>0) {
-		// 	$(".my-list").toggleClass("d-block");
-		// 	$elements.closeListButtonWrapper.addClass("d-none");
-		// 	$elements.mainBodyWapper.toggleClass("d-none");
-		// } 
 	}
-
 
 	function closeListWithButtonLg() {
 		$elements.myList.removeClass("d-block");
@@ -479,6 +467,7 @@ $(document).ready(function() {
 			$elements.subjectsInList.toggleClass("d-flex");
 			$elements.openCloseArrowSubjects.toggleClass("rotate");
 			$elements.openSubjectsInList.toggleClass("change-background-color");
+			// $('.my-list-options-wrapper').toggleClass("d-block");
 		// }
 	}
 
@@ -506,107 +495,26 @@ $(document).ready(function() {
 		 $elements.mainBodyWapper.find($(".blue-arrow")).removeClass("rotate");
 	}
 
-	// $('.scroll-down-button-wrapper').on('click', function() {
-	// 	$('.scroll-down-button-wrapper').animateScroll({ scrollTop: $('.main-checkboxes-wrapper').height() }, 800);
-	// });
-
-	// $("html").animate({ scrollTop: "300px" });
-
 	$('.scroll-down-button-wrapper').on('click', function() {
 		var $html = $('html');
 		$html.animate({ scrollTop: $html.height() }, 800);
 	});
 
 	function animateMyList() {
-		var $mepharsemim = $(".mepharsemim-container");
-		$mepharsemim.addClass("animate-my-list");
+		// var $mepharsemim = $(".mepharsemim-container");
+		// $mepharsemim.addClass("animate-my-list");
+		// setTimeout(function() {
+		// 	$mepharsemim.removeClass("animate-my-list");	
+		// }, 1000);
+		$(".count-checkboxes-wrapper").addClass("bounce");
 		setTimeout(function() {
-			$mepharsemim.removeClass("animate-my-list");	
-		}, 1000);
+			$(".count-checkboxes-wrapper").removeClass("bounce");	
+		}, 2000);
 	}
 
-
-	// $($elements.checkbox).bind('input', function () {
- //        var cart = $elements.myListToggle;
- //        var containerDrag = $(this).parent($elements.bodyCheckboxesWrapper).find($elements.formCheckboxWrapper).eq(0);
- //        if (containerDrag) {
- //            var checkboxClone = containerDrag.clone()
- //                .offset({
- //                top: containerDrag.offset().top,
- //                left: containerDrag.offset().left
- //            })
- //                .css({
- //                'opacity': '0.5',
- //                    'position': 'absolute',
- //                    'height': '150px',
- //                    'width': '150px',
- //                    'z-index': '100'
- //            })
- //                .appendTo($('body'))
- //                .animate({
- //                'top': cart.offset().top + 10,
- //                    'left': cart.offset().left + 10,
- //                    'width': 75,
- //                    'height': 75
- //            }, 1000, 'easeInOutExpo');
-            
- //            setTimeout(function () {
- //                cart.effect("shake", {
- //                    times: 2
- //                }, 200);
- //            }, 1500);
-
- //            checkboxClone.animate({
- //                'width': 0,
- //                    'height': 0
- //            }, function () {
- //                $(this).detach()
- //            });
- //        }
- //    });
-
-	// function openSubjectOptionsInList() {
-	// 	// if (myList.$elements.subjectOptions.length>0) {
-	// 		//$(this).find($(".subject-options")).addClass("d-block");
-	// 		//$elements.openCloseArrowSubjects.toggleClass("rotate");
-	// 		//$elements.openSubjectsInList.toggleClass("change-background-color");
-	// 		//$(".subject-options").toggleClass("d-block");
-	// 		($(".my-list-options-wrapper")).addClass("d-block");
-	// 	// }
+	// $('.my-list-subjects-list-subject').on('click', function () {
+	// 	$(this).find($(".my-list-options-wrapper")).toggleClass("d-block");
 	// }
-
-	// $(".my-list-subjects-list-subject").click(function() {
-	//  	$(this).find($(".subject-options")).addClass("d-block");
-	// });
 });
 
-	// $('.scroll-down-button-wrapper').animateScroll();
-
-
-	// $(function() {
-	//     $('.scroll-down-button-wrapper').click (function() {
-	//       $('body').animateScroll({ scrollTop: $('body').height() }, 800);
-	//     });
- //  	});
-
- //  	$('.scroll-down-button-wrapper').animateScroll({
-	//   $container: $('body'),
-	//   speed: 1000,
-	//   offset: -100
-	// });
-
- //  	document.getElementByClass('.scroll-down-button-wrapper').scrollIntoView({block: 'start', behavior: 'smooth'});
-
-// <!-- list-subject -->
-
-// <div class="my-list-subjects-list-subject">
-
-// <div class="my-list-subject-wrapper">  
-//   <div 
-//     class="my-list-item my-list-subject-delete" 
-//     data-related-checkbox-id="subject1"
-//     data-type="subject"
-//   >delete</div>
-//   <div class="my-list-subject-name">subject</div>
-// </div>
-
+	
