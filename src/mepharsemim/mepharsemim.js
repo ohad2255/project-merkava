@@ -255,13 +255,18 @@ $(document).ready(function() {
 		if ($clicked.prop("checked")) {
 			Object.keys(myList.$elements).forEach(function(elementKey) {
 				myList.$elements[elementKey] = $elements[elementKey];
-			})
+			});
+			$clicked.prev().addClass('fadeOutUpBig fly-to-list-styles');
+			setTimeout(function() {
+				$clicked.prev().removeClass("fadeOutUpBig fly-to-list-styles");	
+			}, 1000);
 		}
 
 		// Deselect everything
 		else {
 			Object.keys(myList.$elements).forEach(function(elementKey) {
 				myList.$elements[elementKey] = $();
+				$clicked.prev().removeClass('fadeOutUpBig fly-to-list-styles');
 			})
 		}
 
@@ -506,9 +511,11 @@ $(document).ready(function() {
 		// setTimeout(function() {
 		// 	$mepharsemim.removeClass("animate-my-list");	
 		// }, 1000);
-		$(".count-checkboxes-wrapper").addClass("bounce");
 		setTimeout(function() {
-			$(".count-checkboxes-wrapper").removeClass("bounce");	
+			$(".count-checkboxes-wrapper").addClass("pulse");	
+		}, 1000);
+		setTimeout(function() {
+			$(".count-checkboxes-wrapper").removeClass("pulse");	
 		}, 2000);
 	}
 

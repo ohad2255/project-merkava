@@ -119,4 +119,20 @@ button {
     }
   }
 
+  @keyframes fadeOutUpBig {
+    from {
+      height: 30px;
+      width: 30px;
+      opacity: 0.7;
+      border-radius: 50%
+    }
+
+    to {
+      //-webkit-transform: translate3d(0, -2000px, 0);
+      transform: translate3d(-2800px, -600px, 0);
+    }
+  }
+
+  
+
 

@@ -1110,6 +1110,30 @@
 			pointer-events: all;
 		}
 	}
+
+	.form-item-select-all {
+		position: relative;
+	}
+
+	.fly-to-list-styles {
+		position: absolute;
+		pointer-events: none;
+		background-color: $main-white;
+		//opacity: 0.9;
+		//height: 80%;
+		//width: 80%;
+	}
+
+	.fadeOutUpBig {
+	    animation-name: fadeOutUpBig;
+	    animation-duration: 5s;
+	}
+
+	// .fadeOut {
+	//     animation-name: fadeOut;
+	//     animation-duration: 6s;
+	// }
+
 }
 
 .mepharsemim-container.animate-my-list {
