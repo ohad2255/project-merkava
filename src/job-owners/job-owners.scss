@@ -1,0 +1,284 @@
+@import "../common/common.scss";
+.job-owners {
+	min-width: 330px;
+	
+	.custom-container {
+		padding: 0 20px;
+	}
+
+	.nav-item-text-2 {
+		background-color: rgba(255, 255, 255, 0.19);
+
+		@media (min-width: $screen-lg-min) {
+			border-bottom: solid 1px #1c6897; 
+		}
+	}
+
+	.job-owners-top-sec {
+		position: relative;
+		height: 205px;
+		background-color: $main-white;
+		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+		background-image: url('../common/img/job-owners-top-sec-background@3x.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		@media (min-width: $screen-lg-min) {
+			background-image: url('../common/img/job-owners-top-sec-background.png');
+			height: auto;
+			padding: 0 20px;
+		}
+
+		@media (max-width: 340px) {
+			height: 240px;
+			box-shadow: none;
+		}
+
+		.right-line {
+			position: absolute;
+			right: 0;
+			top: -4px;
+			width: 5px;
+			height: 104%;
+			border-radius: 4px;
+			background-color: #1c6897;
+
+			@media (min-width: $screen-lg-min) {
+				width: 11px;
+				top: -7px;
+			}
+
+			@media (max-width: 340px) {
+				top: -6px;
+				height: 100%;
+			}
+		}
+
+		.top-sec-container {
+			max-width: 1222px; 
+			width: 100%;
+
+			@media (min-width: $screen-xl-min) {
+				padding: 0 11px;
+			}
+
+			.job-owners-breadcrumb-wrapper {
+				margin: 0 34px 0 0;	
+
+				@media (min-width: $screen-lg-min) {
+					margin: 31px 0 0 0;
+				}
+
+				.breadcrumb {
+					margin: 0;	
+				}
+
+				.breadcrumb-item  {
+					color: $header-blue;
+					font-size: 1.6rem;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.75;
+					letter-spacing: normal;
+				}
+			}
+
+			.job-owners-p-sec {
+				margin: 73px 25px 28px 0;
+
+				@media (min-width: $screen-lg-min) {
+					margin: 0;
+				}	
+
+				.job-owners-p-wrapper {
+
+					@media (min-width: $screen-lg-min) {
+						margin:29px 0 116px 0;
+					}	
+				}	
+
+				.job-owners-head {
+					font-size: 3rem;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 0.83;
+					letter-spacing: normal;
+					color: #1c6897;
+
+					@media (min-width: $screen-lg-min) {
+						font-size: 6.2rem;
+						font-weight: 500;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: normal;
+						letter-spacing: normal;
+						color: $cobalt;
+					}	
+				}
+
+				.job-owners-top-p {
+					font-size: 1.6rem;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.25;
+					letter-spacing: normal;
+					color: #4e5665;
+					margin: 0 0 0 40px;
+
+					@media (min-width: $screen-md-min) {
+						max-width: 600px;
+					}	
+
+					@media (min-width: $screen-lg-min) {
+						max-width: 1222px;
+						font-size: 3rem;
+						line-height: normal;
+						letter-spacing: normal;
+					}	
+				}
+			}
+		}
+	}
+
+	.job-owners-body {
+
+
+		.job-owners-body-wrapper {
+			width: 100%;
+			margin:0 0 77px 0;
+
+			@media (min-width: $screen-lg-min) {
+				max-width: 1240px;
+				margin:0 0 230px 0;
+			}
+
+			table {
+				width: 100%;
+
+				thead {
+					
+				}
+
+				tr {
+					height: 67px;
+					border: 0;
+
+					th {
+						border: solid 5px $main-white;
+						font-size: 2rem;
+						font-weight: 500;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: normal;
+						letter-spacing: 0.5px;
+						color: $text-dark-grey;
+						border-right: 0;
+						padding: 0 20px;
+						vertical-align: inherit;
+					}
+				}
+
+				tbody {
+
+					tr {
+						height: 67px;
+						border: 0;
+						padding: 0 20px;
+					}
+
+					td {
+						border: solid 5px $main-white;
+						height: 67px;
+						background-color: $td-background; 
+						border-right: 0;
+						vertical-align: inherit;
+						padding: 0 20px;
+						font-size: 1.6rem;
+						font-weight: 500;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: normal;
+						letter-spacing: 0.5px;
+						color: $text-dark-grey;
+					}
+
+					.name {
+						color: #1f86bc;
+					}
+
+					.mail-td {
+						width: 112px;
+						text-align: center;
+					}
+
+					.postion {
+						font-weight: normal;
+					}
+
+					img {
+						width: 24px;
+						height: 18px;
+					}
+				}
+			}
+
+			h2 {
+				height: 24px;
+				margin: 0 0 12px 0;
+				font-size: 32px;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: normal;
+				letter-spacing: normal;
+				color: $text-dark-grey;
+			}
+
+			.management-table-wrapper {
+				margin: 27px 0;
+
+				.management-table {
+					
+					thead {
+						background-color: $management-table-head-background;
+					}
+				}
+			}
+
+			.bid-editors-table-wrapper {
+				margin: 0 0 27px 0;
+
+				.bid-editors-table {
+					
+					thead {
+						background-color: $bid-editors-table-head-background;
+					}
+				}
+			}
+
+			.purchase-department-wrapper {
+
+				.purchase-department-table {
+
+					thead {
+						background-color: $purchase-department-table-head-background;
+					}
+				}
+			}
+		}
+	}
+
+	.job-owners-footer {
+		padding: 69px 0 0 0;
+		margin: 0 46px 0;
+		border-top: solid 2px rgba(224,224,224,.3);
+
+		@media (min-width: $screen-lg-min) {
+			margin: 0 165px 0;
+			padding: 50px 0 0 0;
+		}	
+	}
+}

@@ -15,7 +15,8 @@ module.exports = {
         'contact-us/contact-us': ["./src/contact-us/contact-us.scss", "./src/contact-us/contact-us.js"],
         'dictionary/dictionary': ["./src/dictionary/dictionary.scss", "./src/dictionary/dictionary.js"],
         'sapakim/sapakim': ["./src/sapakim/sapakim.scss", "./src/sapakim/sapakim.js"],
-        'mepharsemim/mepharsemim': ["./src/mepharsemim/mepharsemim.scss", "./src/mepharsemim/mepharsemim.js"]
+        'mepharsemim/mepharsemim': ["./src/mepharsemim/mepharsemim.scss", "./src/mepharsemim/mepharsemim.js"],
+        'job-owners/job-owners': ["./src/job-owners/job-owners.scss", "./src/job-owners/job-owners.js"]
     },
     output: {
         filename: "[name].min.js",
@@ -123,6 +124,11 @@ module.exports = {
             chunks: ['mepharsemim/mepharsemim'],
             filename: path.resolve(__dirname, "dist/mepharsemim/index.html"),
             template: path.resolve(__dirname, "src/mepharsemim/index.html")
+        }),
+        new HtmlWebpackPlugin({
+            chunks: ['job-owners/job-owners'],
+            filename: path.resolve(__dirname, "dist/job-owners/index.html"),
+            template: path.resolve(__dirname, "src/job-owners/index.html")
         })      
     ]
 };
