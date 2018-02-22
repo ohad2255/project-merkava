@@ -115,27 +115,32 @@
 			    }
 
 				.first {
-					border-left: 1px solid $header-blue;
-					padding: 0 0 0 10px;
-					margin: 0 0 10px 10px;
 
 					@media (min-width: $screen-lg-min) {
-					  margin: 0 0 0 10px;
+
 					}
 				}
 
 				.second {
-					margin-bottom: 10px;
 
 					@media (min-width: $screen-lg-min) {
-					  margin: 0 0 0 10px;
-					  border-left: 1px solid $header-blue;
-					  padding: 0 0 0 10px;
+					 
 					}
 				}
 
 				.last {
 					
+				}
+
+				.footer-line {
+					margin: 0 10px;
+					font-size: 1.6rem;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.69;
+					letter-spacing: normal;
+					color: $header-blue;
 				}
 			}
 		}
