@@ -278,7 +278,7 @@
 	.job-owners-footer {
 		padding: 69px 0 0 0;
 		margin: 0 46px 0;
-		border-top: solid 2px rgba(224,224,224,.3);
+		border-top: solid 2px $footer-border;
 
 		@media (min-width: $screen-lg-min) {
 			margin: 0 165px 0;

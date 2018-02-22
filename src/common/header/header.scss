@@ -36,55 +36,6 @@ header {
       .top-sec-container {
         width: 100%;
 
-        .logo {
-
-          img {
-            height: 44px;
-
-            @media (min-width: $screen-lg-min) {
-              height: 32px;
-            }
-          }
-
-          .logo-head-container {
-            margin-right: 8px;
-
-            .first-head {
-              font-size: 1.2rem;
-              font-weight: normal;
-              font-style: normal;
-              font-stretch: normal;
-              line-height: 1.33;
-              letter-spacing: 1.3px;
-              color: $main-white;
-
-              @media (min-width: $screen-lg-min) {
-                font-size: 1.6rem;
-                line-height: 1;
-                letter-spacing: 1.5px;
-              }
-
-            }
-
-            .second-head {
-              font-family: OpenSans;
-              font-size: 1rem;
-              font-weight: normal;
-              font-style: normal;
-              font-stretch: normal;
-              line-height: 1.6;
-              letter-spacing: 1.3px;
-              color: $main-white;
-
-              @media (min-width: $screen-lg-min) {
-                font-size: 1.4rem;
-                line-height: 1.14;
-                letter-spacing: 1.5px;
-              }
-            }
-          }
-        }
-
         /* --main nav mobile-- */
 
         .nav-button {
@@ -393,6 +344,55 @@ header {
           width: 20px;
           height: 19px;
         }
+      }
+    }
+  }
+}
+
+.logo {
+
+  img {
+    height: 44px;
+
+    @media (min-width: $screen-lg-min) {
+      height: 38px;
+    }
+  }
+
+  .logo-head-container {
+    margin-right: 8px;
+
+    .first-head {
+      font-size: 1.2rem;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.33;
+      letter-spacing: 1.3px;
+      color: $main-white;
+
+      @media (min-width: $screen-lg-min) {
+        font-size: 1.6rem;
+        line-height: 1;
+        letter-spacing: 1.5px;
+      }
+
+    }
+
+    .second-head {
+      font-family: OpenSans;
+      font-size: 1rem;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.6;
+      letter-spacing: 1.3px;
+      color: $main-white;
+
+      @media (min-width: $screen-lg-min) {
+        font-size: 1.4rem;
+        line-height: 1.2;
+        letter-spacing: 1.5px;
       }
     }
   }

@@ -16,7 +16,8 @@ module.exports = {
         'dictionary/dictionary': ["./src/dictionary/dictionary.scss", "./src/dictionary/dictionary.js"],
         'sapakim/sapakim': ["./src/sapakim/sapakim.scss", "./src/sapakim/sapakim.js"],
         'mepharsemim/mepharsemim': ["./src/mepharsemim/mepharsemim.scss", "./src/mepharsemim/mepharsemim.js"],
-        'job-owners/job-owners': ["./src/job-owners/job-owners.scss", "./src/job-owners/job-owners.js"]
+        'job-owners/job-owners': ["./src/job-owners/job-owners.scss", "./src/job-owners/job-owners.js"],
+        'mailing-with-file/mailing-with-file': ["./src/mailing-with-file/mailing-with-file.scss", "./src/mailing-with-file/mailing-with-file.js"]
     },
     output: {
         filename: "[name].min.js",
@@ -129,6 +130,11 @@ module.exports = {
             chunks: ['job-owners/job-owners'],
             filename: path.resolve(__dirname, "dist/job-owners/index.html"),
             template: path.resolve(__dirname, "src/job-owners/index.html")
+        }),
+        new HtmlWebpackPlugin({
+            chunks: ['mailing-with-file/mailing-with-file'],
+            filename: path.resolve(__dirname, "dist/mailing-with-file/index.html"),
+            template: path.resolve(__dirname, "src/mailing-with-file/index.html")
         })      
     ]
 };
