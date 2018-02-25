@@ -85,7 +85,7 @@
 			}
 
 			.job-owners-p-sec {
-				margin: 73px 25px 28px 0;
+				margin: 73px 0 0 0;
 
 				@media (min-width: $screen-lg-min) {
 					margin: 0;
@@ -127,6 +127,7 @@
 					letter-spacing: normal;
 					color: #4e5665;
 					margin: 0 0 0 40px;
+					max-width: 300px;
 
 					@media (min-width: $screen-md-min) {
 						max-width: 600px;
@@ -145,7 +146,6 @@
 
 	.job-owners-body {
 
-
 		.job-owners-body-wrapper {
 			width: 100%;
 			margin:0 0 77px 0;
@@ -153,111 +153,42 @@
 			@media (min-width: $screen-lg-min) {
 				max-width: 1240px;
 				margin:0 0 230px 0;
+				padding: 34px 0 0 0;
 			}
 
-			table {
-				width: 100%;
+			.h2-wrapper {
 
-				thead {
-					
-				}
-
-				tr {
-					height: 67px;
-					border: 0;
-
-					th {
-						border: solid 5px $main-white;
-						font-size: 2rem;
-						font-weight: 500;
-						font-style: normal;
-						font-stretch: normal;
-						line-height: normal;
-						letter-spacing: 0.5px;
-						color: $text-dark-grey;
-						border-right: 0;
-						padding: 0 20px;
-						vertical-align: inherit;
-					}
-				}
-
-				tbody {
-
-					tr {
-						height: 67px;
-						border: 0;
-						padding: 0 20px;
-					}
-
-					td {
-						border: solid 5px $main-white;
-						height: 67px;
-						background-color: $td-background; 
-						border-right: 0;
-						vertical-align: inherit;
-						padding: 0 20px;
-						font-size: 1.6rem;
-						font-weight: 500;
-						font-style: normal;
-						font-stretch: normal;
-						line-height: normal;
-						letter-spacing: 0.5px;
-						color: $text-dark-grey;
-					}
-
-					.name {
-						color: #1f86bc;
-					}
-
-					.mail-td {
-						width: 112px;
-						text-align: center;
-					}
-
-					.postion {
-						font-weight: normal;
-					}
-
-					.tel, .fax {
-						width: 150px;
-					}
-
-					img {
-						width: 24px;
-						height: 18px;
-					}
+				h2 {
+					margin: 0 0 12px 0;
+					font-size: 3.2rem;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: normal;
+					letter-spacing: normal;
+					text-align: right;
+					color: $text-dark-grey;
 				}
 			}
 
-			h2 {
-				height: 24px;
-				margin: 0 0 12px 0;
-				font-size: 32px;
-				font-weight: normal;
-				font-style: normal;
-				font-stretch: normal;
-				line-height: normal;
-				letter-spacing: normal;
-				color: $text-dark-grey;
+			
+
+			.table-wrapper	{
+				margin: 0 0 30px 0;
 			}
 
 			.management-table-wrapper {
-				margin: 27px 0;
-
-				.management-table {
 					
-					thead {
-						background-color: $management-table-head-background;
-					}
+				.th {
+					background-color: $management-table-head-background;
 				}
 			}
 
 			.bid-editors-table-wrapper {
-				margin: 0 0 27px 0;
 
 				.bid-editors-table {
 					
-					thead {
+					.th {
 						background-color: $bid-editors-table-head-background;
 					}
 				}
@@ -267,11 +198,104 @@
 
 				.purchase-department-table {
 
-					thead {
+					.th {
 						background-color: $purchase-department-table-head-background;
 					}
 				}
 			}
+
+			.table {
+				width: 100%;
+
+				.table-head {
+					margin: 0 0 5px 0;
+					font-size: 2rem;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: normal;
+					letter-spacing: 0.5px;
+					color: $text-dark-grey;
+					border-right: 0;
+					//padding: 0 20px;
+					vertical-align: inherit;
+					height: 67px;
+				}
+
+				.table-row {
+					height: 67px;
+					width: 100%;
+					margin: 0 0 5px 0;
+				}
+
+				.th-name {
+					min-width: 270px;
+				}
+
+				.th-position {
+					//width: 520px;
+				}
+
+				.th-tel, .th-fax {
+					min-width: 150px;
+				}
+
+				.th-name, .th-position, .th-tel, .th-fax {
+					border-left: solid 5px $main-white;
+					padding: 0 20px 0 0;
+				}
+
+				.th-mail {
+					min-width: 112px;
+				}
+
+				.td {
+					height: 100%;
+					//border: solid 5px $main-white;
+					height: 67px;
+					//background-color: $td-background; 
+					border-right: 0;
+					vertical-align: inherit;
+					//padding: 0 20px;
+					font-size: 1.6rem;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: normal;
+					letter-spacing: 0.5px;
+					color: $text-dark-grey;
+					background-color: $td-background;
+				}
+
+				.name-td {
+					min-width: 270px;
+					color: #1f86bc;
+				}
+
+				.position-td {
+					//width: 520px;
+					font-weight: normal;
+				}
+
+				.tel-td, .fax-td {
+					min-width: 150px;
+				}
+
+				.mail-td {
+					min-width: 112px;
+					text-align: center;
+				}
+
+				.name-td, .position-td, .tel-td, .fax-td {
+					border-left: solid 5px $main-white; 
+					padding: 0 20px 0 0;
+				}
+
+				img {
+					width: 24px;
+					height: 18px;
+				}
+			}	
 		}
 	}
 
