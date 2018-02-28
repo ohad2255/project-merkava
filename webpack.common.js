@@ -18,7 +18,8 @@ module.exports = {
         'mepharsemim/mepharsemim': ["./src/mepharsemim/mepharsemim.scss", "./src/mepharsemim/mepharsemim.js"],
         'job-owners/job-owners': ["./src/job-owners/job-owners.scss", "./src/job-owners/job-owners.js"],
         'mailing-with-file/mailing-with-file': ["./src/mailing-with-file/mailing-with-file.scss", "./src/mailing-with-file/mailing-with-file.js"],
-        'mailing-welcome-to-site/mailing-welcome-to-site': ["./src/mailing-welcome-to-site/mailing-welcome-to-site.scss", "./src/mailing-welcome-to-site/mailing-welcome-to-site.js"]
+        'mailing-welcome-to-site/mailing-welcome-to-site': ["./src/mailing-welcome-to-site/mailing-welcome-to-site.scss", "./src/mailing-welcome-to-site/mailing-welcome-to-site.js"],
+        'bids/bids': ["./src/bids/bids.scss", "./src/bids/bids.js"]
     },
     output: {
         filename: "[name].min.js",
@@ -141,6 +142,11 @@ module.exports = {
             chunks: ['mailing-welcome-to-site/mailing-welcome-to-site'],
             filename: path.resolve(__dirname, "dist/mailing-welcome-to-site/index.html"),
             template: path.resolve(__dirname, "src/mailing-welcome-to-site/index.html")
+        }),
+        new HtmlWebpackPlugin({
+            chunks: ['bids/bids'],
+            filename: path.resolve(__dirname, "dist/bids/index.html"),
+            template: path.resolve(__dirname, "src/bids/index.html")
         })      
     ]
 };

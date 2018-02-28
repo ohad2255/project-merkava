@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>מכרזים</title>
+      ${require("../common/common-stylesheet.html")}
+  </head>
+  <body class="bids">
+    <div class="main-menu-mobile-container d-lg-none" aria-labelledby="mainMobileNavTrigger">
+      <div class="main-menu-mobile-wrapper"></div>
+      ${require("../common/top-navigation/top-navigation.html")}
+    </div>
+    <div class="main-content-wrapper">
+      ${require("../common/header/header.html")}
+      <section class="bids-top-sec d-flex flex-column align-items-center">
+        <div class="right-line"></div>
+        <div class="top-sec-container custom-container d-flex flex-column justify-content-center">
+            <div class="bids-breadcrumb-wrapper d-none d-lg-block">
+              <nav class="breadcrumb d-flex align-items-center justify-content-start">
+                <a class="breadcrumb-item breadcrumb-item-1 d-flex align-items-center justify-content-center" href="../home/index.html">מינהל הרכש הממשלתי<span>››</span></a>
+                <a class="breadcrumb-item breadcrumb-item-1 d-flex align-items-center justify-content-center" href="#">מכרזים משרדיים<span>››</span></a>
+              </nav>
+            </div>
+            <div class="bids-head-wrapper d-flex">
+              <img src="../common/img/mepharsemim-icon.svg" class="bids-top-icon d-none d-lg-block" alt="bids-icon">
+              <div class="bids-h-wrapper">
+                <h2>מכרז</h2>
+                <h1 class="bids-head">
+                  אספקת מכונות להפקת מסמכים עבור משרדי הממשלה
+                </h1>
+              </div>
+            </div>
+      </section>
+      <section class="bids-body d-flex flex-column align-items-center">
+        <div class="bids-body-wrapper custom-container">
+          <div class="bids-body-top-sec d-lg-flex">
+            <div class="bid-details-wrapper w-lg-100">
+              <div class="details-head">
+                <h3 class="sub-head" id="sub-head-details">
+                  מפרסם:
+                </h3>
+                <h2>
+                  מנהל הרכש הממשלתי
+                </h2> 
+              </div>
+              <div class="details-body d-flex">
+                <div class="right-side-wrapper d-lg-flex">
+                  <div class="bid-num details-item-wrapper">
+                    <h3 class="sub-head">
+                      מספר מכרז:
+                    </h3>
+                    <span>2-2013</span>
+                  </div>
+                  <div class="bid-release-date details-item-wrapper">
+                    <h3 class="sub-head">
+                      תאריך פרסום:
+                    </h3>
+                    <span>27/6/2013</span>
+                  </div>
+                  <div class="update-date details-item-wrapper">
+                    <h3 class="sub-head">
+                      תאריך עדכון אחרון:
+                    </h3>
+                    <span>27/6/2013</span>
+                  </div>
+                </div>
+                <div class="left-side-wrapper d-lg-flex">
+                  <div class="status details-item-wrapper">
+                    <h3 class="sub-head">
+                      סטטוס:
+                    </h3>
+                    <span id="status-output">חדש</span>
+                  </div>
+                  <div class="manof-num details-item-wrapper">
+                    <h3 class="sub-head">
+                      מספר מנוף:
+                    </h3>
+                    <span>24987</span>
+                  </div>
+                </div>
+              </div>
+              <div class="last-date-wrapper">
+                <h3 class="sub-head">
+                  מועד אחרון להגשה:
+                </h3>
+                <span id="lastDate">23:59, 07/10/2013</span>
+              </div>
+            </div>
+            <div class="bid-contact-wrapper">
+              <div class="right-line"></div>
+              <div class="logo-wrapper">
+                <img src="../common/img/mepharsemim-icon.svg" class="bid-contact-logo" alt="bid-contact-logo">
+              </div>
+              <h3>
+                צור קשר עם מפרסם המכרז
+              </h3>
+              <div class="bid-contact-mail">דוא"ל:&nbsp<a href="mailto:i_tender@mof.gov.il">i_tender@mof.gov.il</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="bids-footer d-flex justify-content-center">
+          ${require("../common/footer/footer.html")}
+      </footer>
+    </div>
+    ${require("../common/common.html")}
+  </body>
+</html>
