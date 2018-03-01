@@ -25,7 +25,8 @@
 		background-position-y: -4px;
 
 		@media (min-width: $screen-lg-min) {
-			background-image: url('../common/img/back-top-lg.svg');
+			background-image: url('../common/img/q-and-a-background-pic.png');
+			background-size: contain;
 			height: 300px;
 		}
 
@@ -359,6 +360,46 @@
 			}
 		}
 	}
+
+	.swiper-container {
+		width: 100%;
+		height: 140px;
+		max-width: 100%;
+		padding: 0 0 0 65px;
+
+		.swiper-wrapper {
+
+		}
+
+		.swiper-slide {
+			width: 293px!important;
+			background-color: red;
+			text-align: center;
+		}
+
+		.swiper-slide-active {
+			margin: 0 22px;
+		}
+	}
+
+	.swiper-pagination {
+        position: absolute;
+        width: auto;
+        z-index: 10;
+        margin: 10px 0 0 0;
+		right: 50%;
+		margin-right: -52px;
+
+        .swiper-pagination-bullet {
+        	height: 8px;
+        	width: 8px;
+        	margin: 0 5px 0 0;
+        }
+
+        .swiper-pagination-bullet-active {
+        	background-color: $bids-dark-blue;
+        }
+    }
 
 	.bids-footer {
 		padding: 69px 0 0 0;
