@@ -1,7 +1,7 @@
 require('./header/header');
 
 $(document).ready(function() {
-    new Swiper('.swiper-container', {
+    new Swiper('.swiper-container.main-gallery-swiper', {
         direction: 'horizontal',
         loop: true,
         speed: 1000,
