@@ -31,10 +31,6 @@
 			height: 300px;
 		}
 
-		@media (max-width: 340px) {
-			height: 240px;
-			box-shadow: none;
-		}
 
 		.right-line {
 			position: absolute;
@@ -362,10 +358,163 @@
 		}
 	}
 
-	.related-documents-container {
+	.related-documents-container-close, .winning-bidders-container-close, .subjects-container-close {
+		min-height: 64px;
+		width: 100%;
 		border-bottom: solid 1px $bids-border;
+		font-size: 3.2rem;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		color: $text-dark-grey;
+		padding: 0 20px;
+		cursor: pointer;
+	}
+
+	.border-none {
+		border-bottom: 0;
+	}
+
+	.grey-arrow {
+		width: 12px;
+		height: 12px;
+		border: solid 1px $text-dark-grey;
+	    border-width: 0 2px 2px 0;
+	    display: inline-block;
+	    transform: rotate(135deg);
+	    pointer-events: none;
+	}
+
+	.rotate {
+		transform: rotate(45deg);
+	}
+
+	.related-documents-container {
 		padding: 0 0 40px 0;
 		height: 100%;
+		//display: none;
+	}
+
+	.winning-bidder-container {
+		height: 552px;
+	    //position: relative;
+	    background-color: $bids-purple;
+	    // display: none;
+	    padding: 26px 0 0 0;
+	    margin: 0 20px;
+	    border-radius: 3px;
+
+	    .winning-bidders-content-wrapper {
+	    	padding: 0 24px 0 20px;
+	    }
+
+	    .winning-bidders-content-head {
+	    	margin: 0 0 13px 0;
+	    }
+
+	    .winning-bidders-content-sub-head {
+	    	margin: 0 0 4px 0;
+	    }
+
+	    .winning-bidders-content-date-head {
+	    	margin: 0 0 14px 0;
+	    }
+
+	    h3 {
+			font-size: 2.5rem;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1;
+			letter-spacing: normal;
+			color: $text-dark-grey;
+	    }
+
+	    p {
+	    	font-size: 1.6rem;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1.13;
+			letter-spacing: normal;
+			color: $text-dark-grey;	
+	    }
+	}
+
+	a {
+    	font-size: 16px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.13;
+		letter-spacing: normal;
+		color: $bids-links!important;
+    }
+
+    .hour-link {
+		text-decoration: underline!important;
+    }
+
+	.winning-bidder-container-2 {
+		background-color: rgba(223, 110, 17, 0.15);
+	}
+
+	.winning-bidder-container-3 {
+		background-color: rgba(51,163,141,.15);
+	}
+
+	.winning-bidder {
+		position: relative;
+	}
+
+	.winning-bidder-1, .winning-bidder-2 {
+		margin: 0 0 20px 0;
+	}
+
+	.single-slide-warpper {
+		padding: 0 20px;
+	}
+
+	.winning-bidders-swiper-wrapper, .single-slide {
+		position: absolute;
+		bottom: 120px;
+		height: 140px;
+		width: 100%;
+
+		.swiper-slide {
+			//width: 293px!important;
+
+		}
+
+		.swiper-slide.swiper-slide-active {
+			margin: 0 40px;
+			 right: -7px;
+		}
+	}
+
+	.single-slide {
+		position: static;
+		margin: 24px 0 0 0;
+		background-color: $main-white;
+	}
+
+	.winning-bidder-wrapper {
+		padding: 22px 15px 0;
+	}
+
+	.winning-bidders-links {
+		position: absolute;
+		bottom: 12px;
+		padding: 0 24px 5px 35px;
+		margin: 20px 0 0 0;
+
+		span {
+			font-size: 1.6rem;
+			line-height: 0;
+			color: $bids-links;
+		}
 	}
 
 	.swiper-container {
@@ -384,7 +533,7 @@
 			background-color: $main-white;
 			box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15);
 			text-align: right;
-
+			//max-width: 293px!important;
 		}
 
 
@@ -394,13 +543,15 @@
 		}
 	}
 
+	.winning-bidders-swiper {
+
+	}
+
 	.swiper-pagination {
         position: absolute;
         width: auto;
         z-index: 10;
         margin: 10px 0 0 0;
-		right: 50%;
-		margin-right: -52px;
 
         .swiper-pagination-bullet {
         	height: 8px;
@@ -413,6 +564,80 @@
         }
     }
 
+	
+	.related-document-wrapper {
+		padding: 21px 15px 0;
+	}
+
+	.download-wrapper {
+		margin: 0 0 10px 10px;
+	}
+
+	.document-date {
+		font-size: 1.4rem;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.43;
+		letter-spacing: normal;
+		color: $text-dark-grey;
+	}
+
+	.document-head {
+		//margin: 0 0 23px 0;
+
+		h3 {
+			font-size: 2rem;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1.15;
+			letter-spacing: normal;
+			color: $bids-dark-blue;
+			//max-width: 253px;
+		}
+	}
+
+	.download-arrow {
+		height: 19px;
+		width: 15px;
+	}
+
+	.printer-icon {
+		height: 19px;
+		width: 19px;
+		margin: 0 15px 0 0;
+	}
+
+	.subjects-container {
+		padding: 18px 0 34px 0;
+		border-bottom: solid 1px $bids-border;
+	}
+
+	.subjects-wrapper-right {
+		margin: 0 0 0 5px;
+	}
+
+	.subjects-wrapper-left {
+
+	}
+
+	.subject-wrapper {
+		width: 165px;
+		height: 37px;
+		border-radius: 2px;
+		background-color: rgba(233, 235, 240, 0.5);
+		margin: 0 0 5px 0;
+		font-size: 1.6rem;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1;
+		letter-spacing: normal;
+		text-align: center;
+		color: $text-dark-grey;
+	}
+
 	.bids-footer {
 		padding: 69px 0 0 0;
 		margin: 0 46px 0;
@@ -422,49 +647,5 @@
 			margin: 0 165px 0;
 			padding: 58px 0 0 0;
 		}	
-	}
-
-			.related-document-wrapper {
-			padding: 15px 15px 0;
-		}
-
-		.download-wrapper {
-			margin: 0 0 10px 10px;
-		}
-
-		.document-date {
-			font-size: 1.4rem;
-			font-weight: normal;
-			font-style: normal;
-			font-stretch: normal;
-			line-height: 1.43;
-			letter-spacing: normal;
-			color: $text-dark-grey;
-		}
-
-		.document-head {
-			//margin: 0 0 23px 0;
-
-			h3 {
-				font-size: 2rem;
-				font-weight: normal;
-				font-style: normal;
-				font-stretch: normal;
-				line-height: 1.15;
-				letter-spacing: normal;
-				color: $bids-dark-blue;
-				//max-width: 253px;
-			}
-		}
-
-		.download-arrow {
-			height: 19px;
-			width: 15px;
-		}
-
-		.printer-icon {
-			height: 19px;
-			width: 19px;
-			margin: 0 15px 0 0;
-		}
+	}	
 }
