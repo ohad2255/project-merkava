@@ -304,7 +304,7 @@
 				position: absolute;
 				right: 0;
 				top: 0;
-				width: 5px;
+				width: 7px;
 				height: 100%;
 				background-color: $bids-dark-blue;
 			}
@@ -358,7 +358,7 @@
 		}
 	}
 
-	.related-documents-container-close, .winning-bidders-container-close, .subjects-container-close {
+	.related-documents-container-close, .winning-bidders-container-close, .subjects-container-close, .related-bids-container-close {
 		min-height: 64px;
 		width: 100%;
 		border-bottom: solid 1px $bids-border;
@@ -394,7 +394,18 @@
 	.related-documents-container {
 		padding: 0 0 40px 0;
 		height: 100%;
+		margin: 5px 0 0 0;
+	}
+
+
+	// .hide {
+	// 	display: none;
+	// }
+
+	.winning-bidders-main-container {
 		//display: none;
+		border-bottom: solid 1px $bids-border;
+		padding: 0 0 42px 0;
 	}
 
 	.winning-bidder-container {
@@ -453,17 +464,18 @@
 		color: $bids-links!important;
     }
 
-    .hour-link {
-		text-decoration: underline!important;
-    }
-
-	.winning-bidder-container-2 {
+    .winning-bidder-container-2 {
 		background-color: rgba(223, 110, 17, 0.15);
 	}
 
 	.winning-bidder-container-3 {
 		background-color: rgba(51,163,141,.15);
 	}
+
+    .hour-link {
+		text-decoration: underline!important;
+    }
+
 
 	.winning-bidder {
 		position: relative;
@@ -635,8 +647,72 @@
 		line-height: 1;
 		letter-spacing: normal;
 		text-align: center;
-		color: $text-dark-grey;
+		color: $text-dark-grey!important;
 	}
+
+	.related-bids-container {
+		height: 253px;
+		position: relative;
+		margin: 10px 0 0 0;
+
+		.swiper-slide {
+			height: 100%;
+		}
+
+		.right-line {
+			position: absolute;
+			right: 0;
+			width: 6px;
+			height: 100%;
+			background-color: $bids-dark-blue;
+		}
+
+		.related-bid-wrapper {
+			padding: 23px 21px 25px 37px;
+
+			h3 {
+				font-size: 2rem;
+				line-height: 1;
+				color: $bids-dark-blue;
+				font-weight: normal;
+				margin: 0;
+			}
+
+			p {
+				font-size: 1.6rem;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.25;
+				letter-spacing: normal;
+				margin: 0;
+			}
+
+			.middle-p {
+				line-height: 1.23;
+				margin: 15px 0 0 0;
+			}
+		}
+
+		.last-date {
+			font-size: 20px;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1;
+			letter-spacing: normal;
+			margin: 15px 0 0 0;
+
+			h3 {
+				color: $text-dark-grey;
+				font-weight: 500;
+			}
+
+			span {
+				font-weight: normal;
+			}
+		}
+	}
+
 
 	.bids-footer {
 		padding: 69px 0 0 0;
