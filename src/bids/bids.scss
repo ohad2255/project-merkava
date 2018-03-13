@@ -154,7 +154,7 @@
 			margin:0 0 77px 0;
 
 			@media (min-width: $screen-lg-min) {
-				margin:0 0 81px 0;
+				margin:0 0 54px 0;
 			}
 		}
 
@@ -371,6 +371,11 @@
 		color: $text-dark-grey;
 		padding: 0 20px;
 		cursor: pointer;
+
+		@media (min-width: $screen-lg-min) {
+			border: 0;
+			margin: 0 auto;
+		}
 	}
 
 	.border-none {
@@ -394,10 +399,13 @@
 	.related-documents-container {
 		padding: 0 0 40px 0;
 		height: 100%;
-		margin: 5px 0 0 0;
+		margin: 10px 0 0 0;
 	}
 
-
+	.related-documents-wrapper-desktop {
+		margin: 0 auto;
+		flex-wrap: wrap;
+	}
 	// .hide {
 	// 	display: none;
 	// }
@@ -406,6 +414,8 @@
 		//display: none;
 		border-bottom: solid 1px $bids-border;
 		padding: 0 0 42px 0;
+		margin: 10px 0 0 0;
+		flex-wrap: wrap;
 	}
 
 	.winning-bidder-container {
@@ -416,6 +426,17 @@
 	    padding: 26px 0 0 0;
 	    margin: 0 20px;
 	    border-radius: 3px;
+
+	    @media (min-width: $screen-lg-min) {
+			width: 596px;
+			height: 556px;
+			border-radius: 8px;
+
+			.swiper-slide {
+				width: 293px!important;
+				height: 160px;
+			}
+		}
 
 	    .winning-bidders-content-wrapper {
 	    	padding: 0 24px 0 20px;
@@ -495,16 +516,43 @@
 		height: 140px;
 		width: 100%;
 
+		// @media (min-width: $screen-lg-min) {
+		// 	position: static;
+		// }
+
 		.swiper-slide {
 			//width: 293px!important;
-
+			@media (min-width: $screen-lg-min) {
+				width: 293px!important;
+				//margin: 0 15px;
+				right: 165px;
+			}
 		}
 
 		.swiper-slide.swiper-slide-active {
 			margin: 0 40px;
-			 right: -7px;
+			right: -7px;
+
+			@media (min-width: $screen-lg-min) {
+				//right: 0;
+				margin: 0 15px;
+				right: 165px;
+			}
 		}
 	}
+
+	.winning-bidders-swiper {
+		//right: 70px;
+	}
+
+	.winning-bidders-swiper-wrapper {
+
+		@media (min-width: $screen-lg-min) {
+			width: 536px;
+			right: 45px;
+			//padding: 0 45px 0 0;
+		}
+	}	
 
 	.single-slide {
 		position: static;
@@ -535,23 +583,34 @@
 		max-width: 100%;
 		padding: 0 0 0 65px;
 
+		@media (min-width: $screen-lg-min) {
+			//padding: 0 172px 0 0;
+		}
+	
 		.swiper-wrapper {
 			width: 100%;
 		}
 
 		.swiper-slide {
-			text-align: center;
 			border-radius: 2.1px;
 			background-color: $main-white;
 			box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15);
 			text-align: right;
-			//max-width: 293px!important;
+			//max-width: 293px;
+
+			// @media (min-width: $screen-lg-min) {
+			// 	width: 293px!important;
+			// }
 		}
 
 
 
 		.swiper-slide-active {
 			margin: 0 22px;
+
+			@media (min-width: $screen-lg-min) {
+				margin: 0 15px;
+			}
 		}
 	}
 
@@ -713,6 +772,15 @@
 		}
 	}
 
+	.desktop-slide {
+		border-radius: 2.1px;
+		background-color: $main-white;
+		box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15);
+		text-align: right;
+		width: 293px;
+		height: 160px;
+		margin: 0 0 10px 10px;
+	}
 
 	.bids-footer {
 		padding: 69px 0 0 0;
