@@ -418,6 +418,12 @@
 		flex-wrap: wrap;
 	}
 
+	.custom-container {
+		max-width: 1275px;
+		margin: 0 auto;
+		//padding: 0 15px;
+	}
+
 	.winning-bidder-container {
 		height: 552px;
 	    //position: relative;
@@ -431,6 +437,7 @@
 			width: 596px;
 			height: 556px;
 			border-radius: 8px;
+			//margin: 0 10px 0 0;
 
 			.swiper-slide {
 				width: 293px!important;
