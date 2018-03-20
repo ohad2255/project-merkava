@@ -6,6 +6,7 @@ $(document).ready(function() {
 	    direction: 'horizontal',
 	    loop: true,
 	    speed: 1000,
+	    slidesPerView: 'auto',
 
 	    pagination: {
 	        el: '.related-document-pagination.swiper-pagination',
@@ -14,9 +15,9 @@ $(document).ready(function() {
 	});
 
 	new Swiper('.swiper-container.winning-bidders-swiper', {
-		//centeredSlides: false,
-		//slidesOffsetBefore: '-120',
-		//crossFade: true,
+		centeredSlides: false,
+		//slidesOffsetBefore: '20',
+		crossFade: true,
 		virtualTranslate: false,
 		slidesPerView: 'auto',
 	    spaceBetween: 10,

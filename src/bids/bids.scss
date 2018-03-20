@@ -81,7 +81,7 @@
 
 			.bids-head-wrapper {
 				margin: 74px 0 0 0;
-				padding: 0 20px;
+				//padding: 0 20px;
 
 				@media (min-width: $screen-lg-min) {
 					margin:0;
@@ -404,7 +404,7 @@
 	}
 
 	.related-documents-container {
-		padding: 0 0 40px 0;
+		padding: 20px 0 40px 0;
 		height: 100%;
 		margin: 0;
 		width: 293px;
@@ -635,7 +635,8 @@
 		}
 
 		.swiper-slide {
-			//width: 293px!important;
+			width: 293px!important;
+
 			@media (min-width: $screen-lg-min) {
 				width: 293px!important;
 				margin:0 0 0 15px;
@@ -660,6 +661,8 @@
 
 	.winning-bidders-swiper-wrapper {
 
+		margin: 0 43px 0 0;
+
 		@media (min-width: $screen-lg-min) {
 			width: 536px;
 			right: 30px;
@@ -681,6 +684,14 @@
 	.winning-bidder-wrapper {
 		padding: 22px 15px 0;
 
+	}
+
+	#winningBiddersPagination, #winningBiddersPagination2 {
+		margin: 10px -43px 0 0;
+
+		@media (min-width: $screen-lg-min) {
+			margin: 10px -10px 0 0;
+		}
 	}
 
 	.winning-bidders-links {
@@ -714,7 +725,7 @@
 	}
 
 	.swiper-container {
-		width: 293px;
+		//width: 293px;
 		height: 140px;
 		max-width: 100%;
 		//padding: 0 0 0 65px;
@@ -734,7 +745,7 @@
 			box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15);
 			text-align: right;
 			//max-width: 293px;
-			width: 100%!important;
+			//width: 100%!important;
 
 			@media (min-width: $screen-lg-min) {
 				width: 293px!important;
@@ -780,6 +791,19 @@
 	.related-document-wrapper {
 		padding: 21px 15px 0;
 	}
+
+	.related-documents-swiper {
+		padding:0 20px 5px 0;
+
+		@media (min-width: $screen-lg-min) {
+			padding: 0;
+		}
+
+		.swiper-slide-prev {
+			right: -20px;
+		}
+	}
+	
 
 
 	.download-wrapper {
@@ -879,12 +903,12 @@
 		.swiper-slide {
 			height: 100%;
 			width: 100%!important;
+			box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15);
 
 			@media (min-width: $screen-lg-min) {
 				width: 293px;
 				border-radius: 2.1px;
 				background-color: #ffffff;
-				box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15);
 			}
 		}
 
@@ -998,5 +1022,9 @@
 			box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15);
 			position: relative;
 		}
+	}
+
+	.swiper-slide-related {
+		width: 293px!important;
 	}
 }
