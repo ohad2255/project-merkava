@@ -2,6 +2,10 @@
 
 .bids {
 	min-width: 330px;
+
+	.main-content-wrapper {
+		overflow: hidden;
+	}
 	
 	.custom-container {
 		padding: 0 20px;
@@ -403,6 +407,15 @@
 		padding: 0 0 40px 0;
 		height: 100%;
 		margin: 0;
+		width: 293px;
+
+		#relatedDocumentsSwiper {
+			width: 100%;
+		}
+
+		#swiperSlideRelated {
+			//width: 293px!important;
+		}
 	}
 
 	.related-documents-wrapper-desktop {
@@ -412,6 +425,7 @@
 		@media (min-width: $screen-lg-min) {
 			border-bottom: solid 1px $bids-border;
 			padding-bottom: 50px;
+			margin: 0 auto 53px;
 		}
 	}
 	// .hide {
@@ -425,9 +439,30 @@
 		margin: 10px 0 0 0;
 		flex-wrap: wrap;
 
-		 @media (min-width: $screen-lg-min) {
+		@media (min-width: $screen-lg-min) {
 			margin: 0 auto 52px;
 			padding: 0 20px 50px;
+		}
+
+		.swiper-button-next, .swiper-button-prev {
+			margin: -6px 0 0 0;
+			background-image: none;
+			width: 12px;
+			height: 12px;
+			border: solid 1px $bids-dark-blue;
+		    border-width: 0 2px 2px 0;
+		    display: inline-block;
+		    //pointer-events: none;
+		}
+
+		.swiper-button-next {
+			right: -17px;
+			transform: rotate(-45deg);
+		}
+
+		.swiper-button-prev {
+			left: -19px;
+		    transform: rotate(135deg);
 		}
 	}
 
@@ -435,6 +470,20 @@
 		max-width: 1275px;
 		margin: 0 auto;
 		//padding: 0 15px;
+	}
+
+	.hidden {
+		visibility: hidden;
+		height: 1px;
+		margin: 0;
+		padding: 0;
+
+		@media (min-width: $screen-lg-min) {
+			visibility: visible;
+			height: auto;
+			margin: 0 auto;
+			padding: 0 20px;
+		}
 	}
 
 	.winning-bidder-container {
@@ -447,7 +496,7 @@
 	    border-radius: 3px;
 
 	    @media (min-width: $screen-lg-min) {
-			max-width: 596px;
+			max-width: 597px;
 			width: 100%;
 			height: 556px;
 			border-radius: 8px;
@@ -462,6 +511,10 @@
 
 	    .winning-bidders-content-wrapper {
 	    	padding: 0 24px 0 20px;
+
+	    	 @media (min-width: $screen-lg-min) {
+				padding: 0 30px 25px;
+			}
 	    }
 
 	    .winning-bidders-content-head {
@@ -565,6 +618,10 @@
 
 	.single-slide-warpper {
 		padding: 0 20px;
+
+		@media (min-width: $screen-lg-min) {
+			padding: 0 30px;
+		}
 	}
 
 	.winning-bidders-swiper-wrapper, .single-slide {
@@ -574,7 +631,7 @@
 		width: 100%;
 
 		@media (min-width: $screen-lg-min) {
-			bottom: 160px;
+			bottom: 129px;
 		}
 
 		.swiper-slide {
@@ -582,35 +639,31 @@
 			@media (min-width: $screen-lg-min) {
 				width: 293px!important;
 				margin:0 0 0 15px;
-				right: 165px;
+				right: 45px;
+				//right: 165px;
 				//transform: translate3d(193px, 0px, 0px);
 			}
 		}
 
 		.swiper-slide.swiper-slide-active {
-			margin: 0 40px;
-			right: -7px;
+			//margin: 0 40px;
+			//right: -7px;
 
 			@media (min-width: $screen-lg-min) {
 				//right: 0;
 				//margin: 0 15px;
-				right: 165px;
-				margin: 0 0 0 15px;
+				//right: 165px;
+				//margin: 0 0 0 15px;
 			}
 		}
-	}
-
-	.winning-bidders-swiper {
-		//right: 70px;
 	}
 
 	.winning-bidders-swiper-wrapper {
 
 		@media (min-width: $screen-lg-min) {
 			width: 536px;
-			right: 20px;
-
-			//padding: 0 45px 0 0;
+			right: 30px;
+			// right: 20px;
 		}
 	}	
 
@@ -618,17 +671,32 @@
 		position: static;
 		margin: 24px 0 0 0;
 		background-color: $main-white;
+
+		@media (min-width: $screen-lg-min) {
+			width: 293px;
+			margin: 0;
+		}
 	}
 
 	.winning-bidder-wrapper {
 		padding: 22px 15px 0;
+
 	}
 
 	.winning-bidders-links {
 		position: absolute;
 		bottom: 12px;
-		padding: 0 24px 5px 35px;
+		padding: 0 24px 5px 55px;
 		margin: 20px 0 0 0;
+
+		@media (min-width: $screen-lg-min) {
+			padding: 0 30px 0 40px;
+			bottom: 18px;
+		}	
+
+		a {
+			line-height: 1.15;
+		}
 
 		span {
 			font-size: 1.6rem;
@@ -637,14 +705,23 @@
 		}
 	}
 
+	.winning-bidders-links-right-side, .winning-bidders-links-left-side {
+		display: inline;
+	}
+
+	.winning-bidders-links-left-side {
+		min-width: 235px;
+	}
+
 	.swiper-container {
-		width: 100%;
+		width: 293px;
 		height: 140px;
 		max-width: 100%;
-		padding: 0 0 0 65px;
+		//padding: 0 0 0 65px;
 
 		@media (min-width: $screen-lg-min) {
-			//padding: 0 172px 0 0;
+			width: 100%;
+			//right: 30px;
 		}
 	
 		.swiper-wrapper {
@@ -657,25 +734,29 @@
 			box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15);
 			text-align: right;
 			//max-width: 293px;
-
-			// @media (min-width: $screen-lg-min) {
-			// 	width: 293px!important;
-			// }
-		}
-
-
-
-		.swiper-slide-active {
-			margin: 0 22px;
+			width: 100%!important;
 
 			@media (min-width: $screen-lg-min) {
-				margin: 0 15px;
+				width: 293px!important;
+			}
+		}
+
+		.swiper-slide-active {
+			//margin: 0 22px;
+
+			@media (min-width: $screen-lg-min) {
+				//margin: 0 15px;
 			}
 		}
 	}
 
 	.winning-bidders-swiper {
 
+		@media (min-width: $screen-lg-min) {
+			margin: 0;
+			//right: 30px;
+			width: 536px;
+		}
 	}
 
 	.swiper-pagination {
@@ -699,6 +780,7 @@
 	.related-document-wrapper {
 		padding: 21px 15px 0;
 	}
+
 
 	.download-wrapper {
 		margin: 0 0 10px 10px;
@@ -782,7 +864,7 @@
 	}
 
 	.related-bids-container {
-		height: 253px;
+		//height: 253px;
 		position: relative;
 		margin: 10px 0 0 0;
 
@@ -790,8 +872,13 @@
 			height: auto;
 		}
 
+		.related-bids-swiper {
+			width: 294px;
+		}
+
 		.swiper-slide {
 			height: 100%;
+			width: 100%!important;
 
 			@media (min-width: $screen-lg-min) {
 				width: 293px;
@@ -870,22 +957,31 @@
 	}
 
 	.bids-footer {
-		padding: 69px 0 0 0;
+		padding: 72px 0 0 0;
 		margin: 0 46px 0;
-		border-top: solid 2px rgba(224,224,224,.3);
 
 		@media (min-width: $screen-lg-min) {
 			margin: 0 165px 0;
 			padding: 58px 0 0 0;
+			border-top: solid 2px rgba(224,224,224,.3);
 		}	
 	}
 
+	.footer-border {
+		border-top: solid 2px rgba(224,224,224,.3);
+	}
+
 	.related-bids-main-container {
+
 		@media (min-width: $screen-lg-min) {
-			height: 447px;
+			min-height: 447px;
 			background-color: #f4f5f7;
 			padding: 54px 0 0 0;
 		}	
+	}
+
+	.margin-open {
+		margin: 0 0 65px 0;
 	}
 
 	.related-bids-desktop-container	{
