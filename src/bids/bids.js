@@ -68,9 +68,9 @@ $(document).ready(function() {
 	});
 
 	$('.related-documents-container-close').click(function() {
-		$('.related-documents-container').toggleClass('hidden');
+		$('.related-documents-container').toggleClass('hidden border');
 		$(this).toggleClass('border-none');
-		$(this).find($('.grey-arrow')).toggleClass('rotate');
+		$(this).find($('.grey-arrow')).toggleClass('rotate'); 
 	});
 
 	$('.winning-bidders-container-close').click(function() {

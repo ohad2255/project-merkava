@@ -502,11 +502,6 @@
 			border-radius: 8px;
 			margin: 0 0 0 10px;
 			//margin: 0 10px 0 0;
-
-			.swiper-slide {
-				width: 293px!important;
-				height: 160px;
-			}
 		}
 
 	    .winning-bidders-content-wrapper {
@@ -571,6 +566,7 @@
 			}
 	    }
 	}
+
 
 	.a {
     	font-size: 1.6rem;
@@ -639,7 +635,7 @@
 
 			@media (min-width: $screen-lg-min) {
 				width: 293px!important;
-				margin:0 0 0 15px;
+				margin:0 0 0 15px!important;
 				right: 45px;
 				//right: 165px;
 				//transform: translate3d(193px, 0px, 0px);
@@ -666,6 +662,8 @@
 		@media (min-width: $screen-lg-min) {
 			width: 536px;
 			right: 30px;
+			margin: 0;
+			//position: relative;
 			// right: 20px;
 		}
 	}	
@@ -767,6 +765,28 @@
 			margin: 0;
 			//right: 30px;
 			width: 536px;
+			position: relative;
+		}
+
+		.gradient-overlay {
+			height: 100%;
+			width: 100px;
+			left: 0;
+			background: linear-gradient(to right, white , transperent);
+			position: absolute;
+			z-index: 1000;
+		}
+	}
+
+	.winning-bidders-swiper-2, .winning-bidders-swiper {
+
+		.gradient-overlay {
+			height: 100%;
+			width: 70px;
+			left: 0;
+			background: linear-gradient(to right, white , rgba(255,255,255,.2));
+			position: absolute;
+			z-index: 1000;
 		}
 	}
 
@@ -1027,4 +1047,6 @@
 	.swiper-slide-related {
 		width: 293px!important;
 	}
+
+
 }
