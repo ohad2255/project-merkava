@@ -25,8 +25,8 @@ $(document).ready(function() {
 	    speed: 1000,
 
 	    breakpoints: {
-	    	
-			2000: {
+
+			3000: {
 				spaceBetween: 15
 			},
 
@@ -57,7 +57,7 @@ $(document).ready(function() {
 	    speed: 1000,
 
 	    breakpoints: {
-			2000: {
+			3000: {
 				spaceBetween: 15
 			},
 
