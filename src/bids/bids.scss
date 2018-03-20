@@ -381,7 +381,7 @@
 			border: 0;
 			margin: 0 auto 20px;
 			min-height: auto;
-
+			pointer-events: none;
 		}
 	}
 
@@ -463,6 +463,13 @@
 		.swiper-button-prev {
 			left: -19px;
 		    transform: rotate(135deg);
+		}
+	}
+
+	#winningBiddersMainContainer {
+		@media (min-width: $screen-lg-min) {
+			padding-bottom: 60px;
+			margin-bottom: 52px;
 		}
 	}
 
@@ -1019,6 +1026,7 @@
 			min-height: 447px;
 			background-color: #f4f5f7;
 			padding: 54px 0 0 0;
+			//margin: 0 0 65px 0;
 		}	
 	}
 
