@@ -634,8 +634,6 @@
 			width: 293px!important;
 
 			@media (min-width: $screen-lg-min) {
-				width: 293px!important;
-				margin:0 0 0 15px!important;
 				right: 45px;
 				//right: 165px;
 				//transform: translate3d(193px, 0px, 0px);
@@ -672,9 +670,9 @@
 		position: static;
 		margin: 24px 0 0 0;
 		background-color: $main-white;
+		width: 293px;
 
 		@media (min-width: $screen-lg-min) {
-			width: 293px;
 			margin: 0;
 		}
 	}
@@ -820,7 +818,7 @@
 		}
 
 		.swiper-slide-prev {
-			right: -20px;
+			right: -10px;
 		}
 	}
 	
@@ -910,23 +908,23 @@
 	.related-bids-container {
 		//height: 253px;
 		position: relative;
-		margin: 10px 0 0 0;
+		margin: 12px 0 0 0;
 
 		@media (min-width: $screen-lg-min) {
 			height: auto;
 		}
 
 		.related-bids-swiper {
-			width: 294px;
+			//width: 294px;
 		}
 
 		.swiper-slide {
 			height: 100%;
-			width: 100%!important;
+			width: 293px!important;
 			box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15);
 
 			@media (min-width: $screen-lg-min) {
-				width: 293px;
+				//width: 293px;
 				border-radius: 2.1px;
 				background-color: #ffffff;
 			}
@@ -1048,5 +1046,9 @@
 		width: 293px!important;
 	}
 
-
+	.border {
+		@media (min-width: $screen-lg-min) {
+			border-bottom: 0!important;
+		}
+	}
 }

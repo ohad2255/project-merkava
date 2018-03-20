@@ -16,14 +16,25 @@ $(document).ready(function() {
 
 	new Swiper('.swiper-container.winning-bidders-swiper', {
 		centeredSlides: false,
-		//slidesOffsetBefore: '20',
+		slidesOffsetBefore: '-45',
 		crossFade: true,
 		virtualTranslate: false,
 		slidesPerView: 'auto',
-	    spaceBetween: 10,
 	    direction: 'horizontal',
 	    loop: true,
 	    speed: 1000,
+
+	    breakpoints: {
+	    	
+			2000: {
+				spaceBetween: 15
+			},
+
+			992: {
+				spaceBetween: 10,
+				slidesOffsetBefore: '0'
+			}
+		},
 
 	    pagination: {
 	        el: '.winning-bidders-pagination.swiper-pagination',
@@ -38,11 +49,23 @@ $(document).ready(function() {
 
 	new Swiper('.swiper-container.winning-bidders-swiper-2', {
 		//slidesPerView: 2,
+		slidesOffsetBefore: '-45',
 		slidesPerView: 'auto',
 	    spaceBetween: 10,
 	    direction: 'horizontal',
 	    loop: true,
 	    speed: 1000,
+
+	    breakpoints: {
+			2000: {
+				spaceBetween: 15
+			},
+
+			992: {
+				spaceBetween: 10,
+				slidesOffsetBefore: '0'
+			}
+		},
 
 	    pagination: {
 	        el: '.winning-bidders-pagination-2.swiper-pagination',
@@ -60,6 +83,8 @@ $(document).ready(function() {
 	    direction: 'horizontal',
 	    loop: true,
 	    speed: 1000,
+	    slidesPerView: 'auto',
+	    slidesOffsetBefore: '26',
 
 	    pagination: {
 	        el: '.related-bids-pagination.swiper-pagination',
@@ -93,9 +118,9 @@ $(document).ready(function() {
 		$('.related-bids-main-container').toggleClass('margin-open');
 	});
 
-	$(window).on('resize', function () {
-	    $('.winning-bidders-main-container, .related-bids-container').toggleClass('hidden', $(window).width() < 996);
-	});
+	// $(window).on('resize', function () {
+	//     $('.winning-bidders-main-container, .related-bids-container').toggleClass('hidden', $(window).width() < 996);
+	// });
 
 	var alterClass = function() {
 	    var ww = document.body.clientWidth;
@@ -106,27 +131,4 @@ $(document).ready(function() {
 		   	$('.subjects-container').addClass('d-none');
 		  };
 	};
-
-	$(window).resize(function(){
-		alterClass();
-	});
-	//Fire it when the page first loads:
-	alterClass();
-
- // //    if ($(window).width() > 992) {
-	// //    $('#relatedDocumentsSwiper').removeClass('related-documents-swiper');
-	// // }
-	// // else {
-	   
-	// // }
-
-	// if ($(window).width() < 992) {
-	//     $('#relatedDocumentsSwiper').addClass('related-documents-swiper');
-	// } else {
-	//     $('#relatedDocumentsSwiper').removeClass('related-documents-swiper');
-	// }
-
-	// $(window).width() > 992 {
-	//     $('#relatedDocumentsSwiper').removeClass('related-documents-swiper');
-	// }    
 });
