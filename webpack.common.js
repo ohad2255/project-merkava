@@ -19,7 +19,8 @@ module.exports = {
         'job-owners/job-owners': ["./src/job-owners/job-owners.scss", "./src/job-owners/job-owners.js"],
         'mailing-with-file/mailing-with-file': ["./src/mailing-with-file/mailing-with-file.scss", "./src/mailing-with-file/mailing-with-file.js"],
         'mailing-welcome-to-site/mailing-welcome-to-site': ["./src/mailing-welcome-to-site/mailing-welcome-to-site.scss", "./src/mailing-welcome-to-site/mailing-welcome-to-site.js"],
-        'bids/bids': ["./src/bids/bids.scss", "./src/bids/bids.js"]
+        'bids/bids': ["./src/bids/bids.scss", "./src/bids/bids.js"],
+        'search-results/search-results': ["./src/search-results/search-results.scss", "./src/search-results/search-results.js"]
     },
     output: {
         filename: "[name].min.js",
@@ -147,6 +148,11 @@ module.exports = {
             chunks: ['bids/bids'],
             filename: path.resolve(__dirname, "dist/bids/index.html"),
             template: path.resolve(__dirname, "src/bids/index.html")
+        }),
+        new HtmlWebpackPlugin({
+            chunks: ['search-results/search-results'],
+            filename: path.resolve(__dirname, "dist/search-results/index.html"),
+            template: path.resolve(__dirname, "src/search-results/index.html")
         })      
     ]
 };

@@ -282,6 +282,7 @@ header {
           height: 9px;
           width: 9px;
           margin-top: -1px;
+          pointer-events: none;
 
           @media (min-width: $screen-lg-min) {
             
