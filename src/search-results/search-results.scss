@@ -77,15 +77,191 @@
 	.search-results-body {
 
 		@media (min-width: $screen-lg-min) {
-			padding: 76px 20px 100px;
+			padding: 50px 20px 100px;
 		}
 
 		.search-results-body-wrapper {
 			width: 100%;
 
+			@media (min-width: $screen-lg-min) {
+				padding: 0 28px;
+			}
+
+			.search-results-filter-container {
+				min-height: 500px;
+				min-width: 274px;
+				height: 100%;
+				width: 100%;
+				flex: 1;
+
+				.search-results-filter-wrapper {
+					@media (min-width: $screen-lg-min) {
+						max-width: 257px;
+					}
+				}
+
+				.close-filter-container {
+
+					@media (min-width: $screen-lg-min) {
+						height: 90px;
+						padding: 0 0 0 17px;
+						border-bottom: solid 1px #dddddd;
+						cursor: pointer;
+					}
+
+					h3 {
+
+						@media (min-width: $screen-lg-min) {
+							font-size: 3.2rem;
+							font-weight: normal;
+							font-style: normal;
+							font-stretch: normal;
+							line-height: 1.72;
+							letter-spacing: 0.6px;
+							color: $cobalt;
+							margin: 0;
+						}
+					}
+
+					.filter-arrow {
+						width: 13px;
+						height: 13px;
+						border: solid $cobalt;
+					    border-width: 0 2px 2px 0;
+					    display: inline-block;
+					    transform: rotate(135deg);
+					    pointer-events: none;
+					}
+
+					.rotate {
+						transform: rotate(45deg);
+					}
+				}
+
+				.type-filter-close {
+
+					@media (min-width: $screen-lg-min) {
+						border-bottom: solid 1px #dddddd;
+					}
+				}
+
+				.border-none {
+					@media (min-width: $screen-lg-min) {
+						border-bottom: 0;
+					}
+				}
+
+				.type-filter-close.border-none {
+					@media (min-width: $screen-lg-min) {
+						margin: 0 0 -22px 0;
+					}
+				}
+
+				.date-filter-close.border-none {
+					@media (min-width: $screen-lg-min) {
+						margin: 0 0 -5px 0;
+					}
+				}
+
+				.type-filter-wrapper {
+
+					@media (min-width: $screen-lg-min) {
+						 
+					}
+				}
+
+				.checkbox {
+
+					label {
+						line-height: 2.75;
+
+						span {
+							font-size: 2rem;
+							font-weight: normal;
+							font-style: normal;
+							font-stretch: normal;
+							letter-spacing: 0.3px;
+							color: $text-dark-grey;
+						}
+					}
+
+					.main-label {
+						font-weight: 500;
+					}
+
+					input {
+						-webkit-appearance: none;
+						width: 15px;
+						height: 14px;
+						border-radius: 2px;
+						background-color: $main-white;
+						border: solid 1px #bcbcba;
+						margin: 0 0 0 15px;
+					}
+
+					input[type="checkbox"]:checked {
+						 display:inline-block;
+  
+						&:after{
+							content: '';
+							display: block;
+							margin: 0 auto;
+							width: 6px;
+							height: 10px;
+							border: solid $cobalt;
+							border-width: 0 2px 2px 0;
+							transform: rotate(45deg);
+						}
+					}
+				}
+
+				.sub-checkboxs-wrapper {
+					@media (min-width: $screen-lg-min) {
+						padding: 0 30px 0 0;
+					}
+				}
+
+				.date-filter-wrapper {
+
+					input {
+						width: 203px;
+						height: 32px;
+						border-radius: 1.5px;
+						background-color: #ffffff;
+						border: solid 0.5px #d4d4d4;
+						-webkit-appearance: none;
+						flex: none;
+					}
+
+					
+
+					.input-wrapper {
+						position: relative;
+
+						img {
+							position: absolute;
+							width: 20px;
+							height: 20px;
+							left: 6px; 
+							top: 50%;
+							margin: -10px 0 0 0;
+							z-index: 100;
+						}
+					}
+
+					.input-group-1 {
+						margin: 0 0 15px 0;
+					}
+				}
+			}
+
 			.search-results-content {
 				width: 100%;
 				max-width: 870px;
+
+				@media (min-width: $screen-lg-min) {
+					padding: 26px 0 0 0; 
+ 				}
 
 				h2 {
 
@@ -152,6 +328,8 @@
 			}
 
 			.health-department-logo {
+				width: 71px;
+				height: 89px;
 				
 				@media (min-width: $screen-lg-min) {
 					width: 71px;

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>בעלי תפקידים</title>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.6/css/swiper.css">
+  <link href="/mailing-welcome-to-site/mailing-welcome-to-site.css" rel="stylesheet"></head>
+  <body class="mailing-welcome-to-site">
+    <div class="main-content-wrapper">
+      <section class="mailing-welcome-top-sec">
+        <div class="mailing-logo-sec w-100 d-flex align-items-center">
+          <a href="../home/index.html">
+            <div class="logo d-flex">
+                <img src="data:image/png;base64,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">
+                <div class="logo-head-container d-flex flex-column justify-content-center">
+                     <div class="first-head">
+                        מינהל הרכש הממשלתי
+                     </div>
+                     <div class="second-head">
+                        Government Grocurement Administration
+                     </div>
+                </div>
+            </div>
+          </a>
+        </div>
+        <div class="head-sec d-flex align-items-end">
+          <h1>שלום שמעון,</h1>
+          <div class="background-img"></div>
+        </div>
+      </section>
+      <section class="mailing-welcome-body">
+        <div class="main-p-wrapper">
+          <p>
+            ברוך הבא לאתר החדש של מינהל הרכש הממשלתי.
+          </p>
+          <p>  
+            יש ללחוץ על הלינק הבא על מנת לאפס את הסיסמא שלך:
+          </p>
+          <a href="../profile/index.html">עדכון פרטים</a>
+          <p class="bottom-p">
+            בברכה,<br>
+            צוות אתר מינהל הרכש הממשלתי
+          </p>
+        </div>
+      </section>
+    </div>
+    <footer class="mailing-footer d-flex justify-content-center">
+      <div class="footer-nav-wrapper-mailing d-flex justify-content-center align-items-center flex-column flex-lg-row">
+        <ul class="mailing-footer-nav d-flex flex-wrap justify-content-center"> 
+  <a href="">
+    <li class="first">
+      במידה ואינך רואה תכולת דיוור זה <span>לחץ כאן</span>
+    </li>
+  </a>
+  <span class="footer-line"> | </span>
+  <a href="">
+    <li class="second">
+      לצפייה באתר להסרה מרשימת הדיוור <span>לחץ כאן</span>
+    </li>
+  </a>
+  <span class="footer-line"> | </span>
+  <a href="">
+    <li class="last">
+      לעריכת הגדרות בחשבונך <span>לחץ כאן</span>
+    </li>
+  </a>
+</ul>
+      </div>
+    </footer>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.8.0/parsley.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.6/js/swiper.min.js">
+</script>
+<script src='https://www.google.com/recaptcha/api.js?v=2'></script>
+  <script type="text/javascript" src="/mailing-welcome-to-site/mailing-welcome-to-site.min.js"></script></body>
+</html>
