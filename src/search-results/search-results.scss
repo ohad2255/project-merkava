@@ -22,12 +22,12 @@
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
 		background-image: url('../common/img/search-results-top-background@3x.png');
 		background-repeat: no-repeat;
-		background-size: cover;
+		background-size: contain;
 
 		@media (min-width: $screen-lg-min) {
 			background-image: url('../common/img/search-results-top-background.png');
 			height: 308px;
-			
+			background-size: contain;
 		}
 
 		@media (max-width: 340px) {
@@ -60,15 +60,18 @@
 
 			h1 {
 
+				font-size: 2.5rem;
+				font-weight: 500;
+				line-height: 1;
+				color: $cobalt;
+
 				@media (min-width: $screen-lg-min) {
 					font-size: 6.2rem;
-					font-weight: 500;
 					font-style: normal;
 					font-stretch: normal;
 					line-height: normal;
 					letter-spacing: normal;
 					text-align: center;
-					color: $cobalt;
 				}
 			}
 		}
@@ -82,9 +85,51 @@
 
 		.search-results-body-wrapper {
 			width: 100%;
+			padding: 0 10px;
 
 			@media (min-width: $screen-lg-min) {
 				padding: 0 28px;
+			}
+
+			.filter-mobile-container {
+				height: 101px;
+				width: 100%;
+				background-color: $main-white;
+
+				.filter-mobile-wrapper {
+					width: 100px;
+
+					h3 {
+						margin: 0;
+					}
+				}
+
+				span {
+					width: 8px;
+					height: 8px;
+					border: solid #4e5665;
+					border-width: 0 2px 2px 0;	
+				    display: inline-block;
+				    transform: rotate(45deg);
+				    pointer-events: none;
+				}
+				
+
+				.filter-icon {
+					width: 23px;
+					height: 22px;
+					margin: 0 0 3px 0;
+				}
+
+				.mobile-filter-head {
+					font-size: 1.6rem;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.38;
+					letter-spacing: normal;
+					color: $cobalt;
+				}
 			}
 
 			.search-results-filter-container {
@@ -101,6 +146,7 @@
 				}
 
 				.close-filter-container {
+					height: 93px;
 
 					@media (min-width: $screen-lg-min) {
 						height: 90px;
@@ -139,25 +185,30 @@
 				}
 
 				.type-filter-close {
+					border-bottom: solid 1px #dddddd;
 
 					@media (min-width: $screen-lg-min) {
-						border-bottom: solid 1px #dddddd;
+						
 					}
 				}
 
 				.border-none {
+					border-bottom: solid 1px #dddddd;
+
 					@media (min-width: $screen-lg-min) {
 						border-bottom: 0;
 					}
 				}
 
 				.type-filter-close.border-none {
+
 					@media (min-width: $screen-lg-min) {
 						margin: 0 0 -22px 0;
 					}
 				}
 
 				.date-filter-close.border-none {
+					
 					@media (min-width: $screen-lg-min) {
 						margin: 0 0 -5px 0;
 					}
@@ -264,30 +315,36 @@
  				}
 
 				h2 {
+					font-size: 2rem;
+					line-height: 1;
+					font-weight: normal;
+					margin: 0 0 20px 0;
 
 					@media (min-width: $screen-lg-min) {
 						font-size: 3.2rem;
-						font-weight: normal;
 						font-style: normal;
 						font-stretch: normal;
 						line-height: 0.78;
 						letter-spacing: normal;
 						color: $text-dark-grey;
 						margin: 0 0 14px 0;
+						max-width: none;
 					}
 				}
 
 				.details-wrapper {
-					font-size: 2rem;
+					font-size: 1.6rem;
 					font-weight: normal;
 					font-style: normal;
 					font-stretch: normal;
-					line-height: 1.4;
+					line-height: 1.44;
 					letter-spacing: normal;
 					color: #505050;
 
 					@media (min-width: $screen-lg-min) {
 						margin: 0 0 24px 0;
+						font-size: 2rem;
+						line-height: 1.4;
 					}
 
 					span {
@@ -296,14 +353,58 @@
 				}
 			}
 
+			.search-result-sub-head {
+				font-size: 1.6rem;
+				font-weight: 500;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: normal;
+				letter-spacing: normal;
+
+				@media (min-width: $screen-lg-min) {
+					font-size: 3.2rem;
+					text-align: center;
+				}
+			}
+
+			.logo-container {
+				position: absolute;
+				top: 10px;
+				left: 10px;
+
+				@media (min-width: $screen-lg-min) {
+					position: static;
+				}
+			}
+
+			.health-department-logo {
+				width: 57px;
+  				height: 71px;
+  				position: absolute;
+  				bottom: 0;
+  				left: 10px;
+
+				@media (min-width: $screen-lg-min) {
+					width: 71px;
+					height: 89px;
+					margin: 0 0 18px 0;
+					position: static;
+				}
+			}	
+
 			.result-container-1, .result-container-2, .result-container-3, .result-container-4 {
-				height: 264px;
+				height: auto;
 				border-radius: 4px;
 				background-color: #ffffff;
 				box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
 				position: relative;
 				width: 100%;
-				margin: 0 0 40px 0;
+				margin: 0 0 30px 0;
+
+				@media (min-width: $screen-lg-min) {
+					min-height: 265px;
+					margin: 0 0 50px 0;
+				}
 
 				.right-line {
 					width: 7px;
@@ -314,30 +415,55 @@
 				}
 			}
 
-			.logo-container {
+			.result-container-1, .result-container-3 {
 
-				h3 {
-					font-size: 3.2rem;
-					font-weight: 500;
-					font-style: normal;
-					font-stretch: normal;
-					line-height: normal;
-					letter-spacing: normal;
-					text-align: center;
+				.content-wrapper {
+
+					padding: 28px 23px 21px;	
+
+					@media (min-width: $screen-lg-min) {
+						padding: 7px 39px 5px 25px; 
+					}
 				}
 			}
 
-			.health-department-logo {
-				width: 71px;
-				height: 89px;
-				
-				@media (min-width: $screen-lg-min) {
-					width: 71px;
-					height: 89px;
-					margin: 0 0 18px 0;
-				}
-			}	
+			.result-container-2, .result-container-4 {
 
+				p {
+					margin: 0;
+				}
+
+				h2 {
+					max-width: none;
+				}
+
+				
+
+				.content-wrapper {
+					padding: 35px 23px 9px 21px; 
+
+					@media (min-width: $screen-lg-min) {
+						padding: 0 40px 0 15px;
+						min-height: 265px;
+					}
+				}
+
+				.details-wrapper {
+					@media (min-width: $screen-lg-min) {
+						//min-height: 265px;
+						align-self: flex-end;
+					}
+				}
+
+				
+
+				.logo-container {
+
+					@media (min-width: $screen-lg-min) {
+						min-width: 110px;
+					}
+				}	
+			}
 
 			.result-container-1 {
 
@@ -345,10 +471,11 @@
 					max-width: 576px;
 				}
 
-				.content-wrapper {
+				h2 {
+					max-width: 210px;
 
 					@media (min-width: $screen-lg-min) {
-						padding: 7px 39px 5px 25px; 
+						max-width: none;
 					}
 				}
 				
@@ -361,10 +488,12 @@
 				}
 
 				.result-container-1-logo {
+					height: 52px;
+					width: 52px;
 
 					@media (min-width: $screen-lg-min) {
-						height: 91px;
-						width: 91px;
+						height: 92px;
+						width: 92px;
 					}
 				}
 			}
@@ -375,22 +504,15 @@
 					color: $status-green;
 				}
 
-				.content-wrapper {
-
-					@media (min-width: $screen-lg-min) {
-						padding: 0 40px 0 15px;
-					}
-				}
 
 				.right-line {
 					background-color: $status-green; 
 				}
 
-				.logo-container {
-					min-width: 110px;
-				}
-
 				.result-container-2-icon {
+
+					width: 34.9px;
+					height: 45.6px;
 
 					@media (min-width: $screen-lg-min) {
 						width: 77px;
@@ -405,18 +527,14 @@
 					color: $main-purple;
 				}
 
-				.content-wrapper {
-
-					@media (min-width: $screen-lg-min) {
-						padding: 7px 39px 5px 25px; 
-					}
-				}
 
 				.right-line {
 					background-color: $main-purple; 
 				}
 
 				.result-container-3-icon {
+					width: 44px;
+					height: 44px;
 
 					@media (min-width: $screen-lg-min) {
 						width: 92px;
@@ -427,19 +545,16 @@
 
 			.result-container-4 {
 
-				@media (min-width: $screen-lg-min) {
-					margin: 0; 
+				h2 {
+					max-width: 210px;
+
+					@media (min-width: $screen-lg-min) {
+						max-width: none;
+					}
 				}
 
 				h3 {
 					color: #df7b11;
-				}
-
-				.content-wrapper {
-
-					@media (min-width: $screen-lg-min) {
-						padding: 7px 39px 5px 25px; 
-					}
 				}
 
 				.right-line {
@@ -447,6 +562,9 @@
 				}
 
 				.result-container-4-icon {
+
+					width: 37.3px;
+					height: 48px;
 
 					@media (min-width: $screen-lg-min) {
 						width: 77px;

@@ -37,4 +37,41 @@ $(document).ready(function() {
 		$(this).toggleClass('border-none');
 		$(this).find($('.filter-arrow')).toggleClass('rotate');
 	});
+
+	// if ($('#main-checkbox').prop("checked")) {
+	// 	var subCheckboxs = $('.sub-checkbox'); 
+	// 	var checked = $(this).is(':checked');
+
+	// 	Object.keys($('#sub-checkbox1').forEach(function(elementKey) {
+	// 		myList.$elements[elementKey] = $elements[elementKey];
+	// 	});
+	// };
+
+	$("#main-checkbox").change(function(){
+	    var subCheckboxs = $('.sub-checkbox'); 
+		var checked = $(this).is(':checked');
+
+	     
+	    if(checked){
+		    $('.sub-checkbox').each(function() {
+		       $(this).prop('selected',true);
+		    });
+	    }else{
+	    // Deselect All
+		    $('.sub-checkbox').each(function() {
+		    	$(this).prop('selected',false);
+		    });
+	    }
+  	});
+ 
+	// // Changing state of Checkbox
+	// $("#sel_users").change(function(){
+
+	// 	// When total options equals to total selected option
+	// 	if($("#sel_users option").length == $("#sel_users option:selected").length) {
+	// 	   $("#checkallusers").prop("checked", true);
+	// 	} else {
+	// 	   $("#checkallusers").removeAttr("checked");
+	// 	}
+	// });
 });
