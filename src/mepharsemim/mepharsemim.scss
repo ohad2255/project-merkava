@@ -444,7 +444,7 @@
 					height: 67px;
 					object-fit: contain;
 					margin: 0 0 6px 0;
-					padding: 0 15px;
+					padding: 0 40px 0 24px;
 					cursor: pointer;
 				}
 
@@ -464,6 +464,8 @@
 					background-color: rgba(233, 235, 240, 0.5);
 				}
 
+				
+
 				.my-list-subjects-list {
 					display: none;
 
@@ -481,8 +483,8 @@
 						margin-bottom: 0;
 					}
 
-					.my-list-subject-wrapper,  {
-						padding: 0 21px;
+					.my-list-subject-wrapper  {
+						padding: 0 20px 0 18px;
 						margin: 0 0 5px 0; 
 						//cursor: pointer;
 
@@ -498,6 +500,9 @@
 						}
 					}
 
+					.my-list-subjects-wrapper.my-list-subject-wrapper:last-child {
+						margin: 0;
+					}
 
 					.my-list-subject-name {
 						font-size: 1.5rem;
@@ -590,10 +595,21 @@
 					color: $text-dark-grey;
 				}
 
+				.arrow {
+					width: 14px;
+					height: 14px;
+					border: solid $text-dark-grey;
+				    border-width: 0 2px 2px 0;
+				    display: inline-block;
+				    transform: rotate(135deg);
+				    pointer-events: none;
+				}
+
 				.rotate {
-					transform: rotate(-90deg);
+					transform: rotate(45deg);
 					background-color: $main-white;
 				}
+
 
 				.my-list-subjects-list {
 					//position: absolute;
@@ -946,25 +962,7 @@
 
 			}
 
-			.blue-arrow {
-				width: 8px;
-				height: 8px;
-				border: solid $header-blue;
-			    border-width: 0 2px 2px 0;
-			    display: inline-block;
-			    transform: rotate(135deg);
-			    -webkit-transform: rotate(135deg);
-			    pointer-events: none;
-			    margin: 0 auto 0 0; 
-			}
-
-			.rotate {
-				transform: rotate(45deg);
-
-				@media (min-width: $screen-lg-min) {
-			 		transform: rotate(135deg)
-			 	}
-			}
+			
 		}
 	}
 
@@ -1114,6 +1112,33 @@
 		    pointer-events: none; 
 		    margin: -6px 0 0 0;
 		}
+	}
+
+	.blue-arrow {
+		// width: 8px;
+		// height: 8px;
+		// border: solid $header-blue;
+	 //    border-width: 0 2px 2px 0;
+	 //    display: inline-block;
+	 //    transform: rotate(135deg);
+	 //    -webkit-transform: rotate(135deg);
+	    pointer-events: none;
+	    margin: 0 auto 0 0; 
+	    width: 14px;
+		height: 14px;
+		border: solid $mepharsemim-blue-arrow;
+	    border-width: 0 2px 2px 0;
+	    display: inline-block;
+	    transform: rotate(135deg);
+	    pointer-events: none;
+	}
+
+	.rotate {
+		transform: rotate(45deg);
+
+		@media (min-width: $screen-lg-min) {
+	 		transform: rotate(135deg)
+	 	}
 	}
 
 	#subjectsForm {

@@ -194,9 +194,10 @@ $(document).ready(function() {
 		                data-type="subject"
 		              ><img src="../common/img/x.svg" class="delete-img" alt="delete-x"></div>
 		              <div class="my-list-subject-name">${subjectName}</div>
+		              <div class="blue-arrow"></div>
 		            </div>
 
-		            <div class="my-list-options-wrapper">
+		            <div class="my-list-options-wrapper d-none">
 		            	
 		            	<!-- DYNAMIC CONTENT -->
 
