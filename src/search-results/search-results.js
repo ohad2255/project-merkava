@@ -38,6 +38,11 @@ $(document).ready(function() {
 		$(this).find($('.filter-arrow')).toggleClass('rotate');
 	});
 
+	$('.filter-mobile-wrapper').click(function() {
+		$('.search-results-filter-container').toggleClass('d-none');
+		$('.search-results-content').toggleClass('d-none');
+	});
+
 	// if ($('#main-checkbox').prop("checked")) {
 	// 	var subCheckboxs = $('.sub-checkbox'); 
 	// 	var checked = $(this).is(':checked');
@@ -74,4 +79,5 @@ $(document).ready(function() {
 	// 	   $("#checkallusers").removeAttr("checked");
 	// 	}
 	// });
+	//$('.datepicker').datepicker();
 });
