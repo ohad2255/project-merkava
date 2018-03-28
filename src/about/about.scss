@@ -28,6 +28,7 @@
 		@media (min-width: $screen-lg-min) {
 			background-image: url('../common/img/back-top-lg.svg');
 			height: auto;
+			height: 308px;
 		}
 
 		@media (max-width: 340px) {
@@ -56,7 +57,7 @@
 		}
 
 		.top-sec-container {
-			max-width: 1222px; 
+			max-width: 1262px; 
 			width: 100%;
 			padding: 0;
 
@@ -68,7 +69,7 @@
 				margin:0 34px 0 0;	
 
 				@media (min-width: $screen-lg-min) {
-					margin:31px 20px 0 0;
+					margin: 31px 0 0 0;
 				}
 
 				.breadcrumb {
@@ -96,7 +97,7 @@
 				.about-p-wrapper {
 
 					@media (min-width: $screen-lg-min) {
-						margin:29px 20px 116px 0;
+						margin:29px 0 116px 0;
 					}	
 				}	
 
@@ -137,7 +138,7 @@
 
 					@media (min-width: $screen-lg-min) {
 						max-width: 1222px;
-						font-size: 3rem;
+						font-size: 3.2rem;
 						line-height: normal;
 						letter-spacing: normal;
 					}	
@@ -162,7 +163,7 @@
 
 				@media (min-width: $screen-lg-min) {
 					max-width: 1222px;
-					padding: 0 10px;
+					padding: 0;
 				}	
 			}
 

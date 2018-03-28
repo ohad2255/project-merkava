@@ -2,7 +2,6 @@ require('../common/common');
 require('jquery-animate-scroll');
 
 $(document).ready(function() {
-	debugger;
 	// All Elements in the UI
 	var $elements = {
 		mepharsemim: $(".mepharsemim"),
@@ -443,7 +442,6 @@ $(document).ready(function() {
 	}
 
 	function toggleMyList() {
-		debugger;
 		$(".my-list").toggleClass("d-block");
 		$elements.closeListButtonWrapper.addClass("d-none");
 		$elements.mainBodyWapper.toggleClass("d-none");

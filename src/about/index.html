@@ -6,19 +6,28 @@
       <title>אודות</title>
       ${require("../common/common-stylesheet.html")}
   </head>
+
+  <!-- body -->
   <body class="about">
+
+    <!-- mobile-menu -->
     <div class="main-menu-mobile-container d-lg-none" aria-labelledby="mainMobileNavTrigger">
       <div class="main-menu-mobile-wrapper"></div>
       ${require("../common/top-navigation/top-navigation.html")}
     </div>
     <div class="main-content-wrapper">
+
+      <!-- header -->
       ${require("../common/header/header.html")}
+
+      <!-- top-section -->
       <section class="about-top-sec d-flex flex-column align-items-center">
         <div class="right-line"></div>
         <div class="top-sec-container custom-container d-flex flex-column justify-content-center">
             <div class="about-breadcrumb-wrapper d-none d-lg-block">
               <nav class="breadcrumb d-flex align-items-center justify-content-start">
-                <a class="breadcrumb-item breadcrumb-item-1 d-flex align-items-center justify-content-center" href="#">אודות <span>››</span></a>
+                <a class="breadcrumb-item breadcrumb-item-1 d-flex align-items-center justify-content-center" href="../home/index.html">מינהל הרכש הממשלתי<span>››</span></a>
+                <a class="breadcrumb-item breadcrumb-item-1 d-flex align-items-center justify-content-center" href="#">אודות <!-- <span>››</span> --></a>
               </nav>
             </div>
             <div class="about-p-sec d-flex align-items-start">
@@ -34,6 +43,8 @@
             </div>
         </div>
       </section>
+
+      <!-- main-contant -->
       <section class="about-body d-flex flex-column align-items-center">
         <div class="about-body-wrapper custom-container">
             <div class="about-body-p-wrapper">
@@ -132,6 +143,8 @@
             </div>
         </div>
       </section>
+
+      <!-- footer -->
       <footer class="about-footer d-flex justify-content-center">
           ${require("../common/footer/footer.html")}
       </footer>

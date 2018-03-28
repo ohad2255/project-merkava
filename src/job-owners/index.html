@@ -7,20 +7,28 @@
       <title>בעלי תפקידים</title>
       ${require("../common/common-stylesheet.html")}
   </head>
+
+  <!-- body -->
   <body class="job-owners">
+
+    <!-- mobile-menu -->
     <div class="main-menu-mobile-container d-lg-none" aria-labelledby="mainMobileNavTrigger">
       <div class="main-menu-mobile-wrapper"></div>
       ${require("../common/top-navigation/top-navigation.html")}
     </div>
     <div class="main-content-wrapper">
+
+      <!-- header -->
       ${require("../common/header/header.html")}
+
+      <!-- top-section -->
       <section class="job-owners-top-sec d-flex flex-column align-items-center">
         <div class="right-line"></div>
         <div class="top-sec-container custom-container d-flex flex-column justify-content-center">
             <div class="job-owners-breadcrumb-wrapper d-none d-lg-block">
               <nav class="breadcrumb d-flex align-items-center justify-content-start">
                 <a class="breadcrumb-item breadcrumb-item-1 d-flex align-items-center justify-content-center" href="../home/index.html">מנהל הרכש הממשלתי <span>››</span></a>
-                <a class="breadcrumb-item breadcrumb-item-2 d-flex align-items-center justify-content-center" href="../about/index.html">אודות <span>››</span></a>
+                <a class="breadcrumb-item breadcrumb-item-2 d-flex align-items-center justify-content-center" href="../about/index.html">אודות</a>
               </nav>
             </div>
             <div class="job-owners-p-sec d-flex align-items-start">
@@ -35,6 +43,8 @@
             </div>
         </div>
       </section>
+
+      <!-- main-contant -->
       <section class="job-owners-body d-flex flex-column align-items-center">
         <div class="job-owners-body-wrapper custom-container">
           <div class="table-wrapper management-table-wrapper">
@@ -297,6 +307,8 @@
           </div>
         </div>
       </section>
+
+      <!-- footer -->
       <footer class="job-owners-footer d-flex justify-content-center">
           ${require("../common/footer/footer.html")}
       </footer>

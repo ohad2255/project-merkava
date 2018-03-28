@@ -7,24 +7,34 @@
       <title>מילון מונחים</title>
       ${require("../common/common-stylesheet.html")}
   </head>
+
+  <!-- body -->
   <body class="dictionary">
+
+    <!-- mobile-menu -->
     <div class="main-menu-mobile-container d-lg-none" aria-labelledby="mainMobileNavTrigger">
       <div class="main-menu-mobile-wrapper"></div>
       ${require("../common/top-navigation/top-navigation.html")}
     </div>
     <div class="main-content-wrapper">
+
+      <!-- header -->
       ${require("../common/header/header.html")}
-      <section class="dictionary-top-sec d-flex flex-column align-items-center">
+
+      <!-- top-section -->
+      <section class="dictionary-top-sec d-flex  align-items-center">
         <div class="right-line"></div>
-        <div class="top-sec-container custom-container d-flex flex-column justify-content-start">
-            <div class="dictionary-breadcrumb-wrapper d-none d-lg-block">
-              <nav class="breadcrumb d-flex align-items-center justify-content-start">
-                <a class="breadcrumb-item breadcrumb-item-1 d-flex align-items-center justify-content-center" href="../home/index.html">מנהל הרכש הממשלתי <span>››</span></a>
-                <a class="breadcrumb-item breadcrumb-item-1 d-flex align-items-center justify-content-center" href="#">מידע מקצועי <span>››</span></a>
-                <a class="breadcrumb-item breadcrumb-item-2 d-flex align-items-center justify-content-center" href="#">מילון מונחים <span>››</span></a>
-              </nav>
-            </div>
-            <div class="dictionary-p-sec d-flex align-items-start">
+        <div class="d-flex align-items-center custom-container mx-auto">
+          <img src="../common/img/dictionary-icon.svg" class="dictionary-top-icon" alt="dictionary-icon">
+          <div class="top-sec-container  d-flex flex-column justify-content-start">
+              <div class="dictionary-breadcrumb-wrapper d-none d-lg-block">
+                <nav class="breadcrumb d-flex align-items-center justify-content-start">
+                  <a class="breadcrumb-item breadcrumb-item-1 d-flex align-items-center justify-content-center" href="../home/index.html">מנהל הרכש הממשלתי <span>››</span></a>
+                  <a class="breadcrumb-item breadcrumb-item-1 d-flex align-items-center justify-content-center" href="#">מידע מקצועי <span>››</span></a>
+                  <a class="breadcrumb-item breadcrumb-item-2 d-flex align-items-center justify-content-center" href="#">מילון מונחים <!-- <span>››</span> --></a>
+                </nav>
+              </div>
+              <div class="dictionary-p-sec d-flex align-items-start">
                 <div class="dictionary-p-container d-flex flex-column flex-lg-row align-items-start align-items-lg-center">
                     <div class="dictionary-p-wrapper d-flex flex-column">
                       <h1 class="dictionary-head">
@@ -34,14 +44,16 @@
                           מנגנון שאלות ותשובות שלפניכם, מאפשר נגישות גבוהה לעובדי מינהל הרכש הממשלתי לצורך הפצה של מידע רלוונטי והעלאת סוגיות שונות ע"י המשתתפים.  
                       </p>
                     </div>
-                    <img src="../common/img/dictionary-icon.svg" class="dictionary-top-icon" alt="dictionary-icon">
                 </div>
-            </div>
-            <div class="alphabet-lg d-none d-lg-block">
-                ${require("dictionary-alphabet-nav.html")} 
-            </div>
+              </div>
+              <div class="alphabet-lg d-none d-lg-block">
+                  ${require("dictionary-alphabet-nav.html")} 
+              </div>
+          </div>
         </div>
       </section>
+
+      <!-- main-contant -->
       <section class="dictionary-body d-flex flex-lg-column align-items-start align-items-lg-center  custom-container">
         <div class="alphabet-mobile d-lg-none">
             ${require("dictionary-alphabet-nav.html")} 
@@ -1747,32 +1759,13 @@
           <button class="collapse-button collapse-button-close">&nbspסגור הכל</button>
         </div>
       </section>
+
+      <!-- footer -->
       <footer class="dictionary-footer d-flex justify-content-center">
           ${require("../common/footer/footer.html")}
       </footer>
     </div>
     ${require("../common/common.html")}
-    <!-- <script id="card-template" type="text/x-handlebars-template">
-      <div class="card expression">
-        <a class="collapsed d-flex flex-column collapsed-p panel-collapse" data-parent="#accordion" data-toggle="collapse" data-target="#collapse{{index}}"
-          href="#collapse{{index}}"
-          aria-expanded="false"
-          aria-controls="collapse{{index}}"
-        >
-          <div class="card-header d-flex align-items-center align-items-lg-center" role="tab">
-            <span class="closed">+</span>
-            <span class="open"></span>
-            <div class="expression-wrapper d-lg-flex flex-column justify-content-center">
-                <p class="expression-p">​{{expression}}</p>
-            </div>
-            <img src="../common/img/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
-          </div>
-        </a>
-        <div id="collapse{{index}}" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
-          <div class="card-block answer">{{content}}</div>
-        </div>
-      </div>
-    </script> -->
   </body>
 </html>
 

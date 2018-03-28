@@ -6,20 +6,28 @@
       <title>מכרזים</title>
       ${require("../common/common-stylesheet.html")}
   </head>
+
+  <!-- body -->
   <body class="bids">
+
+    <!-- mobile-menu -->
     <div class="main-menu-mobile-container d-lg-none" aria-labelledby="mainMobileNavTrigger">
       <div class="main-menu-mobile-wrapper"></div>
       ${require("../common/top-navigation/top-navigation.html")}
     </div>
     <div class="main-content-wrapper">
+
+      <!-- header -->
       ${require("../common/header/header.html")}
+
+      <!-- top-section -->
       <section class="bids-top-sec d-flex flex-column align-items-center">
         <div class="right-line"></div>
         <div class="top-sec-container custom-container d-flex flex-column justify-content-center">
             <div class="bids-breadcrumb-wrapper d-none d-lg-block">
               <nav class="breadcrumb d-flex align-items-center justify-content-start">
                 <a class="breadcrumb-item breadcrumb-item-1 d-flex align-items-center justify-content-center" href="../home/index.html">מינהל הרכש הממשלתי<span>››</span></a>
-                <a class="breadcrumb-item breadcrumb-item-1 d-flex align-items-center justify-content-center" href="#">מכרזים משרדיים<span>››</span></a>
+                <a class="breadcrumb-item breadcrumb-item-1 d-flex align-items-center justify-content-center" href="#">מכרזים משרדיים</a>
               </nav>
             </div>
             <div class="bids-head-wrapper d-flex">
@@ -32,6 +40,8 @@
               </div>
             </div>
       </section>
+
+      <!-- main-contant -->
       <section class="bids-body d-flex flex-column align-items-center">
         <div class="bids-body-wrapper custom-container">
           <div class="bids-body-top-sec d-lg-flex">
@@ -884,6 +894,8 @@
           </div>
         </div>
       </div>
+
+      <!-- footer -->
       <footer class="bids-footer d-flex justify-content-center">
           ${require("../common/footer/footer.html")}
       </footer>

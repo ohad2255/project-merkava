@@ -8,52 +8,52 @@
       ${require("../common/common-stylesheet.html")}
   </head>
 
+  <!-- body -->
   <body class="mepharsemim-container" data-spy="scroll" data-target=".navbar" data-offset="50">
-    
+
+    <!-- mobile-menu -->
     <div class="main-menu-mobile-container d-lg-none" aria-labelledby="mainMobileNavTrigger">
       <div class="main-menu-mobile-wrapper"></div>
       ${require("../common/top-navigation/top-navigation.html")}
     </div>
     
     <div class="main-content-wrapper">
-      
+
+      <!-- header -->
       ${require("../common/header/header.html")}
 
-      
+      <!-- main-contant -->
       <section class="mepharsemim-body d-flex flex-column align-items-center">
 
-          <!-- top-section -->
-
-          <section class="mepharsemim-top-sec d-flex flex-column align-items-center">
-            <div class="top-sec-container d-flex flex-column justify-content-start">
-              <div class="mepharsemim-breadcrumb-wrapper">
-                <nav class="breadcrumb d-flex align-items-center justify-content-start">
-                  <a class="breadcrumb-item breadcrumb-item-1 d-flex align-items-center justify-content-center" href="../profile/index.html"">לעדכון פרטים <span>››</span></a>
-                </nav>
-              </div>
-              <div class="mepharsemim-p-sec d-flex flex-column align-items-start align-items-lg-center flex-lg-row">
-                <div class="mepharsemim-p-wrapper d-flex flex-column">
-                  <h1 class="mepharsemim-head">
-                      שלום שמעון
-                  </h1>
-                  <p class="mepharsemim-top-p">
-                      הגעת לאיזור האישי שלך בו תוכל להגדיר את כל תחומי העניין עליהם תרצה לקבל עדכונים במייל. צפה/י בלשונית - נושאים ו/או מפרסמים ובחר מתוך הרשימות.   
-                  </p>
-                </div>
-                <img src="../common/img/mepharsemim-icon.svg" class="mepharsemim-top-icon d-lg-none" alt="mepharsemim-icon">
-                <img src="../common/img/mepharsemim-top-icon-lg.svg" class="mepharsemim-top-icon-lg d-none d-lg-inline-block" alt="mepharsemim-icon">
-                
-              </div>
+        <!-- top-section -->
+        <section class="mepharsemim-top-sec d-flex flex-column align-items-center">
+          <div class="top-sec-container d-flex flex-column justify-content-start">
+            <div class="mepharsemim-breadcrumb-wrapper">
+              <nav class="breadcrumb d-flex align-items-center justify-content-start">
+                <a class="breadcrumb-item breadcrumb-item-1 d-flex align-items-center justify-content-center" href="../profile/index.html"">לעדכון פרטים <span>››</span></a>
+              </nav>
             </div>
-
-          </section>
+            <div class="mepharsemim-p-sec d-flex flex-column align-items-start align-items-lg-center flex-lg-row">
+              <div class="mepharsemim-p-wrapper d-flex flex-column">
+                <h1 class="mepharsemim-head">
+                    שלום שמעון
+                </h1>
+                <p class="mepharsemim-top-p">
+                    הגעת לאיזור האישי שלך בו תוכל להגדיר את כל תחומי העניין עליהם תרצה לקבל עדכונים במייל. צפה/י בלשונית - נושאים ו/או מפרסמים ובחר מתוך הרשימות.   
+                </p>
+              </div>
+              <img src="../common/img/mepharsemim-icon.svg" class="mepharsemim-top-icon d-lg-none" alt="mepharsemim-icon">
+              <img src="../common/img/mepharsemim-top-icon-lg.svg" class="mepharsemim-top-icon-lg d-none d-lg-inline-block" alt="mepharsemim-icon">
+              
+            </div>
+          </div>
+        </section>
 
         <!-- my-list-section  -->
         <div class="d-lg-flex justify-content-between mepharsemim-main-body-wrapper w-100">
           <div class="mepharsemim-body-top">
             
             <!-- my-list-wrapper -->
-
             <div class="my-list-wrapper">
               
               <!-- my-list-toggle -->
@@ -379,6 +379,8 @@
         </div>
       </section>
       <button class="btn btn-primary save-list-button save-list-button-lg disabled d-none d-lg-block" type="submit">המשך</button>
+
+      <!-- footer -->
       <footer class="mepharsemim-footer d-none d-lg-flex justify-content-center align-items-center fixed-bottom">
           ${require("../common/footer/footer.html")}
       </footer>

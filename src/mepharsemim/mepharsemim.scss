@@ -158,7 +158,6 @@
 					padding: 0 0 0 12px;
 
 					@media (min-width: $screen-lg-min) {
-						font-size: 1.5rem;
 						line-height: normal;
 						letter-spacing: 0.5px;
 						padding: 0 0 0 30px;
@@ -437,6 +436,10 @@
 					//margin: 0 0 0 0;
 				}
 
+				.my-list-mepharsemim-container {
+					//margin: 0 0 -7px 0;
+				}
+
 				.my-list-mepharsemim-wrapper, .my-list-subjects-wrapper {
 					height: 67px;
 					object-fit: contain;
@@ -464,10 +467,18 @@
 				.my-list-subjects-list {
 					display: none;
 
+					@media (min-width: $screen-lg-min) {
+						margin: 0 0 -3px 0;
+					}
+
 					.my-list-options-wrapper {
 						// @media (min-width: $screen-lg-min) {
 						// 	display: none;
 						// }
+					}
+
+					.my-list-option-wrapper:last-child {
+						margin-bottom: 0;
 					}
 
 					.my-list-subject-wrapper,  {
@@ -534,6 +545,7 @@
 
 				.my-list-mepharsemim-list {
 					display: none;
+					margin: 0 0 -7px 0;
 
 					.my-list-mepharsem-wrapper {
 						padding: 0 21px;
@@ -561,6 +573,13 @@
 					}
 				}
 
+				.my-list-mepharsem-wrapper:last-child {
+
+					.my-list-mepharsem-wrapper {
+						margin: 0;
+					}
+				}
+
 				.my-list-mepharsemim-title, .my-list-subjects-title {
 					font-size: 3.2rem;
 					font-weight: normal;
@@ -578,6 +597,12 @@
 
 				.my-list-subjects-list {
 					//position: absolute;
+
+
+				}
+
+				.my-list-subjects-list:last-child {
+					margin: 0;
 				}
 			}
 

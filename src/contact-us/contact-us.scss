@@ -19,9 +19,11 @@
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
 		background-repeat: no-repeat;
 		background-size: contain;
+		height: 205px;
 
 		@media (min-width: $screen-lg-min) {
             background-image: url('../common/img/q-and-a-background-pic.png');
+            min-height: 308px;
        	}
 
        	.right-line {
@@ -69,7 +71,8 @@
 
 			@media (min-width: $screen-lg-min) {
                 padding: 80px 20px;
-    			max-width: 1344px;
+    			//max-width: 1344px;
+    			max-width: 1262px;
            	}
 
 
@@ -128,8 +131,8 @@
   						height: 51px;
 
 						@media (min-width: $screen-lg-min) {
-		                    width: 110px;
-							height: 115px;
+		                    width: 111px;
+							height: 116px;
 							object-fit: contain;
 		               	}
 					}
@@ -153,7 +156,7 @@
 
 				.contact-us-p {
 					max-width: 1070px;
-					font-size: 1.8rem;
+					font-size: 2rem;
 					font-weight: normal;
 					font-style: normal;
 					font-stretch: normal;
@@ -165,7 +168,7 @@
 					margin:0 0 20px 0;
 
 					@media (min-width: $screen-lg-min) {
-	                    font-size: 3rem;
+	                    font-size: 3.2rem;
 	                    margin:0 0 10px 0;
 	                    color: $cobalt;
 	               	}
@@ -560,7 +563,7 @@
 			.info-wrapper {
 				width: 270px;
 				height: 119px;
-				font-size: 16px;
+				font-size: 1.6rem;
 				font-weight: normal;
 				font-style: normal;
 				font-stretch: normal;
@@ -689,7 +692,7 @@
 			}
 
 			h4 {
-				font-size: 3rem;
+				font-size: 3.2rem;
 				font-weight: 500;
 				font-style: normal;
 				font-stretch: normal;

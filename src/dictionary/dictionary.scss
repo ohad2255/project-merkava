@@ -31,11 +31,13 @@
 		background-size: contain;
 		margin: 0 0 5px 0;
 		padding:0 0 28px 0;
+		height: 205px;
 
 		@media (min-width: $screen-lg-min) {
-			height: auto;
 			margin: 0 0 66px 0;
-			padding:0 100px 0 0;
+			padding:0 0 18px 0;
+			min-height: 308px;
+			height: auto;
 		}
 
 		.right-line {
@@ -53,14 +55,18 @@
 		}
 
 		.top-sec-container {
-			max-width: 1302px; 
+			max-width: 1262px; 
 			width: 100%;
 			padding: 0;
 			height: auto;
 			position: relative;
 
+			// @media (min-width: $screen-md-min) {
+			// 	padding: 31px 20px 55px 30px;
+			// }
+
 			@media (min-width: $screen-lg-min) {
-				padding: 31px 111px 55px 30px;
+				padding: 31px 24px 55px 30px;
 			}
 
 			.dictionary-breadcrumb-wrapper {
@@ -85,11 +91,11 @@
 			}
 
 			.dictionary-p-sec {
-				margin: 20px 0 0 23px;
+				margin: 20px 0;
 				padding: 0 20px;
 
 				@media (min-width: $screen-lg-min) {
-					margin: 0 0 23px 0;
+					margin: 0 0 20px 0;
 					padding: 0;
 				}	
 
@@ -120,7 +126,7 @@
 						width: 116px;
   						height: 116px;
 						margin: 0;
-						position: absolute;
+						//position: absolute;
 						top: 0;  
 					    right: -150px;
 					    top: 10px;
@@ -176,11 +182,11 @@
 			.alphabet-lg {
 				position: absolute;
 				width: 100%;
-				max-width: 1045px;
-				margin: 0 0 18px 0;
+				max-width: 935px;
+				margin: 0;
 				bottom: 0;
 				right: 0;
-				padding: 0 111px 0;
+				padding: 0 25px 0;
 
 				ul {
 					width: 100%;

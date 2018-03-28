@@ -7,20 +7,28 @@
       <title>רכש ירוק</title>
       ${require("../common/common-stylesheet.html")}
   </head>
+
+  <!-- body -->
   <body class="green-r">
+
+    <!-- mobile-menu -->
     <div class="main-menu-mobile-container d-lg-none" aria-labelledby="mainMobileNavTrigger">
       <div class="main-menu-mobile-wrapper"></div>
       ${require("../common/top-navigation/top-navigation.html")}
     </div>
     <div class="main-content-wrapper">
+
+      <!-- header -->
       ${require("../common/header/header.html")}
+
+      <!-- top-section -->
       <section class="green-r-top-sec d-flex flex-column align-items-center">
         <div class="right-line"></div>
         <div class="top-sec-container custom-container d-flex flex-column justify-content-start">
             <div class="green-r-breadcrumb-wrapper d-none d-lg-block">
                 <nav class="breadcrumb d-flex align-items-center justify-content-start">
                   <a class="breadcrumb-item breadcrumb-item-1 d-flex align-items-center justify-content-center" href="#">מידע מיקצועי <span>››</span></a>
-                  <a class="breadcrumb-item breadcrumb-item-2 d-flex align-items-center justify-content-center" href="#">רכש ירוק <span>››</span></a>
+                  <a class="breadcrumb-item breadcrumb-item-2 d-flex align-items-center justify-content-center" href="#">רכש ירוק</a>
                 </nav>
             </div>
             <div class="green-r-p-sec d-flex align-items-start">
@@ -39,6 +47,8 @@
             </div>
         </div>
       </section>
+
+      <!-- main-contant -->
       <section class="green-r-body d-flex flex-column align-items-center">
         <div class="green-r-body-wrapper custom-container">
             <div class="green-r-body-p-wrapper">
@@ -118,6 +128,8 @@
             </div>
         </div>
       </section>
+
+      <!-- footer -->
       <footer class="green-r-footer d-flex justify-content-center">
           ${require("../common/footer/footer.html")}
       </footer>

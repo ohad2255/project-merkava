@@ -7,15 +7,23 @@
     <title>צור קשר</title>
     ${require("../common/common-stylesheet.html")}
   </head>
+
+  <!-- body -->
   <body class="contact-us">
+
+    <!-- mobile-menu -->
     <div class="main-menu-mobile-container d-lg-none" aria-labelledby="mainMobileNavTrigger">
       <div class="main-menu-mobile-wrapper"></div>
       ${require("../common/top-navigation/top-navigation.html")}
     </div>
     <div class="main-content-wrapper">
+
+      <!-- header -->
       ${require("../common/header/header.html")} 
+
+      <!-- top-section -->
       <section class="contact-us-top-sec d-flex flex-column align-items-center">
-      <div class="right-line"></div>
+        <div class="right-line"></div>
         <div class="top-sec-container custom-container d-flex flex-column justify-content-lg-start justify-content-center">
           <div class="contact-us-p-sec flex-column flex-lg-row d-flex align-items-start">
             <div class="contact-us-icon-wrapper">
@@ -34,6 +42,8 @@
           </div>
         </div>
       </section>
+
+      <!-- main-contant -->
       <section class="contact-us-body d-flex flex-column align-items-center">
         <div class="contact-us-body-wrapper custom-container d-flex flex-column flex-lg-row justify-content-between">
           <form class="contact-us-form-wrapper" id="registration-Form" data-parsley-validate>
@@ -107,10 +117,14 @@
           </div>
         </div>
       </section>
+
+      <!-- footer -->
       <footer class="contact-us-footer d-flex justify-content-center">
           ${require("../common/footer/footer.html")}
       </footer>
     </div>
+
+    <!-- error message -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
         <div class="modal-content">

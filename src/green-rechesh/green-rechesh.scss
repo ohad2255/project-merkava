@@ -33,6 +33,7 @@
 		@media (min-width: $screen-lg-min) {
 			height: auto;
 			background-size: contain;
+			min-height: 308px;
 		}
 
 		.right-line {
@@ -51,14 +52,14 @@
 		}
 
 		.top-sec-container {
-			max-width: 1322px;
+			max-width: 1262px;
 			width: 100%;
 			padding: 0;
 			height: auto;
 
 			@media (min-width: $screen-lg-min) {
 				height: 297px;
-				padding: 29px 30px 0;
+				padding: 29px 20px 0;
 			}
 
 			.green-r-breadcrumb-wrapper {	
@@ -145,7 +146,7 @@
 
 					@media (min-width: $screen-lg-min) {
 						max-width: 1222px;
-						font-size: 3rem;
+						font-size: 3.2rem;
 						line-height: normal;
 						letter-spacing: normal;
 					}	
@@ -248,7 +249,7 @@
 					}
 
 					p, .card-block {
-						font-size: 1.5rem;
+						font-size: 1.6rem;
 						font-weight: normal;
 						font-style: normal;
 						font-stretch: normal;
@@ -260,7 +261,6 @@
 
 						@media (min-width: $screen-lg-min) {
 							margin:0 91.5px 0 120px;
-							font-size: 1.6rem;
 							line-height: 1.75;
 						}	
 					}
