@@ -8,9 +8,12 @@
 		background-color: $cobalt;
 		height: auto;
 		padding: 0;
+		min-height: 205px;
+        height: auto;
 
 		@media (min-width: $screen-lg-min) {
-            height: 308px;
+            min-height: 308px;
+            //height: auto;
        	}
 
 		.background-img-top-sec {
@@ -42,13 +45,12 @@
 			z-index: 2;
 
 			@media (min-width: $screen-lg-min) {
-                padding: 0 25px;
-                max-width: 1222px; 
+                padding: 0 20px;
+                max-width: 1262px; 
            	}
 
            	@media (min-width: $screen-xl-min) {
-                padding: 0 10px;
-                max-width: 1222px; 
+                //padding: 0 20px;
            	}
 
 			.profile-breadcrumb-wrapper {
@@ -60,7 +62,7 @@
 				top: 16px;
 
 				@media (min-width: $screen-lg-min) {
-                    margin: 25px 108px 21px 0;
+                    margin: 32px 108px 29px 0;
                     font-size: 1.6rem;
                     position: static;
                     width: 100%;
@@ -68,17 +70,13 @@
 
                	.breadcrumb {
 					margin: 0;
+
+					span {
+						top: 0;
+					}
 				}
 
-               	.breadcrumb-item-1 {
-               		display: none;
-
-               		@media (min-width: $screen-lg-min) {
-	                    display: block;
-	               	}
-               	}
-
-               	.breadcrumb-item-2 {
+               	.breadcrumb-item-1, .breadcrumb-item-2 {
                		display: none;
 
                		@media (min-width: $screen-lg-min) {

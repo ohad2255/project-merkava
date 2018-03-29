@@ -7,21 +7,31 @@
     <title>עידכון פרטים</title>
     ${require("../common/common-stylesheet.html")}
   </head>
+
+  <!-- body -->
   <body class="profile">
+
+    <!-- mobile-menu -->
     <div class="main-menu-mobile-container d-lg-none" aria-labelledby="mainMobileNavTrigger">
       <div class="main-menu-mobile-wrapper"></div>
       ${require("../common/top-navigation/top-navigation.html")}
     </div>
     <div class="main-content-wrapper">
+
+      <!-- header -->
       ${require("../common/header/header.html")} 
+
+      <!-- top-section -->
       <section class="profile-top-sec d-flex flex-column align-items-center">
        <div class="background-img-top-sec"></div>
         <div class="top-sec-container custom-container d-flex flex-column justify-content-lg-start justify-content-center">
+
+          <!-- breadcrumbs -->
           <div class="profile-breadcrumb-wrapper d-none d-lg-block">
             <nav class="breadcrumb d-flex align-items-center justify-content-start">
               <a class="breadcrumb-item breadcrumb-item-1 d-flex align-items-center justify-content-center" href="../home/index.html">מנהל הרכש הממשלתי <span>››</span></a>
               <a class="breadcrumb-item breadcrumb-item-2 d-flex align-items-center justify-content-center" href="#">דיוור אישי <span>››</span></a>
-              <a class="breadcrumb-item breadcrumb-item-3 d-flex align-items-center justify-content-center" href="#">עדכון פרטים <span>››</span></a>
+              <a class="breadcrumb-item breadcrumb-item-3 d-flex align-items-center justify-content-center" href="#">עדכון פרטים </a>
             </nav>
           </div>
           <div class="profile-p-sec flex-column flex-lg-row d-flex align-items-start">
@@ -41,17 +51,27 @@
           </div>
         </div>
       </section>
+
+      <!-- main-contant -->
       <section class="profile-body d-flex flex-column align-items-center">
         <div class="profile-body-wrapper custom-container">
+
+          <!-- profile form -->
           <form class="profile-form-wrapper" id="registration-Form" data-parsley-validate>
             <div class="d-flex flex-column flex-lg-row name-lng-wrapper">
               <div class="form-group name">
+
+                <!-- name input -->
                 <input class="form-control" type="text" placeholder="שם פרטי ומשפחה" id="nameInputProfile" name="name" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty>
                 <label class="sr-only" for="nameInputProfile"></label>
               </div>
               <div class="form-group language">
                 <div class="blue-arrow"></div>
+
+                <!-- language select -->
                 <select class="form-control language-select" id="languageReg" placeholder= "שפה" required data-parsley-error-message="שדה חובה">
+
+                  <!-- language options -->
                   <option value="0" disabled selected hidden>שפה</option>
                   <option>עברית</option>
                   <option>אנגלית</option>
@@ -60,32 +80,48 @@
             </div> 
             <div class="form-group email-wrapper d-flex flex-column flex-lg-row">
               <div class="form-group email">
+
+                <!-- email input -->
                 <input type="email" class="form-control" id="inputEmailProfile" class="form-control email-input" placeholder="דוא״ל" name="email" data-required="" data-parsley-validate-if-empty data-parsley-error-message="אימייל חייב להכיל @">
                 <label class="sr-only" for="inputEmailProfile"></label>
               </div>
               <div class="form-group email-confirm">
+
+                <!-- email confirm input -->
                 <input type="email" class="form-control" id="inputEmailConfirmProfile" data-match="inputEmailReg" data-parsley-error-message="דוא״ל לא תואם" placeholder="אימות דוא״ל" data-parsley-equalto="#inputEmailProfile" required>
                 <label class="sr-only" for="inputEmailConfirmProfile"></label>
               </div>
             </div>    
             <div class="form-group password-wrapper d-flex flex-column flex-lg-row">
               <div class="form-group password form-group-password">
+
+                <!-- show password button -->
                 <div id="showPassword" role="button" tabindex="0">הצג סיסמא</div>
+
+                <!-- password input -->
                 <input type="password" id="inputPasswordProfile" type="password" pattern="(?=.*\d)(?=.*[A-Z]).{8,}" class="form-control password-input" id="InputPasswordSignIn" placeholder="סיסמא" data-toggle="password" data-required="" data-parsley-validate-if-empty data-parsley-error-message="סיסמא צריכה להכיל 8 תווים לפחות, לכלול מספרים, תווים ולפחות אות אחת גדולה">
                 <label class="sr-only" for="inputPasswordProfile"></label>
               </div>
               <div class="form-group password-confirm">
+
+                <!-- show password confirm button -->
                 <div id="showPasswordConfirm" role="button" tabindex="0">הצג סיסמא</div>
+                
+                <!-- show password confirm -->
                 <input type="password" class="form-control" id="inputPasswordConfirmProfile"  placeholder="אימות סיסמא"  data-parsley-error-message="סיסמא אינה תואמת"  data-parsley-equalto="#inputPasswordProfile" required>
                 <label class="sr-only" for="inputPasswordConfirmProfile"></label>
               </div>
             </div>
             <div class="save-details-button d-flex justify-content-end">
+
+              <!-- save details button -->
               <button class="btn btn-primary" type="submit">שמור</button>
             </div>
           </form>
         </div>
       </section>
+
+      <!-- footer -->
       <footer class="profile-footer d-flex justify-content-center">
           ${require("../common/footer/footer.html")}
       </footer>
