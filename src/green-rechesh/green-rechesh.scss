@@ -39,15 +39,14 @@
 		.right-line {
 			position: absolute;
 			right: 0;
-			top: -4px;
+			top: 0;
 			width: 5px;
-			height: 104%;
+			height: 100%;
 			border-radius: 4px;
 			background-color: $rechesh-green;
 
 			@media (min-width: $screen-lg-min) {
 				width: 11px;
-				top: -7px;
 			}
 		}
 
