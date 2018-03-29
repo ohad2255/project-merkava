@@ -46,13 +46,19 @@
       <!-- main-contant -->
       <section class="contact-us-body d-flex flex-column align-items-center">
         <div class="contact-us-body-wrapper custom-container d-flex flex-column flex-lg-row justify-content-between">
+
+          <!-- form section -->
           <form class="contact-us-form-wrapper" id="registration-Form" data-parsley-validate>
             <div class="d-flex flex-column flex-lg-row name-email-wrapper">
+
+              <!-- name input -->
               <div class="form-group name">
                 <input id="nameInputContactUs" class="form-control" type="text" placeholder="שם פרטי ומשפחה"  name="name" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty>
                 <label class="sr-only" for="nameInputContactUs"></label>
                 <div class="input-bullet"></div>
               </div>
+
+              <!-- mail input -->
               <div class="form-group email">
                 <input type="email" class="form-control" id="inputEmail" placeholder="דוא״ל"   id="inputEmailContactUs" class="form-control email-input" name="email" data-required="" data-parsley-validate-if-empty data-parsley-error-message="אימייל חייב להכיל @">
                 <label class="sr-only" for="inputEmailContactUs"></label>
@@ -60,26 +66,37 @@
               </div>
             </div> 
             <div class="form-group subject-phone-wrapper d-flex flex-column flex-lg-row">
+
+              <!-- phone number input -->
               <div class="form-group phone-number">
                 <input type="tel" class="form-control" id="phoneNumber" placeholder="טלפון" data-parsley-error-message="מספר לא תקין" minlength="9" maxlength="10" required>
                 <label class="sr-only" for="phoneNumber"></label>
               </div>
+
+              <!-- subject input -->
               <div class="form-group subject">
                 <div class="blue-arrow"></div>
+
+                <!-- subject select -->
                 <select class="form-control subject-select" id="subjectSelect" placeholder= "נושא הפנייה" data-parsley-error-message="שדה חובה" required>
+
+                  <!-- subjects options -->
                   <option value="" disabled selected hidden class="placeholder-subject-select">נושא הפנייה</option>
                   <option class="subject-select-option-1 subject-select-option">נושא-1</option>
                   <option class="subject-select-option-2 subject-select-option">נושא-2</option>
                 </select>
                 <div class="input-bullet"></div>
               </div>
-              
             </div> 
+
+            <!-- subject textarea input -->
             <div class="form-group subject-textarea">
               <textarea class="form-control" id="subjectTextarea" placeholder="פירוט הפנייה" required data-parsley-error-message="פירוט פנייה נדרש"></textarea>
               <label class="sr-only" for="subjectTextarea"></label>
               <div class="input-bullet"></div>
             </div>
+
+            <!-- subject textarea input -->
             <div class="upload-file-wrapper form-group d-flex d-lg-block align-items-center">
               <div class="file-input-wrapper">
                 <small class="d-none d-lg-block">להעלת קובץ מצורף גרור לכאן או לחץ:</small>
@@ -95,13 +112,20 @@
                 </div>
               </div>
             </div>
+
+            <!-- recaptcha -->
             <div class="recaptcha-container">
               <div class="g-recaptcha" data-sitekey="6LcTeEAUAAAAAEqaDHyi2iLhTbV5usvBszRIErrF"></div>
             </div>  
+
+            <!-- save details button -->
             <div class="save-details-button d-flex justify-content-end">
-              <button class="btn btn-primary" type="submit" data-target="#myModal" data-toggle="modal" >שמור</button>
+              <button class="btn btn-primary" type="submit" data-target="#myModal" data-toggle="modal" >שמור
+              </button>
             </div>
           </form>
+
+          <!-- info section -->
           <div class="info-container">
             <div class="right-line"></div>
             <h2>אנחנו כאן בשבילך</h2>
