@@ -5,6 +5,8 @@
         <div class="top-sec d-flex">
             <div class="top-sec-container d-flex justify-content-between flex-lg-column">
                 <a href="../home/index.html">
+                    
+                    <!-- logo -->
                     <div class="logo d-flex">
                         <img src="../img/logo-mobile.png">
                         <div class="logo-head-container d-flex flex-column justify-content-center">
@@ -18,6 +20,8 @@
                     </div>
                 </a>
                 <div class="main-mobile-nav-wrapper dropdown d-lg-none d-flex justify-content-center align-items-center justify-content-lg-start">
+
+                    <!-- open/close nav mobile button -->
                     <button id="mainMobileNavTrigger" type="button" aria-haspopup="true" aria-expanded="false" class="btn nav-button">
                           <img src="../img/menu.svg" alt="open-menu-button" id="menuButton">
                           <img src="../img/menu-x-close.svg" alt="close-menu-button" id="closeMenuButton">
@@ -28,39 +32,61 @@
         <div class="middle-sec d-flex align-items-center flex-lg-column-reverse flex-lg-row align-items-lg-end">
             <div class="middle-sec-container d-flex align-items-center justify-content-between flex-lg-wrap">
                 <div class="font-size-container font-size-container-mobile d-flex align-items-end d-lg-none">
+
+                    <!-- font size buttons mobile -->
                     <a href=""><div class="font-size Abig">א</div></a>
                     <a href=""><div class="font-size Asmall">א</div></a>
                 </div>
+
+                <!-- language dropdown -->
                 <div class="dropdown lng-dropdown">
+
+                    <!-- hebrew option (default) -->
                     <button class="btn btn-secondary dropdown-toggle lng-btn d-flex align-items-center justify-content-center justify-content-lg-start" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         עברית
                     </button>
+
+                    <!-- english option -->
                     <div class="dropdown-menu lng-dropdown-menu" role="button" tabindex="0" aria-labelledby="dropdownMenuButton">
                         <a class="dropdown-item lng-dropdown-item-1" href="#">En</a>
                     </div>
                 </div>
                 <div class="font-size-container font-size-container-desktop d-lg-flex align-items-end d-none">
+
+                    <!-- font size buttons lg -->
                     <a href=""><div class="font-size Abig">א</div></a>
                     <a href=""><div class="font-size Asmall">א</div></a>
                 </div>
+
+                <!-- entrance button -->
                 <button class="ent-btn">
                     כניסה
                 </button>
             </div>
         </div>
     </div>
+
+    <!-- search input section -->
     <div class="input-sec d-flex custom-container">
         <div class="input-container d-flex">   
+
+            <!-- search input dropdown -->
             <div class="dropdown input-dropdown d-flex align-items-center justify-content-center">
                 <div class="input-toggle-arrow"></div>
                 <select class="form-control input-toggle" type="button" id="inputToggle" title="שפה">
-                        <option class="input-dropdown-item">הכל</option>
-                        <option class="input-dropdown-item">נושא-1</option>
-                        <option class="input-dropdown-item">נושא-2</option>
+
+                    <!-- search options -->
+                    <option class="input-dropdown-item">הכל</option>
+                    <option class="input-dropdown-item">נושא-1</option>
+                    <option class="input-dropdown-item">נושא-2</option>
                 </select>
             </div>
+
+            <!-- search input -->
             <input type="text" name="search" placeholder="חפש" class="main-input" id="mainInput">
             <label class="sr-only" for="mainInput">search</label>
+
+            <!-- search button -->
             <button class="d-flex align-items-center search-input" id="searchInput">
                 <img src="../img/search-icn.svg" class="SearchIcn">
             </button>
