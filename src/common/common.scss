@@ -40,11 +40,10 @@ body {
 }
 
 .custom-container {
-  padding: 0 18px;
+  padding: 0 20px;
 
   @media (min-width: $screen-lg-min) {
     max-width: 1262px;
-    padding: 0 20px;
   }
 }
 

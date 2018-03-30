@@ -9,6 +9,11 @@
 
 	.custom-container {
 		padding: 0 20px;
+
+		@media (min-width: $screen-lg-min) {
+			max-width: 1262px; 
+			//margin: 0 auto;
+		} 
 	}
 
 	.nav-item-text-6 {
@@ -27,12 +32,12 @@
 		background-repeat: no-repeat;
 		background-size: contain;
 		margin: 0 0 5px 0;
-		padding:0 0 28px 0;
+		//padding:0 0 28px 0;
 
 		@media (min-width: $screen-lg-min) {
 			height: auto;
 			margin: 0 0 66px 0;
-			padding:0 100px 60px 0;
+			padding: 0;
 		}
 
 		.right-line {
@@ -49,20 +54,22 @@
 			}
 		}
 
-		.top-sec-container {
-			max-width: 1302px; 
+		.top-sec-container { 
 			width: 100%;
 			padding: 0;
 			height: auto;
+			min-height: 205px;
 
 			@media (min-width: $screen-lg-min) {
-				padding: 29px 111px 0 30px;;
+				padding: 32px 20px 29px;
+				height: 308px;
+				margin: 0 auto;
 			}
 
 			.q-and-a-breadcrumb-wrapper {
 
 				@media (min-width: $screen-lg-min) {
-					margin: 0 0 35px 0;
+					margin: 0 140px 35px 0;
 				}
 
 				.breadcrumb {
@@ -113,10 +120,10 @@
 					margin: 0 0 6px 0;
 
 					@media (min-width: $screen-lg-min) {
-						width: 136px;
+						width: 116px;
 						height: 116px;
-						margin: 0;
-						position: absolute;
+						margin: 0 0 0 24px;
+						//position: absolute;
 						top: 0;  
 					    right: -168px;
 					    top: 10px;
@@ -174,7 +181,7 @@
 		
 
 		@media (min-width: $screen-lg-min) {
-			padding: 32px 10px 100px;
+			padding: 32px 20px 100px;
 			margin: 0px auto 0;
 			max-width: 1262px;
 		}	
