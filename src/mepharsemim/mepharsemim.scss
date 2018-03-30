@@ -48,9 +48,11 @@
 			min-height: 200px;
 
 			@media (min-width: $screen-lg-min) {
-				padding: 33px 0 0 0;
+				//padding: 33px 0 0 0;
+				padding: 32px 20px 0;
 				width: 100%;
-				max-width: 1322px;
+				//max-width: 1322px;
+				max-width: 1262px;
 				min-height: 0;
 			}
 
@@ -61,7 +63,7 @@
 
 				@media (min-width: $screen-lg-min) {
 					margin: 0 0 35px 0;
-					right: 310px;
+					right: 330px;
 					top: 62px;
 					width: 110px;
 				}
@@ -187,9 +189,11 @@
 		.mepharsemim-main-body-wrapper {
 
 			@media (min-width: $screen-lg-min) {
-				max-width: 1390px;
-				margin: 0 auto 0 0;
-				padding: 0 20px 0 0;
+				//max-width: 1390px;
+				max-width: 1262px;
+				//margin: 0 auto 0 0;
+				margin: 0 auto;
+				padding: 0 20px;
 			}
 		}
 
@@ -258,7 +262,7 @@
 				}
 
 				@media (min-width: $screen-xl-min) {
-			    	left: 25px;
+			    	//left: 25px;
 				}
 
 
@@ -285,6 +289,7 @@
 						letter-spacing: normal;
 						color: $main-white;
 						cursor: pointer;
+						margin: 0 auto 0 0;
 					}
 
 					@media (min-width: $screen-xl-min) {

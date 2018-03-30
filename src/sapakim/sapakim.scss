@@ -27,12 +27,15 @@
 		background-repeat: no-repeat;
 		background-size: contain;
 		margin: 0 0 5px 0;
-		padding:0 0 28px 0;
+		//padding:0 0 28px 0;
+		min-height: 205px;
 
 		@media (min-width: $screen-lg-min) {
 			height: auto;
+			min-height: 308px;
 			margin: 0 0 53px 0;
-			padding:0 100px 0 0;
+
+			//padding:0 100px 0 0;
 		}
 
 		.right-line {
@@ -50,20 +53,20 @@
 		}
 
 		.top-sec-container {
-			max-width: 1302px; 
 			width: 100%;
-			padding: 0;
+			padding: 0 20px;
 			height: auto;
 			position: relative;
 
 			@media (min-width: $screen-lg-min) {
-				padding: 31px 111px 81px 30px;
+				max-width: 1262px; 
+				//padding: 31px 111px 81px 30px;
 			}
 
 			.sapakim-breadcrumb-wrapper {
 
 				@media (min-width: $screen-lg-min) {
-					margin: 0 0 29px 0;
+					margin: 31px 140px 29px 0;
 				}
 
 				.breadcrumb {
@@ -82,8 +85,8 @@
 			}
 
 			.sapakim-p-sec {
-				margin: 20px 0 0 23px;
-				padding: 0 20px;
+				margin: 20px 0 0 0;
+				//padding: 0 20px;
 
 				@media (min-width: $screen-lg-min) {
 					margin: 0 0 23px 0;
@@ -107,17 +110,24 @@
 					}
 				}
 
+				.sapakim-icon-wrapper {
+
+					@media (min-width: $screen-lg-min) {
+						margin: 0 0 0 24px;
+					}
+				}
+
 				.sapakim-top-icon {
 					order: 1;
 					width: 47px;
 					height: 47px;
-					margin: 0 1px 6px 0;
+					margin: 0 0 6px 0;
 
 					@media (min-width: $screen-lg-min) {
 						width: 116px;
   						height: 116px;
 						margin: 0;
-						position: absolute;
+						//position: absolute;
 						top: 0;  
 					    right: -150px;
 					    top: 10px;
@@ -175,9 +185,8 @@
 		
 
 		@media (min-width: $screen-lg-min) {
-			padding: 0 10px 100px;
+			padding: 0 20px 100px;
 			margin: 0px auto 0;
-			max-width: 1262px;
 		}
 
 		.sapakim-body-top-sec {
@@ -185,6 +194,7 @@
 
 			@media (min-width: $screen-lg-min) {
 				margin: 0 0 61px 0;
+				padding: 0;
 			}
 
 			h2 {
@@ -250,7 +260,7 @@
 			width: 100%;
 
 			@media (min-width: $screen-lg-min) {
-				padding: 0 20px 0 8px;
+				//padding: 0 20px 0 8px;
 			}
 		}
 
