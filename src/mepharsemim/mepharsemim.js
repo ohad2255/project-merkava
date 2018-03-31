@@ -522,10 +522,12 @@ $(document).ready(function() {
 	// 	$(this).find($(".my-list-options-wrapper")).toggleClass("d-block");
 	// }
 
-	$('.my-list-subjects-list-subject').on('click', function () {
+	debugger;
+	$('.my-list-subjects-list').on('click', '.my-list-subject-wrapper', function () {
+		debugger;
 		//var $myListOptionsWrapper = $(".my-list-options-wrapper");
 		//$(this).siblings(".my-list-options-wrapper").toggleClass("d-none");
-		$(this).find($(".my-list-options-wrapper")).toggleClass("d-none");
+		$(this).next().toggleClass("d-none");
 	});
 });
 
