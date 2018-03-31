@@ -5,6 +5,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: {
+        'common/common': ["./src/common/common.scss", "./src/common/common.js"],
         'home/home': ["./src/home/home.scss", "./src/home/home.js"],
         'signin/signin': ["./src/signin/signin.scss", "./src/signin/signin.js"],
         'registration/registration': ["./src/registration/registration.scss", "./src/registration/registration.js"],
