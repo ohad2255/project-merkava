@@ -39,15 +39,16 @@
 		.right-line {
 			position: absolute;
 			right: 0;
-			top: -4px;
+			//top: -4px;
 			width: 5px;
-			height: 104%;
+			//height: 104%;
+			height: 100%;
 			border-radius: 4px;
 			background-color: #1c6897;
 
 			@media (min-width: $screen-lg-min) {
 				width: 11px;
-				top: -7px;
+				// top: -7px;
 			}
 
 			@media (max-width: 340px) {
@@ -88,7 +89,7 @@
 			}
 
 			.about-p-sec {
-				margin: 73px 25px 28px 0;
+				margin: 73px 20px 0;
 
 				@media (min-width: $screen-lg-min) {
 					margin: 0;
@@ -324,14 +325,17 @@
 		}
 	}
 
-	.about-footer {
-		padding: 69px 0 0 0;
-		margin: 0 46px 0;
-		border-top: solid 2px rgba(224,224,224,.3);
+	// .about-footer {
+	// 	padding: 69px 0 0 0;
+	// 	margin: 0 46px 0;
+	// 	border-top: solid 2px rgba(224,224,224,.3);
 
-		@media (min-width: $screen-lg-min) {
-			margin: 0 165px 0;
-			padding: 58px 0 0 0;
-		}	
-	}
+	// 	@media (min-width: $screen-lg-min) {
+	// 		margin: 0 auto;
+	// 		max-width: 1271px;
+	// 		min-height: 110px;
+	// 		padding: 0;
+	// 		//padding: 58px 0 0 0;
+	// 	}
+	// }
 }	

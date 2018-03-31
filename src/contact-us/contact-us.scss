@@ -29,15 +29,16 @@
        	.right-line {
 			position: absolute;
 			right: 0;
-			top: -4px;
+			//top: -4px;
 			width: 5px;
-			height: 104%;
+			//height: 104%;
+			height: 100%;
 			border-radius: 4px;
 			background-color: $cobalt;
 
 			@media (min-width: $screen-lg-min) {
 				width: 11px;
-				top: -7px;
+				//top: -7px;
 			}
 		}
 
@@ -113,7 +114,7 @@
 			}
 
 			.contact-us-p-sec {
-				margin: 16px 8px 0 0;	
+				margin: 16px 0 0 0;	
 
 				@media (min-width: $screen-lg-min) {
                     margin: 0;
@@ -585,22 +586,22 @@
 		}
 	}
 	.contact-us-footer {
-		border-top: solid 1px #dddddd;;
-	  	object-fit: contain;
-	  	padding: 67px 0 0;
-	  	margin: 0 46px;
+		// 	border-top: solid 1px #dddddd;;
+		//  object-fit: contain;
+			padding: 67px 0 0;
+	//   	margin: 0 46px;
 
-	  	@media (min-width: $screen-lg-min) {
-			margin: 0 165px;
-		}
+	//   	@media (min-width: $screen-lg-min) {
+	// 		margin: 0 165px;
+	// 	}
 
-		.footer-nav-wrapper {
-			margin: 0 0 87px 0;
-		}
+	// 	.footer-nav-wrapper {
+	// 		margin: 0 0 87px 0;
+	// 	}
 
-		@media (min-width: $screen-lg-min) {
-			margin: 0;
-		}
+	// 	@media (min-width: $screen-lg-min) {
+	// 		margin: 0;
+	// 	}
 	}
 
 	.modal.show {

@@ -1,6 +1,11 @@
 
 footer {
 
+  @media (min-width: $screen-lg-min) {
+    width: 100%;
+    //padding: 58px 0 0 0;
+  }
+
   .logo-merkava-warpper {
     margin: 5px 0 0 0;
 
@@ -11,14 +16,25 @@ footer {
   }
 
   .footer-nav-wrapper {
-
-    max-width: 250px;
-    margin:0 0 75px 0;
+    padding: 69px 0 73px 0;
+    margin: 0 46px 0;
+    border-top: solid 2px rgba(224,224,224,.3);
 
     @media (min-width: $screen-lg-min) {
-      //margin-bottom: 155px;
-      max-width: 100%;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 1271px;
+      min-height: 110px;
+      padding: 0;
+      //padding: 58px 0 0 0;
     }
+    // max-width: 250px;
+    // margin:0 0 75px 0;
+
+    // @media (min-width: $screen-lg-min) {
+    //   //margin-bottom: 155px;
+    //   max-width: 100%;
+    // }
 
     .merkava-p {
       object-fit: contain;

@@ -7,15 +7,23 @@
     <title>כניסה</title>
     ${require("../common/common-stylesheet.html")}
   </head>
+
+  <!-- body -->
   <body class="signin">
     <div class="main-menu-mobile-container d-lg-none" aria-labelledby="mainMobileNavTrigger">
       <div class="main-menu-mobile-wrapper"></div>
       ${require("../common/top-navigation/top-navigation.html")}
     </div>
     <div class="main-content-wrapper">
+
+      <!-- header -->
       ${require("../common/header/header.html")} 
+
+      <!-- main-contant -->
       <section class="d-flex align-items-center justify-content-center">
         <div class="signin-container d-flex custom-container flex-column flex-lg-row">
+
+          <!-- sign in section -->
           <div class="signin-sec-wrapper">
             <div class="signin-p-wrapper">
               <h1 class="signin-sec-head">
@@ -25,17 +33,25 @@
                 אתר מינהל הרכש הממשלתי מפרסם מידי יום, את רשימת המכרזים, הפטורים והדיווחים של משרדי הממשלה ויחידות הסמך.
               </p>
             </div>
+
+            <!-- sign in form -->
             <form id="signinForm" data-parsley-validate>
               <div class="form-group">
+
+                <!-- email input -->
                 <input id="InputEmailSign" type="email" class="form-control email-input" placeholder="דוא״ל" name="email" data-required="" data-parsley-validate-if-empty data-parsley-error-message="אימייל חייב להכיל @">
                 <label class="sr-only" for="InputEmailSign" data-parsley-error-message="אימייל חייב להכיל @"></label>
               </div>
               <div class="form-group form-group-password">
+
+                <!-- password input -->
                 <input type="password" pattern="(?=.*\d)(?=.*[A-Z]).{8,}" class="form-control password-input" id="InputPasswordSignIn" placeholder="סיסמא" data-toggle="password" data-required="" data-parsley-validate-if-empty data-parsley-error-message="סיסמא צריכה להכיל 8 תווים לפחות, לכלול מספרים, תווים ולפחות אות אחת גדולה">
                 <label class="sr-only" for="InputPasswordSignIn"></label>
                 <div id="showPassword" role="button" tabindex="0">הצג סיסמא</div>
               </div>
               <div class="recaptcha-container">
+
+                <!-- recaptcha -->
                 <div class="g-recaptcha" data-sitekey="6LcTeEAUAAAAAEqaDHyi2iLhTbV5usvBszRIErrF"></div>
               </div>
               <div class= "signin-bottom-sec d-flex justify-content-between align-items-center">
@@ -46,6 +62,8 @@
                     זכור אותי
                   </label>
                 </div> -->
+
+                <!-- forgot password button -->
                 <a href="">
                   <div class="forgot-password">
                     שכחתי סיסמא >
@@ -53,10 +71,14 @@
                 </a>
               </div>
               <div class="signin-submit">
+
+                <!-- submit button -->
                 <button type="submit" class="btn btn-primary">שלח</button>
               </div>
             </form>
           </div>
+
+          <!-- sign in section -->
           <div class="reg-sec-wrapper">
             <div class="reg-p-wrapper">
               <h1 class="reg-sec-head">
@@ -67,6 +89,8 @@
               </p>
             </div>
             <div class="reg-button">
+
+              <!-- sign up button -->
               <button class="btn btn-primary">הרשם</button>
             </div>
           </div>

@@ -27,8 +27,8 @@
 		background-repeat: no-repeat;
 		background-size: contain;
 		margin: 0 0 5px 0;
-		padding:0 0 28px 0;
-		height: 205px;
+		padding:0 ;
+		min-height: 205px;
 
 		@media (min-width: $screen-lg-min) {
 			margin: 0 0 66px 0;
@@ -43,7 +43,7 @@
 			top: 0;
 			width: 5px;
 			height: 100%;
-			//border-radius: 4px;
+			border-radius: 4px;
 			background-color: $main-purple;
 
 			@media (min-width: $screen-lg-min) {
@@ -88,8 +88,8 @@
 			}
 
 			.dictionary-p-sec {
-				margin: 20px 0;
-				padding: 0 20px;
+				//margin: 20px 0;
+				//padding: 0 20px;
 
 				@media (min-width: $screen-lg-min) {
 					margin: 0 0 10px 0;
@@ -113,22 +113,6 @@
 					}
 				}
 
-				.dictionary-top-icon {
-					order: 1;
-					width: 47px;
-					height: 47px;
-					margin: 0 1px 6px 0;
-
-					@media (min-width: $screen-lg-min) {
-						width: 116px;
-  						height: 116px;
-						margin: 0;
-						//position: absolute;
-						top: 0;  
-					    right: -150px;
-					    top: 10px;
-					}
-				}	
 
 				.dictionary-head {
 					font-size: 3rem;
@@ -210,6 +194,23 @@
 				}
 			}
 		}
+
+		.dictionary-top-icon {
+			order: -1;
+			width: 47px;
+			height: 47px;
+			margin: 0 1px 6px 0;
+
+			@media (min-width: $screen-lg-min) {
+				width: 116px;
+				height: 116px;
+				margin: 0;
+				//position: absolute;
+				//top: 0;  
+			    // right: -150px;
+			    // top: 10px;
+			}
+		}	
 	}
 
 	.dictionary-body {
@@ -444,19 +445,19 @@
 
 	.dictionary-footer {
 		padding: 0;
-		margin: 0 46px 0;
+		//margin: 0 46px 0;
 		border-top: 0;
 
-		@media (min-width: $screen-lg-min) {
-			margin: 0 auto 0;
-			padding: 38px 0 0 0;
-			border-top: solid 1px #dddddd;
-			max-width: 1311px;
-		}
+		// @media (min-width: $screen-lg-min) {
+		// 	margin: 0 auto 0;
+		// 	padding: 38px 0 0 0;
+		// 	border-top: solid 1px #dddddd;
+		// 	max-width: 1311px;
+		// }
 
-		.footer-nav-wrapper	{
-			margin:0 0 44px 0;
-		}
+		// .footer-nav-wrapper	{
+		// 	margin:0 0 44px 0;
+		// }
 	}
 
 	.active {

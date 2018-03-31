@@ -81,7 +81,7 @@
 			}
 
 			.bids-head-wrapper {
-				margin: 74px 0 0 0;
+				margin: 73px 0 0 0;
 				//padding: 0 20px;
 
 				@media (min-width: $screen-lg-min) {
@@ -1007,19 +1007,19 @@
 	}
 
 	.bids-footer {
-		padding: 72px 0 0 0;
-		margin: 0 46px 0;
+	 	padding: 72px 0 0 0;
+	// 	margin: 0 46px 0;
 
-		@media (min-width: $screen-lg-min) {
-			margin: 0 165px 0;
-			padding: 58px 0 0 0;
-			border-top: solid 2px rgba(224,224,224,.3);
-		}	
+	// 	@media (min-width: $screen-lg-min) {
+	// 		margin: 0 165px 0;
+	// 		padding: 58px 0 0 0;
+	// 		border-top: solid 2px rgba(224,224,224,.3);
+	// 	}	
 	}
 
-	.footer-border {
-		border-top: solid 2px rgba(224,224,224,.3);
-	}
+	// .footer-border {
+	// 	border-top: solid 2px rgba(224,224,224,.3);
+	// }
 
 	.related-bids-main-container {
 

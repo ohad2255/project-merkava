@@ -55,10 +55,12 @@
 			width: 100%;
 			padding: 0;
 			height: auto;
+			margin: 20px 0 0 0;
 
 			@media (min-width: $screen-lg-min) {
 				height: 297px;
 				padding: 29px 20px 0;
+				margin: 0;
 			}
 
 			.green-r-breadcrumb-wrapper {	
@@ -83,7 +85,7 @@
 			}
 
 			.green-r-p-sec {
-				margin: 73px 25px 15px;
+				margin: 0 20px;
 
 				@media (min-width: $screen-lg-min) {
 					margin: 0;
@@ -107,9 +109,16 @@
 
 				.green-top-icon {
 					order: 1;
-					width: 88px;
-					height: 116px;
+					width: 36px;
+					height: 47px;
 					object-fit: contain;
+					margin: 0 0 16px 0;
+
+					@media (min-width: $screen-lg-min) {
+						width: 88px;
+						height: 116px;
+						margin: 0;
+					}
 				}	
 
 				.green-r-head {
