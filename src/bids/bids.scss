@@ -1,4 +1,4 @@
-@import "../common/common.scss";
+@import "../util/util.scss";
 
 .bids {
 	min-width: 330px;
@@ -60,9 +60,9 @@
 
 			.bids-breadcrumb-wrapper {
 
-				margin: 32px 0 29px 0;
+				margin: 32px 140px 29px 0;
 				max-width: 1222px;
-				padding: 0 155px 0 0;
+				//padding: 0 155px 0 0;
 
 				
 				.breadcrumb {
@@ -100,7 +100,7 @@
 
 					@media (min-width: $screen-lg-min) {
 						max-width: 570px;
-						margin: 0 38px 0 0;
+						margin: 0 24px 0 0;
 					}
 
 					h1 {

@@ -1,4 +1,4 @@
-@import "../common/common.scss";
+@import "../util/util.scss";
 
 .green-r {
 	min-width: 330px;
@@ -66,7 +66,7 @@
 			.green-r-breadcrumb-wrapper {	
 
 				@media (min-width: $screen-lg-min) {
-					margin: 0 125px 35px 0;
+					margin: 0 116px 35px 0;
 				}
 
 				.breadcrumb {
@@ -103,7 +103,7 @@
 					margin: 0;
 
 					@media (min-width: $screen-lg-min) {
-						margin: 0 35px 0 0;
+						margin: 0 24px 0 0;
 					}
 				}
 

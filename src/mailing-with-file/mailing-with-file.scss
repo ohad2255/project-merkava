@@ -1,4 +1,4 @@
-@import "../common/common.scss";
+@import "../util/util.scss";
 
 .mailing-file {
 
@@ -90,6 +90,7 @@
 		margin: 0 164px; 
 
 		.footer-nav-wrapper-mailing {
+			//margin: 0 auto;
 
 			.mailing-footer-nav {
 			    margin: 0;

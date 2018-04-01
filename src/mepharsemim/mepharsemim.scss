@@ -1,4 +1,4 @@
-@import "../common/common.scss";
+@import "../util/util.scss";
 
 .mepharsemim-container {
 	min-width: 330px;
@@ -62,8 +62,8 @@
 				top: 17px;
 
 				@media (min-width: $screen-lg-min) {
-					margin: 0 0 35px 0;
-					right: 330px;
+					//margin: 0 0 35px 0;
+					right: 321px;
 					top: 62px;
 					width: 110px;
 				}
@@ -127,7 +127,7 @@
 					height: 102px;
 					width: 116px;
 					margin: 0 ;
-					margin: 0 0 0 35px;
+					margin: 0 0 0 24px;
 				}
 
 				.mepharsemim-head {

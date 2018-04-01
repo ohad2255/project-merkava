@@ -1,11 +1,4 @@
-$screen-xs-min: 375px;
-$screen-sm-min: 576px;
-$screen-md-min: 768px;
-$screen-lg-min: 992px;
-$screen-xl-min: 1200px;
-$main-font: FbReforma, sans-serif;
-
-@import "/styles/color-palette";
+@import "../util/util";
 @import "/header/header";
 @import "/top-navigation/top-navigation";
 @import "/breadcrumb/breadcrumb";

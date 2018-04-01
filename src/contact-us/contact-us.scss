@@ -1,4 +1,4 @@
-@import "../common/common.scss";
+@import "../util/util.scss";
 
 .contact-us {
 	min-width: 330px;
@@ -124,7 +124,7 @@
 					margin: 0 0 2px 0;
 
 					@media (min-width: $screen-lg-min) {
-	                    margin: 16px 0 0 43px;
+	                    margin: 16px 0 0 24px;
 	               	}
 
 					img {

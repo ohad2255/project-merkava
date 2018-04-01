@@ -1,4 +1,4 @@
-@import "../common/common.scss";
+@import "../util/util.scss";
 
 .profile {
 	min-width: 330px;
@@ -62,7 +62,7 @@
 				top: 16px;
 
 				@media (min-width: $screen-lg-min) {
-                    margin: 32px 108px 29px 0;
+                    margin: 32px 140px 29px 0;
                     font-size: 1.6rem;
                     position: static;
                     width: 100%;
@@ -96,15 +96,16 @@
 					margin: 0 0 10px 0;
 
 					@media (min-width: $screen-lg-min) {
-	                    margin: 24px 0 0 35px;
+	                    margin: 10px 0 0 24px;
 	               	}
 
 					img {
-						height: 41px;
+						height: 47px;
+						width: 47px;
 
 						@media (min-width: $screen-lg-min) {
-		                   height: 98px;
-		                   width: 71px
+		                   height: 116px;
+		                   width: 116px
 		               	}
 					}
 				}
