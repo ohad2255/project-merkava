@@ -386,6 +386,8 @@
 					//min-height: 400px;
 					left: 0;
 					margin: 0;
+					max-height: 840px;
+					overflow-y: scroll;
 				}
 
 				@media (min-width: $screen-xl-min) {
@@ -437,7 +439,7 @@
 				}
 
 				.my-list-mepharsemim-container, .my-list-subjects-container {
-					background-color: rgba(233, 235, 240, 0.5);
+					background-color: $main-white;
 					//margin: 0 0 0 0;
 				}
 
@@ -449,7 +451,7 @@
 					height: 67px;
 					object-fit: contain;
 					margin: 0 0 6px 0;
-					padding: 0 40px 0 24px;
+					padding: 0 40px 0 20px;
 					cursor: pointer;
 				}
 
@@ -485,11 +487,11 @@
 					}
 
 					.my-list-option-wrapper:last-child {
-						margin-bottom: 0;
+						//margin-bottom: 0;
 					}
 
 					.my-list-subject-wrapper  {
-						padding: 0 20px 0 18px;
+						padding: 0 20px;
 						margin: 0 0 5px 0; 
 						//cursor: pointer;
 
@@ -507,6 +509,10 @@
 
 					.my-list-subjects-wrapper.my-list-subject-wrapper:last-child {
 						margin: 0;
+					}
+
+					.my-list-subjects-list:last-child.my-list-options-wrapper:last-child {
+						margin-bottom: 0;
 					}
 
 					.my-list-subject-name {
@@ -583,12 +589,16 @@
 					}
 				}
 
-				.my-list-mepharsem-wrapper:last-child {
+				// .my-list-mepharsem-wrapper:last-child {
+				// 	margin-bottom: 0;
+				// }
 
-					.my-list-mepharsem-wrapper {
-						margin: 0;
-					}
-				}
+				// .my-list-mepharsem-wrapper:last-child {
+				// 	margin: 0;
+				// 	.my-list-mepharsem-wrapper {
+						
+				// 	}
+				// }
 
 				.my-list-mepharsemim-title, .my-list-subjects-title {
 					font-size: 3.2rem;
@@ -612,6 +622,10 @@
 
 				.rotate {
 					transform: rotate(45deg);
+				}
+
+				#subjectsArrow.rotate, #mepharsemimArrow.rotate {
+					transform: rotate(45deg);
 					background-color: $main-white;
 				}
 
@@ -624,6 +638,12 @@
 
 				.my-list-subjects-list:last-child {
 					margin: 0;
+				}
+			}
+
+			.my-list-mepharsemim-list-mepharsem:last-child {
+				.my-list-mepharsem-wrapper {
+					margin-bottom: 0;
 				}
 			}
 
@@ -1080,17 +1100,20 @@
 	}
 	
 
-	.mepharsemim-footer {
-	
+	footer {
+
 		@media (min-width: $screen-lg-min) {
 			width: 100%;
 			background-color: $main-white;
 			height: 90px;
+			//border-top: 
 		}
 
 		.footer-nav-wrapper	{
 			margin:0;
 			//border: 0;
+			height: 90px;
+			min-height: auto;
 		}
 	}
 

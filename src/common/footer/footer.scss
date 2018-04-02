@@ -1,9 +1,12 @@
 
-footer {
+.main-footer {
+
+  margin: 0 46px;
 
   @media (min-width: $screen-lg-min) {
     width: 100%;
-    //padding: 58px 0 0 0;
+    padding: 0;
+    margin: 0;
   }
 
   .logo-merkava-warpper {
@@ -17,12 +20,11 @@ footer {
 
   .footer-nav-wrapper {
     padding: 69px 0 73px 0;
-    margin: 0 46px 0;
     border-top: solid 2px rgba(224,224,224,.3);
+    width: 100%;
 
     @media (min-width: $screen-lg-min) {
       margin: 0 auto;
-      width: 100%;
       max-width: 1271px;
       min-height: 110px;
       padding: 0;
@@ -55,6 +57,11 @@ footer {
     .footer-nav {
       margin: 0;
       padding: 0;
+      max-width: 250px;
+
+      @media (min-width: $screen-lg-min) {
+        max-width: 100%;
+      }
 
       a {
         height: auto;
@@ -104,42 +111,6 @@ footer {
           }
         }
       }
-
-      // .first {
-      //   border-left: 1px solid $header-blue;
-      //   padding-left: 10px;
-      //   margin: 0 0 10px 10px;
-
-      //   @media (min-width: $screen-lg-min) {
-      //     margin: 0 0 0 10px;
-      //   }
-      // }
-
-      // .second {
-      //   margin-bottom: 10px;
-
-      //   @media (min-width: $screen-lg-min) {
-      //     margin: 0 0 0 10px;
-      //     border-left: 1px solid $header-blue;
-      //     padding-left: 10px;
-      //   }
-      // }
-
-      // .third {
-      //   padding-left: 10px;
-
-      // }
-
-      // .last {
-      //   border-right: 1px solid $header-blue;
-      //   padding-right: 10px;
-
-      //   @media (min-width: $screen-lg-min) {
-      //     border-left: 1px solid $header-blue;
-      //     padding-left: 10px;
-      //     margin-left: 10px;
-      //   }
-      // }
     }
   }
 
