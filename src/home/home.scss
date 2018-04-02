@@ -22,7 +22,7 @@
       padding-bottom: 71px;
     }
 
-    .first-img-row {
+    .row-2-img {
 
       @media (min-width: $screen-lg-min) {
         padding: 0;
@@ -436,7 +436,7 @@
       }
     }
 
-    .second-img-row {
+    .row-3-img-with-reg {
       max-width: 1280px;
 
       @media (min-width: $screen-lg-min) {
@@ -701,7 +701,7 @@
       }
     } 
 
-    .bottom-sec-p {
+    .paragraph-row {
       border-top: solid 1px #dddddd;
       border-bottom: solid 1px #dddddd;
       max-width: 1280px;
@@ -730,7 +730,7 @@
       }
     }
 
-    .third-img-row {
+    .row-3-img {
       margin-top: 30px;
       max-width: 1280px;
 
