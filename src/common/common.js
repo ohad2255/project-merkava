@@ -1,9 +1,9 @@
 require('./header/header');
 
 $(document).ready(function() {
-    // $("#mainMobileNavTrigger").on("click", function() {
-    //     $("body").toggleClass("mobile-menu-open");
-    // })
+    $("#mainMobileNavTrigger").on("click", function() {
+        $("body").toggleClass("mobile-menu-open");
+    })
 
     $('.lng-btn.dropdown-toggle').dropdown();
     $('.input-toggle.dropdown-toggle').dropdown();
