@@ -1,15 +1,21 @@
 require('./header/header');
 
 $(document).ready(function() {
-    $("#mainMobileNavTrigger").on("click", function() {
+    $("#mainMobileNavTrigger").off("click.toggleMenu").on("click.toggleMenu", function() {
+        //debugger
         $("body").toggleClass("mobile-menu-open");
+        //$("body").removeClass("mobile-menu-open");
     })
+
+    // $("#mainMobileNavTrigger").off("click.toggleMenu").on("click.toggleMenu", function() {
+
+    // })
 
     $('.lng-btn.dropdown-toggle').dropdown();
     $('.input-toggle.dropdown-toggle').dropdown();
     $('.nav-toggle.dropdown-toggle').dropdown();
 
-    $('.main-menu-mobile-container .nav-item').on("click", function() {
+    $('.main-menu-mobile-container .nav-item').off("click.toggleNavItem").on("click.toggleNavItem", function() {
        this.classList.toggle("open");
     });
 });
