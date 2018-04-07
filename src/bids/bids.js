@@ -47,7 +47,7 @@ $(document).ready(function() {
 	    },
 	});
 
-	new Swiper('.swiper-container.winning-bidders-swiper-2', {
+	new Swiper('.swiper-container.winning-bidders-swiper-3', {
 		//slidesPerView: 2,
 		slidesOffsetBefore: '-45',
 		slidesPerView: 'auto',
