@@ -194,6 +194,7 @@
 				//margin: 0 auto 0 0;
 				margin: 0 auto;
 				padding: 0 20px;
+				//overflow-y: scroll;
 			}
 		}
 
@@ -367,6 +368,7 @@
 				@media (min-width: $screen-xl-min) {
 					overflow-y: scroll;
 					max-height: 840px;
+					direction: ltr;
 				}
 			}
 
@@ -382,6 +384,7 @@
 				top: 58px;
 				padding: 10px 5px 187px;
 				margin: -86px 0 0 0;
+				direction: rtl;
 
 
 				 @media (min-width: $screen-lg-min) {
@@ -447,6 +450,7 @@
 				.my-list-mepharsemim-container, .my-list-subjects-container {
 					background-color: $main-white;
 					//margin: 0 0 0 0;
+					direction: rtl;
 				}
 
 				.my-list-mepharsemim-container {
@@ -1261,26 +1265,32 @@
 //   outline: 1px solid slategrey;
 // }
 
-.list-wrapper::-webkit-scrollbar {
+::-webkit-scrollbar {
     
-    align: right;
-    position: absolute;
-    left: 0;
+    // position: absolute;
+    // left: 0;
+	width: 10px !important;
+	background-color: transparent;
+	display: block;
+	position: absolute;
+	//margin-right: 20px;
 }
 
 /* Track */
-.list-wrapper::-webkit-scrollbar-track {
-    background-color: transparent; 
+::-webkit-scrollbar-track {
+    display: none; 
 }
 
 /* Handle */
-.list-wrapper::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
 	border-radius: 4px;
 	box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.1);
-	background-color: $main-white;
-	border: solid 1px #d2d2d2;
-	width: 10px;
-	height: 50px!important;
-	//display: block;
+	background-color: #d2d2d2;
+	//border: solid 1px #d2d2d2;
+	//margin-right: 20px;
+	width: 10px !important;
+	max-width: 10px !important;
+	//border-right: solid 20px $main-white;
+	//padding-right: 20px;
 }
 
