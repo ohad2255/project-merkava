@@ -43,15 +43,23 @@
               <!-- registration form -->
               <form id="registration-Form" data-parsley-validate  class="d-flex flex-column align-items-center">
                 <div class="d-flex flex-lg-row name-lng-wrapper flex-column">
-                  <div class="form-group name">
-                    <div class="input-bullet"></div>
+                  <div class="form-group name d-flex">
+                    <!-- <div class="input-bullet"></div> -->
+                    <div class="form-group first-name">
 
-                    <!-- name input -->
-                    <input class="form-control" type="text" placeholder= "שם פרטי ומשפחה" id="nameInputReg" name="name" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty>
-                    <label class="sr-only" for="nameInputReg"></label>
+                      <!--first name input -->
+                      <input class="form-control" type="text" placeholder= "שם פרטי" id="nameInputReg" name="name" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty>
+                      <label class="sr-only" for="nameInputReg"></label>
+                    </div>
+                    <div class="form-group last-name">
+
+                      <!--last name input -->
+                      <input class="form-control" type="text" placeholder= "שם משפחה" id="lastNameInputReg" name="lastName" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty>
+                      <label class="sr-only" for="lastNameInputReg"></label>
+                    </div>
                   </div>
                   <div class="form-group language">
-                    <div class="input-bullet"></div>
+                    <!-- <div class="input-bullet"></div> -->
                     <div class="blue-arrow"></div>
 
                     <!-- language select -->
@@ -73,7 +81,7 @@
                     <label class="sr-only" for="inputEmailReg"></label>
                   </div>
                   <div class="form-group email-confirm">
-                    <div class="input-bullet"></div>
+                    <!-- <div class="input-bullet"></div> -->
 
                     <!-- email confirm input -->
                     <input type="email" class="form-control" id="inputEmailConfirmReg" data-match="inputEmailReg" data-parsley-error-message="דוא״ל לא תואם" placeholder="אימות דוא״ל" data-parsley-equalto="#inputEmailReg" required>
