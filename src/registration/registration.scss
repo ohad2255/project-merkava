@@ -19,7 +19,7 @@
 			margin: 54px 0;
 
 			.registration-wrapper {
-				height: fit-content;
+				height: auto;
 				border-radius:3px;
 				background-color: #fff;
 				width: 100%;
@@ -33,7 +33,7 @@
 
 				.registration-p-wrapper {
 					margin-top: 24px;
-					width: fit-content;
+					width: auto;
 
 					@media (min-width: $screen-lg-min) {
 						margin-top: 53px;
@@ -290,7 +290,7 @@
 					margin: 0 0 45px 0;
 
 					@media (min-width: $screen-lg-min) {
-						width: fit-content;
+						width: auto;
 					}
 
 					button {

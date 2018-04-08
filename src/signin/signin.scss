@@ -21,7 +21,7 @@
 
 
 			.signin-sec-wrapper {
-				height: fit-content;
+				height: auto;
 				background-color: #f6f6f6;
 				padding-bottom: 30px;
 
@@ -294,7 +294,7 @@
 
 			.reg-sec-wrapper {
 				background-color: #fff;
-				height: fit-content;
+				height: auto;
 				width: 100%;
 				padding: 0 18px 40px; 
 
@@ -399,7 +399,7 @@
 	}
 
 	footer {
-		margin: 0;
+		margin: 0 auto;
 		border: 0;
 
 		.footer-nav-wrapper {
