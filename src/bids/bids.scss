@@ -301,9 +301,10 @@
 
 			@media (min-width: $screen-lg-min) {
 				width: 301px;
-				height: 254px;
+				min-height: 254px;
 				border-radius: 2.1px;
 				padding: 26px 34px 0 0;
+				height: auto;
 			}
 
 			.right-line {
@@ -425,9 +426,13 @@
 
 		@media (min-width: $screen-lg-min) {
 			border-bottom: solid 1px $bids-border;
-			padding-bottom: 50px;
 			margin: 0 auto 53px;
+			padding: 0 20px 50px;
 		}
+
+		// @media (min-width: $screen-xl-min) {
+		// 	padding: 0 20px 50px;
+		// }
 	}
 	// .hide {
 	// 	display: none;
@@ -492,6 +497,11 @@
 			margin: 0 auto;
 			padding: 0 20px;
 		}
+	}
+
+	.hidden.related-documents-container {
+		padding: 0;
+		
 	}
 
 	.winning-bidder-container {
@@ -993,6 +1003,12 @@
 			span {
 				font-weight: normal;
 			}
+		}
+	}
+
+	.hidden.related-bids-container {
+		@media (min-width: $screen-lg-min) {
+			padding: 0;
 		}
 	}
 

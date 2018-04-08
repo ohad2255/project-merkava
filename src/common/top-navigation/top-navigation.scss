@@ -13,6 +13,7 @@
   max-width: 1320px !important;
   padding: 0 20px;
   min-height: 74px;
+
  
   .navbar-nav {
     width: 100%;
@@ -247,6 +248,14 @@
     background-image: url('../common/img/placeholde.svg');
     background-repeat: no-repeat;
     background-position-y: 10px;
+    padding: 0 20px 25px 0;
+    font-size: 3rem;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.83;
+    letter-spacing: normal;
+    color: $main-white;
   }
 
   .main-nav {
