@@ -473,7 +473,7 @@
 
 				.change-background-color {
 					background-color: $main-white;
-					margin: 0;
+					//margin: 0;
 				}
 
 				.my-list-subject-wrapper, .my-list-mepharsem-wrapper {
@@ -1293,5 +1293,10 @@
 	max-width: 10px !important;
 	//border-right: solid 20px $main-white;
 	//padding-right: 20px;
+}
+
+.mobile-menu-open {
+  height: 100%;
+  overflow: hidden;
 }
 
