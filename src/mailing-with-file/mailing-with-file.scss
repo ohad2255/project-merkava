@@ -90,17 +90,16 @@
 		margin: 0 164px; 
 
 		.footer-nav-wrapper-mailing {
-			//margin: 0 auto;
 
 			.mailing-footer-nav {
 			    margin: 0;
 			    padding: 0;
 
 			    a {
-					height: fit-content;
+					height: auto;
 					text-decoration: none;
 
-				    li {
+				    .mailing-footer-link {
 						font-size: 1.6rem;
 						font-weight: normal;
 						font-style: normal;
@@ -114,24 +113,6 @@
 			  	span {
 			    	font-weight: 500;
 			    }
-
-				.first {
-
-					@media (min-width: $screen-lg-min) {
-
-					}
-				}
-
-				.second {
-
-					@media (min-width: $screen-lg-min) {
-					 
-					}
-				}
-
-				.last {
-					
-				}
 
 				.footer-line {
 					margin: 0 10px;

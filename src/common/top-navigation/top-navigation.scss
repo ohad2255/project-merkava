@@ -95,7 +95,7 @@
         color: $main-white;
         text-align: center;
         top: 74px;
-        min-width: 110px;
+        //min-width: 110px;
 
 
         @media (min-width: $screen-lg-min) {
@@ -107,9 +107,16 @@
           width: 100%;
           height: 100%;
 
-           &:hover, &:focus, {
+          &:hover, &:focus, {
             display: block;
             background-color: rgba(255, 255, 255, 0.19);
+          }
+
+          &:last-child {
+
+            span {
+              border-bottom: 0;
+            }
           }
         }
 
@@ -134,9 +141,7 @@
           }
         }
 
-        .last-item {
-          border-bottom: 0;
-        }
+        
       }
     }
 
