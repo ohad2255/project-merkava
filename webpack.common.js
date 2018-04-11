@@ -18,8 +18,6 @@ module.exports = {
         'sapakim/sapakim': ["./src/sapakim/sapakim.scss", "./src/sapakim/sapakim.js"],
         'mepharsemim/mepharsemim': ["./src/mepharsemim/mepharsemim.scss", "./src/mepharsemim/mepharsemim.js"],
         'job-owners/job-owners': ["./src/job-owners/job-owners.scss", "./src/job-owners/job-owners.js"],
-        'mailing-with-file/mailing-with-file': ["./src/mailing-with-file/mailing-with-file.scss", "./src/mailing-with-file/mailing-with-file.js"],
-        'mailing-welcome-to-site/mailing-welcome-to-site': ["./src/mailing-welcome-to-site/mailing-welcome-to-site.scss", "./src/mailing-welcome-to-site/mailing-welcome-to-site.js"],
         'bids/bids': ["./src/bids/bids.scss", "./src/bids/bids.js"],
         'search-results/search-results': ["./src/search-results/search-results.scss", "./src/search-results/search-results.js"]
     },
@@ -144,16 +142,6 @@ module.exports = {
             chunks: ['job-owners/job-owners'],
             filename: path.resolve(__dirname, "dist/job-owners/index.html"),
             template: path.resolve(__dirname, "src/job-owners/index.html")
-        }),
-        new HtmlWebpackPlugin({
-            chunks: ['mailing-with-file/mailing-with-file'],
-            filename: path.resolve(__dirname, "dist/mailing-with-file/index.html"),
-            template: path.resolve(__dirname, "src/mailing-with-file/index.html")
-        }),
-        new HtmlWebpackPlugin({
-            chunks: ['mailing-welcome-to-site/mailing-welcome-to-site'],
-            filename: path.resolve(__dirname, "dist/mailing-welcome-to-site/index.html"),
-            template: path.resolve(__dirname, "src/mailing-welcome-to-site/index.html")
         }),
         new HtmlWebpackPlugin({
             chunks: ['bids/bids'],
