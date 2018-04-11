@@ -80,4 +80,17 @@ $(document).ready(function() {
 	// 	}
 	// });
 	//$('.datepicker').datepicker();
+
+	$(function () {
+        $('#datepicker1').datepicker();
+        $('#datepicker2').datepicker({
+            useCurrent: false //Important! See issue #1075
+        });
+        $("#datepicker1").on("dp.change", function (e) {
+            $('#datepicker2').data("datepicker").minDate(e.date);
+        });
+        $("#datepicker2").on("dp.change", function (e) {
+            $('#datepicker1').data("datepicker").maxDate(e.date);
+        });
+    });
 });
