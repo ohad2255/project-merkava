@@ -8,7 +8,7 @@ Dropzone.autoDiscover = false;
             maxFiles: 2000,
             // url: "/ajax_file_upload_handler/",
             autoProcessQueue: false,
-            previewsContainer: ".dropzone-previews",
+            previewsContainer: ".dropzone-previews",	
             success: function (file, response) {
                 console.log(response);
             },

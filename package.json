@@ -41,6 +41,7 @@
     "handlebars": "^4.0.11",
     "jquery": "^3.1.1",
     "jquery-animate-scroll": "^1.0.0",
-    "parsleyjs": "^2.8.0"
+    "parsleyjs": "^2.8.0",
+    "pikaday": "^1.7.0"
   }
 }
