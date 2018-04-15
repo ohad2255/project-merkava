@@ -1,3 +1,4 @@
+
 var Dropzone = require('dropzone');
 require('../common/common');
 debugger

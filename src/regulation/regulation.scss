@@ -1,6 +1,6 @@
 @import "../util/util.scss";
 
-.green-r {
+.regulation {
 	min-width: 330px;
 
 	#searchInput {
@@ -19,20 +19,20 @@
 		 }
 	}
 
-	.green-r-top-sec {
+	.regulation-top-sec {
 		position: relative;
 		height: 205px;
 		background-color: $main-white;
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
-		background-image: url('../common/img/background-pic-green-r.png');
+		background-image: url('../common/img/regulation-background-img.png');
 		background-repeat: no-repeat;
 		background-size: cover;
-		background-position-y: -4px;
-		background-position-x: 7px;
+		background-position: left;
+		background-position-y: 69px;
 
 		@media (min-width: $screen-lg-min) {
 			height: auto;
-			background-size: contain;
+			background-size: initial;
 			min-height: 308px;
 		}
 
@@ -43,7 +43,7 @@
 			width: 5px;
 			height: 100%;
 			border-radius: 4px;
-			background-color: $rechesh-green;
+			background-color: $main-purple;
 
 			@media (min-width: $screen-lg-min) {
 				width: 11px;
@@ -63,10 +63,10 @@
 				margin: 0;
 			}
 
-			.green-r-breadcrumb-wrapper {	
+			.regulation-breadcrumb-wrapper {	
 
 				@media (min-width: $screen-lg-min) {
-					margin: 0 116px 35px 0;
+					margin: 0 0 35px 0;
 				}
 
 				.breadcrumb {
@@ -74,7 +74,7 @@
 				}
 
 				.breadcrumb-item  {
-					color: $rechesh-green;
+					color: $header-blue;
 					font-size: 1.6rem;
 					font-weight: 500;
 					font-style: normal;
@@ -84,51 +84,37 @@
 				}
 			}
 
-			.green-r-p-sec {
+			.regulation-p-sec {
 				margin: 0 20px;
 
 				@media (min-width: $screen-lg-min) {
 					margin: 0;
 				}	
 
-				.green-r-p-container {
+				.regulation-p-container {
 
 					@media (min-width: $screen-lg-min) {
 						//margin:29px 20px 116px 0;
 					}	
 				}
 
-				.green-r-p-wrapper {
+				.regulation-p-wrapper {
 					order: 2;
 					margin: 0;
 
 					@media (min-width: $screen-lg-min) {
-						margin: 0 24px 0 0;
+						margin: 0;
 					}
 				}
 
-				.green-top-icon {
-					order: 1;
-					width: 36px;
-					height: 47px;
-					object-fit: contain;
-					margin: 0 0 16px 0;
-
-					@media (min-width: $screen-lg-min) {
-						width: 88px;
-						height: 116px;
-						margin: 0;
-					}
-				}	
-
-				.green-r-head {
+				.regulation-head {
 					font-size: 3rem;
 					font-weight: 500;
 					font-style: normal;
 					font-stretch: normal;
 					line-height: 0.83;
 					letter-spacing: normal;
-					color: $rechesh-green;
+					color: $main-purple;
 
 					@media (min-width: $screen-lg-min) {
 						font-size: 6.2rem;
@@ -138,7 +124,7 @@
 					}	
 				}
 
-				.green-r-top-p {
+				.regulation-top-p {
 					font-size: 1.6rem;
 					font-weight: normal;
 					font-style: normal;
@@ -163,18 +149,18 @@
 		}
 	}
 
-	.green-r-body {
+	.regulation-body {
 		//height: 567px;
 
-		.green-r-body-wrapper {
+		.regulation-body-wrapper {
 			width: 100%;
 			margin:0 0 77px 0;
 
 			@media (min-width: $screen-lg-min) {
-				margin:0 0 81px 0;
+				margin:0 0 200px 0;
 			}
 
-			.green-r-body-p-wrapper {
+			.regulation-body-p-wrapper {
 				margin: 21px 0 30px;
 
 				@media (min-width: $screen-lg-min) {
@@ -183,7 +169,7 @@
 				}	
 			}
 
-			.green-r-body-first-p {
+			.regulation-body-first-p {
 				margin-bottom: 0;
 				font-size: 1.6rem;
 				font-weight: normal;
@@ -195,11 +181,18 @@
 				color: #4e5665;
 			}
 
-			.green-r-accordion-wrapper {
+			.regulation-accordion-wrapper {
 
-				.card-1, .card-2, .card-3 {
-					border-right: 9px solid $rechesh-green;
-					border-radius: 4px;
+				@media (min-width: $screen-lg-min) {
+					margin: 96px 0 0 0;
+					border: solid #dddddd;
+					border-width: 0 0 1px 0;
+					padding: 0 0 91px 0;
+				}
+
+				.card {
+					border-right: 9px solid $main-purple;
+					border-radius: 2px;
 					background-color: $main-white;
 					box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.15);
 					min-height: 140px;
@@ -243,7 +236,7 @@
 						font-stretch: normal;
 						line-height: 1.25;
 						letter-spacing: normal;
-						color: $rechesh-green;
+						color: $main-purple;
 						font-family: $main-font;
 						padding-top: 17px;
 						height: auto;
@@ -272,11 +265,79 @@
 							line-height: 1.75;
 						}	
 					}
+
+					&:last-child {
+						margin: 0;
+					}
 				}
 
-				.card-3 {
-					margin: 0;
+
+				.arrows-card {
+
+					.arrows-card-content, .card-block {
+						font-size: 1.6rem;
+						font-weight: normal;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: 1.33;
+						letter-spacing: normal;
+						color: #505050;
+						font-family: $main-font;
+						margin: 0 14px 0 30px; 
+
+						@media (min-width: $screen-lg-min) {
+							margin:0 91.5px 0 120px;
+							line-height: 1.75;
+						}	
+					}
+
+
+
+					.card-p-arrow {
+						font-size: 1.3rem;
+						position: relative;
+						top: -1px;
+						margin: 0 4px 0 0;
+						font-weight: bold;
+					}
 				}
+
+				.collapse-arrows-wrapper {
+
+					width: 15px;
+					height: 13px; 
+					position: absolute;
+					left: 10px;
+					bottom: 9px;
+					transform: rotate(90deg);
+
+					@media (min-width: $screen-lg-min) {
+						width: auto;
+    					height: 26px;
+    					margin: 0;
+    					left: 32px;
+    					bottom: 20px;
+					}	 
+
+					span {
+						border: solid $main-purple;
+						border-width: 0 4px 4px 0;
+						display: inline-block;
+						transform: rotate(45deg);
+						height: 9px;
+						width: 9px;
+						display: inline-block;
+						line-height: normal;
+						width: 13px;
+  						height: 22px;
+
+  						&:last-child {
+  							margin: 0 0 0 0;
+  						}
+					}
+				}
+
+				
 
 				.collapse-arrow {
 			 		//margin: 0 0 7px 10px;
@@ -295,21 +356,83 @@
 					}	 
 				}
 
-				.show + .collapse-arrow {
-					transform: rotate(90deg);
+				.show + .collapse-arrows-wrapper {
+					transform: rotate(180deg);
 				}	
+			}
+
+			.tutorials-head {
+				font-size: 3.2rem;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 0.88;
+				letter-spacing: normal;
+				color: #4e5665;
+				margin: 90px 0 20px 0;
+			}
+
+			.tutorials-wrapper {
+
+				.tutorial-wrapper {
+					border-radius: 2.1px;
+					background-color: #fff;
+					box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15);
+					text-align: right;
+					width: 293px;
+					height: 160px;
+					padding: 20px 14px 0 0;
+					margin: 0 0 0 10px;
+
+					&:last-child {
+						margin: 0;
+					}
+
+					.tutorial-date {
+						font-size: 1.6rem;
+						font-weight: normal;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: 1.25;
+						letter-spacing: normal;
+						color: #4e5665;
+					}
+
+					.tutorial-contant {
+						font-size: 20px;
+						font-weight: normal;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: 1.15;
+						letter-spacing: normal;
+						color: #6266a6;
+
+						span {
+							font-family: FbAgolEng;
+							font-size: 17px;
+							line-height: 1.35;
+						}
+					}
+				}
+
+				.download-wrapper {
+					height: 20px;
+					margin: 0 0 10px 10px;
+
+					img {
+						height: 20px;
+						width: auto;
+					}
+
+					.print {
+						margin: 0 15px 0 0;
+					}
+				}
 			}
 		}
 	}
 
-	.green-r-footer {
-		padding: 69px 0 0 0;
-	// 	margin: 0 46px 0;
-	// 	border-top: solid 2px $footer-border;
-
-	// 	@media (min-width: $screen-lg-min) {
-	// 		margin: 0 165px 0;
-	// 		padding: 58px 0 0 0;
-	// 	}	
+	.regulation-footer {
+		
 	}
 }	
