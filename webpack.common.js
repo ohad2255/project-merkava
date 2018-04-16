@@ -20,7 +20,8 @@ module.exports = {
         'job-owners/job-owners': ["./src/job-owners/job-owners.scss", "./src/job-owners/job-owners.js"],
         'bids/bids': ["./src/bids/bids.scss", "./src/bids/bids.js"],
         'search-results/search-results': ["./src/search-results/search-results.scss", "./src/search-results/search-results.js"],
-        'regulation/regulation': ["./src/regulation/regulation.scss", "./src/regulation/regulation.js"]
+        'regulation/regulation': ["./src/regulation/regulation.scss", "./src/regulation/regulation.js"],
+        'news/news': ["./src/news/news.scss", "./src/news/news.js"]
     },
     output: {
         filename: "[name].min.js",
@@ -158,6 +159,11 @@ module.exports = {
             chunks: ['regulation/regulation'],
             filename: path.resolve(__dirname, "dist/regulation/index.html"),
             template: path.resolve(__dirname, "src/regulation/index.html")
-        }),      
+        }), 
+         new HtmlWebpackPlugin({
+            chunks: ['news/news'],
+            filename: path.resolve(__dirname, "dist/news/index.html"),
+            template: path.resolve(__dirname, "src/news/index.html")
+        })      
     ]
 };
