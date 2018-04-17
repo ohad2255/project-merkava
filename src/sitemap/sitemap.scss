@@ -24,17 +24,21 @@
 		height: 205px;
 		background-color: $main-white;
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
-		background-image: url('../common/img/sitemap.png');
+		background-image: url('../common/img/sitemap@3x.png');
 		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: left;
-		background-position-y: 55px;
-		background-position-x: 11px;
+		background-size: contain;
+		background-position: top;
+		background-position-x: 0;
+		background-position-y: 5px;
 
 		@media (min-width: $screen-lg-min) {
 			height: auto;
 			background-size: initial;
 			min-height: 308px;
+			background-size: cover;
+			background-position: left;
+			background-position-y: 55px;
+			background-position-x: 11px;
 		}
 
 		.right-line {
@@ -56,11 +60,10 @@
 			width: 100%;
 			padding: 0;
 			height: auto;
-			margin: 20px 0 0 0;
+			margin: 0;
 
 			@media (min-width: $screen-lg-min) {
 				padding: 29px 20px 0;
-				margin: 0;
 			}
 
 			.sitemap-breadcrumb-wrapper {	
@@ -85,7 +88,7 @@
 			}
 
 			.sitemap-p-sec {
-				margin: 0 20px;
+				margin: 94px 20px 0;
 
 				@media (min-width: $screen-lg-min) {
 					margin: 0;
@@ -151,8 +154,20 @@
 
 	.sitemap-body {
 
+		padding: 0 10px;
+
 		@media (min-width: $screen-lg-min) {
 			margin: 96px auto 200px;
+			padding: 0 20px;
+		}
+
+		.sitemap-items-wrapper {
+			width: 100%;
+			margin: 20px 0 95px 0;
+
+			@media (min-width: $screen-lg-min) {
+				width: auto;
+			}
 		}
 
 		.sitemap-item {
@@ -165,12 +180,12 @@
 			letter-spacing: normal;
 			color: $cobalt;
 			background-color: rgba(233, 235, 240, 0.5);
+			padding: 0 10px 0 0;
+			height: 67px;
 			
 			@media (min-width: $screen-lg-min) {
 				width: 591px;
-				height: 67px;
 				object-fit: contain;
-				padding: 0 10px 0 0;
 			}
 		}
 
