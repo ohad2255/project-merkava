@@ -28,7 +28,8 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: left;
-		background-position-y: 54px;
+		background-position-y: 55px;
+		background-position-x: 11px;
 
 		@media (min-width: $screen-lg-min) {
 			height: auto;
@@ -58,8 +59,29 @@
 			margin: 20px 0 0 0;
 
 			@media (min-width: $screen-lg-min) {
-				padding: 87px 20px 0;
+				padding: 29px 20px 0;
 				margin: 0;
+			}
+
+			.sitemap-breadcrumb-wrapper {	
+
+				@media (min-width: $screen-lg-min) {
+					margin: 0 0 35px 0;
+				}
+
+				.breadcrumb {
+					margin: 0;	
+				}
+
+				.breadcrumb-item  {
+					color: $header-blue;
+					font-size: 1.6rem;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.75;
+					letter-spacing: normal;
+				}
 			}
 
 			.sitemap-p-sec {
@@ -128,126 +150,43 @@
 	}
 
 	.sitemap-body {
-		//height: 567px;
 
-		.sitemap-body-wrapper {
-			width: 100%;
-			margin:0 0 77px 0;
+		@media (min-width: $screen-lg-min) {
+			margin: 96px auto 200px;
+		}
 
+		.sitemap-item {
+
+			font-size: 3.2rem;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 0.78;
+			letter-spacing: normal;
+			color: $cobalt;
+			background-color: rgba(233, 235, 240, 0.5);
+			
 			@media (min-width: $screen-lg-min) {
-				margin: 0;
-				padding: 96px 20px 0;
+				width: 591px;
+				height: 67px;
+				object-fit: contain;
+				padding: 0 10px 0 0;
 			}
+		}
 
-			.downloads-head {
-				font-size: 3.2rem;
+		.sitemap-sub-items-wrapper {
+			padding: 0 10px 0 0;
+			margin: 10px 0 30px 0;
+
+			a {
+				font-size: 1.6rem;
 				font-weight: normal;
 				font-style: normal;
 				font-stretch: normal;
-				line-height: 0.88;
+				line-height: 1.75;
 				letter-spacing: normal;
-				color: #4e5665;
-				margin: 90px 0 20px 0;
-			}
-
-			.body-top-sec {
-
-				@media (min-width: $screen-lg-min) {
-					border: solid #dddddd;
-					border-width: 0 0 1px 0;
-					padding: 0 0 90px 0;
-				}
-
-				h2 {
-					font-size: 3.2rem;
-					font-weight: normal;
-					font-style: normal;
-					font-stretch: normal;
-					line-height: 0.78;
-					letter-spacing: normal;
-					color: $cobalt;
-					margin: 0 0 16px 0;
-				}
-
-				.body-top-sec-p {
-					font-size: 1.6rem;
-					font-weight: normal;
-					font-style: normal;
-					font-stretch: normal;
-					line-height: 1.75;
-					letter-spacing: normal;
-					color: #505050;
-					max-width: 1017px;
-					margin: 0 0 30px 0;
-
-					&:last-child {
-						margin: 0 0 10px 0;
-					}
-				}
-			}
-
-			.downloads-wrapper {
-
-				min-height: 500px;
-
-				.download-wrapper {
-					border-radius: 2.1px;
-					background-color: #fff;
-					box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15);
-					text-align: right;
-					width: 293px;
-					height: 160px;
-					padding: 20px 14px 0 0;
-					margin: 0 0 0 10px;
-
-					&:last-child {
-						margin: 0;
-					}
-
-					.download-date {
-						font-size: 1.6rem;
-						font-weight: normal;
-						font-style: normal;
-						font-stretch: normal;
-						line-height: 1.25;
-						letter-spacing: normal;
-						color: #4e5665;
-
-						@media (min-width: $screen-lg-min) {
-							margin: 0 0 3px 0;
-						}	
-					}
-
-					.download-contant {
-						font-size: 20px;
-						font-weight: normal;
-						font-style: normal;
-						font-stretch: normal;
-						line-height: 1.15;
-						letter-spacing: normal;
-						color: $cobalt;
-
-						span {
-							font-family: FbAgolEng;
-							font-size: 17px;
-							line-height: 1.35;
-						}
-					}
-				}
-
-				.download-print-wrapper {
-					height: 20px;
-					margin: auto 0 10px 10px;
-
-					img {
-						height: 20px;
-						width: auto;
-					}
-
-					.print-icon-wrapper {
-						margin: 0 15px 0 0;
-					}
-				}
+				color: $cobalt;
+				text-decoration: underline;
 			}
 		}
 	}

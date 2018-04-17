@@ -26,11 +26,19 @@
       <section class="sitemap-top-sec d-flex flex-column align-items-center">
         <div class="right-line"></div>
         <div class="top-sec-container custom-container d-flex flex-column justify-content-start">
+          
+          <!-- breadcrumbs -->
+          <div class="sitemap-breadcrumb-wrapper d-none d-lg-block">
+              <nav class="breadcrumb d-flex align-items-center justify-content-start">
+                 <a class="breadcrumb-item breadcrumb-item-1 d-flex align-items-center justify-content-center" href="#">מנהל הרכש הממשלתי <span>››</span></a>
+                <a class="breadcrumb-item breadcrumb-item-2 d-flex align-items-center justify-content-center" href="#">מפת אתר</a>
+              </nav>
+          </div>
           <div class="sitemap-p-sec d-flex align-items-start">
               <div class="sitemap-p-container d-flex align-items-lg-center align-items-start flex-column flex-lg-row">
                   <div class="sitemap-p-wrapper d-flex flex-column">
                     <h1 class="sitemap-head">
-                        פרסומים ועידכונים
+                        מפת אתר
                     </h1>
                     <p class="sitemap-top-p">
                         טקסט קצר יותר מפורט לורם איפסום כאן. 
@@ -42,53 +50,106 @@
       </section>
 
       <!-- main-contant -->
-      <section class="sitemap-body d-flex flex-column align-items-center">
-        <div class="sitemap-body-wrapper custom-container">
+      <section class="sitemap-body d-flex flex-column align-items-center custom-container">
 
-          <!-- sitemap body top section -->
+        <!-- sitemap items section -->
+        <div class="sitemap-items-wrapper d-flex flex-wrap justify-content-between">
 
-          <div class="body-top-sec">
-            <h2>נתוני הרכש הממשלתי לשנת 2016</h2>
-            <p class="body-top-sec-p">
-              לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית להאמית קרהשק סכעיט דז מא, מנכם למטכין נשואי מנורך. ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. קלאצי נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף אודיפו בלאסטיק.
-            </p>
-            <p class="body-top-sec-p">
-              לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית להאמית קרהשק סכעיט דז מא, מנכם למטכין נשואי מנורך. ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. קלאצי נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף אודיפו בלאסטיק.
-            </p>
-          </div>
-            
-          <!-- download file section -->
-          <div class="downloads-container">
-
-            <!-- downloads head -->
-            <div class="downloads-head">קבצים להורדה</div>
-
-            <div class="downloads-wrapper d-flex flex-wrap">
-
-              <!-- downloads 1 -->
-              <div class="download-wrapper d-flex flex-column" id="">
-
-                <!-- downloads contant -->
-                <div class="download-date">
-                  10:00 ,08/03/2018
-                </div>
-                <div class="download-contant">
-                  נתוני הרכש הממשלתי <br>  
-                  לשנת 2016
-                </div>
-                
-                <div class="download-print-wrapper d-flex justify-content-end justify-self-end">
-                  <div class="download-icon-wrapper">
-                    <a class="a" href="../common/img/download-arrow.svg" download><img src="../common/img/download-arrow.svg" class="download-arrow" alt="download-arrow"></a>
-                  </div>
-                  <div class="print-icon-wrapper">
-                    <a class="a" href="javascript:window.print()"><img src="../common/img/printer.svg" class="printer-icon" alt="printer-icon"></a>
-                  </div>
-                </div>
-              </div>
+          <!-- sitemap item 1 -->
+          <div class="sitemap-item-wrapper">
+            <div class="sitemap-item d-flex align-items-center">
+              אודות              
+            </div>
+            <div class="sitemap-sub-items-wrapper">
+                <a href="../about/index.html" class="main-nav-item-link">אודות</a><br>
+                <a href="../job-owners/index.html" class="main-nav-item-link">בעלי תפקידים</a><br>
             </div>
           </div>
-        </div>
+
+          <!-- sitemap item 2 -->
+          <div class="sitemap-item-wrapper">
+            <div class="sitemap-item d-flex align-items-center">
+              מכרזים
+            </div>
+            <div class="sitemap-sub-items-wrapper">
+              <a  href="../bids/index.html" class="main-nav-item-link">מכרזים</a><br>
+              <a href="#" class="main-nav-item-link">אודות</a><br>
+            </div>
+          </div>
+
+          <!-- sitemap item 3 -->
+          <div class="sitemap-item-wrapper">
+            <div class="sitemap-item d-flex align-items-center">
+              הודעות פטור
+            </div>
+            <div class="sitemap-sub-items-wrapper">
+                <a  href="#" class="main-nav-item-link">הודעות פטור</a><br>
+                <a href="#" class="main-nav-item-link">אודות</a><br>
+            </div>
+          </div>
+
+          <!-- sitemap item 4 -->
+          <div class="sitemap-item-wrapper">
+            <div class="sitemap-item d-flex align-items-center">
+              מכרזי מנהל הרכש
+            </div>
+            <div class="sitemap-sub-items-wrapper">
+                <a  href="#" class="main-nav-item-link">מכרזי מנהל הרכש</a><br>
+                <a href="#" class="main-nav-item-link">אודות</a><br>
+            </div>
+          </div>
+
+          <!-- sitemap item 5 -->
+          <div class="sitemap-item-wrapper">
+            <div class="sitemap-item d-flex align-items-center">
+              מידע מיקצועי
+            </div>
+            <div class="sitemap-sub-items-wrapper">
+                <a href="#" class="main-nav-item-link">מידע מקצועי</a><br>
+                <a href="../green-rechesh/index.html" class="main-nav-item-link">רכש ירוק</a><br>
+                <a href="../q-and-a/index.html" class="main-nav-item-link">שאלות ותשובות</a><br>
+                <a href="../dictionary/index.html" class="main-nav-item-link">מילון מונחים</a><br>
+                <a href="../sapakim/index.html" class="main-nav-item-link">מאגרי ספקים</a><br>
+                <a href="../search-results/index.html" class="main-nav-item-link">תוצאות חיפוש</a><br>
+                <a href="../regulation/index.html" class="main-nav-item-link">דיני מכרזים</a><br>
+                <a href="../news-1/index.html" class="main-nav-item-link">פרסומים ועידכונים</a><br>
+            </div>
+          </div>
+
+          <!-- sitemap item 6 -->
+          <div class="sitemap-item-wrapper">
+            <div class="sitemap-item d-flex align-items-center">
+              דו״חות
+            </div>
+            <div class="sitemap-sub-items-wrapper">
+              <a href="#" class="main-nav-item-link">דו״חות</a><br>
+            </div>
+          </div>
+
+          <!-- sitemap item 7 -->
+          <div class="sitemap-item-wrapper">
+            <div class="sitemap-item d-flex align-items-center">
+              דיוור אישי
+            </div>
+            <div class="sitemap-sub-items-wrapper">
+              <a href="#" class="main-nav-item-link">דיוור אישי</a><br>
+              <a href="../profile/index.html" class="main-nav-item-link">עדכון פרטים</a><br>
+              <a href="../mepharsemim/index.html" class="main-nav-item-link">מפרסמים</a><br>
+            </div>
+          </div>
+
+          <!-- sitemap item 8 -->
+
+          <div class="sitemap-sub-items-wrapper">
+            <div class="sitemap-item d-flex align-items-center">
+              צור קשר
+            </div>
+            <div class="sitemap-sub-items-wrapper">
+              <a href="../contact-us/index.html" class="main-nav-item-link">צור קשר</a><br>
+              <a href="#" class="main-nav-item-link">אודות</a><br>
+            </div>
+          </div>
+        </div>  
       </section>
 
       <!-- footer -->
