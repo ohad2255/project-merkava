@@ -1,6 +1,6 @@
 @import "../util/util.scss";
 
-.news {
+.news-1 {
 	min-width: 330px;
 
 	#searchInput {
@@ -19,7 +19,7 @@
 		 }
 	}
 
-	.news-top-sec {
+	.news-1-top-sec {
 		position: relative;
 		height: 205px;
 		background-color: $main-white;
@@ -62,21 +62,21 @@
 				margin: 0;
 			}
 
-			.news-p-sec {
+			.news-1-p-sec {
 				margin: 0 20px;
 
 				@media (min-width: $screen-lg-min) {
 					margin: 0;
 				}	
 
-				.news-p-container {
+				.news-1-p-container {
 
 					@media (min-width: $screen-lg-min) {
 						//margin:29px 20px 116px 0;
 					}	
 				}
 
-				.news-p-wrapper {
+				.news-1-p-wrapper {
 					order: 2;
 					margin: 0;
 
@@ -85,7 +85,7 @@
 					}
 				}
 
-				.news-head {
+				.news-1-head {
 					font-size: 3rem;
 					font-weight: 500;
 					font-style: normal;
@@ -102,7 +102,7 @@
 					}	
 				}
 
-				.news-top-p {
+				.news-1-top-p {
 					font-size: 1.6rem;
 					font-weight: normal;
 					font-style: normal;
@@ -127,10 +127,10 @@
 		}
 	}
 
-	.news-body {
+	.news-1-body {
 		//height: 567px;
 
-		.news-body-wrapper {
+		.news-1-body-wrapper {
 			width: 100%;
 			margin:0 0 77px 0;
 
@@ -139,7 +139,7 @@
 				padding: 96px 20px 0;
 			}
 
-			.downloads-head {
+			.relevant-links-head {
 				font-size: 3.2rem;
 				font-weight: normal;
 				font-style: normal;
@@ -184,13 +184,18 @@
 						margin: 0 0 10px 0;
 					}
 				}
+
+				.bold-p {
+					font-weight: 500;
+					line-height: 1.4;
+				}
 			}
 
-			.downloads-wrapper {
+			.relevant-links-wrapper {
 
-				min-height: 500px;
-
-				.download-wrapper {
+				margin: 0 0 200px 0;
+				
+				.relevant-link-wrapper {
 					border-radius: 2.1px;
 					background-color: #fff;
 					box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15);
@@ -204,7 +209,7 @@
 						margin: 0;
 					}
 
-					.download-date {
+					.relevant-link-date {
 						font-size: 1.6rem;
 						font-weight: normal;
 						font-style: normal;
@@ -218,7 +223,7 @@
 						}	
 					}
 
-					.download-contant {
+					.relevant-link-contant {
 						font-size: 20px;
 						font-weight: normal;
 						font-style: normal;
@@ -252,7 +257,7 @@
 		}
 	}
 
-	.news-footer {
+	.news-1-footer {
 		
 	}
 }	

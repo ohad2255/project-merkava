@@ -21,7 +21,9 @@ module.exports = {
         'bids/bids': ["./src/bids/bids.scss", "./src/bids/bids.js"],
         'search-results/search-results': ["./src/search-results/search-results.scss", "./src/search-results/search-results.js"],
         'regulation/regulation': ["./src/regulation/regulation.scss", "./src/regulation/regulation.js"],
-        'news/news': ["./src/news/news.scss", "./src/news/news.js"]
+        'news-1/news-1': ["./src/news-1/news-1.scss", "./src/news-1/news-1.js"],
+        'news-2/news-2': ["./src/news-2/news-2.scss", "./src/news-2/news-2.js"],
+        'sitemap/sitemap': ["./src/sitemap/sitemap.scss", "./src/sitemap/sitemap.js"] 
     },
     output: {
         filename: "[name].min.js",
@@ -161,9 +163,19 @@ module.exports = {
             template: path.resolve(__dirname, "src/regulation/index.html")
         }), 
          new HtmlWebpackPlugin({
-            chunks: ['news/news'],
-            filename: path.resolve(__dirname, "dist/news/index.html"),
-            template: path.resolve(__dirname, "src/news/index.html")
-        })      
+            chunks: ['news-1/news-1'],
+            filename: path.resolve(__dirname, "dist/news-1/index.html"),
+            template: path.resolve(__dirname, "src/news-1/index.html")
+        }),
+        new HtmlWebpackPlugin({
+            chunks: ['news-2/news-2'],
+            filename: path.resolve(__dirname, "dist/news-2/index.html"),
+            template: path.resolve(__dirname, "src/news-2/index.html")
+        }), 
+        new HtmlWebpackPlugin({
+            chunks: ['sitemap/sitemap'],
+            filename: path.resolve(__dirname, "dist/sitemap/index.html"),
+            template: path.resolve(__dirname, "src/sitemap/index.html")
+        })     
     ]
 };
