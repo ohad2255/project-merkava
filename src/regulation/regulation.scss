@@ -26,14 +26,17 @@
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
 		background-image: url('../common/img/regulation-background-img.png');
 		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: left;
-		background-position-y: 69px;
+		background-size: contain;
+		background-position: top;
+		background-position-y: -10px;
+		background-position-x: -10px;
 
 		@media (min-width: $screen-lg-min) {
 			height: auto;
 			background-size: initial;
 			min-height: 308px;
+			background-position-y: 0;
+			background-position-x: 0;
 		}
 
 		.right-line {
@@ -55,7 +58,7 @@
 			width: 100%;
 			padding: 0;
 			height: auto;
-			margin: 20px 0 0 0;
+			margin: 73px 0 0 0;
 
 			@media (min-width: $screen-lg-min) {
 				padding: 29px 20px 0;
@@ -153,10 +156,12 @@
 
 		.regulation-body-wrapper {
 			width: 100%;
-			margin:0 0 77px 0;
+			margin: 20px 0 0 0;
+			padding: 0 10px;
 
 			@media (min-width: $screen-lg-min) {
 				margin:0 0 200px 0;
+				padding: 0 20px;
 			}
 
 			.regulation-body-p-wrapper {
@@ -181,26 +186,29 @@
 			}
 
 			.regulation-accordion-wrapper {
+				border: solid #dddddd;
+				border-width: 0 0 1px 0;
+				padding: 0 0 52px 0;
 
 				@media (min-width: $screen-lg-min) {
 					margin: 96px 0 0 0;
-					border: solid #dddddd;
-					border-width: 0 0 1px 0;
 					padding: 0 0 91px 0;
 				}
 
 				.card {
-					border-right: 9px solid $main-purple;
+					border-right: 5px solid $main-purple;
 					border-radius: 2px;
 					background-color: $main-white;
 					box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.15);
 					min-height: 140px;
-					margin-bottom: 32px;
+					margin: 0 0 20px 0;
 					position: relative;
 
 					@media (min-width: $screen-lg-min) {
+						border-right: 9px solid $main-purple;
 						min-height: 264px;
 						padding: 0;
+						margin: 0 0 32px 0;
 					}
 
 					.collapsed-p {
@@ -278,7 +286,7 @@
 						font-weight: normal;
 						font-style: normal;
 						font-stretch: normal;
-						line-height: 1.33;
+						line-height: 1.25;
 						letter-spacing: normal;
 						color: #505050;
 						font-family: $main-font;
@@ -303,11 +311,11 @@
 
 				.collapse-arrows-wrapper {
 
-					width: 15px;
-					height: 13px; 
+					width: auto;
+    				height: 18px; 
 					position: absolute;
-					left: 10px;
-					bottom: 9px;
+					left: 15px;
+					bottom: 12px;
 					transform: rotate(90deg);
 
 					@media (min-width: $screen-lg-min) {
@@ -320,39 +328,24 @@
 
 					span {
 						border: solid $main-purple;
-						border-width: 0 4px 4px 0;
+						border-width: 0 3px 3px 0;
 						display: inline-block;
 						transform: rotate(45deg);
-						height: 9px;
-						width: 9px;
 						display: inline-block;
 						line-height: normal;
-						width: 13px;
-  						height: 22px;
+						width: 9px;
+  						height: 19px;
+
+  						@media (min-width: $screen-lg-min) {
+							width: 13px;
+  							height: 22px;
+  							border-width: 0 4px 4px 0;
+						}
 
   						&:last-child {
   							margin: 0 0 0 0;
   						}
 					}
-				}
-
-				
-
-				.collapse-arrow {
-			 		//margin: 0 0 7px 10px;
-			 		width: 15px;
-					height: 13px; 
-					position: absolute;
-					left: 10px;
-					bottom: 9px;
-
-					@media (min-width: $screen-lg-min) {
-						width: 30;
-    					height: 26px;
-    					margin: 0;
-    					left: 25px;
-    					bottom: 23px;
-					}	 
 				}
 
 				.show + .collapse-arrows-wrapper {
@@ -365,10 +358,32 @@
 				font-weight: normal;
 				font-style: normal;
 				font-stretch: normal;
-				line-height: 0.88;
+				line-height: normal;
 				letter-spacing: normal;
 				color: #4e5665;
-				margin: 90px 0 20px 0;
+				margin: 50px 0 20px 0;
+				padding: 0 5px 0 15px;
+
+				@media (min-width: $screen-lg-min) {
+					margin: 52px 0 20px 0;
+					padding: 0;
+					line-height: 0.88;
+				}
+
+				.tutorials-arrow {
+					border: solid #4e5665;
+					border-width: 0 2px 2px 0;
+					display: inline-block;
+					transform: rotate(135deg);
+					height: 12px;
+					width: 12px;
+					display: inline-block;
+					line-height: normal;
+				}
+
+				.rotate {
+					transform: rotate(45deg);
+				}
 			}
 
 			.tutorials-wrapper {
@@ -380,8 +395,9 @@
 					text-align: right;
 					width: 293px;
 					height: 160px;
-					padding: 20px 14px 0 0;
+					padding: 10px 15px 0 0;
 					margin: 0 0 0 10px;
+					position: relative;
 
 					&:last-child {
 						margin: 0;
@@ -395,6 +411,7 @@
 						line-height: 1.25;
 						letter-spacing: normal;
 						color: #4e5665;
+						margin: 0 0 5px 0;
 					}
 
 					.tutorial-contant {
@@ -414,21 +431,112 @@
 					}
 				}
 
-				.download-wrapper {
-					height: 20px;
+				.tutorial-wrapper {
 					margin: 0 0 10px 10px;
-
-					img {
-						height: 20px;
-						width: auto;
-					}
-
-					.print {
-						margin: 0 15px 0 0;
-					}
 				}
 			}
 		}
+	}
+
+	.download-wrapper {
+		margin: 0 0 10px 10px;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+
+		@media (min-width: $screen-lg-min) {
+			margin: 0 0 15px 15px;
+		}
+	}
+
+	img {
+		height: 20px;
+		width: auto;
+	}
+
+	.print {
+		margin: 0 15px 0 0;
+	}
+
+	.hidden {
+		visibility: hidden;
+		height: 1px;
+	}
+
+	.tutorials-wrapper-mobile {
+		padding: 0 15px 0 0;
+		margin: 0 0 200px 0;
+
+		.tutorial-wrapper {
+			margin: 0 0 10px 10px;
+		}
+
+		.tutorial-date {
+			font-size: 1.4rem;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1.43;
+			letter-spacing: normal;
+			color: $text-dark-grey;
+			margin: 0 0 3px 0;
+		}
+
+		.tutorial-head {
+			//margin: 0 0 23px 0;
+
+			h3 {
+				font-size: 2rem;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.15;
+				letter-spacing: normal;
+				color: $main-purple;
+				//max-width: 253px;
+			}
+		}
+
+		.swiper-container {
+			padding: 4px;
+		}
+
+		.swiper-wrapper {
+			width: 100%;
+			height: 140px;
+			//position: absolute;
+		}
+
+		.swiper-slide {
+			border-radius: 2.1px;
+			background-color: $main-white;
+			box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15);
+			text-align: right;
+			//max-width: 293px;
+			width: 293px!important;
+			padding: 11px 15px 0 0;
+
+			@media (min-width: $screen-lg-min) {
+				//width: 293px!important;
+			}
+		}
+
+		.swiper-pagination {
+	        width: auto;
+	        z-index: 10;
+	        margin: 12px -22px 0 0;
+	        right: 50%;
+
+	        .swiper-pagination-bullet {
+	        	height: 8px;
+	        	width: 8px;
+	        	margin: 0 5px 0 0;
+	        }
+
+	        .swiper-pagination-bullet-active {
+	        	background-color: $main-purple;
+	        }
+	    }
 	}
 
 	.regulation-footer {
