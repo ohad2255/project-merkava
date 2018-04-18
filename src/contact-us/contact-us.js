@@ -1,7 +1,6 @@
 
 var Dropzone = require('dropzone');
 require('../common/common');
-debugger
 Dropzone.autoDiscover = false;
 
    $(document).ready(function () {
@@ -15,8 +14,12 @@ Dropzone.autoDiscover = false;
             },
             init: function() {
 			    this.on("addedfile", function(file) { console.log("file = ", file); });
-			}
+			},
         });
+
+        // $('.close-btn').on('click' , function(){
+        //     removedfile();
+        // });
    })
 // $(".dropzone").dropzone({
 //   url: '#'
