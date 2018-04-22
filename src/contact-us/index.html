@@ -49,7 +49,7 @@
         <div class="contact-us-body-wrapper custom-container d-flex flex-column flex-lg-row justify-content-between">
 
           <!-- form section -->
-          <form action="/ajax_file_upload_handler/" class="contact-us-form-wrapper" id="registration-Form" data-parsley-validate>
+          <form class="contact-us-form-wrapper" id="registration-Form" data-parsley-validate>
             <div class="d-flex flex-column flex-lg-row name-email-wrapper">
 
               <!-- name input -->
@@ -98,13 +98,13 @@
             </div>
 
             <!-- upload file input -->
-            <div class="upload-file-wrapper form-group d-flex d-lg-block align-items-center dropzone" role="form" action="/upload">
+            <div class="upload-file-wrapper form-group d-flex d-lg-block align-items-center dropzone" action="/upload">
               <div class="file-input-wrapper">
                 <small class="d-none d-lg-block">להעלת קובץ מצורף גרור לכאן או לחץ:</small>
                 <div class="file-button-wrapper">
-                <span class="file-button-text">צרף מסמך</span>
+                  <span class="file-button-text">צרף מסמך</span>
                   <label class="sr-only" for="customFile"></label>
-                  <input type="file" class="custom-file-input" id="customFile" name="">
+                  <input type="file" class="custom-file-input" id="customFile" name="" formaction="/ajax_file_upload_handler/">
                   <div class="three-upload-file-dots d-flex justify-content-between d-lg-none"> 
                     <span class="upload-file-dot"></span> 
                     <span class="upload-file-dot"></span> 
@@ -112,7 +112,6 @@
                   </div>  
                 </div>
                 <span class="dropzone-previews">
-                  <span class="close-btn" role="button"></span>
                 </span>
               </div>
             </div>
