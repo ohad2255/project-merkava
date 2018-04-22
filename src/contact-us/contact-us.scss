@@ -403,12 +403,12 @@
 
 				.file-button-wrapper {
 					position: relative;
-					
+					height: 100%;
+					width: 100%;
 
 					@media (min-width: $screen-lg-min) {
 	                    
-						height: 100%;
-						width: 100%;
+						
 	               	}
 
 	               	.three-upload-file-dots { 
@@ -418,6 +418,7 @@
 	               		left: 11px;
 						top: 50%;
 						margin: -2px 0 0 0;
+						pointer-events: none;
 
                     	.upload-file-dot {
 							width: 4px;
@@ -433,24 +434,25 @@
 						font-weight: normal;
 						font-style: normal;
 						font-stretch: normal;
-						line-height: 1.07;
-						letter-spacing: normal;
+						line-height: normal;
+						letter-spacing: 0.5;
 						color: $contact-us-input-text;
 						z-index: 0;
 						padding: 0;
 						top: 50%;
 						right: 18px;
 						margin: -9px 0 0 0;
-						box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
-						border: solid 1px rgb(78, 86 ,101);
-						border-radius: 4px;
-						opacity: 0.6;
+						
 
 						@media (min-width: $screen-lg-min) {
 		                    padding: 7px 19px;
 		                    top: 42px;
 							right: 23px;
 							margin: 0;
+							box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
+							border: solid 1px rgb(78, 86 ,101);
+							border-radius: 4px;
+							opacity: 0.6;
 		               	}
 					}
 
