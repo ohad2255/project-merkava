@@ -221,6 +221,26 @@
 				padding:0 23px 0 0;
 			}
 
+			.first-last-name-wrapper {
+				margin: 0 0 25px 0;
+
+				@media (min-width: $screen-lg-min) {
+					margin: 0;
+               	}
+			}
+
+			.first-name, .last-name {
+
+				@media (min-width: $screen-lg-min) {
+                    max-width: 205px;
+					margin: 0 0 0 10px;
+               	}
+			}
+
+			.first-name {
+				margin: 0 0 0 10px;
+			}
+
 			.subject {
 				position: relative;
 
@@ -298,6 +318,13 @@
                	}
 			}
 
+			.email {
+
+				@media (min-width: $screen-lg-min) {
+                    max-width: 275px;
+               	}
+			}
+
 			.save-details-button {
 				max-width: 882px;
 
@@ -349,17 +376,17 @@
 				textarea.parsley-error {
 					border-bottom: solid 2px #d53b4a;
 				}
+			}
 
-				.input-bullet {
-					position: absolute;
-					width: 6px;
-					height: 6px;
-					background-color: $header-blue;
-					border-radius: 50%;
-					right: 11px;
-					top: 20px;
-					//margin: -5px 0 0 0;
-				}
+			.input-bullet {
+				position: absolute;
+				width: 6px;
+				height: 6px;
+				background-color: $header-blue;
+				border-radius: 50%;
+				right: 11px;
+				top: 21px;
+				//margin: -5px 0 0 0;
 			}
 
 			.upload-file-wrapper {
@@ -396,7 +423,7 @@
 						color: #4e5665;
 						margin: 0 0 13.5px 0;
 						display: block;
-						top: 12px;
+						top: 9px;
 						right: 23px;
 					}
 				}
@@ -446,7 +473,7 @@
 
 						@media (min-width: $screen-lg-min) {
 		                    padding: 7px 19px;
-		                    top: 42px;
+		                    bottom: 18px;
 							right: 23px;
 							margin: 0;
 							box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
@@ -517,7 +544,7 @@
 			}
 		}
 
-		.name, .email, .subject, {
+		.name-and-email-wrapper, .email, .subject, {
 			position: relative;
 
 			.input-bullet {

@@ -52,19 +52,34 @@
           <form class="contact-us-form-wrapper" id="registration-Form" data-parsley-validate>
             <div class="d-flex flex-column flex-lg-row name-email-wrapper">
 
-              <!-- name input -->
-              <div class="form-group name">
-                <input id="nameInputContactUs" class="form-control" type="text" placeholder="שם פרטי ומשפחה"  name="name" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty>
-                <label class="sr-only" for="nameInputContactUs"></label>
-                <div class="input-bullet"></div>
-              </div>
+              <!-- name and email sec -->
+              <div class="form-group name-and-email d-flex flex-column flex-lg-row">
+                <!-- <div class="input-bullet"></div> -->
 
-              <!-- mail input -->
-              <div class="form-group email">
-                <input type="email" class="form-control" id="inputEmail" placeholder="דוא״ל"   id="inputEmailContactUs" class="form-control email-input" name="email" data-required="" data-parsley-validate-if-empty data-parsley-error-message="אימייל חייב להכיל @">
-                <label class="sr-only" for="inputEmailContactUs"></label>
-                <div class="input-bullet"></div>
-              </div>
+                <div class="first-last-name-wrapper d-flex w-100">
+
+                  <!--first name input -->
+                  <div class="form-group first-name">
+                    <input class="form-control" type="text" placeholder= "שם פרטי" id="nameInputReg" name="name" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty>
+                    <label class="sr-only" for="nameInputReg"></label>
+                    <div class="input-bullet"></div>
+                  </div>
+
+                  <!--last name input -->
+                  <div class="form-group last-name">
+                    <input class="form-control" type="text" placeholder= "שם משפחה" id="lastNameInputReg" name="lastName" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty>
+                    <label class="sr-only" for="lastNameInputReg"></label>
+                    <div class="input-bullet"></div>
+                  </div>
+                </div>
+                <div class="form-group email">
+
+                  <!-- mail input -->
+                  <input type="email" class="form-control" id="inputEmail" placeholder="דוא״ל"   id="inputEmailContactUs" class="form-control email-input" name="email" data-required="" data-parsley-validate-if-empty data-parsley-error-message="אימייל חייב להכיל @">
+                  <label class="sr-only" for="inputEmailContactUs"></label>
+                  <div class="input-bullet"></div>
+                </div>
+              </div>   
             </div> 
             <div class="form-group subject-phone-wrapper d-flex flex-column flex-lg-row">
 
@@ -100,11 +115,14 @@
             <!-- upload file input -->
             <div class="upload-file-wrapper form-group d-flex d-lg-block align-items-center dropzone" action="/upload">
               <div class="file-input-wrapper">
-                <small class="d-none d-lg-block">להעלת קובץ מצורף גרור לכאן או לחץ:</small>
+                <small class="d-none d-lg-block">
+                  להעלת קובץ מצורף גרור לכאן או לחץ:<br>
+                  ניתן להוסיף קבצים מסוג ,PDF, JPEG, PNG 
+                  </small>
                 <div class="file-button-wrapper">
                   <span class="file-button-text">צרף מסמך</span>
                   <label class="sr-only" for="customFile"></label>
-                  <input type="file" class="custom-file-input" id="customFile" name="" formaction="/ajax_file_upload_handler/">
+                  <input type="file" class="custom-file-input" id="customFile" name="">
                   <div class="three-upload-file-dots d-flex justify-content-between d-lg-none"> 
                     <span class="upload-file-dot"></span> 
                     <span class="upload-file-dot"></span> 
