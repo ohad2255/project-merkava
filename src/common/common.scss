@@ -76,9 +76,10 @@ button {
     letter-spacing: 0.6px;
     color: #d53b4a;
     position: absolute;
-    bottom: -15px;
+    //bottom: -15px;
     right: 25px;
     padding: 0 0 0 5px;
+    top:100%;
 
     @media (min-width: $screen-lg-min) {
       font-size: 1.2rem;

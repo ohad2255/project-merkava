@@ -106,11 +106,15 @@
 						padding: 0px 25px 0 0;
 					}
 
-					input.parsley-error {
+					input.parsley-error,.has-error input {
 		              box-shadow: none;
 		              border-bottom: solid 2px #d53b4a;
 		            }
-
+					.parsley-errors-list.filled{
+						~.help-block{
+							display:none;
+						}
+					}
 		            .form-group-password {
 		            	position: relative;
 

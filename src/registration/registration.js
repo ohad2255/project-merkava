@@ -2,7 +2,7 @@ require('../common/common');
 
 $(document).ready(function() {
     $("#showPassword").on('click', function() {
-        var input = $("#inputPasswordReg");
+        var input = $("#password");
 
         if (input.attr("type") === "password") {
             input.attr("type", "text");
@@ -14,7 +14,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     $("#showPasswordConfirm").on('click', function() {
-        var input = $("#inputPasswordConfirmReg");
+        var input = $("#register\\.checkPwd");
 
         if (input.attr("type") === "password") {
             input.attr("type", "text");
