@@ -829,7 +829,7 @@
 	}
 
 	.related-documents-swiper {
-		padding:0 20px 5px 0;
+		padding: 4px 20px 5px 0;
 
 		@media (min-width: $screen-lg-min) {
 			padding: 0;
@@ -926,14 +926,18 @@
 	.related-bids-container {
 		//height: 253px;
 		position: relative;
-		margin: 12px 0 0 0;
+		margin: 8px 0 0 0;
 
 		@media (min-width: $screen-lg-min) {
 			height: auto;
 		}
 
 		.related-bids-swiper {
-			//width: 294px;
+			padding: 4px 0;
+
+			@media (min-width: $screen-lg-min) {
+				padding: 0;
+			}
 		}
 
 		.swiper-slide {

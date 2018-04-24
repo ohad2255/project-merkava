@@ -98,19 +98,21 @@
             </div>
 
             <!-- upload file input -->
-            <div class="upload-file-wrapper form-group d-flex d-lg-block align-items-center dropzone">
+            <div class="upload-file-wrapper form-group d-flex d-lg-block align-items-center dropzone" action="/upload">
               <div class="file-input-wrapper">
                 <small class="d-none d-lg-block">להעלת קובץ מצורף גרור לכאן או לחץ:</small>
                 <div class="file-button-wrapper">
                   <span class="file-button-text">צרף מסמך</span>
                   <label class="sr-only" for="customFile"></label>
-                  <input type="file" class="custom-file-input" id="customFile">
+                  <input type="file" class="custom-file-input" id="customFile" name="" formaction="/ajax_file_upload_handler/">
                   <div class="three-upload-file-dots d-flex justify-content-between d-lg-none"> 
                     <span class="upload-file-dot"></span> 
                     <span class="upload-file-dot"></span> 
                     <span class="upload-file-dot"></span>
                   </div>  
                 </div>
+                <span class="dropzone-previews">
+                </span>
               </div>
             </div>
 

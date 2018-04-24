@@ -189,7 +189,7 @@
 
 				.card-one, .card-two {
 					border-right: 5px solid #1c6897;
-					border-radius: 2px;
+					border-radius: 4px;
 					background-color: $main-white;
 					box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.15);
 					min-height: 140px;
@@ -199,6 +199,7 @@
 					@media (min-width: $screen-lg-min) {
 						min-height: 264px;
 						padding: 0 10px;
+						border-right: 9px solid #1c6897;
 					}
 
 					.collapsed-p {
@@ -216,6 +217,7 @@
 					    background-color: $main-white;
 					    border-bottom: none;
 					    width: fit-content;
+					    max-width: 600px;
 					}
 
 					.top-sec-card-header {
@@ -255,6 +257,7 @@
 							}	
 						}
 					}
+					
 					h2 {
 						font-size: 2rem;
 						font-weight: normal;
@@ -267,11 +270,13 @@
 						padding-top: 17px;
 						height: fit-content;
 						margin: 0;
+						max-width: 200px;
 
 						@media (min-width: $screen-lg-min) {
 							padding: 0;
 							font-size: 3.2rem;
 							line-height: 0.78;
+							max-width: none;
 						}	
 
 						@media (max-width: 340px) {
@@ -279,7 +284,7 @@
 						}
 					}
 
-					p, .card-block {
+					.card-with-bullets-head-p, .card-head-p, .card-block {
 						font-size: 1.5rem;
 						font-weight: normal;
 						font-style: normal;
@@ -291,12 +296,34 @@
 						margin:0 14px 0 60px; 
 
 						@media (min-width: $screen-lg-min) {
-							max-width: 785px;
+							max-width: 600px;
 							margin:0 91.5px 0 60px;
 							font-size: 1.6rem;
 							line-height: 1.75;
 						}	
 					}
+				}
+
+				.card-with-bullets-p {
+					margin: 0;
+				}
+
+				.card-with-bullets-bottom-p {
+					margin: 30px 0 0 0;
+					max-width: none;
+
+					@media (min-width: $screen-lg-min) {
+						margin: 49px 0 0 0;
+						
+					}	
+				}
+
+				.bold-p {
+					font-weight: 500;
+				}
+
+				.sub-p-wrapper {
+					padding: 0 15px 0 0;
 				}
 
 				.card-two {
@@ -323,6 +350,31 @@
 					transform: rotate(90deg);
 				}	
 			}
+		}
+	}
+
+	.p-bullet {
+		width: 6px;
+		height: 6px;
+		background-color: $header-blue;
+		border-radius: 50%;
+		display: inline-block;
+		margin: 0 0 1px 5px;
+
+		@media (min-width: $screen-lg-min) {
+			margin: 0 0 0 8px;
+		}	
+	}
+
+	.p-line {
+		width: 4px;
+		height: 2px;
+		background-color: #4e5665;
+		margin: 0 0 3px 5px;
+		display: inline-block;
+
+		@media (min-width: $screen-lg-min) {
+			margin: 0 0 0 8px;
 		}
 	}
 

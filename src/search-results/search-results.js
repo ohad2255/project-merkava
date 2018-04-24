@@ -1,3 +1,6 @@
+
+var Pikaday = require('pikaday');
+require('pikaday/scss/pikaday.scss');
 require('../common/common');
 
 $(document).ready(function() {
@@ -53,21 +56,15 @@ $(document).ready(function() {
 	// };
 
 	$("#main-checkbox").change(function(){
-	    var subCheckboxs = $('.sub-checkbox'); 
+		var subCheckboxs = $('.sub-checkbox');
 		var checked = $(this).is(':checked');
+		subCheckboxs.attr('checked',checked);
+	});
 
-	     
-	    if(checked){
-		    $('.sub-checkbox').each(function() {
-		       $(this).prop('selected',true);
-		    });
-	    }else{
-	    // Deselect All
-		    $('.sub-checkbox').each(function() {
-		    	$(this).prop('selected',false);
-		    });
-	    }
-  	});
+	$('.sub-checkbox').change(function() {
+		var hasSelectedSubCheckboxs = $('.sub-checkbox:checked').length > 0;
+		$("#main-checkbox").attr('checked',hasSelectedSubCheckboxs);
+	});
  
 	// // Changing state of Checkbox
 	// $("#sel_users").change(function(){
@@ -81,16 +78,20 @@ $(document).ready(function() {
 	// });
 	//$('.datepicker').datepicker();
 
-	$(function () {
-        $('#datepicker1').datepicker();
-        $('#datepicker2').datepicker({
-            useCurrent: false //Important! See issue #1075
-        });
-        $("#datepicker1").on("dp.change", function (e) {
-            $('#datepicker2').data("datepicker").minDate(e.date);
-        });
-        $("#datepicker2").on("dp.change", function (e) {
-            $('#datepicker1').data("datepicker").maxDate(e.date);
-        });
-    });
+	// $(function () {
+ //        $('#datepicker1').datepicker();
+ //        $('#datepicker2').datepicker({
+ //            useCurrent: false //Important! See issue #1075
+ //        });
+ //        $("#datepicker1").on("dp.change", function (e) {
+ //            $('#datepicker2').data("datepicker").minDate(e.date);
+ //        });
+ //        $("#datepicker2").on("dp.change", function (e) {
+ //            $('#datepicker1').data("datepicker").maxDate(e.date);
+ //        });
+ //    });
+debugger
+$('.datepicker').each(function() {
+    $(this).data('pikaday', new Pikaday({ field: this }));
+});
 });

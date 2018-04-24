@@ -381,10 +381,11 @@
 					width: 100%;
 
 					@media (min-width: $screen-lg-min) {
-			            padding: 12px 23px 0 0;
+			            //padding: 12px 23px 0 0;
 			       	}
 
 					small {
+						position: absolute;
 						opacity: 0.6;
 						font-size: 1.5rem;
 						font-weight: normal;
@@ -395,28 +396,19 @@
 						color: #4e5665;
 						margin: 0 0 13.5px 0;
 						display: block;
-					}
-
-					.file-button-wrapper {
-						height: 100%;
-
-						@media (min-width: $screen-lg-min) {
-		                    height: auto;
-		               	}
+						top: 12px;
+						right: 23px;
 					}
 				}
 
 				.file-button-wrapper {
 					position: relative;
-					
+					height: 100%;
+					width: 100%;
 
 					@media (min-width: $screen-lg-min) {
-	                    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
-						border: solid 1px rgb(78, 86 ,101);
-						border-radius: 4px;
-						opacity: 0.6;
-						height: 30px;
-						width: 100px;
+	                    
+						
 	               	}
 
 	               	.three-upload-file-dots { 
@@ -426,6 +418,7 @@
 	               		left: 11px;
 						top: 50%;
 						margin: -2px 0 0 0;
+						pointer-events: none;
 
                     	.upload-file-dot {
 							width: 4px;
@@ -437,25 +430,29 @@
 
 					.file-button-text {
 						position: absolute;
-						opacity: 0.8;
 						font-size: 1.5rem;
 						font-weight: normal;
 						font-style: normal;
 						font-stretch: normal;
-						line-height: 1.07;
-						letter-spacing: normal;
+						line-height: normal;
+						letter-spacing: 0.5;
 						color: $contact-us-input-text;
 						z-index: 0;
 						padding: 0;
 						top: 50%;
 						right: 18px;
 						margin: -9px 0 0 0;
+						
 
 						@media (min-width: $screen-lg-min) {
 		                    padding: 7px 19px;
-		                    top: 0;
-							right: 0;
+		                    top: 42px;
+							right: 23px;
 							margin: 0;
+							box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
+							border: solid 1px rgb(78, 86 ,101);
+							border-radius: 4px;
+							opacity: 0.6;
 		               	}
 					}
 
@@ -466,12 +463,25 @@
 						height: 100%;
 
 						@media (min-width: $screen-lg-min) {
-							height: 30px;
+							height: 100%;
 							width: 100%;
 							padding: 0;
 		               	}
 					}
-				}	
+				}
+
+				.dropzone-previews {
+					position: absolute;
+					left: 20px;
+					z-index: 100;
+					top: 50%;
+					margin-top: -35px;	
+				}
+
+				// .close-btn {
+				// 	width: 50px;
+				// 	height: 50px;
+				// }
 			}
 
 			.recaptcha-container {

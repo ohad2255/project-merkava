@@ -19,7 +19,11 @@ module.exports = {
         'mepharsemim/mepharsemim': ["./src/mepharsemim/mepharsemim.scss", "./src/mepharsemim/mepharsemim.js"],
         'job-owners/job-owners': ["./src/job-owners/job-owners.scss", "./src/job-owners/job-owners.js"],
         'bids/bids': ["./src/bids/bids.scss", "./src/bids/bids.js"],
-        'search-results/search-results': ["./src/search-results/search-results.scss", "./src/search-results/search-results.js"]
+        'search-results/search-results': ["./src/search-results/search-results.scss", "./src/search-results/search-results.js"],
+        'regulation/regulation': ["./src/regulation/regulation.scss", "./src/regulation/regulation.js"],
+        'news-1/news-1': ["./src/news-1/news-1.scss", "./src/news-1/news-1.js"],
+        'news-2/news-2': ["./src/news-2/news-2.scss", "./src/news-2/news-2.js"],
+        'sitemap/sitemap': ["./src/sitemap/sitemap.scss", "./src/sitemap/sitemap.js"] 
     },
     output: {
         filename: "[name].min.js",
@@ -152,6 +156,26 @@ module.exports = {
             chunks: ['search-results/search-results'],
             filename: path.resolve(__dirname, "dist/search-results/index.html"),
             template: path.resolve(__dirname, "src/search-results/index.html")
-        })      
+        }),
+        new HtmlWebpackPlugin({
+            chunks: ['regulation/regulation'],
+            filename: path.resolve(__dirname, "dist/regulation/index.html"),
+            template: path.resolve(__dirname, "src/regulation/index.html")
+        }), 
+         new HtmlWebpackPlugin({
+            chunks: ['news-1/news-1'],
+            filename: path.resolve(__dirname, "dist/news-1/index.html"),
+            template: path.resolve(__dirname, "src/news-1/index.html")
+        }),
+        new HtmlWebpackPlugin({
+            chunks: ['news-2/news-2'],
+            filename: path.resolve(__dirname, "dist/news-2/index.html"),
+            template: path.resolve(__dirname, "src/news-2/index.html")
+        }), 
+        new HtmlWebpackPlugin({
+            chunks: ['sitemap/sitemap'],
+            filename: path.resolve(__dirname, "dist/sitemap/index.html"),
+            template: path.resolve(__dirname, "src/sitemap/index.html")
+        })     
     ]
 };
