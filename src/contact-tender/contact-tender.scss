@@ -1,6 +1,6 @@
 @import "../util/util.scss";
 
-.contact-us {
+.contact-tender {
 	min-width: 330px;
 
 	.nav-item-text-9 {
@@ -11,7 +11,7 @@
 			 }
 		}
 
-	.contact-us-top-sec {
+	.contact-tender-top-sec {
 		position: relative;
 		background-image:  url('../common/img/q-and-a-background-pic.png');
 		height: fit-content;
@@ -20,6 +20,7 @@
 		background-repeat: no-repeat;
 		background-size: contain;
 		height: 205px;
+		background-position: left;
 
 		@media (min-width: $screen-lg-min) {
             background-image: url('../common/img/q-and-a-background-pic.png');
@@ -77,7 +78,7 @@
            	}
 
 
-			.contact-us-breadcrumb-wrapper {
+			.contact-tender-breadcrumb-wrapper {
 				margin: 0 8px 0 0;	
 				font-size: 1.5rem;
 				position: absolute;
@@ -113,14 +114,14 @@
                	}
 			}
 
-			.contact-us-p-sec {
+			.contact-tender-p-sec {
 				margin: 16px 0 0 0;	
 
 				@media (min-width: $screen-lg-min) {
                     margin: 0;
                	}
 
-				.contact-us-icon-wrapper {
+				.contact-tender-icon-wrapper {
 					margin: 0 0 2px 0;
 
 					@media (min-width: $screen-lg-min) {
@@ -139,7 +140,7 @@
 					}
 				}
 
-				.contact-us-head {
+				.contact-tender-head {
 					font-size: 3rem;
 					font-weight: 500;
 					font-style: normal;
@@ -155,8 +156,8 @@
 	               	}
 				}
 
-				.contact-us-p {
-					max-width: 1070px;
+				.contact-tender-p {
+					max-width: 594px;
 					font-size: 2rem;
 					font-weight: normal;
 					font-style: normal;
@@ -178,27 +179,49 @@
 		}
 	}
 
-	.contact-us-body {
+	.contact-tender-body {
 		height: fit-content;
 		padding: 0 0 20px 0;
 
 		@media (min-width: $screen-lg-min) {
-    		height: 567px;
-    		padding: 0;
-    		margin: 0 0 235px 0;
+    		//height: 567px;
+    		padding: 59px 0 20px 0;
+    		margin: 0 0 144px 0;
        	}
 
-		.contact-us-body-wrapper {
+       	.bid-number, .subject {
+			width: 340px;
+			height: 50px;
+			border-radius: 3px;
+			background-color: #ffffff;
+			border: solid 1px #e9ebf0;
+			opacity: 0.45;
+			font-size: 2rem;
+			font-weight: 500;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: normal;
+			letter-spacing: 0.7px;
+			color: #6a768a;
+			padding: 0 22px 0 0;
+			margin: 0 0 25px 0;
+       	}
+
+		.contact-tender-body-wrapper {
 			width: 100%;
+			padding: 25px 20px 0;
+
+			@media (min-width: $screen-lg-min) {
+                padding: 0 20px 0;
+           	}
 		}
 
-		.contact-us-form-wrapper {
-			margin: 25px 0 0 0;
+		.contact-tender-form-wrapper {
 
 			@media (min-width: $screen-lg-min) {
                 max-width: 705px;
 				width: 100%;
-				margin: 44px 0 0 25px;
+				margin: 0 0 0 25px;
            	}
 			
 
@@ -225,7 +248,7 @@
 				margin: 0 0 25px 0;
 
 				@media (min-width: $screen-lg-min) {
-					margin: 0;
+					
                	}
 			}
 
@@ -241,68 +264,8 @@
 				margin: 0 0 0 10px;
 			}
 
-			.subject {
-				position: relative;
 
-				@media (min-width: $screen-lg-min) {
-                    
-               	}
-
-               	option {
-               		width: 100%;
-				    height: inherit;
-				    font-size: 1.5rem;
-				    font-weight: normal;
-				    font-style: normal;
-				    font-stretch: normal;
-				    line-height: normal;
-				    letter-spacing: 0.5px;
-				    color: rgba(106, 118, 138, 0.8);
-               	}
-
-				.blue-arrow {
-					width: 12px;
-					height: 12px;
-					position: absolute;
-					border: solid $header-blue;
-				    border-width: 0 1.5px 1.5px 0;
-				    display: inline-block;
-				    transform: rotate(45deg);
-				    -webkit-transform: rotate(45deg);
-				    pointer-events: none;
-				    top: 17px;
-				    left: 17px;
-				}
-
-				#subjectSelect {
-					width: 100%;
-					height: 50px;
-					font-size: 1.5rem;
-					font-weight: normal;
-					font-style: normal;
-					font-stretch: normal;
-					line-height: 1.7;
-					letter-spacing: 0.5px;
-					color: rgba(106,118,138,0.8);
-					-webkit-appearance: none;
-					-moz-appearance: none;
-					padding:0 23px 0 0;
-
-					&::-ms-expand {
-			           display: none;
-			        }
-				}
-			}
-
-			.subject-phone-wrapper, .name-email-wrapper {
-
-				@media (min-width: $screen-lg-min) {
-                    margin:0 0 25px 0;
-                    height: 50px;
-               	}
-			}
-
-			.name, .phone-number {
+			.name {
 				margin: 0 0 25px 0;
 
 				@media (min-width: $screen-lg-min) {
@@ -310,17 +273,10 @@
                	}
 			}
 
-			.email, .subject {
+			.email {
 				 margin: 0 0 25px 0;
 
 				 @media (min-width: $screen-lg-min) {
-                    margin: 0;
-               	}
-			}
-
-			.email {
-
-				@media (min-width: $screen-lg-min) {
                     max-width: 275px;
                	}
 			}
@@ -511,18 +467,6 @@
 				// }
 			}
 
-			.recaptcha-container {
-				margin: 0 0 48px 0;
-
-				@media (min-width: $screen-lg-min) {
-					margin: 0;
-				}
-
-				@media (max-width: 375px) {
-					transform: scale(0.9);
-					margin-right: -17px;
-				}
-			}
 			
 			input.parsley-error {
 				box-shadow: none;
@@ -558,87 +502,9 @@
 				margin: -3px 0 0 0;
 			}
 		}
-
-		.info-container {
-			width: 100%;
-			height: 242px;
-			border-radius: 3px;
-			background-color: $main-white;
-			box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
-			margin: 35px 0 0 0;
-			position: relative;
-			padding: 30px 30px 0 0;
-
-			@media (min-width: $screen-lg-min) {
-				width: 430px;
-				height: 342px;
-				padding: 68px 60px 0 20px;
-			}
-
-			.right-line {
-				position: absolute;
-				right: 0;
-				top: 0px;
-				width: 7px;
-				height: 100%;
-				border-radius: 4px;
-				background-color: $cobalt;
-
-				@media (min-width: $screen-lg-min) {
-					width: 10px;
-				}
-			}
-
-			h2 {
-				font-size: 3.2rem;
-				font-weight: normal;
-				font-style: normal;
-				font-stretch: normal;
-				line-height: 1.69;
-				letter-spacing: normal;
-				color: $cobalt;
-			}
-			.info-wrapper {
-				width: 270px;
-				height: 119px;
-				font-size: 1.6rem;
-				font-weight: normal;
-				font-style: normal;
-				font-stretch: normal;
-				line-height: 1.75;
-				letter-spacing: normal;
-				color: #4e5665;
-
-				address {
-					margin: 0;	
-				}
-
-				.mail-info {
-					font-family: HelveticaNeue;
-					font-size: 15px;
-					line-height: 1.87;
-					color: #0a7bb6;
-				}
-			}
-		}
 	}
-	.contact-us-footer {
-		// 	border-top: solid 1px #dddddd;;
-		//  object-fit: contain;
+	.contact-tender-footer {
 			padding: 67px 0 0;
-	//   	margin: 0 46px;
-
-	//   	@media (min-width: $screen-lg-min) {
-	// 		margin: 0 165px;
-	// 	}
-
-	// 	.footer-nav-wrapper {
-	// 		margin: 0 0 87px 0;
-	// 	}
-
-	// 	@media (min-width: $screen-lg-min) {
-	// 		margin: 0;
-	// 	}
 	}
 
 	.modal.show {

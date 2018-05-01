@@ -20,6 +20,7 @@
 		background-repeat: no-repeat;
 		background-size: contain;
 		height: 205px;
+		background-position: left;
 
 		@media (min-width: $screen-lg-min) {
             background-image: url('../common/img/q-and-a-background-pic.png');
@@ -155,7 +156,7 @@
 				}
 
 				.contact-us-p {
-					max-width: 1070px;
+					max-width: 594px;
 					font-size: 2rem;
 					font-weight: normal;
 					font-style: normal;
@@ -182,9 +183,9 @@
 		padding: 0 0 20px 0;
 
 		@media (min-width: $screen-lg-min) {
-    		height: 567px;
+    		//height: 567px;
     		padding: 0;
-    		margin: 0 0 235px 0;
+    		margin: 0 0 144px 0;
        	}
 
 		.contact-us-body-wrapper {
@@ -646,22 +647,7 @@
 		}
 	}
 	.contact-us-footer {
-		// 	border-top: solid 1px #dddddd;;
-		//  object-fit: contain;
 			padding: 67px 0 0;
-	//   	margin: 0 46px;
-
-	//   	@media (min-width: $screen-lg-min) {
-	// 		margin: 0 165px;
-	// 	}
-
-	// 	.footer-nav-wrapper {
-	// 		margin: 0 0 87px 0;
-	// 	}
-
-	// 	@media (min-width: $screen-lg-min) {
-	// 		margin: 0;
-	// 	}
 	}
 
 	.modal.show {
