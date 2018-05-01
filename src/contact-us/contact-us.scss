@@ -13,7 +13,7 @@
 
 	.contact-us-top-sec {
 		position: relative;
-		background-image:  url('../common/img/q-and-a-background-pic.png');
+		background-image: url('../common/img/q-and-a-background-pic.png');
 		height: fit-content;
 		padding: 0;
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
@@ -25,7 +25,6 @@
             background-image: url('../common/img/q-and-a-background-pic.png');
             min-height: 308px;
        	}
-
        	.right-line {
 			position: absolute;
 			right: 0;
@@ -388,19 +387,42 @@
 				top: 21px;
 				//margin: -5px 0 0 0;
 			}
-
-			.upload-file-wrapper {
+		
+			.upload-file-wrapper 
+			{
 				width: 100%;
 				height: 43px;
 				border: solid 1px #d4d4d4;
 				margin: 0 0 25px 0;
 
+				
+					#selectedFiles
+					{
+						position: absolute;
+						bottom: 2px;
+						right: 18px;
+						color: #6a768a;   
+					}
+
+
 				@media (min-width: $screen-lg-min) {
-                    height: 102px;
+                    height: 110px;
 					border-radius: 3px;
 					background-color: #ffffff;
 					border: dashed 1px #d4d4d4;
-               	}
+					color: #6a768a;
+					#selectedFiles{
+						position: absolute;
+						bottom: 2px;
+						right: 25px;
+						color: #6a768a;
+	
+					   }
+				   }
+				   
+				   
+				
+			
 
 
 				.file-input-wrapper {
@@ -481,7 +503,8 @@
 							border-radius: 4px;
 							opacity: 0.6;
 		               	}
-					}
+					
+				}
 
 					.custom-file-input {
 						cursor: pointer;
@@ -510,7 +533,7 @@
 				// 	height: 50px;
 				// }
 			}
-
+	
 			.recaptcha-container {
 				margin: 0 0 48px 0;
 
