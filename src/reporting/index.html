@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>דוחות</title>
+    ${require("../common/common-stylesheet.html")}
+    <link rel="stylesheet" href="/common/common.css">
+  </head>
+
+  <!-- body -->
+  <body class="reporting">
+
+    <!-- mobile-menu -->
+    <div class="main-menu-mobile-container d-lg-none" aria-labelledby="mainMobileNavTrigger">
+      <div class="main-menu-mobile-wrapper"></div>
+      ${require("../common/top-navigation/top-navigation.html")}
+    </div>
+    <div class="main-content-wrapper">
+
+      <!-- header -->
+      ${require("../common/header/header.html")} 
+
+      <!-- top-section -->
+      <section class="reporting-top-sec d-flex flex-column align-items-center">
+        <div class="right-line"></div>
+        <div class="top-sec-container custom-container d-flex flex-column justify-content-start">
+          <div class="reporting-p-sec flex-column flex-lg-row d-flex align-items-start align-items-lg-center">
+            <div class="reporting-icon-wrapper">
+              <img src="../common/img/reporting-top-icon.svg"
+              class="reporting-icon" alt="reporting-icon">
+            </div>
+            <div class="reporting-p-wrapper">
+              <h1 class="reporting-head">
+                דוחות
+              </h1>
+              <p class="reporting-p">
+                טקסט קצר יותר מפורט לורם איפסום כאן
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- main-contant -->
+      <section class="reporting-body d-flex flex-column align-items-center">
+        <div class="reporting-body-wrapper custom-container d-flex flex-column justify-content-center align-items-center">
+
+          <div class="buttons-wrapper d-flex">
+            <div class="reporting-button">
+
+              <!-- reporting button -->
+              <button class="btn btn-primary">פטורים</button>
+            </div>
+            <div class="reporting-button">
+
+              <!-- reporting button -->
+              <button class="btn btn-primary">מכרזים</button>
+            </div> 
+          </div>
+          <div class="body-inner-white-wrapper w-100"></div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="reporting-footer d-flex justify-content-center">
+          ${require("../common/footer/footer.html")}
+      </footer>
+    </div>
+
+    ${require("../common/common.html")}
+    <script type="text/javascript" src='/common/common.min.js'></script>
+  </body>
+</html>

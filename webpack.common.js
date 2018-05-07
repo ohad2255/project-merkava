@@ -24,7 +24,8 @@ module.exports = {
         'regulation/regulation': ["./src/regulation/regulation.scss", "./src/regulation/regulation.js"],
         'news-1/news-1': ["./src/news-1/news-1.scss", "./src/news-1/news-1.js"],
         'news-2/news-2': ["./src/news-2/news-2.scss", "./src/news-2/news-2.js"],
-        'sitemap/sitemap': ["./src/sitemap/sitemap.scss", "./src/sitemap/sitemap.js"] 
+        'sitemap/sitemap': ["./src/sitemap/sitemap.scss", "./src/sitemap/sitemap.js"],
+        'reporting/reporting': ["./src/reporting/reporting.scss", "./src/reporting/reporting.js"] 
     },
     output: {
         filename: "[name].min.js",
@@ -182,6 +183,11 @@ module.exports = {
             chunks: ['sitemap/sitemap'],
             filename: path.resolve(__dirname, "dist/sitemap/index.html"),
             template: path.resolve(__dirname, "src/sitemap/index.html")
-        })    
+        }),
+        new HtmlWebpackPlugin({
+            chunks: ['reporting/reporting'],
+            filename: path.resolve(__dirname, "dist/reporting/index.html"),
+            template: path.resolve(__dirname, "src/reporting/index.html")
+        })   
     ]
 };

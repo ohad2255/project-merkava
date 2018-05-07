@@ -20,16 +20,15 @@
 		height: 205px;
 		background-color: $main-white;
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
-		background-image: url('../common/img/group-13.png');
+		background-image: url('../common/img/reporting-top-sec-background@3x.png');
 		background-repeat: no-repeat;
-		background-size: cover;
-		background-position-y: -4px;
-		background-position-x: 7px;
+		background-size: contain;
+		background-position: bottom;
 
 		@media (min-width: $screen-lg-min) {
-			background-image: url('../common/img/back-top-lg.svg');
-			height: auto;
+			background-image: url('../common/img/reporting-top-sec-background.png');
 			height: 308px;
+			background-position: left bottom;
 		}
 
 		@media (max-width: 340px) {
