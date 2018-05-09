@@ -1,8 +1,8 @@
 require('../common/common');
 
 $(document).ready(function() {
-    $("#showPassword").on('click', function() {
-        var input = $("#inputPasswordProfile");
+    $("#showPasswordProfile").on('click', function() {
+        var input = $("#password");
 
         if (input.attr("type") === "password") {
             input.attr("type", "text");
@@ -12,9 +12,10 @@ $(document).ready(function() {
     })
 });
 
+
 $(document).ready(function() {
-    $("#showPasswordConfirm").on('click', function() {
-        var input = $("#inputPasswordConfirmProfile");
+    $("#showPasswordConfirmProfile").on('click', function() {
+        var input = $("#newPasswordConfirmation");
 
         if (input.attr("type") === "password") {
             input.attr("type", "text");
