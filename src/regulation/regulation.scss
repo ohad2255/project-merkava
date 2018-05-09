@@ -724,6 +724,10 @@
 	}
 
 	.regulation-footer {
-		
+		margin: 130px 0 0 0;
+
+		@media (min-width: $screen-lg-min) {
+			margin: 0;
+		}
 	}
 }	
