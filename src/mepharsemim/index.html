@@ -29,16 +29,19 @@
         <!-- top-section -->
         <section class="mepharsemim-top-sec d-flex flex-column align-items-center">
           <div class="top-sec-container d-flex flex-column justify-content-start">
-            <div class="mepharsemim-breadcrumb-wrapper">
-              <nav class="breadcrumb d-flex align-items-center justify-content-start">
-                <a class="breadcrumb-item breadcrumb-item-1 d-flex align-items-center justify-content-center" href="../profile/index.html"">לעדכון פרטים <span>››</span></a>
-              </nav>
-            </div>
-            <div class="mepharsemim-p-sec d-flex flex-column align-items-start align-items-lg-center flex-lg-row">
+            <div class="mepharsemim-p-sec d-flex flex-column align-items-start align-items-lg-end flex-lg-row">
               <div class="mepharsemim-p-wrapper d-flex flex-column">
-                <h1 class="mepharsemim-head">
-                    שלום שמעון
-                </h1>
+                
+                <div class="head-and-breadcrumb-wrapper d-flex">
+                  <h1 class="mepharsemim-head">
+                      שלום שמעון
+                  </h1>
+                  <div class="mepharsemim-breadcrumb-wrapper">
+                    <nav class="breadcrumb d-flex align-items-center justify-content-start">
+                      <a class="breadcrumb-item breadcrumb-item-1 d-flex align-items-center justify-content-center" href="../profile/index.html"">לעדכון פרטים <span>››</span></a>
+                    </nav>
+                  </div>
+                </div>
                 <p class="mepharsemim-top-p">
                     הגעת לאיזור האישי שלך בו תוכל להגדיר את כל תחומי העניין עליהם תרצה לקבל עדכונים במייל. צפה/י בלשונית - נושאים ו/או מפרסמים ובחר מתוך הרשימות.   
                 </p>
@@ -55,7 +58,7 @@
           <div class="mepharsemim-body-top">
             
             <!-- my-list-wrapper -->
-            <div class="my-list-wrapper">
+            <div class="my-list-wrapper" title="myListWrapper">
               
               <!-- my-list-toggle -->
               <div class="list-drop-container">
@@ -105,10 +108,10 @@
                   </div>
 
                 <!-- my-list-mepharsemim-list -->
-                  <div class="my-list-mepharsemim-container w-100">
+                  <!--  <div class="my-list-mepharsemim-container w-100">
                     <div class="my-list-mepharsemim-wrapper w-100 d-flex align-items-center justify-content-between">
                       
-                      <!-- list-title -->
+                       //list-title 
                       <div class="my-list-mepharsemim-title">
                         מפרסמים
                       </div>
@@ -118,13 +121,13 @@
                       </div>
                     </div>
 
-                    <!-- list-mefarsemim -->
+                      //list-mefarsemim 
                     <div class="my-list-mepharsemim-list">
 
-                      <!-- DYNAMIC CONTENT -->
+                      //DYNAMIC CONTENT 
 
                     </div>
-                  </div>
+                  </div> -->
                 </div>
 
                 <div class="close-list-button-wrapper fixed-bottom d-flex align-items-center justify-content-center">
@@ -144,33 +147,31 @@
             <div class="main-checkboxes-wrapper d-lg-block">
               
               <!-- tabs -->
-              <ul class="nav nav-tabs">
-                <li class="mepharsemim-tab">
+              <div class="subject-tab-wrapper">
+                <!-- <li class="mepharsemim-tab">
                   <a data-toggle="tab" href="#mepharsemimformMain" class="first-tab-a active">  מפרסמים
                   </a>
-                </li>
-                <li class="subject-tab">
-                  <a data-toggle="tab" href="#subjectsForm" class="second-tab-a">
+                </li> -->
+                <div class="subject-tab d-flex justify-content-center align-items-center">
                     נושאים
-                  </a>
-                </li>
-              </ul>
+                </div>
+              </div>
 
-              <div class="checkboxes-wrapper tab-content">
+              <div class="checkboxes-wrapper">
                 
-                <!-- mepharsemim-tab -->
+                <!-- mepharsemim-tab 
                 <div class="tab-pane in active" id="mepharsemimformMain">
                   <form action="/admin/config/development/generate/content" method="post"  accept-charset="UTF-8">
                     <div class="body-checkboxes-wrapper">
 
-                      <!-- select-all-mepharsemim -->
+                       select-all-mepharsemim 
                       <div class="form-item-select-all select-all-wrapper form-type-checkbox d-flex align-items-center">
                           <div class="animated" id="flyToList"></div>
                           <input type="checkbox" id="checkBox1" name="checkBox1" class="form-checkbox toggle-all-mepharsemim d-flex align-items-center justify-content-center" />
                           <label for="checkBox1">בחר הכל</label>
                       </div>
 
-                      <!-- mepharsemim-list -->
+                       mepharsemim-list 
                       <div class="form-item form-type-checkbox d-flex align-items-center">
                           <input type="checkbox" id="mepharsem1" name="mepharsem1" class="form-checkbox mepharsemim d-flex align-items-center justify-content-center" />
                           <label for="mepharsem1">משרד האוצר</label>
@@ -185,10 +186,10 @@
                       </div>
                     </div>   
                   </form>
-                </div>
+                </div> -->
 
                 <!-- subjects-tab -->
-                <div class="tab-pane" id="subjectsForm">
+                <div class="" id="subjectsForm">
                   <form action="/admin/config/development/generate/content" method="post" accept-charset="UTF-8">
                     <div class="main-subjects-tab">
 
