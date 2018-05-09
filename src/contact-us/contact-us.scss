@@ -486,12 +486,13 @@
 						font-stretch: normal;
 						line-height: normal;
 						letter-spacing: 0.5;
-						color: $contact-us-input-text;
-						z-index: 0;
+						color: rgba(106,118,138,.6);
 						padding: 0;
 						top: 50%;
 						right: 18px;
 						margin: -9px 0 0 0;
+						z-index: 20;
+    					background-color: white;
 						
 
 						@media (min-width: $screen-lg-min) {
@@ -500,9 +501,11 @@
 							right: 23px;
 							margin: 0;
 							box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
-							border: solid 1px rgb(78, 86 ,101);
+							border: solid 1px rgba(78, 86 ,101,.6);
 							border-radius: 4px;
-							opacity: 0.6;
+							pointer-events: none;
+    						cursor: pointer;
+							//opacity: 0.6;
 		               	}
 					
 				}
@@ -517,6 +520,8 @@
 							height: 100%;
 							width: 100%;
 							padding: 0;
+							opacity: 0;
+							padding: 54px 26px 0 0;
 		               	}
 					}
 				}

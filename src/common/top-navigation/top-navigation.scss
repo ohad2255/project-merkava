@@ -209,6 +209,7 @@
   transform: translateX(320px);
   position: absolute;
   overflow: hidden;
+  left: 0;
   
   @media (max-width: 340px) {
     transform: translateX(280px);

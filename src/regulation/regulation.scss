@@ -35,8 +35,7 @@
 			height: auto;
 			background-size: initial;
 			min-height: 308px;
-			background-position-y: 0;
-			background-position-x: 0;
+			background-position: left 72px;
 		}
 
 		.right-line {
@@ -76,7 +75,7 @@
 				}
 
 				.breadcrumb-item  {
-					color: $header-blue;
+					color: $main-purple;
 					font-size: 1.6rem;
 					font-weight: 500;
 					font-style: normal;
@@ -161,7 +160,7 @@
 
 			@media (min-width: $screen-lg-min) {
 				margin:0 0 200px 0;
-				padding: 0 20px;
+				padding: 54px 20px 0;
 			}
 
 			.regulation-body-p-wrapper {
@@ -186,36 +185,44 @@
 			}
 
 			.regulation-accordion-wrapper {
+
+				padding: 0 0 80px 0;
 				border: solid #dddddd;
 				border-width: 0 0 1px 0;
-				padding: 0 0 52px 0;
+				margin: 0 0 80px 0;
 
 				@media (min-width: $screen-lg-min) {
-					margin: 96px 0 0 0;
-					padding: 0 0 91px 0;
+					
 				}
 
 				.card {
-					border-right: 5px solid $main-purple;
-					border-radius: 2px;
+					border: solid $main-purple;
+					border-width: 0 5px 0 0;
+					border-radius: 4px;
 					background-color: $main-white;
 					box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.15);
 					min-height: 140px;
-					margin: 0 0 20px 0;
+					margin-bottom: 32px;
 					position: relative;
 
 					@media (min-width: $screen-lg-min) {
-						border-right: 9px solid $main-purple;
 						min-height: 264px;
-						padding: 0;
-						margin: 0 0 32px 0;
+						padding: 0 10px;
+						border-width: 0 9px 0 0;
+					}
+
+					&:last-child {
+
+						@media (min-width: $screen-lg-min) {
+							margin: 0;
+						}
 					}
 
 					.collapsed-p {
-						padding: 0 0 37px 0;
+						padding: 0;
 
 						@media (min-width: $screen-lg-min) {
-							padding: 88px 0 60px 0;
+							padding: 88px 0 20px 0;
 						}
 					}
 
@@ -225,17 +232,52 @@
 					    margin-bottom: 0;
 					    background-color: $main-white;
 					    border-bottom: none;
-					    width: auto;
+					    width: fit-content;
+					    //max-width: 600px;
+
+					    @media (min-width: $screen-lg-min) {
+							padding: 0 0 0 275px;
+						}
 					}
 
 					.top-sec-card-header {
-						padding: 0 14px 10px 0;
+						padding: 0 14px 20px 0;
 
 						@media (min-width: $screen-lg-min) {
 							padding: 0 91.5px 20px 0;
 						}	
-					}
 
+						img.icon-first-collaps-p {
+							width: auto;
+							height: 44px;
+							position: absolute;
+							left: 9px;
+							top: 9px;
+
+							@media (min-width: $screen-lg-min) {
+								height: 124px;
+								width: auto;
+								top: 40px;
+								left: 40px;
+							}	
+						}
+
+						.icon-second-collaps-p {
+					    	width: 44px;
+							height: 46px;
+							position: absolute;
+							left: 9px;
+							top: 9px;
+
+							@media (min-width: $screen-lg-min) {
+								width: 171px;
+								height: 176px;
+								top: 38px;
+								left: 97px;
+							}	
+						}
+					}
+					
 					h2 {
 						font-size: 2rem;
 						font-weight: normal;
@@ -246,18 +288,24 @@
 						color: $main-purple;
 						font-family: $main-font;
 						padding-top: 17px;
-						height: auto;
+						height: fit-content;
 						margin: 0;
+						max-width: 200px;
 
 						@media (min-width: $screen-lg-min) {
 							padding: 0;
 							font-size: 3.2rem;
 							line-height: 0.78;
+							max-width: none;
 						}	
+
+						@media (max-width: 340px) {
+							font-size: 1.57rem
+						}
 					}
 
-					p, .card-block {
-						font-size: 1.6rem;
+					.card-with-bullets-head-p, .card-head-p, .card-block {
+						font-size: 1.5rem;
 						font-weight: normal;
 						font-style: normal;
 						font-stretch: normal;
@@ -265,174 +313,310 @@
 						letter-spacing: normal;
 						color: #505050;
 						font-family: $main-font;
-						margin: 0 14px 0 30px; 
+						margin:0 14px 0 25px; 
+						padding: 0 0 40px 0;
 
 						@media (min-width: $screen-lg-min) {
-							margin:0 91.5px 0 120px;
+							//max-width: 600px;
+							margin:0 91.5px 0 60px;
+							font-size: 1.6rem;
 							line-height: 1.75;
+							padding: 0 0 40px 52px;
+							width: 100%;
 						}	
 					}
 
-					&:last-child {
-						margin: 0;
-					}
-				}
-
-
-				.arrows-card {
-
-					.arrows-card-content, .card-block {
+					.card-with-bullets-head-p {
 						font-size: 1.6rem;
-						font-weight: normal;
+						font-weight: 500;
 						font-style: normal;
 						font-stretch: normal;
-						line-height: 1.25;
+						line-height: 1.33;
 						letter-spacing: normal;
-						color: #505050;
-						font-family: $main-font;
-						margin: 0 14px 0 30px; 
+						text-align: right;
+						color: #4e5665;
 
 						@media (min-width: $screen-lg-min) {
-							margin:0 91.5px 0 120px;
-							line-height: 1.75;
-						}	
-					}
-
-
-
-					.card-p-arrow {
-						font-size: 1.3rem;
-						position: relative;
-						top: -1px;
-						margin: 0 4px 0 0;
-						font-weight: bold;
+							font-size: 2rem;
+							line-height: 1.4;
+						}
 					}
 				}
 
-				.collapse-arrows-wrapper {
+				.card-with-bullets-p {
+					margin: 0;
+					line-height: 1.75;
+				}
 
-					width: auto;
-    				height: 18px; 
-					position: absolute;
-					left: 15px;
-					bottom: 12px;
-					transform: rotate(90deg);
+				.card-with-bullets-bottom-p {
+					margin: 30px 0 0 0;
+					max-width: 900px;
+					line-height: 1.75;
 
 					@media (min-width: $screen-lg-min) {
-						width: auto;
+						margin: 49px 0 0 0;
+						
+					}	
+				}
+
+				.bold-p {
+					font-weight: 500;
+				}
+
+				.sub-p-wrapper {
+					padding: 0 15px 0 0;
+				}
+
+				.card-two {
+					margin: 0;
+				}
+
+				.collapse-arrow {
+			 		width: 15px;
+					height: 13px; 
+					position: absolute;
+					left: 10px;
+					bottom: 9px;
+
+					@media (min-width: $screen-lg-min) {
+						width: 30px;
     					height: 26px;
     					margin: 0;
-    					left: 32px;
-    					bottom: 20px;
+    					left: 25px;
+    					top: 226px;
 					}	 
-
-					span {
-						border: solid $main-purple;
-						border-width: 0 3px 3px 0;
-						display: inline-block;
-						transform: rotate(45deg);
-						display: inline-block;
-						line-height: normal;
-						width: 9px;
-  						height: 19px;
-
-  						@media (min-width: $screen-lg-min) {
-							width: 13px;
-  							height: 22px;
-  							border-width: 0 4px 4px 0;
-						}
-
-  						&:last-child {
-  							margin: 0 0 0 0;
-  						}
-					}
 				}
 
-				.show + .collapse-arrows-wrapper {
-					transform: rotate(180deg);
+				.show + .collapse-arrow {
+					transform: rotate(90deg);
 				}	
+
+				.p-bullet {
+					width: 6px;
+					height: 6px;
+					background-color: $main-purple;
+					border-radius: 50%;
+					display: inline-block;
+					margin: 0 0 1px 5px;
+
+					@media (min-width: $screen-lg-min) {
+						margin: 0 0 0 8px;
+					}	
+				}
+
+				.p-line {
+					width: 4px;
+					height: 2px;
+					background-color: #4e5665;
+					margin: 0 0 3px 5px;
+					display: inline-block;
+
+					@media (min-width: $screen-lg-min) {
+						margin: 0 0 0 8px;
+					}
+				}
 			}
 
-			.tutorials-head {
-				font-size: 3.2rem;
-				font-weight: normal;
-				font-style: normal;
-				font-stretch: normal;
-				line-height: normal;
-				letter-spacing: normal;
-				color: #4e5665;
-				margin: 50px 0 20px 0;
-				padding: 0 5px 0 15px;
+			.video-sec-head, .related-documents-head, .links-head, .tutorials-head, {
+
+				margin: 0 0 20px 0;
 
 				@media (min-width: $screen-lg-min) {
-					margin: 52px 0 20px 0;
-					padding: 0;
+					
+				}
+
+				h2 {
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
 					line-height: 0.88;
-				}
+					letter-spacing: normal;
+					color: $text-dark-grey;
+					margin: 0;
+					font-size: 3.2rem;
 
-				.tutorials-arrow {
-					border: solid #4e5665;
-					border-width: 0 2px 2px 0;
-					display: inline-block;
-					transform: rotate(135deg);
-					height: 12px;
-					width: 12px;
-					display: inline-block;
-					line-height: normal;
-				}
-
-				.rotate {
-					transform: rotate(45deg);
+					@media (min-width: $screen-lg-min) {
+						
+					}
 				}
 			}
 
-			.tutorials-wrapper {
+			.video-sec-wrapper {
+				border: solid #dddddd;
+				border-width: 0 0 1px 0;
+				padding: 0 0 88px 0;
+				margin: 0 0 80px 0;
 
-				.tutorial-wrapper {
-					border-radius: 2.1px;
-					background-color: #fff;
-					box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15);
-					text-align: right;
-					width: 293px;
-					height: 160px;
-					padding: 10px 15px 0 0;
-					margin: 0 0 0 10px;
-					position: relative;
+				@media (min-width: $screen-lg-min) {
+					padding: 0 10px 88px 0;
+					margin: 0 0 80px 0;
+				}
 
-					&:last-child {
-						margin: 0;
-					}
+				.video-and-p-wrapper {
+					max-width: 595px;
+					height: 100%;
+					border-radius: 4px;
+					background-color: #ffffff;
+					box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+					padding: 29px;
+				}
 
-					.tutorial-date {
-						font-size: 1.6rem;
-						font-weight: normal;
-						font-style: normal;
-						font-stretch: normal;
-						line-height: 1.25;
-						letter-spacing: normal;
-						color: #4e5665;
-						margin: 0 0 5px 0;
-					}
+				.video-sec {
 
-					.tutorial-contant {
-						font-size: 20px;
-						font-weight: normal;
-						font-style: normal;
-						font-stretch: normal;
-						line-height: 1.15;
-						letter-spacing: normal;
-						color: #6266a6;
+					margin: 0 0 18px 0;
+					width: 100%;
+					max-width: 538px;
+	  				height: 424px;
 
-						span {
-							font-family: FbAgolEng;
-							font-size: 17px;
-							line-height: 1.35;
-						}
+					iframe {
+						width: 100%;
+	  					height: 100%;
+	  					border-radius: 4px;
 					}
 				}
 
-				.tutorial-wrapper {
-					margin: 0 0 10px 10px;
+				.video-p-sec {
+					font-size: 1.6rem;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.75;
+					letter-spacing: normal;
+					color: #505050;
+				}
+			}
+		
+			.tutorials-container {
+				margin: 0 0 80px 0;
+				padding: 0 0 80px 0;
+				border: solid #dddddd;
+				border-width: 0 0 1px 0;
+
+				@media (min-width: $screen-lg-min) {
+					margin: 0 10px 80px 0;
+				}
+
+				.tutorials-wrapper {
+
+					.tutorial-wrapper {
+						border-radius: 2.1px;
+						background-color: #fff;
+						box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15);
+						text-align: right;
+						width: 293px;
+						height: 160px;
+						padding: 10px 15px 0 0;
+						margin: 0 0 0 10px;
+						position: relative;
+
+						&:last-child {
+							margin: 0;
+						}
+
+						.tutorial-date {
+							font-size: 1.6rem;
+							font-weight: normal;
+							font-style: normal;
+							font-stretch: normal;
+							line-height: 1.25;
+							letter-spacing: normal;
+							color: #4e5665;
+							margin: 0 0 5px 0;
+						}
+
+						.tutorial-contant {
+							font-size: 20px;
+							font-weight: normal;
+							font-style: normal;
+							font-stretch: normal;
+							line-height: 1.15;
+							letter-spacing: normal;
+							color: #6266a6;
+
+							span {
+								font-family: FbAgolEng;
+								font-size: 17px;
+								line-height: 1.35;
+							}
+						}
+					}
+
+					.tutorial-wrapper {
+						margin: 0 0 10px 10px;
+					}
+				}
+			}
+
+			.tutorials-arrow {
+				border: solid #4e5665;
+				border-width: 0 2px 2px 0;
+				display: inline-block;
+				transform: rotate(135deg);
+				height: 12px;
+				width: 12px;
+				display: inline-block;
+				line-height: normal;
+			}
+
+			.rotate {
+				transform: rotate(45deg);
+			}
+
+			.links-container {
+				padding: 0;
+
+				@media (min-width: $screen-lg-min) {
+					padding: 0 10px 0 0;
+				}
+
+				.links-wrapper {
+					margin: 0 0 20px 0;
+
+					@media (min-width: $screen-lg-min) {
+						margin: 0 0 8px 0;
+					}
+				}
+
+				.links-sub-head {
+
+					h3 {
+						font-size: 1.6rem;
+						font-weight: 500;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: 1.75;
+						letter-spacing: normal;
+						text-align: right;
+						color: $text-dark-grey;
+					}
+				}
+
+				.link {
+					display: inline-block;
+					min-height: 57px;
+					border-radius: 4px;
+					border: solid 1px $main-purple;
+					min-width: 190px;
+					width: 100%;
+					padding: 0 20px;
+					font-size: 2rem;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: normal;
+					letter-spacing: normal;
+					color: $main-purple;
+					margin: 0 0 12px 0;
+					text-align: center;
+
+					&:last-child {
+					}
+
+					@media (min-width: $screen-lg-min) {
+						font-size: 2rem;
+						margin: 0 0 12px 12px;
+						width: auto;
+					}
 				}
 			}
 		}
@@ -445,7 +629,7 @@
 		bottom: 0;
 
 		@media (min-width: $screen-lg-min) {
-			margin: 0 0 15px 15px;
+			
 		}
 	}
 
