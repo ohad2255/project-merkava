@@ -35,7 +35,7 @@
 			height: auto;
 			background-size: initial;
 			min-height: 308px;
-			background-position: left 72px;
+			background-position: left 49px;
 		}
 
 		.right-line {
@@ -724,6 +724,10 @@
 	}
 
 	.regulation-footer {
-		
+		margin: 130px 0 0 0;
+
+		@media (min-width: $screen-lg-min) {
+			margin: 0;
+		}
 	}
 }	

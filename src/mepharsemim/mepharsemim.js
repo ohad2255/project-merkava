@@ -13,19 +13,13 @@ $(document).ready(function() {
 		subjectWrapper: $(".subject-wrapper"),
 		myList: $(".my-list"),
 		myListSubjectsList: $(".my-list-subjects-list"),
-		myListMepharsemimList: $(".my-list-mepharsemim-list"),
 		myListToggle: $("#countCheckboxesWrapper"),
-		//myListToggleLg: $(".list-drop-wrapper-lg"),
-		//myListLg: $(".my-list-wrapper-lg"),
 		closeListButtonWrapper: $(".close-list-button-wrapper"),
 		closeListButton: $(".close-list-button"),
 		openSubjectsInList: $(".my-list-subjects-wrapper"),
 		subjectsInList: $(".my-list-subjects-list"),
-		openMepharsemimInList: $(".my-list-mepharsemim-wrapper"),
-		mepharsemimInList: $(".my-list-mepharsemim-list"),
 		mainBodyWapper: $(".main-checkboxes-wrapper"),
 		openCloseArrowSubjects: $("#subjectsArrow"),
-		openCloseArrowMepharsemim: $("#mepharsemimArrow"),
 		optionsArrow: $(".blue-arrow"),
 		$subjectsForm: $("#subjectsForm"),
 		backToSubjectsButton: $(".back-to-subjects-button"),
@@ -65,7 +59,6 @@ $(document).ready(function() {
 	$elements.myListToggle.click(closeMyList)
 	$elements.closeListButton.click(closeMyListWithButton)
 	$elements.openSubjectsInList.click(openCloseSubjectsInList)
-	$elements.openMepharsemimInList.click(openCloseMepharsemimInList)
 	$elements.backToSubjectsButton.click(backToSubjects)
 	$elements.deleteButtonLg.click(closeListWithButtonLg)
 	$elements.checkbox.click(animateMyList)
@@ -135,6 +128,7 @@ $(document).ready(function() {
 	}
 
 	function removeFromMyList() {
+		//debugger
 		var $clicked = $(this);
 		var type = $clicked.data("type");
 		var relatedCheckboxId = $clicked.data("related-checkbox-id");
@@ -192,7 +186,7 @@ $(document).ready(function() {
 		                class="my-list-item my-list-subject-delete" 
 		                data-related-checkbox-id="${subjectId}"
 		                data-type="subject"
-		              ><img src="../common/img/x.svg" class="delete-img" alt="delete-x"></div>
+		              ><img src="../common/img/x.svg" alt="delete-x"></div>
 		              <div class="my-list-subject-name">${subjectName}</div>
 		              <div class="blue-arrow"></div>
 		            </div>
@@ -211,37 +205,31 @@ $(document).ready(function() {
 			$.merge($subjects, $subjectTemplate)
 		})
 
-		myList.$elements.mepharsemim.each(function(index, mepharsem) {
-			var $mepharsem = $(mepharsem);
-			var mepharsemId = $mepharsem.prop("id");
-			var mepharsemName = $mepharsem.next().text()
-			var mepharsemTemplate = `
-				<div class="my-list-mepharsemim-list-mepharsem">
-		            <div class="my-list-mepharsem-wrapper d-flex align-items-center">  
-		              <div 
-		                class="my-list-item my-list-mepharsem-delete" 
-		                data-related-checkbox-id="${mepharsemId}"
-		                data-type="mepharsem"
-		              >
-		              	<img src="../common/img/x.svg" class="delete-img" alt="delete-x">
-		              </div>
-		              <div class="my-list-mepharsem-name">${mepharsemName}</div>
-		            </div>
-		        </div>
-			`
-			$.merge($mepharsemim, $(mepharsemTemplate))
-		})
+		// myList.$elements.mepharsemim.each(function(index, mepharsem) {
+		// 	var $mepharsem = $(mepharsem);
+		// 	var mepharsemId = $mepharsem.prop("id");
+		// 	var mepharsemName = $mepharsem.next().text()
+		// 	var mepharsemTemplate = `
+		// 		<div class="my-list-mepharsemim-list-mepharsem">
+		//             <div class="my-list-mepharsem-wrapper d-flex align-items-center">  
+		//               <div 
+		//                 class="my-list-item my-list-mepharsem-delete" 
+		//                 data-related-checkbox-id="${mepharsemId}"
+		//                 data-type="mepharsem"
+		//               >
+		//               	<img src="../common/img/x.svg" class="delete-img" alt="delete-x">
+		//               </div>
+		//               <div class="my-list-mepharsem-name">${mepharsemName}</div>
+		//             </div>
+		//         </div>
+		// 	`
+		// 	$.merge($mepharsemim, $(mepharsemTemplate))
+		// })
 
 		if (myList.$elements.subjects.length === 0) {
 			$elements.myListSubjectsList.html("")			
 		} else {
 			$elements.myListSubjectsList.html($subjects)
-		}
-
-		if (myList.$elements.mepharsemim.length === 0) {
-			$elements.myListMepharsemimList.html("")			
-		} else {
-			$elements.myListMepharsemimList.html($mepharsemim)
 		}
 	}
 
@@ -471,16 +459,9 @@ $(document).ready(function() {
 			$elements.subjectsInList.toggleClass("d-flex");
 			$elements.openCloseArrowSubjects.toggleClass("rotate");
 			$elements.openSubjectsInList.toggleClass("change-background-color");
-			// $('.my-list-options-wrapper').toggleClass("d-block");
+			$("html").find($(".list-wrapper")).toggleClass("scroll");
+			//$('.my-list-options-wrapper').toggleClass("d-block");
 		// }
-	}
-
-	function openCloseMepharsemimInList() {
-		//if (myList.$elements.subjectOptions.length>0) {
-			$elements.mepharsemimInList.toggleClass("d-block");
-			$elements.openCloseArrowMepharsemim.toggleClass("rotate");
-			$elements.openMepharsemimInList.toggleClass("change-background-color");
-		//}
 	}
 
 	function checkItemsForSubmitButton() {
@@ -510,12 +491,12 @@ $(document).ready(function() {
 		// setTimeout(function() {
 		// 	$mepharsemim.removeClass("animate-my-list");	
 		// }, 1000);
-		setTimeout(function() {
-			$(".count-checkboxes-wrapper").addClass("pulse");	
-		}, 1000);
+
+		$(".count-checkboxes-wrapper").addClass("pulse");	
+
 		setTimeout(function() {
 			$(".count-checkboxes-wrapper").removeClass("pulse");	
-		}, 2000);
+		}, 1000);
 	}
 
 	// $('.my-list-subjects-list-subject').on('click', function () {
