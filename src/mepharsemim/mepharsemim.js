@@ -128,6 +128,7 @@ $(document).ready(function() {
 	}
 
 	function removeFromMyList() {
+		//debugger
 		var $clicked = $(this);
 		var type = $clicked.data("type");
 		var relatedCheckboxId = $clicked.data("related-checkbox-id");
@@ -459,7 +460,7 @@ $(document).ready(function() {
 			$elements.openCloseArrowSubjects.toggleClass("rotate");
 			$elements.openSubjectsInList.toggleClass("change-background-color");
 			$("html").find($(".list-wrapper")).toggleClass("scroll");
-			// $('.my-list-options-wrapper').toggleClass("d-block");
+			//$('.my-list-options-wrapper').toggleClass("d-block");
 		// }
 	}
 
