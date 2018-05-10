@@ -109,12 +109,11 @@
 
 				.mepharsemim-top-icon {
 					order: 1;
-					width: 41px;
+					width: auto;
   					height: 47px;
   					margin: 0 -7px 0 0;
  
 					@media (min-width: $screen-lg-min) {
-						width: 136px;
 						height: 116px;
 						margin: 0;
 						position: absolute;
@@ -126,7 +125,7 @@
 
 				.mepharsemim-top-icon-lg {
 					height: 102px;
-					width: 116px;
+					width: auto;
 					margin: 0 ;
 					margin: 0 0 0 24px;
 				}
@@ -508,7 +507,9 @@
 					// }
 				}
 
-				
+				.hidden {
+					display: none;
+				}
 
 				.my-list-subjects-list {
 					display: none;

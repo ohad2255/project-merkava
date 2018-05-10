@@ -185,7 +185,7 @@ $(document).ready(function() {
 		                class="my-list-item my-list-subject-delete" 
 		                data-related-checkbox-id="${subjectId}"
 		                data-type="subject"
-		              ><img src="../common/img/x.svg" class="delete-img" alt="delete-x"></div>
+		              ><img src="../common/img/x.svg" alt="delete-x"></div>
 		              <div class="my-list-subject-name">${subjectName}</div>
 		              <div class="blue-arrow"></div>
 		            </div>
