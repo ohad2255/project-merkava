@@ -163,27 +163,6 @@
 				padding: 54px 20px 0;
 			}
 
-			.regulation-body-p-wrapper {
-				margin: 21px 0 30px;
-
-				@media (min-width: $screen-lg-min) {
-					max-width: 1222px;
-					padding: 0;
-				}	
-			}
-
-			.regulation-body-first-p {
-				margin-bottom: 0;
-				font-size: 1.6rem;
-				font-weight: normal;
-				font-style: normal;
-				font-stretch: normal;
-				line-height: 1.25;
-				letter-spacing: normal;
-				text-align: right;
-				color: #4e5665;
-			}
-
 			.regulation-accordion-wrapper {
 
 				padding: 0 0 80px 0;
@@ -311,7 +290,7 @@
 						font-stretch: normal;
 						line-height: 1.33;
 						letter-spacing: normal;
-						color: #505050;
+						color: $main-text-grey;
 						font-family: $main-font;
 						margin:0 14px 0 25px; 
 						padding: 0 0 40px 0;
@@ -400,7 +379,7 @@
 					margin: 0 0 1px 5px;
 
 					@media (min-width: $screen-lg-min) {
-						margin: 0 0 0 8px;
+						margin: 0 0 3px 8px;
 					}	
 				}
 
@@ -466,12 +445,25 @@
 					margin: 0 0 18px 0;
 					width: 100%;
 					max-width: 538px;
-	  				height: 424px;
+	  				height: 253px;
+
+	  				@media (min-width: $screen-sm-min) {
+						height: 424px;
+					}
+
+	  				@media (min-width: $screen-lg-min) {
+						
+					}
 
 					iframe {
 						width: 100%;
 	  					height: 100%;
+	  					max-height: 424px;
 	  					border-radius: 4px;
+
+	  					@media (min-width: $screen-lg-min) {
+						
+						}
 					}
 				}
 
@@ -482,7 +474,7 @@
 					font-stretch: normal;
 					line-height: 1.75;
 					letter-spacing: normal;
-					color: #505050;
+					color: $main-text-grey;
 				}
 			}
 		
