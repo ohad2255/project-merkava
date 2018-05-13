@@ -190,7 +190,7 @@ $(document).ready(function() {
 		              <div class="blue-arrow"></div>
 		            </div>
 
-		            <div class="my-list-options-wrapper test">
+		            <div class="my-list-options-wrapper d-none">
 		            	
 		            	<!-- DYNAMIC CONTENT -->
 
@@ -228,13 +228,13 @@ $(document).ready(function() {
 		if (myList.$elements.subjects.length === 0) {
 			$elements.myListSubjectsList.html("")			
 		} else {
+			debugger
 			$elements.myListSubjectsList.html($subjects)
 		}
 	}
 
 	// user action functions
 	function toggleAllMepharsemim() {
-
 		// take the clicked element
 		var $clicked = $(this);
 
@@ -505,6 +505,7 @@ $(document).ready(function() {
 	$('.my-list-subjects-list').on('click', '.my-list-subject-wrapper', function () {
 		//var $myListOptionsWrapper = $(".my-list-options-wrapper");
 		//$(this).siblings(".my-list-options-wrapper").toggleClass("d-none");
+		//debugger
 		$(this).next().toggleClass("d-none");
 		$(this).find($(".blue-arrow")).toggleClass("rotate");
 	});
