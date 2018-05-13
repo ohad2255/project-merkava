@@ -149,7 +149,6 @@ $(document).ready(function() {
 
 	function updateMyList() {
 		var $subjects = $();
-		var $mepharsemim = $();
 
 		myList.$elements.subjects.each(function(index, subject) {
 			var $subject = $(subject);
@@ -191,7 +190,7 @@ $(document).ready(function() {
 		              <div class="blue-arrow"></div>
 		            </div>
 
-		            <div class="my-list-options-wrapper d-none">
+		            <div class="my-list-options-wrapper test">
 		            	
 		            	<!-- DYNAMIC CONTENT -->
 
@@ -272,16 +271,16 @@ $(document).ready(function() {
 
 		//select mepharsem
 		if ($clicked.prop("checked")) {
-			$.merge(myList.$elements.mepharsemim, $clicked.get())
-			$.merge(myList.$elements.subjects, mepharsemSubjects.get())
-			$.merge(myList.$elements.subjectOptions, mepharsemSubjectsOptions.get())
+			//$.merge(myList.$elements.mepharsemim, $clicked.get())
+			$.merge(myList.$elements.subjects.get())
+			$.merge(myList.$elements.subjectOptions.get())
 		}
 
 		// Deselect mepharsem
 		else {
-			var filteredMepharsemim = $($.grep(myList.$elements.mepharsemim, function(mepharsem) {
-				return $clicked.get(0) !== mepharsem
-			}))
+			// var filteredMepharsemim = $($.grep(myList.$elements.mepharsemim, function(mepharsem) {
+			// 	return $clicked.get(0) !== mepharsem
+			// }))
 
 			var filteredSubject = $($.grep(myList.$elements.subjects, function(subject) {
 				return mepharsemSubjects.get().indexOf(subject) === -1;
@@ -291,7 +290,7 @@ $(document).ready(function() {
 				return mepharsemSubjectsOptions.get().indexOf(subjectOption) === -1;
 			}))
 
-			myList.$elements.mepharsemim = filteredMepharsemim;
+			//myList.$elements.mepharsemim = filteredMepharsemim;
 			myList.$elements.subjects = filteredSubject;
 			myList.$elements.subjectOptions = filteredSubjectOption;
 		}
@@ -423,13 +422,13 @@ $(document).ready(function() {
 
 	function toggleSubjectOptions() {
 		if (event.target.classList.contains("subject-item")) {
+			//debugger
 			var $subjectWrapper = $(this);
 			var shouldClose = $subjectWrapper.hasClass("active");
 			lists.openSubjectIndex = shouldClose ? -1 : $subjectWrapper.index();
             updateUI();
 		}
 	}
-
 	function toggleMyList() {
 		$(".my-list").toggleClass("d-block");
 		$elements.closeListButtonWrapper.addClass("d-none");
