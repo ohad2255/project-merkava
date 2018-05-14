@@ -128,7 +128,7 @@ $(document).ready(function() {
 	}
 
 	function removeFromMyList() {
-		//debugger
+		debugger
 		var $clicked = $(this);
 		var type = $clicked.data("type");
 		var relatedCheckboxId = $clicked.data("related-checkbox-id");
@@ -136,14 +136,15 @@ $(document).ready(function() {
 		var isChecked = $relatedCheckbox.prop("checked");
 
 		if (isChecked) {
+			debugger
 			$relatedCheckbox.prop("checked", false);
 			if (type === "subject") {
 				toggleSubject($relatedCheckbox)
 			} else if (type === "option") {
 				toggleSubjectOption($relatedCheckbox)
-			} else if (type === "mepharsem") {
-				toggleMepharsem($relatedCheckbox)
-			}
+			} //else if (type === "mepharsem") {
+				//toggleMepharsem($relatedCheckbox)
+			//}
 		}
 	}
 
@@ -161,6 +162,7 @@ $(document).ready(function() {
 				var $subjectOption = $(subjectOption);
 
 				if ($subjectOption.prop("checked")) {
+					//debugger
 					var subjectOptionId = $subjectOption.prop("id");
 					var subjectOptionName = $subjectOption.next().text()
 					var subjectOptionTemplate = `
@@ -228,7 +230,7 @@ $(document).ready(function() {
 		if (myList.$elements.subjects.length === 0) {
 			$elements.myListSubjectsList.html("")			
 		} else {
-			debugger
+			
 			$elements.myListSubjectsList.html($subjects)
 		}
 	}
@@ -370,6 +372,7 @@ $(document).ready(function() {
 
 		//select subject option
 		if ($clicked.prop("checked")) {
+			
 			if (!mepharsemSubjectOptionsInMyList) {
 				$.merge(myList.$elements.mepharsemim, $mepharsem.get())
 			}
@@ -421,8 +424,8 @@ $(document).ready(function() {
 	}
 
 	function toggleSubjectOptions() {
+		
 		if (event.target.classList.contains("subject-item")) {
-			//debugger
 			var $subjectWrapper = $(this);
 			var shouldClose = $subjectWrapper.hasClass("active");
 			lists.openSubjectIndex = shouldClose ? -1 : $subjectWrapper.index();
@@ -505,8 +508,7 @@ $(document).ready(function() {
 	$('.my-list-subjects-list').on('click', '.my-list-subject-wrapper', function () {
 		//var $myListOptionsWrapper = $(".my-list-options-wrapper");
 		//$(this).siblings(".my-list-options-wrapper").toggleClass("d-none");
-		//debugger
-		$(this).next().toggleClass("d-none");
+		$(this).next(".my-list-options-wrapper").toggleClass("d-none");
 		$(this).find($(".blue-arrow")).toggleClass("rotate");
 	});
 });
