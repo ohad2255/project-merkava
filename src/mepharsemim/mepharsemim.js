@@ -128,7 +128,7 @@ $(document).ready(function() {
 	}
 
 	function removeFromMyList() {
-		debugger
+		//debugger
 		var $clicked = $(this);
 		var type = $clicked.data("type");
 		var relatedCheckboxId = $clicked.data("related-checkbox-id");
@@ -136,7 +136,7 @@ $(document).ready(function() {
 		var isChecked = $relatedCheckbox.prop("checked");
 
 		if (isChecked) {
-			debugger
+			//debugger
 			$relatedCheckbox.prop("checked", false);
 			if (type === "subject") {
 				toggleSubject($relatedCheckbox)
@@ -150,10 +150,17 @@ $(document).ready(function() {
 
 	function updateMyList() {
 		var $subjects = $();
+		var myListToggleHistory = {};
+		$elements.myList.find(".my-list-subjects-list-subject").each(function(index, item) {
+			var id = $(item).find(".my-list-item").data().relatedCheckboxId;
+			var isOpen = $(item).find(".my-list-options-wrapper").prop("class").indexOf("d-none") === -1;
+			myListToggleHistory[id] = isOpen;
+		});
 
 		myList.$elements.subjects.each(function(index, subject) {
 			var $subject = $(subject);
 			var subjectId = $subject.prop("id");
+			var collapseClass = myListToggleHistory[subjectId] ? "" : "d-none";
 			var subjectName = $subject.next().text()
 			var $subjectOptions = $subject.parents(".subject-wrapper").find(".subject-option")
 
@@ -192,7 +199,7 @@ $(document).ready(function() {
 		              <div class="blue-arrow"></div>
 		            </div>
 
-		            <div class="my-list-options-wrapper d-none">
+		            <div class="my-list-options-wrapper ${collapseClass}">
 		            	
 		            	<!-- DYNAMIC CONTENT -->
 
