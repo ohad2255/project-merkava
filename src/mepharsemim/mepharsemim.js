@@ -165,7 +165,7 @@ $(document).ready(function() {
 			var subjectId = $subject.prop("id");
 			var subjectClass = $subject.prop("class");
 			var collapseClass = myListToggleHistory[subjectId] ? "" : "d-none";
-			var rotateClass = myListToggleHistory[subjectId] ? "" : "rotate";
+			var rotateClass = myListToggleHistory[subjectId] ? "rotate" : "" ;
 			var subjectName = $subject.next().text()
 			var $subjectOptions = $subject.parents(".subject-wrapper").find(".subject-option")
 
