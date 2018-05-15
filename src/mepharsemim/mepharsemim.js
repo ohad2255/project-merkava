@@ -154,13 +154,18 @@ $(document).ready(function() {
 		$elements.myList.find(".my-list-subjects-list-subject").each(function(index, item) {
 			var id = $(item).find(".my-list-item").data().relatedCheckboxId;
 			var isOpen = $(item).find(".my-list-options-wrapper").prop("class").indexOf("d-none") === -1;
+			var rotate = $(item).find(".my-list-item").data().relatedCheckboxId;
+			var isRotate = $(item).find(".my-list-options-wrapper").prop("class").indexOf("rotate") === -1;
 			myListToggleHistory[id] = isOpen;
+			myListToggleHistory[rotate] = isRotate;
 		});
 
 		myList.$elements.subjects.each(function(index, subject) {
 			var $subject = $(subject);
 			var subjectId = $subject.prop("id");
+			var subjectClass = $subject.prop("class");
 			var collapseClass = myListToggleHistory[subjectId] ? "" : "d-none";
+			var rotateClass = myListToggleHistory[subjectId] ? "" : "rotate";
 			var subjectName = $subject.next().text()
 			var $subjectOptions = $subject.parents(".subject-wrapper").find(".subject-option")
 
@@ -196,7 +201,7 @@ $(document).ready(function() {
 		                data-type="subject"
 		              ><img src="../common/img/x.svg" alt="delete-x"></div>
 		              <div class="my-list-subject-name">${subjectName}</div>
-		              <div class="blue-arrow"></div>
+		              <div class="blue-arrow ${rotateClass}"></div>
 		            </div>
 
 		            <div class="my-list-options-wrapper ${collapseClass}">
