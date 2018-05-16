@@ -213,13 +213,10 @@
 		}
 	}
 
-	.body-inner-white-wrapper {
-		min-height: 800px;
+	.inner-iframe{
     	background-color: $main-white;
-
-		@media (min-width: $screen-lg-min) {
-    		min-height: 1140px;
-       	}
+    	margin: 0;
+    	border: 0;
 	}
 
 	.reporting-footer {

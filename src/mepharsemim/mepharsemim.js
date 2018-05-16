@@ -136,23 +136,36 @@ $(document).ready(function() {
 		var isChecked = $relatedCheckbox.prop("checked");
 
 		if (isChecked) {
+			//debugger
 			$relatedCheckbox.prop("checked", false);
 			if (type === "subject") {
 				toggleSubject($relatedCheckbox)
 			} else if (type === "option") {
 				toggleSubjectOption($relatedCheckbox)
-			} else if (type === "mepharsem") {
-				toggleMepharsem($relatedCheckbox)
-			}
+			} //else if (type === "mepharsem") {
+				//toggleMepharsem($relatedCheckbox)
+			//}
 		}
 	}
 
 	function updateMyList() {
 		var $subjects = $();
+		var myListToggleHistory = {};
+		$elements.myList.find(".my-list-subjects-list-subject").each(function(index, item) {
+			var id = $(item).find(".my-list-item").data().relatedCheckboxId;
+			var isOpen = $(item).find(".my-list-options-wrapper").prop("class").indexOf("d-none") === -1;
+			var rotate = $(item).find(".my-list-item").data().relatedCheckboxId;
+			var isRotate = $(item).find(".my-list-options-wrapper").prop("class").indexOf("rotate") === -1;
+			myListToggleHistory[id] = isOpen;
+			myListToggleHistory[rotate] = isRotate;
+		});
 
 		myList.$elements.subjects.each(function(index, subject) {
 			var $subject = $(subject);
 			var subjectId = $subject.prop("id");
+			var subjectClass = $subject.prop("class");
+			var collapseClass = myListToggleHistory[subjectId] ? "" : "d-none";
+			var rotateClass = myListToggleHistory[subjectId] ? "rotate" : "" ;
 			var subjectName = $subject.next().text()
 			var $subjectOptions = $subject.parents(".subject-wrapper").find(".subject-option")
 
@@ -161,6 +174,7 @@ $(document).ready(function() {
 				var $subjectOption = $(subjectOption);
 
 				if ($subjectOption.prop("checked")) {
+					//debugger
 					var subjectOptionId = $subjectOption.prop("id");
 					var subjectOptionName = $subjectOption.next().text()
 					var subjectOptionTemplate = `
@@ -187,10 +201,10 @@ $(document).ready(function() {
 		                data-type="subject"
 		              ><img src="../common/img/x.svg" alt="delete-x"></div>
 		              <div class="my-list-subject-name">${subjectName}</div>
-		              <div class="blue-arrow"></div>
+		              <div class="blue-arrow ${rotateClass}"></div>
 		            </div>
 
-		            <div class="my-list-options-wrapper test">
+		            <div class="my-list-options-wrapper ${collapseClass}">
 		            	
 		            	<!-- DYNAMIC CONTENT -->
 
@@ -228,13 +242,13 @@ $(document).ready(function() {
 		if (myList.$elements.subjects.length === 0) {
 			$elements.myListSubjectsList.html("")			
 		} else {
+			
 			$elements.myListSubjectsList.html($subjects)
 		}
 	}
 
 	// user action functions
 	function toggleAllMepharsemim() {
-
 		// take the clicked element
 		var $clicked = $(this);
 
@@ -370,6 +384,7 @@ $(document).ready(function() {
 
 		//select subject option
 		if ($clicked.prop("checked")) {
+			
 			if (!mepharsemSubjectOptionsInMyList) {
 				$.merge(myList.$elements.mepharsemim, $mepharsem.get())
 			}
@@ -421,8 +436,8 @@ $(document).ready(function() {
 	}
 
 	function toggleSubjectOptions() {
+		
 		if (event.target.classList.contains("subject-item")) {
-			//debugger
 			var $subjectWrapper = $(this);
 			var shouldClose = $subjectWrapper.hasClass("active");
 			lists.openSubjectIndex = shouldClose ? -1 : $subjectWrapper.index();
@@ -505,7 +520,7 @@ $(document).ready(function() {
 	$('.my-list-subjects-list').on('click', '.my-list-subject-wrapper', function () {
 		//var $myListOptionsWrapper = $(".my-list-options-wrapper");
 		//$(this).siblings(".my-list-options-wrapper").toggleClass("d-none");
-		$(this).next().toggleClass("d-none");
+		$(this).next(".my-list-options-wrapper").toggleClass("d-none");
 		$(this).find($(".blue-arrow")).toggleClass("rotate");
 	});
 });
