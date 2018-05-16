@@ -513,13 +513,7 @@ $(document).ready(function() {
 		}, 1000);
 	}
 
-	// $('.my-list-subjects-list-subject').on('click', function () {
-	// 	$(this).find($(".my-list-options-wrapper")).toggleClass("d-block");
-	// }
-
 	$('.my-list-subjects-list').on('click', '.my-list-subject-wrapper', function () {
-		//var $myListOptionsWrapper = $(".my-list-options-wrapper");
-		//$(this).siblings(".my-list-options-wrapper").toggleClass("d-none");
 		$(this).next(".my-list-options-wrapper").toggleClass("d-none");
 		$(this).find($(".blue-arrow")).toggleClass("rotate");
 	});
