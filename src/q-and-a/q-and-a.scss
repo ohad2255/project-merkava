@@ -28,16 +28,19 @@
 		position: relative;
 		background-color: $main-white;
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
-		background-image: url('../common/img/q-and-a-background-pic.png');
+		background-image: url('../common/img/q-and-a-background-img@3x.png');
 		background-repeat: no-repeat;
 		background-size: contain;
 		margin: 0 0 5px 0;
+		background-position: left top;
 		//padding:0 0 28px 0;
 
 		@media (min-width: $screen-lg-min) {
 			height: auto;
 			margin: 0 0 53px 0;
 			padding: 0;
+			background-position: left bottom;
+			background-image: url('../common/img/q-and-a-background-img.png');
 		}
 
 		.right-line {
