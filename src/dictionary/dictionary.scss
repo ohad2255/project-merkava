@@ -360,7 +360,7 @@
 				.collapse-arrow {
 					width: 14px;
   					height: 8px;
-  					margin: -5px 0 0 0;
+  					margin: 0;
 				}
 			}
 
@@ -404,7 +404,7 @@
 				background-color: $background-answer-mobile;
 
 				@media (min-width: $screen-lg-min) {
-					padding: 0 38px 36px 22px;
+					padding: 0 38px 23px 22px;
 					background-color: $main-white;
 				}
 			}	
@@ -468,7 +468,7 @@
 			line-height: 0;
 			padding: 11px 0 0 0;
 			font-family:  Serif;
-			color: #0a7bb6;
+			color: $header-blue;
 		}
 
 		.open {
@@ -478,7 +478,7 @@
 				display: block;
 				width: 12px;
 				height: 1px;
-				background-color: #0a7bb6;
+				background-color: $header-blue;
 			}
 		}
 
