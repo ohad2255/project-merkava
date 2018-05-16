@@ -429,11 +429,6 @@
 					}
 				}
 
-				.position-td {
-					//width: 520px;
-					font-weight: normal;
-				}
-
 				.tel-td, .fax-td {
 					
 					@media (min-width: $screen-lg-min) {
@@ -482,6 +477,15 @@
 					@media (min-width: $screen-lg-min) {
 						border-left: solid 5px $main-white; 
 						padding: 0 20px 0 0;
+					}
+				}
+
+				.position-td {
+					//width: 520px;
+					font-weight: normal;
+
+					@media (min-width: $screen-lg-min) {
+						padding: 0 20px 0 10px;
 					}
 				}
 
