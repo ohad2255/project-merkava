@@ -1,7 +1,7 @@
 
 <header>
     <div class="gery-line d-lg-block d-none"></div>
-    <div class="d-flex flex-column flex-lg-row justify-content-lg-between custom-container main-container">
+    <div class="d-flex flex-column flex-lg-row justify-content-lg-between custom-container top-sec-main-container">
         <div class="top-sec d-flex">
             <div class="top-sec-container d-flex justify-content-between flex-lg-column">
                 <a href="../home/index.html">
@@ -29,7 +29,7 @@
                 </div>
             </div>
         </div>
-        <div class="middle-sec d-flex align-items-center flex-lg-column-reverse flex-lg-row align-items-lg-end">
+        <div class="middle-sec d-flex align-items-center flex-lg-row align-items-lg-start">
             <div class="middle-sec-container d-flex align-items-center justify-content-between flex-lg-wrap">
                 <div class="font-size-container font-size-container-mobile d-flex align-items-end d-lg-none">
 
@@ -42,7 +42,7 @@
                 <div class="dropdown lng-dropdown">
 
                     <!-- hebrew option (default) -->
-                    <button class="btn btn-secondary dropdown-toggle lng-btn d-flex align-items-center justify-content-center justify-content-lg-start" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button class="btn btn-secondary dropdown-toggle lng-btn d-flex align-items-center justify-content-center justify-content-lg-end" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         עברית
                     </button>
 
@@ -59,9 +59,38 @@
                 </div>
 
                 <!-- entrance button -->
-                <button class="ent-btn">
+                <a href="../signin/index.html" class="ent-btn d-none" role="button" tabindex="0">
                     כניסה
-                </button>
+                </a>
+
+                <!-- entrance button logged in  -->
+                <div class="ent-dropdown-logged-in-container">
+
+                    <div class="ent-dropdown-wrapper">
+                        <!-- logged in (default when logged in) -->
+                        <div class="logged-in-name d-flex align-items-center justify-content-center justify-content-lg-end" role="button" id="entButton">
+                            שלום שמעון <span class="ent-arrow"></span>
+                        </div>
+
+                        <div class="ent-dropdown-items-container hidden">
+
+                            <!-- profile option -->
+                            <div class="ent-dropdown-item-wrapper d-flex align-items-center justify-content-center" role="button" tabindex="0">
+                                <a class="ent-dropdown-item w-100 h-100 d-flex justify-content-center align-items-center" href="../profile/index.html">עדכון פרטים</a>
+                            </div>
+
+                            <!-- mailing option -->
+                            <div class="ent-dropdown-item-wrapper d-flex align-items-center justify-content-center" role="button" tabindex="0">
+                                <a class="ent-dropdown-item w-100 h-100 d-flex justify-content-center align-items-center" href="../mepharsemim/index.html">הרשמה לדיוור</a>
+                            </div>
+
+                            <!-- exit option -->
+                            <div class="ent-dropdown-item-wrapper d-flex align-items-center justify-content-center" role="button" tabindex="0" aria-labelledby="dropdownMenuButton">
+                                <a class="ent-dropdown-item w-100 h-100 d-flex justify-content-center align-items-center" href="#">יציאה</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
