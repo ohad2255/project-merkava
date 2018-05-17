@@ -12,7 +12,7 @@
 	}
 
 	.nav-item-text-6 {
-      background-color: rgba(255, 255, 255, 0.19);
+      	background-color: rgba(255, 255, 255, 0.19);
 
 		@media (min-width: $screen-lg-min) {
 			border-bottom: solid 1px #1c6897; 
@@ -29,6 +29,7 @@
 		margin: 0 0 5px 0;
 		padding:0 ;
 		min-height: 205px;
+		background-position: left;
 
 		@media (min-width: $screen-lg-min) {
 			margin: 0 0 66px 0;
@@ -219,11 +220,70 @@
 		position: relative;
 
 		@media (min-width: $screen-lg-min) {
-			padding: 32px 20px 100px;
+			padding: 0 20px 100px;
 			margin: 0px auto 0;
 			max-width: 1262px;
 			min-height: 100%;
 		}
+
+		.body-p-wrapper {
+			padding: 0 20px;
+			margin: 0 0 40px 0;
+
+			@media (min-width: $screen-lg-min) {
+				padding: 0 0 0 40px;
+			}	
+
+			.body-head {
+				font-size: 2rem;
+				font-weight: 500;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 2.7;
+				letter-spacing: normal;
+				color: $text-dark-grey;
+				margin: 0;
+			}
+
+			.body-top-p {
+				font-size: 1.6rem;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.75;
+				letter-spacing: normal;
+				color: $text-dark-grey;
+				margin: 0 0 20px 0;
+			}
+
+			button {
+				width: 180px;
+				height: 50px;
+				object-fit: contain;
+				border-radius: 3px;
+				background-color: $header-blue;
+				box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
+				font-size: 2rem;
+				font-weight: 500;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: normal;
+				letter-spacing: 0.5px;
+				text-align: center;
+				color: $main-white;
+
+
+				@media (min-width: $screen-lg-min) {
+	                
+	           	}
+
+				&:active, &:focus {
+		          background-color: #1c6897;
+		          color: $header-blue;
+		          border: 0;
+		        }
+			}
+		}	
 
 		.alphabet-nav {
 			padding: 0;
@@ -232,36 +292,36 @@
 			z-index: 99;
 		}
 
-			.alphabet-mobile {
+		.alphabet-mobile {
+			height: 100%;
+
+			ul {
+				background-color: $main-white;
 				height: 100%;
 
-				ul {
-					background-color: $main-white;
-					height: 100%;
+				.alphabet-item {
+					height: 20px;
+					width: 20px;
+					font-size: 2rem;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 3;
+					letter-spacing: normal;
+					text-align: center;
+					color: #6266a6;
+					display: inline-block;
 
-					.alphabet-item {
-						height: 20px;
-						width: 20px;
-						font-size: 2rem;
+					&:active, &:focus {
+
+			        	color: #ffffff;
 						font-weight: 500;
-						font-style: normal;
-						font-stretch: normal;
-						line-height: 3;
-						letter-spacing: normal;
-						text-align: center;
-						color: #6266a6;
-						display: inline-block;
-
-						&:active, &:focus {
-
-				        	color: #ffffff;
-							font-weight: 500;
-							background-color: $main-purple;
-							background-position: center;
-				        }
-					}
+						background-color: $main-purple;
+						background-position: center;
+			        }
 				}
-			}	
+			}
+		}	
 
 		.cards-wrapper {
 			width: 100%;
@@ -288,6 +348,7 @@
 				padding: 0 13px 0 20px;
 				height: 59px;
 				border-bottom: solid 1px $main-purple;
+				font-weight: 500;
 		
 			    @media (min-width: $screen-lg-min) {
 					padding: 0 10px 0 0;
@@ -299,8 +360,12 @@
 				.collapse-arrow {
 					width: 14px;
   					height: 8px;
-  					margin: -5px 0 0 0;
+  					margin: 0;
 				}
+			}
+
+			.collapsed .card-header {
+				font-weight: normal;
 			}
 
 			.closed {
@@ -319,7 +384,6 @@
 					line-height: normal;
 					letter-spacing: normal;
 					color: #4e5666;
-					font-weight: 500;
 					font-style: normal;
 					font-stretch: normal;
 					letter-spacing: normal;
@@ -340,7 +404,7 @@
 				background-color: $background-answer-mobile;
 
 				@media (min-width: $screen-lg-min) {
-					padding: 0 38px 36px 22px;
+					padding: 0 38px 23px 22px;
 					background-color: $main-white;
 				}
 			}	
@@ -404,7 +468,7 @@
 			line-height: 0;
 			padding: 11px 0 0 0;
 			font-family:  Serif;
-			color: #0a7bb6;
+			color: $header-blue;
 		}
 
 		.open {
@@ -414,7 +478,7 @@
 				display: block;
 				width: 12px;
 				height: 1px;
-				background-color: #0a7bb6;
+				background-color: $header-blue;
 			}
 		}
 

@@ -28,16 +28,19 @@
 		position: relative;
 		background-color: $main-white;
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
-		background-image: url('../common/img/q-and-a-background-pic.png');
+		background-image: url('../common/img/q-and-a-background-img@3x.png');
 		background-repeat: no-repeat;
 		background-size: contain;
 		margin: 0 0 5px 0;
+		background-position: left top;
 		//padding:0 0 28px 0;
 
 		@media (min-width: $screen-lg-min) {
 			height: auto;
-			margin: 0 0 66px 0;
+			margin: 0 0 53px 0;
 			padding: 0;
+			background-position: left bottom;
+			background-image: url('../common/img/q-and-a-background-img.png');
 		}
 
 		.right-line {
@@ -176,18 +179,85 @@
 
 	.q-and-a-body {
 		margin: 0 0 70px 0;
-		padding: 0;
+		padding: 15px 0 0 0;
 		position: relative;
 		
 
 		@media (min-width: $screen-lg-min) {
-			padding: 32px 20px 100px;
+			padding: 0 20px 100px;
 			margin: 0px auto 0;
 			max-width: 1262px;
 		}	
 
+		.body-p-wrapper {
+			padding: 0 20px;
+			margin: 0 0 40px 0;
+
+			@media (min-width: $screen-lg-min) {
+				padding: 0;
+			}	
+
+			.body-head {
+				font-size: 2rem;
+				font-weight: 500;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 2.7;
+				letter-spacing: normal;
+				color: $text-dark-grey;
+				margin: 0;
+			}
+
+			.body-top-p {
+				font-size: 1.6rem;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.75;
+				letter-spacing: normal;
+				color: $text-dark-grey;
+				margin: 0 0 20px 0;
+			}
+
+			button {
+				width: 180px;
+				height: 50px;
+				object-fit: contain;
+				border-radius: 3px;
+				background-color: $header-blue;
+				box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
+				font-size: 2rem;
+				font-weight: 500;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: normal;
+				letter-spacing: 0.5px;
+				text-align: center;
+				color: $main-white;
+
+
+				@media (min-width: $screen-lg-min) {
+	                
+	           	}
+
+				&:active, &:focus {
+		          background-color: #1c6897;
+		          color: $header-blue;
+		          border: 0;
+		        }
+			}
+		}	
+
 		.cards-wrapper {
 			width: 100%;
+			border: solid #e1e1e1;
+			border-width: 1px 0 0 0;
+
+			@media (min-width: $screen-lg-min) {
+                padding: 39px 0 0 0;
+                border: 0;
+           	}
+
 		}
 
 		.card {
@@ -205,8 +275,10 @@
 			.card-header {
 				background-color: $main-white;
 				padding: 0 20px;
-				min-height: 65px;
-				border-bottom: solid 1px $main-purple;
+				min-height: 59px;
+				border: solid $main-purple;
+				border-width: 0 0 1px 0;
+				font-weight: 500;
 		
 			    @media (min-width: $screen-lg-min) {
 					padding: 0 10px 0 0;
@@ -216,10 +288,14 @@
 				}
 
 				.collapse-arrow {
-					width: 14px;
+					width: auto;
   					height: 8px;
-  					margin: -5px 0 0 0;
+  					margin: 0;
 				}
+			}
+
+			.collapsed .card-header {
+				font-weight: normal;
 			}
 
 			.closed {
@@ -234,12 +310,12 @@
 					line-height: normal;
 					letter-spacing: normal;
 					color: #4e5666;
-					font-weight: 500;
 					font-style: normal;
 					font-stretch: normal;
 					letter-spacing: normal;
 					padding: 0 0 0 15px;
-					margin: -5 0 0 0;
+					margin: 0;
+					padding: 12px 0 12px 12px;
 					
 
 	   				@media (min-width: $screen-lg-min) {
@@ -247,9 +323,12 @@
 						line-height: 1.25;
 						color: #4e5665;
 						font-size: 2rem;
-						margin: 0;
 					}
 	 			}
+
+	 			.collapsed p {
+					font-weight: bold;
+				}
 			}
 
 			.card-block {
