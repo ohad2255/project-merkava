@@ -30,7 +30,7 @@
             </div>
         </div>
         <div class="middle-sec d-flex align-items-center flex-lg-row align-items-lg-start">
-            <div class="middle-sec-container d-flex align-items-center justify-content-between flex-lg-wrap">
+            <div class="middle-sec-container d-flex align-items-lg-center justify-content-between align-items-start flex-lg-wrap">
                 <div class="font-size-container font-size-container-mobile d-flex align-items-end d-lg-none">
 
                     <!-- font size buttons mobile -->
@@ -58,35 +58,39 @@
                     <a href=""><div class="font-size Asmall">א</div></a>
                 </div>
 
-                <!-- entrance button -->
-                <a href="../signin/index.html" class="ent-btn d-none" role="button" tabindex="0">
-                    כניסה
-                </a>
+                <div class="ent-container">
 
-                <!-- entrance button logged in  -->
-                <div class="ent-dropdown-logged-in-container">
+                    <!-- entrance button -->
+                    <a href="../signin/index.html" class="ent-btn" role="button" tabindex="0">
+                        כניסה
+                    </a>
 
-                    <div class="ent-dropdown-wrapper">
-                        <!-- logged in (default when logged in) -->
-                        <div class="logged-in-name d-flex align-items-center justify-content-center justify-content-lg-end" role="button" id="entButton">
-                            שלום שמעון <span class="ent-arrow"></span>
-                        </div>
+                    <!-- entrance button logged in  -->
+                    <div class="ent-dropdown-logged-in-container d-none">
 
-                        <div class="ent-dropdown-items-container hidden">
+                        <div class="ent-dropdown-wrapper">
 
-                            <!-- profile option -->
-                            <div class="ent-dropdown-item-wrapper d-flex align-items-center justify-content-center" role="button" tabindex="0">
-                                <a class="ent-dropdown-item w-100 h-100 d-flex justify-content-center align-items-center" href="../profile/index.html">עדכון פרטים</a>
+                            <!-- logged in (default when logged in) -->
+                            <div class="logged-in-name d-flex align-items-center justify-content-center justify-content-lg-end" role="button" id="entButton">
+                                שלום שמעון <span class="ent-arrow"></span>
                             </div>
 
-                            <!-- mailing option -->
-                            <div class="ent-dropdown-item-wrapper d-flex align-items-center justify-content-center" role="button" tabindex="0">
-                                <a class="ent-dropdown-item w-100 h-100 d-flex justify-content-center align-items-center" href="../mepharsemim/index.html">הרשמה לדיוור</a>
-                            </div>
+                            <div class="ent-dropdown-items-container d-none">
 
-                            <!-- exit option -->
-                            <div class="ent-dropdown-item-wrapper d-flex align-items-center justify-content-center" role="button" tabindex="0" aria-labelledby="dropdownMenuButton">
-                                <a class="ent-dropdown-item w-100 h-100 d-flex justify-content-center align-items-center" href="#">יציאה</a>
+                                <!-- profile option -->
+                                <div class="ent-dropdown-item-wrapper d-flex align-items-center justify-content-center" role="button" tabindex="0">
+                                    <a class="ent-dropdown-item w-100 h-100 d-flex justify-content-center align-items-center" href="../profile/index.html">עדכון פרטים</a>
+                                </div>
+
+                                <!-- mailing option -->
+                                <div class="ent-dropdown-item-wrapper d-flex align-items-center justify-content-center" role="button" tabindex="0">
+                                    <a class="ent-dropdown-item w-100 h-100 d-flex justify-content-center align-items-center" href="../mepharsemim/index.html">הרשמה לדיוור</a>
+                                </div>
+
+                                <!-- exit option -->
+                                <div class="ent-dropdown-item-wrapper d-flex align-items-center justify-content-center" role="button" tabindex="0" aria-labelledby="dropdownMenuButton">
+                                    <a class="ent-dropdown-item w-100 h-100 d-flex justify-content-center align-items-center" href="#">יציאה</a>
+                                </div>
                             </div>
                         </div>
                     </div>
