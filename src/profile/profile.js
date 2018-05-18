@@ -33,4 +33,10 @@ $(document).ready(function() {
         //     input.attr("type", "password");
         // }
     });
+
+    $("#inputPasswordProfile").focusin(function() {
+        $(".hint").show();
+    }).focusout(function () {
+        $(".hint").hide();
+    });
 });
