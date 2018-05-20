@@ -2,6 +2,7 @@ const path = require("path");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const WebpackRTLPlugin = require('webpack-rtl-plugin');
 
 module.exports = {
     entry: {
@@ -83,6 +84,7 @@ module.exports = {
             }
         ]
     },
+
     plugins: [
         new CopyWebpackPlugin([
             { from: "src/common/img", to: "common/img" },
@@ -188,6 +190,11 @@ module.exports = {
             chunks: ['reporting/reporting'],
             filename: path.resolve(__dirname, "dist/reporting/index.html"),
             template: path.resolve(__dirname, "src/reporting/index.html")
-        })   
+        }),
+         // new WebpackRTLPlugin()   
+        new WebpackRTLPlugin({
+            
+            minify: false,
+        })
     ]
 };

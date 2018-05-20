@@ -2,7 +2,7 @@
 
 .about {
 	min-width: 330px;
-	
+
 	.custom-container {
 		padding: 0 20px;
 	}
@@ -28,7 +28,7 @@
 		@media (min-width: $screen-lg-min) {
 			background-image: url('../common/img/header-visuals-odot.png');
 			height: 308px;
-			background-position: 9px bottom;
+			background-position: left bottom;
 		}
 
 		@media (max-width: 340px) {
