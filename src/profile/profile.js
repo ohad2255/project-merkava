@@ -22,5 +22,24 @@ $(document).ready(function() {
         } else {
             input.attr("type", "password");
         }
-    })
+    });
+
+    $("#activeAccount").on('click', function(){
+        $("html").find($(".input-first-label")).toggleClass("input-first-label-active");
+        $("html").find($(".input-label-active-wrapper")).toggleClass("d-none");
+        $("html").find($(".input-label-not-active-wrapper")).toggleClass("d-none");
+        // isChecked = $('#activeAccount').is(':checked');
+
+        // if (isChecked === "true") {
+        //     $("html").find($(".input-first-label")).addClass("background-color");
+        // } else {
+        //     input.attr("type", "password");
+        // }
+    });
+
+    $("#inputPasswordProfile").focusin(function() {
+        $(".hint").show();
+    }).focusout(function () {
+        $(".hint").hide();
+    });
 });

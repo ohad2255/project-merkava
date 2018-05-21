@@ -1,0 +1,299 @@
+.signin {
+  min-width: 330px; }
+  .signin section {
+    background-image: url(/assets/sign-up.80a8aaf4.png);
+    background-color: rgba(1, 46, 92, 0.6);
+    margin-bottom: 0;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(1, 46, 92, 0.6); }
+    .signin section .signin-container {
+      width: 100%;
+      margin: 40px 0; }
+      @media (min-width: 992px) {
+        .signin section .signin-container {
+          max-width: 1262px;
+          margin: 54px 0; } }
+      .signin section .signin-container .signin-sec-wrapper {
+        height: auto;
+        background-color: #f6f6f6;
+        padding-bottom: 30px; }
+        @media (min-width: 992px) {
+          .signin section .signin-container .signin-sec-wrapper {
+            height: 601px;
+            width: 50%;
+            border-radius: 0 8px 8px 0; } }
+        .signin section .signin-container .signin-sec-wrapper .signin-p-wrapper {
+          margin: 24px 20px 17px; }
+          @media (min-width: 992px) {
+            .signin section .signin-container .signin-sec-wrapper .signin-p-wrapper {
+              margin: 53px 70px 0 0;
+              padding: 0 0 0 10px; } }
+          @media (min-width: 1200px) {
+            .signin section .signin-container .signin-sec-wrapper .signin-p-wrapper {
+              margin: 53px 90px 0 0;
+              padding: 0; } }
+          .signin section .signin-container .signin-sec-wrapper .signin-p-wrapper .signin-sec-head {
+            font-size: 3rem;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            font-weight: 500;
+            color: #4e5665; }
+            @media (min-width: 992px) {
+              .signin section .signin-container .signin-sec-wrapper .signin-p-wrapper .signin-sec-head {
+                font-size: 6.2rem;
+                text-align: right; } }
+          .signin section .signin-container .signin-sec-wrapper .signin-p-wrapper .signin-sec-p {
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            letter-spacing: normal;
+            color: #4e5665;
+            line-height: 1.25;
+            font-size: 1.6rem;
+            text-align: center; }
+            @media (min-width: 992px) {
+              .signin section .signin-container .signin-sec-wrapper .signin-p-wrapper .signin-sec-p {
+                max-width: 396px;
+                text-align: right;
+                line-height: 1.75; } }
+        .signin section .signin-container .signin-sec-wrapper form {
+          margin: 0 18px; }
+          @media (min-width: 992px) {
+            .signin section .signin-container .signin-sec-wrapper form {
+              margin: 19px 70px 0 0;
+              width: 365px;
+              padding: 0 0 0 10px; } }
+          @media (min-width: 1200px) {
+            .signin section .signin-container .signin-sec-wrapper form {
+              margin: 19px 90px 0 0;
+              width: 365px;
+              padding: 0; } }
+          .signin section .signin-container .signin-sec-wrapper form input.parsley-error {
+            box-shadow: none;
+            border-bottom: solid 2px #d53b4a; }
+          .signin section .signin-container .signin-sec-wrapper form .form-group-password {
+            display: relative; }
+            .signin section .signin-container .signin-sec-wrapper form .form-group-password .parsley-errors-list {
+              bottom: -27px; }
+              @media (min-width: 576px) {
+                .signin section .signin-container .signin-sec-wrapper form .form-group-password .parsley-errors-list {
+                  bottom: -20px; } }
+              @media (min-width: 992px) {
+                .signin section .signin-container .signin-sec-wrapper form .form-group-password .parsley-errors-list {
+                  bottom: -30px; } }
+            .signin section .signin-container .signin-sec-wrapper form .form-group-password input.parsley-error {
+              margin: 25px 0 35px 0; }
+            .signin section .signin-container .signin-sec-wrapper form .form-group-password #showPassword {
+              position: absolute;
+              left: 10px;
+              top: -22px;
+              font-size: 1.6rem;
+              font-weight: 500;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.75;
+              letter-spacing: normal;
+              color: #0a7bb6;
+              cursor: pointer; }
+          .signin section .signin-container .signin-sec-wrapper form input {
+            padding: 3px 15px 0; }
+          .signin section .signin-container .signin-sec-wrapper form .signin-bottom-sec {
+            margin-top: 25px; }
+          .signin section .signin-container .signin-sec-wrapper form .signin-form-check {
+            margin: 0; }
+          .signin section .signin-container .signin-sec-wrapper form .password-input {
+            margin: 25px 0; }
+          .signin section .signin-container .signin-sec-wrapper form .email-input, .signin section .signin-container .signin-sec-wrapper form .password-input {
+            width: 100%;
+            height: 50px;
+            border-radius: 3px;
+            background-color: #main-white;
+            border: solid 1px #d4d4d4;
+            font-size: 1.5rem;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: 0.5px;
+            color: #6a768a; }
+          .signin section .signin-container .signin-sec-wrapper form .recaptcha-container {
+            width: 100%; }
+            @media (min-width: 992px) {
+              .signin section .signin-container .signin-sec-wrapper form .recaptcha-container {
+                margin: 0; } }
+            @media (max-width: 375px) {
+              .signin section .signin-container .signin-sec-wrapper form .recaptcha-container {
+                -webkit-transform: scale(0.84);
+                        transform: scale(0.84);
+                margin-right: -17px; } }
+            .signin section .signin-container .signin-sec-wrapper form .recaptcha-container .g-recaptcha {
+              width: 364px; }
+              .signin section .signin-container .signin-sec-wrapper form .recaptcha-container .g-recaptcha:nth-child(1) {
+                width: 100%; }
+              .signin section .signin-container .signin-sec-wrapper form .recaptcha-container .g-recaptcha .rc-anchor {
+                background-color: red; }
+          .signin section .signin-container .signin-sec-wrapper form #forCheckInput {
+            width: 29px;
+            border-radius: 2px;
+            background: #fff;
+            border: solid 1px #d4d4d4;
+            position: relative;
+            background: #40464b;
+            height: 100%;
+            padding: 40px 30%;
+            margin: 0; }
+          .signin section .signin-container .signin-sec-wrapper form input[type="checkbox"] {
+            display: none; }
+          .signin section .signin-container .signin-sec-wrapper form input[type="checkbox"] + label {
+            font-size: 1.6rem;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.75;
+            letter-spacing: normal;
+            color: #4e5665;
+            font-family: FbReforma, sans-serif; }
+            @media (min-width: 992px) {
+              .signin section .signin-container .signin-sec-wrapper form input[type="checkbox"] + label {
+                font-weight: 500; } }
+          .signin section .signin-container .signin-sec-wrapper form input[type="checkbox"] + label span {
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            vertical-align: middle;
+            background: #fff left top no-repeat;
+            cursor: pointer;
+            margin-left: 11px;
+            margin-bottom: 1px; }
+          .signin section .signin-container .signin-sec-wrapper form input[type="checkbox"]:checked + label span {
+            display: inline-block; }
+            .signin section .signin-container .signin-sec-wrapper form input[type="checkbox"]:checked + label span:after {
+              content: '';
+              display: block;
+              margin: 0 auto;
+              width: 11px;
+              height: 22px;
+              border: solid #0a7bb6;
+              border-width: 0 3px 3px 0;
+              -webkit-transform: rotate(45deg);
+                      transform: rotate(45deg); }
+          .signin section .signin-container .signin-sec-wrapper form .forgot-password {
+            font-size: 1.6rem;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.75;
+            letter-spacing: normal;
+            color: #0a7bb6; }
+        .signin section .signin-container .signin-sec-wrapper .signin-submit {
+          margin-top: 31px; }
+          .signin section .signin-container .signin-sec-wrapper .signin-submit button {
+            width: 100%;
+            height: 50px;
+            border-radius: 3px;
+            background-color: #0a7bb6;
+            box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
+            font-size: 2rem;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: 0.5px;
+            text-align: center;
+            color: #fff; }
+            .signin section .signin-container .signin-sec-wrapper .signin-submit button:active, .signin section .signin-container .signin-sec-wrapper .signin-submit button:focus {
+              background-color: #1c6897;
+              color: #0a7bb6;
+              border: 0; }
+            @media (min-width: 992px) {
+              .signin section .signin-container .signin-sec-wrapper .signin-submit button {
+                width: 180px; } }
+      .signin section .signin-container .reg-sec-wrapper {
+        background-color: #fff;
+        height: auto;
+        width: 100%;
+        padding: 0 18px 40px; }
+        @media (min-width: 992px) {
+          .signin section .signin-container .reg-sec-wrapper {
+            height: 601px;
+            border-radius: 8px 0 0 8px;
+            width: 50%; } }
+        .signin section .signin-container .reg-sec-wrapper .reg-p-wrapper {
+          margin: 26px auto 12px; }
+          @media (min-width: 992px) {
+            .signin section .signin-container .reg-sec-wrapper .reg-p-wrapper {
+              margin: 53px 53px 0 0;
+              max-width: 436px; } }
+          @media (min-width: 1200px) {
+            .signin section .signin-container .reg-sec-wrapper .reg-p-wrapper {
+              margin: 53px 83px 0 0; } }
+          .signin section .signin-container .reg-sec-wrapper .reg-p-wrapper .reg-sec-head {
+            font-size: 3rem;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            font-weight: 500;
+            color: #4e5665; }
+            @media (min-width: 992px) {
+              .signin section .signin-container .reg-sec-wrapper .reg-p-wrapper .reg-sec-head {
+                font-size: 6.2rem;
+                text-align: right; } }
+          .signin section .signin-container .reg-sec-wrapper .reg-p-wrapper .reg-sec-p {
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            letter-spacing: normal;
+            color: #4e5665;
+            line-height: 1.25;
+            font-size: 1.6rem;
+            text-align: center;
+            margin-bottom: 15px; }
+            @media (min-width: 992px) {
+              .signin section .signin-container .reg-sec-wrapper .reg-p-wrapper .reg-sec-p {
+                text-align: right;
+                line-height: 1.75;
+                margin-bottom: 0; } }
+        .signin section .signin-container .reg-sec-wrapper .reg-button {
+          margin: 0; }
+          @media (min-width: 992px) {
+            .signin section .signin-container .reg-sec-wrapper .reg-button {
+              margin-right: 53px;
+              margin-top: 29px; } }
+          @media (min-width: 1200px) {
+            .signin section .signin-container .reg-sec-wrapper .reg-button {
+              margin-right: 90px;
+              margin-top: 29px; } }
+          .signin section .signin-container .reg-sec-wrapper .reg-button button {
+            width: 100%;
+            height: 50px;
+            border-radius: 3px;
+            background-color: #0a7bb6;
+            box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
+            font-size: 2rem;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: 0.5px;
+            text-align: center;
+            color: #fff; }
+            .signin section .signin-container .reg-sec-wrapper .reg-button button:active, .signin section .signin-container .reg-sec-wrapper .reg-button button:focus {
+              background-color: #1c6897;
+              color: #0a7bb6;
+              border: 0; }
+            @media (min-width: 992px) {
+              .signin section .signin-container .reg-sec-wrapper .reg-button button {
+                width: 180px; } }
+  .signin footer {
+    margin: 0 auto;
+    border: 0; }
+    .signin footer .main-footer {
+      margin: 70px 0;
+      padding: 0;
+      border: 0;
+      margin: 0; }

@@ -37,8 +37,7 @@
           </div>
           <div class="profile-p-sec flex-column flex-lg-row d-flex align-items-start">
             <div class="profile-icon-wrapper">
-              <img src="../common/img/icon.svg"
-              class="clipboard-icon" alt="clipboard-icon">
+              <img src="../common/img/icon.svg" class="clipboard-icon" alt="clipboard-icon">
             </div>
             <div class="profile-p-wrapper">
               <h1 class="profile-head">
@@ -116,6 +115,9 @@
                 <input type="password" id="inputPasswordProfile" type="password" pattern="(?=.*\d)(?=.*[A-Z]).{8,}" class="form-control password-input" id="InputPasswordSignIn" placeholder="סיסמא" data-toggle="password" data-required="" data-parsley-validate-if-empty data-parsley-error-message="סיסמא צריכה להכיל 8 תווים לפחות, לכלול מספרים, תווים ולפחות אות אחת גדולה">
                 <label class="sr-only" for="inputPasswordProfile"></label>
                 <div class="input-bullet"></div>
+                <p class="hint">
+                  סיסמא צריכה להכיל 8 תווים עם שני מספרים ותו אחד מיוחד לפחות
+                </p>
               </div>
               <div class="form-group password-confirm">
 
@@ -135,17 +137,47 @@
               <label class="sr-only" for="phoneNumber"></label>
               <div class="input-bullet"></div>
             </div>
+
+            <div class="checkbox-active-account-wrapper d-flex">
+
+              <!-- active checkbox input -->
+              <div class="checkbox-input-wrapper">
+                <input type="checkbox" class="form-checkbox" id="activeAccount">
+                <label class="sr-only" for="activeAccount"></label>
+              </div>
+              <div class="input-label">
+
+                <!-- not active label wrapper-->
+                <div class="input-label-not-active-wrapper">   
+                  <span class="input-first-label-not-active">חשבון לא פעיל</span>
+                  <span class="input-second-label-not-active">לחץ להפוך לפעיל</span>
+                </div>
+
+                <!-- active label wrapper -->
+                <div class="input-label-active-wrapper d-none">
+                  <span class="input-first-label-active">חשבון פעיל</span>
+                  <span class="input-second-label-active">לחץ להפוך ללא לפעיל</span>
+                 </div>
+                <p class="checkbox-input-p">
+                  סימון חשבונך כלא פעיל יחסום את חשבונך מלקבל עדכונים שוטפים בנושאים שבחרת.
+                </p>
+              </div>
+            </div>   
+
+            <!-- save details button wrapper --> 
             <div class="save-details-button d-flex justify-content-end">
 
               <!-- save details button -->
-              <button class="btn btn-primary" type="submit">שמור</button>
+              <button class="btn btn-primary" type="submit" data-target="#myModal" data-toggle="modal">
+                שמור
+              </button>
             </div>
 
-            <div class="save-details-favorites-button d-flex justify-content-end">
+           <!--  <div class="save-details-favorites-button d-flex justify-content-end">
 
-              <!-- save details favorites button -->
+              save details favorites button
               <button class="btn btn-primary" type="submit">שמור וערוך מועדפים</button>
-            </div>
+            </div> -->
           </form>
         </div>
       </section>
@@ -154,6 +186,23 @@
       <footer class="profile-footer d-flex justify-content-center">
           ${require("../common/footer/footer.html")}
       </footer>
+    </div>
+
+    <!-- success message -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" required>
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body d-flex flex-column align-items-center">
+            <img src="../common/img/profile-modal-icon.svg"
+              class="dialog-icon" alt="dialog-success-icon">
+            <h4>הרשמתך הסתיימה בהצלחה</h4>
+            <p>בקרוב תקבל אימייל עם פרטים נוספים</p>
+            <button class="btn close-btn" type="button" data-target="#myModal" data-toggle="modal">
+              אישור
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
     ${require("../common/common.html")}
     <script type="text/javascript" src='/common/common.min.js'></script>
