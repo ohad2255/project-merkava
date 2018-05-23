@@ -25,7 +25,7 @@ module.exports = {
         'regulation/regulation': ["./src/regulation/regulation.scss", "./src/regulation/regulation.js"],
         'news-1/news-1': ["./src/news-1/news-1.scss", "./src/news-1/news-1.js"],
         'news-2/news-2': ["./src/news-2/news-2.scss", "./src/news-2/news-2.js"],
-        'news-2-design-1/news-2-design-1': ["./src/news-2-design-1/news-2-design-1.scss", "./src/news-2-design-1/news-2-design-1.js"],
+        'news-2-d1/news-2-d1': ["./src/news-2-d1/news-2-d1.scss", "./src/news-2-d1/news-2-d1.js"],
         'sitemap/sitemap': ["./src/sitemap/sitemap.scss", "./src/sitemap/sitemap.js"],
         'reporting/reporting': ["./src/reporting/reporting.scss", "./src/reporting/reporting.js"] 
     },
@@ -183,9 +183,9 @@ module.exports = {
             template: path.resolve(__dirname, "src/news-2/index.html")
         }), 
         new HtmlWebpackPlugin({
-            chunks: ['news-2-design-1/news-2-design-1'],
-            filename: path.resolve(__dirname, "dist/news-2-design-1/index.html"),
-            template: path.resolve(__dirname, "src/news-2-design-1/index.html")
+            chunks: ['news-2-d1/news-2-d1'],
+            filename: path.resolve(__dirname, "dist/news-2-d1/index.html"),
+            template: path.resolve(__dirname, "src/news-2-d1/index.html")
         }),
         new HtmlWebpackPlugin({
             chunks: ['sitemap/sitemap'],

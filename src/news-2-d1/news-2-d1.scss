@@ -1,13 +1,13 @@
 @import "../util/util.scss";
 
-.about {
+.news-2-d1 {
 	min-width: 330px;
 
 	.custom-container {
 		padding: 0 20px;
 	}
 
-	.nav-item-text-2 {
+	.nav-item-text-6 {
 		background-color: rgba(255, 255, 255, 0.19);
 
 		@media (min-width: $screen-lg-min) {
@@ -15,20 +15,21 @@
 		}
 	}
 
-	.about-top-sec {
+	.news-2-d1-top-sec {
 		position: relative;
 		height: 205px;
 		background-color: $main-white;
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
-		background-image: url('../common/img/header-visuals-odot@3x.png');
+		background-image: url('../common/img/news-2-d1-background@3x.png');
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: left top;
 
 		@media (min-width: $screen-lg-min) {
-			background-image: url('../common/img/header-visuals-odot.png');
+			background-image: url('../common/img/news-2-d1-background.png');
 			height: 308px;
-			background-position: left bottom;
+			background-size: auto;
+			background-position: left 30px;
 		}
 
 		@media (max-width: 340px) {
@@ -44,7 +45,7 @@
 			//height: 104%;
 			height: 100%;
 			border-radius: 4px;
-			background-color: #1c6897;
+			background-color: $main-purple;
 
 			@media (min-width: $screen-lg-min) {
 				width: 11px;
@@ -66,7 +67,7 @@
 				padding: 0 20px;
 			}
 
-			.about-breadcrumb-wrapper {
+			.news-2-d1-breadcrumb-wrapper {
 				margin:0 34px 0 0;	
 
 				@media (min-width: $screen-lg-min) {
@@ -78,7 +79,7 @@
 				}
 
 				.breadcrumb-item  {
-					color: $header-blue;
+					color: $main-purple;
 					font-size: 1.6rem;
 					font-weight: 500;
 					font-style: normal;
@@ -88,28 +89,28 @@
 				}
 			}
 
-			.about-p-sec {
+			.news-2-d1-p-sec {
 				margin: 73px 20px 0;
 
 				@media (min-width: $screen-lg-min) {
 					margin: 0;
 				}	
 
-				.about-p-wrapper {
+				.news-2-d1-p-wrapper {
 
 					@media (min-width: $screen-lg-min) {
 						margin:29px 0 116px 0;
 					}	
 				}	
 
-				.about-head {
+				.news-2-d1-head {
 					font-size: 3rem;
 					font-weight: 500;
 					font-style: normal;
 					font-stretch: normal;
 					line-height: 0.83;
 					letter-spacing: normal;
-					color: #1c6897;
+					color: $main-purple;
 
 					@media (min-width: $screen-lg-min) {
 						font-size: 6.2rem;
@@ -118,12 +119,11 @@
 						font-stretch: normal;
 						line-height: normal;
 						letter-spacing: normal;
-						color: #1c6897;
 						margin: 0 0 3px 0;
 					}	
 				}
 
-				.about-top-p {
+				.news-2-d1-top-p {
 					font-size: 1.6rem;
 					font-weight: normal;
 					font-style: normal;
@@ -148,10 +148,10 @@
 		}
 	}
 
-	.about-body {
+	.news-2-d1-body {
 		//height: 567px;
 
-		.about-body-wrapper {
+		.news-2-d1-body-wrapper {
 			width: 100%;
 			margin:0 0 169px 0;
 			padding: 20px 10px 0;
@@ -161,7 +161,7 @@
 				padding: 55px 20px 0;
 			}
 
-			.about-accordion-wrapper {
+			.news-2-d1-accordion-wrapper {
 
 				@media (min-width: $screen-lg-min) {
 					padding: 0;
@@ -169,7 +169,7 @@
 				}
 
 				.card {
-					border: solid $cobalt;
+					border: solid $main-purple;
 					border-width: 0 5px 0 0;
 					border-radius: 4px;
 					background-color: $main-white;
@@ -223,17 +223,17 @@
 
 						img.icon-first-collaps-p {
 							width: auto;
-							height: 44px;
+							height: 48px;
 							position: absolute;
-							left: 9px;
-							top: 9px;
+							left: 8px;
+							top: 8px;
 							right: auto;
 
 							@media (min-width: $screen-lg-min) {
-								height: 141px;
+								height: 145px;
 								width: auto;
-								top: 30px;
-								left: 30px;
+								top: 28px;
+								left: 28px;
 							}	
 						}
 
@@ -262,7 +262,7 @@
 						font-stretch: normal;
 						line-height: 1.25;
 						letter-spacing: normal;
-						color: $cobalt;
+						color: $main-purple;
 						font-family: $main-font;
 						padding: 17px 0 0 66px;
 						height: fit-content;
@@ -355,24 +355,17 @@
 					left: 10px;
 					right: auto;
 					bottom: 9px;
-
-					@media (min-width: $screen-lg-min) {
-						width: 30px;
-    					height: 26px;
-    					margin: 0;
-    					left: 25px;
-    					top: 226px;
-					}	 
+					transform: rotate(270deg);
 				}
 
 				.show + .collapse-arrow {
-					transform: rotate(90deg);
+					transform: rotate(0deg);
 				}	
 
 				.p-bullet {
 					width: 6px;
 					height: 6px;
-					background-color: $cobalt;
+					background-color: $main-purple;
 					border-radius: 50%;
 					display: inline-block;
 					margin: 0 0 1px 5px;
@@ -523,7 +516,7 @@
 							font-stretch: normal;
 							line-height: 1.15;
 							letter-spacing: normal;
-							color: $cobalt;
+							color: $main-purple;
 							max-width: 253px;
 						}
 					}
@@ -596,7 +589,7 @@
 					display: inline-block;
 					min-height: 57px;
 					border-radius: 4px;
-					border: solid 1px $cobalt;
+					border: solid 1px $main-purple;
 					min-width: 135px;
 					width: auto;
 					padding: 0 20px;
@@ -606,7 +599,7 @@
 					font-stretch: normal;
 					line-height: normal;
 					letter-spacing: normal;
-					color: $cobalt;
+					color: $main-purple;
 					margin: 0 0 10px 10px;
 					text-align: center;
 
@@ -625,7 +618,7 @@
 	.p-bullet {
 		width: 6px;
 		height: 6px;
-		background-color: $header-blue;
+		background-color: $main-purple;
 		border-radius: 50%;
 		display: inline-block;
 		margin: 0 0 1px 5px;
