@@ -11,10 +11,10 @@ $(document).ready(function() {
             $('.collapse').collapse('hide');
         }
     });
-    $('#a').show()
+    $('.a-expression').show()
     $('.alphabet-item-1').addClass('active')
     $('.alphabet-item').on('click', function() {
-    	$('.expressions-wrapper').hide();
+    	$('.expression').hide();
     	var letter = this.getAttribute('letter');
     	$('#'+ letter).show();
     	$('.alphabet-item').removeClass('active')
