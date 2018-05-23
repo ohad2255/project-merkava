@@ -29,6 +29,7 @@
     .dictionary .dictionary-top-sec .right-line {
       position: absolute;
       right: 0;
+      left: auto;
       top: 0;
       width: 5px;
       height: 100%;
@@ -114,6 +115,7 @@
         margin: 0;
         bottom: 0;
         right: 0;
+        left: auto;
         padding: 0 25px 0; }
         .dictionary .dictionary-top-sec .top-sec-container .alphabet-lg ul {
           width: 100%; }
@@ -334,6 +336,7 @@
     .dictionary .dictionary-body .collapse-buttons-wrapper {
       position: absolute;
       left: 0;
+      right: auto;
       top: -41px;
       padding: 0 10px;
       margin: 0 0 0 10px; }

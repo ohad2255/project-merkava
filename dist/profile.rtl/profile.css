@@ -249,6 +249,18 @@
           letter-spacing: normal;
           color: #0a7bb6;
           cursor: pointer; }
+        .profile .profile-body .profile-form-wrapper .password-confirm #showPasswordConfirmProfile {
+          position: absolute;
+          right: 10px;
+          top: -23px;
+          font-size: 1.6rem;
+          font-weight: 500;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.75;
+          letter-spacing: normal;
+          color: #0a7bb6;
+          cursor: pointer; }
       .profile .profile-body .profile-form-wrapper .language, .profile .profile-body .profile-form-wrapper .email-confirm {
         margin: 0 0 40px 0; }
         @media (min-width: 576px) {
@@ -343,6 +355,18 @@
           .profile .profile-body .profile-form-wrapper .form-group-password .parsley-errors-list {
             bottom: -30px; } }
         .profile .profile-body .profile-form-wrapper .form-group-password #showPassword {
+          position: absolute;
+          right: 10px;
+          top: -23px;
+          font-size: 1.6rem;
+          font-weight: 500;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.75;
+          letter-spacing: normal;
+          color: #0a7bb6;
+          cursor: pointer; }
+        .profile .profile-body .profile-form-wrapper .form-group-password #showPasswordProfile {
           position: absolute;
           right: 10px;
           top: -23px;

@@ -227,6 +227,7 @@
 							position: absolute;
 							left: 9px;
 							top: 9px;
+							right: auto;
 
 							@media (min-width: $screen-lg-min) {
 								height: 141px;
@@ -242,12 +243,14 @@
 							position: absolute;
 							left: 9px;
 							top: 9px;
+							right: auto;
 
 							@media (min-width: $screen-lg-min) {
 								width: 171px;
 								height: 176px;
 								top: 38px;
 								left: 97px;
+
 							}	
 						}
 					}
@@ -350,6 +353,7 @@
 					height: 13px; 
 					position: absolute;
 					left: 10px;
+					right: auto;
 					bottom: 9px;
 
 					@media (min-width: $screen-lg-min) {

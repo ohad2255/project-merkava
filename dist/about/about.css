@@ -162,7 +162,8 @@
           height: 44px;
           position: absolute;
           left: 9px;
-          top: 9px; }
+          top: 9px;
+          right: auto; }
           @media (min-width: 992px) {
             .about .about-body .about-body-wrapper .about-accordion-wrapper .card .top-sec-card-header img.icon-first-collaps-p {
               height: 141px;
@@ -174,7 +175,8 @@
           height: 46px;
           position: absolute;
           left: 9px;
-          top: 9px; }
+          top: 9px;
+          right: auto; }
           @media (min-width: 992px) {
             .about .about-body .about-body-wrapper .about-accordion-wrapper .card .top-sec-card-header .icon-second-collaps-p {
               width: 171px;
@@ -257,6 +259,7 @@
       height: 13px;
       position: absolute;
       left: 10px;
+      right: auto;
       bottom: 9px; }
       @media (min-width: 992px) {
         .about .about-body .about-body-wrapper .about-accordion-wrapper .collapse-arrow {

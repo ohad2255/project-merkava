@@ -15,7 +15,7 @@
     background-image: url(/assets/job-owners-background@3x.174eff7c.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: -80px top; }
+    background-position: top right; }
     @media (min-width: 992px) {
       .job-owners .job-owners-top-sec {
         background-image: url(/assets/job-owners-background.b105a036.png);
@@ -31,7 +31,8 @@
     .job-owners .job-owners-top-sec .right-line {
       position: absolute;
       left: 0;
-      top: -4px;
+      right: auto;
+      top: 0;
       width: 5px;
       height: 104%;
       border-radius: 4px;
@@ -139,36 +140,42 @@
         font-stretch: normal;
         line-height: normal;
         letter-spacing: normal;
-        text-align: left;
         color: #4e5665; }
         @media (min-width: 992px) {
           .job-owners .job-owners-body .job-owners-body-wrapper .h2-wrapper h2 {
             margin: 0 0 12px 0; } }
-    .job-owners .job-owners-body .job-owners-body-wrapper .management-h2-wrapper {
-      background-color: rgba(51, 163, 141, 0.3); }
-      @media (min-width: 992px) {
-        .job-owners .job-owners-body .job-owners-body-wrapper .management-h2-wrapper {
-          background-color: transparent; } }
-    .job-owners .job-owners-body .job-owners-body-wrapper .bid-editors-h2-wrapper {
-      background-color: rgba(31, 134, 188, 0.3); }
-      @media (min-width: 992px) {
-        .job-owners .job-owners-body .job-owners-body-wrapper .bid-editors-h2-wrapper {
-          background-color: transparent; } }
-    .job-owners .job-owners-body .job-owners-body-wrapper .purchase-department-h2-wrapper {
-      background-color: rgba(98, 102, 166, 0.3); }
-      @media (min-width: 992px) {
-        .job-owners .job-owners-body .job-owners-body-wrapper .purchase-department-h2-wrapper {
-          background-color: transparent; } }
     .job-owners .job-owners-body .job-owners-body-wrapper .table-wrapper {
       margin: 0; }
       @media (min-width: 992px) {
         .job-owners .job-owners-body .job-owners-body-wrapper .table-wrapper {
           margin: 0 0 30px 0; } }
-    .job-owners .job-owners-body .job-owners-body-wrapper .management-table-wrapper .th {
+      .job-owners .job-owners-body .job-owners-body-wrapper .table-wrapper .h2-wrapper {
+        background-color: rgba(51, 163, 141, 0.3); }
+        @media (min-width: 992px) {
+          .job-owners .job-owners-body .job-owners-body-wrapper .table-wrapper .h2-wrapper {
+            background-color: transparent; } }
+      .job-owners .job-owners-body .job-owners-body-wrapper .table-wrapper .th {
+        background-color: rgba(51, 163, 141, 0.3); }
+    .job-owners .job-owners-body .job-owners-body-wrapper .table-wrapper:nth-child(1) .h2-wrapper {
       background-color: rgba(51, 163, 141, 0.3); }
-    .job-owners .job-owners-body .job-owners-body-wrapper .bid-editors-table-wrapper .bid-editors-table .th {
+      @media (min-width: 992px) {
+        .job-owners .job-owners-body .job-owners-body-wrapper .table-wrapper:nth-child(1) .h2-wrapper {
+          background-color: transparent; } }
+    .job-owners .job-owners-body .job-owners-body-wrapper .table-wrapper:nth-child(1) .th {
+      background-color: rgba(51, 163, 141, 0.3); }
+    .job-owners .job-owners-body .job-owners-body-wrapper .table-wrapper:nth-child(2) .h2-wrapper {
       background-color: rgba(31, 134, 188, 0.3); }
-    .job-owners .job-owners-body .job-owners-body-wrapper .purchase-department-table-wrapper .purchase-department-table .th {
+      @media (min-width: 992px) {
+        .job-owners .job-owners-body .job-owners-body-wrapper .table-wrapper:nth-child(2) .h2-wrapper {
+          background-color: transparent; } }
+    .job-owners .job-owners-body .job-owners-body-wrapper .table-wrapper:nth-child(2) .th {
+      background-color: rgba(31, 134, 188, 0.3); }
+    .job-owners .job-owners-body .job-owners-body-wrapper .table-wrapper:nth-child(3) .h2-wrapper {
+      background-color: rgba(98, 102, 166, 0.3); }
+      @media (min-width: 992px) {
+        .job-owners .job-owners-body .job-owners-body-wrapper .table-wrapper:nth-child(3) .h2-wrapper {
+          background-color: transparent; } }
+    .job-owners .job-owners-body .job-owners-body-wrapper .table-wrapper:nth-child(3) .th {
       background-color: rgba(98, 102, 166, 0.3); }
     .job-owners .job-owners-body .job-owners-body-wrapper .table {
       width: 100%;
@@ -220,7 +227,8 @@
           min-width: 150px; } }
       @media (min-width: 992px) {
         .job-owners .job-owners-body .job-owners-body-wrapper .table .th-name, .job-owners .job-owners-body .job-owners-body-wrapper .table .th-position, .job-owners .job-owners-body .job-owners-body-wrapper .table .th-tel, .job-owners .job-owners-body .job-owners-body-wrapper .table .th-fax, .job-owners .job-owners-body .job-owners-body-wrapper .table .th-related-documents {
-          border-right: solid 5px #fff;
+          border: solid #fff;
+          border-width: 0 5px 0 0;
           padding: 0 0 0 20px; } }
       .job-owners .job-owners-body .job-owners-body-wrapper .table .th-fax {
         font-weight: bold;
@@ -292,6 +300,7 @@
       .job-owners .job-owners-body .job-owners-body-wrapper .table .mail-td, .job-owners .job-owners-body .job-owners-body-wrapper .table .related-documents-td {
         bottom: 20px;
         right: 69px;
+        left: auto;
         display: inline-block;
         margin: 0;
         line-height: 0;
@@ -312,7 +321,8 @@
               display: inherit; } }
       @media (min-width: 992px) {
         .job-owners .job-owners-body .job-owners-body-wrapper .table .name-td, .job-owners .job-owners-body .job-owners-body-wrapper .table .position-td, .job-owners .job-owners-body .job-owners-body-wrapper .table .tel-td, .job-owners .job-owners-body .job-owners-body-wrapper .table .fax-td, .job-owners .job-owners-body .job-owners-body-wrapper .table .related-documents-td {
-          border-right: solid 5px #fff;
+          border: solid #fff;
+          border-width: 0 5px 0 0;
           padding: 0 0 0 20px; } }
       .job-owners .job-owners-body .job-owners-body-wrapper .table .position-td {
         font-weight: normal; }

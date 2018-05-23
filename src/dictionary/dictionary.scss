@@ -41,6 +41,7 @@
 		.right-line {
 			position: absolute;
 			right: 0;
+			left: auto;
 			top: 0;
 			width: 5px;
 			height: 100%;
@@ -58,10 +59,6 @@
 			padding: 0;
 			height: auto;
 			position: relative;
-
-			// @media (min-width: $screen-md-min) {
-			// 	padding: 31px 20px 55px 30px;
-			// }
 
 			@media (min-width: $screen-lg-min) {
 				padding: 31px 24px 55px 30px;
@@ -89,8 +86,6 @@
 			}
 
 			.dictionary-p-sec {
-				//margin: 20px 0;
-				//padding: 0 20px;
 
 				@media (min-width: $screen-lg-min) {
 					margin: 0 0 10px 0;
@@ -168,6 +163,7 @@
 				margin: 0;
 				bottom: 0;
 				right: 0;
+				left: auto;
 				padding: 0 25px 0;
 
 				ul {
@@ -206,10 +202,6 @@
 				width: 116px;
 				height: 116px;
 				margin: 0;
-				//position: absolute;
-				//top: 0;  
-			    // right: -150px;
-			    // top: 10px;
 			}
 		}	
 	}
@@ -485,6 +477,7 @@
 		.collapse-buttons-wrapper {
 			position: absolute;
 			left: 0;
+			right: auto;
 			top: -41px;
 			padding: 0 10px;
 			margin:0 0 0 10px;

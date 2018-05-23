@@ -17,7 +17,7 @@
     background-image: url(/assets/green-rechesh-top-background-pic.bc5b5d83.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: -103px top; }
+    background-position: left top; }
     @media (min-width: 992px) {
       .green-r .green-r-top-sec {
         height: auto;
@@ -27,6 +27,7 @@
     .green-r .green-r-top-sec .right-line {
       position: absolute;
       right: 0;
+      left: auto;
       top: 0;
       width: 5px;
       height: 100%;
@@ -175,6 +176,7 @@
           height: 44px;
           position: absolute;
           left: 9px;
+          right: auto;
           top: 9px; }
           @media (min-width: 992px) {
             .green-r .green-r-body .green-r-body-wrapper .green-r-accordion-wrapper .card .top-sec-card-header img.icon-first-collaps-p {
@@ -187,6 +189,7 @@
           height: 46px;
           position: absolute;
           left: 9px;
+          right: auto;
           top: 9px; }
           @media (min-width: 992px) {
             .green-r .green-r-body .green-r-body-wrapper .green-r-accordion-wrapper .card .top-sec-card-header .icon-second-collaps-p {
@@ -243,7 +246,6 @@
         font-stretch: normal;
         line-height: 1.33;
         letter-spacing: normal;
-        text-align: right;
         color: #4e5665; }
         @media (min-width: 992px) {
           .green-r .green-r-body .green-r-body-wrapper .green-r-accordion-wrapper .card .card-with-bullets-head-p {
@@ -270,6 +272,7 @@
       height: 13px;
       position: absolute;
       left: 10px;
+      right: auto;
       bottom: 9px; }
       @media (min-width: 992px) {
         .green-r .green-r-body .green-r-body-wrapper .green-r-accordion-wrapper .collapse-arrow {
@@ -368,7 +371,6 @@
         border-radius: 2.1px;
         background-color: #fff;
         box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15);
-        text-align: right;
         width: 293px;
         height: 160px;
         padding: 20px 14px 0 0;
@@ -434,7 +436,6 @@
         font-stretch: normal;
         line-height: 1.75;
         letter-spacing: normal;
-        text-align: right;
         color: #4e5665; }
       .green-r .green-r-body .green-r-body-wrapper .links-container .link {
         display: inline-block;

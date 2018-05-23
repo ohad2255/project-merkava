@@ -11,18 +11,18 @@
         border-bottom: solid 1px #1c6897; } }
   .bids .bids-top-sec {
     position: relative;
-    height: 205px;
+    min-height: 205px;
     background-color: #fff;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
-    background-image: url(/assets/group-13.d180b559.png);
+    background-image: url(/assets/bids-mobil-background.d47ba224.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: -4px; }
+    background-size: contain;
+    background-position: auto top; }
     @media (min-width: 992px) {
       .bids .bids-top-sec {
         background-image: url(/assets/q-and-a-background-pic.d11c90d0.png);
-        background-size: contain;
-        height: 308px; } }
+        min-height: 308px;
+        background-position: left bottom; } }
     .bids .bids-top-sec .right-line {
       position: absolute;
       right: 0;
@@ -57,7 +57,7 @@
             padding: 0; } }
         .bids .bids-top-sec .top-sec-container .bids-head-wrapper img {
           height: 116px;
-          width: 116px; }
+          width: auto; }
         .bids .bids-top-sec .top-sec-container .bids-head-wrapper .bids-h-wrapper {
           max-width: 260px; }
           @media (min-width: 992px) {
@@ -208,6 +208,7 @@
     .bids .bids-body .bid-contact-wrapper .right-line {
       position: absolute;
       right: 0;
+      left: auto;
       top: 0;
       width: 7px;
       height: 100%;
@@ -316,10 +317,12 @@
       display: inline-block; }
     .bids .winning-bidders-main-container .swiper-button-next {
       right: -17px;
+      left: auto;
       -webkit-transform: rotate(-45deg);
               transform: rotate(-45deg); }
     .bids .winning-bidders-main-container .swiper-button-prev {
       left: -19px;
+      right: auto;
       -webkit-transform: rotate(135deg);
               transform: rotate(135deg); }
   @media (min-width: 992px) {
@@ -443,13 +446,15 @@
       width: 293px !important; }
       @media (min-width: 992px) {
         .bids .winning-bidders-swiper-wrapper .swiper-slide, .bids .single-slide .swiper-slide {
-          right: 45px; } }
+          right: 45px;
+          left: auto; } }
   .bids .winning-bidders-swiper-wrapper {
     margin: 0 43px 0 0; }
     @media (min-width: 992px) {
       .bids .winning-bidders-swiper-wrapper {
         width: 536px;
         right: 30px;
+        left: auto;
         margin: 0; } }
   .bids .single-slide {
     position: static;
@@ -506,17 +511,11 @@
       margin: 0;
       width: 536px;
       position: relative; } }
-  .bids .winning-bidders-swiper .gradient-overlay {
-    height: 100%;
-    width: 100px;
-    left: 0;
-    background: linear-gradient(to right, white, transperent);
-    position: absolute;
-    z-index: 1000; }
-  .bids .winning-bidders-swiper-2 .gradient-overlay, .bids .winning-bidders-swiper .gradient-overlay {
+  .bids .gradient-overlay {
     height: 100%;
     width: 70px;
     left: 0;
+    right: auto;
     background: linear-gradient(to right, white, rgba(255, 255, 255, 0.2));
     position: absolute;
     z-index: 1000; }
@@ -539,7 +538,8 @@
       .bids .related-documents-swiper {
         padding: 0; } }
     .bids .related-documents-swiper .swiper-slide-prev {
-      right: -10px; }
+      right: -10px;
+      left: auto; }
   .bids .download-wrapper {
     margin: 0 0 10px 10px; }
   .bids .document-date {
@@ -613,9 +613,13 @@
         .bids .related-bids-container .swiper-slide {
           border-radius: 2.1px;
           background-color: #ffffff; } }
+    .bids .related-bids-container .swiper-slide-prev {
+      right: -20px;
+      left: auto; }
     .bids .related-bids-container .right-line {
       position: absolute;
       right: 0;
+      left: auto;
       width: 6px;
       height: 100%;
       background-color: #02448e; }
@@ -677,11 +681,14 @@
     padding: 23px 34px 11px 16px; }
   .bids .related-bids-desktop-container .slide {
     width: 293px;
-    height: 239px;
+    min-height: 239px;
     border-radius: 2.1px;
     background-color: #fff;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15);
-    position: relative; }
+    position: relative;
+    margin: 0 0 0 10px; }
+    .bids .related-bids-desktop-container .slide:last-child {
+      margin: 0; }
   .bids .swiper-slide-related {
     width: 293px !important; }
   @media (min-width: 992px) {

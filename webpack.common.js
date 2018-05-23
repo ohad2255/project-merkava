@@ -195,6 +195,7 @@ module.exports = {
         new WebpackRTLPlugin({
             
             minify: false,
+            //blacklist: {'.form-checkbox:checked:after':true}
         })
     ]
 };

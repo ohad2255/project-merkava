@@ -19,7 +19,6 @@
         padding-bottom: 30px; }
         @media (min-width: 992px) {
           .signin section .signin-container .signin-sec-wrapper {
-            height: 601px;
             width: 50%;
             border-radius: 0 8px 8px 0; } }
         .signin section .signin-container .signin-sec-wrapper .signin-p-wrapper {
@@ -76,16 +75,6 @@
             border-bottom: solid 2px #d53b4a; }
           .signin section .signin-container .signin-sec-wrapper form .form-group-password {
             display: relative; }
-            .signin section .signin-container .signin-sec-wrapper form .form-group-password .parsley-errors-list {
-              bottom: -27px; }
-              @media (min-width: 576px) {
-                .signin section .signin-container .signin-sec-wrapper form .form-group-password .parsley-errors-list {
-                  bottom: -20px; } }
-              @media (min-width: 992px) {
-                .signin section .signin-container .signin-sec-wrapper form .form-group-password .parsley-errors-list {
-                  bottom: -30px; } }
-            .signin section .signin-container .signin-sec-wrapper form .form-group-password input.parsley-error {
-              margin: 25px 0 35px 0; }
             .signin section .signin-container .signin-sec-wrapper form .form-group-password #showPassword {
               position: absolute;
               left: 10px;
@@ -110,7 +99,7 @@
             width: 100%;
             height: 50px;
             border-radius: 3px;
-            background-color: #main-white;
+            background-color: #fff;
             border: solid 1px #d4d4d4;
             font-size: 1.5rem;
             font-weight: normal;
@@ -123,7 +112,8 @@
             width: 100%; }
             @media (min-width: 992px) {
               .signin section .signin-container .signin-sec-wrapper form .recaptcha-container {
-                margin: 0; } }
+                margin: 0;
+                margin-top: 35px; } }
             @media (max-width: 375px) {
               .signin section .signin-container .signin-sec-wrapper form .recaptcha-container {
                 -webkit-transform: scale(0.84);
@@ -218,7 +208,6 @@
         padding: 0 18px 40px; }
         @media (min-width: 992px) {
           .signin section .signin-container .reg-sec-wrapper {
-            height: 601px;
             border-radius: 8px 0 0 8px;
             width: 50%; } }
         .signin section .signin-container .reg-sec-wrapper .reg-p-wrapper {

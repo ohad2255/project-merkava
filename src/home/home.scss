@@ -14,7 +14,6 @@
   .main-contant {
     margin: 37px 20px 52px;
     object-fit: contain;
-   // border-bottom: solid 1px #e0e0e0;
 
     @media (min-width: $screen-lg-min) {
       max-width: 1262px;
@@ -43,7 +42,7 @@
         position: relative;
 
         @media (min-width: $screen-lg-min) { 
-          padding:0 0 0 10px;
+          padding: 0 0 0 10px;
           width: 50%;
           height: 100%;
           max-width: 620px;
@@ -52,6 +51,7 @@
         .swiper-pagination {
             position: absolute;
             right: 26px;
+            left: auto;
             bottom: 23px;
             width: auto;
             z-index: 10;
@@ -66,8 +66,7 @@
               height: 10px;
               object-fit: contain;
               background-color: $swiper-bullet;
-              margin: 0;
-              margin-left: 3px;
+              margin: 0 0 0 3px;
             }
 
             .swiper-pagination-bullet-active {
@@ -196,12 +195,11 @@
           .main-gallery-wrapper-p-s-1 {
             background-color: $background-p-img; 
             height: 161px;
-            padding-right: 20px;
-            padding-top: 19px;
+            padding: 19px 20px 0 0;
 
             @media (min-width: $screen-lg-min) {
               padding: 18px 48px 0px;
-                height: 170px;
+              height: 170px;
             }
 
             .main-gallery-head {
@@ -214,7 +212,7 @@
               letter-spacing: normal;
               max-width: 241px;
               color: $main-white;
-              margin-bottom: 12px;
+              margin: 0 0 12px 0;
 
               @media (min-width: $screen-lg-min) {
                 width: 100%;
@@ -226,7 +224,6 @@
             }
 
             .main-gallery-h2 {
-              margin-right: 2px;
               object-fit: contain;
               font-size: 1.8rem;
               font-weight: normal;
@@ -235,7 +232,7 @@
               line-height: 1;
               letter-spacing: normal;
               color: $main-white;
-              margin-bottom: 5px;
+              margin: 0 2px 5px 0;
             }
           }
         }
@@ -256,8 +253,7 @@
       .main-gallery-container-p-s {
         background-color: $background-p-img; 
         height: 161px;
-        padding-right: 20px;
-        padding-top: 19px;
+        padding: 19px 20px 0 0;
         z-index: 4;
 
           @media (min-width: $screen-lg-min) {
@@ -279,7 +275,7 @@
         letter-spacing: normal;
         max-width: 241px;
         color: $main-white;
-        margin-bottom: 12px;
+        margin: 0 0 12px 0;
 
         @media (min-width: $screen-lg-min) {
           width: 100%;
@@ -291,7 +287,7 @@
       }
 
       .main-gallery-sp-2 {
-        margin-right: 2px;
+        margin: 0 2px 5px 0;
         object-fit: contain;
         font-size: 1.8rem;
         font-weight: normal;
@@ -300,12 +296,10 @@
         line-height: 1;
         letter-spacing: normal;
         color: $main-white;
-        margin-bottom: 5px;
       }
 
       .main-gallery-sp-3 {
-        margin: 0;
-        margin-right: 2px;
+        margin: 0 2px 0 0;
         object-fit: contain;
         font-size: 1.4rem;
         font-weight: normal;
@@ -380,8 +374,7 @@
             }
 
             .top-sec-p-wrapper {
-              padding-right: 20px;
-              padding-top: 19px;
+              padding: 19px 20px 0 0;
 
               @media (min-width: $screen-lg-min) {
                 padding: 18px 48px 0px;
@@ -396,7 +389,7 @@
                 line-height: 0.9;
                 letter-spacing: normal;
                 color: $main-white;
-                margin-bottom: 12px;
+                margin: 0 0 12px 0;
                 max-width: 240px;
 
                 @media (min-width: $screen-lg-min) {
@@ -416,8 +409,7 @@
                 line-height: 1;
                 letter-spacing: normal;
                 color: $main-white;
-                margin-bottom: 5px;
-                margin-right: 2px;
+                margin: 0 2px 5px 0;
               }
 
               .top-sec-p {
@@ -429,8 +421,7 @@
                 line-height: 1.29;
                 letter-spacing: normal;
                 color: $main-white;
-                margin: 0;
-                margin-right: 2px;
+                margin: 0 2px 0 0;
               }
             }
           }
@@ -556,7 +547,7 @@
                 letter-spacing: normal;
                 max-width: 270px;
                 color: $main-white;
-                margin-bottom: 0;
+                margin: 0;
 
                 @media (min-width: $screen-lg-min) {
                   max-width: 305px;
@@ -666,11 +657,6 @@
         &:last-child {
           margin: 0;
         }
-      }
-
-
-      .bottom-sec-a {
-        
       }
 
       .bottom-sec-link-wrapper {

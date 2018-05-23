@@ -7,7 +7,7 @@
         border-bottom: solid 1px #1c6897; } }
   .contact-tender .contact-tender-top-sec {
     position: relative;
-    background-image: url(/assets/q-and-a-background-pic.d11c90d0.png);
+    background-image: url(/assets/contact-background.aeade14d.png);
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -24,6 +24,7 @@
     .contact-tender .contact-tender-top-sec .right-line {
       position: absolute;
       left: 0;
+      right: auto;
       width: 5px;
       height: 100%;
       border-radius: 4px;
@@ -45,6 +46,7 @@
       background-repeat: no-repeat;
       bottom: 0;
       right: 0;
+      left: auto;
       z-index: 1; }
       @media (min-width: 992px) {
         .contact-tender .contact-tender-top-sec .background-img-top-sec {
@@ -57,33 +59,6 @@
         .contact-tender .contact-tender-top-sec .top-sec-container {
           padding: 80px 20px;
           max-width: 1262px; } }
-      .contact-tender .contact-tender-top-sec .top-sec-container .contact-tender-breadcrumb-wrapper {
-        margin: 0 0 0 8px;
-        font-size: 1.5rem;
-        position: absolute;
-        width: -webkit-fit-content;
-        width: -moz-fit-content;
-        width: fit-content;
-        right: 20px;
-        top: 16px; }
-        @media (min-width: 992px) {
-          .contact-tender .contact-tender-top-sec .top-sec-container .contact-tender-breadcrumb-wrapper {
-            margin: 25px 0 21px 108px;
-            font-size: 1.6rem;
-            position: static;
-            width: 100%; } }
-        .contact-tender .contact-tender-top-sec .top-sec-container .contact-tender-breadcrumb-wrapper .breadcrumb {
-          margin: 0; }
-        .contact-tender .contact-tender-top-sec .top-sec-container .contact-tender-breadcrumb-wrapper .breadcrumb-item-1 {
-          display: none; }
-          @media (min-width: 992px) {
-            .contact-tender .contact-tender-top-sec .top-sec-container .contact-tender-breadcrumb-wrapper .breadcrumb-item-1 {
-              display: block; } }
-        .contact-tender .contact-tender-top-sec .top-sec-container .contact-tender-breadcrumb-wrapper .breadcrumb-item-2 {
-          display: none; }
-          @media (min-width: 992px) {
-            .contact-tender .contact-tender-top-sec .top-sec-container .contact-tender-breadcrumb-wrapper .breadcrumb-item-2 {
-              display: block; } }
       .contact-tender .contact-tender-top-sec .top-sec-container .contact-tender-p-sec {
         margin: 16px 0 0 0; }
         @media (min-width: 992px) {
@@ -277,7 +252,8 @@
           margin: 0 0 13.5px 0;
           display: block;
           top: 9px;
-          left: 23px; }
+          left: 23px;
+          right: auto; }
       .contact-tender .contact-tender-body .contact-tender-form-wrapper .upload-file-wrapper .file-button-wrapper {
         position: relative;
         height: 100%;
@@ -287,6 +263,7 @@
           width: 20px;
           height: auto;
           right: 11px;
+          left: auto;
           top: 50%;
           margin: -2px 0 0 0;
           pointer-events: none; }
@@ -308,6 +285,7 @@
           padding: 0;
           top: 50%;
           left: 18px;
+          right: auto;
           margin: -9px 0 0 0; }
           @media (min-width: 992px) {
             .contact-tender .contact-tender-body .contact-tender-form-wrapper .upload-file-wrapper .file-button-wrapper .file-button-text {
@@ -334,6 +312,7 @@
       .contact-tender .contact-tender-body .contact-tender-form-wrapper .upload-file-wrapper .dropzone-previews {
         position: absolute;
         right: 20px;
+        left: auto;
         z-index: 100;
         top: 50%;
         margin-top: -35px; }
@@ -357,6 +336,7 @@
         background-color: #0a7bb6;
         border-radius: 50%;
         left: 11px;
+        right: auto;
         top: 50%;
         margin: -3px 0 0 0; }
   .contact-tender .contact-tender-footer {
@@ -387,6 +367,7 @@
         z-index: 10;
         top: 16px;
         right: 16px;
+        left: auto;
         padding: 0; }
         @media (min-width: 992px) {
           .contact-tender .modal.show .modal-content .close-btn {
@@ -403,11 +384,13 @@
         position: absolute;
         top: 50%;
         left: 0;
+        right: auto;
         margin: -87px 0 0 0; }
       .contact-tender .modal.show .modal-content .left-background-img {
         position: absolute;
         top: 50%;
         right: 0;
+        left: auto;
         margin: -95px 0 0 0; }
     .contact-tender .modal.show .modal-body {
       padding: 26px 22px 40px; }
