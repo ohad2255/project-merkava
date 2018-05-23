@@ -212,8 +212,8 @@
 		position: relative;
 
 		@media (min-width: $screen-lg-min) {
-			padding: 0 20px 100px;
-			margin: 0px auto 0;
+			padding: 0 20px 0;
+			margin: 0px auto 308px;
 			max-width: 1262px;
 			min-height: 100%;
 		}
@@ -333,7 +333,7 @@
 			}
 		}
 
-		.expression {
+		.expression-container {
 
 			.card-header {
 				background-color: $main-white;

@@ -11,16 +11,18 @@ $(document).ready(function() {
             $('.collapse').collapse('hide');
         }
     });
-    $('.a-expression').show()
+    
+    $('.expression-container').hide()
+    $('.a').show()
     $('.alphabet-item-1').addClass('active')
     $('.alphabet-item').on('click', function() {
-    	$('.expression').hide();
+    	$('.expression-container').hide();
     	var letter = this.getAttribute('letter');
-    	$('#'+ letter).show();
+    	$('.'+ letter).show();
     	$('.alphabet-item').removeClass('active')
     	$(this).addClass('active')
     });
     $('.collapse-button-show-all').on('click', function() {
-    	$('.expressions-wrapper').show()
+    	$('.expression-container').show()
     });
 });
