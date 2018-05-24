@@ -99,6 +99,15 @@ button {
   }
 }
 
+.parsley-errors-list.filled {
+  margin: 2px 0 0 0;
+  z-index: 100;
+
+  ~.help-block{
+    display:none;
+  }
+}
+
 .mobile-menu-open .main-content-wrapper {
   height: 100%;
   overflow: hidden;

@@ -63,9 +63,11 @@
           <a href="../contact-us/index.html" class="btn btn-default d-flex align-items-center justify-content-center contact-us-button">צור קשר</a>
         </div>
 
-        <!-- supplier container -->
+        <!-- suppliers container -->
         <div class="cards-wrapper" id="accordion" role="tablist" aria-multiselectable="true">
-          <div class="card card-1 supplier">
+
+          <!-- supplier card with links -->
+          <div class="card supplier">
             
             <!-- collapse supplier -->
             <a class="collapsed d-flex flex-column collapsed-p panel-collapse" data-parent="#accordion" data-toggle="collapse" data-target="#collapse1" href="#collapse1"
@@ -83,27 +85,86 @@
             </a>
             
             <!-- collapsed supplier links -->
-            <div id="collapse1" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
+            <div id="collapse1" class="collapse panel-collapse collapse-wrapper" role="tabpanel" aria-labelledby="headingOne">
               <div class="card-block suppliers-list">
-                <div class="supplier-link-wrapper d-flex align-items-center">
-                  
-                  <!-- supplier link -->
-                  <a href="#" class="supplier-link">מאגר נותני שירותים מקצועיים</a>
+
+                <!-- collapse sub supplier -->
+                <a class="collapsed d-flex flex-column collapsed-p panel-collapse" data-parent="#collapse" data-toggle="collapse" data-target="#subCollapse1" href="#subCollapse1"
+                aria-expanded="true" aria-controls="subCollapse1">
+                  <div class="sub-card-header d-flex align-items-center align-items-lg-center" role="tab" id="heading1">
+                    <span class="closed">+</span>
+                    <span class="open"></span>
+                    <div class="sub-supplier-wrapper d-lg-flex flex-column justify-content-center">
+                      <h4 class="sub-supplier-h4">​
+                      משרדי השמה
+                      </h4>
+                    </div>
+                    <img src="../common/img/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
+                  </div>
+                </a>
+                
+                <!-- collapsed supplier links -->
+                <div id="subCollapse1" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="card-block suppliers-list">
+                    <div class="supplier-link-wrapper d-flex align-items-center">
+                      
+                      <!-- supplier link -->
+                      <a href="#" class="supplier-link">מאגר נותני שירותים מקצועיים</a>
+                    </div>
+                    <div class="supplier-link-wrapper d-flex align-items-center">
+                      
+                      <!-- supplier link -->
+                      <a href="#" class="supplier-link">מאגר טאלנטים וסוכנים</a>
+                    </div>
+                    <div class="supplier-link-wrapper d-flex align-items-center">
+                      
+                      <!-- supplier link -->
+                      <a href="#" class="supplier-link">מאגר חברות הפקה להפקת תוכניות טלוויזיה</a>
+                    </div>
+                  </div>  
                 </div>
-                <div class="supplier-link-wrapper d-flex align-items-center">
-                  
-                  <!-- supplier link -->
-                  <a href="#" class="supplier-link">מאגר טאלנטים וסוכנים</a>
-                </div>
-                <div class="supplier-link-wrapper d-flex align-items-center">
-                  
-                  <!-- supplier link -->
-                  <a href="#" class="supplier-link">מאגר חברות הפקה להפקת תוכניות טלוויזיה</a>
+
+                <!-- collapse sub supplier -->
+                <a class="collapsed d-flex flex-column sub-collapsed-p panel-collapse" data-parent="#collapse" data-toggle="collapse" data-target="#subCollapse2" href="#subCollapse2"
+                aria-expanded="true" aria-controls="subCollapse2">
+                  <div class="sub-card-header d-flex align-items-center align-items-lg-center" role="tab" id="heading1">
+                    <span class="closed">+</span>
+                    <span class="open"></span>
+                    <div class="sub-supplier-wrapper d-lg-flex flex-column justify-content-center">
+                      <h4 class="sub-supplier-h4">​
+                      משרדי חינוך
+                      </h4>
+                    </div>
+                    <img src="../common/img/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
+                  </div>
+                </a>
+                
+                <!-- collapsed supplier links -->
+                <div id="subCollapse2" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="card-block suppliers-list">
+                    <div class="supplier-link-wrapper d-flex align-items-center">
+                      
+                      <!-- supplier link -->
+                      <a href="#" class="supplier-link">מאגר נותני שירותים מקצועיים</a>
+                    </div>
+                    <div class="supplier-link-wrapper d-flex align-items-center">
+                      
+                      <!-- supplier link -->
+                      <a href="#" class="supplier-link">מאגר טאלנטים וסוכנים</a>
+                    </div>
+                    <div class="supplier-link-wrapper d-flex align-items-center">
+                      
+                      <!-- supplier link -->
+                      <a href="#" class="supplier-link">מאגר חברות הפקה להפקת תוכניות טלוויזיה</a>
+                    </div>
+                  </div>  
                 </div>
               </div>
             </div>
           </div>
-          <div class="card card-2 supplier">
+
+          <!-- supplier card with links and p -->
+          <div class="card supplier card-with-p">
             
             <!-- collapse supplier -->
             <a class="collapsed d-flex flex-column collapsed-p panel-collapse" data-parent="#accordion" data-toggle="collapse" data-target="#collapse2" href="#collapse2"
@@ -112,36 +173,102 @@
                 <span class="closed">+</span>
                 <span class="open"></span>
                 <div class="supplier-wrapper d-lg-flex flex-column justify-content-center">
-                    <h4 class="supplier-h4">​
-                    המשרד לבטחון פנים -שירות בתי הסוהר
-                    </h4>
+                  <h4 class="supplier-h4">​
+                  ההסתדרות הציונית העולמית - החטיבה להתישבות
+                  </h4>
                 </div>
                 <img src="../common/img/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
               </div>
-              
-              <!-- collapsed supplier links -->
-              <div id="collapse2" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
-                <div class="card-block suppliers-list">
-                  <div class="supplier-link-wrapper d-flex align-items-center">
-                    
-                    <!-- supplier link -->
-                    <a href="#" class="supplier-link">מאגר נותני שירותים מקצועיים</a>
+            </a>
+            
+            <!-- collapsed supplier links -->
+            <div id="collapse2" class="collapse panel-collapse collapse-wrapper" role="tabpanel" aria-labelledby="headingOne">
+
+              <!-- collapsed p -->
+              <p> 
+                  בהתאם לתקנה 10(א) לתקנות חובת המכרזים תשנ"ג-1993, וכן הוראת תכ"ם מס' 7.2.2 שעניינה "ועדת המכרזים" והוראת תכ"מ מס' 7.1.2  שעניינה "דיווחים ופרסומים" , החלטות ועדת המכרזים ינומקו והן יירשמו בפרוטוקול שייחתם בידי חברי הועדה הנוכחים בישיבה. 
+                  ככלל פרסום החלטות הועדה יעשה בהתאם לעניין, ובכפוף להוראות התקנות והתכ"ם, ובכלל זה יפורסמו באתר האינטרנט הממשלתי זאת בשים לב להוראות.
+              </p>
+
+              <div class="card-block suppliers-list">
+
+                <!-- collapse sub supplier -->
+                <a class="collapsed d-flex flex-column collapsed-p panel-collapse" data-parent="#collapse" data-toggle="collapse" data-target="#subCollapse1B" href="#subCollapse1B"
+                aria-expanded="true" aria-controls="subCollapse1B">
+                  <div class="sub-card-header d-flex align-items-center align-items-lg-center" role="tab" id="heading1">
+                    <span class="closed">+</span>
+                    <span class="open"></span>
+                    <div class="sub-supplier-wrapper d-lg-flex flex-column justify-content-center">
+                      <h4 class="sub-supplier-h4">​
+                      משרדי השמה
+                      </h4>
+                    </div>
+                    <img src="../common/img/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
                   </div>
-                  <div class="supplier-link-wrapper d-flex align-items-center">
-                    
-                    <!-- supplier link -->
-                    <a href="#" class="supplier-link">מאגר טאלנטים וסוכנים</a>
+                </a>
+                
+                <!-- collapsed sub supplier links -->
+                <div id="subCollapse1B" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="card-block suppliers-list">
+                    <div class="supplier-link-wrapper d-flex align-items-center">
+                      
+                      <!-- supplier link -->
+                      <a href="#" class="supplier-link">מאגר נותני שירותים מקצועיים</a>
+                    </div>
+                    <div class="supplier-link-wrapper d-flex align-items-center">
+                      
+                      <!-- supplier link -->
+                      <a href="#" class="supplier-link">מאגר טאלנטים וסוכנים</a>
+                    </div>
+                    <div class="supplier-link-wrapper d-flex align-items-center">
+                      
+                      <!-- supplier link -->
+                      <a href="#" class="supplier-link">מאגר חברות הפקה להפקת תוכניות טלוויזיה</a>
+                    </div>
+                  </div>  
+                </div>
+
+                <!-- collapse sub supplier -->
+                <a class="collapsed d-flex flex-column sub-collapsed-p panel-collapse" data-parent="#collapse" data-toggle="collapse" data-target="#subCollapse2B" href="#subCollapse2B"
+                aria-expanded="true" aria-controls="subCollapse2B">
+                  <div class="sub-card-header d-flex align-items-center align-items-lg-center" role="tab" id="heading1">
+                    <span class="closed">+</span>
+                    <span class="open"></span>
+                    <div class="sub-supplier-wrapper d-lg-flex flex-column justify-content-center">
+                      <h4 class="sub-supplier-h4">​
+                      משרדי חינוך
+                      </h4>
+                    </div>
+                    <img src="../common/img/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
                   </div>
-                  <div class="supplier-link-wrapper d-flex align-items-center">
-                    
-                    <!-- supplier link -->
-                    <a href="#" class="supplier-link">מאגר חברות הפקה להפקת תוכניות טלוויזיה</a>
-                  </div>
+                </a>
+                
+                <!-- collapsed sub supplier links -->
+                <div id="subCollapse2B" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="card-block suppliers-list">
+                    <div class="supplier-link-wrapper d-flex align-items-center">
+                      
+                      <!-- supplier link -->
+                      <a href="#" class="supplier-link">מאגר נותני שירותים מקצועיים</a>
+                    </div>
+                    <div class="supplier-link-wrapper d-flex align-items-center">
+                      
+                      <!-- supplier link -->
+                      <a href="#" class="supplier-link">מאגר טאלנטים וסוכנים</a>
+                    </div>
+                    <div class="supplier-link-wrapper d-flex align-items-center">
+                      
+                      <!-- supplier link -->
+                      <a href="#" class="supplier-link">מאגר חברות הפקה להפקת תוכניות טלוויזיה</a>
+                    </div>
+                  </div>  
                 </div>
               </div>
-            </a>
+            </div>
           </div>
-          <div class="card card-3 supplier">
+
+          <!-- supplier card with links -->
+          <div class="card supplier">
             
             <!-- collapse supplier -->
             <a class="collapsed d-flex flex-column collapsed-p panel-collapse" data-parent="#accordion" data-toggle="collapse" data-target="#collapse3" href="#collapse3"
@@ -150,36 +277,95 @@
                 <span class="closed">+</span>
                 <span class="open"></span>
                 <div class="supplier-wrapper d-lg-flex flex-column justify-content-center">
-                    <h4 class="supplier-h4">​
-                    המרכז למיפוי ישראל
-                    </h4>
+                  <h4 class="supplier-h4">​
+                  ההסתדרות הציונית העולמית - החטיבה להתישבות
+                  </h4>
                 </div>
                 <img src="../common/img/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
               </div>
             </a>
             
             <!-- collapsed supplier links -->
-            <div id="collapse3" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
+            <div id="collapse3" class="collapse panel-collapse collapse-wrapper" role="tabpanel" aria-labelledby="headingOne">
               <div class="card-block suppliers-list">
-                <div class="supplier-link-wrapper d-flex align-items-center">
-                  
-                  <!-- supplier link -->
-                  <a href="#" class="supplier-link">מאגר נותני שירותים מקצועיים</a>
+
+                <!-- collapse sub supplier -->
+                <a class="collapsed d-flex flex-column collapsed-p panel-collapse" data-parent="#collapse" data-toggle="collapse" data-target="#subCollapse1C" href="#subCollapse1C"
+                aria-expanded="true" aria-controls="subCollapse1C">
+                  <div class="sub-card-header d-flex align-items-center align-items-lg-center" role="tab" id="heading1">
+                    <span class="closed">+</span>
+                    <span class="open"></span>
+                    <div class="sub-supplier-wrapper d-lg-flex flex-column justify-content-center">
+                      <h4 class="sub-supplier-h4">​
+                      משרדי השמה
+                      </h4>
+                    </div>
+                    <img src="../common/img/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
+                  </div>
+                </a>
+                
+                <!-- collapsed sub supplier links -->
+                <div id="subCollapse1C" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="card-block suppliers-list">
+                    <div class="supplier-link-wrapper d-flex align-items-center">
+                      
+                      <!-- supplier link -->
+                      <a href="#" class="supplier-link">מאגר נותני שירותים מקצועיים</a>
+                    </div>
+                    <div class="supplier-link-wrapper d-flex align-items-center">
+                      
+                      <!-- supplier link -->
+                      <a href="#" class="supplier-link">מאגר טאלנטים וסוכנים</a>
+                    </div>
+                    <div class="supplier-link-wrapper d-flex align-items-center">
+                      
+                      <!-- supplier link -->
+                      <a href="#" class="supplier-link">מאגר חברות הפקה להפקת תוכניות טלוויזיה</a>
+                    </div>
+                  </div>  
                 </div>
-                <div class="supplier-link-wrapper d-flex align-items-center">
-                  
-                  <!-- supplier link -->
-                  <a href="#" class="supplier-link">מאגר טאלנטים וסוכנים</a>
-                </div>
-                <div class="supplier-link-wrapper d-flex align-items-center">
-                  
-                  <!-- supplier link -->
-                  <a href="#" class="supplier-link">מאגר חברות הפקה להפקת תוכניות טלוויזיה</a>
+
+                <!-- collapse sub supplier -->
+                <a class="collapsed d-flex flex-column sub-collapsed-p panel-collapse" data-parent="#collapse" data-toggle="collapse" data-target="#subCollapse2C" href="#subCollapse2C"
+                aria-expanded="true" aria-controls="subCollapse2C">
+                  <div class="sub-card-header d-flex align-items-center align-items-lg-center" role="tab" id="heading1">
+                    <span class="closed">+</span>
+                    <span class="open"></span>
+                    <div class="sub-supplier-wrapper d-lg-flex flex-column justify-content-center">
+                      <h4 class="sub-supplier-h4">​
+                      משרדי חינוך
+                      </h4>
+                    </div>
+                    <img src="../common/img/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
+                  </div>
+                </a>
+                
+                <!-- collapsed sub supplier links -->
+                <div id="subCollapse2C" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="card-block suppliers-list">
+                    <div class="supplier-link-wrapper d-flex align-items-center">
+                      
+                      <!-- supplier link -->
+                      <a href="#" class="supplier-link">מאגר נותני שירותים מקצועיים</a>
+                    </div>
+                    <div class="supplier-link-wrapper d-flex align-items-center">
+                      
+                      <!-- supplier link -->
+                      <a href="#" class="supplier-link">מאגר טאלנטים וסוכנים</a>
+                    </div>
+                    <div class="supplier-link-wrapper d-flex align-items-center">
+                      
+                      <!-- supplier link -->
+                      <a href="#" class="supplier-link">מאגר חברות הפקה להפקת תוכניות טלוויזיה</a>
+                    </div>
+                  </div>  
                 </div>
               </div>
             </div>
           </div>
-          <div class="card card-4 supplier">
+
+          <!-- supplier card with links -->
+          <div class="card supplier">
             
             <!-- collapse supplier -->
             <a class="collapsed d-flex flex-column collapsed-p panel-collapse" data-parent="#accordion" data-toggle="collapse" data-target="#collapse4" href="#collapse4"
@@ -188,36 +374,95 @@
                 <span class="closed">+</span>
                 <span class="open"></span>
                 <div class="supplier-wrapper d-lg-flex flex-column justify-content-center">
-                    <h4 class="supplier-h4">​
-                    הטלוויזיה החינוכית הישראלית
-                    </h4>
+                  <h4 class="supplier-h4">​
+                  ההסתדרות הציונית העולמית - החטיבה להתישבות
+                  </h4>
                 </div>
                 <img src="../common/img/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
               </div>
             </a>
             
             <!-- collapsed supplier links -->
-            <div id="collapse4" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
+            <div id="collapse4" class="collapse panel-collapse collapse-wrapper" role="tabpanel" aria-labelledby="headingOne">
               <div class="card-block suppliers-list">
-                <div class="supplier-link-wrapper d-flex align-items-center">
-                  
-                  <!-- supplier link -->
-                  <a href="#" class="supplier-link">מאגר נותני שירותים מקצועיים</a>
+
+                <!-- collapse sub supplier -->
+                <a class="collapsed d-flex flex-column collapsed-p panel-collapse" data-parent="#collapse" data-toggle="collapse" data-target="#subCollapse1D" href="#subCollapse1D"
+                aria-expanded="true" aria-controls="subCollapse1D">
+                  <div class="sub-card-header d-flex align-items-center align-items-lg-center" role="tab" id="heading1">
+                    <span class="closed">+</span>
+                    <span class="open"></span>
+                    <div class="sub-supplier-wrapper d-lg-flex flex-column justify-content-center">
+                      <h4 class="sub-supplier-h4">​
+                      משרדי השמה
+                      </h4>
+                    </div>
+                    <img src="../common/img/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
+                  </div>
+                </a>
+                
+                <!-- collapsed sub supplier links -->
+                <div id="subCollapse1D" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="card-block suppliers-list">
+                    <div class="supplier-link-wrapper d-flex align-items-center">
+                      
+                      <!-- supplier link -->
+                      <a href="#" class="supplier-link">מאגר נותני שירותים מקצועיים</a>
+                    </div>
+                    <div class="supplier-link-wrapper d-flex align-items-center">
+                      
+                      <!-- supplier link -->
+                      <a href="#" class="supplier-link">מאגר טאלנטים וסוכנים</a>
+                    </div>
+                    <div class="supplier-link-wrapper d-flex align-items-center">
+                      
+                      <!-- supplier link -->
+                      <a href="#" class="supplier-link">מאגר חברות הפקה להפקת תוכניות טלוויזיה</a>
+                    </div>
+                  </div>  
                 </div>
-                <div class="supplier-link-wrapper d-flex align-items-center">
-                  
-                  <!-- supplier link -->
-                  <a href="#" class="supplier-link">מאגר טאלנטים וסוכנים</a>
-                </div>
-                <div class="supplier-link-wrapper d-flex align-items-center">
-                  
-                  <!-- supplier link -->
-                  <a href="#" class="supplier-link">מאגר חברות הפקה להפקת תוכניות טלוויזיה</a>
+
+                <!-- collapse sub supplier -->
+                <a class="collapsed d-flex flex-column sub-collapsed-p panel-collapse" data-parent="#collapse" data-toggle="collapse" data-target="#subCollapse2D" href="#subCollapse2D"
+                aria-expanded="true" aria-controls="subCollapse2D">
+                  <div class="sub-card-header d-flex align-items-center align-items-lg-center" role="tab" id="heading1">
+                    <span class="closed">+</span>
+                    <span class="open"></span>
+                    <div class="sub-supplier-wrapper d-lg-flex flex-column justify-content-center">
+                      <h4 class="sub-supplier-h4">​
+                      משרדי חינוך
+                      </h4>
+                    </div>
+                    <img src="../common/img/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
+                  </div>
+                </a>
+                
+                <!-- collapsed sub supplier links -->
+                <div id="subCollapse2D" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="card-block suppliers-list">
+                    <div class="supplier-link-wrapper d-flex align-items-center">
+                      
+                      <!-- supplier link -->
+                      <a href="#" class="supplier-link">מאגר נותני שירותים מקצועיים</a>
+                    </div>
+                    <div class="supplier-link-wrapper d-flex align-items-center">
+                      
+                      <!-- supplier link -->
+                      <a href="#" class="supplier-link">מאגר טאלנטים וסוכנים</a>
+                    </div>
+                    <div class="supplier-link-wrapper d-flex align-items-center">
+                      
+                      <!-- supplier link -->
+                      <a href="#" class="supplier-link">מאגר חברות הפקה להפקת תוכניות טלוויזיה</a>
+                    </div>
+                  </div>  
                 </div>
               </div>
             </div>
-          </div>
-          <div class="card card-5 supplier">
+          </div>  
+
+          <!-- supplier card with links -->
+          <div class="card supplier">
             
             <!-- collapse supplier -->
             <a class="collapsed d-flex flex-column collapsed-p panel-collapse" data-parent="#accordion" data-toggle="collapse" data-target="#collapse5" href="#collapse5"
@@ -226,36 +471,95 @@
                 <span class="closed">+</span>
                 <span class="open"></span>
                 <div class="supplier-wrapper d-lg-flex flex-column justify-content-center">
-                    <h4 class="supplier-h4">​
-                    המשרד לקליטת העליה
-                    </h4>
+                  <h4 class="supplier-h4">​
+                  ההסתדרות הציונית העולמית - החטיבה להתישבות
+                  </h4>
                 </div>
                 <img src="../common/img/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
               </div>
             </a>
             
             <!-- collapsed supplier links -->
-            <div id="collapse5" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
+            <div id="collapse5" class="collapse panel-collapse collapse-wrapper" role="tabpanel" aria-labelledby="headingOne">
               <div class="card-block suppliers-list">
-                <div class="supplier-link-wrapper d-flex align-items-center">
-                  
-                  <!-- supplier link -->
-                  <a href="#" class="supplier-link">מאגר נותני שירותים מקצועיים</a>
+
+                <!-- collapse sub supplier -->
+                <a class="collapsed d-flex flex-column collapsed-p panel-collapse" data-parent="#collapse" data-toggle="collapse" data-target="#subCollapse1E" href="#subCollapse1E"
+                aria-expanded="true" aria-controls="subCollapse1E">
+                  <div class="sub-card-header d-flex align-items-center align-items-lg-center" role="tab" id="heading1">
+                    <span class="closed">+</span>
+                    <span class="open"></span>
+                    <div class="sub-supplier-wrapper d-lg-flex flex-column justify-content-center">
+                      <h4 class="sub-supplier-h4">​
+                      משרדי השמה
+                      </h4>
+                    </div>
+                    <img src="../common/img/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
+                  </div>
+                </a>
+                
+                <!-- collapsed sub supplier links -->
+                <div id="subCollapse1E" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="card-block suppliers-list">
+                    <div class="supplier-link-wrapper d-flex align-items-center">
+                      
+                      <!-- supplier link -->
+                      <a href="#" class="supplier-link">מאגר נותני שירותים מקצועיים</a>
+                    </div>
+                    <div class="supplier-link-wrapper d-flex align-items-center">
+                      
+                      <!-- supplier link -->
+                      <a href="#" class="supplier-link">מאגר טאלנטים וסוכנים</a>
+                    </div>
+                    <div class="supplier-link-wrapper d-flex align-items-center">
+                      
+                      <!-- supplier link -->
+                      <a href="#" class="supplier-link">מאגר חברות הפקה להפקת תוכניות טלוויזיה</a>
+                    </div>
+                  </div>  
                 </div>
-                <div class="supplier-link-wrapper d-flex align-items-center">
-                  
-                  <!-- supplier link -->
-                  <a href="#" class="supplier-link">מאגר טאלנטים וסוכנים</a>
-                </div>
-                <div class="supplier-link-wrapper d-flex align-items-center">
-                  
-                  <!-- supplier link -->
-                  <a href="#" class="supplier-link">מאגר חברות הפקה להפקת תוכניות טלוויזיה</a>
+
+                <!-- collapse sub supplier -->
+                <a class="collapsed d-flex flex-column sub-collapsed-p panel-collapse" data-parent="#collapse" data-toggle="collapse" data-target="#subCollapse2E" href="#subCollapse2E"
+                aria-expanded="true" aria-controls="subCollapse2E">
+                  <div class="sub-card-header d-flex align-items-center align-items-lg-center" role="tab" id="heading1">
+                    <span class="closed">+</span>
+                    <span class="open"></span>
+                    <div class="sub-supplier-wrapper d-lg-flex flex-column justify-content-center">
+                      <h4 class="sub-supplier-h4">​
+                      משרדי חינוך
+                      </h4>
+                    </div>
+                    <img src="../common/img/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
+                  </div>
+                </a>
+                
+                <!-- collapsed sub supplier links -->
+                <div id="subCollapse2E" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="card-block suppliers-list">
+                    <div class="supplier-link-wrapper d-flex align-items-center">
+                      
+                      <!-- supplier link -->
+                      <a href="#" class="supplier-link">מאגר נותני שירותים מקצועיים</a>
+                    </div>
+                    <div class="supplier-link-wrapper d-flex align-items-center">
+                      
+                      <!-- supplier link -->
+                      <a href="#" class="supplier-link">מאגר טאלנטים וסוכנים</a>
+                    </div>
+                    <div class="supplier-link-wrapper d-flex align-items-center">
+                      
+                      <!-- supplier link -->
+                      <a href="#" class="supplier-link">מאגר חברות הפקה להפקת תוכניות טלוויזיה</a>
+                    </div>
+                  </div>  
                 </div>
               </div>
             </div>
           </div>
-          <div class="card card-6 supplier">
+
+          <!-- supplier card with links -->
+          <div class="card supplier">
             
             <!-- collapse supplier -->
             <a class="collapsed d-flex flex-column collapsed-p panel-collapse" data-parent="#accordion" data-toggle="collapse" data-target="#collapse6" href="#collapse6"
@@ -264,31 +568,88 @@
                 <span class="closed">+</span>
                 <span class="open"></span>
                 <div class="supplier-wrapper d-lg-flex flex-column justify-content-center">
-                    <h4 class="supplier-h4">​
-                    משרד האוצר - החשב הכללי: היחידה לחשבונאות ודיווח
-                    </h4>
+                  <h4 class="supplier-h4">​
+                  ההסתדרות הציונית העולמית - החטיבה להתישבות
+                  </h4>
                 </div>
                 <img src="../common/img/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
               </div>
             </a>
             
             <!-- collapsed supplier links -->
-            <div id="collapse6" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
+            <div id="collapse6" class="collapse panel-collapse collapse-wrapper" role="tabpanel" aria-labelledby="headingOne">
               <div class="card-block suppliers-list">
-                <div class="supplier-link-wrapper d-flex align-items-center">
-                  
-                  <!-- supplier link -->
-                  <a href="#" class="supplier-link">מאגר נותני שירותים מקצועיים</a>
+
+                <!-- collapse sub supplier -->
+                <a class="collapsed d-flex flex-column collapsed-p panel-collapse" data-parent="#collapse" data-toggle="collapse" data-target="#subCollapse1F" href="#subCollapse1F"
+                aria-expanded="true" aria-controls="subCollapse1F">
+                  <div class="sub-card-header d-flex align-items-center align-items-lg-center" role="tab" id="heading1">
+                    <span class="closed">+</span>
+                    <span class="open"></span>
+                    <div class="sub-supplier-wrapper d-lg-flex flex-column justify-content-center">
+                      <h4 class="sub-supplier-h4">​
+                      משרדי השמה
+                      </h4>
+                    </div>
+                    <img src="../common/img/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
+                  </div>
+                </a>
+                
+                <!-- collapsed sub supplier links -->
+                <div id="subCollapse1F" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="card-block suppliers-list">
+                    <div class="supplier-link-wrapper d-flex align-items-center">
+                      
+                      <!-- supplier link -->
+                      <a href="#" class="supplier-link">מאגר נותני שירותים מקצועיים</a>
+                    </div>
+                    <div class="supplier-link-wrapper d-flex align-items-center">
+                      
+                      <!-- supplier link -->
+                      <a href="#" class="supplier-link">מאגר טאלנטים וסוכנים</a>
+                    </div>
+                    <div class="supplier-link-wrapper d-flex align-items-center">
+                      
+                      <!-- supplier link -->
+                      <a href="#" class="supplier-link">מאגר חברות הפקה להפקת תוכניות טלוויזיה</a>
+                    </div>
+                  </div>  
                 </div>
-                <div class="supplier-link-wrapper d-flex align-items-center">
-                  
-                  <!-- supplier link -->
-                  <a href="#" class="supplier-link">מאגר טאלנטים וסוכנים</a>
-                </div>
-                <div class="supplier-link-wrapper d-flex align-items-center">
-                  
-                  <!-- supplier link -->
-                  <a href="#" class="supplier-link">מאגר חברות הפקה להפקת תוכניות טלוויזיה</a>
+
+                <!-- collapse sub supplier -->
+                <a class="collapsed d-flex flex-column sub-collapsed-p panel-collapse" data-parent="#collapse" data-toggle="collapse" data-target="#subCollapse2F" href="#subCollapse2F"
+                aria-expanded="true" aria-controls="subCollapse2F">
+                  <div class="sub-card-header d-flex align-items-center align-items-lg-center" role="tab" id="heading1">
+                    <span class="closed">+</span>
+                    <span class="open"></span>
+                    <div class="sub-supplier-wrapper d-lg-flex flex-column justify-content-center">
+                      <h4 class="sub-supplier-h4">​
+                      משרדי חינוך
+                      </h4>
+                    </div>
+                    <img src="../common/img/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
+                  </div>
+                </a>
+                
+                <!-- collapsed sub supplier links -->
+                <div id="subCollapse2F" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="card-block suppliers-list">
+                    <div class="supplier-link-wrapper d-flex align-items-center">
+                      
+                      <!-- supplier link -->
+                      <a href="#" class="supplier-link">מאגר נותני שירותים מקצועיים</a>
+                    </div>
+                    <div class="supplier-link-wrapper d-flex align-items-center">
+                      
+                      <!-- supplier link -->
+                      <a href="#" class="supplier-link">מאגר טאלנטים וסוכנים</a>
+                    </div>
+                    <div class="supplier-link-wrapper d-flex align-items-center">
+                      
+                      <!-- supplier link -->
+                      <a href="#" class="supplier-link">מאגר חברות הפקה להפקת תוכניות טלוויזיה</a>
+                    </div>
+                  </div>  
                 </div>
               </div>
             </div>
