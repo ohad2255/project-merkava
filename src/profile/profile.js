@@ -2,7 +2,7 @@ require('../common/common');
 
 $(document).ready(function() {
     $("#showPasswordProfile").on('click', function() {
-        var input = $("#password");
+        var input = $("#inputPasswordProfile");
 
         if (input.attr("type") === "password") {
             input.attr("type", "text");
