@@ -39,6 +39,7 @@
     .mepharsemim-container .mepharsemim-top-sec .top-sec-container .mepharsemim-breadcrumb-wrapper {
       position: absolute;
       right: 20px;
+      left: auto;
       top: 17px; }
       @media (min-width: 992px) {
         .mepharsemim-container .mepharsemim-top-sec .top-sec-container .mepharsemim-breadcrumb-wrapper {
@@ -85,6 +86,7 @@
           position: absolute;
           top: 0;
           left: -168px;
+          right: auto;
           top: 10px; } }
     .mepharsemim-container .mepharsemim-top-sec .top-sec-container .mepharsemim-p-sec .mepharsemim-top-icon-lg {
       height: 102px;
@@ -157,13 +159,15 @@
           .mepharsemim-container .mepharsemim-body .mepharsemim-body-top .list-drop-container {
             height: 0;
             position: absolute;
-            right: 0; } }
+            right: 0;
+            left: auto; } }
         .mepharsemim-container .mepharsemim-body .mepharsemim-body-top .list-drop-container .blue-circle {
           height: 88px;
           width: 88px;
           border-radius: 50%;
           position: absolute;
           left: 50%;
+          right: auto;
           top: 0;
           margin: 0 0 0 -44px;
           background-color: #0077bf;
@@ -187,7 +191,8 @@
             top: -153px;
             background-color: transparent;
             padding: 0;
-            right: 0; } }
+            right: 0;
+            left: auto; } }
         .mepharsemim-container .mepharsemim-body .mepharsemim-body-top .list-drop-wrapper .count-checkboxes-wrapper {
           font-size: 2rem;
           font-weight: normal;
@@ -222,6 +227,7 @@
           .mepharsemim-container .mepharsemim-body .mepharsemim-body-top .list-drop-wrapper .count-checkboxes-wrapper .list-drop-arrows-wrapper {
             position: absolute;
             left: 50%;
+            right: auto;
             bottom: 15px;
             margin: 0 0 0 -4.5px;
             z-index: 10; }
@@ -253,6 +259,7 @@
         .mepharsemim-container .mepharsemim-body .my-list-wrapper {
           width: 400px;
           right: 0;
+          left: auto;
           margin: 0 0 0 auto; } }
       @media (min-width: 1200px) {
         .mepharsemim-container .mepharsemim-body .my-list-wrapper {
@@ -289,6 +296,7 @@
             border: solid 1px #f4f5f7;
             top: -110px;
             right: 0;
+            left: auto;
             margin: 0;
             z-index: 200; } }
         @media (min-width: 1200px) {
@@ -307,6 +315,7 @@
           background-color: transperent;
           top: -22px;
           left: 4px;
+          right: auto;
           cursor: pointer; }
         .mepharsemim-container .mepharsemim-body .my-list-wrapper .my-list .delete-x-lg {
           width: 12px;
@@ -316,14 +325,16 @@
         .mepharsemim-container .mepharsemim-body .my-list-wrapper .my-list .delete-x-lg:after {
           content: '';
           height: 12px;
-          border-right: 1.5px solid #fff;
+          border: solid #fff;
+          border-width: 0 1.5px 0 0;
           position: absolute;
           -webkit-transform: rotate(-45deg);
                   transform: rotate(-45deg); }
         .mepharsemim-container .mepharsemim-body .my-list-wrapper .my-list .delete-x-lg:before {
           content: '';
           height: 12px;
-          border-right: 1.5px solid #fff;
+          border: solid #fff;
+          border-width: 0 1.5px 0 0;
           position: absolute;
           -webkit-transform: rotate(45deg);
                   transform: rotate(45deg); }
@@ -496,6 +507,7 @@
             position: absolute;
             top: 50%;
             right: 19px;
+            left: auto;
             line-height: 0;
             margin: -7px 0 0 0; }
             .mepharsemim-container .mepharsemim-body .my-list-wrapper .close-list-button-wrapper .close-list-button .white-x-wrapper .white-x {
@@ -518,6 +530,7 @@
         border: 0;
         top: -30px;
         left: 20px;
+        right: auto;
         height: 31px;
         width: 100%; }
         @media (min-width: 992px) {
@@ -596,25 +609,10 @@
         .mepharsemim-container .mepharsemim-body .main-checkboxes-wrapper .checkboxes-wrapper .form-checkbox:checked {
           border-radius: 2px;
           background-color: #1f86bc;
-          box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.1); }
-        .mepharsemim-container .mepharsemim-body .main-checkboxes-wrapper .checkboxes-wrapper .form-checkbox:checked:after {
-          content: '';
-          display: inline-block;
-          width: 6px;
-          height: 10px;
-          border: solid #fff;
-          border-width: 0 0 2px 2px;
-          -webkit-transform: rotate(-45deg);
-                  transform: rotate(-45deg);
-          -ms-flex-item-align: center;
-              -ms-grid-row-align: center;
-              align-self: center;
-          margin: -3px 0 0 0; }
-          @media (min-width: 992px) {
-            .mepharsemim-container .mepharsemim-body .main-checkboxes-wrapper .checkboxes-wrapper .form-checkbox:checked:after {
-              width: 5px;
-              height: 8px;
-              margin: -2px 0 0 -1px; } }
+          box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.1);
+          background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTVweCIgaGVpZ2h0PSIxNXB4IiB2aWV3Qm94PSIwIDAgMTUgMTUiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogc2tldGNodG9vbCA0OS4zICg1MTE2NykgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+NDM5NzgxQjQtRUFDRi00NzE0LTlCMUQtMkJBRUMyNDdFNUFDPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBza2V0Y2h0b29sLjwvZGVzYz4KICAgIDxkZWZzPgogICAgICAgIDxyZWN0IGlkPSJwYXRoLTEiIHg9IjAiIHk9IjAiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgcng9IjIiPjwvcmVjdD4KICAgICAgICA8ZmlsdGVyIHg9Ii01MC4wJSIgeT0iLTUwLjAlIiB3aWR0aD0iMjAwLjAlIiBoZWlnaHQ9IjIwMC4wJSIgZmlsdGVyVW5pdHM9Im9iamVjdEJvdW5kaW5nQm94IiBpZD0iZmlsdGVyLTIiPgogICAgICAgICAgICA8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSI3LjUiIGluPSJTb3VyY2VBbHBoYSIgcmVzdWx0PSJzaGFkb3dCbHVySW5uZXIxIj48L2ZlR2F1c3NpYW5CbHVyPgogICAgICAgICAgICA8ZmVPZmZzZXQgZHg9IjAiIGR5PSIwIiBpbj0ic2hhZG93Qmx1cklubmVyMSIgcmVzdWx0PSJzaGFkb3dPZmZzZXRJbm5lcjEiPjwvZmVPZmZzZXQ+CiAgICAgICAgICAgIDxmZUNvbXBvc2l0ZSBpbj0ic2hhZG93T2Zmc2V0SW5uZXIxIiBpbjI9IlNvdXJjZUFscGhhIiBvcGVyYXRvcj0iYXJpdGhtZXRpYyIgazI9Ii0xIiBrMz0iMSIgcmVzdWx0PSJzaGFkb3dJbm5lcklubmVyMSI+PC9mZUNvbXBvc2l0ZT4KICAgICAgICAgICAgPGZlQ29sb3JNYXRyaXggdmFsdWVzPSIwIDAgMCAwIDAgICAwIDAgMCAwIDAgICAwIDAgMCAwIDAgIDAgMCAwIDAuMSAwIiB0eXBlPSJtYXRyaXgiIGluPSJzaGFkb3dJbm5lcklubmVyMSI+PC9mZUNvbG9yTWF0cml4PgogICAgICAgIDwvZmlsdGVyPgogICAgPC9kZWZzPgogICAgPGcgaWQ9IlN5bWJvbHMiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJzZWxlY3RlZC1jaGVjayI+CiAgICAgICAgICAgIDxnPgogICAgICAgICAgICAgICAgPGcgaWQ9IlJlY3RhbmdsZS0yLUNvcHkiPgogICAgICAgICAgICAgICAgICAgIDx1c2UgZmlsbD0iIzFGODZCQyIgZmlsbC1ydWxlPSJldmVub2RkIiB4bGluazpocmVmPSIjcGF0aC0xIj48L3VzZT4KICAgICAgICAgICAgICAgICAgICA8dXNlIGZpbGw9ImJsYWNrIiBmaWxsLW9wYWNpdHk9IjEiIGZpbHRlcj0idXJsKCNmaWx0ZXItMikiIHhsaW5rOmhyZWY9IiNwYXRoLTEiPjwvdXNlPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlBhZ2UtMS1Db3B5IiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjEwLjUzOTM5NjIgMy43NSA1Ljg1NDc2MjI0IDguMjQ3NTM1MyAzLjgwOTc4NTAzIDYuNjcwMzk5MDggMi41IDguMzYxMTcxMzQgNS4yODAwNzUwOCAxMC40OTk2OTc5IDYuMDE1MTcyOTUgMTEuMDYwOTkzOSA2LjY3NjcxMzg4IDEwLjQyNjIzNTIgMTIuMDIzMDc3NCA1LjI5Mzc1MjY4Ij48L3BvbHlnb24+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==);
+          background-repeat: no-repeat;
+          background-size: 100%; }
         .mepharsemim-container .mepharsemim-body .main-checkboxes-wrapper .checkboxes-wrapper label {
           margin: 0; }
         @media (min-width: 992px) {
@@ -625,6 +623,7 @@
             position: absolute !important;
             max-width: 591px;
             left: 596px;
+            right: auto;
             top: 0;
             background-color: #fff;
             z-index: 20; } }
@@ -661,26 +660,10 @@
             box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1); }
           .mepharsemim-container .mepharsemim-body .main-checkboxes-wrapper .checkboxes-wrapper .subject-options .form-checkbox:checked {
             border-radius: 2px;
-            background-color: #1f86bc;
+            background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTVweCIgaGVpZ2h0PSIxNXB4IiB2aWV3Qm94PSIwIDAgMTUgMTUiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogc2tldGNodG9vbCA0OS4zICg1MTE2NykgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+NDM5NzgxQjQtRUFDRi00NzE0LTlCMUQtMkJBRUMyNDdFNUFDPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBza2V0Y2h0b29sLjwvZGVzYz4KICAgIDxkZWZzPgogICAgICAgIDxyZWN0IGlkPSJwYXRoLTEiIHg9IjAiIHk9IjAiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgcng9IjIiPjwvcmVjdD4KICAgICAgICA8ZmlsdGVyIHg9Ii01MC4wJSIgeT0iLTUwLjAlIiB3aWR0aD0iMjAwLjAlIiBoZWlnaHQ9IjIwMC4wJSIgZmlsdGVyVW5pdHM9Im9iamVjdEJvdW5kaW5nQm94IiBpZD0iZmlsdGVyLTIiPgogICAgICAgICAgICA8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSI3LjUiIGluPSJTb3VyY2VBbHBoYSIgcmVzdWx0PSJzaGFkb3dCbHVySW5uZXIxIj48L2ZlR2F1c3NpYW5CbHVyPgogICAgICAgICAgICA8ZmVPZmZzZXQgZHg9IjAiIGR5PSIwIiBpbj0ic2hhZG93Qmx1cklubmVyMSIgcmVzdWx0PSJzaGFkb3dPZmZzZXRJbm5lcjEiPjwvZmVPZmZzZXQ+CiAgICAgICAgICAgIDxmZUNvbXBvc2l0ZSBpbj0ic2hhZG93T2Zmc2V0SW5uZXIxIiBpbjI9IlNvdXJjZUFscGhhIiBvcGVyYXRvcj0iYXJpdGhtZXRpYyIgazI9Ii0xIiBrMz0iMSIgcmVzdWx0PSJzaGFkb3dJbm5lcklubmVyMSI+PC9mZUNvbXBvc2l0ZT4KICAgICAgICAgICAgPGZlQ29sb3JNYXRyaXggdmFsdWVzPSIwIDAgMCAwIDAgICAwIDAgMCAwIDAgICAwIDAgMCAwIDAgIDAgMCAwIDAuMSAwIiB0eXBlPSJtYXRyaXgiIGluPSJzaGFkb3dJbm5lcklubmVyMSI+PC9mZUNvbG9yTWF0cml4PgogICAgICAgIDwvZmlsdGVyPgogICAgPC9kZWZzPgogICAgPGcgaWQ9IlN5bWJvbHMiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJzZWxlY3RlZC1jaGVjayI+CiAgICAgICAgICAgIDxnPgogICAgICAgICAgICAgICAgPGcgaWQ9IlJlY3RhbmdsZS0yLUNvcHkiPgogICAgICAgICAgICAgICAgICAgIDx1c2UgZmlsbD0iIzFGODZCQyIgZmlsbC1ydWxlPSJldmVub2RkIiB4bGluazpocmVmPSIjcGF0aC0xIj48L3VzZT4KICAgICAgICAgICAgICAgICAgICA8dXNlIGZpbGw9ImJsYWNrIiBmaWxsLW9wYWNpdHk9IjEiIGZpbHRlcj0idXJsKCNmaWx0ZXItMikiIHhsaW5rOmhyZWY9IiNwYXRoLTEiPjwvdXNlPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlBhZ2UtMS1Db3B5IiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjEwLjUzOTM5NjIgMy43NSA1Ljg1NDc2MjI0IDguMjQ3NTM1MyAzLjgwOTc4NTAzIDYuNjcwMzk5MDggMi41IDguMzYxMTcxMzQgNS4yODAwNzUwOCAxMC40OTk2OTc5IDYuMDE1MTcyOTUgMTEuMDYwOTkzOSA2LjY3NjcxMzg4IDEwLjQyNjIzNTIgMTIuMDIzMDc3NCA1LjI5Mzc1MjY4Ij48L3BvbHlnb24+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==);
+            background-repeat: no-repeat;
+            background-size: 100%;
             box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.1); }
-          .mepharsemim-container .mepharsemim-body .main-checkboxes-wrapper .checkboxes-wrapper .subject-options .form-checkbox:checked:after {
-            content: '';
-            display: inline-block;
-            width: 5px;
-            height: 9px;
-            border: solid #fff;
-            border-width: 0 0 2px 2px;
-            -webkit-transform: rotate(-45deg);
-                    transform: rotate(-45deg);
-            -ms-flex-item-align: center;
-                -ms-grid-row-align: center;
-                align-self: center;
-            margin: -2px 0 0 -1px; }
-            @media (min-width: 992px) {
-              .mepharsemim-container .mepharsemim-body .main-checkboxes-wrapper .checkboxes-wrapper .subject-options .form-checkbox:checked:after {
-                margin: -2px 0 0 -1px;
-                width: 5px;
-                height: 8px; } }
         .mepharsemim-container .mepharsemim-body .main-checkboxes-wrapper .checkboxes-wrapper .select-all-wrapper {
           height: 67px;
           font-size: 1.5rem;
@@ -781,6 +764,7 @@
         -webkit-transform: rotate(-135deg);
         position: absolute;
         right: 18px;
+        left: auto;
         top: 50%;
         margin: -7px 0 0 0; }
   .mepharsemim-container .save-list-button-lg {
@@ -789,6 +773,7 @@
     background-color: #9ca0a6;
     position: fixed;
     right: 55px;
+    left: auto;
     bottom: 113px;
     font-size: 2rem;
     font-weight: 500;
@@ -817,13 +802,14 @@
   .mepharsemim-container .scroll-down-button-wrapper {
     width: 47px;
     height: 40px;
-    border-radius: 4px;
+    border-radius: 0 4px 4px 0;
     background-color: #ffffff;
     box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
     position: fixed;
     z-index: 10;
     bottom: 125px;
-    left: 0; }
+    left: 0;
+    right: auto; }
     .mepharsemim-container .scroll-down-button-wrapper .blue-arrow {
       width: 9px;
       height: 9px;

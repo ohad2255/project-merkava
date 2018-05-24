@@ -105,11 +105,11 @@
               letter-spacing: normal; } }
   .regulation .regulation-body .regulation-body-wrapper {
     width: 100%;
-    margin: 20px 0 0 0;
+    margin: 20px 0 169px 0;
     padding: 0 10px; }
     @media (min-width: 992px) {
       .regulation .regulation-body .regulation-body-wrapper {
-        margin: 0 0 200px 0;
+        margin: 0 0 347px 0;
         padding: 54px 20px 0; } }
     @media (min-width: 992px) {
       .regulation .regulation-body .regulation-body-wrapper .regulation-accordion-wrapper {
@@ -163,7 +163,7 @@
           top: 9px; }
           @media (min-width: 992px) {
             .regulation .regulation-body .regulation-body-wrapper .regulation-accordion-wrapper .card .top-sec-card-header img.icon-first-collaps-p {
-              height: 141px;
+              height: 124px;
               width: auto;
               top: 30px;
               left: 30px; } }
@@ -401,11 +401,6 @@
         .regulation .regulation-body .regulation-body-wrapper .links-container {
           padding: 0 10px 0 0;
           margin: 0; } }
-      .regulation .regulation-body .regulation-body-wrapper .links-container .links-wrapper {
-        margin: 0 0 20px 0; }
-        @media (min-width: 992px) {
-          .regulation .regulation-body .regulation-body-wrapper .links-container .links-wrapper {
-            margin: 0 0 8px 0; } }
       .regulation .regulation-body .regulation-body-wrapper .links-container .links-sub-head h3 {
         font-size: 1.6rem;
         font-weight: 500;
@@ -494,8 +489,3 @@
         margin: 0 5px 0 0; }
       .regulation .tutorials-wrapper-mobile .swiper-pagination .swiper-pagination-bullet-active {
         background-color: #6266a6; }
-  .regulation .regulation-footer {
-    margin: 130px 0 0 0; }
-    @media (min-width: 992px) {
-      .regulation .regulation-footer {
-        margin: 0; } }

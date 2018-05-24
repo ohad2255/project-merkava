@@ -107,11 +107,11 @@
               letter-spacing: normal; } }
   .about .about-body .about-body-wrapper {
     width: 100%;
-    margin: 0 0 77px 0;
+    margin: 0 0 169px 0;
     padding: 20px 10px 0; }
     @media (min-width: 992px) {
       .about .about-body .about-body-wrapper {
-        margin: 0 0 190px 0;
+        margin: 0 0 347px 0;
         padding: 55px 20px 0; } }
     @media (min-width: 992px) {
       .about .about-body .about-body-wrapper .about-accordion-wrapper {
@@ -413,11 +413,6 @@
         .about .about-body .about-body-wrapper .links-container {
           padding: 0 10px 0 0;
           margin: 0; } }
-      .about .about-body .about-body-wrapper .links-container .links-wrapper {
-        margin: 0 0 20px 0; }
-        @media (min-width: 992px) {
-          .about .about-body .about-body-wrapper .links-container .links-wrapper {
-            margin: 0 0 8px 0; } }
       .about .about-body .about-body-wrapper .links-container .links-sub-head h3 {
         font-size: 1.6rem;
         font-weight: 500;

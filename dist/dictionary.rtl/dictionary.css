@@ -153,8 +153,8 @@
     position: relative; }
     @media (min-width: 992px) {
       .dictionary .dictionary-body {
-        padding: 0 20px 100px;
-        margin: 0px auto 0;
+        padding: 0 20px 0;
+        margin: 0px auto 308px;
         max-width: 1262px;
         min-height: 100%; } }
     .dictionary .dictionary-body .body-p-wrapper {
@@ -230,38 +230,38 @@
             background-position: center; }
     .dictionary .dictionary-body .cards-wrapper {
       width: 100%; }
-    .dictionary .dictionary-body .expressions-wrapper {
+    .dictionary .dictionary-body .expression-container {
       display: none; }
     .dictionary .dictionary-body .card {
       border: 0;
       width: 100%;
       padding: 0; }
-    .dictionary .dictionary-body .expression .card-header {
+    .dictionary .dictionary-body .expression-container .card-header {
       background-color: #fff;
       padding: 0 20px 0 13px;
       height: 59px;
       border-bottom: solid 1px #6266a6;
       font-weight: 500; }
       @media (min-width: 992px) {
-        .dictionary .dictionary-body .expression .card-header {
+        .dictionary .dictionary-body .expression-container .card-header {
           padding: 0 0 0 10px;
           margin: 0;
           border: 0;
           height: 52px; } }
-      .dictionary .dictionary-body .expression .card-header .collapse-arrow {
+      .dictionary .dictionary-body .expression-container .card-header .collapse-arrow {
         width: 14px;
         height: 8px;
         margin: 0; }
-    .dictionary .dictionary-body .expression .collapsed .card-header {
+    .dictionary .dictionary-body .expression-container .collapsed .card-header {
       font-weight: normal; }
-    .dictionary .dictionary-body .expression .closed {
+    .dictionary .dictionary-body .expression-container .closed {
       display: none; }
-    .dictionary .dictionary-body .expression .expression-wrapper {
+    .dictionary .dictionary-body .expression-container .expression-wrapper {
       width: 100%; }
       @media (min-width: 992px) {
-        .dictionary .dictionary-body .expression .expression-wrapper {
+        .dictionary .dictionary-body .expression-container .expression-wrapper {
           padding: 0 0 0 12px; } }
-      .dictionary .dictionary-body .expression .expression-wrapper .expression {
+      .dictionary .dictionary-body .expression-container .expression-wrapper .expression {
         font-size: 1.6rem;
         line-height: normal;
         letter-spacing: normal;
@@ -272,15 +272,15 @@
         padding: 0 15px 0 0;
         margin: 0; }
         @media (min-width: 992px) {
-          .dictionary .dictionary-body .expression .expression-wrapper .expression {
+          .dictionary .dictionary-body .expression-container .expression-wrapper .expression {
             padding: 0;
             line-height: 1.25;
             color: #4e5665;
             font-size: 2rem; } }
-    .dictionary .dictionary-body .expression .card-block {
+    .dictionary .dictionary-body .expression-container .card-block {
       background-color: #f6f6f6; }
       @media (min-width: 992px) {
-        .dictionary .dictionary-body .expression .card-block {
+        .dictionary .dictionary-body .expression-container .card-block {
           padding: 0 22px 23px 38px;
           background-color: #fff; } }
     .dictionary .dictionary-body .answer {

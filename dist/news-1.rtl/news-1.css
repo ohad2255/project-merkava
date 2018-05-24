@@ -17,13 +17,13 @@
     background-image: url(/assets/news-background-img.303488eb.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: top; }
+    background-position: top right; }
     @media (min-width: 992px) {
       .news-1 .news-1-top-sec {
         height: auto;
         background-size: initial;
         min-height: 308px;
-        background-position: right; } }
+        background-position: center right; } }
     .news-1 .news-1-top-sec .right-line {
       position: absolute;
       left: 0;

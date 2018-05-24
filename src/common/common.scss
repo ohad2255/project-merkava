@@ -4,32 +4,32 @@
 @import "/breadcrumb/breadcrumb";
 @import "/footer/footer";
 
-@font-face {
-  font-family: 'FbReforma';
-  src: url("../fonts/FbReforma-Regular.otf") format("opentype");
-  //url('../fonts/FbReforma-Regular.woff2') format('woff2'),
-  //url('../fonts/FbReforma-Regular.woff') format('woff');
-  font-weight: 400;
-}
-
-
-@font-face {
-  font-family: "FbReforma";
-  src: url("../fonts/FbReforma-Medium.otf") format("opentype");
-  font-weight: 500;
-}
-
 // @font-face {
 //   font-family: 'FbReforma';
-//   src: url("../fonts/fbreformaen-regular-webfont.woff") format("woff");
+//   src: url("../fonts/FbReforma-Regular.otf") format("opentype");
+//   //url('../fonts/FbReforma-Regular.woff2') format('woff2'),
+//   //url('../fonts/FbReforma-Regular.woff') format('woff');
 //   font-weight: 400;
 // }
 
+
 // @font-face {
-//   font-family: 'FbReforma';
-//   src: url("../fonts/fbreformaen-bold-webfont.woff") format("woff");
+//   font-family: "FbReforma";
+//   src: url("../fonts/FbReforma-Medium.otf") format("opentype");
 //   font-weight: 500;
 // }
+
+@font-face {
+  font-family: 'FbReforma';
+  src: url("../fonts/fbreformaen-regular-webfont.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'FbReforma';
+  src: url("../fonts/fbreformaen-bold-webfont.woff") format("woff");
+  font-weight: 500;
+}
 
 
 html {
