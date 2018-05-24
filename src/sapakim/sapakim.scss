@@ -29,11 +29,14 @@
 		margin: 0 0 5px 0;
 		//padding:0 0 28px 0;
 		min-height: 205px;
+		background-position: left center;
+
 
 		@media (min-width: $screen-lg-min) {
 			height: auto;
 			min-height: 308px;
 			margin: 0 0 53px 0;
+			background-position: left top;
 
 			//padding:0 100px 0 0;
 		}
