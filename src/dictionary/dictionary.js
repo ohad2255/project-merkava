@@ -11,16 +11,17 @@ $(document).ready(function() {
             $('.collapse').collapse('hide');
         }
     });
-    $('#a').show()
+
+    $('.a').show();
     $('.alphabet-item-1').addClass('active')
     $('.alphabet-item').on('click', function() {
-    	$('.expressions-wrapper').hide();
+    	$('.expression-container').hide();
     	var letter = this.getAttribute('letter');
-    	$('#'+ letter).show();
-    	$('.alphabet-item').removeClass('active')
-    	$(this).addClass('active')
+    	$('.'+ letter).show();
+    	$('.alphabet-item').removeClass('active');
+    	$(this).addClass('active');
     });
     $('.collapse-button-show-all').on('click', function() {
-    	$('.expressions-wrapper').show()
+    	$('.expression-container').show()
     });
 });

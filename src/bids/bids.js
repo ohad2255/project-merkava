@@ -84,7 +84,7 @@ $(document).ready(function() {
 	    loop: true,
 	    speed: 1000,
 	    slidesPerView: 'auto',
-	    slidesOffsetBefore: '26',
+	    slidesOffsetBefore: '20',
 
 	    pagination: {
 	        el: '.related-bids-pagination.swiper-pagination',

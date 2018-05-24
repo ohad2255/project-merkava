@@ -13,7 +13,7 @@
 
 	.contact-tender-top-sec {
 		position: relative;
-		background-image:  url('../common/img/q-and-a-background-pic.png');
+		background-image:  url('../common/img/contact-background.png');
 		height: fit-content;
 		padding: 0;
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
@@ -30,16 +30,14 @@
        	.right-line {
 			position: absolute;
 			right: 0;
-			//top: -4px;
+			left: auto;
 			width: 5px;
-			//height: 104%;
 			height: 100%;
 			border-radius: 4px;
 			background-color: $cobalt;
 
 			@media (min-width: $screen-lg-min) {
 				width: 11px;
-				//top: -7px;
 			}
 		}
 
@@ -56,6 +54,7 @@
 			background-repeat: no-repeat;
 			bottom: 0;
 			left: 0;
+			right: auto;
 			z-index: 1;
 			//background-position-y: 22px;
 
@@ -76,43 +75,6 @@
     			//max-width: 1344px;
     			max-width: 1262px;
            	}
-
-
-			.contact-tender-breadcrumb-wrapper {
-				margin: 0 8px 0 0;	
-				font-size: 1.5rem;
-				position: absolute;
-				width: fit-content;
-				left: 20px;
-				top: 16px;
-
-				@media (min-width: $screen-lg-min) {
-                    margin: 25px 108px 21px 0;
-                    font-size: 1.6rem;
-                    position: static;
-                    width: 100%;
-               	}
-
-               	.breadcrumb {
-					margin: 0;
-				}
-
-               	.breadcrumb-item-1 {
-               		display: none;
-
-               		@media (min-width: $screen-lg-min) {
-	                    display: block;
-	               	}
-               	}
-
-               	.breadcrumb-item-2 {
-               		display: none;
-
-               		@media (min-width: $screen-lg-min) {
-	                    display: block;
-	               	}
-               	}
-			}
 
 			.contact-tender-p-sec {
 				margin: 16px 0 0 0;	
@@ -381,6 +343,7 @@
 						display: block;
 						top: 9px;
 						right: 23px;
+						left: auto;
 					}
 				}
 
@@ -399,6 +362,7 @@
 	               		width: 20px;
 	               		height: auto;
 	               		left: 11px;
+	               		right: auto;
 						top: 50%;
 						margin: -2px 0 0 0;
 						pointer-events: none;
@@ -424,6 +388,7 @@
 						padding: 0;
 						top: 50%;
 						right: 18px;
+						left: auto;
 						margin: -9px 0 0 0;
 						
 
@@ -456,15 +421,11 @@
 				.dropzone-previews {
 					position: absolute;
 					left: 20px;
+					right: auto;
 					z-index: 100;
 					top: 50%;
 					margin-top: -35px;	
 				}
-
-				// .close-btn {
-				// 	width: 50px;
-				// 	height: 50px;
-				// }
 			}
 
 			
@@ -498,6 +459,7 @@
 				background-color: $header-blue;
 				border-radius: 50%;
 				right: 11px;
+				left: auto;
 				top: 50%;
 				margin: -3px 0 0 0;
 			}
@@ -540,6 +502,7 @@
 				z-index: 10;
 				top: 16px;
 				left: 16px;
+				right: auto;
 				padding: 0;
 
 				@media (min-width: $screen-lg-min) {
@@ -562,6 +525,7 @@
 				position: absolute;
 				top: 50%;
 				right: 0;
+				left: auto;
 				margin: -87px 0 0 0;
 			}
 
@@ -569,6 +533,7 @@
 				position: absolute;
 				top: 50%;
 				left: 0;
+				right: auto;
 				margin: -95px 0 0 0;
 			}
 		}

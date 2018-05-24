@@ -79,8 +79,9 @@
           text-align: center;
           color: $header-blue;
           line-height: 0.8;
-          border-left: 1px solid $header-blue;
-          padding-left: 10px;
+          border: solid $header-blue;
+          border-width: 0 0 0 1px;
+          padding:0 0 0 10px;
           margin: 0 0 10px 10px;
 
           @media (min-width: $screen-lg-min) {
@@ -92,22 +93,23 @@
       a:last-child {
 
         .footer-item:last-child {
-          border-left: 0;
-          padding-left: 0;
-          margin-left: 0;
+          border: 0;
+          padding: 0;
+          margin: 0;
         }
       }
 
       a:nth-child(even) {
 
         .footer-item {
-          border-left: 0;
-          padding-left: 0;
-          margin-left: 0;
+          border: 0;
+          padding: 0;
+          margin: 0 0 10px 0;
 
           @media (min-width: $screen-lg-min) {
-            border-left: 1px solid $header-blue;
-            padding-left: 10px;
+            border: solid $header-blue;
+            border-width: 0 0 0 1px;
+            padding: 0 0 0 10px;
             margin: 0 0 0 10px;
           }
         }

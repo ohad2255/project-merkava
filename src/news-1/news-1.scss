@@ -27,14 +27,14 @@
 		background-image: url('../common/img/news-background-img.png');
 		background-repeat: no-repeat;
 		background-size: contain;
-		background-position: top;
+		background-position: top left;
 		//background-position-y: 30px;
 
 		@media (min-width: $screen-lg-min) {
 			height: auto;
 			background-size: initial;
 			min-height: 308px;
-			background-position: left;
+			background-position: center left;
 		}
 
 		.right-line {

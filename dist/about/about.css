@@ -15,19 +15,19 @@
     background-image: url(/assets/header-visuals-odot@3x.5745d3d9.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: right top; }
+    background-position: left top; }
     @media (min-width: 992px) {
       .about .about-top-sec {
         background-image: url(/assets/header-visuals-odot.3c2bb5fb.png);
         height: 308px;
-        background-position: right bottom; } }
+        background-position: left bottom; } }
     @media (max-width: 340px) {
       .about .about-top-sec {
         height: 240px;
         box-shadow: none; } }
     .about .about-top-sec .right-line {
       position: absolute;
-      left: 0;
+      right: 0;
       width: 5px;
       height: 100%;
       border-radius: 4px;
@@ -47,7 +47,7 @@
         .about .about-top-sec .top-sec-container {
           padding: 0 20px; } }
       .about .about-top-sec .top-sec-container .about-breadcrumb-wrapper {
-        margin: 0 0 0 34px; }
+        margin: 0 34px 0 0; }
         @media (min-width: 992px) {
           .about .about-top-sec .top-sec-container .about-breadcrumb-wrapper {
             margin: 31px 0 0 0; } }
@@ -95,7 +95,7 @@
           line-height: 1.25;
           letter-spacing: normal;
           color: #4e5665;
-          margin: 0 40px 0 0; }
+          margin: 0 0 0 40px; }
           @media (min-width: 768px) {
             .about .about-top-sec .top-sec-container .about-p-sec .about-top-p {
               max-width: 600px; } }
@@ -107,11 +107,11 @@
               letter-spacing: normal; } }
   .about .about-body .about-body-wrapper {
     width: 100%;
-    margin: 0 0 77px 0;
+    margin: 0 0 169px 0;
     padding: 20px 10px 0; }
     @media (min-width: 992px) {
       .about .about-body .about-body-wrapper {
-        margin: 0 0 190px 0;
+        margin: 0 0 347px 0;
         padding: 55px 20px 0; } }
     @media (min-width: 992px) {
       .about .about-body .about-body-wrapper .about-accordion-wrapper {
@@ -119,7 +119,7 @@
         margin: 0 0 80px 0; } }
     .about .about-body .about-body-wrapper .about-accordion-wrapper .card {
       border: solid #1c6897;
-      border-width: 0 0 0 5px;
+      border-width: 0 5px 0 0;
       border-radius: 4px;
       background-color: #fff;
       box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.15);
@@ -130,7 +130,7 @@
         .about .about-body .about-body-wrapper .about-accordion-wrapper .card {
           min-height: 264px;
           padding: 0 10px;
-          border-width: 0 0 0 9px;
+          border-width: 0 9px 0 0;
           margin: 0 0 32px 0; } }
       @media (min-width: 992px) {
         .about .about-body .about-body-wrapper .about-accordion-wrapper .card:last-child {
@@ -151,36 +151,38 @@
         width: fit-content; }
         @media (min-width: 992px) {
           .about .about-body .about-body-wrapper .about-accordion-wrapper .card .card-header {
-            padding: 0 275px 0 0; } }
+            padding: 0 0 0 275px; } }
       .about .about-body .about-body-wrapper .about-accordion-wrapper .card .top-sec-card-header {
-        padding: 0 0 20px 14px; }
+        padding: 0 14px 20px 0; }
         @media (min-width: 992px) {
           .about .about-body .about-body-wrapper .about-accordion-wrapper .card .top-sec-card-header {
-            padding: 0 0 20px 91.5px; } }
+            padding: 0 91.5px 20px 0; } }
         .about .about-body .about-body-wrapper .about-accordion-wrapper .card .top-sec-card-header img.icon-first-collaps-p {
           width: auto;
           height: 44px;
           position: absolute;
-          right: 9px;
-          top: 9px; }
+          left: 9px;
+          top: 9px;
+          right: auto; }
           @media (min-width: 992px) {
             .about .about-body .about-body-wrapper .about-accordion-wrapper .card .top-sec-card-header img.icon-first-collaps-p {
               height: 141px;
               width: auto;
               top: 30px;
-              right: 30px; } }
+              left: 30px; } }
         .about .about-body .about-body-wrapper .about-accordion-wrapper .card .top-sec-card-header .icon-second-collaps-p {
           width: 44px;
           height: 46px;
           position: absolute;
-          right: 9px;
-          top: 9px; }
+          left: 9px;
+          top: 9px;
+          right: auto; }
           @media (min-width: 992px) {
             .about .about-body .about-body-wrapper .about-accordion-wrapper .card .top-sec-card-header .icon-second-collaps-p {
               width: 171px;
               height: 176px;
               top: 38px;
-              right: 97px; } }
+              left: 97px; } }
       .about .about-body .about-body-wrapper .about-accordion-wrapper .card h2 {
         font-size: 2rem;
         font-weight: normal;
@@ -190,7 +192,7 @@
         letter-spacing: normal;
         color: #1c6897;
         font-family: FbReforma, sans-serif;
-        padding: 17px 66px 0 0;
+        padding: 17px 0 0 66px;
         height: -webkit-fit-content;
         height: -moz-fit-content;
         height: fit-content;
@@ -214,14 +216,14 @@
         letter-spacing: normal;
         color: #505050;
         font-family: FbReforma, sans-serif;
-        margin: 0 25px 0 14px;
+        margin: 0 14px 0 25px;
         padding: 0 0 40px 0; }
         @media (min-width: 992px) {
           .about .about-body .about-body-wrapper .about-accordion-wrapper .card .card-with-bullets-head-p, .about .about-body .about-body-wrapper .about-accordion-wrapper .card .card-head-p, .about .about-body .about-body-wrapper .about-accordion-wrapper .card .card-block {
-            margin: 0 60px 0 91.5px;
+            margin: 0 91.5px 0 60px;
             font-size: 1.6rem;
             line-height: 1.75;
-            padding: 0 52px 40px 0;
+            padding: 0 0 40px 52px;
             width: 100%; } }
       .about .about-body .about-body-wrapper .about-accordion-wrapper .card .card-with-bullets-head-p {
         font-size: 1.6rem;
@@ -230,7 +232,7 @@
         font-stretch: normal;
         line-height: 1.33;
         letter-spacing: normal;
-        text-align: left;
+        text-align: right;
         color: #4e5665; }
         @media (min-width: 992px) {
           .about .about-body .about-body-wrapper .about-accordion-wrapper .card .card-with-bullets-head-p {
@@ -249,44 +251,45 @@
     .about .about-body .about-body-wrapper .about-accordion-wrapper .bold-p {
       font-weight: 500; }
     .about .about-body .about-body-wrapper .about-accordion-wrapper .sub-p-wrapper {
-      padding: 0 0 0 15px; }
+      padding: 0 15px 0 0; }
     .about .about-body .about-body-wrapper .about-accordion-wrapper .card-two {
       margin: 0; }
     .about .about-body .about-body-wrapper .about-accordion-wrapper .collapse-arrow {
       width: 15px;
       height: 13px;
       position: absolute;
-      right: 10px;
+      left: 10px;
+      right: auto;
       bottom: 9px; }
       @media (min-width: 992px) {
         .about .about-body .about-body-wrapper .about-accordion-wrapper .collapse-arrow {
           width: 30px;
           height: 26px;
           margin: 0;
-          right: 25px;
+          left: 25px;
           top: 226px; } }
     .about .about-body .about-body-wrapper .about-accordion-wrapper .show + .collapse-arrow {
-      -webkit-transform: rotate(-90deg);
-              transform: rotate(-90deg); }
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg); }
     .about .about-body .about-body-wrapper .about-accordion-wrapper .p-bullet {
       width: 6px;
       height: 6px;
       background-color: #1c6897;
       border-radius: 50%;
       display: inline-block;
-      margin: 0 5px 1px 0; }
+      margin: 0 0 1px 5px; }
       @media (min-width: 992px) {
         .about .about-body .about-body-wrapper .about-accordion-wrapper .p-bullet {
-          margin: 0 8px 3px 0; } }
+          margin: 0 0 3px 8px; } }
     .about .about-body .about-body-wrapper .about-accordion-wrapper .p-line {
       width: 4px;
       height: 2px;
       background-color: #4e5665;
-      margin: 0 5px 3px 0;
+      margin: 0 0 3px 5px;
       display: inline-block; }
       @media (min-width: 992px) {
         .about .about-body .about-body-wrapper .about-accordion-wrapper .p-line {
-          margin: 0 8px 0 0; } }
+          margin: 0 0 0 8px; } }
     .about .about-body .about-body-wrapper .video-sec-head, .about .about-body .about-body-wrapper .related-documents-head, .about .about-body .about-body-wrapper .links-head {
       margin: 0 0 13px 0; }
       @media (min-width: 992px) {
@@ -350,16 +353,16 @@
       @media (min-width: 992px) {
         .about .about-body .about-body-wrapper .related-documents-container {
           margin: 0 0 80px 0;
-          padding: 0 0 80px 10px; } }
+          padding: 0 10px 80px 0; } }
       .about .about-body .about-body-wrapper .related-documents-container .related-documents-wrapper .related-document-wrapper {
         border-radius: 2.1px;
         background-color: #fff;
         box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15);
-        text-align: left;
+        text-align: right;
         width: 293px;
         height: 160px;
-        padding: 20px 0 0 14px;
-        margin: 0 10px 10px 0;
+        padding: 20px 14px 0 0;
+        margin: 0 0 10px 10px;
         position: relative; }
         .about .about-body .about-body-wrapper .related-documents-container .related-documents-wrapper .related-document-wrapper:last-child {
           margin: 0; }
@@ -383,38 +386,33 @@
           max-width: 253px; }
       .about .about-body .about-body-wrapper .related-documents-container .related-documents-arrow {
         border: solid #4e5665;
-        border-width: 0 0 2px 2px;
+        border-width: 0 2px 2px 0;
         display: inline-block;
-        -webkit-transform: rotate(-135deg);
-                transform: rotate(-135deg);
+        -webkit-transform: rotate(135deg);
+                transform: rotate(135deg);
         height: 12px;
         width: 12px;
         display: inline-block;
         line-height: normal; }
       .about .about-body .about-body-wrapper .related-documents-container .rotate {
-        -webkit-transform: rotate(-45deg);
-                transform: rotate(-45deg); }
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg); }
       .about .about-body .about-body-wrapper .related-documents-container .download-wrapper {
-        margin: auto 10px 10px 0; }
+        margin: auto 0 10px 10px; }
         .about .about-body .about-body-wrapper .related-documents-container .download-wrapper .download-arrow {
           height: 20px;
           width: auto; }
         .about .about-body .about-body-wrapper .related-documents-container .download-wrapper .printer-icon {
           height: 20px;
           width: auto;
-          margin: 0 0 0 15px; }
+          margin: 0 15px 0 0; }
     .about .about-body .about-body-wrapper .links-container {
       padding: 0;
       margin: 0 10px; }
       @media (min-width: 992px) {
         .about .about-body .about-body-wrapper .links-container {
-          padding: 0 0 0 10px;
+          padding: 0 10px 0 0;
           margin: 0; } }
-      .about .about-body .about-body-wrapper .links-container .links-wrapper {
-        margin: 0 0 20px 0; }
-        @media (min-width: 992px) {
-          .about .about-body .about-body-wrapper .links-container .links-wrapper {
-            margin: 0 0 8px 0; } }
       .about .about-body .about-body-wrapper .links-container .links-sub-head h3 {
         font-size: 1.6rem;
         font-weight: 500;
@@ -422,7 +420,7 @@
         font-stretch: normal;
         line-height: 1.75;
         letter-spacing: normal;
-        text-align: left;
+        text-align: right;
         color: #4e5665; }
       .about .about-body .about-body-wrapper .links-container .link {
         display: inline-block;
@@ -439,28 +437,28 @@
         line-height: normal;
         letter-spacing: normal;
         color: #1c6897;
-        margin: 0 10px 10px 0;
+        margin: 0 0 10px 10px;
         text-align: center; }
         @media (min-width: 992px) {
           .about .about-body .about-body-wrapper .links-container .link {
             font-size: 2rem;
-            margin: 0 12px 12px 0; } }
+            margin: 0 0 12px 12px; } }
   .about .p-bullet {
     width: 6px;
     height: 6px;
     background-color: #0a7bb6;
     border-radius: 50%;
     display: inline-block;
-    margin: 0 5px 1px 0; }
+    margin: 0 0 1px 5px; }
     @media (min-width: 992px) {
       .about .p-bullet {
-        margin: 0 8px 3px 0; } }
+        margin: 0 0 3px 8px; } }
   .about .p-line {
     width: 4px;
     height: 2px;
     background-color: #4e5665;
-    margin: 0 5px 3px 0;
+    margin: 0 0 3px 5px;
     display: inline-block; }
     @media (min-width: 992px) {
       .about .p-line {
-        margin: 0 8px 0 0; } }
+        margin: 0 0 0 8px; } }

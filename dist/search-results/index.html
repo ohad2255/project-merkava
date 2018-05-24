@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>תוצאות חיפוש</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.6/css/swiper.css">
+<link rel="stylesheet" href="style.rtl.css">
+ 
+    <link rel="stylesheet" href="/common/common.css">
+  <link href="/search-results/search-results.css" rel="stylesheet"></head>
+
+  <!-- body -->
+  <body class="search-results">
+
+    <!-- mobile-menu -->
+    <div class="main-menu-mobile-container d-lg-none" aria-labelledby="mainMobileNavTrigger">
+      <div class="main-menu-mobile-wrapper"></div>
+      
+
+<!--mobile username when connected (remove hidden class when connected) -->
+<div class="username-mobile hidden d-lg-none">
+    <span class="">שמעון ארזי</span>
+</div>
+
+<!-- main navigation -->
+<nav class="navbar navbar-expand-lg main-nav d-lg-flex justify-content-center navbar-expand-lg navbar-toggleable-md navbar-toggleable-sm collapse">
+    <ul class="navbar-nav mr-auto d-flex justify-content-between align-items-center">
+
+        <!-- nav-items -->
+        <li class="nav-item d-flex flex-column flex-lg-row align-items-center justify-content-center" role="button" tabindex="0">
+            <div class="nav-item-text justify-content-between nav-item-text-1 d-flex justify-content-lg-center align-items-center">
+                דף הבית
+                <div class="mobile-arrow-wrapper d-lg-none">
+                    <div class="mobile-arrow"></div>
+                </div>
+            </div>
+            <div class="divider main-nav-item-dropdown">
+                <a  href="../home/index.html" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        דף הבית
+                    </span>
+                </a>
+                <a href="#" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        אודות
+                    </span>
+                </a>
+            </div>
+        </li>
+        <li class="nav-item d-flex flex-column flex-lg-row align-items-center justify-content-center">
+            <div class="nav-item-text nav-item-text-2 d-flex justify-content-between justify-content-lg-center align-items-center">
+                אודות
+                <div class="mobile-arrow-wrapper d-lg-none">
+                    <div class="mobile-arrow"></div>
+                </div>
+            </div>
+            <div class="divider main-nav-item-dropdown">
+                <a  href="../about/index.html" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        אודות
+                    </span>
+                </a>
+                <a href="../job-owners/index.html" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        בעלי תפקידים
+                    </span>
+                </a>
+                <a href="../sitemap/index.html" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        מפת אתר
+                    </span>
+                </a>
+            </div>
+        </li>
+        <li class="nav-item d-flex flex-column flex-lg-row align-items-center justify-content-center">
+            <div class="nav-item-text nav-item-text-3 d-flex justify-content-between justify-content-lg-center align-items-center">
+                מכרזים
+                <div class="mobile-arrow-wrapper d-lg-none">
+                    <div class="mobile-arrow"></div>
+                </div>
+            </div>
+            <div class="divider main-nav-item-dropdown">
+                <a  href="../bids/index.html" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        מכרזים
+                    </span>
+                </a>
+                <a href="#" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        אודות
+                    </span>
+                </a>
+            </div>
+        </li>
+        <li class="nav-item d-flex flex-column flex-lg-row align-items-center justify-content-center">
+            <div class="nav-item-text nav-item-text-4 d-flex justify-content-between justify-content-lg-center align-items-center">
+                הודעות פטור
+                <div class="mobile-arrow-wrapper d-lg-none">
+                    <div class="mobile-arrow"></div>
+                </div>
+            </div>
+            <div class="divider main-nav-item-dropdown">
+                <a  href="#" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        הודעות פטור
+                    </span>
+                </a>
+                <a href="#" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        אודות
+                    </span>
+                </a>
+            </div>
+        </li>
+        <li class="nav-item d-flex flex-column flex-lg-row align-items-center justify-content-center">
+            <div class="nav-item-text nav-item-text-5 d-flex justify-content-between justify-content-lg-center align-items-center">
+                מרכז מינהל הרכש
+                <div class="mobile-arrow-wrapper d-lg-none">
+                    <div class="mobile-arrow"></div>
+                </div>
+            </div>
+            <div class="divider main-nav-item-dropdown">
+                <a  href="#" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        מרכז מינהל הרכש
+                    </span>
+                </a>
+                <a href="#" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        אודות
+                    </span>
+                </a>
+            </div>
+        </li>
+        <li class="nav-item d-flex flex-column flex-lg-row align-items-center justify-content-center">
+            <div class="nav-item-text nav-item-text-6 d-flex justify-content-between justify-content-lg-center align-items-center">
+                מידע מקצועי
+                <div class="mobile-arrow-wrapper d-lg-none">
+                    <div class="mobile-arrow"></div>
+                </div>
+            </div>
+            <div class="divider main-nav-item-dropdown">
+                <a  href="#" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        מידע מקצועי
+                    </span>
+                </a>
+                <a href="../green-rechesh/index.html" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        רכש ירוק
+                    </span>
+                </a>
+                <a href="../q-and-a/index.html" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        שאלות ותשובות
+                    </span>
+                </a>
+                <a href="../dictionary/index.html" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        מילון מונחים
+                    </span>
+                </a>
+                <a href="../sapakim/index.html" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        מאגרי ספקים
+                    </span>
+                </a>
+                <a href="../search-results/index.html" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        תוצאות חיפוש
+                    </span>
+                </a>
+                <a href="../regulation/index.html" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        דיני מכרזים
+                    </span>
+                </a>
+                <a href="../news-1/index.html" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        פרסומים ועידכונים
+                    </span>
+                </a>
+                <a href="../news-2-d1/index.html" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        חדשות
+                    </span>
+                </a>
+            </div>
+        </li> 
+        <li class="nav-item d-flex flex-column flex-lg-row align-items-center justify-content-center">
+            <a  href="../reporting/index.html" class="single-nav-item main-nav-item-link">
+                <div class="nav-item-text nav-item-text-7 d-flex justify-content-between justify-content-lg-center align-items-center">
+                    דוחות
+                </div>
+            </a>
+        </li>
+        <li class="nav-item d-flex flex-column flex-lg-row align-items-center justify-content-center">
+            <div class="nav-item-text nav-item-text-8 d-flex justify-content-between justify-content-lg-center align-items-center">
+                דיוור אישי
+                <div class="mobile-arrow-wrapper d-lg-none">
+                    <div class="mobile-arrow"></div>
+                </div>
+            </div>
+            <div class="divider main-nav-item-dropdown">
+                <a  href="#" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        דיוור אישי
+                    </span>
+                </a>
+                <a href="../profile/index.html" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        עדכון פרטים
+                    </span>
+                </a>
+                <a href="../mepharsemim/index.html" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        מפרסמים
+                    </span>
+                </a>
+            </div>
+        </li>
+        <li class="nav-item d-flex flex-column flex-lg-row align-items-center justify-content-center">
+            <div class="nav-item-text nav-item-text-9 d-flex justify-content-between justify-content-lg-center align-items-center">
+                צור קשר
+                <div class="mobile-arrow-wrapper d-lg-none">
+                    <div class="mobile-arrow"></div>
+                </div>
+            </div>
+             <div class="divider main-nav-item-dropdown">
+                <a  href="../contact-us/index.html" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        צור קשר
+                    </span>
+                </a>
+                <a href="../contact-tender/index.html" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                       עורך מכרז
+                    </span>
+                </a>
+            </div>
+        </li>
+    </ul>
+</nav>
+    </div>
+    <div class="main-content-wrapper">
+
+      <!-- header -->
+      
+<header>
+    <div class="gery-line d-lg-block d-none"></div>
+    <div class="d-flex flex-column flex-lg-row justify-content-lg-between custom-container top-sec-main-container">
+        <div class="top-sec d-flex">
+            <div class="top-sec-container d-flex justify-content-between flex-lg-column">
+                <a href="../home/index.html">
+                    
+                    <!-- logo -->
+                    <div class="logo d-flex">
+                        <img src="data:image/png;base64,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">
+                        <div class="logo-head-container d-flex flex-column justify-content-center">
+                             <div class="first-head">
+                                מינהל הרכש הממשלתי
+                             </div>
+                             <div class="second-head">
+                                Government Grocurement Administration
+                             </div>
+                        </div>
+                    </div>
+                </a>
+                <div class="main-mobile-nav-wrapper dropdown d-lg-none d-flex justify-content-center align-items-center justify-content-lg-start">
+
+                    <!-- open/close nav mobile button -->
+                    <button id="mainMobileNavTrigger" type="button" aria-haspopup="true" aria-expanded="false" class="btn nav-button">
+                          <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogc2tldGNodG9vbCA0OC4yICg0NzMyNykgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+NzhGODkxQzItMkZEQS00OUM3LTlBNzYtRTg0QzE5OTQxQzUyPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBza2V0Y2h0b29sLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJTeW1ib2xzIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iTWF0ZXJpYWwvSWNvbnMtYmxhY2svbWVudSIgZmlsbD0iI0VGRUZFRiI+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik0zLDE4IEwyMSwxOCBMMjEsMTYgTDMsMTYgTDMsMTggTDMsMTggWiBNMywxMyBMMjEsMTMgTDIxLDExIEwzLDExIEwzLDEzIEwzLDEzIFogTTMsNiBMMyw4IEwyMSw4IEwyMSw2IEwzLDYgTDMsNiBaIiBpZD0iU2hhcGUiPjwvcGF0aD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==" alt="open-menu-button" id="menuButton">
+                          <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogc2tldGNodG9vbCA0OC4yICg0NzMyNykgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+RkFGMzc5RDAtRkI0Ny00QUY4LTlGNTktOUVEMUMzOEM5MkMzPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBza2V0Y2h0b29sLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJTeW1ib2xzIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iTWF0ZXJpYWwvSWNvbnMtYmxhY2svbWVudS14LWNsb3NlIiBmaWxsPSIjRUZFRkVGIj4KICAgICAgICAgICAgPHBhdGggZD0iTTEzLjI3MjA3NzksMTEuOTI4OTMyMiBMMTguOTI4OTMyMiwxNy41ODU3ODY0IEwxNy41MTQ3MTg2LDE5IEwxMS44NTc4NjQ0LDEzLjM0MzE0NTggTDYuMjAxMDEwMTMsMTkgTDQuNzg2Nzk2NTYsMTcuNTg1Nzg2NCBMMTAuNDQzNjUwOCwxMS45Mjg5MzIyIEw0Ljc4Njc5NjU2LDYuMjcyMDc3OTQgTDYuMjAxMDEwMTMsNC44NTc4NjQzOCBMMTEuODU3ODY0NCwxMC41MTQ3MTg2IEwxNy41MTQ3MTg2LDQuODU3ODY0MzggTDE4LjkyODkzMjIsNi4yNzIwNzc5NCBMMTMuMjcyMDc3OSwxMS45Mjg5MzIyIFoiIGlkPSJTaGFwZSI+PC9wYXRoPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+" alt="close-menu-button" id="closeMenuButton">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="middle-sec d-flex align-items-center flex-lg-row align-items-lg-start">
+            <div class="middle-sec-container d-flex align-items-lg-center justify-content-between align-items-start flex-lg-wrap">
+                <div class="font-size-container font-size-container-mobile d-flex align-items-end d-lg-none">
+
+                    <!-- font size buttons mobile -->
+                    <a href=""><div class="font-size Abig">א</div></a>
+                    <a href=""><div class="font-size Asmall">א</div></a>
+                </div>
+
+                <!-- language dropdown -->
+                <div class="dropdown lng-dropdown">
+
+                    <!-- hebrew option (default) -->
+                    <button class="btn btn-secondary dropdown-toggle lng-btn d-flex align-items-center justify-content-center justify-content-lg-end" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        עברית
+                    </button>
+
+                    <!-- english option -->
+                    <div class="dropdown-menu lng-dropdown-menu" role="button" tabindex="0" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item lng-dropdown-item-1" href="#">En</a>
+                    </div>
+                </div>
+                <div class="font-size-container font-size-container-desktop d-lg-flex align-items-baseline d-none">
+
+                    <!-- font size buttons lg -->
+                    <a href=""><div class="font-size Abig">א</div></a>
+                    <a href=""><div class="font-size Asmall">א</div></a>
+                </div>
+
+                <div class="ent-container">
+
+                    <!-- entrance button when user is not logged in -->
+                    <a href="../signin/index.html" class="ent-btn" role="button" tabindex="0">
+                        כניסה
+                    </a>
+
+                    <!-- entrance button when user logged in  -->
+                    <div class="ent-dropdown-logged-in-container d-none">
+
+                        <div class="ent-dropdown-wrapper">
+
+                            <!-- logged in name -->
+                            <div class="logged-in-name d-flex align-items-center justify-content-center justify-content-lg-end" role="button" tabindex="0" id="entButton">
+                                שלום שמעון <span class="ent-arrow"></span>
+                            </div>
+
+                            <div class="ent-dropdown-items-container d-none">
+
+                                <!-- profile option -->
+                                <div class="ent-dropdown-item-wrapper d-flex align-items-center justify-content-center">
+                                    <a class="ent-dropdown-item w-100 h-100 d-flex justify-content-center align-items-center" href="../profile/index.html" role="button" tabindex="0">עדכון פרטים</a>
+                                </div>
+
+                                <!-- mailing option -->
+                                <div class="ent-dropdown-item-wrapper d-flex align-items-center justify-content-center">
+                                    <a class="ent-dropdown-item w-100 h-100 d-flex justify-content-center align-items-center" href="../mepharsemim/index.html" role="button" tabindex="0">הרשמה לדיוור</a>
+                                </div>
+
+                                <!-- exit option -->
+                                <div class="ent-dropdown-item-wrapper d-flex align-items-center justify-content-center" aria-labelledby="dropdownMenuButton">
+                                    <a class="ent-dropdown-item w-100 h-100 d-flex justify-content-center align-items-center" href="#" role="button" tabindex="0">יציאה</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- search input section -->
+    <div class="input-sec d-flex custom-container">
+        <div class="input-container d-flex">   
+
+            <!-- search input dropdown -->
+            <div class="dropdown input-dropdown d-flex align-items-center justify-content-center">
+                <div class="input-toggle-arrow"></div>
+                <select class="form-control input-toggle" type="button" id="inputToggle" title="שפה">
+
+                    <!-- search options -->
+                    <option class="input-dropdown-item">הכל</option>
+                    <option class="input-dropdown-item">נושא-1</option>
+                    <option class="input-dropdown-item">נושא-2</option>
+                </select>
+            </div>
+
+            <!-- search input -->
+            <input type="text" name="search" placeholder="חפש" class="main-input" id="mainInput">
+            <label class="sr-only" for="mainInput">search</label>
+
+            <!-- search button -->
+            <button class="d-flex align-items-center search-input" id="searchInput">
+                <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjBweCIgaGVpZ2h0PSIxOXB4IiB2aWV3Qm94PSIwIDAgMjAgMTkiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogc2tldGNodG9vbCA0OC4yICg0NzMyNykgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+ODEyQUYwQ0QtQTUzNi00RDgzLUE1QkMtRTA0ODEzRUVEQ0Q2PC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBza2V0Y2h0b29sLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSIzNzUuSG9tZS53aXRoR2FsbGVyeSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTU3LjAwMDAwMCwgLTE4My4wMDAwMDApIj4KICAgICAgICA8ZyBpZD0iU2VhcmNoIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNy4wMDAwMDAsIDE2My4wMDAwMDApIiBmaWxsPSIjMDA3N0JGIiBzdHJva2U9IiMwMDc3QkYiPgogICAgICAgICAgICA8ZyBpZD0iU2VhcmNoSWNuIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMS4wMDAwMDAsIDIxLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTE1LjE2MTMwNzcsNy42NjEzMDc2OSBDMTUuMTYxMzA3NywzLjUzMSAxMS43OTE2MTU0LDAuMTYxMzA3NjkyIDcuNjYxMzA3NjksMC4xNjEzMDc2OTIgQzMuNTMxLDAuMTYxMzA3NjkyIDAuMTM3NzY5MjMxLDMuNTA3NDYxNTQgMC4xMzc3NjkyMzEsNy42NjEzMDc2OSBDMC4xMzc3NjkyMzEsMTEuNzkxNjE1NCAzLjUwNzQ2MTU0LDE1LjE2MTMwNzcgNy42NjEzMDc2OSwxNS4xNjEzMDc3IEMxMS43OTI1Mzg1LDE1LjE2MTMwNzcgMTUuMTYxMzA3NywxMS43OTI1Mzg1IDE1LjE2MTMwNzcsNy42NjEzMDc2OSBaIE03LjY2MTMwNzY5LDE0LjY5OTc2OTIgQzMuNzg0MTUzODUsMTQuNjk5NzY5MiAwLjYyMjg0NjE1NCwxMS41Mzg0NjE1IDAuNjIyODQ2MTU0LDcuNjYxMzA3NjkgQzAuNjIyODQ2MTU0LDMuNzg0MTUzODUgMy43NjE3NjkyMywwLjU5OTMwNzY5MiA3LjY2MTMwNzY5LDAuNTk5MzA3NjkyIEMxMS41Mzg0NjE1LDAuNTk5MzA3NjkyIDE0LjY5OTc2OTIsMy43NjA2MTUzOCAxNC42OTk3NjkyLDcuNjM3NzY5MjMgQzE0LjY5OTc2OTIsMTEuNTE0OTIzMSAxMS41Mzg0NjE1LDE0LjY5OTc2OTIgNy42NjEzMDc2OSwxNC42OTk3NjkyIFoiIGlkPSJGaWxsLTEiPjwvcGF0aD4KICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJGaWxsLTIiIHBvaW50cz0iMTIuODM3NDYxNSAxMy4xNTEwNzY5IDEzLjE2Mzc5MjMgMTIuODI0NzQ2MiAxNy44NDY3OTIzIDE3LjUwNzc0NjIgMTcuNTIwNDYxNSAxNy44MzQwNzY5Ij48L3BvbHlnb24+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==" class="SearchIcn">
+            </button>
+        </div>
+    </div>
+    <div class="d-none d-lg-block main-nav-wrapper">
+        
+
+<!--mobile username when connected (remove hidden class when connected) -->
+<div class="username-mobile hidden d-lg-none">
+    <span class="">שמעון ארזי</span>
+</div>
+
+<!-- main navigation -->
+<nav class="navbar navbar-expand-lg main-nav d-lg-flex justify-content-center navbar-expand-lg navbar-toggleable-md navbar-toggleable-sm collapse">
+    <ul class="navbar-nav mr-auto d-flex justify-content-between align-items-center">
+
+        <!-- nav-items -->
+        <li class="nav-item d-flex flex-column flex-lg-row align-items-center justify-content-center" role="button" tabindex="0">
+            <div class="nav-item-text justify-content-between nav-item-text-1 d-flex justify-content-lg-center align-items-center">
+                דף הבית
+                <div class="mobile-arrow-wrapper d-lg-none">
+                    <div class="mobile-arrow"></div>
+                </div>
+            </div>
+            <div class="divider main-nav-item-dropdown">
+                <a  href="../home/index.html" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        דף הבית
+                    </span>
+                </a>
+                <a href="#" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        אודות
+                    </span>
+                </a>
+            </div>
+        </li>
+        <li class="nav-item d-flex flex-column flex-lg-row align-items-center justify-content-center">
+            <div class="nav-item-text nav-item-text-2 d-flex justify-content-between justify-content-lg-center align-items-center">
+                אודות
+                <div class="mobile-arrow-wrapper d-lg-none">
+                    <div class="mobile-arrow"></div>
+                </div>
+            </div>
+            <div class="divider main-nav-item-dropdown">
+                <a  href="../about/index.html" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        אודות
+                    </span>
+                </a>
+                <a href="../job-owners/index.html" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        בעלי תפקידים
+                    </span>
+                </a>
+                <a href="../sitemap/index.html" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        מפת אתר
+                    </span>
+                </a>
+            </div>
+        </li>
+        <li class="nav-item d-flex flex-column flex-lg-row align-items-center justify-content-center">
+            <div class="nav-item-text nav-item-text-3 d-flex justify-content-between justify-content-lg-center align-items-center">
+                מכרזים
+                <div class="mobile-arrow-wrapper d-lg-none">
+                    <div class="mobile-arrow"></div>
+                </div>
+            </div>
+            <div class="divider main-nav-item-dropdown">
+                <a  href="../bids/index.html" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        מכרזים
+                    </span>
+                </a>
+                <a href="#" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        אודות
+                    </span>
+                </a>
+            </div>
+        </li>
+        <li class="nav-item d-flex flex-column flex-lg-row align-items-center justify-content-center">
+            <div class="nav-item-text nav-item-text-4 d-flex justify-content-between justify-content-lg-center align-items-center">
+                הודעות פטור
+                <div class="mobile-arrow-wrapper d-lg-none">
+                    <div class="mobile-arrow"></div>
+                </div>
+            </div>
+            <div class="divider main-nav-item-dropdown">
+                <a  href="#" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        הודעות פטור
+                    </span>
+                </a>
+                <a href="#" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        אודות
+                    </span>
+                </a>
+            </div>
+        </li>
+        <li class="nav-item d-flex flex-column flex-lg-row align-items-center justify-content-center">
+            <div class="nav-item-text nav-item-text-5 d-flex justify-content-between justify-content-lg-center align-items-center">
+                מרכז מינהל הרכש
+                <div class="mobile-arrow-wrapper d-lg-none">
+                    <div class="mobile-arrow"></div>
+                </div>
+            </div>
+            <div class="divider main-nav-item-dropdown">
+                <a  href="#" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        מרכז מינהל הרכש
+                    </span>
+                </a>
+                <a href="#" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        אודות
+                    </span>
+                </a>
+            </div>
+        </li>
+        <li class="nav-item d-flex flex-column flex-lg-row align-items-center justify-content-center">
+            <div class="nav-item-text nav-item-text-6 d-flex justify-content-between justify-content-lg-center align-items-center">
+                מידע מקצועי
+                <div class="mobile-arrow-wrapper d-lg-none">
+                    <div class="mobile-arrow"></div>
+                </div>
+            </div>
+            <div class="divider main-nav-item-dropdown">
+                <a  href="#" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        מידע מקצועי
+                    </span>
+                </a>
+                <a href="../green-rechesh/index.html" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        רכש ירוק
+                    </span>
+                </a>
+                <a href="../q-and-a/index.html" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        שאלות ותשובות
+                    </span>
+                </a>
+                <a href="../dictionary/index.html" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        מילון מונחים
+                    </span>
+                </a>
+                <a href="../sapakim/index.html" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        מאגרי ספקים
+                    </span>
+                </a>
+                <a href="../search-results/index.html" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        תוצאות חיפוש
+                    </span>
+                </a>
+                <a href="../regulation/index.html" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        דיני מכרזים
+                    </span>
+                </a>
+                <a href="../news-1/index.html" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        פרסומים ועידכונים
+                    </span>
+                </a>
+                <a href="../news-2-d1/index.html" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        חדשות
+                    </span>
+                </a>
+            </div>
+        </li> 
+        <li class="nav-item d-flex flex-column flex-lg-row align-items-center justify-content-center">
+            <a  href="../reporting/index.html" class="single-nav-item main-nav-item-link">
+                <div class="nav-item-text nav-item-text-7 d-flex justify-content-between justify-content-lg-center align-items-center">
+                    דוחות
+                </div>
+            </a>
+        </li>
+        <li class="nav-item d-flex flex-column flex-lg-row align-items-center justify-content-center">
+            <div class="nav-item-text nav-item-text-8 d-flex justify-content-between justify-content-lg-center align-items-center">
+                דיוור אישי
+                <div class="mobile-arrow-wrapper d-lg-none">
+                    <div class="mobile-arrow"></div>
+                </div>
+            </div>
+            <div class="divider main-nav-item-dropdown">
+                <a  href="#" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        דיוור אישי
+                    </span>
+                </a>
+                <a href="../profile/index.html" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        עדכון פרטים
+                    </span>
+                </a>
+                <a href="../mepharsemim/index.html" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        מפרסמים
+                    </span>
+                </a>
+            </div>
+        </li>
+        <li class="nav-item d-flex flex-column flex-lg-row align-items-center justify-content-center">
+            <div class="nav-item-text nav-item-text-9 d-flex justify-content-between justify-content-lg-center align-items-center">
+                צור קשר
+                <div class="mobile-arrow-wrapper d-lg-none">
+                    <div class="mobile-arrow"></div>
+                </div>
+            </div>
+             <div class="divider main-nav-item-dropdown">
+                <a  href="../contact-us/index.html" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                        צור קשר
+                    </span>
+                </a>
+                <a href="../contact-tender/index.html" class="main-nav-item-link">
+                    <span class="list-item-wrapper d-flex justify-content-start justify-content-lg-center align-items-center">
+                       עורך מכרז
+                    </span>
+                </a>
+            </div>
+        </li>
+    </ul>
+</nav>
+    </div>
+</header>
+
+      <!-- top-section -->
+      <section class="search-results-top-sec d-flex align-items-center">
+        <div class="right-line"></div>
+        <div class="search-results-container custom-container">
+          <div class="search-results-wrapper d-flex flex-column justify-content-center">
+              <div class="search-results-head-wrapper d-flex justify-content-start">
+                  <h1 class="search-results-head">
+                      תוצאות חיפוש
+                  </h1>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- main-contant -->
+      <section class="search-results-body d-flex flex-column align-items-center">
+        <div class="search-results-body-wrapper custom-container d-lg-flex justify-content-end w-100">
+
+          <!-- open filter mobile button -->
+          <div class="filter-mobile-container d-flex flex-column align-items-center justify-content-center d-lg-none">
+            <div class="filter-mobile-wrapper d-flex flex-column align-items-center justify-content-center h-100">
+              <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMS4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBiYXNlUHJvZmlsZT0idGlueSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiDQoJIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjMgMjIiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGltYWdlIHdpZHRoPSIxMjQ2IiBoZWlnaHQ9IjcwMiIgeGxpbms6aHJlZj0iZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUJPSUFBQUxFQ0FZQUFBQ2xvNTlYQUFBQUNYQklXWE1BQUM0akFBQXVJd0Y0cFQ5MkFBQUENCkdYUkZXSFJUYjJaMGQyRnlaUUJCWkc5aVpTQkpiV0ZuWlZKbFlXUjVjY2xsUEFBQUZTOUpSRUZVZU5yczNkMXYzV1VCQi9DdWI2ZW4NCjY5ajdHeFBNREVJVVJtUnNBb3B1b0NnR1RFQWh4SmpNclozZXFWZGU2QjhnaVRmR2VPR0Z0SU41WVF3dm9vbXlDTkp0TG1Gc0V4SVENCkZWa2d2TzBOT3JaMTYybFBkMXJYNStucGR0b3lOdGJmc3gvMDg3bjVucDdmTDZmblBGMnlYNTduZTU1ZlhSMEFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBTlBSREVNQUFQa3gNCmZJcFJ1TWdYUjZjWUJRQUFzdEJvQ0FBZ1gwcmxreUYvOXVSckliZnNQUlJ5b0Z3eE9GT2cwTndROHZZckZvWDgrVzNMUXhhYlhSWUINCkFKQ3Rla01BQUFBQUFObnoxUXNBeUpHUnI2YXVlK1NsOFBpcEY5NDJJQWw4OWRwbElUZmZjM1c4T1BMVlZBQUFNcUlSQndBQUFBQUoNCjJBd0ZBSExtNlpjUDFmemMwQkRYemRybUZnek9GRGpXMHgreWVsK00wK045dGNFQkFDQlRHbkVBQUFBQWtJQ0pPQUFBQUFCSXdGZFQNCkFTQm5oZ1lHYTM1dW5WTU0rWjhmZmRIZ1RJSGx2OWdlY3VCNC82VGpEUUFBV2RHSUF3QUFBSUFFVE1RQkFBQUFRQUltNGdBQUFBQWcNCkFYdkVBVURPekpneEkrVHc4SERJd1ZJbFpQOWdaZXljbHFZR0EzVWUzaXVWeHg2WHk1Vkp4eHNBQUxLbUVRY0FBQUFBQ1dqRUFVRE8NCkxGbzhLK1RCQThkQzl2ZkZ1M3V1MmZUYzJEbGIxMThYc3Rqc3YvS3o2U21kRExuMnQ3dkduaHN1RDA0NjNnQUFrRFdOT0FBQUFBQkkNCndLWW9BSkFqdzZjOCszWmZlUHp0em1kQ0RwMnNURGh2NmFWelF1NW9YeGxTTTY3V29iN1llbHZ6d002UVI5OHRUVGludmpIdXMvZG8NCngwMGhiMWpXR2krT2JCb0hBRUJHTk9JQUFBQUFJQUVydmdDUUk4UFZXNldlc3VPTjNwRDNiZDRUajQzYjIyekUwaVdYaE56V3NTcGsNClcyRjZOK1AySDQ5anRMWXo3Z25YMjNOaTRzVlBjMVBJUDZ5TFkzYno1YlY3eEduRUFRQ1FGWTA0QUFBQUFFakFpaThBNU1pWmpiaXENClo5NDhIdkxlemJ2SG5oc2FxRzNITFI2OTgrZjJqYXREenBwbXpiaTNqZzZFdktVemp0R0pJMzAxeCtzTFRXT1BIMTRYeCtpbXk5b20NCnZ6alNpQU1BSUNNYWNRQUFBQUNRZ0JWZkFNaVJ5UnB4Vlh2Mm5kN3Y3SjVOc2ZsVkhpalhuTE5nNGN5UVd6ZmVVRGV2T0QxYWNhOGQNCjdxLzcyb1BWSmx6dDNWR2JDODBoSDltd2V1eTVWWmZPUFB2RmtVWWNBQUFaMFlnREFBQUFnQVNzK0FKQWpweXRFWGVtNXcvRTV0ZmQNCm0rTGRRY3VsZ1pyajh4Yk9yTnZhOGZud2VFRnIwOGR5clBZZTdnLzVqYTdkZFNlT2pXdkNGUXNoLzdnaGpzRjFTNHJuZm5Ha0VRY0ENClFFWTA0Z0FBQUFBZ0FTdStBSkFqNTlxSXEzcnhuZGlFdTZ0elo4aFMzK2xtM093RnNRWFczWDVqeUNWdEg0OW0zTXM5c1FuMzlhN1INCk5tQnYvOWl4WW10c3dqM2VFVC96aW9XRjg3ODQwb2dEQUNBakduRUFBQUFBa0lBVlh3RElrZk50eEZYOXV5YzI0ZTdvZkRia3dQSFQNCkxiSFdlYTBodDQzdWx6WmkyZXptajlTNHZQVHU2YWJmblYwVFAyT2hyU1hrWHpwdUNQblorWVVQL2JzMDRnQUF5SXBHSEFBQUFBQWsNCllNVVhBSExrd3piaXF2NDN1bi9hN1YyNzZ2clAyRHR0UkhGdXk5amo3ZzJ4T1hiNW5FS3V4K09GUS9FejNEM2FnaHR4NWo1NEkxcG0NCnRkUnRhWTl0dnl2bnQxejR4WkZHSEFBQUdkR0lBd0FBQUlBRXJQZ0NRSTVjYUNPdTZ0WDMrdXR1NjlvVEhwZU85azA0WHB3ZDk0MTcNCnNuMVZ5RS9OYmNuVk9EeC9vQlN5Mm9Rcjk1ZlAraG1tOHYxcnhBRUFrQldOT0FBQUFBQkl3SW92QU9USVZEWGlScnh4Sk82bDlwV3UNCjNTRlBISm5Zakd1NXBCaHl5NGJWSWFkaWo3VUxzV2RmZkkvM2JOb1Zzand3c1FrM2MwNXN3djI5UGI3bnFkN25UaU1PQUlDc2FNUUINCkFBQUFRQUpXZkFFZ1I2YXlFVmUxLy9oZ3lMV2R1OGFlNiswNVVYTk9vUzAyNGY3YUh1K20rcGtGYWUrbXV2T3QwU2JjUTNGUHVLR0INCndacmpzK2JQSEh1OHRTUGVJWFZwVzFNMkYwY2FjUUFBWkVRakRnQUFBQUFTc09JTEFEbVNSU091NmxEZjZaYlptZ2QyaGp6NmJxbm0NCm5KYlcySXo3MDhiWWpGdVJjVE51eHh1OUllL2JITy93T2x5dWJjTE5YaEQzc051MjhjYXg1eGExTm1YNm5qVGlBQURJaWtZY0FBQUENCkFDUmd4UmNBY2lUTFJ0eVpla29uUTY1NUlPNGJkL2lkNHpYSG00dXhDZmQ0UjJ6R2ZXN1IxTjVOdFh1MENiZnVvZmo3SzRPVm11UHoNCkZyYUYzTFl4N2djM3Y5aVk3dUpJSXc0QWdJeG94QUVBQUFCQUFsWjhBU0JIVWpYaXFvNlV5aUcvMVBYUGtEMEhlMnVPTjdjMGgzeHMNClEyekdyVnhhdktEZjk5UnJ4MEt1LzkzdWtFTW5hNXR3OHhmUEN2bVA5dXREemlrMnA3ODQwb2dEQUNBakduRUFBQUFBa0lBVlh3REkNCmtkU051S3JlZ2JobjNKYzc0OTFMRHg0NFZuTzh1UkNiYVErdlh4MXk5YktaNS9YNlQ3enlYc2p2Ly82NWtPT2JjSXVYWEJKeWU4ZXENCmtMTUtqUmZ0YjZBUkJ3QkFWalRpQUFBQUFDQUJLNzRBa0NNWHF4RlhWU3JIWnR6TlhiRzV0bi9ma1pyajlZV21rRS84NEFzaFZ5d3MNCm5QWDFkb3plSGZVN201NE5XYWtNMVJ4ZmR1bWNrTnZiVjRZc05qZGU5TCtCUmh3QUFGblJpQU1BQUFDQUJLejRBa0NPWE94R1hGVzENCkdYZnJRN0VaOS9xYnRjMjRhNWJQQy9tM0Rhdk8ram9yZnhPYmNBZjJINjE1L3BPWHhTYmMwOS9MVHhOdTdPSklJdzRBZ0l4b3hBRUENCkFBQkFBbzJHQUFBWXI5cFE2MTUvZmNncjd0OGFzbnEzMDcwOXBYTjZuVU9IKzJwK3JtOXNxSG5kbHFZR2d3MEF3TFNoRVFjQUFBQUENCkNXakVBUUR2cTlwWUc3OXIydEE1Ym1VMy9yVHE2MmpDQVFBd0hXbkVBUUFBQUVBQ0p1SUFBQUFBSUFFVGNRQUFBQUNRZ0lrNEFBQUENCkFFakFSQndBQUFBQUpHQWlEZ0FBQUFBU01CRUhBQUFBQUFtWWlBTUFBQUNBQkV6RUFRQUFBRUFDSnVJQUFBQUFJQUVUY1FBQUFBQ1ENCmdJazRBQUFBQUVqQVJCd0FBQUFBSkdBaURnQUFBQUFTTUJFSEFBQUFBQW1ZaUFNQUFBQ0FCRXpFQVFBQUFFQUNKdUlBQUFBQUlBRVQNCmNRQUFBQUNRZ0lrNEFBQUFBRWpBUkJ3QUFBQUFKR0FpRGdBQUFBQVNNQkVIQUFBQUFBbVlpQU1BQUFDQUJCb05BUUF3MWZic094R3kNCnZsSUpXUmw5dnFtcHllQUFBREJ0YWNRQkFBQUFRQUlhY1FEQWxIbjBYKytFL1BGakw0UWNxZ3pWSEwvMXlvVUdDUUNBYVVzakRnQUENCkFBQVMwSWdEQUM3WS9kMnZodngxOTk1SmoxLzJpYm54K0Rldk1sZ0FBRXhiR25FQUFBQUFrSUJHSEFCdzNob3F3eUcvKy9DTElidGYNCjNEL3BlYmVzV0JyeXdXOWRFN0twWVliQkF3QmcyaklSQndCOG9LWmljOGpLWUNsa3FXOGc1UHROd1AxdzdhZEQvdlRXNVFZUEFBQkcNCitXb3FBQUFBQUNTZ0VRY0FmS0E3cjFvVThwSGRyMDk2dkw2eEllUXY3MW9SOHQ1ckZ4azBBQUFZZjkxc0NBQUFBQUFnZXliaUFBQUENCkFDQUJ0eTREZ0J3WlBpV1A3MnRvS0w2dG4yeDVKZVNmLzNzdzVOTFpoWkMvdWlOK0pmVzZKY1dQL3NYUktmNGxBZ0NRQlkwNEFBQUENCkFFakFpaThBNUVoZUczSFQ2dUpJSXc0QWdJeG94QUVBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUENCkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBSkRTL3dVWUFNQWdFT3hLSGVFK0FBQUENCkFFbEZUa1N1UW1DQyIgdHJhbnNmb3JtPSJtYXRyaXgoMC4yNCAwIDAgMC4yNCAtMTE2LjQ2MiAtNTIuODgzOSkiPg0KPC9pbWFnZT4NCjwvc3ZnPg0K" class="filter-icon" alt="filter-icon">
+              <h3 class="mobile-filter-head">סנן תוצאות לפי</h3>
+              <div class="mobile-filter-arrows-wrapper d-flex flex-column">
+                <span class="mobile-filter-arrow"></span>
+                <span class="mobile-filter-arrow"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- mobile filter container -->
+          <div class="search-results-filter-container d-none d-lg-block">
+            <div class="search-results-filter-wrapper">
+
+              <!-- filter subject close -->
+              <div class="type-filter-close close-filter-container d-flex align-items-center justify-content-between">
+                <h3>סוג</h3>
+                <div class="filter-arrow"></div>
+              </div>
+
+              <!-- filter subject open -->
+              <div class="type-filter-wrapper d-none">
+                <div class="checkbox">
+                  <label><input type="checkbox" class="icheck" id="main-checkbox">
+                    <span class="main-label">מכרזים</span>
+                  </label>
+                </div>
+                <div class="sub-checkboxs-wrapper">
+                  <div class="checkbox">
+                    <label><input type="checkbox" class="icheck sub-checkbox" id="subCheckbox1">
+                      <span>RFI</span>
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" class="icheck sub-checkbox" id="subCheckbox2">
+                      <span>הסכם מסגרת</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" class="icheck">
+                    <span class="main-label">הודעת פטור</span>
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" class="icheck">
+                    <span class="main-label">מכרזי מינהל הרשת</span>
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" class="icheck">
+                    <span class="main-label">מידע מקצועי</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- filter subject close -->
+              <div class="date-filter-close close-filter-container d-flex align-items-center justify-content-between">
+                <h3>תאריך פרסום</h3>
+                <div class="filter-arrow"></div>
+              </div>
+
+              <!-- filter subject open -->
+              <div class="date-filter-wrapper d-none">
+                <div class="input-group input-group-1 date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input1" id="datepicker1">
+                  <div class="input-wrapper">
+                    <input type="text" class="form-control datepicker" placeholder="מתאריך" data-date-format="mm/dd/yyyy" id="datepicker">
+                    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogc2tldGNodG9vbCA0OS4xICg1MTE0NykgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+QkFBRjE0RUQtRkNFOS00NDRDLTgyMzItRDEyOEZEQ0FCOUI0PC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBza2V0Y2h0b29sLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJIb21lLkRlc2t0b3AiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSLXqteV16bXkNeV16ot15fXmdek15XXqS0tZGF0ZS1vcGVuIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTIwMS4wMDAwMDAsIC0xMDg2LjAwMDAwMCkiIGZpbGw9IiM0RTU2NjUiIGZpbGwtcnVsZT0ibm9uemVybyI+CiAgICAgICAgICAgIDxnIGlkPSJub3VuXzY4NDgyNV80RTU2NjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEyMDEuMDAwMDAwLCAxMDg2LjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTE2LjkzOSwxLjcyNiBMMTUuMzM4LDEuNzI2IEwxNS4zMzgsMC4xMjUgTDE0LjI3LDAuMTI1IEwxNC4yNywxLjcyNiBMNS43MywxLjcyNiBMNS43MywwLjEyNSBMNC42NjIsMC4xMjUgTDQuNjYyLDEuNzI2IEwzLjA2MSwxLjcyNiBDMS41ODksMS43MjYgMC4zOTIsMi45MjMgMC4zOTIsNC4zOTUgTDAuMzkyLDE3LjIwNiBDMC4zOTIsMTguNjc4IDEuNTg5LDE5Ljg3NSAzLjA2MSwxOS44NzUgTDE2LjkzOSwxOS44NzUgQzE4LjQxMSwxOS44NzUgMTkuNjA4LDE4LjY3OCAxOS42MDgsMTcuMjA2IEwxOS42MDgsNy4wNjQgTDE5LjYwOCw1Ljk5NyBMMTkuNjA4LDQuMzk1IEMxOS42MDgsMi45MjQgMTguNDExLDEuNzI2IDE2LjkzOSwxLjcyNiBaIE0xOC41NDEsMTcuMjA2IEMxOC41NDEsMTguMDg5IDE3LjgyMywxOC44MDcgMTYuOTQsMTguODA3IEwzLjA2MSwxOC44MDcgQzIuMTc4LDE4LjgwNyAxLjQ2LDE4LjA4OSAxLjQ2LDE3LjIwNiBMMS40Niw3LjA2NCBMMTguNTQxLDcuMDY0IEwxOC41NDEsMTcuMjA2IFogTTE4LjU0MSw1Ljk5NyBMMS40NTksNS45OTcgTDEuNDU5LDQuMzk1IEMxLjQ1OSwzLjUxMiAyLjE3NywyLjc5NCAzLjA2LDIuNzk0IEw0LjY2MSwyLjc5NCBMNC42NjEsMy44NjIgTDUuNzMsMy44NjIgTDUuNzMsMi43OTQgTDE0LjI3MSwyLjc5NCBMMTQuMjcxLDMuODYyIEwxNS4zMzksMy44NjIgTDE1LjMzOSwyLjc5NCBMMTYuOTQsMi43OTQgQzE3LjgyMywyLjc5NCAxOC41NDEsMy41MTIgMTguNTQxLDQuMzk1IEwxOC41NDEsNS45OTcgWiIgaWQ9IlNoYXBlIj48L3BhdGg+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNOC45MzIsMTIuNDAyIEwxMS4wNjcsMTIuNDAyIEMxMS42NTYsMTIuNDAyIDEyLjEzNSwxMS45MjMgMTIuMTM1LDExLjMzNCBMMTIuMTM1LDkuMTk5IEMxMi4xMzUsOC42MSAxMS42NTYsOC4xMzEgMTEuMDY3LDguMTMxIEw4LjkzMiw4LjEzMSBDOC4zNDMsOC4xMzEgNy44NjQsOC42MSA3Ljg2NCw5LjE5OSBMNy44NjQsMTEuMzM0IEM3Ljg2NSwxMS45MjMgOC4zNDQsMTIuNDAyIDguOTMyLDEyLjQwMiBaIE0xMS4wNjcsOS4xOTkgTDExLjA2OCwxMS4zMzQgTDguOTMyLDExLjMzNCBMOC45MzIsOS4xOTkgTDExLjA2Nyw5LjE5OSBaIiBpZD0iU2hhcGUiPjwvcGF0aD4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xNC4yNywxMi40MDIgTDE2LjQwNSwxMi40MDIgQzE2Ljk5NCwxMi40MDIgMTcuNDczLDExLjkyMyAxNy40NzMsMTEuMzM0IEwxNy40NzMsOS4xOTkgQzE3LjQ3Myw4LjYxIDE2Ljk5NCw4LjEzMSAxNi40MDUsOC4xMzEgTDE0LjI3LDguMTMxIEMxMy42ODEsOC4xMzEgMTMuMjAyLDguNjEgMTMuMjAyLDkuMTk5IEwxMy4yMDIsMTEuMzM0IEMxMy4yMDMsMTEuOTIzIDEzLjY4MiwxMi40MDIgMTQuMjcsMTIuNDAyIFogTTE0LjI3LDkuMTk5IEwxNi40MDUsOS4xOTkgTDE2LjQwNiwxMS4zMzQgTDE0LjI3LDExLjMzNCBMMTQuMjcsOS4xOTkgWiIgaWQ9IlNoYXBlIj48L3BhdGg+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMy41OTUsMTcuNzQgTDUuNzMsMTcuNzQgQzYuMzE5LDE3Ljc0IDYuNzk4LDE3LjI2MSA2Ljc5OCwxNi42NzIgTDYuNzk4LDE0LjUzNyBDNi43OTgsMTMuOTQ4IDYuMzE5LDEzLjQ2OSA1LjczLDEzLjQ2OSBMMy41OTUsMTMuNDY5IEMzLjAwNiwxMy40NjkgMi41MjcsMTMuOTQ4IDIuNTI3LDE0LjUzNyBMMi41MjcsMTYuNjcyIEMyLjUyNywxNy4yNjEgMy4wMDYsMTcuNzQgMy41OTUsMTcuNzQgWiBNMy41OTUsMTQuNTM3IEw1LjczLDE0LjUzNyBMNS43MzEsMTYuNjcyIEwzLjU5NSwxNi42NzIgTDMuNTk1LDE0LjUzNyBaIiBpZD0iU2hhcGUiPjwvcGF0aD4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik04LjkzMiwxNy43NCBMMTEuMDY3LDE3Ljc0IEMxMS42NTYsMTcuNzQgMTIuMTM1LDE3LjI2MSAxMi4xMzUsMTYuNjcyIEwxMi4xMzUsMTQuNTM3IEMxMi4xMzUsMTMuOTQ4IDExLjY1NiwxMy40NjkgMTEuMDY3LDEzLjQ2OSBMOC45MzIsMTMuNDY5IEM4LjM0MywxMy40NjkgNy44NjQsMTMuOTQ4IDcuODY0LDE0LjUzNyBMNy44NjQsMTYuNjcyIEM3Ljg2NSwxNy4yNjEgOC4zNDQsMTcuNzQgOC45MzIsMTcuNzQgWiBNOC45MzIsMTQuNTM3IEwxMS4wNjcsMTQuNTM3IEwxMS4wNjgsMTYuNjcyIEw4LjkzMiwxNi42NzIgTDguOTMyLDE0LjUzNyBaIiBpZD0iU2hhcGUiPjwvcGF0aD4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xNC4yNywxNy43NCBMMTYuNDA1LDE3Ljc0IEMxNi45OTQsMTcuNzQgMTcuNDczLDE3LjI2MSAxNy40NzMsMTYuNjcyIEwxNy40NzMsMTQuNTM3IEMxNy40NzMsMTMuOTQ4IDE2Ljk5NCwxMy40NjkgMTYuNDA1LDEzLjQ2OSBMMTQuMjcsMTMuNDY5IEMxMy42ODEsMTMuNDY5IDEzLjIwMiwxMy45NDggMTMuMjAyLDE0LjUzNyBMMTMuMjAyLDE2LjY3MiBDMTMuMjAzLDE3LjI2MSAxMy42ODIsMTcuNzQgMTQuMjcsMTcuNzQgWiBNMTQuMjcsMTQuNTM3IEwxNi40MDUsMTQuNTM3IEwxNi40MDYsMTYuNjcyIEwxNC4yNywxNi42NzIgTDE0LjI3LDE0LjUzNyBaIiBpZD0iU2hhcGUiPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+" class="date-picker-icon glyphicon glyphicon-calendar" alt="calendar-icon">
+                  </div>
+                </div>
+                <input type="hidden" id="dtp_input1" value="">
+                <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input2" id="datepicker2">
+                  <div class="input-wrapper">
+                    <input type="text" class="form-control datepicker" placeholder="עד תאריך">
+                    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogc2tldGNodG9vbCA0OS4xICg1MTE0NykgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+QkFBRjE0RUQtRkNFOS00NDRDLTgyMzItRDEyOEZEQ0FCOUI0PC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBza2V0Y2h0b29sLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJIb21lLkRlc2t0b3AiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSLXqteV16bXkNeV16ot15fXmdek15XXqS0tZGF0ZS1vcGVuIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTIwMS4wMDAwMDAsIC0xMDg2LjAwMDAwMCkiIGZpbGw9IiM0RTU2NjUiIGZpbGwtcnVsZT0ibm9uemVybyI+CiAgICAgICAgICAgIDxnIGlkPSJub3VuXzY4NDgyNV80RTU2NjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEyMDEuMDAwMDAwLCAxMDg2LjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTE2LjkzOSwxLjcyNiBMMTUuMzM4LDEuNzI2IEwxNS4zMzgsMC4xMjUgTDE0LjI3LDAuMTI1IEwxNC4yNywxLjcyNiBMNS43MywxLjcyNiBMNS43MywwLjEyNSBMNC42NjIsMC4xMjUgTDQuNjYyLDEuNzI2IEwzLjA2MSwxLjcyNiBDMS41ODksMS43MjYgMC4zOTIsMi45MjMgMC4zOTIsNC4zOTUgTDAuMzkyLDE3LjIwNiBDMC4zOTIsMTguNjc4IDEuNTg5LDE5Ljg3NSAzLjA2MSwxOS44NzUgTDE2LjkzOSwxOS44NzUgQzE4LjQxMSwxOS44NzUgMTkuNjA4LDE4LjY3OCAxOS42MDgsMTcuMjA2IEwxOS42MDgsNy4wNjQgTDE5LjYwOCw1Ljk5NyBMMTkuNjA4LDQuMzk1IEMxOS42MDgsMi45MjQgMTguNDExLDEuNzI2IDE2LjkzOSwxLjcyNiBaIE0xOC41NDEsMTcuMjA2IEMxOC41NDEsMTguMDg5IDE3LjgyMywxOC44MDcgMTYuOTQsMTguODA3IEwzLjA2MSwxOC44MDcgQzIuMTc4LDE4LjgwNyAxLjQ2LDE4LjA4OSAxLjQ2LDE3LjIwNiBMMS40Niw3LjA2NCBMMTguNTQxLDcuMDY0IEwxOC41NDEsMTcuMjA2IFogTTE4LjU0MSw1Ljk5NyBMMS40NTksNS45OTcgTDEuNDU5LDQuMzk1IEMxLjQ1OSwzLjUxMiAyLjE3NywyLjc5NCAzLjA2LDIuNzk0IEw0LjY2MSwyLjc5NCBMNC42NjEsMy44NjIgTDUuNzMsMy44NjIgTDUuNzMsMi43OTQgTDE0LjI3MSwyLjc5NCBMMTQuMjcxLDMuODYyIEwxNS4zMzksMy44NjIgTDE1LjMzOSwyLjc5NCBMMTYuOTQsMi43OTQgQzE3LjgyMywyLjc5NCAxOC41NDEsMy41MTIgMTguNTQxLDQuMzk1IEwxOC41NDEsNS45OTcgWiIgaWQ9IlNoYXBlIj48L3BhdGg+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNOC45MzIsMTIuNDAyIEwxMS4wNjcsMTIuNDAyIEMxMS42NTYsMTIuNDAyIDEyLjEzNSwxMS45MjMgMTIuMTM1LDExLjMzNCBMMTIuMTM1LDkuMTk5IEMxMi4xMzUsOC42MSAxMS42NTYsOC4xMzEgMTEuMDY3LDguMTMxIEw4LjkzMiw4LjEzMSBDOC4zNDMsOC4xMzEgNy44NjQsOC42MSA3Ljg2NCw5LjE5OSBMNy44NjQsMTEuMzM0IEM3Ljg2NSwxMS45MjMgOC4zNDQsMTIuNDAyIDguOTMyLDEyLjQwMiBaIE0xMS4wNjcsOS4xOTkgTDExLjA2OCwxMS4zMzQgTDguOTMyLDExLjMzNCBMOC45MzIsOS4xOTkgTDExLjA2Nyw5LjE5OSBaIiBpZD0iU2hhcGUiPjwvcGF0aD4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xNC4yNywxMi40MDIgTDE2LjQwNSwxMi40MDIgQzE2Ljk5NCwxMi40MDIgMTcuNDczLDExLjkyMyAxNy40NzMsMTEuMzM0IEwxNy40NzMsOS4xOTkgQzE3LjQ3Myw4LjYxIDE2Ljk5NCw4LjEzMSAxNi40MDUsOC4xMzEgTDE0LjI3LDguMTMxIEMxMy42ODEsOC4xMzEgMTMuMjAyLDguNjEgMTMuMjAyLDkuMTk5IEwxMy4yMDIsMTEuMzM0IEMxMy4yMDMsMTEuOTIzIDEzLjY4MiwxMi40MDIgMTQuMjcsMTIuNDAyIFogTTE0LjI3LDkuMTk5IEwxNi40MDUsOS4xOTkgTDE2LjQwNiwxMS4zMzQgTDE0LjI3LDExLjMzNCBMMTQuMjcsOS4xOTkgWiIgaWQ9IlNoYXBlIj48L3BhdGg+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMy41OTUsMTcuNzQgTDUuNzMsMTcuNzQgQzYuMzE5LDE3Ljc0IDYuNzk4LDE3LjI2MSA2Ljc5OCwxNi42NzIgTDYuNzk4LDE0LjUzNyBDNi43OTgsMTMuOTQ4IDYuMzE5LDEzLjQ2OSA1LjczLDEzLjQ2OSBMMy41OTUsMTMuNDY5IEMzLjAwNiwxMy40NjkgMi41MjcsMTMuOTQ4IDIuNTI3LDE0LjUzNyBMMi41MjcsMTYuNjcyIEMyLjUyNywxNy4yNjEgMy4wMDYsMTcuNzQgMy41OTUsMTcuNzQgWiBNMy41OTUsMTQuNTM3IEw1LjczLDE0LjUzNyBMNS43MzEsMTYuNjcyIEwzLjU5NSwxNi42NzIgTDMuNTk1LDE0LjUzNyBaIiBpZD0iU2hhcGUiPjwvcGF0aD4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik04LjkzMiwxNy43NCBMMTEuMDY3LDE3Ljc0IEMxMS42NTYsMTcuNzQgMTIuMTM1LDE3LjI2MSAxMi4xMzUsMTYuNjcyIEwxMi4xMzUsMTQuNTM3IEMxMi4xMzUsMTMuOTQ4IDExLjY1NiwxMy40NjkgMTEuMDY3LDEzLjQ2OSBMOC45MzIsMTMuNDY5IEM4LjM0MywxMy40NjkgNy44NjQsMTMuOTQ4IDcuODY0LDE0LjUzNyBMNy44NjQsMTYuNjcyIEM3Ljg2NSwxNy4yNjEgOC4zNDQsMTcuNzQgOC45MzIsMTcuNzQgWiBNOC45MzIsMTQuNTM3IEwxMS4wNjcsMTQuNTM3IEwxMS4wNjgsMTYuNjcyIEw4LjkzMiwxNi42NzIgTDguOTMyLDE0LjUzNyBaIiBpZD0iU2hhcGUiPjwvcGF0aD4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xNC4yNywxNy43NCBMMTYuNDA1LDE3Ljc0IEMxNi45OTQsMTcuNzQgMTcuNDczLDE3LjI2MSAxNy40NzMsMTYuNjcyIEwxNy40NzMsMTQuNTM3IEMxNy40NzMsMTMuOTQ4IDE2Ljk5NCwxMy40NjkgMTYuNDA1LDEzLjQ2OSBMMTQuMjcsMTMuNDY5IEMxMy42ODEsMTMuNDY5IDEzLjIwMiwxMy45NDggMTMuMjAyLDE0LjUzNyBMMTMuMjAyLDE2LjY3MiBDMTMuMjAzLDE3LjI2MSAxMy42ODIsMTcuNzQgMTQuMjcsMTcuNzQgWiBNMTQuMjcsMTQuNTM3IEwxNi40MDUsMTQuNTM3IEwxNi40MDYsMTYuNjcyIEwxNC4yNywxNi42NzIgTDE0LjI3LDE0LjUzNyBaIiBpZD0iU2hhcGUiPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+" class="date-picker-icon glyphicon glyphicon-calendar" alt="calendar-icon">
+                  </div>
+                </div>
+                <input type="hidden" id="dtp_input2" value=""> 
+              </div>
+
+              <!-- filter subject close -->
+              <div class="status-filter-close close-filter-container d-flex align-items-center justify-content-between">
+                <h3>סטטוס</h3>
+                <div class="filter-arrow"></div>
+              </div>
+
+              <!-- filter subject open -->
+              <div class="status-filter-wrapper">
+                
+              </div>
+
+              <!-- filter subject close -->
+              <div class="contact-topics-filter-close close-filter-container d-flex align-items-center justify-content-between">
+                <h3>תחומי התקשרות</h3>
+                <div class="filter-arrow"></div>
+              </div>
+
+              <!-- filter subject open -->
+              <div class="contact-topics-filter-wrapper">
+                
+              </div>
+
+              <!-- filter subject close -->
+              <div class="office-filter-close close-filter-container d-flex align-items-center justify-content-between">
+                <h3>משרד</h3>
+                <div class="filter-arrow"></div>
+              </div>
+
+              <!-- filter subject open -->
+              <div class="office-filter-wrapper">
+                
+              </div>
+
+              <!-- filter subject close -->
+              <div class="more-filter-close close-filter-container d-flex align-items-center justify-content-between">
+                <h3>עוד</h3>
+                <div class="filter-arrow"></div>
+              </div>
+
+              <!-- filter subject open -->
+              <div class="more-filter-wrapper">
+                
+              </div>
+            </div>
+          </div>
+
+          <!-- search results content -->
+          <div class="search-results-content d-lg-block">
+
+            <!-- search result -->
+            <div class="result-container-1">
+              <div class="right-line"></div>
+              <div class="content-wrapper d-flex justify-content-between align-items-start align-items-lg-center h-100">
+
+                <!-- search result details-->
+                <div class="details-wrapper">
+                  <img src="/assets/health-department-logo.1d26e460.svg" class="health-department-logo" alt="logo">
+                  <div>
+                    <h3 class="d-lg-none search-result-sub-head">מכרזים</h3>
+                    <h2>אספקת מחשבים עבור משרדי ממשלה</h2>
+                    <span>מפרסם:</span> משרד האוצר- מנהל הרכש הממשלתי <br>
+                    <span>תאריך פרסום:</span> 28/08/2017<br class="d-lg-none"><span class="d-none d-lg-inline-block">&nbsp&nbsp|&nbsp&nbsp</span><span>מועד אחרון להגשה:</span> 07/10/2013, 23:59 <br>
+                    <span>סטטוס:</span> עודכן<br class="d-lg-none"><span class="d-none d-lg-inline-block">&nbsp&nbsp|&nbsp&nbsp</span><span>מס׳ המכרז:</span> 18-2017 
+                  </div> 
+                </div>
+                <div class="logo-container d-lg-flex flex-column align-items-center">
+                  <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iOTJweCIgaGVpZ2h0PSI5MnB4IiB2aWV3Qm94PSIwIDAgOTIgOTIiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogc2tldGNodG9vbCA0OS4xICg1MTE0NykgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+NjcxMkM5NzktNjUxRS00ODM1LUFCMzctMUQ2RDg4MUI2Njc4PC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBza2V0Y2h0b29sLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJIb21lLkRlc2t0b3AiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSLXqteV16bXkNeV16ot15fXmdek15XXqSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIyNi4wMDAwMDAsIC02ODUuMDAwMDAwKSIgZmlsbD0iIzAyNDQ4RSI+CiAgICAgICAgICAgIDxnIGlkPSJHcm91cC0xOCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjI2LjAwMDAwMCwgNjg1LjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPGcgaWQ9Imljb24t157Xm9eo15bXmdedIiBmaWxsLXJ1bGU9Im5vbnplcm8iPgogICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik05Miw0OC4wMDk0NDEgQzkyLDQ3LjYxODk0OTkgOTEuODQxNTU1Niw0Ny4yMzY2MzY3IDkxLjU2NTU1NTYsNDYuOTYwNjM1MSBDOTEuMjg5NTU1Niw0Ni42ODQ2MzM2IDkwLjkwNzI0NDQsNDYuNTI2MTg4MiA5MC41MTY3NTU2LDQ2LjUyNjE4ODIgTDcxLjQ2MDQ4ODksNDYuNTI2MTg4MiBMNzEuNDYwNDg4OSwzNC4zOTg0NzU0IEw3MS42NDU1MTExLDM0LjI3Mjc0MTQgQzczLjg1OTY0NDQsMzIuNzYxODg4NCA3Ni40NjczMzMzLDMxLjkzMjg2MTUgNzkuMTQ3NiwzMS44ODU4MzkxIEM4Mi4yMTMyNDQ0LDMxLjgzMjY4MzIgODUuMjA1Mjg4OSwzMC45MzYxODkzIDg3Ljc5NTYsMjkuMjk1NTEzNCBMOTEuMzEsMjcuMDY5MTAwOCBDOTIuMDAyMDQ0NCwyNi42MzA1NjUgOTIuMjA3NTExMSwyNS43MTM2MjY1IDkxLjc3LDI1LjAyMTU3ODIgQzkxLjMzMTQ2NjcsMjQuMzI5NTI5OCA5MC40MTQ1MzMzLDI0LjEyMzAzOTggODkuNzIyNDg4OSwyNC41NjE1NzU2IEw4Ni4yMDgwODg5LDI2Ljc4Nzk4ODEgQzg0LjA3Nzc3NzgsMjguMTM3MzI5MSA4MS42MTcyODg5LDI4Ljg3NDM1NTQgNzkuMDk2NDg4OSwyOC45MTcyODkgQzc1LjgzNzY0NDQsMjguOTczNTExNSA3Mi42NjU2ODg5LDI5Ljk4MjQ1MDYgNjkuOTczMTU1NiwzMS44MTkzOTQyIEw1NS4yMTk0MjIyLDQxLjg4NTI3MzIgQzU0LjM1MTU1NTYsNDIuNDc2MTIxIDUzLjM3ODQsNDIuNzU1MTg5MiA1Mi40MDYyNjY3LDQyLjc1NjIxMTQgQzUwLjc5MDEzMzMsNDIuNzU0MTY3IDQ5LjIxMzg2NjcsNDEuOTgyMzg0OCA0OC4yNDc4NjY3LDQwLjU0MTA0MzQgTDQ4LjEzNTQyMjIsNDAuMzc3NDg2OSBDNDcuNTU5OTExMSwzOS41MTg4MTU0IDQ3LjI4OCwzOC41NTc5MjExIDQ3LjI4Njk3NzgsMzcuNTk4MDQ5IEM0Ny4yODkwMjIyLDM1Ljk5NTE5NTUgNDguMDQ5NTU1NiwzNC40MzAxNjQ1IDQ5LjQ3MTQ2NjcsMzMuNDYxMDkyNCBMNTMuNTc1Njg4OSwzMC42NjEyMDk5IEw1My41Nzc3MzMzLDMwLjY2MDE4NzcgTDYwLjM3NzU1NTYsMjYuMDIxMzE3MSBDNjEuMDU0MjY2NywyNS41NTkyNzAxIDYxLjIyOTA2NjcsMjQuNjM2MTk4MiA2MC43NjcwMjIyLDIzLjk1OTQ4MzMgQzYwLjMwNDk3NzgsMjMuMjgyNzY4NCA1OS4zODE5MTExLDIzLjEwNzk2NzQgNTguNzA1MiwyMy41NzAwMTQ0IEw1Mi4yODg3MTExLDI3Ljk0NzE5NDYgTDMzLjU0NzI4ODksMjcuOTQ3MTk0NiBMNDIuMTc1ODY2NywxOC4wNTcxMzg5IEM0NS42NzE4NjY3LDE0LjA1MDAwNTIgNTAuNzI5ODIyMiwxMS43NTEwMTQ1IDU2LjA0NzQyMjIsMTEuNzUxMDE0NSBMNjguMjEwODQ0NCwxMS43NTEwMTQ1IEM3MS4wNDc1MTExLDExLjc1MTAxNDUgNzMuODAyNCwxMC44MDY0NzU4IDc2LjA0NDEzMzMsOS4wNjc2NjYwNSBMODQuMzAzNjg4OSwyLjY1NjI1MjE0IEM4NC45NTA3NTU2LDIuMTUzMzE1OTggODUuMDY4MzExMSwxLjIyMjA2NjI5IDg0LjU2NjQsMC41NzM5NzM3NDYgQzg0LjA2MzQ2NjcsLTAuMDczMDk2NTY3IDgzLjEzMjIyMjIsLTAuMTkwNjUyNzg1IDgyLjQ4NDEzMzMsMC4zMTEyNjExNTQgTDc0LjIyNDU3NzgsNi43MjI2NzUwNiBDNzIuNTA0MTc3OCw4LjA1NzcwNDggNzAuMzg5Miw4Ljc4MjQ2NDQ0IDY4LjIxMTg2NjcsOC43ODI0NjQ0NCBMNTYuMDQ3NDIyMiw4Ljc4MjQ2NDQ0IEM0OS44NzIxNzc4LDguNzgyNDY0NDQgNDMuOTk4NDg4OSwxMS40NTI1MjM5IDM5LjkzOTI0NDQsMTYuMTA1NzA1NyBMMjkuNjA3NjQ0NCwyNy45NDYxNzI0IEwyMS45OTcyLDI3Ljk0NjE3MjQgQzIxLjYwNjcxMTEsMjcuOTQ2MTcyNCAyMS4yMjQ0LDI4LjEwNDYxNzggMjAuOTQ3Mzc3OCwyOC4zODA2MTkzIEMyMC42NzEzNzc4LDI4LjY1NjYyMDkgMjAuNTEyOTMzMywyOS4wMzg5MzQxIDIwLjUxMjkzMzMsMjkuNDI5NDI1MiBMMjAuNTEyOTMzMyw0Ni41MjUxNjYgTDEuNDgzMjQ0NDQsNDYuNTI1MTY2IEMxLjA5Mjc1NTU2LDQ2LjUyNTE2NiAwLjcxMDQ0NDQ0NCw0Ni42ODM2MTEzIDAuNDMzNDIyMjIyLDQ2Ljk1OTYxMjkgQzAuMTU4NDQ0NDQ0LDQ3LjIzNjYzNjcgMCw0Ny42MTc5Mjc3IDAsNDguMDA5NDQxIEwwLDYxLjA2NzM4MTMgTDAsNjkuOTcwOTg3IEwwLDkwLjUxNjc0NzIgQzAsOTEuMzM1NTUxOCAwLjY2NDQ0NDQ0NCw5MiAxLjQ4NDI2NjY3LDkyIEMyLjMwNDA4ODg5LDkyIDIuOTY4NTMzMzMsOTEuMzM1NTUxOCAyLjk2ODUzMzMzLDkwLjUxNTcyNSBMMi45Njg1MzMzMyw3MS40NTQyMzk4IEw4OS4wMzM1MTExLDcxLjQ1NDIzOTggTDg5LjAzMzUxMTEsOTAuNTE1NzI1IEM4OS4wMzM1MTExLDkxLjMzNTU1MTggODkuNjk3OTU1Niw5MiA5MC41MTc3Nzc4LDkyIEM5MS4zMzU1NTU2LDkyIDkyLDkxLjMzNTU1MTggOTIsOTAuNTE1NzI1IEw5Miw2MS4wNjczODEzIEw5Miw2MS4wNjUzMzY4IEw5Miw0OC4wMDk0NDEgWiBNNDcuOTM5MTU1NiwzMC45MTM3MDAzIEw0Ny43OTkxMTExLDMxLjAwODc2NzUgQzQ1LjU0MTAyMjIsMzIuNTQ5MjY1IDQ0LjMxNzQyMjIsMzUuMDU1NzY4IDQ0LjMxOTQ2NjcsMzcuNTk4MDQ5IEM0NC4zMTg0NDQ0LDM5LjEyMzIxMzIgNDQuNzU5MDIyMiw0MC42NzM5MzMgNDUuNjcxODY2Nyw0Mi4wMzE0NTE4IEw0NS43ODIyNjY3LDQyLjE5NjAzMDUgQzQ3LjMxNzY0NDQsNDQuNDg2ODQzNCA0OS44NDQ1Nzc4LDQ1LjcyNzgyODIgNTIuNDA1MjQ0NCw0NS43MjU3ODM3IEM1My45NDk4MjIyLDQ1LjcyNjgwNTkgNTUuNTIwOTc3OCw0NS4yNzM5NTg5IDU2Ljg5MDc1NTYsNDQuMzM4NjIwMyBMNjguNDkxOTU1NiwzNi40MjM1MDkxIEw2OC40OTE5NTU2LDU3LjUwNTkzOSBMMjMuNDgxNDY2Nyw1Ny41MDU5MzkgTDIzLjQ4MTQ2NjcsMzAuOTEzNzAwMyBMNDcuOTM5MTU1NiwzMC45MTM3MDAzIFogTTg5LjAzMjQ4ODksNjguNDg2NzEyIEwyLjk2NzUxMTExLDY4LjQ4NjcxMiBMMi45Njc1MTExMSw2MS4wNjczODEzIEwyLjk2NzUxMTExLDYxLjA2MTI0NzkgTDIuOTY3NTExMTEsNDkuNDkyNjkzOCBMMjAuNTEzOTU1Niw0OS40OTI2OTM4IEwyMC41MTM5NTU2LDU3LjUwNTkzOSBMMTUuMTU3NTExMSw1Ny41MDU5MzkgQzE0LjMzNzY4ODksNTcuNTA1OTM5IDEzLjY3MzI0NDQsNTguMTcwMzg3MiAxMy42NzMyNDQ0LDU4Ljk5MDIxNCBDMTMuNjczMjQ0NCw1OS44MTAwNDA4IDE0LjMzNzY4ODksNjAuNDc0NDg5IDE1LjE1NzUxMTEsNjAuNDc0NDg5IEw3Ni40NTA5Nzc4LDYwLjQ3NDQ4OSBDNzcuMjcwOCw2MC40NzQ0ODkgNzcuOTM1MjQ0NCw1OS44MTAwNDA4IDc3LjkzNTI0NDQsNTguOTkwMjE0IEM3Ny45MzUyNDQ0LDU4LjE3MDM4NzIgNzcuMjcwOCw1Ny41MDU5MzkgNzYuNDUwOTc3OCw1Ny41MDU5MzkgTDcxLjQ2MDQ4ODksNTcuNTA1OTM5IEw3MS40NjA0ODg5LDQ5LjQ5MjY5MzggTDg5LjAzMjQ4ODksNDkuNDkyNjkzOCBMODkuMDMyNDg4OSw2OC40ODY3MTIgWiIgaWQ9IlNoYXBlIj48L3BhdGg+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICA8dGV4dCBpZD0i157Xm9eo15bXmdedIiBmb250LWZhbWlseT0iRmJSZWZvcm1hLU1lZGl1bSwgRmJSZWZvcm1hIiBmb250LXNpemU9IjMyIiBmb250LXdlaWdodD0iNDAwIj4KICAgICAgICAgICAgICAgICAgICA8dHNwYW4geD0iMiIgeT0iMTE1Ij7Xnteb16jXlteZ1508L3RzcGFuPgogICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=" class="result-container-1-logo" alt="icon">
+                  <h3 class="d-none d-lg-block search-result-sub-head">מכרזים</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- search result -->
+            <div class="result-container-2">
+              <div class="right-line"></div>
+              <div class="content-wrapper d-flex justify-content-between align-items-center h-100">
+                
+                <!-- search result details-->
+                <div class="details-wrapper">
+                  <h3 class="d-lg-none search-result-sub-head">רכש ירוק</h3>
+                  <h2>הצעת פתרונות ירוקים לממשלה</h2>
+                  <p>מינהל הרכש הממשלתי והמשרד להגנת הסביבה מעוניינים לבחון פתרונות המסייעים לשיפור הביצועים הסביבתיים של הממשלה, כחלק מהמהלכים לעידוד חדשנות ולפיתוח מנגנוני דיאלוג עם השוק …</p>
+                </div>
+                <div class="logo-container d-lg-flex flex-column align-items-center">
+                  <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iODhweCIgaGVpZ2h0PSIxMTZweCIgdmlld0JveD0iMCAwIDg4IDExNiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBza2V0Y2h0b29sIDQ4LjIgKDQ3MzI3KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5FMTRFMTE0Mi00M0IwLTQ2NDItQURBRC1EQTJENTgwODhDRkI8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIHNrZXRjaHRvb2wuPC9kZXNjPgogICAgPGRlZnM+CiAgICAgICAgPHJlY3QgaWQ9InBhdGgtMSIgeD0iMCIgeT0iMCIgd2lkdGg9IjE2MDAiIGhlaWdodD0iMjk2LjQ1IiByeD0iMyI+PC9yZWN0PgogICAgICAgIDxmaWx0ZXIgeD0iLTAuNSUiIHk9Ii0yLjIlIiB3aWR0aD0iMTAxLjElIiBoZWlnaHQ9IjEwNS43JSIgZmlsdGVyVW5pdHM9Im9iamVjdEJvdW5kaW5nQm94IiBpZD0iZmlsdGVyLTMiPgogICAgICAgICAgICA8ZmVPZmZzZXQgZHg9IjAiIGR5PSIyIiBpbj0iU291cmNlQWxwaGEiIHJlc3VsdD0ic2hhZG93T2Zmc2V0T3V0ZXIxIj48L2ZlT2Zmc2V0PgogICAgICAgICAgICA8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIyLjUiIGluPSJzaGFkb3dPZmZzZXRPdXRlcjEiIHJlc3VsdD0ic2hhZG93Qmx1ck91dGVyMSI+PC9mZUdhdXNzaWFuQmx1cj4KICAgICAgICAgICAgPGZlQ29sb3JNYXRyaXggdmFsdWVzPSIwIDAgMCAwIDAgICAwIDAgMCAwIDAgICAwIDAgMCAwIDAgIDAgMCAwIDAuMSAwIiB0eXBlPSJtYXRyaXgiIGluPSJzaGFkb3dCbHVyT3V0ZXIxIj48L2ZlQ29sb3JNYXRyaXg+CiAgICAgICAgPC9maWx0ZXI+CiAgICA8L2RlZnM+CiAgICA8ZyBpZD0iR3JlZW4tUmVjaGVzaCIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEzNDQuMDAwMDAwLCAtMzA4LjAwMDAwMCkiPgogICAgICAgIDxnIGlkPSJHcm91cC0yNiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMDAwMDAsIDIyOC4wMDAwMDApIiBvcGFjaXR5PSIwLjk3MDAwMDAyOSI+CiAgICAgICAgICAgIDxnIGlkPSJHcm91cC0xMSI+CiAgICAgICAgICAgICAgICA8ZyBpZD0ic3RvY2stdmVjdG9yLXRoaW4tbGluZS1mbGF0LWRlc2lnbi1jb25jZXB0LWZvci1jb250YWN0LWJhbm5lci1jb25jZXB0LWZvci13ZWJzaXRlLWJhbm5lcnMtYW5kLXByb21vdGlvbmFsLTI5MzY1MTk2MyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMDAwMDAsIDMuNzAwMDAwKSI+CiAgICAgICAgICAgICAgICAgICAgPG1hc2sgaWQ9Im1hc2stMiIgZmlsbD0id2hpdGUiPgogICAgICAgICAgICAgICAgICAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNwYXRoLTEiPjwvdXNlPgogICAgICAgICAgICAgICAgICAgIDwvbWFzaz4KICAgICAgICAgICAgICAgICAgICA8ZyBpZD0iTWFzayI+CiAgICAgICAgICAgICAgICAgICAgICAgIDx1c2UgZmlsbD0iYmxhY2siIGZpbGwtb3BhY2l0eT0iMSIgZmlsdGVyPSJ1cmwoI2ZpbHRlci0zKSIgeGxpbms6aHJlZj0iI3BhdGgtMSI+PC91c2U+CiAgICAgICAgICAgICAgICAgICAgICAgIDx1c2UgZmlsbD0iI0ZGRkZGRiIgZmlsbC1ydWxlPSJldmVub2RkIiB4bGluazpocmVmPSIjcGF0aC0xIj48L3VzZT4KICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICAgICAgPGcgaWQ9Ikdyb3VwLTE3IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMzQ0LjAwMDAwMCwgMzA4LjAwMDAwMCkiIGZpbGw9IiMzM0EzOEQiIGZpbGwtcnVsZT0ibm9uemVybyI+CiAgICAgICAgICAgIDxnIGlkPSJub3VuXzI2NjA3Nl83MEMwNDEtKDEpIj4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik04Mi41NTQxNjQxLDAgTDM0LjAxNjc3MzQsMCBMMC4xODQ0MjE4NzUsMzMuODMzOTM3NSBMMC4xODQ0MjE4NzUsMTExLjE2NjA2MiBDMC4xODQ0MjE4NzUsMTEzLjgzNTE5NSAyLjM0NzQxNDA2LDExNiA1LjAxNjU0Njg3LDExNiBMODIuNTUzOTM3NSwxMTYgQzg1LjIyMzA3MDMsMTE2IDg3LjM4OTY4NzUsMTEzLjgzNTE5NSA4Ny4zODk2ODc1LDExMS4xNjYwNjIgTDg3LjM4OTY4NzUsNC44MzM5Mzc1IEM4Ny4zODk5MTQxLDIuMTY0ODA0NjkgODUuMjIzMjk2OSwwIDgyLjU1NDE2NDEsMCBaIE04Mi41NTQxNjQxLDExMS4xNjYwNjIgTDUuMDE2NzczNDQsMTExLjE2NjA2MiBMNS4wMTY3NzM0NCwzNS44MzU4NDM4IEwyMS41NDUxODc1LDE5LjMwNzQyOTcgTDgyLjU1NDE2NDEsMTkuMzA3NDI5NyBMODIuNTU0MTY0MSwxMTEuMTY2MDYyIFogTTgyLjU1NDE2NDEsMTQuNDc1MzA0NyBMMjYuMzc3MzEyNSwxNC40NzUzMDQ3IEwzNi4wMTY4NjcyLDQuODMzOTM3NSBMODIuNTU0MTY0MSw0LjgzMzkzNzUgTDgyLjU1NDE2NDEsMTQuNDc1MzA0NyBaIiBpZD0iU2hhcGUiPjwvcGF0aD4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik00LjE5MTg1OTM3LDIzLjA0Mzg5ODQgTDExLjAyNDA3ODEsMTYuMjA5ODY3MiBDMTEuOTY5Mjk2OSwxNS4yNjQ2NDg0IDExLjk2OTI5NjksMTMuNzM1MzUxNiAxMS4wMjQwNzgxLDEyLjc5MTk0NTMgQzEwLjA4MjQ4NDQsMTEuODQ2NzI2NiA4LjU1MzE4NzUsMTEuODQ2NzI2NiA3LjYwNzk2ODc1LDEyLjc5MTk0NTMgTDAuNzcyMTI1LDE5LjYyNTk3NjYgQy0wLjE3MzA5Mzc1LDIwLjU3MTE5NTMgLTAuMTczMDkzNzUsMjIuMTAwNDkyMiAwLjc3MjEyNSwyMy4wNDM4OTg0IEMxLjcxNzM0Mzc1LDIzLjk4NzMwNDcgMy4yNDY2NDA2MiwyMy45ODczMDQ3IDQuMTkxODU5MzcsMjMuMDQzODk4NCBaIiBpZD0iU2hhcGUiPjwvcGF0aD4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0yMS4wMDcxMDE2LDg5Ljc3NTM5MDYgQzIxLjAwNzEwMTYsOTEuMTEwMDcwMyAyMi4wODY4OTg0LDkyLjE5MzI2NTYgMjMuNDIxMzUxNiw5Mi4xOTMyNjU2IEMyNC4wOTAzOTA2LDkyLjE5MzI2NTYgMjQuNjk1NzY1Niw5MS45MjI1MjM0IDI1LjEzMTIxODgsOTEuNDgzNDQ1MyBMMzMuNTgxMzIwMyw4My4wMzUxNTYzIEMzNi42ODI1MDc4LDg1LjM3NTA5MzggNDAuMzg1MjE4OCw4Ni41NDg2ODc1IDQ0LjA5MTc4MTMsODYuNTQ4Njg3NSBDNDguNTQ4NzE4OCw4Ni41NDg2ODc1IDUzLjAwNTY1NjMsODQuODUzMDkzOCA1Ni40MTQ3NDIyLDgxLjQ2MTY3OTcgQzY3LjU2OTMyMDMsNzAuMzY3MTQwNiA2Ni40MTU0Mzc1LDQ2LjkwMDI1IDY2LjQxNTQzNzUsNDYuOTAwMjUgQzY2LjQxNTQzNzUsNDYuOTAwMjUgNjUuNTkwNTIzNCw0Ni44NTYwNzAzIDY0LjE4MTc1NzgsNDYuODU2MDcwMyBDNTguMDYwOTQ1Myw0Ni44NTYwNzAzIDQwLjg2NzExNzIsNDcuNzAwNDY4OCAzMS44MDA5OTIyLDU2LjcxNjc1IEMyNS41MzUxNzk3LDYyLjk1MDg0MzggMjQuOTgyODIwMyw3Mi43NTQ4ODI4IDMwLjE2MjAzOTEsNzkuNjE3MjM0NCBMMjEuNzE1NTYyNSw4OC4wNjU1MjM0IEMyMS4yNzYwMzEyLDg4LjUwNDYwMTYgMjEuMDA3MTAxNiw4OS4xMDgxNjQxIDIxLjAwNzEwMTYsODkuNzc1MzkwNiBaIE0zNS4yMDk2MjUsNjAuMTQzNTA3OCBDMzguNDQ1MTY0MSw1Ni45Mjc0NTMxIDQzLjQ1Nzg1OTQsNTQuNTY2MjE4OCA1MC4xMTY3NTc4LDUzLjEyODkwNjMgQzU0LjQyNTA3MDMsNTIuMTk3OTYwOSA1OC41NzA0ODQ0LDUxLjg1NjMwNDcgNjEuNTQ3NTE1Niw1MS43NDEyMTA5IEM2MS40NTg5Mjk3LDUzLjgxMjIxODggNjEuMjUzNjY0MSw1Ni40MzUzNTk0IDYwLjgxODIxMDksNTkuMjkyMDg1OSBDNTkuOTE4OTg0NCw2NS4xOTE1NDY5IDU3LjgzMzkyOTcsNzMuMjMyNzAzMSA1My4wMDg4MjgxLDc4LjAzNDkyMTkgQzUwLjYyMjg5ODQsODAuNDA4NjE3MiA0Ny40NTQ0MjE5LDgxLjcxNDc1IDQ0LjA5MTU1NDcsODEuNzE0NzUgQzQxLjU0MjcyNjYsODEuNzE0NzUgMzkuMTEwODA0Nyw4MC45NjU5NjA5IDM3LjA0MzQyMTksNzkuNTczMDU0NyBMNDcuMzQ0OTkyMiw2OS4yNzE0ODQ0IEM0Ny43ODQwNzAzLDY4LjgzMjQwNjMgNDguMDUzLDY4LjIyODg0MzggNDguMDUzLDY3LjU2MTYxNzIgQzQ4LjA1Myw2Ni4yMjUzNTE2IDQ2Ljk3MzIwMzEsNjUuMTQzNzQyMiA0NS42Mzg3NSw2NS4xNDM3NDIyIEM0NC45Njk3MTA5LDY1LjE0Mzc0MjIgNDQuMzY0MzM1OSw2NS40MTQ0ODQ0IDQzLjkyNTI1NzgsNjUuODUzNTYyNSBMMzMuNjMwNzEwOSw3Ni4xNTE1MDc4IEMzMC4zMjQ0ODQ0LDcxLjIyNzM5ODQgMzAuODU1MzIwMyw2NC40NzY1MTU2IDM1LjIwOTYyNSw2MC4xNDM1MDc4IFoiIGlkPSJTaGFwZSI+PC9wYXRoPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=" class="result-container-2-icon" alt="icon">
+                  <h3 class="d-none d-lg-block search-result-sub-head">רכש ירוק</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- search result -->
+            <div class="result-container-3">
+              <div class="right-line"></div>
+              <div class="content-wrapper d-flex justify-content-between align-items-start align-items-lg-center h-100">
+
+                <!-- search result details-->
+                <div class="details-wrapper">
+                  <div>
+                    <h3 class="d-lg-none search-result-sub-head">מילון</h3>
+                    <h2>מפת״ח (נוהל)</h2>
+                    <p>מינהל הרכש הממשלתי והמשרד להגנת הסביבה מעוניינים לבחון פתרונות המסייעים לשיפור הביצועים הסביבתיים של הממשלה, כחלק מהמהלכים לעידוד חדשנות ולפיתוח מנגנוני דיאלוג עם השוק …</p>
+                  </div> 
+                </div>
+                <div class="logo-container d-lg-flex flex-column align-items-center">
+                  <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTE2cHgiIGhlaWdodD0iMTE2cHgiIHZpZXdCb3g9IjAgMCAxMTYgMTE2IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IHNrZXRjaHRvb2wgNDguMiAoNDczMjcpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPkMyMjJGQjhFLTZEMjgtNEJDNy1BRTU1LTAxMjYzRDgyOTVDMzwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggc2tldGNodG9vbC48L2Rlc2M+CiAgICA8ZGVmcz4KICAgICAgICA8cmVjdCBpZD0icGF0aC0xIiB4PSIwIiB5PSIwIiB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIzMDgiPjwvcmVjdD4KICAgICAgICA8ZmlsdGVyIHg9Ii0wLjUlIiB5PSItMi4xJSIgd2lkdGg9IjEwMS4xJSIgaGVpZ2h0PSIxMDUuNSUiIGZpbHRlclVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgaWQ9ImZpbHRlci0zIj4KICAgICAgICAgICAgPGZlT2Zmc2V0IGR4PSIwIiBkeT0iMiIgaW49IlNvdXJjZUFscGhhIiByZXN1bHQ9InNoYWRvd09mZnNldE91dGVyMSI+PC9mZU9mZnNldD4KICAgICAgICAgICAgPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMi41IiBpbj0ic2hhZG93T2Zmc2V0T3V0ZXIxIiByZXN1bHQ9InNoYWRvd0JsdXJPdXRlcjEiPjwvZmVHYXVzc2lhbkJsdXI+CiAgICAgICAgICAgIDxmZUNvbG9yTWF0cml4IHZhbHVlcz0iMCAwIDAgMCAwICAgMCAwIDAgMCAwICAgMCAwIDAgMCAwICAwIDAgMCAwLjE1IDAiIHR5cGU9Im1hdHJpeCIgaW49InNoYWRvd0JsdXJPdXRlcjEiPjwvZmVDb2xvck1hdHJpeD4KICAgICAgICA8L2ZpbHRlcj4KICAgIDwvZGVmcz4KICAgIDxnIGlkPSJEaWN0aW9uYXJ5LWJsdWUtMi1jb2xvcnMiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMzM1LjAwMDAwMCwgLTMyNS4wMDAwMDApIj4KICAgICAgICA8ZyBpZD0iR3JvdXAtMTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDAwMDAwLCAyMzAuMDAwMDAwKSI+CiAgICAgICAgICAgIDxnIGlkPSJzdG9jay12ZWN0b3ItdGhpbi1saW5lLWZsYXQtZGVzaWduLWNvbmNlcHQtZm9yLWNvbnRhY3QtYmFubmVyLWNvbmNlcHQtZm9yLXdlYnNpdGUtYmFubmVycy1hbmQtcHJvbW90aW9uYWwtMjkzNjUxOTYzIj4KICAgICAgICAgICAgICAgIDxtYXNrIGlkPSJtYXNrLTIiIGZpbGw9IndoaXRlIj4KICAgICAgICAgICAgICAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNwYXRoLTEiPjwvdXNlPgogICAgICAgICAgICAgICAgPC9tYXNrPgogICAgICAgICAgICAgICAgPGcgaWQ9Ik1hc2siPgogICAgICAgICAgICAgICAgICAgIDx1c2UgZmlsbD0iYmxhY2siIGZpbGwtb3BhY2l0eT0iMSIgZmlsdGVyPSJ1cmwoI2ZpbHRlci0zKSIgeGxpbms6aHJlZj0iI3BhdGgtMSI+PC91c2U+CiAgICAgICAgICAgICAgICAgICAgPHVzZSBmaWxsPSIjRkZGRkZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHhsaW5rOmhyZWY9IiNwYXRoLTEiPjwvdXNlPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgICAgIDxnIGlkPSJHcm91cC0yIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMzM1LjAwMDAwMCwgMzI1LjAwMDAwMCkiIGZpbGw9IiM2MjY2QTYiIGZpbGwtcnVsZT0ibm9uemVybyI+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik00NS4xNjgxNDE2LDExLjI5MjAzNTQgQzI2LjQ5MDUwNDcsMTEuMjkyMDM1NCAxMS4yOTIwMzU0LDI2LjQ5MDUwNDcgMTEuMjkyMDM1NCw0NS4xNjgxNDE2IEMxMS4yOTIwMzU0LDYzLjg0NTc3ODUgMjYuNDkwNTA0Nyw3OS4wNDQyNDc4IDQ1LjE2ODE0MTYsNzkuMDQ0MjQ3OCBDNjMuODQ1Nzc4NSw3OS4wNDQyNDc4IDc5LjA0NDI0NzgsNjMuODQ1Nzc4NSA3OS4wNDQyNDc4LDQ1LjE2ODE0MTYgQzc5LjA0NDI0NzgsMjYuNDkwNTA0NyA2My44NDU3Nzg1LDExLjI5MjAzNTQgNDUuMTY4MTQxNiwxMS4yOTIwMzU0IFogTTQ1LjE2ODE0MTYsNzUuMjkwNDA5IEMyOC41NzM0Mjc0LDc1LjI5MDQwOSAxNS4wNDU4NzQyLDYxLjc4NTc0NSAxNS4wNDU4NzQyLDQ1LjE2ODE0MTYgQzE1LjA0NTg3NDIsMjguNTUwNTM4MSAyOC41NTA1MzgxLDE1LjA0NTg3NDIgNDUuMTY4MTQxNiwxNS4wNDU4NzQyIEM2MS43ODU3NDUsMTUuMDQ1ODc0MiA3NS4yOTA0MDksMjguNTUwNTM4MSA3NS4yOTA0MDksNDUuMTY4MTQxNiBDNzUuMjkwNDA5LDYxLjc4NTc0NSA2MS43NjI4NTU4LDc1LjI5MDQwOSA0NS4xNjgxNDE2LDc1LjI5MDQwOSBaIiBpZD0iU2hhcGUiPjwvcGF0aD4KICAgICAgICAgICAgPHBhdGggZD0iTTIwLjUzMDk3MzUsNDcuMjIxMjM4OSBMMjQuMzMzOTMwNSw0Ny4yMjEyMzg5IEMyNC4zMzM5MzA1LDM0LjYwNjU1MjIgMzQuNjA2NTUyMiwyNC4zMzM5MzA1IDQ3LjIyMTIzODksMjQuMzMzOTMwNSBMNDcuMjIxMjM4OSwyMC41MzA5NzM1IEMzMi40OTYzNzQ4LDIwLjUzMDk3MzUgMjAuNTMwOTczNSwzMi40OTYzNzQ4IDIwLjUzMDk3MzUsNDcuMjIxMjM4OSBaIiBpZD0iU2hhcGUiPjwvcGF0aD4KICAgICAgICAgICAgPHBhdGggZD0iTTg5LjEyMzYyMiw3My4xODUwMzk0IEw4Ni40NzQ4MDMxLDc1LjgzMzg1ODMgTDgxLjc3MDg2NjEsNzEuMTI5OTIxMyBDODcuMDIyODM0Niw2My43NTQzMzA3IDkwLjEyODM0NjUsNTQuNzU3NDgwMyA5MC4xMjgzNDY1LDQ1LjAyOTkyMTMgQzkwLjEyODM0NjUsMjAuMjA4NjYxNCA2OS45MTk2ODUsMCA0NS4wNzU1OTA2LDAgQzIwLjIzMTQ5NjEsMCAwLDIwLjIwODY2MTQgMCw0NS4wNzU1OTA2IEMwLDY5Ljk0MjUxOTcgMjAuMjA4NjYxNCw5MC4xNTExODExIDQ1LjA3NTU5MDYsOTAuMTUxMTgxMSBDNTQuODAzMTQ5Niw5MC4xNTExODExIDYzLjgsODcuMDQ1NjY5MyA3MS4xNTI3NTU5LDgxLjc5MzcwMDggTDc1Ljg1NjY5MjksODYuNDk3NjM3OCBMNzMuMjA3ODc0LDg5LjE0NjQ1NjcgTDEwMC4wNjE0MTcsMTE2IEwxMDIuNzEwMjM2LDExMy4zNTExODEgTDc4LjUwNTUxMTgsODkuMTIzNjIyIEw4OS4xMjM2MjIsNzguNTA1NTExOCBMMTEzLjM1MTE4MSwxMDIuNzMzMDcxIEwxMTYsMTAwLjA4NDI1MiBMODkuMTIzNjIyLDczLjE4NTAzOTQgWiBNMy43NDQ4ODE4OSw0NS4wNzU1OTA2IEMzLjc0NDg4MTg5LDIyLjI4NjYxNDIgMjIuMjg2NjE0MiwzLjc2NzcxNjU0IDQ1LjA1Mjc1NTksMy43Njc3MTY1NCBDNjcuODE4ODk3NiwzLjc2NzcxNjU0IDg2LjM2MDYyOTksMjIuMzA5NDQ4OCA4Ni4zNjA2Mjk5LDQ1LjA3NTU5MDYgQzg2LjM2MDYyOTksNjcuODQxNzMyMyA2Ny44MTg4OTc2LDg2LjM4MzQ2NDYgNDUuMDUyNzU1OSw4Ni4zODM0NjQ2IEMyMi4yODY2MTQyLDg2LjM4MzQ2NDYgMy43NDQ4ODE4OSw2Ny44NDE3MzIzIDMuNzQ0ODgxODksNDUuMDc1NTkwNiBaIE03NC4xNDQwOTQ1LDc5LjQ2NDU2NjkgQzc2LjA2MjIwNDcsNzcuODQzMzA3MSA3Ny44NDMzMDcxLDc2LjA2MjIwNDcgNzkuNDY0NTY2OSw3NC4xNDQwOTQ1IEw4My44MjU5ODQzLDc4LjUwNTUxMTggTDc4LjUwNTUxMTgsODMuODAzMTQ5NiBMNzQuMTQ0MDk0NSw3OS40NjQ1NjY5IFoiIGlkPSJTaGFwZSI+PC9wYXRoPgogICAgICAgICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlLXBhdGgiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDkwLjMzNjI4MywgOTAuMzM2MjgzKSByb3RhdGUoMTM1LjAwMDAwMCkgdHJhbnNsYXRlKC05MC4zMzYyODMsIC05MC4zMzYyODMpICIgeD0iODguMjgzMTg1OCIgeT0iODguMjgzMTg1OCIgd2lkdGg9IjQuMTA2MTk0NjkiIGhlaWdodD0iNC4xMDYxOTQ2OSI+PC9yZWN0PgogICAgICAgICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlLXBhdGgiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDk1LjQ2OTAyNywgOTUuNDY5MDI3KSByb3RhdGUoLTEzNS4wMDAwMDApIHRyYW5zbGF0ZSgtOTUuNDY5MDI3LCAtOTUuNDY5MDI3KSAiIHg9IjkzLjQxNTkyOTIiIHk9IjkzLjQxNTkyOTIiIHdpZHRoPSI0LjEwNjE5NDY5IiBoZWlnaHQ9IjQuMTA2MTk0NjkiPjwvcmVjdD4KICAgICAgICAgICAgPHJlY3QgaWQ9IlJlY3RhbmdsZS1wYXRoIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMDAuNjAxNzcwLCAxMDAuNjAxNzcwKSByb3RhdGUoNDQuOTkxODk3KSB0cmFuc2xhdGUoLTEwMC42MDE3NzAsIC0xMDAuNjAxNzcwKSAiIHg9Ijk4LjU0ODY3MjYiIHk9Ijk4LjU0ODY3MjYiIHdpZHRoPSI0LjEwNjE5NDY5IiBoZWlnaHQ9IjQuMTA2MTk0NjkiPjwvcmVjdD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==" class="result-container-3-icon" alt="icon">
+                  <h3 class="d-none d-lg-block search-result-sub-head">מילון</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- search result -->
+            <div class="result-container-4">
+              <div class="right-line"></div>
+              <div class="content-wrapper d-flex justify-content-between align-items-start align-items-lg-center h-100">
+
+                <!-- search result details-->
+                <div class="details-wrapper">
+                  <img src="/assets/health-department-logo.1d26e460.svg" class="health-department-logo" alt="logo">
+                  <div>
+                    <h3 class="d-lg-none search-result-sub-head">מכרזים</h3>
+                    <h2>אספקת מחשבים עבור משרדי ממשלה</h2>
+                    <span>מספר הפרסום במנו״ף: </span> 2-2013 
+                    <span class="d-none d-lg-inline-block">&nbsp&nbsp|&nbsp&nbsp</span><br class="d-lg-none">
+                    <span>סטטוס: </span> עודכן <br>
+                    <span>תאריך פרסום: </span> 28/08/2017 <br class="d-lg-none">
+                    <span class="d-none d-lg-inline-block">&nbsp&nbsp|&nbsp&nbsp</span>
+                    <span>מועד עדכון אחרון: </span> 27/11/2017 <br>
+                    <span>מועד אחרון להגשה: </span> 07/10/2013, 23:59 
+                  </div> 
+                </div>
+                <div class="logo-container d-lg-flex flex-column align-items-center">
+                  <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNzdweCIgaGVpZ2h0PSI5OXB4IiB2aWV3Qm94PSIwIDAgNzcgOTkiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogc2tldGNodG9vbCA0OS4xICg1MTE0NykgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+OTU1RkU5RTQtOTc2Ny00NTdCLUJFQUQtNzlBNDdCRDFDMUNCPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBza2V0Y2h0b29sLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJIb21lLkRlc2t0b3AiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSLXqteV16bXkNeV16ot15fXmdek15XXqSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIyNi4wMDAwMDAsIC0xNTk1LjAwMDAwMCkiPgogICAgICAgICAgICA8ZyBpZD0iR3JvdXAtMTQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIyNi4wMDAwMDAsIDE1OTUuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8ZyBpZD0ibm91bl8xNDgwODMyIiBmaWxsPSIjREY3QjExIiBmaWxsLXJ1bGU9Im5vbnplcm8iPgogICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik03NC40NTksODEuNjc1IEw3Nyw3OS4wNDUzMTI1IEw3NywyMy45NzY1NjI1IEw1MS41OSwwIEw2LjA4MywwIEMyLjY5NSwwIDAsMi43ODQzNzUgMCw2LjE4NzUgTDAsOTIuODEyNSBDMCw5Ni4yMTU2MjUgMi42OTUsOTkgNi4wODMsOTkgTDcwLjkxNyw5OSBDNzQuMzA1LDk5IDc3LDk2LjIxNTYyNSA3Nyw5Mi44MTI1IEw3Nyw5Mi4xMTY0MDYyIEM3Ni4yMyw5Mi41ODA0Njg3IDc1LjM4Myw5Mi44MTI1IDc0LjUzNiw5Mi44MTI1IEM3NC4zMDUsOTIuODEyNSA3NC4wNzQsOTIuODEyNSA3My45Miw5Mi43MzUxNTYzIEw3My45Miw5Mi44MTI1IEM3My45Miw5NC41MTQwNjI1IDcyLjUzNCw5NS45MDYyNSA3MC45MTcsOTUuOTA2MjUgTDYuMDgzLDk1LjkwNjI1IEM0LjM4OSw5NS45MDYyNSAzLjA4LDk0LjUxNDA2MjUgMy4wOCw5Mi44MTI1IEwzLjA4LDYuMTg3NSBDMy4wOCw0LjQ4NTkzNzUgNC40NjYsMy4wOTM3NSA2LjA4MywzLjA5Mzc1IEw0OS4yOCwzLjA5Mzc1IEw0OS4yOCwxOC4zMzA0Njg3IEM0OS4yOCwyMi43MzkwNjI1IDUyLjc0NSwyNi4yOTY4NzUgNTcuMDU3LDI2LjI5Njg3NSBMNzMuOTIsMjYuMjk2ODc1IEw3My45Miw4MS4xMzM1OTM4IEw3NC40NTksODEuNjc1IFogTTU3LjA1NywyMy4yMDMxMjUgQzU0LjUxNiwyMy4yMDMxMjUgNTIuMzYsMjEuMDM3NSA1Mi4zNiwxOC4zMzA0Njg3IEw1Mi4zNiw0Ljk1IEw3MS42ODcsMjMuMjAzMTI1IEw1Ny4wNTcsMjMuMjAzMTI1IFoiIGlkPSJTaGFwZSI+PC9wYXRoPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPHJlY3QgaWQ9IlJlY3RhbmdsZS0yIiBmaWxsPSIjRkZGRkZGIiB4PSI2NiIgeT0iNzIiIHdpZHRoPSIxOSIgaGVpZ2h0PSIyMCI+PC9yZWN0PgogICAgICAgICAgICAgICAgPGcgaWQ9Im5vdW5fNjc2NjM3X2ZmZmZmZiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjQuMDAwMDAwLCA3MC4wMDAwMDApIiBmaWxsLXJ1bGU9Im5vbnplcm8iPgogICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xMC45OTk4Njk0LDE1IEMxMC40NDc1NzgsMTUgMTAsMTQuNDc5ODAyMSAxMCwxMy44Mzc5MDEgTDEwLDYuMTYyMDk5IEMxMCw1LjUyMDUwMTM4IDEwLjQ0NzU3OCw1IDEwLjk5OTg2OTQsNSBDMTEuNTUyMTYwOSw1IDEyLDUuNTIwMTk3ODggMTIsNi4xNjIwOTkgTDEyLDEzLjgzODIwNDUgQzExLjk5OTczODksMTQuNDgwMTA1NiAxMS41NTE4OTk3LDE1IDEwLjk5OTg2OTQsMTUgWiIgaWQ9IlNoYXBlIiBmaWxsPSIjREY2RTExIj48L3BhdGg+CiAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTEyLDE3IEMxMiwxNy41NTE5MTY5IDExLjU1MTk3NjYsMTggMTAuOTk5NjAwNywxOCBDMTAuNDQ4Mjg5NiwxOCAxMCwxNy41NTE5MTY5IDEwLDE3IEMxMCwxNi40NDc4MTY4IDEwLjQ0ODI4OTYsMTYgMTAuOTk5NjAwNywxNiBDMTEuNTUxOTc2NiwxNiAxMiwxNi40NDc4MTY4IDEyLDE3IFoiIGlkPSJTaGFwZSIgZmlsbD0iI0RGNkUxMSI+PC9wYXRoPgogICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xOC42MDUzMjEsMjkgQzE4LjM0NTMyMzEsMjkgMTguMDg3NzA1LDI4LjkwOTg1NjcgMTcuODc5MTcxMiwyOC43MzY0ODExIEwxMS4yODE2NDkzLDIzLjIzMTczMDQgTDIuNTUzMjc0ODcsMjMuMjMxNzMwNCBDMS4xNDU1OTcyOSwyMy4yMzE3MzA0IDAsMjIuMDc0NTkxIDAsMjAuNjUyNzMwNyBMMCwyLjU3ODk5OTcyIEMwLDEuMTU2ODM4OTggMS4xNDU1OTcyOSwwIDIuNTUzMjc0ODcsMCBMMjAuNDQ2NzI1MSwwIEMyMS44NTQ0MDI3LDAgMjMsMS4xNTY4Mzg5OCAyMywyLjU3ODk5OTcyIEwyMywyMC42NTI3MzA3IEMyMywyMi4wNzQ1OTEgMjEuODU0NDAyNywyMy4yMzE3MzA0IDIwLjQ0NjcyNTEsMjMuMjMxNzMwNCBMMTkuNzQzNzc4OCwyMy4yMzE3MzA0IEwxOS43NDM3Nzg4LDI3Ljg0OTQ3MTEgQzE5Ljc0Mzc3ODgsMjguMjk1MDc5NCAxOS40ODk0MzMsMjguNzAwNzI0MyAxOS4wOTAyMTQyLDI4Ljg5MDAyNTIgQzE4LjkzNTUyNDMsMjguOTY0MjQzMiAxOC43Njk4Mjc3LDI5IDE4LjYwNTMyMSwyOSBaIE0yLjU1MzI3NDg3LDIuMzAwNzU3NDEgQzIuNDAxNTU5ODMsMi4zMDA3NTc0MSAyLjI3ODEwNTQ0LDIuNDI1NDU1NjQgMi4yNzgxMDU0NCwyLjU3ODY5OTI0IEwyLjI3ODEwNTQ0LDIwLjY1MjQzMDIgQzIuMjc4MTA1NDQsMjAuODA1NjczOCAyLjQwMTU1OTgzLDIwLjkzMDM3MjEgMi41NTMyNzQ4NywyMC45MzAzNzIxIEwxMS42OTEyNzk5LDIwLjkzMDM3MjEgQzExLjk1NjAzNzYsMjAuOTMwMzcyMSAxMi4yMTI0NjU3LDIxLjAyMzgyMDYgMTIuNDE2ODM0OCwyMS4xOTM4OTEgTDE3LjQ2NTY3MzMsMjUuNDA2ODg4MiBMMTcuNDY1NjczMywyMi4wODA5MDEgQzE3LjQ2NTY3MzMsMjEuNDQ1NjkxMyAxNy45NzU4NTIzLDIwLjkzMDM3MjEgMTguNjA1MDIzNSwyMC45MzAzNzIxIEwyMC40NDY3MjUxLDIwLjkzMDM3MjEgQzIwLjU5ODczNzYsMjAuOTMwMzcyMSAyMC43MjE4OTQ2LDIwLjgwNTY3MzggMjAuNzIxODk0NiwyMC42NTI0MzAyIEwyMC43MjE4OTQ2LDIuNTc4Njk5MjQgQzIwLjcyMTg5NDYsMi40MjU0NTU2NCAyMC41OTg3Mzc2LDIuMzAwNzU3NDEgMjAuNDQ2NzI1MSwyLjMwMDc1NzQxIEwyLjU1MzI3NDg3LDIuMzAwNzU3NDEgWiIgaWQ9IlNoYXBlIiBmaWxsPSIjREY3QjExIj48L3BhdGg+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNOS4zODIzNTI5NCwzMy41IEw0Ny42NDgyMjMxLDMzLjUiIGlkPSJMaW5lLTIiIHN0cm9rZT0iI0RGN0IxMSIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiPjwvcGF0aD4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik05LjM4MjM1Mjk0LDQ0LjUgTDQ3LjY0ODIyMzEsNDQuNSIgaWQ9IkxpbmUtMi1Db3B5IiBzdHJva2U9IiNERjdCMTEiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIj48L3BhdGg+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNOS4zODIzNTI5NCw1NS41IEw0Ny42NDgyMjMxLDU1LjUiIGlkPSJMaW5lLTItQ29weSIgc3Ryb2tlPSIjREY3QjExIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCI+PC9wYXRoPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=" class="result-container-4-icon" alt="icon">
+                  <h3 class="d-none d-lg-block search-result-sub-head">מכרזים</h3>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="search-results-footer d-flex justify-content-center">
+          
+<div class="main-footer d-flex justify-content-center flex-column flex-lg-row align-items-center w-100">
+	<div class="footer-nav-wrapper d-flex justify-content-center align-items-center flex-column flex-lg-row">
+
+		<!-- footer navigation -->
+		<ul class="footer-nav d-flex flex-wrap justify-content-center align-items-center"> 
+			<a href="">
+				<li class="footer-item">
+					חוק חופש המידע
+				</li>
+			</a>
+			<a href="">
+				<li class="footer-item">
+					תנאי שימוש באתר
+				</li>
+			</a>
+			<a href="../sitemap/index.html">
+				<li class="footer-item">
+					מפת אתר
+				</li>
+			</a>
+			<a href="../contact-us/index.html">
+				<li class="footer-item">
+					צור קשר
+				</li>
+			</a>
+			<a href="" class="d-none d-lg-block">
+				<li class="footer-item">
+					מופעל ע"י מרכב"ה
+				</li>
+			</a>
+		</ul>
+
+		<!-- logo mobile -->
+		<div class="logo-merkava-warpper d-lg-none d-flex">
+			<p class="d-lg-none merkava-p">מופעל ע״י מרכב״ה</p>
+			<img src="/assets/logo-merkava.e03521e8.svg"
+	     		class="logo-merkava">
+		</div>
+
+		<!-- logo lg -->
+ 		<img src="/assets/logo-merkava.e03521e8.svg"
+ 		class="logo-merkava-lg d-none d-lg-block">
+	</div>
+</footer>
+      </footer>
+    </div>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.8.0/parsley.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous">
+</script>
+<!-- <script src="//code.jquery.com/jquery.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.6/js/swiper.min.js">
+</script>
+<script src='https://www.google.com/recaptcha/api.js?v=2'></script>
+
+    <script type="text/javascript" src='/common/common.min.js'></script>
+  <script type="text/javascript" src="/search-results/search-results.min.js"></script></body>
+</html>

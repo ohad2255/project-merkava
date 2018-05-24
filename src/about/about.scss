@@ -44,7 +44,7 @@
 			//height: 104%;
 			height: 100%;
 			border-radius: 4px;
-			background-color: #1c6897;
+			background-color: $cobalt;
 
 			@media (min-width: $screen-lg-min) {
 				width: 11px;
@@ -153,11 +153,11 @@
 
 		.about-body-wrapper {
 			width: 100%;
-			margin:0 0 77px 0;
+			margin:0 0 169px 0;
 			padding: 20px 10px 0;
 
 			@media (min-width: $screen-lg-min) {
-				margin:0 0 190px 0;
+				margin:0 0 347px 0;
 				padding: 55px 20px 0;
 			}
 
@@ -227,6 +227,7 @@
 							position: absolute;
 							left: 9px;
 							top: 9px;
+							right: auto;
 
 							@media (min-width: $screen-lg-min) {
 								height: 141px;
@@ -242,12 +243,14 @@
 							position: absolute;
 							left: 9px;
 							top: 9px;
+							right: auto;
 
 							@media (min-width: $screen-lg-min) {
 								width: 171px;
 								height: 176px;
 								top: 38px;
 								left: 97px;
+
 							}	
 						}
 					}
@@ -350,6 +353,7 @@
 					height: 13px; 
 					position: absolute;
 					left: 10px;
+					right: auto;
 					bottom: 9px;
 
 					@media (min-width: $screen-lg-min) {
@@ -567,11 +571,11 @@
 				}
 
 				.links-wrapper {
-					margin: 0 0 20px 0;
+					// margin: 0 0 20px 0;
 
-					@media (min-width: $screen-lg-min) {
-						margin: 0 0 8px 0;
-					}
+					// @media (min-width: $screen-lg-min) {
+					// 	margin: 0 0 8px 0;
+					// }
 				}
 
 				.links-sub-head {
