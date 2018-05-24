@@ -97,17 +97,26 @@
                     <div class="input-bullet"></div>
 
                     <!-- show password button -->
-                    <div id="showPassword" role="button" tabindex="0">הצג סיסמא</div>
+                    <div id="showPasswordEye" role="button" tabindex="0">
+                      <img src="../common/img/password-eye-disabled.svg">
+                    </div>
+
+                    <div id="showPasswordEyeShow" class="d-none" role="button" tabindex="0">
+                      <img src="../common/img/password-eye-show.svg">
+                    </div>
 
                     <!-- password input -->
                     <input type="password" id="inputPasswordReg" type="password" pattern="(?=.*\d)(?=.*[A-Z]).{8,}" class="form-control password-input" id="InputPasswordSignIn" placeholder="סיסמא" data-toggle="password" data-required="" data-parsley-validate-if-empty data-parsley-error-message="סיסמא צריכה להכיל 8 תווים לפחות, לכלול מספרים, תווים ולפחות אות אחת גדולה">
                     <label class="sr-only" for="inputPasswordReg"></label>
+                    <p class="hint">
+                      סיסמא צריכה להיות בת 8 תוים עם סיפרה וסימן מיוחד
+                    </p>
                   </div>
                   <div class="form-group password-confirm">
                     <div class="input-bullet"></div>
 
                     <!-- show confirm password button -->
-                    <div id="showPasswordConfirm" role="button" tabindex="0">הצג סיסמא</div>
+                    <!-- <div id="showPasswordConfirm" role="button" tabindex="0">הצג סיסמא</div> -->
 
                     <!-- confirm password input -->
                     <input type="password" class="form-control" id="inputPasswordConfirmReg"  placeholder="אימות סיסמא"  data-parsley-error-message="סיסמא אינה תואמת"  data-parsley-equalto="#inputPasswordReg" required>
@@ -115,12 +124,11 @@
                   </div>
                 </div>
 
-
-                <div class="recaptcha-container w-100">
-
-                  <!-- recaptcha -->
+                <!-- recaptcha -->
+                <!-- div class="recaptcha-container w-100">
                   <div class="g-recaptcha" data-sitekey="6LcTeEAUAAAAAEqaDHyi2iLhTbV5usvBszRIErrF"></div>
-                </div>
+                </div> -->
+                
                 <div class="registration-button">
 
                   <!-- registration button -->
