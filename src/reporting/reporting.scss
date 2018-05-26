@@ -29,27 +29,25 @@
 		background-repeat: no-repeat;
 		background-size: contain;
 		height: 205px;
-		background-position: bottom;
+		background-position: bottom left;
 
 		@media (min-width: $screen-lg-min) {
             background-image: url('../common/img/reporting-top-sec-background.png');
             min-height: 308px;
-            background-position: left;
+            background-position: bottom left;
        	}
 
        	.right-line {
 			position: absolute;
 			right: 0;
-			//top: -4px;
+			left: auto;
 			width: 5px;
-			//height: 104%;
 			height: 100%;
 			border-radius: 4px;
 			background-color: $cobalt;
 
 			@media (min-width: $screen-lg-min) {
 				width: 11px;
-				//top: -7px;
 			}
 		}
 

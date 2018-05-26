@@ -58,7 +58,6 @@
 
 						@media (min-width: $screen-lg-min) {
 							font-size: 6.2rem;
-							text-align: right;
 						}	
 					}
 
@@ -74,7 +73,6 @@
 
 						@media (min-width: $screen-lg-min) {
 							max-width: 396px;
-							text-align: right;
 							line-height: 1.75;
 						}	
 					}
@@ -103,21 +101,12 @@
 
 		            .parsley-errors-list.filled {
 		            	right: 15px;
+		            	left: auto;
 		            }
 
 		            .form-group-password {
 		            	display: relative;
-						// .parsley-errors-list {
-						// 	bottom: -27px;
-
-						// 	@media (min-width: $screen-sm-min) {
-						// 		bottom: -20px;
-						// 	}
-
-						// 	@media (min-width: $screen-lg-min) {
-						// 		bottom: -30px;
-						// 	}
-						// }
+						
 
 						input.parsley-error {
 							//margin: 0;
@@ -126,6 +115,7 @@
 						#showPassword {
 							position: absolute;
 							left: 10px;
+							right: auto;
 							top: -22px;
 							font-size: 1.6rem;
 							font-weight: 500;
@@ -179,7 +169,7 @@
 
 						@media (max-width: 375px) {
 							transform: scale(0.84);
-    						margin-right: -17px;
+    						margin: 0 -17px 0 0;
 						}
 
 						.g-recaptcha {
@@ -236,8 +226,7 @@
 					    vertical-align: middle;
 					    background:$main-white left top no-repeat;
 					    cursor:pointer;
-					    margin-left: 11px;
-					    margin-bottom: 1px;
+					    margin: 0 0 1px 11px;
 					}
 
 					input[type="checkbox"]:checked + label span {
@@ -336,7 +325,6 @@
 
 						@media (min-width: $screen-lg-min) {
 							font-size: 6.2rem;
-							text-align: right;
 						}	
 					}
 
@@ -352,7 +340,6 @@
 						margin-bottom: 15px;
 
 						@media (min-width: $screen-lg-min) {
-							text-align: right;
 							line-height: 1.75;
 							margin-bottom: 0;
 						}	
@@ -363,13 +350,11 @@
 					margin: 0;
 
 					@media (min-width: $screen-lg-min) {
-						margin-right: 53px;
-						margin-top: 29px;
+						margin: 29px 53px 0 0; 
 					}
 
 					@media (min-width: $screen-xl-min) {
-						margin-right: 90px;
-						margin-top: 29px;
+						margin: 29px 90px 0 0; 
 					}	
 					
 

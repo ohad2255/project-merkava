@@ -33,7 +33,6 @@
 		background-size: contain;
 		margin: 0 0 5px 0;
 		background-position: left top;
-		//padding:0 0 28px 0;
 
 		@media (min-width: $screen-lg-min) {
 			height: auto;
@@ -46,6 +45,7 @@
 		.right-line {
 			position: absolute;
 			right: 0;
+			left: auto;
 			top: 0;
 			width: 5px;
 			height: 100%;
@@ -72,7 +72,7 @@
 			.q-and-a-breadcrumb-wrapper {
 
 				@media (min-width: $screen-lg-min) {
-					margin: 0 140px 35px 0;
+					margin: 0 160px 35px 0;
 				}
 
 				.breadcrumb {
@@ -118,18 +118,14 @@
 
 				.q-and-a-top-icon {
 					order: 1;
-					width: 55px;
+					width: auto;
 					height: 47px;
 					margin: 0 0 6px 0;
 
 					@media (min-width: $screen-lg-min) {
-						width: 116px;
+						width: 136px;
 						height: 116px;
 						margin: 0 0 0 24px;
-						//position: absolute;
-						top: 0;  
-					    right: -168px;
-					    top: 10px;
 					}
 				}	
 
@@ -184,8 +180,8 @@
 		
 
 		@media (min-width: $screen-lg-min) {
-			padding: 0 20px 100px;
-			margin: 0px auto 0;
+			padding: 0 20px 0;
+			margin: 0px auto 107px;
 			max-width: 1262px;
 		}	
 
@@ -416,6 +412,7 @@
 		.collapse-buttons-wrapper {
 			position: absolute;
 			left: 0;
+			right: auto;
 			top: -41px;
 			padding: 0 10px;
 			margin:0 0 0 10px;

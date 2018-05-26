@@ -24,26 +24,23 @@
 		height: 205px;
 		background-color: $main-white;
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
-		background-image: url('../common/img/sitemap@3x.png');
+		background-image: url('../common/img/sitemap.png');
 		background-repeat: no-repeat;
 		background-size: contain;
-		background-position: top;
-		background-position-x: 0;
-		background-position-y: 5px;
+		background-position: left top;
 
 		@media (min-width: $screen-lg-min) {
 			height: auto;
-			background-size: initial;
 			min-height: 308px;
-			background-size: cover;
-			background-position: left;
-			background-position-y: 55px;
-			background-position-x: 11px;
+			background-size: auto;
+			background-position: left 54px;
+
 		}
 
 		.right-line {
 			position: absolute;
 			right: 0;
+			left: auto;
 			top: 0;
 			width: 5px;
 			height: 100%;

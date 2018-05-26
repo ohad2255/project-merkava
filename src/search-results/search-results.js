@@ -90,7 +90,7 @@ $(document).ready(function() {
  //            $('#datepicker1').data("datepicker").maxDate(e.date);
  //        });
  //    });
-debugger
+ 
 $('.datepicker').each(function() {
     $(this).data('pikaday', new Pikaday({ field: this }));
 });

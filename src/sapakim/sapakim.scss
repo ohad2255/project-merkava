@@ -44,6 +44,7 @@
 		.right-line {
 			position: absolute;
 			right: 0;
+			left: auto;
 			top: 0;
 			width: 5px;
 			height: 100%;
@@ -130,10 +131,6 @@
 						width: 116px;
   						height: 116px;
 						margin: 0;
-						//position: absolute;
-						top: 0;  
-					    right: -150px;
-					    top: 10px;
 					}
 				}	
 

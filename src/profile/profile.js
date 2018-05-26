@@ -14,8 +14,8 @@ $(document).ready(function() {
 
 
 $(document).ready(function() {
-    $("#showPasswordConfirmProfile").on('click', function() {
-        var input = $("#newPasswordConfirmation");
+    $("#showPasswordConfirm").on('click', function() {
+        var input = $("#inputPasswordConfirmProfile");
 
         if (input.attr("type") === "password") {
             input.attr("type", "text");

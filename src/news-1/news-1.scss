@@ -40,6 +40,7 @@
 		.right-line {
 			position: absolute;
 			right: 0;
+			left: auto;
 			top: 0;
 			width: 5px;
 			height: 100%;
@@ -233,7 +234,6 @@
 					border-radius: 2.1px;
 					background-color: #fff;
 					box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15);
-					text-align: right;
 					width: 293px;
 					height: 160px;
 					padding: 20px 14px 0 0;
@@ -305,6 +305,7 @@
 			position: absolute;
 			bottom: 0;
 			left: 0;
+			right: auto;
 
 			.print {
 				margin: 0 15px 0 0;
@@ -366,6 +367,7 @@
 	        z-index: 10;
 	        margin: 12px -22px 0 0;
 	        right: 50%;
+	        left: auto;
 
 	        .swiper-pagination-bullet {
 	        	height: 8px;

@@ -25,10 +25,34 @@
   font-weight: 400;
 }
 
+// @font-face {
+//   font-family: 'FbReforma';
+//   src: url("../fonts/fbreformaen-medium-webfont.woff") format("woff");
+//   font-weight: 500;
+// }
+
 @font-face {
   font-family: 'FbReforma';
   src: url("../fonts/fbreformaen-bold-webfont.woff") format("woff");
-  font-weight: 500;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'fbagol';
+  src: url("../fonts/fbagol-lightwebfont.woff") format("woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'fbagol';
+  src: url("../fonts/fbagol-regularwebfont.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'fbagol';
+  src: url("../fonts/fbagol-boldwebfont.woff") format("woff");
+  font-weight: 800;
 }
 
 
@@ -36,6 +60,7 @@ html {
   direction: rtl;
   font-size: 10px;
   text-align: right;
+  font-family: $main-font;
 }
 
 body {
@@ -106,6 +131,10 @@ button {
   ~.help-block{
     display:none;
   }
+}
+
+.password-wrapper .parsley-custom-error-message {
+  background-color: $main-white;
 }
 
 .mobile-menu-open .main-content-wrapper {

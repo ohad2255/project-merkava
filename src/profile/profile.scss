@@ -10,35 +10,16 @@
 		padding: 0;
 		min-height: 205px;
         height: auto;
+        background-image: url('../common/img/placeholde.svg');
+		object-fit: contain;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: left 22px;
 
 		@media (min-width: $screen-lg-min) {
             min-height: 308px;
-            //height: auto;
+            background-position: left 40px;
        	}
-
-		.background-img-top-sec {
-			background-image: url('../common/img/placeholde.svg');
-			position: absolute; 
-			bottom: 0;
-			width: 100%;
-  			height: 100%;
-			object-fit: contain;
-			opacity: 0.3;
-			mix-blend-mode: overlay;
-			background-size: contain;
-			background-repeat: no-repeat;
-			background-position: left;
-			bottom: 0;
-			left: 0;
-			z-index: 1;
-			background-position-y: 22px;
-
-			@media (min-width: $screen-lg-min) {
-
-           	}
-
-			
-		}
 
 		.top-sec-container {
 			width: 100%;
@@ -197,6 +178,7 @@
 				background-color: $header-blue;
 				border-radius: 50%;
 				right: 11px;
+				left: auto;
 				top: 50%;
 				margin: -4px 0 0 0;
 
@@ -220,6 +202,7 @@
 				    pointer-events: none;
 				    top: 18px;
 				    left: 17px;
+				    right: auto;
 				}
 
 				#languageReg {
@@ -285,7 +268,7 @@
 			} 
 
 			#inputPasswordProfile {
-				margin: 0 0 10px 0;
+				//margin: 0 0 10px 0;
 
 				@media (min-width: $screen-lg-min) {
                     margin: 0;
@@ -293,7 +276,7 @@
 			}
 
 			.password {
-				margin: 0 0 30px 0;
+				margin: 0 0 40px 0;
 
 				.hint {
 					opacity: 0.51;
@@ -303,9 +286,8 @@
 					font-stretch: normal;
 					line-height: normal;
 					letter-spacing: 0.6px;
-					text-align: right;
 					color: #6a768a;
-					margin: -8px 25px 0 0;
+					margin: 0 25px 0 0;
 					position: absolute;
 					display: none;
 
@@ -333,6 +315,7 @@
 	           	#showPasswordConfirm {
 					position: absolute;
 					left: 10px;
+					right: auto;
 					top: -23px;
 					font-size: 1.6rem;
 					font-weight: 500;
@@ -346,6 +329,7 @@
 				#showPasswordConfirmProfile {
 					position: absolute;
 					left: 10px;
+					right: auto;
 					top: -23px;
 					font-size: 1.6rem;
 					font-weight: 500;
@@ -502,6 +486,7 @@
 				#showPassword {
 					position: absolute;
 					left: 10px;
+					right: auto;
 					top: -23px;
 					font-size: 1.6rem;
 					font-weight: 500;
@@ -515,6 +500,7 @@
 				#showPasswordProfile {
 					position: absolute;
 					left: 10px;
+					right: auto;
 					top: -23px;
 					font-size: 1.6rem;
 					font-weight: 500;
@@ -629,6 +615,7 @@
 				position: absolute;
 				top: 50%;
 				right: 0;
+				left: auto;
 				margin: -87px 0 0 0;
 			}
 
@@ -636,6 +623,7 @@
 				position: absolute;
 				top: 50%;
 				left: 0;
+				right: auto;
 				margin: -95px 0 0 0;
 			}
 		}

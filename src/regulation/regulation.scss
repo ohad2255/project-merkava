@@ -26,7 +26,7 @@
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
 		background-image: url('../common/img/regulation-background-img.png');
 		background-repeat: no-repeat;
-		background-size: contain;
+		background-size: auto;
 		background-position: left top;
 
 		@media (min-width: $screen-lg-min) {
@@ -39,6 +39,7 @@
 		.right-line {
 			position: absolute;
 			right: 0;
+			left: auto;
 			top: 0;
 			width: 5px;
 			height: 100%;
@@ -226,6 +227,7 @@
 							height: 44px;
 							position: absolute;
 							left: 9px;
+							right: auto;
 							top: 9px;
 
 							@media (min-width: $screen-lg-min) {
@@ -233,6 +235,7 @@
 								width: auto;
 								top: 30px;
 								left: 30px;
+								right: auto;
 							}	
 						}
 
@@ -241,6 +244,7 @@
 							height: 46px;
 							position: absolute;
 							left: 9px;
+							right: auto;
 							top: 9px;
 
 							@media (min-width: $screen-lg-min) {
@@ -248,6 +252,7 @@
 								height: 176px;
 								top: 38px;
 								left: 97px;
+								right: auto;
 							}	
 						}
 					}
@@ -306,7 +311,6 @@
 						font-stretch: normal;
 						line-height: 1.33;
 						letter-spacing: normal;
-						text-align: right;
 						color: #4e5665;
 
 						@media (min-width: $screen-lg-min) {
@@ -349,6 +353,7 @@
 					height: 13px; 
 					position: absolute;
 					left: 10px;
+					right: auto;
 					bottom: 9px;
 
 					@media (min-width: $screen-lg-min) {
@@ -356,6 +361,7 @@
     					height: 26px;
     					margin: 0;
     					left: 25px;
+    					right: auto;
     					top: 226px;
 					}	 
 				}
@@ -489,7 +495,6 @@
 						border-radius: 2.1px;
 						background-color: #fff;
 						box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15);
-						text-align: right;
 						width: 293px;
 						height: 160px;
 						padding: 10px 15px 0 0;
@@ -564,7 +569,6 @@
 						font-stretch: normal;
 						line-height: 1.75;
 						letter-spacing: normal;
-						text-align: right;
 						color: $text-dark-grey;
 					}
 				}
@@ -603,20 +607,31 @@
 		margin: 0 0 10px 10px;
 		position: absolute;
 		left: 0;
+		right: auto;
 		bottom: 0;
 
 		@media (min-width: $screen-lg-min) {
 			
 		}
+
+		.download-arrow {
+			height: 19px;
+			width: 15px;
+		}
 	}
 
-	img {
-		height: 20px;
-		width: auto;
-	}
+	// img {
+	// 	height: 20px;
+	// 	width: auto;
+	// }
 
 	.print {
 		margin: 0 15px 0 0;
+
+		img {
+		 	height: 18px;
+			width: 20px;
+		}
 	}
 
 	.hidden {
@@ -687,6 +702,7 @@
 	        z-index: 10;
 	        margin: 12px -22px 0 0;
 	        right: 50%;
+	        left: auto;
 
 	        .swiper-pagination-bullet {
 	        	height: 8px;
