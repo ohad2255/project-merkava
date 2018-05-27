@@ -274,11 +274,10 @@
 					}
 
 					.email-icon {
-						width: auto;
-	  					height: 18px;
+						width: 24px;
+	  					height: auto;
 	  					
 						@media (min-width: $screen-lg-min) {
-							width: auto;
 							display: static;
 						}
 					}

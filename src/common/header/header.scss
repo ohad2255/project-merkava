@@ -235,6 +235,7 @@ header {
             text-align: center;
             padding: 5px;
             margin-top: 3px;
+            font-family: fbagol, OpenSans;
 
             &:hover {
               background-color: #1c6897;
@@ -441,7 +442,7 @@ header {
     }
 
     .second-head {
-      font-family: HelveticaNeue;
+      font-family: fbagol, OpenSans;
       font-size: 0.8rem;
       font-weight: normal;
       font-style: normal;

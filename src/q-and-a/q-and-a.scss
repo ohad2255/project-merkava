@@ -118,13 +118,13 @@
 
 				.q-and-a-top-icon {
 					order: 1;
-					width: auto;
-					height: 47px;
+					width: 55px;
+					height: auto;
 					margin: 0 0 6px 0;
 
 					@media (min-width: $screen-lg-min) {
 						width: 136px;
-						height: 116px;
+						height: auto;
 						margin: 0 0 0 24px;
 					}
 				}	
@@ -213,6 +213,8 @@
 				letter-spacing: normal;
 				color: $text-dark-grey;
 				margin: 0 0 20px 0;
+				max-width: 1262px;
+				padding: 0 0 0 40px;
 			}
 
 			button {
@@ -283,11 +285,11 @@
 				    height: fit-content;
 				}
 
-				.collapse-arrow {
-					width: auto;
-  					height: 8px;
-  					margin: 0;
-				}
+				// .collapse-arrow {
+				// 	width: auto;
+  		// 			height: 8px;
+  		// 			margin: 0;
+				// }
 			}
 
 			.collapsed .card-header {

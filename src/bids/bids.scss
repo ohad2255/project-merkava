@@ -58,7 +58,7 @@
 
 			.bids-breadcrumb-wrapper {
 
-				margin: 32px 140px 29px 0;
+				margin: 32px 116px 29px 0;
 				max-width: 1222px;
 
 				.breadcrumb {
@@ -84,8 +84,8 @@
 				}
 
 				img {
-					height: 116px;
-					width: auto;
+					height: 92px;
+					width: 92px;
 				}
 
 				.bids-h-wrapper {
@@ -724,8 +724,8 @@
 	.winning-bidders-swiper {
 
 		@media (min-width: $screen-lg-min) {
-			margin: 0;
-			width: 536px;
+			margin: 0 0 0 30px;
+			//width: 536px;
 			position: relative;
 		}
 	}

@@ -299,7 +299,7 @@
 							font-size: 1.6rem;
 							line-height: 1.75;
 							padding: 0 0 40px 52px;
-							width: 100%;
+							width: auto;
 						}	
 					}
 
@@ -312,10 +312,12 @@
 						letter-spacing: normal;
 						text-align: right;
 						color: #4e5665;
+						padding: 0 0 40px 30px;
 
 						@media (min-width: $screen-lg-min) {
 							font-size: 2rem;
 							line-height: 1.4;
+							width: 100%;
 						}
 					}
 				}
@@ -323,6 +325,41 @@
 				.card-with-bullets-p {
 					margin: 0;
 					line-height: 1.75;
+				}
+
+				.card-p {
+					margin: 0;
+				}
+
+				.card-p::before {
+					content: '';
+					width: 6px;
+					height: 6px;
+					background-color: $cobalt;
+					border-radius: 50%;
+					display: inline-block;
+					margin: 0 0 1px 5px;
+
+					@media (min-width: $screen-lg-min) {
+						margin: 0 0 1px 8px;
+					}	
+				}
+
+				.p-with-line::before {
+					content: '';
+					width: 4px;
+					height: 2px;
+					background-color: #4e5665;
+					margin: 0 0 3px 5px;
+					display: inline-block;
+
+					@media (min-width: $screen-lg-min) {
+						margin: 0 0 1px 8px;
+					}
+				}
+
+				.p-with-line {
+					margin: 0;
 				}
 
 				.card-with-bullets-bottom-p {
@@ -369,30 +406,18 @@
 					transform: rotate(90deg);
 				}	
 
-				.p-bullet {
-					width: 6px;
-					height: 6px;
-					background-color: $cobalt;
-					border-radius: 50%;
-					display: inline-block;
-					margin: 0 0 1px 5px;
+				// .p-bullet {
+				// 	width: 6px;
+				// 	height: 6px;
+				// 	background-color: $cobalt;
+				// 	border-radius: 50%;
+				// 	display: inline-block;
+				// 	margin: 0 0 1px 5px;
 
-					@media (min-width: $screen-lg-min) {
-						margin: 0 0 3px 8px;
-					}	
-				}
-
-				.p-line {
-					width: 4px;
-					height: 2px;
-					background-color: #4e5665;
-					margin: 0 0 3px 5px;
-					display: inline-block;
-
-					@media (min-width: $screen-lg-min) {
-						margin: 0 0 0 8px;
-					}
-				}
+				// 	@media (min-width: $screen-lg-min) {
+				// 		margin: 0 0 3px 8px;
+				// 	}	
+				// }
 			}
 
 			.video-sec-head, .related-documents-head, .links-head {

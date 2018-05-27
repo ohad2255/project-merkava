@@ -63,6 +63,10 @@ html {
   font-family: $main-font;
 }
 
+html:lang(en) { 
+  font-family: fbagol, openSons;
+}
+
 body {
   text-align: right;
   font-family: $main-font;
