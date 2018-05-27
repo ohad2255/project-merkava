@@ -110,7 +110,7 @@
             <div class="form-group subject-textarea">
               <textarea class="form-control" id="subjectTextarea" placeholder="פירוט הפנייה" required data-parsley-error-message="פירוט פנייה נדרש"></textarea>
               <label class="sr-only" for="subjectTextarea"></label>
-              <div class="input-bullet"></div>
+              <div id="textAreaId" class="input-bullet"></div>
             </div>
 
             <!-- upload file input -->
@@ -123,12 +123,13 @@
                 <div class="file-button-wrapper">
                   <span class="file-button-text">צרף מסמך</span>
                   <label class="sr-only" for="customFile"></label>
-                  <input type="file" class="custom-file-input" id="customFile" name="">
+                  <input type="file" class="custom-file-input" id="customFile" name="" multiple>
                   <div class="three-upload-file-dots d-flex justify-content-between d-lg-none"> 
                     <span class="upload-file-dot"></span> 
                     <span class="upload-file-dot"></span> 
                     <span class="upload-file-dot"></span>
-                  </div>  
+                  </div>
+                  <div id="selectedFiles"></div>
                 </div>
                 <span class="dropzone-previews">
                 </span>
