@@ -322,16 +322,13 @@
 					}
 				}
 
-				.card-with-bullets-p {
+				.card-p-with-bullet, .p-with-line {
+					margin: 0;
 					margin: 0;
 					line-height: 1.75;
 				}
 
-				.card-p {
-					margin: 0;
-				}
-
-				.card-p::before {
+				.card-p-with-bullet::before {
 					content: '';
 					width: 6px;
 					height: 6px;
@@ -356,10 +353,6 @@
 					@media (min-width: $screen-lg-min) {
 						margin: 0 0 1px 8px;
 					}
-				}
-
-				.p-with-line {
-					margin: 0;
 				}
 
 				.card-with-bullets-bottom-p {
