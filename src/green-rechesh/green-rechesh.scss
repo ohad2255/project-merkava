@@ -1,25 +1,21 @@
 @import "../util/util.scss";
 
-.green-r {
+.about {
 	min-width: 330px;
-
-	#searchInput {
-		 padding: 0 0 0 22px;
-	}
 
 	.custom-container {
 		padding: 0 20px;
 	}
 
-	.nav-item-text-6 {
+	.nav-item-text-2 {
 		background-color: rgba(255, 255, 255, 0.19);
 
 		@media (min-width: $screen-lg-min) {
-			border-bottom: solid 1px #1c6897; 
-		 }
+			border-bottom: solid 1px $rechesh-green; 
+		}
 	}
 
-	.green-r-top-sec {
+	.about-top-sec {
 		position: relative;
 		height: 205px;
 		background-color: $main-white;
@@ -28,46 +24,53 @@
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: left top;
-		
+
 		@media (min-width: $screen-lg-min) {
-			height: auto;
-			background-size: auto;
-			min-height: 308px;
-			background-position: left;
+			background-image: url('../common/img/green-rechesh-top-background-pic.svg');
+			height: 308px;
+			background-position: left bottom;
+		}
+
+		@media (max-width: 340px) {
+			height: 240px;
+			box-shadow: none;
 		}
 
 		.right-line {
 			position: absolute;
 			right: 0;
-			left: auto;
-			top: 0;
+			//top: -4px;
 			width: 5px;
+			//height: 104%;
 			height: 100%;
 			border-radius: 4px;
 			background-color: $rechesh-green;
 
 			@media (min-width: $screen-lg-min) {
 				width: 11px;
+				// top: -7px;
+			}
+
+			@media (max-width: 340px) {
+				top: -6px;
+				height: 100%;
 			}
 		}
 
 		.top-sec-container {
-			max-width: 1262px;
+			max-width: 1262px; 
 			width: 100%;
 			padding: 0;
-			height: auto;
-			margin: 20px 0 0 0;
 
 			@media (min-width: $screen-lg-min) {
-				height: 297px;
-				padding: 29px 20px 0;
-				margin: 0;
+				padding: 0 20px;
 			}
 
-			.green-r-breadcrumb-wrapper {	
+			.about-breadcrumb-wrapper {
+				margin:0 34px 0 0;	
 
 				@media (min-width: $screen-lg-min) {
-					margin: 0 116px 35px 0;
+					margin: 31px 0 0 0;
 				}
 
 				.breadcrumb {
@@ -75,7 +78,7 @@
 				}
 
 				.breadcrumb-item  {
-					color: $rechesh-green;
+					color: $header-blue;
 					font-size: 1.6rem;
 					font-weight: 500;
 					font-style: normal;
@@ -85,44 +88,21 @@
 				}
 			}
 
-			.green-r-p-sec {
-				margin: 0 20px;
+			.about-p-sec {
+				margin: 73px 20px 0;
 
 				@media (min-width: $screen-lg-min) {
 					margin: 0;
 				}	
 
-				.green-r-p-container {
+				.about-p-wrapper {
 
 					@media (min-width: $screen-lg-min) {
-						//margin:29px 20px 116px 0;
+						margin:29px 0 116px 0;
 					}	
-				}
-
-				.green-r-p-wrapper {
-					order: 2;
-					margin: 0;
-
-					@media (min-width: $screen-lg-min) {
-						margin: 0 24px 0 0;
-					}
-				}
-
-				.green-top-icon {
-					order: 1;
-					width: 36px;
-					height: 47px;
-					object-fit: contain;
-					margin: 0 0 16px 0;
-
-					@media (min-width: $screen-lg-min) {
-						width: 88px;
-						height: 116px;
-						margin: 0;
-					}
 				}	
 
-				.green-r-head {
+				.about-head {
 					font-size: 3rem;
 					font-weight: 500;
 					font-style: normal;
@@ -134,12 +114,16 @@
 					@media (min-width: $screen-lg-min) {
 						font-size: 6.2rem;
 						font-weight: 500;
+						font-style: normal;
+						font-stretch: normal;
 						line-height: normal;
+						letter-spacing: normal;
+						color: $rechesh-green;
 						margin: 0 0 3px 0;
 					}	
 				}
 
-				.green-r-top-p {
+				.about-top-p {
 					font-size: 1.6rem;
 					font-weight: normal;
 					font-style: normal;
@@ -164,19 +148,20 @@
 		}
 	}
 
-	.green-r-body {
-		
-		.green-r-body-wrapper {
+	.about-body {
+		//height: 567px;
+
+		.about-body-wrapper {
 			width: 100%;
-			margin: 20px 0 169px 0;
-			padding: 0 10px;
+			margin:0 0 169px 0;
+			padding: 20px 10px 0;
 
 			@media (min-width: $screen-lg-min) {
 				margin:0 0 347px 0;
-				padding: 54px 20px 0;
+				padding: 55px 20px 0;
 			}
 
-			.green-r-accordion-wrapper {
+			.about-accordion-wrapper {
 
 				@media (min-width: $screen-lg-min) {
 					padding: 0;
@@ -245,8 +230,8 @@
 							right: auto;
 
 							@media (min-width: $screen-lg-min) {
-								height: auto;
-								width: 156px;
+								height: 141px;
+								width: auto;
 								top: 30px;
 								left: 30px;
 							}	
@@ -457,57 +442,80 @@
 				border-width: 1px 0 1px 0;
 				padding: 40px 0;
 				margin: 40px 10px 42px;
+				display: flex;
+				flex-wrap: wrap;
 
 				@media (min-width: $screen-lg-min) {
-					padding: 80px 10px 88px 0;
+					padding: 80px 10px 88px;
 					margin: 0 0 80px 0;
 				}
 
-				.video-and-p-wrapper {
-					max-width: 595px;
+				.video {
+					width: 50%;
 					height: 100%;
 					border-radius: 4px;
 					background-color: #ffffff;
 					box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
 					padding: 29px;
-				}
 
-				.video-sec {
-
-					margin: 0 0 18px 0;
-					width: 100%;
-					max-width: 538px;
-	  				height: 253px;
-
-	  				@media (min-width: $screen-sm-min) {
-						height: 424px;
-					}
-
-	  				@media (min-width: $screen-lg-min) {
-						
-					}
-
-					iframe {
-						width: 100%;
-	  					height: 100%;
-	  					max-height: 424px;
-	  					border-radius: 4px;
-
-	  					@media (min-width: $screen-lg-min) {
-						
+					h2 {
+						font-weight: normal;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: 1.25;
+						letter-spacing: normal;
+						color: $main-text-grey;
+						margin: 0;
+						margin-bottom: 20px;
+						font-size: 2rem;
+	
+						@media (min-width: $screen-lg-min) {
+							font-size: 3.2rem;
+							line-height: 0.88;
 						}
 					}
+
+					.video-wrapper {
+						margin-bottom: 18px;
+					}
+
+					p {
+						font-size: 1.6rem;
+						font-weight: normal;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: 1.75;
+						letter-spacing: normal;
+						color: $main-text-grey;
+					}
 				}
 
-				.video-p-sec {
-					font-size: 1.6rem;
-					font-weight: normal;
-					font-style: normal;
-					font-stretch: normal;
-					line-height: 1.75;
-					letter-spacing: normal;
-					color: $main-text-grey;
-				}
+				// .video-sec {
+
+				// 	margin: 0 0 18px 0;
+				// 	width: 100%;
+				// 	max-width: 538px;
+	  			// 	height: 253px;
+
+	  			// 	@media (min-width: $screen-sm-min) {
+				// 		height: 424px;
+				// 	}
+
+	  			// 	@media (min-width: $screen-lg-min) {
+						
+				// 	}
+
+				// 	iframe {
+				// 		width: 100%;
+	  			// 		height: 100%;
+	  			// 		max-height: 424px;
+	  			// 		border-radius: 4px;
+
+	  			// 		@media (min-width: $screen-lg-min) {
+						
+				// 		}
+				// 	}
+				// }
 			}
 		
 			.related-documents-container {
@@ -527,6 +535,7 @@
 						border-radius: 2.1px;
 						background-color: #fff;
 						box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15);
+						text-align: right;
 						width: 293px;
 						height: 160px;
 						padding: 20px 14px 0 0;
@@ -599,6 +608,15 @@
 
 				@media (min-width: $screen-lg-min) {
 					padding: 0 10px 0 0;
+					margin: 0;
+				}
+
+				.links-wrapper {
+					// margin: 0 0 20px 0;
+
+					// @media (min-width: $screen-lg-min) {
+					// 	margin: 0 0 8px 0;
+					// }
 				}
 
 				.links-sub-head {
@@ -610,6 +628,7 @@
 						font-stretch: normal;
 						line-height: 1.75;
 						letter-spacing: normal;
+						text-align: right;
 						color: $text-dark-grey;
 					}
 				}
@@ -643,4 +662,79 @@
 			}
 		}
 	}
+
+	.p-bullet {
+		width: 6px;
+		height: 6px;
+		background-color: $header-blue;
+		border-radius: 50%;
+		display: inline-block;
+		margin: 0 0 1px 5px;
+
+		@media (min-width: $screen-lg-min) {
+			margin: 0 0 3px 8px;
+		}	
+	}
+
+	.p-line {
+		width: 4px;
+		height: 2px;
+		background-color: #4e5665;
+		margin: 0 0 3px 5px;
+		display: inline-block;
+
+		@media (min-width: $screen-lg-min) {
+			margin: 0 0 0 8px;
+		}
+	}
 }	
+
+.about-r-body-first-p {
+	* {
+		font-size: 16px !important;
+		line-height: 1.75 !important;
+		text-align: right !important;
+		color: #4e5665 !important;
+	}
+
+	h1 {
+		font-size: 32px !important;
+		line-height: 0.78 !important;
+		color: $rechesh-green !important;
+		font-weight: normal !important;
+		font-style: normal !important;
+		font-stretch: normal !important;
+		letter-spacing: normal !important;
+		margin-bottom: 20px !important;
+	}
+
+	h2 {
+		font-size: 20px !important;
+		font-weight: 500 !important;
+		line-height: 1.4 !important;
+		font-style: normal !important;
+		font-stretch: normal !important;
+		letter-spacing: normal !important;
+		margin-bottom: 20px !important;
+	}
+	
+	b, strong {
+		font-weight: 500 !important;
+	}
+}
+
+.green-top-icon {
+	order: 1;
+	width: 36px;
+	height: 47px;
+	object-fit: contain;
+	margin: 0 0 16px 0;
+	margin-left: 35px !important;
+
+	@media (min-width: $screen-lg-min) {
+		width: 88px;
+		height: 116px;
+		margin: 0;
+		margin-top: -85px;
+	}
+}
