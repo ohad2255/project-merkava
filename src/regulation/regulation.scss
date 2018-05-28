@@ -26,7 +26,7 @@
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
 		background-image: url('../common/img/regulation-background-img.png');
 		background-repeat: no-repeat;
-		background-size: auto;
+		background-size: contain;
 		background-position: left top;
 
 		@media (min-width: $screen-lg-min) {
