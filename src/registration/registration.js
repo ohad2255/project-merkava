@@ -27,15 +27,6 @@ $(document).ready(function() {
         $(this).toggleClass('d-none');
     });
 
-    // $('#showPasswordConfirm').on('click', function() {
-    //     var input = $('#register\\.checkPwd');
-
-    //     if (input.attr('type') === 'password') {
-    //         input.attr('type', 'text');
-    //     } else {
-    //         input.attr('type', 'password');
-    //     }
-    // });
 
     $('#inputPasswordReg').focusin(function() {
         $('.hint').show();

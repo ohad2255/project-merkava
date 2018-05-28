@@ -245,6 +245,14 @@
 							//margin: 0 0 25px 0;
 						}
 
+						input {
+							padding: 0 25px 0 0;
+
+							@media (min-width: $screen-lg-min) {
+			                    padding: 3px 25px 0 0;
+			               	}
+						}
+
 						.hint {
 							//opacity: 0.51;
 							font-size: 1.2rem;

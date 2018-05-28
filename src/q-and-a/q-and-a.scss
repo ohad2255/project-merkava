@@ -162,11 +162,7 @@
 						letter-spacing: normal;
 						padding: 0 0 0 30px;
 						margin: 0;
-					}	
-
-					@media (min-width: $screen-xl-min) {
-						padding: 0 0 0 165px;
-						max-width: 1262px;
+						max-width: 894px;
 					}	
 				}
 			}
@@ -191,6 +187,7 @@
 
 			@media (min-width: $screen-lg-min) {
 				padding: 0;
+				max-width: 1222px;
 			}	
 
 			.body-head {

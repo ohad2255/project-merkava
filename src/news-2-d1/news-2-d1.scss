@@ -223,15 +223,15 @@
 
 						img.icon-first-collaps-p {
 							width: auto;
-							height: 48px;
+							height: 58px;
 							position: absolute;
 							left: 8px;
 							top: 8px;
 							right: auto;
 
 							@media (min-width: $screen-lg-min) {
-								height: 145px;
-								width: auto;
+								height: auto;
+								width: 145px;
 								top: 28px;
 								left: 28px;
 							}	
@@ -299,7 +299,7 @@
 							font-size: 1.6rem;
 							line-height: 1.75;
 							padding: 0 0 40px 52px;
-							width: 100%;
+							width: auto;
 						}	
 					}
 
@@ -312,17 +312,47 @@
 						letter-spacing: normal;
 						text-align: right;
 						color: #4e5665;
+						padding: 0 0 40px 30px;
 
 						@media (min-width: $screen-lg-min) {
 							font-size: 2rem;
 							line-height: 1.4;
+							width: 100%;
 						}
 					}
 				}
 
-				.card-with-bullets-p {
+				.card-p-with-bullet, .p-with-line {
+					margin: 0;
 					margin: 0;
 					line-height: 1.75;
+				}
+
+				.card-p-with-bullet::before {
+					content: '';
+					width: 6px;
+					height: 6px;
+					background-color: $main-purple;
+					border-radius: 50%;
+					display: inline-block;
+					margin: 0 0 1px 5px;
+
+					@media (min-width: $screen-lg-min) {
+						margin: 0 0 1px 8px;
+					}	
+				}
+
+				.p-with-line::before {
+					content: '';
+					width: 4px;
+					height: 2px;
+					background-color: #4e5665;
+					margin: 0 0 3px 5px;
+					display: inline-block;
+
+					@media (min-width: $screen-lg-min) {
+						margin: 0 0 1px 8px;
+					}
 				}
 
 				.card-with-bullets-bottom-p {
@@ -355,37 +385,19 @@
 					left: 10px;
 					right: auto;
 					bottom: 9px;
-					transform: rotate(270deg);
+
+					@media (min-width: $screen-lg-min) {
+						width: 30px;
+    					height: 26px;
+    					margin: 0;
+    					left: 25px;
+    					top: 226px;
+					}	 
 				}
 
 				.show + .collapse-arrow {
-					transform: rotate(0deg);
+					transform: rotate(90deg);
 				}	
-
-				.p-bullet {
-					width: 6px;
-					height: 6px;
-					background-color: $main-purple;
-					border-radius: 50%;
-					display: inline-block;
-					margin: 0 0 1px 5px;
-
-					@media (min-width: $screen-lg-min) {
-						margin: 0 0 3px 8px;
-					}	
-				}
-
-				.p-line {
-					width: 4px;
-					height: 2px;
-					background-color: #4e5665;
-					margin: 0 0 3px 5px;
-					display: inline-block;
-
-					@media (min-width: $screen-lg-min) {
-						margin: 0 0 0 8px;
-					}
-				}
 			}
 
 			.video-sec-head, .related-documents-head, .links-head {

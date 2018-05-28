@@ -27,7 +27,9 @@ module.exports = {
         'news-2/news-2': ["./src/news-2/news-2.scss", "./src/news-2/news-2.js"],
         'news-2-d1/news-2-d1': ["./src/news-2-d1/news-2-d1.scss", "./src/news-2-d1/news-2-d1.js"],
         'sitemap/sitemap': ["./src/sitemap/sitemap.scss", "./src/sitemap/sitemap.js"],
-        'reporting/reporting': ["./src/reporting/reporting.scss", "./src/reporting/reporting.js"] 
+        'reporting/reporting': ["./src/reporting/reporting.scss", "./src/reporting/reporting.js"],
+        'forgot-password-a/forgot-password-a': ["./src/forgot-password-a/forgot-password-a.scss", "./src/forgot-password-a/forgot-password-a.js"],
+        'forgot-password-c-from-link/forgot-password-c-from-link': ["./src/forgot-password-c-from-link/forgot-password-c-from-link.scss", "./src/forgot-password-c-from-link/forgot-password-c-from-link.js"]
     },
     output: {
         filename: "[name].min.js",
@@ -197,8 +199,16 @@ module.exports = {
             filename: path.resolve(__dirname, "dist/reporting/index.html"),
             template: path.resolve(__dirname, "src/reporting/index.html")
         }),
-
-         // new WebpackRTLPlugin()   
+        new HtmlWebpackPlugin({
+            chunks: ['forgot-password-a/forgot-password-a'],
+            filename: path.resolve(__dirname, "dist/forgot-password-a/index.html"),
+            template: path.resolve(__dirname, "src/forgot-password-a/index.html")
+        }),
+        new HtmlWebpackPlugin({
+            chunks: ['forgot-password-c-from-link/forgot-password-c-from-link'],
+            filename: path.resolve(__dirname, "dist/forgot-password-c-from-link/index.html"),
+            template: path.resolve(__dirname, "src/forgot-password-c-from-link/index.html")
+        }),
         new WebpackRTLPlugin({
             
             minify: false,

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>סיסמא חדשה</title>
+    ${require("../common/common-stylesheet.html")}
+    <link rel="stylesheet" href="/common/common.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../common.rtl/common.css"> -->
+  </head>
+
+  <!-- body -->
+  <body class="forgot-password-c">
+    <!-- <link href="../forgot-password-c.rtl/forgot-password-c.css" type="text/css" rel="stylesheet"> -->
+
+    <!-- mobile-menu -->
+    <div class="main-menu-mobile-container d-lg-none" aria-labelledby="mainMobileNavTrigger">
+      <div class="main-menu-mobile-wrapper"></div>
+      ${require("../common/top-navigation/top-navigation.html")}
+    </div>
+    <div class="main-content-wrapper">
+
+      <!-- header -->
+      ${require("../common/header/header.html")} 
+
+      <!-- main-contant -->
+      <section class="d-flex align-items-center justify-content-center">
+        <div class="forgot-password-c-container d-flex custom-container">
+          <div class="forgot-password-c-wrapper d-flex flex-column align-items-center">
+
+            <!-- forgot password a head -->
+            <div class="forgot-password-c-p-wrapper">
+              <h1 class="forgot-password-c-head">
+                הקלד סיסמא חדשה
+              </h1>
+            </div>
+
+            <!-- form wrapper -->
+            <div class="forgot-password-c-form-wrapper">
+
+              <!-- forgot password a form -->
+              <form id="forgot-password-c-Form" data-parsley-validate  class="d-flex flex-column align-items-center">
+                
+                <div class="form-group password-wrapper d-flex flex-column">
+                  <div class="form-group password form-group-password">
+
+                    <!-- show password button -->
+                    <div id="showPasswordEye" role="button" tabindex="0">
+                      <img src="../common/img/password-eye-disabled.svg">
+                    </div>
+
+                    <div id="showPasswordEyeShow" class="d-none" role="button" tabindex="0">
+                      <img src="../common/img/password-eye-show.svg">
+                    </div>
+
+                    <!-- password input -->
+                    <label class="password-label" for="inputPassword">סיסמא חדשה:</label>
+                    <input type="password" id="inputPassword" type="password" pattern="(?=.*\d)(?=.*[A-Z]).{8,}" class="form-control password-input" id="InputPasswordSignIn" placeholder="סיסמא" data-toggle="password" data-required="" data-parsley-validate-if-empty data-parsley-error-message="סיסמא צריכה להכיל 8 תווים לפחות, לכלול מספרים, תווים ולפחות אות אחת גדולה">
+                    <p class="hint">
+                      סיסמא צריכה להיות בת 8 תוים עם סיפרה וסימן מיוחד
+                    </p>
+                  </div>
+                  <div class="form-group password-confirm">
+
+                    <!-- show password button -->
+                    <div id="showPasswordConfirmEye" role="button" tabindex="0">
+                      <img src="../common/img/password-eye-disabled.svg">
+                    </div>
+
+                    <div id="showPasswordConfirmEyeShow" class="d-none" role="button" tabindex="0">
+                      <img src="../common/img/password-eye-show.svg">
+                    </div>
+
+                    <!-- confirm password input -->
+                    <label class="password-confirm-label" for="inputPasswordConfirm">אשר סיסמא:</label>
+                    <input type="password" class="form-control" id="inputPasswordConfirm"  placeholder="אימות סיסמא"  data-parsley-error-message="סיסמא אינה תואמת"  data-parsley-equalto="#inputPasswordReg" required>
+                  </div>
+                </div>   
+                <div class="forgot-password-c-button">
+
+                  <!-- forgot password a button -->
+                  <button class="btn btn-primary" type="submit" form="forgot-password-c-Form" value="Submit">קבע סיסמא חדשה</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section> 
+
+      <!-- footer -->
+      <footer>
+        ${require("../common/footer/footer.html")}
+      </footer>
+    </div>
+    ${require("../common/common.html")}
+    <script type="text/javascript" src='/common/common.min.js'></script>
+  </body>
+</html>
