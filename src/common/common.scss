@@ -3,57 +3,7 @@
 @import "/top-navigation/top-navigation";
 @import "/breadcrumb/breadcrumb";
 @import "/footer/footer";
-
-// @font-face {
-//   font-family: 'FbReforma';
-//   src: url("../fonts/FbReforma-Regular.otf") format("opentype");
-//   //url('../fonts/FbReforma-Regular.woff2') format('woff2'),
-//   //url('../fonts/FbReforma-Regular.woff') format('woff');
-//   font-weight: 400;
-// }
-
-
-// @font-face {
-//   font-family: "FbReforma";
-//   src: url("../fonts/FbReforma-Medium.otf") format("opentype");
-//   font-weight: 500;
-// }
-
-@font-face {
-  font-family: 'FbReforma';
-  src: url("../fonts/fbreformaen-regular-webfont.woff") format("woff");
-  font-weight: 400;
-}
-
-// @font-face {
-//   font-family: 'FbReforma';
-//   src: url("../fonts/fbreformaen-medium-webfont.woff") format("woff");
-//   font-weight: 500;
-// }
-
-@font-face {
-  font-family: 'FbReforma';
-  src: url("../fonts/fbreformaen-bold-webfont.woff") format("woff");
-  font-weight: 800;
-}
-
-@font-face {
-  font-family: 'fbagol';
-  src: url("../fonts/fbagol-lightwebfont.woff") format("woff");
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: 'fbagol';
-  src: url("../fonts/fbagol-regularwebfont.woff") format("woff");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'fbagol';
-  src: url("../fonts/fbagol-boldwebfont.woff") format("woff");
-  font-weight: 800;
-}
+@import "/fonts";
 
 *:lang(en) {
   font-family: fbagol;

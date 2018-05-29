@@ -28,7 +28,7 @@ $(document).ready(function() {
     });
 
     $('#showPasswordConfirmEye').on('click', function() {
-        //debugger
+        debugger
         var input = $('#inputPasswordConfirm');
         if (input.attr('type') === 'password') {
             input.attr('type', 'text');
@@ -55,9 +55,46 @@ $(document).ready(function() {
         $(this).toggleClass('d-none');
     });
 
+    // $('#inputPassword').on('change', function() {
+    //     if ($(this).attr('type') === 'password') {
+    //         input.attr('type', 'text');
+    //         $(this).toggleClass('d-none');
+    //         $('html').find($('#showPasswordEyeShow')).toggleClass('d-none');
+    //     } else {
+    //         input.attr('type', 'password');
+    //     }
+    // });
+
     $('#inputPassword').focusin(function() {
         $('.hint').show();
     }).focusout(function () {
         $('.hint').hide();
     });
+
+    $('input').on('change', function() {
+	    //var input = $('#inputPassword');
+	    var value = $('#inputPassword').val();
+	    if ( value.length() > 0 ) {
+	    	debugger
+	    	input.addClass('padding');
+	    } else {
+	        input.removeClass('padding');
+	    }
+
+	});
 });
+
+// $(document).ready(function() {
+
+// 	var input = $('#inputPassword');
+//     var value = input.val();
+//     if ( value.length() > 0 && input.attr('type') === 'password' ) {
+//     	input.addClass('padding');
+//     } else {
+//         input.removeClass('padding');
+//     }
+// });
+
+
+
+	
