@@ -29,7 +29,8 @@ module.exports = {
         'sitemap/sitemap': ["./src/sitemap/sitemap.scss", "./src/sitemap/sitemap.js"],
         'reporting/reporting': ["./src/reporting/reporting.scss", "./src/reporting/reporting.js"],
         'forgot-password-a/forgot-password-a': ["./src/forgot-password-a/forgot-password-a.scss", "./src/forgot-password-a/forgot-password-a.js"],
-        'forgot-password-c-from-link/forgot-password-c-from-link': ["./src/forgot-password-c-from-link/forgot-password-c-from-link.scss", "./src/forgot-password-c-from-link/forgot-password-c-from-link.js"]
+        'forgot-password-c-from-link/forgot-password-c-from-link': ["./src/forgot-password-c-from-link/forgot-password-c-from-link.scss", "./src/forgot-password-c-from-link/forgot-password-c-from-link.js"],
+        'websites-links-2/websites-links-2': ["./src/websites-links-2/websites-links-2.scss", "./src/websites-links-2/websites-links-2.js"]
     },
     output: {
         filename: "[name].min.js",
@@ -208,6 +209,11 @@ module.exports = {
             chunks: ['forgot-password-c-from-link/forgot-password-c-from-link'],
             filename: path.resolve(__dirname, "dist/forgot-password-c-from-link/index.html"),
             template: path.resolve(__dirname, "src/forgot-password-c-from-link/index.html")
+        }),
+        new HtmlWebpackPlugin({
+            chunks: ['websites-links-2/websites-links-2'],
+            filename: path.resolve(__dirname, "dist/websites-links-2/index.html"),
+            template: path.resolve(__dirname, "src/websites-links-2/index.html")
         }),
         new WebpackRTLPlugin({
             

@@ -23,19 +23,20 @@
 		position: relative;
 		background-color: $main-white;
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
-		background-image: url('../common/img/q-and-a-background-pic.png');
+		background-image: url('../common/img/header-visuals-milon.png');
 		background-repeat: no-repeat;
 		background-size: contain;
 		margin: 0 0 5px 0;
 		padding:0 ;
 		min-height: 205px;
-		background-position: left;
+		background-position: left bottom;
 
 		@media (min-width: $screen-lg-min) {
 			margin: 0 0 66px 0;
 			padding:0 0 18px 0;
 			min-height: 308px;
 			height: auto;
+			background-position: 16px bottom;
 		}
 
 		.right-line {
