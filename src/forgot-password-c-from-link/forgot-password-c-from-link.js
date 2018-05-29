@@ -71,16 +71,22 @@ $(document).ready(function() {
         $('.hint').hide();
     });
 
-    $('input').on('change', function() {
+    $('.password-input').each( function() {
 	    //var input = $('#inputPassword');
-	    var value = $('#inputPassword').val();
-	    if ( value.length() > 0 ) {
-	    	debugger
-	    	input.addClass('padding');
-	    } else {
-	        input.removeClass('padding');
-	    }
-
+	    // var value = $(this).val();
+	    // if ( value.length() > 0 ) {
+	    	
+	    // 	$(this).addClass('padding');
+	    // } else {
+	    //     $(this).removeClass('padding');
+	    // 
+	    var value = $(this).val();
+        if ($(this).attr('type') === 'password' && value.length() > 0) {
+        	debugger
+            $(this).toggleClass('padding');
+        } else {
+            $(this).removeClass('padding');
+        }
 	});
 });
 
