@@ -92,7 +92,8 @@ module.exports = {
     plugins: [
         new CopyWebpackPlugin([
             { from: "src/common/img", to: "common/img" },
-            { from: "src/fonts", to: "fonts" }
+            { from: "src/fonts", to: "fonts" },
+            { from: "src/common/fonts.scss", to: "common/fonts.css" }
         ]),
         new ExtractTextPlugin("[name].css"),
         new HtmlWebpackPlugin({
