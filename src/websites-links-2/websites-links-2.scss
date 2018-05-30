@@ -31,7 +31,7 @@
 		background-position: left bottom;
 
 		@media (min-width: $screen-lg-min) {
-			margin: 0 0 66px 0;
+			margin: 0;
 			padding:0 0 18px 0;
 			min-height: 308px;
 			height: auto;
@@ -166,14 +166,39 @@
 
 	.websites-links-2-body {
 		margin: 0 0 70px 0;
-		padding: 0;
+		padding: 90px 0 0 0;
 		position: relative;
 
 		@media (min-width: $screen-lg-min) {
-			padding: 0 20px 0;
-			margin: 0px auto 308px;
+			padding: 90px 20px 0;
+			margin: 0px auto 240px;
 			max-width: 1262px;
 			min-height: 100%;
+		}
+
+		.main-tabs-container {
+
+			.tab {
+				width: 394px;
+				height: 90px;
+				object-fit: contain;
+				background-color: rgba(233, 235, 240, 0.5);
+				margin: 0 0 9px 9px;
+				font-size: 3.2rem;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 0.78;
+				letter-spacing: normal;
+				color: #4e5665;
+				padding: 0 20px 0 0;
+				cursor: pointer;
+				//text-align: center;
+
+				&:last-child {
+					margin: 0 0 9px 0;
+				}
+			}
 		}
 	}
 
