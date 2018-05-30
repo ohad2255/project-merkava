@@ -397,16 +397,16 @@
 					small {
 						position: absolute;
 						opacity: 0.6;
-						font-size: 1.5rem;
+						font-size: 1.2rem;
 						font-weight: normal;
 						font-style: normal;
 						font-stretch: normal;
 						line-height: normal;
-						letter-spacing: 0.5px;
+						letter-spacing: 0.3px;
 						color: #4e5665;
 						margin: 0 0 13.5px 0;
 						display: block;
-						top: 9px;
+						top: 15px;
 						right: 23px;
 						left: auto;
 						width: 100%;
@@ -473,9 +473,8 @@
 							pointer-events: none;
     						cursor: pointer;
 							//opacity: 0.6;
-		               	}
-					
-				}
+		               	}	
+					}
 
 					.custom-file-input {
 						cursor: pointer;

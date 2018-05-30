@@ -89,26 +89,27 @@
             </div>
 
             <!-- upload file input -->
-            <div class="upload-file-wrapper form-group d-flex d-lg-block align-items-center" action="/upload">
+            <div class="upload-file-wrapper form-group d-flex d-lg-block align-items-center dropzone" action="/upload">
               <div class="file-input-wrapper">
                 <small class="d-none d-lg-block">
-                  להעלת קובץ מצורף גרור לכאן או לחץ:<br>
-                  ניתן להוסיף קבצים מסוג ,PDF, JPEG, PNG 
-                  </small>
+                ניתן לצרף קבצי: PDF, ppt, exls, exl, Doc <br>
+                כמה קבצים שתרצו עם מגבלה של 15MBלכל הקבצים יחד. 
+                </small>
                 <div class="file-button-wrapper">
                   <span class="file-button-text">צרף מסמך</span>
                   <label class="sr-only" for="customFile"></label>
-                  <input type="file" class="custom-file-input" id="customFile" name="">
+                  <input type="file" class="custom-file-input" id="customFile" name="" multiple>
                   <div class="three-upload-file-dots d-flex justify-content-between d-lg-none"> 
                     <span class="upload-file-dot"></span> 
                     <span class="upload-file-dot"></span> 
                     <span class="upload-file-dot"></span>
-                  </div>  
+                  </div>
+                  <div id="selectedFiles"></div>
                 </div>
                 <span class="dropzone-previews">
                 </span>
               </div>
-            </div>
+            </div> 
 
             <!-- save details button -->
             <div class="save-details-button d-flex justify-content-end">
