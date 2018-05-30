@@ -457,12 +457,14 @@
 				}
 
 				.video {
-					width: 50%;
-					height: 100%;
+					
+					height: auto;
 					border-radius: 4px;
 					background-color: #ffffff;
 					box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
 					padding: 16px;
+					//max-width: auto;
+					margin-bottom: 20px;
 
 					@media (min-width: $screen-lg-min) {
 						padding: 29px;
@@ -480,6 +482,14 @@
 						line-height: 1.75;
 						letter-spacing: normal;
 						color: $main-text-grey;
+					}
+				}
+
+				.single-video-wrapper {
+					width: 100%;
+
+					&:last-child {
+						margin-bottom: 0;
 					}
 				}
 
