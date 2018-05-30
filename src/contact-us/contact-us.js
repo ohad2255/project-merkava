@@ -27,7 +27,7 @@ function handleFileSelect(e) {
         fileNames.push(currFile.name)
     }
 
-    selDiv.innerHTML = fileNames.join(', ')
+    selDiv.innerHTML = fileNames.join('<br>')
 }
 
 
