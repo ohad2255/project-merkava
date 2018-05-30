@@ -213,7 +213,7 @@
 				}
 			}
 
-			.table-wrapper:nth-child(1) {
+			.table-wrapper:nth-child(3n+0) {
 
 				.h2-wrapper {
 					background-color: rgba(51,163,141,0.3);
@@ -228,7 +228,7 @@
 				}
 			}
 		
-			.table-wrapper:nth-child(2) {
+			.table-wrapper:nth-child(3n+1) {
 
 				.h2-wrapper {
 					background-color: rgba(31,134,188,0.3);
@@ -243,7 +243,7 @@
 				}
 			}
 
-			.table-wrapper:nth-child(3) {
+			.table-wrapper:nth-child(3n+2) {
 
 				.h2-wrapper {
 					background-color: rgba(98,102,166,0.3);
