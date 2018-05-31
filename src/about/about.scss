@@ -1,6 +1,6 @@
 @import "../util/util.scss";
 
-.about {
+.about, .green-rechesh {
 	min-width: 330px;
 
 	.custom-container {
@@ -15,7 +15,7 @@
 		}
 	}
 
-	.about-top-sec {
+	.about-top-sec, .green-rechesh-top-sec {
 		position: relative;
 		height: 205px;
 		background-color: $main-white;
@@ -66,7 +66,7 @@
 				padding: 0 20px;
 			}
 
-			.about-breadcrumb-wrapper {
+			.breadcrumb-wrapper {
 				margin:0 34px 0 0;	
 
 				@media (min-width: $screen-lg-min) {
@@ -88,21 +88,21 @@
 				}
 			}
 
-			.about-p-sec {
+			.main-p-sec {
 				margin: 73px 20px 0;
 
 				@media (min-width: $screen-lg-min) {
 					margin: 0;
 				}	
 
-				.about-p-wrapper {
+				.p-wrapper {
 
 					@media (min-width: $screen-lg-min) {
 						margin:29px 0 116px 0;
 					}	
 				}	
 
-				.about-head {
+				.head {
 					font-size: 3rem;
 					font-weight: 500;
 					font-style: normal;
@@ -123,7 +123,7 @@
 					}	
 				}
 
-				.about-top-p {
+				.top-p {
 					font-size: 1.6rem;
 					font-weight: normal;
 					font-style: normal;
@@ -148,10 +148,10 @@
 		}
 	}
 
-	.about-body {
+	.body {
 		//height: 567px;
 
-		.about-body-wrapper {
+		.body-wrapper {
 			width: 100%;
 			margin:0 0 169px 0;
 			padding: 20px 10px 0;
@@ -161,7 +161,7 @@
 				padding: 55px 20px 0;
 			}
 
-			.about-accordion-wrapper {
+			.accordion-wrapper {
 
 				@media (min-width: $screen-lg-min) {
 					padding: 0;
@@ -233,7 +233,7 @@
 					}
 
 					.top-sec-card-header {
-						padding: 0 14px 20px 0;
+						padding: 44px 14px 20px 60px;
 
 						@media (min-width: $screen-lg-min) {
 							padding: 0 91.5px 20px 0;
@@ -269,13 +269,14 @@
 						// padding: 17px 0 0 66px;
 						height: fit-content;
 						margin: 0;
-						// max-width: 200px;
+						max-width: 280px;
 
 						@media (min-width: $screen-lg-min) {
 							padding: 0;
 							font-size: 3.2rem;
 							line-height: 0.78;
 							max-width: none;
+							max-width: auto;
 						}	
 
 						@media (max-width: 340px) {
@@ -659,7 +660,7 @@
 	}
 }	
 
-.about-content {
+.content {
 	margin: 44px 18px 37px;
 
 	@media (min-width: $screen-lg-min) {
