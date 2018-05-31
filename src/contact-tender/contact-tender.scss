@@ -1,6 +1,6 @@
 @import "../util/util.scss";
 
-.contact-tender {
+.contact-tender, .contact-job-owners {
 	min-width: 330px;
 
 	.nav-item-text-9 {
@@ -13,7 +13,7 @@
 
 	.contact-tender-top-sec {
 		position: relative;
-		background-image:  url('../common/img/contact-background.png');
+		background-image: url('../common/img/header-visuals-contact@3x.png');
 		height: fit-content;
 		padding: 0;
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
@@ -23,8 +23,9 @@
 		background-position: left;
 
 		@media (min-width: $screen-lg-min) {
-            background-image: url('../common/img/q-and-a-background-pic.png');
+            background-image: url('../common/img/header-visuals-contact.png');
             min-height: 308px;
+            background-size: auto;
        	}
 
        	.right-line {
@@ -71,19 +72,41 @@
 			z-index: 2;
 
 			@media (min-width: $screen-lg-min) {
-                padding: 80px 20px;
+                padding: 34px 20px 0;
     			//max-width: 1344px;
     			max-width: 1262px;
            	}
 
-			.contact-tender-p-sec {
+           	.breadcrumb-wrapper {
+				margin: 0;	
+
+				@media (min-width: $screen-lg-min) {
+					margin-bottom: 20px;
+				}
+
+				.breadcrumb {
+					margin: 0;	
+				}
+
+				.breadcrumb-item  {
+					color: $header-blue;
+					font-size: 1.6rem;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.75;
+					letter-spacing: normal;
+				}
+			}
+
+			.p-sec {
 				margin: 16px 0 0 0;	
 
 				@media (min-width: $screen-lg-min) {
                     margin: 0;
                	}
 
-				.contact-tender-icon-wrapper {
+				.icon-wrapper {
 					margin: 0 0 2px 0;
 
 					@media (min-width: $screen-lg-min) {
@@ -102,7 +125,7 @@
 					}
 				}
 
-				.contact-tender-head {
+				.main-head {
 					font-size: 3rem;
 					font-weight: 500;
 					font-style: normal;
@@ -118,7 +141,7 @@
 	               	}
 				}
 
-				.contact-tender-p {
+				.main-p {
 					max-width: 594px;
 					font-size: 2rem;
 					font-weight: normal;
@@ -141,7 +164,7 @@
 		}
 	}
 
-	.contact-tender-body {
+	.body {
 		height: fit-content;
 		padding: 0 0 20px 0;
 
@@ -151,7 +174,7 @@
     		margin: 0 0 144px 0;
        	}
 
-       	.bid-number {
+       	.bid-number, .job-owner-name {
 			width: 340px;
 			height: 50px;
 			border-radius: 3px;
@@ -172,7 +195,7 @@
 			}
        	}
 
-		.contact-tender-body-wrapper {
+		.body-wrapper {
 			width: 100%;
 			padding: 25px 20px 0;
 
@@ -181,7 +204,7 @@
            	}
 		}
 
-		.contact-tender-form-wrapper {
+		.form-wrapper {
 
 			@media (min-width: $screen-lg-min) {
                 max-width: 705px;
@@ -600,7 +623,7 @@
 			}
 		}
 	}
-	.contact-tender-footer {
+	.footer {
 			padding: 67px 0 0;
 	}
 
