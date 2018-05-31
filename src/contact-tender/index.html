@@ -52,34 +52,64 @@
 
           <!-- bid number -->
           <div class="bid-number d-flex align-items-center">
-            מס מכרז: 2-2013
-          </div>
-
-          <!-- subject -->
-          <div class="subject d-flex align-items-center">
-            נושא הפנייה
+            <span>מס מכרז: 2-2013</span>
           </div>
 
           <!-- form section -->
           <form class="contact-tender-form-wrapper" id="registration-Form" data-parsley-validate>
 
-              <!-- name sec -->
-              <div class="first-last-name-wrapper d-flex w-100">
+            <!-- name and email sec -->
+            <div class="first-last-name-email-wrapper d-flex flex-column flex-lg-row w-100">
 
-              <!--first name input -->
-              <div class="form-group first-name">
-                <input class="form-control" type="text" placeholder= "שם פרטי" id="nameInputReg" name="name" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty>
-                <label class="sr-only" for="nameInputReg"></label>
-                <div class="input-bullet"></div>
+                <div class="first-last-name-wrapper d-flex w-100">
+
+                  <!--first name input -->
+                  <div class="form-group first-name">
+                    <input class="form-control" type="text" placeholder= "שם פרטי" id="nameInputReg" name="name" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty>
+                    <label class="sr-only" for="nameInputReg"></label>
+                    <div class="input-bullet"></div>
+                  </div>
+
+                  <!--last name input -->
+                  <div class="form-group last-name">
+                    <input class="form-control" type="text" placeholder= "שם משפחה" id="lastNameInputReg" name="lastName" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty>
+                    <label class="sr-only" for="lastNameInputReg"></label>
+                    <div class="input-bullet"></div>
+                  </div>
+                </div>
+                <div class="form-group email">
+
+                  <!-- mail input -->
+                  <input type="email" class="form-control" id="inputEmail" placeholder="דוא״ל"   id="inputEmailContactUs" class="form-control email-input" name="email" data-required="" data-parsley-validate-if-empty data-parsley-error-message="אימייל חייב להכיל @">
+                  <label class="sr-only" for="inputEmailContactUs"></label>
+                  <div class="input-bullet"></div>
+                </div>
+            </div>
+
+            <!-- phone and subject sec -->
+            <div class="form-group subject-phone-wrapper d-flex flex-column flex-lg-row">
+
+              <!-- phone number input -->
+              <div class="form-group phone-number">
+                <input type="tel" class="form-control" id="phoneNumber" placeholder="טלפון" data-parsley-error-message="מספר לא תקין" minlength="9" maxlength="10" required>
+                <label class="sr-only" for="phoneNumber"></label>
               </div>
 
-              <!--last name input -->
-              <div class="form-group last-name">
-                <input class="form-control" type="text" placeholder= "שם משפחה" id="lastNameInputReg" name="lastName" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty>
-                <label class="sr-only" for="lastNameInputReg"></label>
+              <!-- subject input -->
+              <div class="form-group subject">
+                <div class="blue-arrow"></div>
+
+                <!-- subject select -->
+                <select class="form-control subject-select" id="subjectSelect" placeholder= "נושא הפנייה" data-parsley-error-message="שדה חובה" required>
+
+                  <!-- subjects options -->
+                  <option value="" disabled selected hidden class="placeholder-subject-select">נושא הפנייה: מכרזים מרכזיים</option>
+                  <option class="subject-select-option-1 subject-select-option">נושא-1</option>
+                  <option class="subject-select-option-2 subject-select-option">נושא-2</option>
+                </select>
                 <div class="input-bullet"></div>
-              </div> 
-            </div> 
+              </div>
+            </div>
            
             <!-- subject textarea input -->
             <div class="form-group subject-textarea">
@@ -113,7 +143,7 @@
 
             <!-- save details button -->
             <div class="save-details-button d-flex justify-content-end">
-              <button class="btn btn-primary" type="submit" data-target="#myModal" data-toggle="modal" >שמור
+              <button class="btn btn-primary" type="submit" data-target="#myModal" data-toggle="modal" >שלח
               </button>
             </div>
           </form>
