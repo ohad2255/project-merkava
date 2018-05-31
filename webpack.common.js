@@ -16,6 +16,7 @@ module.exports = {
         'q-and-a/q-and-a': ["./src/q-and-a/q-and-a.scss", "./src/q-and-a/q-and-a.js"],
         'contact-us/contact-us': ["./src/contact-us/contact-us.scss", "./src/contact-us/contact-us.js"],
         'contact-tender/contact-tender': ["./src/contact-tender/contact-tender.scss", "./src/contact-tender/contact-tender.js"],
+        'contact-us-q-and-a/contact-us-q-and-a': ["./src/contact-us-q-and-a/contact-us-q-and-a.scss", "./src/contact-us-q-and-a/contact-us-q-and-a.js"],
         'dictionary/dictionary': ["./src/dictionary/dictionary.scss", "./src/dictionary/dictionary.js"],
         'sapakim/sapakim': ["./src/sapakim/sapakim.scss", "./src/sapakim/sapakim.js"],
         'mepharsemim/mepharsemim': ["./src/mepharsemim/mepharsemim.scss", "./src/mepharsemim/mepharsemim.js"],
@@ -140,6 +141,11 @@ module.exports = {
             chunks: ['contact-tender/contact-tender'],
             filename: path.resolve(__dirname, "dist/contact-tender/index.html"),
             template: path.resolve(__dirname, "src/contact-tender/index.html")
+        }),
+        new HtmlWebpackPlugin({
+            chunks: ['contact-us-q-and-a/contact-us-q-and-a'],
+            filename: path.resolve(__dirname, "dist/contact-us-q-and-a/index.html"),
+            template: path.resolve(__dirname, "src/contact-us-q-and-a/index.html")
         }),
         new HtmlWebpackPlugin({
             chunks: ['dictionary/dictionary'],

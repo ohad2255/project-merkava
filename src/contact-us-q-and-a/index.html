@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>צור קשר שאלות ותשובות</title>
+    ${require("../common/common-stylesheet.html")}
+    <link rel="stylesheet" href="/common/common.css">
+    <link rel="stylesheet" href="/common/fonts.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../common.rtl/common.css"> -->
+  </head>
+
+  <!-- body -->
+  <body class="contact-us-q-and-a">
+    <!-- <link href="../contact-us-q-and-a.rtl/contact-us-q-and-a.css" type="text/css" rel="stylesheet"> -->
+
+    <!-- mobile-menu -->
+    <div class="main-menu-mobile-container d-lg-none" aria-labelledby="mainMobileNavTrigger">
+      <div class="main-menu-mobile-wrapper"></div>
+      ${require("../common/top-navigation/top-navigation.html")}
+    </div>
+    <div class="main-content-wrapper">
+
+      <!-- header -->
+      ${require("../common/header/header.html")} 
+
+      <!-- top-section -->
+      <section class="contact-us-q-and-a-top-sec d-flex flex-column align-items-center">
+        <div class="right-line"></div>
+        <div class="top-sec-container custom-container d-flex flex-column justify-content-start">
+
+          <!-- breadcrumbs -->
+          <div class="breadcrumb-wrapper d-none d-lg-block">
+            <nav class="breadcrumb d-flex align-items-center justify-content-start">
+              <a class="breadcrumb-item breadcrumb-item d-flex align-items-center justify-content-center" href="../home/index.html">מינהל הרכש הממשלתי<span>››</span></a>
+              <a class="breadcrumb-item breadcrumb-item d-flex align-items-center justify-content-center" href="../q-and-a/index.html">שאלות ותשובות <span>››</span></a>
+              <a class="breadcrumb-item breadcrumb-item d-flex align-items-center justify-content-center" href="#">צור קשר <!-- <span>››</span> --></a>
+            </nav>
+          </div>
+          <div class="contact-us-q-and-a-p-sec flex-column flex-lg-row d-flex align-items-start">
+            <div class="contact-us-q-and-a-icon-wrapper">
+              <img src="../common/img/contact-us-icon.svg"
+              class="contact-us-q-and-a-icon" alt="paper-plane">
+            </div>
+            <div class="contact-us-q-and-a-p-wrapper">
+              <h1 class="contact-us-q-and-a-head">
+                צור קשר
+              </h1>
+              <p class="contact-us-q-and-a-p">
+                לורם איפסום קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבכי, צמככוקו בלוקריה.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- main-contant -->
+      <section class="contact-us-q-and-a-body d-flex flex-column align-items-center">
+        <div class="contact-us-q-and-a-body-wrapper custom-container d-flex flex-column flex-lg-row justify-content-between">
+
+          <!-- form section -->
+          <form class="contact-us-q-and-a-form-wrapper" id="contactUsForm" data-parsley-validate>
+            <div class="d-flex flex-column flex-lg-row name-email-wrapper">
+
+              <!-- name and email sec -->
+              <div class="form-group name-and-email d-flex flex-column flex-lg-row">
+                <!-- <div class="input-bullet"></div> -->
+
+                <div class="first-last-name-wrapper d-lg-flex w-100">
+
+                  <!--first name input -->
+                  <div class="form-group first-name">
+                    <input class="form-control" type="text" placeholder= "שם פרטי" id="nameInputReg" name="name" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty>
+                    <label class="sr-only" for="nameInputReg"></label>
+                    <div class="input-bullet"></div>
+                  </div>
+
+                  <!--last name input -->
+                  <div class="form-group last-name">
+                    <input class="form-control" type="text" placeholder= "שם משפחה" id="lastNameInputReg" name="lastName" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty>
+                    <label class="sr-only" for="lastNameInputReg"></label>
+                    <div class="input-bullet"></div>
+                  </div>
+                </div>
+               
+              </div>   
+            </div> 
+            <div class="form-group subject-email-wrapper d-flex flex-column flex-lg-row">
+             <div class="form-group email">
+
+                <!-- mail input -->
+                <input type="email" class="form-control" id="inputEmail" placeholder="דוא״ל"   id="inputEmailContactUs" class="form-control email-input" name="email" data-required="" data-parsley-validate-if-empty data-parsley-error-message="אימייל חייב להכיל @">
+                <label class="sr-only" for="inputEmailContactUs"></label>
+                <div class="input-bullet"></div>
+              </div>
+              
+              <!-- subject input -->
+              <div class="form-group subject">
+                <div class="blue-arrow"></div>
+
+                <!-- subject select -->
+                <select class="form-control subject-select" id="subjectSelect" placeholder= "נושא הפנייה" data-parsley-error-message="שדה חובה" required>
+
+                  <!-- subjects options -->
+                  <option value="" disabled selected hidden class="placeholder-subject-select">נושא הפנייה</option>
+                  <option class="subject-select-option-1 subject-select-option">נושא-1</option>
+                  <option class="subject-select-option-2 subject-select-option">נושא-2</option>
+                </select>
+                <div class="input-bullet"></div>
+              </div>
+            </div> 
+
+            <!-- subject textarea input -->
+            <div class="form-group subject-textarea">
+              <textarea class="form-control" id="subjectTextarea" placeholder="פירוט הפנייה" required data-parsley-error-message="פירוט פנייה נדרש"></textarea>
+              <label class="sr-only" for="subjectTextarea"></label>
+              <div id="textAreaId" class="input-bullet"></div>
+            </div>
+
+            <!-- save details button -->
+            <div class="save-details-button d-flex justify-content-end">
+              <button class="btn btn-primary" type="submit" form="contactUsForm" value="Submit" data-target="#myModal" data-toggle="modal">שמור
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="contact-us-q-and-a-footer d-flex justify-content-center">
+          ${require("../common/footer/footer.html")}
+      </footer>
+    </div>
+
+    <!-- error message 
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button type="button" class="btn btn-default close-btn" data-dismiss="modal">
+            <img src="../common/img/close.svg" class="close-img" alt="close-button">
+          </button>
+          <div class="modal-body d-flex flex-column align-items-center">
+            <img src="../common/img/contact-us-modal-icon-2.svg"
+              class="dialog-icon" alt="dialog-icon">
+            <h4>אירעה שגיאה</h4>
+            <p>לורם איפסום קינץ תתיח לרעחלת צשחמי צש בליא, מנסוטו צמלח לביקו ננביצמוקו בלוקריה שיצמה ברורק. קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח.</p>
+          </div>
+          <img src="../common/img/right-background-img-modal.png" class="right-background-img d-none d-lg-block" alt="background-image">
+          <img src="../common/img/left-background-img-modal.png" class="left-background-img d-none d-lg-block" alt="background-image">
+        </div>
+      </div>
+    </div>-->
+
+    <!-- success message 
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button type="button" class="btn btn-default close-btn" data-dismiss="modal">
+            <img src="../common/img/close.svg" class="close-img" alt="close-button">
+          </button>
+          <div class="modal-body d-flex flex-column align-items-center">
+            <img src="../common/img/success-icon.svg"
+              class="dialog-icon" alt="dialog-success-icon">
+            <h4>פנייתך התקבלה בהצלחה!</h4>
+            <p>לורם איפסום קינץ תתיח לרעחלת צשחמי צש בליא, מנסוטו צמלח לביקו ננביצמוקו בלוקריה שיצמה ברורק. קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח.</p>
+          </div>
+          <img src="../common/img/right-background-img-modal.png" class="right-background-img d-none d-lg-block" alt="background-image">
+          <img src="../common/img/left-background-img-modal.png" class="left-background-img d-none d-lg-block" alt="background-image">
+        </div>
+      </div>
+    </div>-->
+    ${require("../common/common.html")}
+    <script type="text/javascript" src='/common/common.min.js'></script>
+  </body>
+</html>

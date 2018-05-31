@@ -1,6 +1,6 @@
 @import "../util/util.scss";
 
-.contact-us {
+.contact-us-q-and-a {
 	min-width: 330px;
 
 	.nav-item-text-9 {
@@ -11,7 +11,7 @@
 			 }
 		}
 
-	.contact-us-top-sec {
+	.contact-us-q-and-a-top-sec {
 		position: relative;
 		background-image: url('../common/img/header-visuals-contact@3x.png');
 		height: fit-content;
@@ -50,19 +50,41 @@
 			z-index: 2;
 
 			@media (min-width: $screen-lg-min) {
-                padding: 80px 20px;
+                padding: 32px 20px 0;
     			//max-width: 1344px;
     			max-width: 1262px;
            	}
 
-			.contact-us-p-sec {
+           	.breadcrumb-wrapper {
+				margin: 0;	
+
+				@media (min-width: $screen-lg-min) {
+					margin-bottom: 31px;
+				}
+
+				.breadcrumb {
+					margin: 0;	
+				}
+
+				.breadcrumb-item  {
+					color: $header-blue;
+					font-size: 1.6rem;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.75;
+					letter-spacing: normal;
+				}
+			}
+
+			.contact-us-q-and-a-p-sec {
 				margin: 16px 0 0 0;	
 
 				@media (min-width: $screen-lg-min) {
                     margin: 0;
                	}
 
-				.contact-us-icon-wrapper {
+				.contact-us-q-and-a-icon-wrapper {
 					margin: 0 0 2px 0;
 
 					@media (min-width: $screen-lg-min) {
@@ -81,7 +103,7 @@
 					}
 				}
 
-				.contact-us-head {
+				.contact-us-q-and-a-head {
 					font-size: 3rem;
 					font-weight: 500;
 					font-style: normal;
@@ -97,7 +119,7 @@
 	               	}
 				}
 
-				.contact-us-p {
+				.contact-us-q-and-a-p {
 					max-width: 594px;
 					font-size: 2rem;
 					font-weight: normal;
@@ -120,7 +142,7 @@
 		}
 	}
 
-	.contact-us-body {
+	.contact-us-q-and-a-body {
 		height: fit-content;
 		padding: 0 20px;
 
@@ -130,12 +152,12 @@
     		margin: 0 0 144px 0;
        	}
 
-		.contact-us-body-wrapper {
+		.contact-us-q-and-a-body-wrapper {
 			width: 100%;
 			padding: 40px 0 0 0;
 		}
 
-		.contact-us-form-wrapper {
+		.contact-us-q-and-a-form-wrapper {
 			margin: 25px 0 0 0;
 
 			@media (min-width: $screen-lg-min) {
@@ -168,21 +190,29 @@
 				margin: 0 0 25px 0;
 
 				@media (min-width: $screen-lg-min) {
-					margin: 0;
+					//margin: 0;
                	}
 			}
 
-			.first-name, .last-name {
+			.subject-email-wrapper {
+
 
 				@media (min-width: $screen-lg-min) {
-                    max-width: 205px;
-					margin: 0 0 0 10px;
+					margin: 0 0 25px 0;
                	}
 			}
 
 			.first-name {
-				margin: 0 0 0 10px;
+
+				margin: 0 0 25px 0;
+
+				@media (min-width: $screen-lg-min) {
+                    //max-width: 205px;
+					margin: 0 0 0 10px;
+               	}
 			}
+
+		
 
 			.subject {
 				position: relative;
@@ -238,22 +268,6 @@
 				}
 			}
 
-			.subject-phone-wrapper, .name-email-wrapper {
-
-				@media (min-width: $screen-lg-min) {
-                    margin:0 0 25px 0;
-                    height: 50px;
-               	}
-			}
-
-			.name, .phone-number {
-				margin: 0 0 25px 0;
-
-				@media (min-width: $screen-lg-min) {
-                    margin: 0 0 0 25px;
-               	}
-			}
-
 			.email, .subject {
 				 margin: 0 0 25px 0;
 
@@ -265,7 +279,7 @@
 			.email {
 
 				@media (min-width: $screen-lg-min) {
-                    max-width: 275px;
+                    margin: 0 0 0 10px;
                	}
 			}
 
@@ -334,172 +348,6 @@
 				//margin: -5px 0 0 0;
 			}
 		
-			.upload-file-wrapper {
-				width: 100%;
-				min-height: 43px;
-				border: solid 1px #d4d4d4;
-				margin: 0 0 48px 0;
-
-				@media (min-width: $screen-lg-min) {
-                    min-height: 110px;
-					border-radius: 3px;
-					background-color: #ffffff;
-					border: dashed 1px #d4d4d4;
-					color: #6a768a;
-					padding: 0 23px 10px;
-				}
-				
-				#selectedFiles {
-					//opacity: 0.6;
-					//position: absolute;
-					//bottom: 29px;
-   					//right: 140px;
-					left: auto;
-					color: #6a768a;   
-					font-size: 1.6rem;
-					font-weight: normal;
-					font-style: normal;
-					font-stretch: normal;
-					line-height: normal;
-					letter-spacing: normal;
-				}
-
-			
-				.file-input-wrapper {
-					height: 100%;
-					width: 100%;
-					padding: 0 18px 0 0;
-
-					@media (min-width: $screen-lg-min) {
-			            //padding: 12px 23px 0 0;
-			            padding: 0;
-			       	}
-
-					small {
-						position: absolute;
-						opacity: 0.6;
-						font-size: 1.2rem;
-						font-weight: normal;
-						font-style: normal;
-						font-stretch: normal;
-						line-height: normal;
-						letter-spacing: 0.3px;
-						color: #4e5665;
-						margin: 0 0 13.5px 0;
-						display: block;
-						top: 15px;
-						right: 23px;
-						left: auto;
-						width: 100%;
-					}
-				}
-
-				.file-button-wrapper {
-					position: relative;
-					height: 100%;
-					width: 100%;
-					padding: 0;
-
-					@media (min-width: $screen-lg-min) {
-	                    padding: 0;
-	               	}
-
-	               	.three-upload-file-dots { 
-	               		position: absolute;	
-	               		width: 20px;
-	               		height: auto;
-	               		left: 11px;
-	               		right: auto;
-						top: 20px;
-						margin: -2px 0 0 0;
-						pointer-events: none;
-
-                    	.upload-file-dot {
-							width: 4px;
-							height: 4px;
-							background-color: $header-blue;
-							border-radius: 50%;	
-                    	}
-					}
-
-					.file-button-text {
-						font-size: 1.5rem;
-						font-weight: normal;
-						font-style: normal;
-						font-stretch: normal;
-						line-height: normal;
-						letter-spacing: 0.5;
-						//color: rgba(106,118,138,.6);
-						color: #6a768a;
-						padding: 0;
-						margin: 0;
-						z-index: 20;
-    					background-color: transparent;
-    					text-align: center;
-    					position: absolute;
-    					top: 14px;
-	                    left: auto;
-						right: 0;
-						
-
-						@media (min-width: $screen-lg-min) {
-		                    padding: 7px 0 0 0;
-		                    top: 54px;
-		                    left: auto;
-							right: 0;
-							box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
-							border: solid 1px rgba(78, 86 ,101,.6);
-							border-radius: 4px;
-							pointer-events: none;
-    						cursor: pointer;
-							background-color: $main-white;
-							color: rgba(106,118,138,.6);
-							width: 100px;
-							height: 30px;
-
-							//opacity: 0.6;
-		               	}	
-					}
-
-					.custom-file-input {
-						cursor: pointer;
-						order: 2;
-						background-color: transparent;
-						height: 43px;
-
-						@media (min-width: $screen-lg-min) {
-							height: 100%;
-							width: 100%;
-							padding: 0;
-							opacity: 0;
-							padding: 74px 26px 0 0;
-		               	}
-					}
-				}
-
-				.dropzone-previews {
-					position: absolute;
-					left: 20px;
-					right: auto;
-					z-index: 100;
-					top: 50%;
-					margin-top: -35px;	
-				}
-			}
-	
-			.recaptcha-container {
-				margin: 0 0 48px 0;
-
-				@media (min-width: $screen-lg-min) {
-					margin: 0;
-				}
-
-				@media (max-width: 375px) {
-					transform: scale(0.9);
-					margin: 0 -17px 0 0;
-				}
-			}
-			
 			input.parsley-error {
 				box-shadow: none;
 				border-bottom: solid 2px #d53b4a;
@@ -520,7 +368,7 @@
 			}
 		}
 
-		.name-and-email-wrapper, .email, .subject, {
+		.name-wrapper, .email, .subject, {
 			position: relative;
 
 			.input-bullet {
@@ -535,74 +383,8 @@
 				margin: -3px 0 0 0;
 			}
 		}
-
-		.info-container {
-			width: 100%;
-			height: 254px;
-			border-radius: 3px;
-			background-color: $main-white;
-			box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
-			margin: 35px 0 0 0;
-			position: relative;
-			padding: 30px 30px 0 0;
-
-			@media (min-width: $screen-lg-min) {
-				width: 430px;
-				//min-height: 256px;
-				padding: 68px 60px 14px 10px;
-				margin: 0;
-			}
-
-			.right-line {
-				position: absolute;
-				right: 0;
-				left: auto;
-				top: 0px;
-				width: 7px;
-				height: 100%;
-				border-radius: 4px;
-				background-color: $cobalt;
-
-				@media (min-width: $screen-lg-min) {
-					width: 10px;
-				}
-			}
-
-			h2 {
-				font-size: 3.2rem;
-				font-weight: normal;
-				font-style: normal;
-				font-stretch: normal;
-				line-height: 1.69;
-				letter-spacing: normal;
-				color: $cobalt;
-			}
-
-			.info-wrapper {
-				width: 270px;
-				//height: 119px;
-				font-size: 1.6rem;
-				font-weight: normal;
-				font-style: normal;
-				font-stretch: normal;
-				line-height: 1.75;
-				letter-spacing: normal;
-				color: #4e5665;
-
-				address {
-					margin: 0;	
-				}
-
-				// .mail-info {
-				// 	font-family: HelveticaNeue;
-				// 	font-size: 15px;
-				// 	line-height: 1.87;
-				// 	color: #0a7bb6;
-				// }
-			}
-		}
 	}
-	.contact-us-footer {
+	.contact-us-q-and-a-footer {
 			padding: 67px 0 0;
 	}
 
