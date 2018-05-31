@@ -13,7 +13,7 @@
 
 	.contact-us-top-sec {
 		position: relative;
-		background-image: url('../common/img/contact-background.png');
+		background-image: url('../common/img/header-visuals-contact.png');
 		height: fit-content;
 		padding: 0;
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
@@ -23,8 +23,10 @@
 		background-position: left;
 
 		@media (min-width: $screen-lg-min) {
-            background-image: url('../common/img/contact-background.png');
+            background-image: url('../common/img/header-visuals-contact.png');
             min-height: 308px;
+            background-size: auto;
+            background-position: left center;
        	}
        	
        	.right-line {
@@ -162,7 +164,7 @@
 			@media (min-width: $screen-lg-min) {
                 max-width: 705px;
 				width: 100%;
-				margin: 44px 0 0 25px;
+				margin: 0 0 0 25px;
            	}
 			
 
@@ -463,7 +465,7 @@
 						
 
 						@media (min-width: $screen-lg-min) {
-		                    padding: 5px 0 0 0;
+		                    padding: 7px 0 0 0;
 		                    top: 54px;
 							right: 0;
 							margin: 0;
@@ -557,14 +559,14 @@
 			border-radius: 3px;
 			background-color: $main-white;
 			box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
-			margin: 35px 0 0 0;
+			margin: 0;
 			position: relative;
 			padding: 30px 30px 0 0;
 
 			@media (min-width: $screen-lg-min) {
 				width: 430px;
-				height: 342px;
-				padding: 68px 60px 0 20px;
+				min-height: 256px;
+				padding: 68px 60px 0 14px;
 			}
 
 			.right-line {
@@ -591,9 +593,10 @@
 				letter-spacing: normal;
 				color: $cobalt;
 			}
+
 			.info-wrapper {
 				width: 270px;
-				height: 119px;
+				//height: 119px;
 				font-size: 1.6rem;
 				font-weight: normal;
 				font-style: normal;
@@ -606,12 +609,12 @@
 					margin: 0;	
 				}
 
-				.mail-info {
-					font-family: HelveticaNeue;
-					font-size: 15px;
-					line-height: 1.87;
-					color: #0a7bb6;
-				}
+				// .mail-info {
+				// 	font-family: HelveticaNeue;
+				// 	font-size: 15px;
+				// 	line-height: 1.87;
+				// 	color: #0a7bb6;
+				// }
 			}
 		}
 	}
