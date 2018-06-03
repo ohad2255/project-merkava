@@ -1,28 +1,50 @@
 require('../common/common');
 
 $(document).ready(function() {
-    $("#showPasswordProfile").on('click', function() {
-        var input = $("#inputPasswordProfile");
 
-        if (input.attr("type") === "password") {
-            input.attr("type", "text");
-        } else {
-            input.attr("type", "password");
+    var passwordInputs = [
+        {
+            input: '#inputPasswordReg',
+            inactiveEye: '#showPasswordEye',
+            activeEye: '#showPasswordEyeShow'
+        },
+        {
+            input: '#inputPasswordConfirmReg',
+            inactiveEye: '#showPasswordEyeConfirm',
+            activeEye: '#showPasswordEyeConfirmShow'
         }
+    ]
+
+    passwordInputs.map(function (pwdBundle) {
+        var input = $(pwdBundle.input)
+
+        $(pwdBundle.inactiveEye).on('click', function () {
+            if (input.attr('type') === 'password') {
+                input.attr('type', 'text');
+                $(this).toggleClass('d-none');
+                $('html').find($(pwdBundle.activeEye)).toggleClass('d-none');
+            } else {
+                input.attr('type', 'password');
+            }
+        })
+
+        $(pwdBundle.activeEye).on('click', function() {
+            if (input.attr('type') === 'password') {
+                input.attr('type', 'text');
+            } else {
+                input.attr('type', 'password');
+            }
+    
+            $('html').find($(pwdBundle.inactiveEye)).toggleClass('d-none');
+            $(this).toggleClass('d-none');
+        });
+
+        input.focusin(function() {
+            $('.hint').show();
+        }).focusout(function () {
+            $('.hint').hide();
+        });
     })
-});
-
-
-$(document).ready(function() {
-    $("#showPasswordConfirm").on('click', function() {
-        var input = $("#inputPasswordConfirmProfile");
-
-        if (input.attr("type") === "password") {
-            input.attr("type", "text");
-        } else {
-            input.attr("type", "password");
-        }
-    });
 
     $("#activeAccount").on('click', function(){
         $("html").find($(".input-first-label")).toggleClass("input-first-label-active");
@@ -36,10 +58,11 @@ $(document).ready(function() {
         //     input.attr("type", "password");
         // }
     });
-
-    $("#inputPasswordProfile").focusin(function() {
-        $(".hint").show();
-    }).focusout(function () {
-        $(".hint").hide();
-    });
 });
+
+
+
+    
+
+
+

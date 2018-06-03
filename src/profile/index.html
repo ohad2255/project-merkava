@@ -108,29 +108,11 @@
               </div>
             </div>    
             <div class="form-group password-wrapper d-flex flex-column flex-lg-row">
-              <div class="form-group password form-group-password">
 
-                <!-- show password button -->
-                <div id="showPasswordProfile" role="button" tabindex="0">הצג סיסמא</div>
+              ${require("../common/password-with-eye/password-with-eye.html")}
 
-                <!-- password input -->
-                <input type="password" id="inputPasswordProfile" pattern="(?=.*\d)(?=.*[A-Z]).{8,}" class="form-control password-input" id="InputPasswordSignIn" placeholder="סיסמא" data-toggle="password" data-required="" data-parsley-validate-if-empty data-parsley-error-message="סיסמא צריכה להכיל 8 תווים לפחות, לכלול מספרים, תווים ולפחות אות אחת גדולה">
-                <label class="sr-only" for="inputPasswordProfile"></label>
-                <div class="input-bullet"></div>
-                <p class="hint">
-                  סיסמא צריכה להכיל 8 תווים עם שני מספרים ותו אחד מיוחד לפחות
-                </p>
-              </div>
-              <div class="form-group password-confirm">
-
-                <!-- show password confirm button -->
-                <div id="showPasswordConfirm" role="button" tabindex="0">הצג סיסמא</div>
-                
-                <!-- show password confirm -->
-                <input type="password" class="form-control" id="inputPasswordConfirmProfile"  placeholder="אימות סיסמא"  data-parsley-error-message="סיסמא אינה תואמת"  data-parsley-equalto="#inputPasswordProfile" required>
-                <label class="sr-only" for="inputPasswordConfirmProfile"></label>
-                <div class="input-bullet"></div>
-              </div>
+              ${require("../common/password-confirm-with-eye/password-confirm-with-eye.html")}
+              
             </div>
 
             <!-- phone number input -->
