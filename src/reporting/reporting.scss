@@ -137,13 +137,25 @@
 	}
 
 	.reporting-body {
-		height: fit-content;
-		padding: 30px 20px 67px;
+		height: auto;
+		padding: 0;
 
 		@media (min-width: $screen-lg-min) {
     		//height: 567px;
     		margin: 0 20px 149px;
     		padding: 40px 0 0 0;
+       	}
+
+       	.mobile-p {
+			font-size: 2rem;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1;
+			letter-spacing: normal;
+			color: #0a7bb6;
+			padding: 0 20px;
+			margin: 34px 0 166px 0;
        	}
 
        	.main-p {
