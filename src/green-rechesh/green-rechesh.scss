@@ -117,38 +117,101 @@
 	}
 }
 
+.content {
+	margin: 44px 18px 37px;
 
-.about-r-body-first-p {
+	@media (min-width: $screen-lg-min) {
+		margin: 97px 80px 69px;
+	}
+
 	* {
-		font-size: 16px !important;
+		font-size: 15px !important;
 		line-height: 1.75 !important;
 		text-align: right !important;
 		color: #4e5665 !important;
+
+		@media (min-width: $screen-lg-min) {
+			font-size: 16px !important;
+		}
 	}
 
 	h1 {
-		font-size: 32px !important;
+		font-size: 20px !important;
 		line-height: 0.78 !important;
 		color: $rechesh-green !important;
 		font-weight: normal !important;
 		font-style: normal !important;
 		font-stretch: normal !important;
 		letter-spacing: normal !important;
-		margin-bottom: 20px !important;
+		margin-bottom: 10px !important;
+
+		@media (min-width: $screen-lg-min) {
+			margin-bottom: 20px !important;
+			font-size: 32px !important;
+		}
 	}
 
 	h2 {
-		font-size: 20px !important;
+		font-size: 16px !important;
 		font-weight: 500 !important;
 		line-height: 1.4 !important;
 		font-style: normal !important;
 		font-stretch: normal !important;
 		letter-spacing: normal !important;
-		margin-bottom: 20px !important;
+		margin-bottom: 10px !important;
+		
+		@media (min-width: $screen-lg-min) {
+			margin-bottom: 20px !important;
+			font-size: 20px !important;
+		}
 	}
 	
 	b, strong {
 		font-weight: 500 !important;
 	}
+
+	ul {
+		li {
+			align-items: center;
+			line-height: 1.75;
+			margin: 0;
+
+			ul {
+				padding: 0 15px 0 0;
+				display: flex;
+				flex-direction: column;
+	
+				li:before {
+					content: '';
+					width: 4px;
+					height: 2px;
+					background-color: #4e5665;
+					margin: 0 0 3px 5px;
+					display: inline-block;
+	
+					@media (min-width: $screen-lg-min) {
+						margin: 0 0 1px 8px;
+					}
+				}
+			}
+
+			&:before {
+				content: '';
+				width: 6px;
+				height: 6px;
+				background-color: $cobalt;
+				border-radius: 50%;
+				display: inline-block;
+				margin: 0 0 1px 5px;
+		
+				@media (min-width: $screen-lg-min) {
+					margin: 0 0 1px 8px;
+				}
+			}
+		}
+	}
 }
 
+.green-rechesh .card .content h2 {
+	color: #4e5665 !important;
+}
