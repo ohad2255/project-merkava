@@ -7,12 +7,13 @@
 		background-image: url('../common/img/signin-background-img.png');
 		//margin-bottom: 73px;
 		position: relative;
-		background-size: 100%;
+		background-size: cover;
 		background-repeat: no-repeat;
 		//box-shadow: inset 0 0 0 1000px rgba(1, 46, 92, 0.6);
 
 		@media (min-width: $screen-lg-min) {
 			margin: 0;
+			background-size: 100%;
 		}
 
 		.registration-container {
