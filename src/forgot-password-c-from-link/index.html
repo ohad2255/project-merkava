@@ -30,7 +30,7 @@
         <div class="forgot-password-c-container d-flex custom-container">
           <div class="forgot-password-c-wrapper d-flex flex-column align-items-center">
 
-            <!-- forgot password a head -->
+            <!-- forgot password c head -->
             <div class="forgot-password-c-p-wrapper">
               <h1 class="forgot-password-c-head">
                 הקלד סיסמא חדשה
@@ -40,19 +40,27 @@
             <!-- form wrapper -->
             <div class="forgot-password-c-form-wrapper">
 
-              <!-- forgot password a form -->
+              <!-- forgot password c form -->
               <form id="forgot-password-c-Form" data-parsley-validate  class="d-flex flex-column align-items-center">
                 
                 <div class="form-group password-wrapper d-flex flex-column">
 
-                  ${require("../common/password-with-eye/password-with-eye.html")}
+                  <div class="forgot-password-wrapper">
+                    <small>סיסמא חדשה:</small>
+                    ${require("../common/password-with-eye/password-with-eye.html")}
+                    <div class="password-placeholder">סיסמא</div>
+                  </div>
 
-                  ${require("../common/password-confirm-with-eye/password-confirm-with-eye.html")}
-                  
+                  <div class="forgot-password-confirm-wrapper">
+                    <small>אשר סיסמא:</small>
+                    ${require("../common/password-confirm-with-eye/password-confirm-with-eye.html")}
+                    <div class="password-confirm-placeholder">הקלד סיסמא שוב</div>
+                  </div>
+
                 </div>   
                 <div class="forgot-password-c-button">
 
-                  <!-- forgot password a button -->
+                  <!-- forgot password c button -->
                   <button class="btn btn-primary" type="submit" form="forgot-password-c-Form" value="Submit">קבע סיסמא חדשה</button>
                 </div>
               </form>
