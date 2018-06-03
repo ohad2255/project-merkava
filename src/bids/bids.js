@@ -118,9 +118,9 @@ $(document).ready(function() {
 		$('.related-bids-main-container').toggleClass('margin-open');
 	});
 
-	// $(window).on('resize', function () {
-	//     $('.winning-bidders-main-container, .related-bids-container').toggleClass('hidden', $(window).width() < 996);
-	// });
+	$(window).on('resize', function () {
+	    $('.winning-bidders-main-container, .related-bids-container').toggleClass('hidden', $(window).width() < 996);
+	});
 
 	var alterClass = function() {
 	    var ww = document.body.clientWidth;
