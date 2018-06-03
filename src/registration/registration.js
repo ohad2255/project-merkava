@@ -2,35 +2,52 @@ require('../common/common');
 
 $(document).ready(function() {
 
-    $('#showPasswordEye').on('click', function() {
-        //debugger
-        var input = $('#inputPasswordReg');
-        if (input.attr('type') === 'password') {
-            input.attr('type', 'text');
+    var passwordInputs = [
+        {
+            input: '#inputPasswordReg',
+            inactiveEye: '#showPasswordEye',
+            activeEye: '#showPasswordEyeShow'
+        },
+        {
+            input: '#inputPasswordConfirmReg',
+            inactiveEye: '#showPasswordEyeConfirm',
+            activeEye: '#showPasswordEyeConfirmShow'
+        }
+    ]
+
+    passwordInputs.map(function (pwdBundle) {
+        var input = $(pwdBundle.input)
+
+        $(pwdBundle.inactiveEye).on('click', function () {
+            if (input.attr('type') === 'password') {
+                input.attr('type', 'text');
+                $(this).toggleClass('d-none');
+                $('html').find($(pwdBundle.activeEye)).toggleClass('d-none');
+            } else {
+                input.attr('type', 'password');
+            }
+        })
+
+        $(pwdBundle.activeEye).on('click', function() {
+            if (input.attr('type') === 'password') {
+                input.attr('type', 'text');
+            } else {
+                input.attr('type', 'password');
+            }
+    
+            $('html').find($(pwdBundle.inactiveEye)).toggleClass('d-none');
             $(this).toggleClass('d-none');
-            $('html').find($('#showPasswordEyeShow')).toggleClass('d-none');
-        } else {
-            input.attr('type', 'password');
-        }
-    });
+        });
 
-    $('#showPasswordEyeShow').on('click', function() {
-        
-        var input = $('#inputPasswordReg');
-        if (input.attr('type') === 'password') {
-            input.attr('type', 'text');
-        } else {
-            input.attr('type', 'password');
-        }
-
-        $('html').find($('#showPasswordEye')).toggleClass('d-none');
-        $(this).toggleClass('d-none');
-    });
-
-
-    $('#inputPasswordReg').focusin(function() {
-        $('.hint').show();
-    }).focusout(function () {
-        $('.hint').hide();
-    });
+        input.focusin(function() {
+            $('.hint').show();
+        }).focusout(function () {
+            $('.hint').hide();
+        });
+    })
 });
+
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
