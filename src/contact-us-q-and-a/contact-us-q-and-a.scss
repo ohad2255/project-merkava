@@ -1,6 +1,6 @@
 @import "../util/util.scss";
 
-.contact-tender, .contact-job-owners {
+.contact-us-q-and-a {
 	min-width: 330px;
 
 	.nav-item-text-9 {
@@ -11,7 +11,7 @@
 			 }
 		}
 
-	.contact-tender-top-sec {
+	.contact-us-q-and-a-top-sec {
 		position: relative;
 		background-image: url('../common/img/header-visuals-contact@3x.png');
 		height: fit-content;
@@ -19,15 +19,16 @@
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
 		background-repeat: no-repeat;
 		background-size: contain;
-		height: 205px;
+		min-height: 205px;
 		background-position: left;
 
 		@media (min-width: $screen-lg-min) {
             background-image: url('../common/img/header-visuals-contact.png');
             min-height: 308px;
             background-size: auto;
+            background-position: left center;
        	}
-
+       	
        	.right-line {
 			position: absolute;
 			right: 0;
@@ -39,31 +40,8 @@
 
 			@media (min-width: $screen-lg-min) {
 				width: 11px;
+				//top: -7px;
 			}
-		}
-
-		.background-img-top-sec {
-			background-image: url('../common/img/contact-us-background-pic.svg');
-			position: absolute; 
-			bottom: 0;
-			width: 100%;
-  			height: 100%;
-			object-fit: contain;
-			opacity: 0.3;
-			mix-blend-mode: overlay;
-			background-size: contain;
-			background-repeat: no-repeat;
-			bottom: 0;
-			left: 0;
-			right: auto;
-			z-index: 1;
-			//background-position-y: 22px;
-
-			@media (min-width: $screen-lg-min) {
-                background-image: url('../common/img/contact-us-background-pic.svg');
-           	}
-
-			
 		}
 
 		.top-sec-container {
@@ -166,45 +144,21 @@
 
 	.body {
 		height: fit-content;
-		padding: 0 0 20px 0;
+		padding: 0 20px;
 
 		@media (min-width: $screen-lg-min) {
     		//height: 567px;
-    		padding: 40px 0 20px 0;
+    		padding: 0;
     		margin: 0 0 144px 0;
-       	}
-
-       	.bid-number, .job-owner-name {
-			width: 340px;
-			height: 50px;
-			border-radius: 3px;
-			background-color: #ffffff;
-			border: solid 1px #e9ebf0;
-			font-size: 2rem;
-			font-weight: 500;
-			font-style: normal;
-			font-stretch: normal;
-			line-height: normal;
-			letter-spacing: 0.7px;
-			color: #6a768a;
-			padding: 0 22px 0 0;
-			margin: 0 0 25px 0;
-
-			span {
-				opacity: 0.45;
-			}
        	}
 
 		.body-wrapper {
 			width: 100%;
-			padding: 25px 20px 0;
-
-			@media (min-width: $screen-lg-min) {
-                padding: 0 20px 0;
-           	}
+			padding: 40px 0 0 0;
 		}
 
 		.form-wrapper {
+			margin: 25px 0 0 0;
 
 			@media (min-width: $screen-lg-min) {
                 max-width: 705px;
@@ -229,59 +183,42 @@
 				line-height: normal;
 				letter-spacing: 0.5px;
 				color: $contact-us-input-text;
-				padding: 1px 23px 0 0;
-			}
-
-			.first-last-name-email-wrapper {
-				margin: 0 0 25px 0;
-
-				@media (min-width: $screen-lg-min) {
-					
-               	}
+				padding:0 23px 0 0;
 			}
 
 			.first-last-name-wrapper {
 				margin: 0 0 25px 0;
 
 				@media (min-width: $screen-lg-min) {
-					margin: 0;
+					//margin: 0;
                	}
 			}
 
-			.first-name, .last-name {
+			.subject-email-wrapper {
+
 
 				@media (min-width: $screen-lg-min) {
-                    max-width: 205px;
-					margin: 0 0 0 10px;
+					margin: 0 0 25px 0;
                	}
 			}
 
 			.first-name {
-				margin: 0 0 0 10px;
-			}
 
-
-			.name {
 				margin: 0 0 25px 0;
 
 				@media (min-width: $screen-lg-min) {
-                    margin: 0 0 0 25px;
+                    //max-width: 205px;
+					margin: 0 0 0 10px;
                	}
 			}
+
+		
 
 			.subject {
 				position: relative;
-				padding: 0;
-				opacity: 1;
-				margin: 0 0 25px 0;
 
 				@media (min-width: $screen-lg-min) {
-                    margin: 0 10px 0 0;
-                    width: 355px;
-               	}
-
-               	.input-bullet {
-               		opacity: 1;
+                    
                	}
 
                	option {
@@ -294,7 +231,6 @@
 				    line-height: normal;
 				    letter-spacing: 0.5px;
 				    color: rgba(106, 118, 138, 0.8);
-				    opacity: 0.45;
                	}
 
 				.blue-arrow {
@@ -310,7 +246,6 @@
 				    top: 17px;
 				    left: 17px;
 				    right: auto;
-				    opacity: 0.45;
 				}
 
 				#subjectSelect {
@@ -322,14 +257,10 @@
 					font-stretch: normal;
 					line-height: 1.2;
 					letter-spacing: 0.5px;
-					color: rgba(106,118,138,0.45);
+					color: rgba(106,118,138,0.8);
 					-webkit-appearance: none;
 					-moz-appearance: none;
 					padding:0 23px 0 0;
-
-					@media (min-width: $screen-lg-min) {
-	                    width: 355px
-	               	}
 
 					&::-ms-expand {
 			           display: none;
@@ -337,36 +268,18 @@
 				}
 			}
 
-			.phone-number {
-				margin-bottom: 25px;
+			.email, .subject {
+				 margin: 0 0 25px 0;
 
-				@media (min-width: $screen-lg-min) {
-                    margin-bottom: 0;
-               	}
-
-				input {
-					width: 100%;
-
-					@media (min-width: $screen-lg-min) {
-	                    width: 340px;
-	               	}
-				}
-			}
-
-			.subject-phone-wrapper, .name-email-wrapper {
-
-				@media (min-width: $screen-lg-min) {
-                    margin:0 0 25px 0;
-                    height: 50px;
+				 @media (min-width: $screen-lg-min) {
+                    margin: 0;
                	}
 			}
 
 			.email {
-				 //margin: 0 0 25px 0;
 
-				 @media (min-width: $screen-lg-min) {
-                    max-width: 275px;
-                    margin: 0;
+				@media (min-width: $screen-lg-min) {
+                    margin: 0 0 0 10px;
                	}
 			}
 
@@ -430,163 +343,11 @@
 				background-color: $header-blue;
 				border-radius: 50%;
 				right: 11px;
+				left: auto;
 				top: 21px;
 				//margin: -5px 0 0 0;
 			}
-
-			.upload-file-wrapper {
-				width: 100%;
-				min-height: 43px;
-				border: solid 1px #d4d4d4;
-				margin: 0 0 48px 0;
-
-				@media (min-width: $screen-lg-min) {
-                    min-height: 102px;
-					border-radius: 3px;
-					background-color: $main-white;
-					border: dashed 1px #d4d4d4;
-					color: #6a768a;
-					padding: 0px 23px 4px;
-				}
-				
-				#selectedFiles {
-					//opacity: 0.6;
-					//position: absolute;
-					//bottom: 29px;
-   					//right: 140px;
-					left: auto;
-					color: #6a768a;   
-					font-size: 1.6rem;
-					font-weight: normal;
-					font-style: normal;
-					font-stretch: normal;
-					line-height: normal;
-					letter-spacing: normal;
-				}
-
-			
-				.file-input-wrapper {
-					height: 100%;
-					width: 100%;
-					padding: 0 18px 0 0;
-
-					@media (min-width: $screen-lg-min) {
-			            //padding: 12px 23px 0 0;
-			            padding: 0;
-			       	}
-
-					small {
-						position: absolute;
-						opacity: 0.6;
-						font-size: 1.2rem;
-						font-weight: normal;
-						font-style: normal;
-						font-stretch: normal;
-						line-height: normal;
-						letter-spacing: 0.3px;
-						color: #4e5665;
-						margin: 0 0 13.5px 0;
-						display: block;
-						top: 15px;
-						right: 23px;
-						left: auto;
-						width: 100%;
-					}
-				}
-
-				.file-button-wrapper {
-					position: relative;
-					height: 100%;
-					width: 100%;
-					padding: 0;
-
-					@media (min-width: $screen-lg-min) {
-	                    padding: 0;
-	               	}
-
-	               	.three-upload-file-dots { 
-	               		position: absolute;	
-	               		width: 20px;
-	               		height: auto;
-	               		left: 11px;
-	               		right: auto;
-						top: 22px;
-						margin: -2px 0 0 0;
-						pointer-events: none;
-
-                    	.upload-file-dot {
-							width: 4px;
-							height: 4px;
-							background-color: $header-blue;
-							border-radius: 50%;	
-                    	}
-					}
-
-					.file-button-text {
-						font-size: 1.5rem;
-						font-weight: normal;
-						font-style: normal;
-						font-stretch: normal;
-						line-height: normal;
-						letter-spacing: 0.5;
-						//color: rgba(106,118,138,.6);
-						color: #6a768a;
-						padding: 0;
-						margin: 0;
-						z-index: 20;
-    					background-color: transparent;
-    					text-align: center;
-    					position: absolute;
-    					top: 14px;
-	                    left: auto;
-						right: 0;
-						
-
-						@media (min-width: $screen-lg-min) {
-		                    padding: 7px 0 0 0;
-		                    top: 54px;
-		                    left: auto;
-							right: 0;
-							box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
-							border: solid 1px rgba(78, 86 ,101,.6);
-							border-radius: 4px;
-							pointer-events: none;
-    						cursor: pointer;
-							background-color: $main-white;
-							color: rgba(106,118,138,.6);
-							width: 100px;
-							height: 30px;
-
-							//opacity: 0.6;
-		               	}	
-					}
-
-					.custom-file-input {
-						cursor: pointer;
-						order: 2;
-						background-color: transparent;
-						height: 43px;
-
-						@media (min-width: $screen-lg-min) {
-							height: 100%;
-							width: 100%;
-							padding: 0;
-							opacity: 0;
-							padding: 74px 26px 0 0;
-		               	}
-					}
-				}
-
-				.dropzone-previews {
-					position: absolute;
-					left: 20px;
-					right: auto;
-					z-index: 100;
-					top: 50%;
-					margin-top: -35px;	
-				}
-			}
-			
+		
 			input.parsley-error {
 				box-shadow: none;
 				border-bottom: solid 2px #d53b4a;
@@ -607,7 +368,7 @@
 			}
 		}
 
-		.name-and-email-wrapper, .email, .subject, {
+		.name-wrapper, .email, .subject, {
 			position: relative;
 
 			.input-bullet {
@@ -623,7 +384,8 @@
 			}
 		}
 	}
-	.footer {
+
+	footer {
 			padding: 67px 0 0;
 	}
 

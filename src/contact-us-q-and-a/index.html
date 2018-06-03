@@ -4,16 +4,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>צור קשר עורך מכרז</title>
+    <title>צור קשר שאלות ותשובות</title>
     ${require("../common/common-stylesheet.html")}
     <link rel="stylesheet" href="/common/common.css">
     <link rel="stylesheet" href="/common/fonts.css">
-    <!-- <link rel="stylesheet" type="text/css" href="../common.rtl/common.css">  -->
+    <!-- <link rel="stylesheet" type="text/css" href="../common.rtl/common.css"> -->
   </head>
 
   <!-- body -->
-  <body class="contact-tender">
-    <!-- <link href="../contact-tender.rtl/contact-tender.css" type="text/css" rel="stylesheet"> -->
+  <body class="contact-us-q-and-a">
+    <!-- <link href="../contact-us-q-and-a.rtl/contact-us-q-and-a.css" type="text/css" rel="stylesheet"> -->
 
     <!-- mobile-menu -->
     <div class="main-menu-mobile-container d-lg-none" aria-labelledby="mainMobileNavTrigger">
@@ -26,16 +26,16 @@
       ${require("../common/header/header.html")} 
 
       <!-- top-section -->
-      <section class="contact-tender-top-sec d-flex flex-column align-items-center">
+      <section class="contact-us-q-and-a-top-sec d-flex flex-column align-items-center">
         <div class="right-line"></div>
-        <div class="top-sec-container custom-container d-flex flex-column justify-content-lg-start justify-content-center">
+        <div class="top-sec-container custom-container d-flex flex-column justify-content-start">
 
           <!-- breadcrumbs -->
           <div class="breadcrumb-wrapper d-none d-lg-block">
             <nav class="breadcrumb d-flex align-items-center justify-content-start">
-              <a class="breadcrumb-item d-flex align-items-center justify-content-center" href="../home/index.html">מינהל הרכש הממשלתי<span>››</span></a>
-              <a class="breadcrumb-item d-flex align-items-center justify-content-center" href="../bids/index.html">מכרזים מרכזיים <span>››</span></a>
-              <a class="breadcrumb-item d-flex align-items-center justify-content-center" href="#">צור קשר <!-- <span>››</span> --></a>
+              <a class="breadcrumb-item breadcrumb-item d-flex align-items-center justify-content-center" href="../home/index.html">מינהל הרכש הממשלתי<span>››</span></a>
+              <a class="breadcrumb-item breadcrumb-item d-flex align-items-center justify-content-center" href="../q-and-a/index.html">שאלות ותשובות <span>››</span></a>
+              <a class="breadcrumb-item breadcrumb-item d-flex align-items-center justify-content-center" href="#">צור קשר <!-- <span>››</span> --></a>
             </nav>
           </div>
 
@@ -59,20 +59,17 @@
 
       <!-- main-content -->
       <section class="body d-flex flex-column align-items-center">
-        <div class="body-wrapper custom-container d-flex flex-column justify-content-between">
-
-          <!-- bid number -->
-          <div class="bid-number d-flex align-items-center">
-            <span>מס מכרז: 2-2013</span>
-          </div>
+        <div class="body-wrapper custom-container d-flex flex-column flex-lg-row justify-content-between">
 
           <!-- form section -->
-          <form class="form-wrapper" id="registration-Form" data-parsley-validate>
+          <form class="form-wrapper" id="contactUsForm" data-parsley-validate>
+            <div class="d-flex flex-column flex-lg-row name-email-wrapper">
 
-            <!-- name and email sec -->
-            <div class="first-last-name-email-wrapper d-flex flex-column flex-lg-row w-100">
+              <!-- name and email sec -->
+              <div class="form-group name-and-email d-flex flex-column flex-lg-row">
+                <!-- <div class="input-bullet"></div> -->
 
-                <div class="first-last-name-wrapper d-flex w-100">
+                <div class="first-last-name-wrapper d-lg-flex w-100">
 
                   <!--first name input -->
                   <div class="form-group first-name">
@@ -88,24 +85,18 @@
                     <div class="input-bullet"></div>
                   </div>
                 </div>
-                <div class="form-group email">
+               
+              </div>   
+            </div> 
+            <div class="form-group subject-email-wrapper d-flex flex-column flex-lg-row">
+             <div class="form-group email">
 
-                  <!-- mail input -->
-                  <input type="email" class="form-control" id="inputEmail" placeholder="דוא״ל"   id="inputEmailContactUs" class="form-control email-input" name="email" data-required="" data-parsley-validate-if-empty data-parsley-error-message="אימייל חייב להכיל @">
-                  <label class="sr-only" for="inputEmailContactUs"></label>
-                  <div class="input-bullet"></div>
-                </div>
-            </div>
-
-            <!-- phone and subject sec -->
-            <div class="form-group subject-phone-wrapper d-flex flex-column flex-lg-row">
-
-              <!-- phone number input -->
-              <div class="form-group phone-number">
-                <input type="tel" class="form-control" id="phoneNumber" placeholder="טלפון" data-parsley-error-message="מספר לא תקין" minlength="9" maxlength="10" required>
-                <label class="sr-only" for="phoneNumber"></label>
+                <!-- mail input -->
+                <input type="email" class="form-control" id="inputEmail" placeholder="דוא״ל"   id="inputEmailContactUs" class="form-control email-input" name="email" data-required="" data-parsley-validate-if-empty data-parsley-error-message="אימייל חייב להכיל @">
+                <label class="sr-only" for="inputEmailContactUs"></label>
+                <div class="input-bullet"></div>
               </div>
-
+              
               <!-- subject input -->
               <div class="form-group subject">
                 <div class="blue-arrow"></div>
@@ -114,47 +105,24 @@
                 <select class="form-control subject-select" id="subjectSelect" placeholder= "נושא הפנייה" data-parsley-error-message="שדה חובה" required>
 
                   <!-- subjects options -->
-                  <option value="" disabled selected hidden class="placeholder-subject-select">נושא הפנייה: מכרזים מרכזיים</option>
+                  <option value="" disabled selected hidden class="placeholder-subject-select">נושא הפנייה</option>
                   <option class="subject-select-option-1 subject-select-option">נושא-1</option>
                   <option class="subject-select-option-2 subject-select-option">נושא-2</option>
                 </select>
                 <div class="input-bullet"></div>
               </div>
-            </div>
-           
+            </div> 
+
             <!-- subject textarea input -->
             <div class="form-group subject-textarea">
               <textarea class="form-control" id="subjectTextarea" placeholder="פירוט הפנייה" required data-parsley-error-message="פירוט פנייה נדרש"></textarea>
               <label class="sr-only" for="subjectTextarea"></label>
-              <div class="input-bullet"></div>
+              <div id="textAreaId" class="input-bullet"></div>
             </div>
-
-            <!-- upload file input -->
-            <div class="upload-file-wrapper form-group d-flex d-lg-block align-items-center dropzone" action="/upload">
-              <div class="file-input-wrapper">
-                <small class="d-none d-lg-block">
-                ניתן לצרף קבצי: PDF, ppt, exls, exl, Doc <br>
-                כמה קבצים שתרצו עם מגבלה של 15MBלכל הקבצים יחד. 
-                </small>
-                <div class="file-button-wrapper">
-                  <span class="file-button-text">צרף מסמך</span>
-                  <label class="sr-only" for="customFile"></label>
-                  <input type="file" class="custom-file-input" id="customFile" name="" multiple>
-                  <div class="three-upload-file-dots d-flex justify-content-between d-lg-none"> 
-                    <span class="upload-file-dot"></span> 
-                    <span class="upload-file-dot"></span> 
-                    <span class="upload-file-dot"></span>
-                  </div>
-                  <div id="selectedFiles"></div>
-                </div>
-                <span class="dropzone-previews">
-                </span>
-              </div>
-            </div> 
 
             <!-- save details button -->
             <div class="save-details-button d-flex justify-content-end">
-              <button class="btn btn-primary" type="submit" data-target="#myModal" data-toggle="modal" >שלח
+              <button class="btn btn-primary" type="submit" form="contactUsForm" value="Submit" data-target="#myModal" data-toggle="modal">שמור
               </button>
             </div>
           </form>
@@ -167,7 +135,7 @@
       </footer>
     </div>
 
-    <!-- error message -->
+    <!-- error message 
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -184,9 +152,9 @@
           <img src="../common/img/left-background-img-modal.png" class="left-background-img d-none d-lg-block" alt="background-image">
         </div>
       </div>
-    </div>
+    </div>-->
 
-    <!-- success message -->
+    <!-- success message 
     <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -203,7 +171,7 @@
           <img src="../common/img/left-background-img-modal.png" class="left-background-img d-none d-lg-block" alt="background-image">
         </div>
       </div>
-    </div>
+    </div>-->
     ${require("../common/common.html")}
     <script type="text/javascript" src='/common/common.min.js'></script>
   </body>
