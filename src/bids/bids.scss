@@ -24,13 +24,13 @@
 		min-height: 205px;
 		background-color: $main-white;
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
-		background-image: url('../common/img/bids-mobil-background.png');
+		background-image: url('../common/img/tender-background-img.svg');
 		background-repeat: no-repeat;
-		background-size: contain;
-		background-position: auto top;
+		background-size: auto;
+		background-position: left bottom;
 
 		@media (min-width: $screen-lg-min) {
-			background-image: url('../common/img/q-and-a-background-pic.png');
+			background-image: url('../common/img/tender-background-img.svg');
 			min-height: 308px;
 			background-position: left bottom;
 		}
@@ -58,7 +58,7 @@
 
 			.bids-breadcrumb-wrapper {
 
-				margin: 32px 116px 29px 0;
+				margin: 30px 0 44px 0;
 				max-width: 1222px;
 
 				.breadcrumb {
@@ -73,6 +73,7 @@
 					font-stretch: normal;
 					line-height: 1.75;
 					letter-spacing: normal;
+					display: flex;
 				}
 			}
 
@@ -146,14 +147,25 @@
 	}
 
 	.bids-body {
+		width: 100%;
 
-		.bids-body-wrapper {
+		.body-wrapper {
+
+			@media (min-width: $screen-lg-min) {
+				padding: 0 20px;
+				max-width: 1262px;
+			}
+		}
+
+		.bids-top-sec-wrapper {
 			width: 100%;
 			margin:0 0 77px 0;
 
 			@media (min-width: $screen-lg-min) {
 				margin:0 0 54px 0;
 				border-bottom: solid 1px rgb(224, 224, 224);
+				padding: 0;
+				max-width: 1222px;
 			}
 		}
 
@@ -235,6 +247,7 @@
 				letter-spacing: normal;
 				color: $text-dark-grey;
 				margin: 0;
+				white-space: nowrap;
 
 				@media (min-width: $screen-lg-min) {
 					font-size: 2rem;
@@ -245,7 +258,7 @@
 				margin: 0 0 7px 0;
 
 				@media (min-width: $screen-lg-min) {
-					margin: 0 0 0 93px;
+					margin: 0 0 0 89px;
 				}
 			}
 
@@ -255,10 +268,6 @@
 				@media (min-width: $screen-lg-min) {
 					margin: 0;
 				}
-			}
-
-			#status-output {
-				color: $status-green;
 			}
 		}
 
@@ -279,19 +288,20 @@
 
 		.bid-contact-wrapper {
 			width: 100%;
-			height: 216px;
+			min-height: 216px;
 			border-radius: 3px;
 			background-color: #ffffff;
 			box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
 			position: relative;
-			padding: 21px 25px 0 0;
+			padding: 21px 25px;
 
 			@media (min-width: $screen-lg-min) {
-				width: 301px;
+				width: 100%;
+				min-width: 301px;
 				min-height: 254px;
+				height: 100%;
 				border-radius: 2.1px;
-				padding: 26px 34px 0 0;
-				height: auto;
+				padding: 17px 40px 20px 0;
 			}
 
 			.right-line {
@@ -330,13 +340,14 @@
 				color: $text-dark-grey;
 				width: 100%;
 				max-width: 210px;
+				margin-bottom: 10px;
 
 				@media (min-width: $screen-lg-min) {
 					font-size: 3.2rem;
 				}
 			}
 
-			.bid-contact-mail {
+			.bid-contact-mail, .bid-contact-name {
 				font-size: 1.5rem;
 				font-weight: normal;
 				font-style: normal;
@@ -344,10 +355,46 @@
 				line-height: 1.87;
 				letter-spacing: normal;
 				color: $text-dark-grey;
-				margin: 0 0 5px 0;
+				//margin: 0 0 5px 0;
 
 				a {
 					color: #1f86bc;
+				}
+			}
+
+			.bid-contact-name {
+				line-height: normal;
+			}
+
+			.bid-contact-button {
+				margin-top: 5px;
+
+				button {
+					width: 180px;
+					height: 50px;
+					object-fit: contain;
+					border-radius: 3px;
+					background-color: $header-blue;
+					box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
+					font-size: 2rem;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: normal;
+					letter-spacing: 0.5px;
+					text-align: center;
+					color: $main-white;
+
+
+					@media (min-width: $screen-lg-min) {
+		                
+		           	}
+
+					&:active, &:focus {
+			          background-color: #1c6897;
+			          color: $header-blue;
+			          border: 0;
+			        }
 				}
 			}
 		}
@@ -369,10 +416,18 @@
 
 		@media (min-width: $screen-lg-min) {
 			border: 0;
-			margin: 0 auto 20px;
+			margin: 0 0 20px;
 			min-height: auto;
 			pointer-events: none;
+			padding: 0;
+			max-width: 1222px;
 		}
+	}
+
+	.related-bids-container-close {
+		margin: 0 auto 20px;
+		max-width: 1262px;
+		padding: 0 20px;
 	}
 
 	.border-none {
@@ -410,8 +465,9 @@
 
 		@media (min-width: $screen-lg-min) {
 			border-bottom: solid 1px $bids-border;
-			margin: 0 auto 53px;
-			padding: 0 20px 50px;
+			margin: 0 0 53px;
+			padding: 0 0 50px;
+			max-width: 1222px;
 		}
 	}
 
@@ -423,8 +479,9 @@
 		flex-wrap: wrap;
 
 		@media (min-width: $screen-lg-min) {
-			margin: 0 auto 52px;
-			padding: 0 20px 50px;
+			margin: 0 0 52px;
+			padding: 0 0 50px;
+			max-width: 1222px;
 		}
 
 		.swiper-button-next, .swiper-button-prev {
@@ -471,8 +528,8 @@
 		@media (min-width: $screen-lg-min) {
 			visibility: visible;
 			height: auto;
-			margin: 0 auto;
-			padding: 0 20px;
+			//margin: 0 auto;
+			//padding: 0 20px;
 		}
 	}
 
@@ -821,7 +878,7 @@
 
 		@media (min-width: $screen-lg-min) {
 			margin: 0 auto 62px;
-			padding: 0 14px;
+			padding: 0;
 			border-bottom: 0;
 		}
 	}
@@ -848,7 +905,11 @@
 		@media (min-width: $screen-lg-min) {
 			width: 190px;
 			height: 57px;
-			margin: 6px;
+			margin: 0 0 12px 12px;
+		}
+
+		&:last-child {
+			margin: 0 0 12px 0; 
 		}
 	}
 
@@ -970,6 +1031,7 @@
 			min-height: 447px;
 			background-color: #f4f5f7;
 			padding: 54px 0 0 0;
+			width: 100%;
 		}	
 	}
 
@@ -1006,5 +1068,26 @@
 		@media (min-width: $screen-lg-min) {
 			border-bottom: 0!important;
 		}
+	}
+
+	// tender status colors
+	.new {
+		color: $new !important;
+	}
+
+	.updated {
+		color: $updated !important;
+	}
+
+	.closed {
+		color: $closed !important;
+	}
+
+	.pre-committees-decision {
+		color: $pre-committees-decision !important;
+	}
+
+	.cancelled {
+		color: $cancelled !important;
 	}
 }
