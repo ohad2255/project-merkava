@@ -11,6 +11,10 @@ $(document).ready(function() {
         }
     });
 
+    // $('.dictionary-body .collapse-button').on('click', function() {
+    //     $(this).toggleClass('button-active'); 
+    // });
+
     // Show all the expressions which belong to the first available letter
     var firstLetter = $('.expression-container').first().data('letter')
     $(`.expression-container[data-letter=${firstLetter}]`).show()
@@ -24,9 +28,12 @@ $(document).ready(function() {
     	$(`.expression-container[data-letter=${letter}]`).show();
     	$('.alphabet-item').removeClass('active');
     	$(this).addClass('active');
+        $('.collapse-button-show-all').removeClass('button-active');
     });
+
     $('.collapse-button-show-all').on('click', function() {
-        $('.expression-container').show()
-        $('.alphabet-item.active').removeClass('active')
+        $('.expression-container').show();
+        $('.alphabet-item.active').removeClass('active');
+        $(this).addClass('button-active'); 
     });
 });

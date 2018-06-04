@@ -293,6 +293,14 @@
 				font-weight: normal;
 			}
 
+			.collapsed .card-header,  .collapsed .question-p {
+				font-weight: normal;
+			}
+
+			.question-p {
+				font-weight: 500;
+			}
+
 			.closed {
 				display: none;
 			}

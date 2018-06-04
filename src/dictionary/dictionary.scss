@@ -248,6 +248,7 @@
 				letter-spacing: normal;
 				color: $text-dark-grey;
 				margin: 0 0 20px 0;
+				max-width: 1180px;
 			}
 
 			button {
@@ -358,8 +359,12 @@
 				}
 			}
 
-			.collapsed .card-header {
+			.collapsed .card-header,  .collapsed .expression {
 				font-weight: normal;
+			}
+
+			.expression {
+				font-weight: 500;
 			}
 
 			.closed {
@@ -497,6 +502,14 @@
 				border: 0;
 				padding: 0;
 				
+				&:active {
+					text-decoretion: underline !important;
+					//background-color: red;
+				}
+			}
+
+			.button-active {
+				text-decoration: underline !important;
 			}
 		}
 	}
