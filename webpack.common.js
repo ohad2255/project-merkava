@@ -25,9 +25,7 @@ module.exports = {
         'bids/bids': ["./src/bids/bids.scss", "./src/bids/bids.js"],
         'search-results/search-results': ["./src/search-results/search-results.scss", "./src/search-results/search-results.js"],
         'regulation/regulation': ["./src/regulation/regulation.scss", "./src/regulation/regulation.js"],
-        'news-1/news-1': ["./src/news-1/news-1.scss", "./src/news-1/news-1.js"],
-        'news-2/news-2': ["./src/news-2/news-2.scss", "./src/news-2/news-2.js"],
-        'news-2-d1/news-2-d1': ["./src/news-2-d1/news-2-d1.scss", "./src/news-2-d1/news-2-d1.js"],
+        'news/news': ["./src/news/news.scss", "./src/news/news.js"],
         'sitemap/sitemap': ["./src/sitemap/sitemap.scss", "./src/sitemap/sitemap.js"],
         'reporting/reporting': ["./src/reporting/reporting.scss", "./src/reporting/reporting.js"],
         'forgot-password-a/forgot-password-a': ["./src/forgot-password-a/forgot-password-a.scss", "./src/forgot-password-a/forgot-password-a.js"],
@@ -187,21 +185,11 @@ module.exports = {
             chunks: ['regulation/regulation'],
             filename: path.resolve(__dirname, "dist/regulation/index.html"),
             template: path.resolve(__dirname, "src/regulation/index.html")
-        }), 
-         new HtmlWebpackPlugin({
-            chunks: ['news-1/news-1'],
-            filename: path.resolve(__dirname, "dist/news-1/index.html"),
-            template: path.resolve(__dirname, "src/news-1/index.html")
         }),
         new HtmlWebpackPlugin({
-            chunks: ['news-2/news-2'],
-            filename: path.resolve(__dirname, "dist/news-2/index.html"),
-            template: path.resolve(__dirname, "src/news-2/index.html")
-        }), 
-        new HtmlWebpackPlugin({
-            chunks: ['news-2-d1/news-2-d1'],
-            filename: path.resolve(__dirname, "dist/news-2-d1/index.html"),
-            template: path.resolve(__dirname, "src/news-2-d1/index.html")
+            chunks: ['news/news'],
+            filename: path.resolve(__dirname, "dist/news/index.html"),
+            template: path.resolve(__dirname, "src/news/index.html")
         }),
         new HtmlWebpackPlugin({
             chunks: ['sitemap/sitemap'],
