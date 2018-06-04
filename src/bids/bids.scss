@@ -27,7 +27,7 @@
 		background-image: url('../common/img/tender-background-img.svg');
 		background-repeat: no-repeat;
 		background-size: auto;
-		background-position: left bottom;
+		background-position: left;
 
 		@media (min-width: $screen-lg-min) {
 			background-image: url('../common/img/tender-background-img.svg');
@@ -296,7 +296,7 @@
 			padding: 21px 25px;
 
 			@media (min-width: $screen-lg-min) {
-				width: 100%;
+				width: auto;
 				min-width: 301px;
 				min-height: 254px;
 				height: 100%;

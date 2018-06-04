@@ -214,7 +214,7 @@
 			
 
 			.form-group {
-				width: 100%;
+				//width: 100%;
 				margin-bottom: 0;
 			}
 
@@ -251,7 +251,7 @@
 			.first-name, .last-name {
 
 				@media (min-width: $screen-lg-min) {
-                    max-width: 205px;
+                   	width: 205px;
 					margin: 0 0 0 10px;
                	}
 			}
@@ -365,7 +365,7 @@
 				 //margin: 0 0 25px 0;
 
 				 @media (min-width: $screen-lg-min) {
-                    max-width: 275px;
+                    width: 100%;
                     margin: 0;
                	}
 			}
