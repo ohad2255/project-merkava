@@ -200,19 +200,19 @@
 					margin: 0 0 9px 0;
 				}
 
-				// &:nth-child(3n) {
-				// 	margin: 0 0 9px 9px;
-
-				// 	@media (min-width: $screen-lg-min) {
-				// 		margin: 0 0 9px 0;
-				// 	}
-				// }
+				&:nth-child(3n) {
+					margin: 0 0 9px 0;
+				}
 
 				&:active, &:focus, &:hover {
 					background-color: rgba(98, 102, 166, 0.15);
 		        }
 			}
 		}
+	}
+
+	.left-side-links {
+		padding: 0 0 0 20px;
 	}
 
 	.tab-content {
@@ -229,9 +229,8 @@
 			line-height: 3.13;
 			letter-spacing: normal;
 			color: $cobalt;
-			display: inline-block;
+			display: block;
 			text-decoration: underline;
-			width: 50%;
 		}
 	}
 
