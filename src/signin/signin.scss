@@ -104,33 +104,21 @@
 		            }
 
 		            .parsley-errors-list.filled {
-		            	right: 15px;
-		            	left: auto;
-		            }
-
-		            .form-group-password {
-		            	display: relative;
-						
-
-						input.parsley-error {
-							//margin: 0;
-						}
-
-						#showPassword {
-							position: absolute;
-							left: 10px;
-							right: auto;
-							top: -22px;
-							font-size: 1.6rem;
-							font-weight: 500;
-							font-style: normal;
-							font-stretch: normal;
-							line-height: 1.75;
-							letter-spacing: normal;
-							color: #0a7bb6;
-							cursor: pointer;
-						}
+					  background-color: #f6f6f6;
 					}
+
+					.parsley-errors-list {
+						right: 15px;
+						left: auto;
+					}
+
+					.hint {
+						margin: -8px 15px 0 0;
+
+						@media (min-width: $screen-lg-min) {
+						   margin: 3px 15px 0 0;
+						}  
+					} 
 				
 					input {
 						padding: 3px 15px 0;

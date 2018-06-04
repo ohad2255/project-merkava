@@ -65,6 +65,7 @@ button {
     position: absolute;
     //bottom: -15px;
     right: 25px;
+    left: auto;
     padding: 0 0 0 5px;
     top:100%;
 
@@ -131,6 +132,93 @@ button {
     padding-bottom: 56.25%;
   }
 
+
+.form-group-password {
+  position: relative;
+
+  .parsley-errors-list {
+    bottom: -27px;
+
+    @media (min-width: $screen-sm-min) {
+      bottom: -15px;
+    }
+
+    @media (min-width: $screen-lg-min) {
+      bottom: -30px;
+    }
+  }
+
+  #showPasswordEye, #showPasswordEyeShow, #showPasswordEyeConfirm, #showPasswordEyeConfirmShow {
+    position: absolute;
+    left: 11px;
+    top: 50%;
+    right: auto;
+    margin: -8px 0 0 0;
+    cursor: pointer;
+    z-index: 1;
+
+    img {
+      height: 17px;
+      width: auto;
+    }
+  }
+}
+
+.password-confirm {
+  position: relative;
+  margin-bottom: 0;
+
+  #showPasswordConfirm {
+    position: absolute;
+    left: 10px;
+    right: auto;
+    top: -23px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    color: #0a7bb6;
+    cursor: pointer;
+  }
+}
+
+.hint {
+  opacity: 0.51;
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  text-align: right;
+  color: #6a768a;
+  margin: -8px 25px 0 0;
+  position: absolute;
+  display: none;
+  color: #4e5665;
+  bottom: -16px;
+
+  @media (min-width: $screen-lg-min) {
+      margin: 3px 25px 0 0;
+  }
+}
+
+input.parsley-error, .has-error input {
+  box-shadow: none;
+  border-bottom: solid 2px #d53b4a;
+}
+
+.parsley-errors-list.filled {
+  margin: 2px 0 0 0;
+  background-color: $main-white;
+  z-index: 100;
+
+  ~.help-block{
+    display:none;
+  }
+}
   
 
 

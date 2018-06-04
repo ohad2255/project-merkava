@@ -441,10 +441,6 @@
 
 				}
 
-				// .change-color {
-				// 	color: $header-blue;
-				// }
-
 				.checkbox-input-p {
 					position: absolute;
 					max-width: 200px;
@@ -458,58 +454,6 @@
 					letter-spacing: 0.4px;
 					color: #6a768a;
 					top: 40px;
-				}
-			}
-
-			input.parsley-error {
-              box-shadow: none;
-              border-bottom: solid 2px #d53b4a;
-              padding-top: 1px;
-              box-sizing: border-box;
-            }
-
-            .form-group-password {
-            	position: relative;
-
-				.parsley-errors-list {
-					//bottom: -24px;
-
-					 @media (min-width: $screen-sm-min) {
-						bottom: -15px;
-					 }
-
-					@media (min-width: $screen-lg-min) {
-						bottom: -30px;
-					}
-				}
-
-				#showPassword {
-					position: absolute;
-					left: 10px;
-					right: auto;
-					top: -23px;
-					font-size: 1.6rem;
-					font-weight: 500;
-					font-style: normal;
-					font-stretch: normal;
-					line-height: 1.75;
-					letter-spacing: normal;
-					color: #0a7bb6;
-					cursor: pointer;
-				}
-				#showPasswordProfile {
-					position: absolute;
-					left: 10px;
-					right: auto;
-					top: -23px;
-					font-size: 1.6rem;
-					font-weight: 500;
-					font-style: normal;
-					font-stretch: normal;
-					line-height: 1.75;
-					letter-spacing: normal;
-					color: #0a7bb6;
-					cursor: pointer;
 				}
 			}
 		}

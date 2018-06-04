@@ -48,13 +48,9 @@
                 <input id="InputEmailSign" type="email" class="form-control email-input" placeholder="דוא״ל" name="email" data-required="" data-parsley-validate-if-empty data-parsley-error-message="אימייל חייב להכיל @">
                 <label class="sr-only" for="InputEmailSign" data-parsley-error-message="אימייל חייב להכיל @"></label>
               </div>
-              <div class="form-group form-group-password">
 
-                <!-- password input -->
-                <input type="password" pattern="(?=.*\d)(?=.*[A-Z]).{8,}" class="form-control password-input" id="InputPasswordSignIn" placeholder="סיסמא" data-toggle="password" data-required="" data-parsley-validate-if-empty data-parsley-error-message="סיסמא צריכה להכיל 8 תווים לפחות, לכלול מספרים, תווים ולפחות אות אחת גדולה">
-                <label class="sr-only" for="InputPasswordSignIn"></label>
-                <div id="showPassword" role="button" tabindex="0">הצג סיסמא</div>
-              </div>
+              ${require("../common/password-with-eye/password-with-eye.html")}
+              
               <div class="recaptcha-container">
 
                 <!-- recaptcha -->
@@ -70,7 +66,7 @@
                 </div> -->
 
                 <!-- forgot password button -->
-                <a href="">
+                <a href="../forgot-password-a/index.html">
                   <div class="forgot-password">
                     שכחתי סיסמא >
                   </div>
