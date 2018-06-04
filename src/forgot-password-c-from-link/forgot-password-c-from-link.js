@@ -44,6 +44,37 @@ $(document).ready(function() {
         }).focusout(function () {
             $('.hint').hide();
         });
+    });
+
+
+    //  $('#inputPassword').on('change', function () {
+    //     var inputVal = $('#inputPassword').val();
+    //     var inputLength = inputVal.length()
+ 
+    //     if (inputLength > 0) {
+    //         debugger
+    //         $('html').find($('.password-placeholder')).hide();
+    //     } else {
+    //         $('html').find($('.password-placeholder')).show();
+    //     }
+    // })
+
+    $('#inputPassword').change(function() {
+        //debugger
+        if( $(this).val().length === 0 ) {
+            $('html').find($('.password-placeholder')).show();
+        } else {
+            $('html').find($('.password-placeholder')).hide(); 
+        }
+    });
+
+    $('#inputPasswordConfirm').change(function() {
+        //debugger
+        if( $(this).val().length === 0 ) {
+            $('html').find($('.password-confirm-placeholder')).show();
+        } else {
+            $('html').find($('.password-confirm-placeholder')).hide(); 
+        }
     })
 });
 

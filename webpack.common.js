@@ -9,6 +9,7 @@ module.exports = {
         'common/common': ["./src/common/common.scss", "./src/common/common.js"],
         'home/home': ["./src/home/home.scss", "./src/home/home.js"],
         'signin/signin': ["./src/signin/signin.scss", "./src/signin/signin.js"],
+        'signin-block-email/signin-block-email': ["./src/signin-block-email/signin-block-email.scss", "./src/signin-block-email/signin-block-email.js"],
         'registration/registration': ["./src/registration/registration.scss", "./src/registration/registration.js"],
         'profile/profile': ["./src/profile/profile.scss", "./src/profile/profile.js"],
         'about/about': ["./src/about/about.scss", "./src/about/about.js"],
@@ -105,6 +106,11 @@ module.exports = {
             chunks: ['signin/signin'],
             filename: path.resolve(__dirname, "dist/signin/index.html"),
             template: path.resolve(__dirname, "src/signin/index.html")
+        }),
+        new HtmlWebpackPlugin({
+            chunks: ['signin-block-email/signin-block-email'],
+            filename: path.resolve(__dirname, "dist/signin-block-email/index.html"),
+            template: path.resolve(__dirname, "src/signin-block-email/index.html")
         }),
         new HtmlWebpackPlugin({
             chunks: ['registration/registration'],
