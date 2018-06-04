@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>    
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>כניסה</title>
+    <title>מייל לא נמצא במערכת</title>
     ${require("../common/common-stylesheet.html")}
     <link rel="stylesheet" href="/common/common.css">
     <link rel="stylesheet" href="/common/fonts.css">
@@ -12,7 +12,7 @@
   </head>
 
   <!-- body -->
-  <body class="signin">
+  <body class="signin-block-email">
     <!-- <link href="../signin.rtl/signin.css" type="text/css" rel="stylesheet"> -->
 
     <!-- mobile-menu -->
@@ -35,49 +35,17 @@
               <h1 class="signin-sec-head">
                 כניסה לרשומים
               </h1>
-              <p class="signin-sec-p">
-                אתר מינהל הרכש הממשלתי מפרסם מידי יום, את רשימת המכרזים, הפטורים והדיווחים של משרדי הממשלה ויחידות הסמך.
+              <p class="signin-p-bold">
+                מייל לא נמצא במערכת.
               </p>
+              <p class="signin-p">
+                לאחר 5 ניסיונות להכנס למערכת, חשבונך נחסם. <br>
+                עליך לאפס את סיסמתך
+              </p>
+              <a class="forgot-password-link" href="../forgot-password-c-from-link/index.html">
+                אפס סיסמא >             
+              </a>
             </div>
-
-            <!-- sign in form -->
-            <form id="signinForm" data-parsley-validate>
-              <div class="form-group">
-
-                <!-- email input -->
-                <input id="InputEmailSign" type="email" class="form-control email-input" placeholder="דוא״ל" name="email" data-required="" data-parsley-validate-if-empty data-parsley-error-message="אימייל חייב להכיל @">
-                <label class="sr-only" for="InputEmailSign" data-parsley-error-message="אימייל חייב להכיל @"></label>
-              </div>
-
-              ${require("../common/password-with-eye/password-with-eye.html")}
-              
-              <div class="recaptcha-container">
-
-                <!-- recaptcha -->
-                <div class="g-recaptcha" data-sitekey="6LcTeEAUAAAAAEqaDHyi2iLhTbV5usvBszRIErrF"></div>
-              </div>
-              <div class= "signin-bottom-sec d-flex justify-content-between align-items-center">
-               <!--  <div class="form-check signin-form-check d-flex align-items-center">
-                  <input id="rememberMeCheckbox" type="checkbox">
-                  <label class="form-check-label d-flex justify-content-center align-items-center" for="rememberMeCheckbox">
-                    <span></span>
-                    זכור אותי
-                  </label>
-                </div> -->
-
-                <!-- forgot password button -->
-                <a href="../forgot-password-a/index.html">
-                  <div class="forgot-password">
-                    שכחתי סיסמא >
-                  </div>
-                </a>
-              </div>
-              <div class="signin-submit">
-
-                <!-- submit button -->
-                <button type="submit" class="btn btn-primary">שלח</button>
-              </div>
-            </form>
           </div>
 
           <!-- registration section -->
