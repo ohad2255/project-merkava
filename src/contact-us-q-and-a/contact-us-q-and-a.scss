@@ -442,27 +442,34 @@
 			}
 
 			.mark-container {
-				width: 192px;
-				height: 192px;
+				width: 134px;
+				height: 134px;
 				box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17);
 				background-color: #ffffff;
 				background-color: var(--white);
 				border: solid 5px #0a7bb6;
 				border-radius: 50%;
 				position: absolute;
-				top: -60px;
+				top: -37px;
+
+				@media (min-width: $screen-lg-min) {
+                    width: 192px;
+					height: 192px;
+					top: -60px;
+               	}
 			}
 		}
 
 		.modal-body {
 
 			padding: 0 9px 47px;
-			height: 333px;
-			width: 100%;
+			min-height: 333px;
+    		width: 100%;
 
 			@media (min-width: $screen-lg-min) {
 				height: auto;
 				width: auto;
+				min-height: 425px;
 				padding: 0 22px 72px;
 			}
 
@@ -480,12 +487,12 @@
 			}
 
 			.dialog-icon-error {
-				width: 116px;
-  				height: 95px;
+				width: 58px;
+  				height: 47px;
 
   				@media (min-width: $screen-lg-min) {
-					width: 58px;
-  					height: 47px;
+	  				width: 116px;
+	  				height: 95px;
 				}
 			}
 
@@ -518,15 +525,18 @@
 				font-size: 2rem;
 
 				@media (min-width: $screen-lg-min) {
-					max-width: 100%;
-					line-height: 0.78;
-					font-size: 3.2rem;
+					max-width: 600px;
+					//line-height: 0.78;
+					//font-size: 3.2rem;
 				}
 			}
 		}
 	}
 
 	.error .modal-body {
+		min-height: 333px;
+    	width: 100%;
+
 		@media (min-width: $screen-lg-min) {
 			padding: 0 22px 43px !important;
 		}
@@ -536,6 +546,14 @@
 
 			@media (min-width: $screen-lg-min) {
 
+			}
+		}
+
+		h4 {
+			margin-top: 118px;
+
+			@media (min-width: $screen-lg-min) {
+				font-size: 6.2rem;
 			}
 		}
 	}
