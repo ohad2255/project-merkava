@@ -73,15 +73,15 @@
 
                   <!--first name input -->
                   <div class="form-group first-name">
-                    <input class="form-control" type="text" placeholder= "שם פרטי" id="nameInputReg" name="name" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty>
-                    <label class="sr-only" for="nameInputReg"></label>
+                    <input class="form-control" type="text" placeholder= "שם פרטי" id="nameInput" name="name" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty>
+                    <label class="sr-only" for="nameInput"></label>
                     <div class="input-bullet"></div>
                   </div>
 
                   <!--last name input -->
                   <div class="form-group last-name">
-                    <input class="form-control" type="text" placeholder= "שם משפחה" id="lastNameInputReg" name="lastName" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty>
-                    <label class="sr-only" for="lastNameInputReg"></label>
+                    <input class="form-control" type="text" placeholder= "שם משפחה" id="lastNameInput" name="lastName" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty>
+                    <label class="sr-only" for="lastNameInput"></label>
                     <div class="input-bullet"></div>
                   </div>
                 </div>
@@ -99,16 +99,10 @@
               
               <!-- subject input -->
               <div class="form-group subject">
-                <div class="blue-arrow"></div>
-
-                <!-- subject select -->
-                <select class="form-control subject-select" id="subjectSelect" placeholder= "נושא הפנייה" data-parsley-error-message="שדה חובה" required>
-
-                  <!-- subjects options -->
-                  <option value="" disabled selected hidden class="placeholder-subject-select">נושא הפנייה</option>
-                  <option class="subject-select-option-1 subject-select-option">נושא-1</option>
-                  <option class="subject-select-option-2 subject-select-option">נושא-2</option>
-                </select>
+                
+                <!-- subject -->
+                <input class="form-control" type="text" placeholder= "נושא הפנייה" id="subjectInput" name="subject" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty>
+                <label class="sr-only" for="subjectInput"></label>
                 <div class="input-bullet"></div>
               </div>
             </div> 
