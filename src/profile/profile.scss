@@ -83,11 +83,11 @@
 
 					img {
 						height: 47px;
-						width: auto;
+						width: 32px;
 
 						@media (min-width: $screen-lg-min) {
-		                   height: 116px;
-		                   width: auto;
+		                	width: 85px;
+  							height: 116px;
 		               	}
 					}
 				}
@@ -543,32 +543,6 @@
 				@media (min-width: $screen-lg-min) {
                     width: 180px;
                	}
-
-				.close-img {
-					width: 20px;
-					height: 20px;
-
-					@media (min-width: $screen-lg-min) {
-						width: 25px;
-						height: 25px;
-					}
-				}
-			}
-
-			.right-background-img {
-				position: absolute;
-				top: 50%;
-				right: 0;
-				left: auto;
-				margin: -87px 0 0 0;
-			}
-
-			.left-background-img {
-				position: absolute;
-				top: 50%;
-				left: 0;
-				right: auto;
-				margin: -95px 0 0 0;
 			}
 		}
 

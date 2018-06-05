@@ -54,6 +54,7 @@
 			padding: 0 20px;
 
 			@media (min-width: $screen-lg-min) {
+
 			}
 
 			.bids-breadcrumb-wrapper {
@@ -258,7 +259,7 @@
 				margin: 0 0 7px 0;
 
 				@media (min-width: $screen-lg-min) {
-					margin: 0 0 0 89px;
+					margin: 0 0 0 84px;
 				}
 			}
 
@@ -484,6 +485,14 @@
 			max-width: 1222px;
 		}
 
+		.winning-bidder-main-wrppaer {
+
+			@media (min-width: $screen-lg-min) {
+				width: 50%;
+				min-width: 601px;
+			}
+		}
+
 		.swiper-button-next, .swiper-button-prev {
 			margin: -6px 0 0 0;
 			background-image: none;
@@ -546,10 +555,10 @@
 	    border-radius: 3px;
 
 	    @media (min-width: $screen-lg-min) {
-			max-width: 597px;
+			max-width: 601px;
 			height: 556px;
 			border-radius: 8px;
-			margin: 0 0 0 10px;
+			margin: 0;
 		}
 
 	    .winning-bidders-content-wrapper {
