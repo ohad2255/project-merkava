@@ -1,7 +1,9 @@
-require('../common/common');
+var parse_query_string = require('../common/common').parse_query_string;
 
 $(document).ready(function() {
-
+    if (!$(".signin").length){
+        return;
+    }
     var passwordInputs = [
         {
             input: '#inputPassword',
@@ -40,4 +42,13 @@ $(document).ready(function() {
             $('.hint').hide();
         });
     })
+
+    var query = window.location.search.substring(1);
+    var qs = parse_query_string(query);
+    
+    if (qs.hasOwnProperty('error')) {
+        if (qs.error === 'true') {
+            $('#invalidModal').modal('toggle')
+        }
+    }
 });

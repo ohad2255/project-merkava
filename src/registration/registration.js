@@ -1,7 +1,10 @@
 require('../common/common');
 
 $(document).ready(function() {
-
+    if(!$(".registration").length){
+        return;
+    }
+    
     var result = window.location.hash.slice(1)
     
     if (result === 'fail') {
@@ -12,12 +15,12 @@ $(document).ready(function() {
 
     var passwordInputs = [
         {
-            input: '#inputPassword',
+            input: '#inputPasswordReg',
             inactiveEye: '#showPasswordEye',
             activeEye: '#showPasswordEyeShow'
         },
         {
-            input: '#inputPasswordConfirm',
+            input: '#inputPasswordConfirmReg',
             inactiveEye: '#showPasswordEyeConfirm',
             activeEye: '#showPasswordEyeConfirmShow'
         }
