@@ -240,7 +240,7 @@ $(document).ready(function() {
 		if (myList.$elements.subjects.length === 0) {
 			$elements.myListSubjectsList.html("")			
 		} else {
-			//debugger
+			debugger
 			$elements.myListSubjectsList.html($subjects)
 		}
 	}
