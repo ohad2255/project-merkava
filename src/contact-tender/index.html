@@ -67,7 +67,7 @@
           </div>
 
           <!-- form section -->
-          <form class="form-wrapper" id="registration-Form" data-parsley-validate>
+          <form class="form-wrapper" id="contactTender" data-parsley-validate>
 
             <!-- name and email sec -->
             <div class="first-last-name-email-wrapper d-flex flex-column flex-lg-row w-100">
@@ -154,7 +154,7 @@
 
             <!-- save details button -->
             <div class="save-details-button d-flex justify-content-end">
-              <button class="btn btn-primary" type="submit" data-target="#myModal" data-toggle="modal" >שלח
+              <button class="btn btn-primary" type="submit" data-target="#myModal" data-toggle="modal" form="contactTender">שלח
               </button>
             </div>
           </form>
@@ -167,43 +167,41 @@
       </footer>
     </div>
 
-    <!-- error message -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <!-- error message 
+    <div class="modal fade error" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <button type="button" class="btn btn-default close-btn" data-dismiss="modal">
-            <img src="../common/img/close.svg" class="close-img" alt="close-button">
-          </button>
-          <div class="modal-body d-flex flex-column align-items-center">
-            <img src="../common/img/contact-us-modal-icon-2.svg"
-              class="dialog-icon" alt="dialog-icon">
-            <h4>אירעה שגיאה</h4>
+          <div class="modal-body d-flex flex-column align-items-center justify-content-end">
+            <div class="mark-container d-flex align-items-center justify-content-center">
+              <img src="../common/img/error-icon.svg"
+              class="dialog-icon-error" alt="dialog-error-icon">
+            </div>
+            <h4>הודעת שגיאה</h4>
             <p>לורם איפסום קינץ תתיח לרעחלת צשחמי צש בליא, מנסוטו צמלח לביקו ננביצמוקו בלוקריה שיצמה ברורק. קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח.</p>
+            <button class="btn close-btn" type="submit" form="contactTender" value="Submit" data-target="#myModal" data-toggle="modal">
+              אישור
+            </button>
           </div>
-          <img src="../common/img/right-background-img-modal.png" class="right-background-img d-none d-lg-block" alt="background-image">
-          <img src="../common/img/left-background-img-modal.png" class="left-background-img d-none d-lg-block" alt="background-image">
         </div>
       </div>
-    </div>
+    </div>-->
 
-    <!-- success message -->
+    <!-- success message 
     <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <button type="button" class="btn btn-default close-btn" data-dismiss="modal">
-            <img src="../common/img/close.svg" class="close-img" alt="close-button">
-          </button>
           <div class="modal-body d-flex flex-column align-items-center">
-            <img src="../common/img/success-icon.svg"
+            <img src="../common/img/profile-modal-icon.svg"
               class="dialog-icon" alt="dialog-success-icon">
             <h4>פנייתך התקבלה בהצלחה!</h4>
-            <p>לורם איפסום קינץ תתיח לרעחלת צשחמי צש בליא, מנסוטו צמלח לביקו ננביצמוקו בלוקריה שיצמה ברורק. קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח.</p>
+            <p>לורם איפסום קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבכי, צמככוקו בלוקריה.</p>
+            <button class="btn close-btn" type="submit" form="contactTender" value="Submit" data-target="#myModal" data-toggle="modal">
+              אישור
+            </button>
           </div>
-          <img src="../common/img/right-background-img-modal.png" class="right-background-img d-none d-lg-block" alt="background-image">
-          <img src="../common/img/left-background-img-modal.png" class="left-background-img d-none d-lg-block" alt="background-image">
         </div>
       </div>
-    </div>
+    </div> -->
     ${require("../common/common.html")}
     <script type="text/javascript" src='/common/common.min.js'></script>
   </body>

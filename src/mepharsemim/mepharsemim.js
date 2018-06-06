@@ -161,6 +161,7 @@ $(document).ready(function() {
 		});
 
 		myList.$elements.subjects.each(function(index, subject) {
+			//debugger
 			var $subject = $(subject);
 			var subjectId = $subject.prop("id");
 			var subjectClass = $subject.prop("class");
@@ -171,10 +172,10 @@ $(document).ready(function() {
 
 			var $options = $();
 			$subjectOptions.each(function(index, subjectOption) {
+				//debugger
 				var $subjectOption = $(subjectOption);
 
 				if ($subjectOption.prop("checked")) {
-					//debugger
 					var subjectOptionId = $subjectOption.prop("id");
 					var subjectOptionName = $subjectOption.next().text()
 					var subjectOptionTemplate = `
@@ -203,16 +204,13 @@ $(document).ready(function() {
 		              <div class="my-list-subject-name">${subjectName}</div>
 		              <div class="blue-arrow ${rotateClass}"></div>
 		            </div>
-
 		            <div class="my-list-options-wrapper ${collapseClass}">
 		            	
 		            	<!-- DYNAMIC CONTENT -->
 
 		            </div>
-
 		        </div>
 			`
-
 			var $subjectTemplate = $(subjectTemplate)
 			$subjectTemplate.find(".my-list-options-wrapper").append($options)
 			$.merge($subjects, $subjectTemplate)
@@ -242,7 +240,7 @@ $(document).ready(function() {
 		if (myList.$elements.subjects.length === 0) {
 			$elements.myListSubjectsList.html("")			
 		} else {
-			
+			//debugger
 			$elements.myListSubjectsList.html($subjects)
 		}
 	}
