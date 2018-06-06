@@ -15,6 +15,24 @@ $(document).ready(function() {
         }
     ]
 
+    $('#inputPassword').keyup(function() {
+        //debugger
+        if( $(this).val().length === 0 ) {
+            $('html').find($('.password-placeholder')).show();
+        } else {
+            $('html').find($('.password-placeholder')).hide(); 
+        }
+    });
+
+    $('#inputPasswordConfirm').keyup(function() {
+        //debugger
+        if( $(this).val().length === 0 ) {
+            $('html').find($('.password-confirm-placeholder')).show();
+        } else {
+            $('html').find($('.password-confirm-placeholder')).hide(); 
+        }
+    });
+
     passwordInputs.map(function (pwdBundle) {
         var input = $(pwdBundle.input)
 
@@ -58,24 +76,6 @@ $(document).ready(function() {
     //         $('html').find($('.password-placeholder')).show();
     //     }
     // })
-
-    $('#inputPassword').change(function() {
-        //debugger
-        if( $(this).val().length === 0 ) {
-            $('html').find($('.password-placeholder')).show();
-        } else {
-            $('html').find($('.password-placeholder')).hide(); 
-        }
-    });
-
-    $('#inputPasswordConfirm').change(function() {
-        //debugger
-        if( $(this).val().length === 0 ) {
-            $('html').find($('.password-confirm-placeholder')).show();
-        } else {
-            $('html').find($('.password-confirm-placeholder')).hide(); 
-        }
-    })
 });
 
 

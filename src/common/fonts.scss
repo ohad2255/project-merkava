@@ -7,11 +7,12 @@
   unicode-range: U+590–5FF, U+00-3F;
 }
 
-// @font-face {
-//   font-family: 'FbReforma';
-//   src: url("../fonts/fbreformaen-medium-webfont.woff") format("woff");
-//   font-weight: 500;
-// }
+@font-face {
+  font-family: 'FbReforma';
+  src: url("../fonts/FbReforma-Mediumwebfont.woff") format("woff");
+  font-weight: 500;
+  unicode-range: U+590–5FF, U+00-3F;
+}
 
 @font-face {
   font-family: 'FbReforma';
