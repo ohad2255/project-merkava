@@ -7,11 +7,6 @@ $(document).ready(function() {
             input: '#inputPassword',
             inactiveEye: '#showPasswordEye',
             activeEye: '#showPasswordEyeShow'
-        },
-        {
-            input: '#inputPasswordConfirm',
-            inactiveEye: '#showPasswordEyeConfirm',
-            activeEye: '#showPasswordEyeConfirmShow'
         }
     ]
 
