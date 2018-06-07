@@ -167,8 +167,8 @@ $(document).ready(function() {
 			var subjectClass = $subject.prop("class");
 			var collapseClass = myListToggleHistory[subjectId] ? "" : "d-none";
 			var rotateClass = myListToggleHistory[subjectId] ? "rotate" : "" ;
-			var subjectName = $subject.next().text()
-			var $subjectOptions = $subject.parents(".subject-wrapper").find(".subject-option")
+			var subjectName = $subject.next().text();
+			var $subjectOptions = $subject.parents(".subject-wrapper").find(".subject-option");
 
 			var $options = $();
 			$subjectOptions.each(function(index, subjectOption) {
@@ -215,27 +215,6 @@ $(document).ready(function() {
 			$subjectTemplate.find(".my-list-options-wrapper").append($options)
 			$.merge($subjects, $subjectTemplate)
 		})
-
-		// myList.$elements.mepharsemim.each(function(index, mepharsem) {
-		// 	var $mepharsem = $(mepharsem);
-		// 	var mepharsemId = $mepharsem.prop("id");
-		// 	var mepharsemName = $mepharsem.next().text()
-		// 	var mepharsemTemplate = `
-		// 		<div class="my-list-mepharsemim-list-mepharsem">
-		//             <div class="my-list-mepharsem-wrapper d-flex align-items-center">  
-		//               <div 
-		//                 class="my-list-item my-list-mepharsem-delete" 
-		//                 data-related-checkbox-id="${mepharsemId}"
-		//                 data-type="mepharsem"
-		//               >
-		//               	<img src="../common/img/x.svg" class="delete-img" alt="delete-x">
-		//               </div>
-		//               <div class="my-list-mepharsem-name">${mepharsemName}</div>
-		//             </div>
-		//         </div>
-		// 	`
-		// 	$.merge($mepharsemim, $(mepharsemTemplate))
-		// })
 
 		if (myList.$elements.subjects.length === 0) {
 			$elements.myListSubjectsList.html("")			

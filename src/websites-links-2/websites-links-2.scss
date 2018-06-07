@@ -219,7 +219,23 @@
 		width: 100%;
 		margin: 31px 0 0 0;
 		padding: 0 20px;
-		display: flex;
+		//display: flex;
+
+		.link-wrapper {
+			//width: 50%;
+		}
+
+		ul {
+			column-count: 2;
+			width: 100%;
+			column-gap: 173px;
+			column-width: 50%;
+
+			li {
+				//display: block;
+				//width: 50%;
+			}
+		}
 
 		a {
 			font-size: 1.6rem;
@@ -231,7 +247,6 @@
 			color: $cobalt;
 			display: inline-block;
 			text-decoration: underline;
-			width: 50%;
 		}
 	}
 
