@@ -95,7 +95,8 @@ module.exports = {
         new CopyWebpackPlugin([
             { from: "src/common/img", to: "common/img" },
             { from: "src/fonts", to: "fonts" },
-            { from: "src/common/fonts.scss", to: "common/fonts.css" }
+            { from: "src/common/fonts.scss", to: "common/fonts.css" },
+            { from: "src/mailing", to: "mailing" }
         ]),
         new ExtractTextPlugin("[name].css"),
         new HtmlWebpackPlugin({
