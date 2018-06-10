@@ -43,12 +43,19 @@ $(document).ready(function() {
         });
     })
 
-    var query = window.location.search.substring(1);
-    var qs = parse_query_string(query);
+    // var query = window.location.search.substring(1);
+    // var qs = parse_query_string(query);
     
-    if (qs.hasOwnProperty('error')) {
-        if (qs.error === 'true') {
-            $('#invalidModal').modal('toggle')
-        }
+    // if (qs.hasOwnProperty('error')) {
+    //     if (qs.error === 'true') {
+    //         $('#invalidModal').modal('toggle')
+    //     }
+    // }
+    var result = window.location.hash.slice(1)
+    
+    if (result === 'invalid') {
+        $('#invalidModal').modal('toggle')
+    } else if (result === 'blocked') {
+        $('#blockedModal').modal('toggle')
     }
 });

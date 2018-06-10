@@ -407,6 +407,11 @@
 						font-size: 2rem;
 						line-height: 1.25;
 					}
+					p{
+						margin:0;
+						padding:0;
+						display: inline;
+					}
 				}
 
 				&:last-of-type {

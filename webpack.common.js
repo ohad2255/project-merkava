@@ -59,6 +59,7 @@ module.exports = {
                 test: /\.scss$/,
                 use: ExtractTextPlugin.extract({
                     fallback: "style-loader",
+                    publicPath: '../',
                     use: [
                         { loader: "css-loader", options: { sourceMap: true } },
                         { loader: "postcss-loader", options: { sourceMap: true } },
@@ -76,7 +77,7 @@ module.exports = {
                 test: /\.(ico|jpg|jpeg|gif|webp)(\?.*)?$/,
                 loader: "file-loader",
                 options: {
-                    name: "assets/[name].[hash:8].[ext]"
+                    name: "images/[name].[ext]"
                 }
             },
             {
@@ -84,7 +85,7 @@ module.exports = {
                 loader: "url-loader",
                 options: {
                     limit: 10000,
-                    name: "assets/[name].[hash:8].[ext]"
+                    name: "images/[name].[ext]"
                 }
             }
         ]
