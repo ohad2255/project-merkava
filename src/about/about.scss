@@ -17,18 +17,15 @@
 
 	.about-top-sec, .green-rechesh-top-sec {
 		position: relative;
-		height: 205px;
+		min-height: 205px;
 		background-color: $main-white;
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
-		background-image: url('../common/img/header-visuals-odot@3x.png');
-		background-repeat: no-repeat;
-		background-size: contain;
-		background-position: left top;
 
 		@media (min-width: $screen-lg-min) {
-			background-image: url('../common/img/header-visuals-odot.png');
-			height: 308px;
-			background-position: left bottom;
+			background-image: url('../common/img/about-header-visuals.png');
+			min-height: 308px;
+			background-position: left;
+			background-repeat: no-repeat;
 		}
 
 		@media (max-width: 340px) {
@@ -43,7 +40,7 @@
 			width: 5px;
 			//height: 104%;
 			height: 100%;
-			border-radius: 4px;
+			border-radius: 4px 0 0 4px;
 			background-color: $cobalt;
 
 			@media (min-width: $screen-lg-min) {
@@ -67,10 +64,9 @@
 			}
 
 			.breadcrumb-wrapper {
-				margin:0 34px 0 0;	
 
 				@media (min-width: $screen-lg-min) {
-					margin: 31px 0 0 0;
+					margin: 30px 0;
 				}
 
 				.breadcrumb {
@@ -98,7 +94,7 @@
 				.p-wrapper {
 
 					@media (min-width: $screen-lg-min) {
-						margin:29px 0 116px 0;
+						margin: 0;
 					}	
 				}	
 
@@ -299,12 +295,12 @@
 
 						@media (min-width: $screen-lg-min) {
 							//max-width: 600px;
-							margin:0 91.5px 0 60px;
+							margin:0 91.5px 0 0;
 							font-size: 1.6rem;
 							line-height: 1.75;
-							padding: 0 0 40px 52px;
+							padding: 0 0 40px 45px;
 							width: auto;
-							max-width: 825px;
+							max-width: 918px;
 						}	
 					}
 
@@ -323,6 +319,7 @@
 							font-size: 2rem;
 							line-height: 1.4;
 							width: 100%;
+							padding: 0 0 40px 45px;
 						}
 					}
 				}

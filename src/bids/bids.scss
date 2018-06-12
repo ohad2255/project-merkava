@@ -24,15 +24,14 @@
 		min-height: 205px;
 		background-color: $main-white;
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
-		background-image: url('../common/img/tender-background-img.svg');
-		background-repeat: no-repeat;
-		background-size: auto;
-		background-position: left;
+		
 
 		@media (min-width: $screen-lg-min) {
-			background-image: url('../common/img/tender-background-img.svg');
+			background-image: url('../common/img/bids-header-visuals.png');
 			min-height: 308px;
-			background-position: left bottom;
+			background-repeat: no-repeat;
+			background-size: auto;
+			background-position: left;
 		}
 
 
