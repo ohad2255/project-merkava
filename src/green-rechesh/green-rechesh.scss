@@ -124,6 +124,7 @@
 
 .content {
 	margin: 44px 18px 37px;
+	flex-grow: 1;
 
 	@media (min-width: $screen-lg-min) {
 		margin: 97px 80px 69px;
