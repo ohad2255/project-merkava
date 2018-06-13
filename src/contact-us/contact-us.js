@@ -22,26 +22,21 @@ function handleFileSelect(e) {
     var files = e.target.files;
     var fileNames = []
     var bytesLimit = 15 * 1024 * 1024; // 15 MB - Change the Number to Change Max Size
-    var isMaxError=false;
+    var filesTotalSize = 0
+
     for (var i = 0; i < files.length; i++) {
-        
         var currFile = files[i];
-        if (currFile.size > bytesLimit) {
-        isMaxError=true;
-        files.splice(i, 1);
-        i-=1;
-        }else{
         fileNames.push(currFile.name);
-        }
-        
-    }
-    if (isMaxError) {
-        $("#maxSize-error").show();
-    }else{
-        $("#maxSize-error").hide();
+        filesTotalSize += currFile.size
     }
 
-    selDiv.innerHTML = fileNames.join('<br>')
+    if (filesTotalSize > bytesLimit) {
+        $("#maxSize-error").show();
+        $(e.target).val('')
+    } else {
+        $("#maxSize-error").hide();
+        selDiv.innerHTML = fileNames.join('<br>')
+    }
 }
 
 
@@ -75,4 +70,10 @@ $(document).ready(function () {
     } else if (result === 'success') {
         $('#contactModalSuccess').modal('toggle')
     }
+
+    $('#subjectTextarea').focusin(function() {
+        $('.hint').show();
+    }).focusout(function () {
+        $('.hint').hide();
+    });
 })
