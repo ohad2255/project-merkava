@@ -91,7 +91,7 @@ $(document).ready(function() {
  //        });
  //    });
  
-$('.datepicker').each(function() {
-    $(this).data('pikaday', new Pikaday({ field: this }));
-});
+	$('.datepicker').each(function() {
+	    $(this).data('pikaday', new Pikaday({ field: this }));
+	});
 });

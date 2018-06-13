@@ -31,7 +31,9 @@ module.exports = {
         'reporting/reporting': ["./src/reporting/reporting.scss", "./src/reporting/reporting.js"],
         'forgot-password-a/forgot-password-a': ["./src/forgot-password-a/forgot-password-a.scss", "./src/forgot-password-a/forgot-password-a.js"],
         'forgot-password-c-from-link/forgot-password-c-from-link': ["./src/forgot-password-c-from-link/forgot-password-c-from-link.scss", "./src/forgot-password-c-from-link/forgot-password-c-from-link.js"],
-        'websites-links-2/websites-links-2': ["./src/websites-links-2/websites-links-2.scss", "./src/websites-links-2/websites-links-2.js"]
+        'websites-links-2/websites-links-2': ["./src/websites-links-2/websites-links-2.scss", "./src/websites-links-2/websites-links-2.js"],
+        'tender-exemption-form/tender-exemption-form': ["./src/tender-exemption-form/tender-exemption-form.scss", "./src/tender-exemption-form/tender-exemption-form.js"],
+        'tender-exemption/tender-exemption': ["./src/tender-exemption/tender-exemption.scss", "./src/tender-exemption/tender-exemption.js"]
     },
     output: {
         filename: "[name].min.js",
@@ -223,6 +225,16 @@ module.exports = {
             chunks: ['websites-links-2/websites-links-2'],
             filename: path.resolve(__dirname, "dist/websites-links-2/index.html"),
             template: path.resolve(__dirname, "src/websites-links-2/index.html")
+        }),
+        new HtmlWebpackPlugin({
+            chunks: ['tender-exemption-form/tender-exemption-form'],
+            filename: path.resolve(__dirname, "dist/tender-exemption-form/index.html"),
+            template: path.resolve(__dirname, "src/tender-exemption-form/index.html")
+        }),
+        new HtmlWebpackPlugin({
+            chunks: ['tender-exemption/tender-exemption'],
+            filename: path.resolve(__dirname, "dist/tender-exemption/index.html"),
+            template: path.resolve(__dirname, "src/tender-exemption/index.html")
         }),
         new WebpackRTLPlugin({
             

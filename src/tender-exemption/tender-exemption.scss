@@ -1,6 +1,6 @@
 @import "../util/util.scss";
 
-.bids {
+.tender-exemption {
 	min-width: 330px;
 
 	.main-content-wrapper {
@@ -11,7 +11,7 @@
 		padding: 0 20px;
 	}
 
-	.nav-item-text-3 {
+	.nav-item-text-8 {
 		background-color: rgba(255, 255, 255, 0.19);
 
 		@media (min-width: $screen-lg-min) {
@@ -19,128 +19,136 @@
 		}
 	}
 
-	.bids-top-sec {
+	.tender-exemption-top-sec {
 		position: relative;
+		height: fit-content;
+		padding: 0;
+		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+		background-size: contain;
 		min-height: 205px;
-		background-color: $main-white;
-		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
-		
 
 		@media (min-width: $screen-lg-min) {
-			background-image: url('../common/img/bids-header-visuals.png');
-			min-height: 308px;
-			background-repeat: no-repeat;
-			background-size: auto;
-			background-position: left;
-		}
-
-
-		.right-line {
+            background-image: url('../common/img/exemption-header-visuals.png');
+            min-height: 308px;
+            background-size: contain;
+            background-position: left center;
+            background-repeat: no-repeat;
+       	}
+       	
+       	.right-line {
 			position: absolute;
 			right: 0;
+			left: auto;
 			width: 5px;
 			height: 100%;
-			background-color: $bids-dark-blue;
+			border-radius: 4px 0 0 4px;
+			opacity: 0.97;
+			background-color: $main-orange;
 
 			@media (min-width: $screen-lg-min) {
 				width: 11px;
+				//top: -7px;
 			}
 		}
 
 		.top-sec-container {
-			max-width: 1262px;
 			width: 100%;
-			padding: 0 20px;
+			height: 100%;
+			z-index: 2;
 
 			@media (min-width: $screen-lg-min) {
+                padding: 0 20px 0;
+    			//max-width: 1344px;
+    			max-width: 1262px;
+           	}
 
-			}
+           	.breadcrumb-wrapper {
 
-			.bids-breadcrumb-wrapper {
-
-				margin: 30px 0 44px 0;
-				max-width: 1222px;
+				@media (min-width: $screen-lg-min) {
+					margin: 30px 0 42px 0px;
+				}
 
 				.breadcrumb {
 					margin: 0;	
 				}
 
 				.breadcrumb-item  {
-					color: $bids-dark-blue;
+					color: $main-orange;
 					font-size: 1.6rem;
 					font-weight: 500;
 					font-style: normal;
 					font-stretch: normal;
 					line-height: 1.75;
 					letter-spacing: normal;
-					display: flex;
 				}
 			}
 
-			.bids-head-wrapper {
-				margin: 73px 0 0 0;
+			.p-sec {
+				margin: 20px 0 0 0;	
+
 				@media (min-width: $screen-lg-min) {
-					margin:0;
-					padding: 0;
-				}
+                    margin: 0;
+               	}
 
-				img {
-					height: 92px;
-					width: 92px;
-				}
-
-				.bids-h-wrapper {
-					max-width: 260px;
+				.icon-wrapper {
+					margin: 0 0 4px 0;
 
 					@media (min-width: $screen-lg-min) {
-						max-width: 570px;
-						margin: 0 24px 0 0;
-					}
+	                    margin: 0 0 0 14px;
+	               	}
 
-					h1 {
-						font-size: 2.5rem;
-						font-weight: 500;
-						font-style: normal;
-						font-stretch: normal;
-						line-height: 1;
-						letter-spacing: normal;
-						color: $bids-dark-blue;
+					img {
+						width: 49px;
+  						height: 51px;
+  						//object-fit: contain;
 
 						@media (min-width: $screen-lg-min) {
-							font-size: 4rem;
-							line-height: 0.75;
-						}
-
-		
-
-						@media (min-width: $screen-lg-min) {
-							font-size: 4rem;
-							font-weight: 500;
-							font-style: normal;
-							font-stretch: normal;
-							line-height: normal;
-							letter-spacing: normal;
-							color: $bids-dark-blue;
-						}
+		                    width: 97px;
+  							height: 119px;
+		               	}
 					}
+				}
 
-					h2 {
-						font-size: 1.6rem;
-						font-weight: normal;
-						font-style: normal;
-						font-stretch: normal;
-						line-height: 1.25;
-						letter-spacing: normal;
-						text-align: right;
-						color: $text-dark-grey;
-						margin: 0;
+				.p-wrapper {
+					padding-top: 4px;
+				}
 
-						@media (min-width: $screen-lg-min) {
-							margin: 0 0 3px 0;
-							font-size: 3.5rem;
-							line-height: normal;
-						}
-					}
+				.main-head {
+					font-size: 3rem;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					letter-spacing: normal;
+					color: $text-dark-grey;
+					font-size: 16px;
+  					line-height: 1.25;
+  					margin-bottom: 0;
+
+
+					@media (min-width: $screen-lg-min) {
+						margin: 0 0 3px 0;
+	                    font-size: 3.5rem;
+						line-height: normal;
+	               	}
+				}
+
+				.main-p {
+					max-width: 594px;
+					font-size: 2.5rem;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: normal;
+					letter-spacing: normal;
+					padding: 0;
+					margin:0 0 20px 0;
+	                color: $main-orange;
+
+					@media (min-width: $screen-lg-min) {
+	                    font-size: 4rem;
+	                    margin:0 0 10px 0;
+	                    max-width: 595px;
+	               	}
 				}
 			}
 		}
@@ -162,7 +170,7 @@
 			margin:0 0 77px 0;
 
 			@media (min-width: $screen-lg-min) {
-				margin:0 0 54px 0;
+				margin:0 0 55px 0;
 				border-bottom: solid 1px rgb(224, 224, 224);
 				padding: 0;
 				max-width: 1222px;
@@ -173,7 +181,7 @@
 			padding: 20px 0 0 0;
 
 			@media (min-width: $screen-lg-min) {
-				padding: 46px 0 51px 20px;
+				padding: 40px 0 46px 20px;
 				
 			}
 
@@ -183,13 +191,7 @@
 				@media (min-width: $screen-lg-min) {
 					width: 100%;
 					margin: 0;
-				}
-
-				#sub-head-details {
-
-					@media (min-width: $screen-lg-min) {
-						margin: 0 0 5px 0;
-					}
+					position: relative;
 				}
 
 				h2 {
@@ -199,7 +201,7 @@
 					font-stretch: normal;
 					line-height: 1;
 					letter-spacing: normal;
-					color: $bids-dark-blue;
+					color: $main-orange;
 
 					@media (min-width: $screen-lg-min) {
 						font-size: 4rem;
@@ -220,37 +222,107 @@
 						font-size: 2rem;
 					}
 				}
+
+				.submission-button-wrapper {
+					margin-top: 30px;
+					
+					@media (min-width: $screen-lg-min) {
+		                display: inline-block;
+		                position: absolute;
+		                left: 40px;
+		                right: auto;
+		                margin-top: 14px;
+
+		           	}
+
+					button {
+						width: 100%;
+						height: 50px;
+						object-fit: contain;
+						border-radius: 3px;
+						background-color: $header-blue;
+						box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
+						font-size: 2rem;
+						font-weight: 500;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: normal;
+						letter-spacing: 0.5px;
+						text-align: center;
+						color: $main-white;
+
+
+						@media (min-width: $screen-lg-min) {
+			                width: 180px;
+			           	}
+
+						&:active, &:focus {
+				          background-color: #1c6897;
+				          color: $header-blue;
+				          border: 0;
+				        }
+
+				        &:disabled {
+				        	background-color: #e8e8e8;
+				        	color: #9b9b9b;
+				        	border: 0;
+				        }
+					}
+
+					p {
+						display: none;
+					}
+
+					button:disabled + p {
+						display: block;
+						max-width: auto;
+						font-size: 1.2rem;
+						font-weight: normal;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: 1.08;
+						letter-spacing: normal;
+						text-align: center;
+						color: #4e5665;
+						margin: 8px auto 0;
+
+						@media (min-width: $screen-lg-min) {
+							max-width: 149px;
+							margin: 5px auto 0;
+						}
+					}
+				}
 			}
 
 			.details-body {
-				margin: 0 0 12px 0;
+				column-count: 2;
+				width: 100%;
 
 				@media (min-width: $screen-lg-min) {
-					margin: 0 0 35px 0;
+					margin: 0 0 35px 38px;
+					width: auto;
+					//max-width: 860px;
 				}
 			}
 
 			.details-head {
-				margin: 0 0 14px 0;
+				margin: 0 0 9px 0;
+				order: -2;
 
 				@media (min-width: $screen-lg-min) {
 					margin: 0 0 38px 0;
+					order: 0;
 				}
 			}
 
-			.sub-head {
-				font-size: 1.6rem;
-				font-weight: 500;
-				font-style: normal;
-				font-stretch: normal;
-				line-height: 1.25;
-				letter-spacing: normal;
-				color: $text-dark-grey;
-				margin: 0;
-				white-space: nowrap;
+			.last-date-wrapper {
+				order: -1;
+				margin-bottom: 26px;
 
 				@media (min-width: $screen-lg-min) {
-					font-size: 2rem;
+					order: 0;
+					margin-bottom: 0;
+					display: inline-block;
 				}
 			}
 
@@ -258,7 +330,7 @@
 				margin: 0 0 7px 0;
 
 				@media (min-width: $screen-lg-min) {
-					margin: 0 0 0 84px;
+					//margin: 0 0 0 64px;
 				}
 			}
 
@@ -271,6 +343,104 @@
 			}
 		}
 
+		.communication-details-container {
+			padding: 10px 20px 33px;
+
+			@media (min-width: $screen-lg-min) {
+				margin: 0 0 55px 0;
+				border-bottom: solid 1px rgb(224, 224, 224);
+				padding: 0 0 55px 0 !important;
+			}
+
+			p {
+				font-size: 1.6rem;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.13;
+				letter-spacing: normal;
+				color: $text-dark-grey;
+
+				@media (min-width: $screen-lg-min) {
+					font-size: 2.4rem;
+					line-height: 1.25;
+				}
+			}
+
+			span {
+				font-size: 1.6rem;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.56;
+				letter-spacing: normal;
+				color: $text-dark-grey;
+
+				@media (min-width: $screen-lg-min) {
+					font-size: 2rem;
+					line-height: 1.5;
+				}
+			}
+
+			.essence-wrapper {
+				margin-bottom: 16px;
+
+				@media (min-width: $screen-lg-min) {
+					margin-bottom: 15px;
+				}
+			}
+
+			.reasons-wrapper {
+				margin-bottom: 16px;
+
+				@media (min-width: $screen-lg-min) {
+					margin-bottom: 30px;
+				}
+			}
+
+			ul {
+				column-count: 2;
+
+				@media (min-width: $screen-lg-min) {
+					column-count: inherit;
+				}
+
+				li {
+					margin: 0 0 13px 0;
+
+					@media (min-width: $screen-lg-min) {
+						margin: 0 0 33px 103px;
+						display: inline-block;
+					}
+	
+					&:nth-child(5) {
+
+						@media (min-width: $screen-lg-min) {
+							margin: 0 0 0 197px;
+						}
+					}
+
+					&:nth-child(6) {
+
+						@media (min-width: $screen-lg-min) {
+							margin: 0 0 0 217px;
+						}
+					}
+
+					&:first-child {
+						
+					}
+
+					&:last-child {
+
+						@media (min-width: $screen-lg-min) {
+							margin: 0;
+						}
+					}
+				}
+			}
+		}
+
 		#lastDate {
 			font-size: 2.5rem;
 			font-weight: 500;
@@ -278,7 +448,7 @@
 			font-stretch: normal;
 			line-height: 1;
 			letter-spacing: normal;
-			color: $bids-dark-blue;
+			color: $main-orange;
 
 			@media (min-width: $screen-lg-min) {
 				font-size: 4rem;
@@ -301,7 +471,7 @@
 				min-height: 254px;
 				height: 100%;
 				border-radius: 2.1px;
-				padding: 17px 40px 20px 0;
+				padding: 17px 40px 20px 11px;
 			}
 
 			.right-line {
@@ -311,7 +481,8 @@
 				top: 0;
 				width: 7px;
 				height: 100%;
-				background-color: $bids-dark-blue;
+				border-radius: 4px 0 0 4px;
+				background-color: $main-orange;
 			}
 
 			.logo-wrapper {
@@ -339,11 +510,12 @@
 				letter-spacing: normal;
 				color: $text-dark-grey;
 				width: 100%;
-				max-width: 210px;
+				max-width: 249px;
 				margin-bottom: 10px;
 
 				@media (min-width: $screen-lg-min) {
 					font-size: 3.2rem;
+					//margin: 0 0 0 11px;
 				}
 			}
 
@@ -365,42 +537,10 @@
 			.bid-contact-name {
 				line-height: normal;
 			}
-
-			.bid-contact-button {
-				margin-top: 5px;
-
-				button {
-					width: 180px;
-					height: 50px;
-					object-fit: contain;
-					border-radius: 3px;
-					background-color: $header-blue;
-					box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
-					font-size: 2rem;
-					font-weight: 500;
-					font-style: normal;
-					font-stretch: normal;
-					line-height: normal;
-					letter-spacing: 0.5px;
-					text-align: center;
-					color: $main-white;
-
-
-					@media (min-width: $screen-lg-min) {
-		                
-		           	}
-
-					&:active, &:focus {
-			          background-color: #1c6897;
-			          color: $header-blue;
-			          border: 0;
-			        }
-				}
-			}
 		}
 	}
 
-	.related-documents-container-close, .winning-bidders-container-close, .subjects-container-close, .related-bids-container-close {
+	.related-documents-container-close, .subjects-container-close, .related-exemptions-container-close, .communication-details-container-close {
 		min-height: 64px;
 		width: 100%;
 		border-bottom: solid 1px $bids-border;
@@ -424,14 +564,14 @@
 		}
 	}
 
-	.related-bids-container-close {
+	.related-exemptions-container-close {
 		margin: 0 auto 20px;
 		max-width: 1262px;
 		padding: 0 20px;
 	}
 
 	.border-none {
-		border-bottom: 0;
+		border-bottom: 0 !important;
 	}
 
 	.grey-arrow {
@@ -456,6 +596,7 @@
 
 		#relatedDocumentsSwiper {
 			width: 100%;
+			height: 100%;
 		}
 	}
 
@@ -471,67 +612,11 @@
 		}
 	}
 
-	.winning-bidders-main-container {
-		//display: none;
-		border-bottom: solid 1px $bids-border;
-		padding: 0 0 42px 0;
-		margin: 10px 0 0 0;
-		flex-wrap: wrap;
-
-		@media (min-width: $screen-lg-min) {
-			margin: 0 0 52px;
-			padding: 0 0 50px;
-			max-width: 1222px;
-		}
-
-		.winning-bidder-main-wrppaer {
-
-			@media (min-width: $screen-lg-min) {
-				width: 50%;
-				min-width: 601px;
-			}
-		}
-
-		.swiper-button-next, .swiper-button-prev {
-			margin: -6px 0 0 0;
-			background-image: none;
-			width: 12px;
-			height: 12px;
-			border: solid 1px $bids-dark-blue;
-		    border-width: 0 2px 2px 0;
-		    display: inline-block;
-		}
-
-		.swiper-button-next {
-			right: -17px;
-			left: auto;
-			transform: rotate(-45deg);
-		}
-
-		.swiper-button-prev {
-			left: -19px;
-			right: auto;
-		    transform: rotate(135deg);
-		}
-	}
-
-	#winningBiddersMainContainer {
-		@media (min-width: $screen-lg-min) {
-			padding-bottom: 60px;
-			margin-bottom: 52px;
-		}
-	}
-
-	.bids.custom-container {
-		max-width: 1275px;
-		margin: 0 auto;
-	}
-
 	.hidden {
 		visibility: hidden;
 		height: 1px;
 		margin: 0;
-		padding: 0;
+		padding: 0 !important;
 
 		@media (min-width: $screen-lg-min) {
 			visibility: visible;
@@ -546,127 +631,6 @@
 		
 	}
 
-	.winning-bidder-container {
-		height: 552px;
-	    background-color: $bids-purple;
-	    padding: 26px 0 0 0;
-	    margin: 0 20px;
-	    border-radius: 3px;
-
-	    @media (min-width: $screen-lg-min) {
-			max-width: 601px;
-			height: 556px;
-			border-radius: 8px;
-			margin: 0;
-		}
-
-	    .winning-bidders-content-wrapper {
-	    	padding: 0 24px 0 20px;
-
-	    	 @media (min-width: $screen-lg-min) {
-				padding: 0 30px 25px;
-			}
-	    }
-
-	    .winning-bidders-content-head {
-	    	margin: 0 0 13px 0;
-
-	    	@media (min-width: $screen-lg-min) {
-	    		margin: 0 0 17px 0;
-	    	}
-	    }
-
-	    .winning-bidders-content-sub-head {
-	    	margin: 0 0 4px 0;
-
-	    	@media (min-width: $screen-lg-min) {
-	    		margin: 0 0 18px 0;
-	    	}
-	    }
-
-	    .winning-bidders-content-date-head {
-	    	margin: 0 0 14px 0;
-
-	    	@media (min-width: $screen-lg-min) {
-	    		margin: 0 0 19px 0;
-	    	}
-	    }
-
-	    h3 {
-			font-size: 2.5rem;
-			font-weight: normal;
-			font-style: normal;
-			font-stretch: normal;
-			line-height: 1;
-			letter-spacing: normal;
-			color: $text-dark-grey;
-
-			 @media (min-width: $screen-lg-min) {
-				font-size: 3.2rem;
-				line-height: 0.94;
-			}
-	    }
-
-	    p {
-	    	font-size: 1.6rem;
-			font-weight: normal;
-			font-style: normal;
-			font-stretch: normal;
-			line-height: 1.13;
-			letter-spacing: normal;
-			color: $text-dark-grey;	
-
-			 @media (min-width: $screen-lg-min) {
-				font-size: 2rem;
-				line-height: 1;
-			}
-	    }
-	}
-
-
-	.a {
-    	font-size: 1.6rem;
-		font-weight: normal;
-		font-style: normal;
-		font-stretch: normal;
-		line-height: 1.13;
-		letter-spacing: normal;
-		color: $bids-links!important;
-
-		@media (min-width: $screen-lg-min) {
-			font-size: 2rem;
-			line-height: 1;
-		}
-    }
-
-    .winning-bidder-container-2 {
-		background-color: rgba(223, 110, 17, 0.15);
-
-		 @media (min-width: $screen-lg-min) {
-			margin: 0 0 0 0;
-		}
-	}
-
-	.winning-bidder-container-3 {
-		background-color: rgba(51,163,141,.15);
-	}
-
-    .hour-link {
-		text-decoration: underline!important;
-    }
-
-
-	.winning-bidder {
-		position: relative;
-	}
-
-	.winning-bidder-1, .winning-bidder-2 {
-		margin: 0 0 20px 0;
-
-		@media (min-width: $screen-lg-min) {
-			margin: 0 0 10px 0;
-		}
-	}
 
 	.single-slide-warpper {
 		padding: 0 20px;
@@ -675,38 +639,6 @@
 			padding: 0 30px;
 		}
 	}
-
-	.winning-bidders-swiper-wrapper, .single-slide {
-		position: absolute;
-		bottom: 120px;
-		height: 140px;
-		width: 100%;
-
-		@media (min-width: $screen-lg-min) {
-			bottom: 129px;
-		}
-
-		.swiper-slide {
-			width: 293px!important;
-
-			@media (min-width: $screen-lg-min) {
-				right: 45px;
-				left: auto;
-			}
-		}
-	}
-
-	.winning-bidders-swiper-wrapper {
-
-		margin: 0 43px 0 0;
-
-		@media (min-width: $screen-lg-min) {
-			width: 536px;
-			right: 30px;
-			left: auto;
-			margin: 0;
-		}
-	}	
 
 	.single-slide {
 		position: static;
@@ -717,49 +649,6 @@
 		@media (min-width: $screen-lg-min) {
 			margin: 0;
 		}
-	}
-
-	.winning-bidder-wrapper {
-		padding: 22px 15px 0;
-
-	}
-
-	#winningBiddersPagination, #winningBiddersPagination2 {
-		margin: 10px -43px 0 0;
-
-		@media (min-width: $screen-lg-min) {
-			margin: 10px -10px 0 0;
-		}
-	}
-
-	.winning-bidders-links {
-		position: absolute;
-		bottom: 12px;
-		padding: 0 24px 5px 55px;
-		margin: 20px 0 0 0;
-
-		@media (min-width: $screen-lg-min) {
-			padding: 0 30px 0 40px;
-			bottom: 18px;
-		}	
-
-		a {
-			line-height: 1.15;
-		}
-
-		span {
-			font-size: 1.6rem;
-			line-height: 0;
-			color: $bids-links;
-		}
-	}
-
-	.winning-bidders-links-right-side, .winning-bidders-links-left-side {
-		display: inline;
-	}
-
-	.winning-bidders-links-left-side {
-		min-width: 235px;
 	}
 
 	.swiper-container {
@@ -779,6 +668,7 @@
 			background-color: $main-white;
 			box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15);
 			text-align: right;
+			min-height: 145px;
 
 			@media (min-width: $screen-lg-min) {
 				width: 293px!important;
@@ -818,13 +708,13 @@
         }
 
         .swiper-pagination-bullet-active {
-        	background-color: $bids-dark-blue;
+        	background-color: $main-orange;
         }
     }
 
 	
 	.related-document-wrapper {
-		padding: 21px 15px 0;
+		padding: 20px 14px 0;
 	}
 
 	.related-documents-swiper {
@@ -847,25 +737,26 @@
 	}
 
 	.document-date {
-		font-size: 1.4rem;
+		font-size: 1.6rem;
 		font-weight: normal;
 		font-style: normal;
 		font-stretch: normal;
-		line-height: 1.43;
+		line-height: 1.25;
 		letter-spacing: normal;
 		color: $text-dark-grey;
+		margin-bottom: 4px;
 	}
 
 	.document-head {
 
 		h3 {
-			font-size: 2rem;
+			font-size: 2.4rem;
 			font-weight: normal;
 			font-style: normal;
 			font-stretch: normal;
-			line-height: 1.15;
+			line-height: 0.96;
 			letter-spacing: normal;
-			color: $bids-dark-blue;
+			color: $main-orange;
 		}
 	}
 
@@ -921,7 +812,7 @@
 		}
 	}
 
-	.related-bids-container {
+	.related-exemptions-container {
 		position: relative;
 		margin: 8px 0 0 0;
 
@@ -929,7 +820,7 @@
 			height: auto;
 		}
 
-		.related-bids-swiper {
+		.related-exemptions-swiper {
 			padding: 4px 0;
 
 			@media (min-width: $screen-lg-min) {
@@ -959,7 +850,8 @@
 			left: auto;
 			width: 6px;
 			height: 100%;
-			background-color: $bids-dark-blue;
+			background-color: $main-orange;
+			border-radius: 4px 0 0 4px;
 		}
 
 		.related-bid-wrapper {
@@ -968,7 +860,7 @@
 			h3 {
 				font-size: 2rem;
 				line-height: 1;
-				color: $bids-dark-blue;
+				color: $main-orange;
 				font-weight: normal;
 				margin: 0;
 			}
@@ -1012,7 +904,7 @@
 		}
 	}
 
-	.hidden.related-bids-container {
+	.hidden.related-exemptions-container {
 		@media (min-width: $screen-lg-min) {
 			padding: 0;
 		}
@@ -1033,7 +925,7 @@
 	}
 
 
-	.related-bids-main-container {
+	.related-exemptions-main-container {
 
 		@media (min-width: $screen-lg-min) {
 			min-height: 447px;
@@ -1047,7 +939,7 @@
 		margin: 0 0 65px 0;
 	}
 
-	.related-bids-desktop-container	{
+	.related-exemptions-desktop-container	{
 
 		.related-bid-wrapper {
 			padding: 23px 34px 11px 16px;
@@ -1072,10 +964,33 @@
 		width: 293px!important;
 	}
 
-	.border {
+	.sub-head {
+		font-size: 1.6rem;
+		font-weight: 500;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.25;
+		letter-spacing: normal;
+		color: $text-dark-grey;
+		margin: 0;
+		white-space: nowrap;
+
 		@media (min-width: $screen-lg-min) {
-			border-bottom: 0!important;
+			font-size: 2rem;
 		}
+	}
+
+	.communication-details-container .sub-head {
+
+		@media (min-width: $screen-lg-min) {
+			line-height: 1.5;
+		}
+	}
+
+	.border-on {
+
+			border: solid #e9ecef !important;
+			border-width: 0 0 1px 0 !important;
 	}
 
 	// tender status colors

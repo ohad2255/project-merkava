@@ -25,21 +25,15 @@
 
 	.green-rechesh-top-sec {
 		position: relative;
-		height: 205px;
+		min-height: 205px;
 		background-color: $main-white;
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
-		background-image: url('../common/img/green-back-pic.png');
-		background-repeat: no-repeat;
-		background-size: 267px 109px;
-		background-position: left top;
-		//width: 267px;
-  		//height: 109px;
 
 		@media (min-width: $screen-lg-min) {
-			background-image: url('../common/img/green-back-pic@3x.png');
+			background-image: url('../common/img/green-rechesh-header-visuals.png');
 			height: 308px;
 			/*@media all and (min-width:992px)*/
-			background-position: left bottom;
+			background-position: left;
 			background-size: auto;
 
 		}
@@ -75,15 +69,10 @@
 		@media (min-width: $screen-lg-min) {
 			width: 88px;
 			height: 116px;
-			margin: 0;
 			order: -1;
-			margin-left: 35px !important;
+			margin: 0 0 0 35px !important;
 			//margin-top: -85px;
 		}
-	}
-
-	.breadcrumb-wrapper {
-		margin: 30px 124px 30px 0 !important;
 	}
 
 	.head, .breadcrumb-item, .related-document-content, .link {

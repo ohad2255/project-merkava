@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>צור קשר</title>
+    <title>פטורים</title>
     ${require("../common/common-stylesheet.html")}
     <link rel="stylesheet" href="/common/common.css">
     <link rel="stylesheet" href="/common/fonts.css">
@@ -12,8 +12,8 @@
   </head>
 
   <!-- body -->
-  <body class="contact-us">
-    <!-- <link href="../contact-us.rtl/contact-us.css" type="text/css" rel="stylesheet"> -->
+  <body class="tender-exemption-form">
+    <!-- <link href="../tender-exemption-form.rtl/tender-exemption-form.css" type="text/css" rel="stylesheet"> -->
 
     <!-- mobile-menu -->
     <div class="main-menu-mobile-container d-lg-none" aria-labelledby="mainMobileNavTrigger">
@@ -26,7 +26,7 @@
       ${require("../common/header/header.html")} 
 
       <!-- top-section -->
-      <section class="contact-us-top-sec d-flex flex-column align-items-center">
+      <section class="tender-exemption-form-top-sec d-flex flex-column align-items-center">
         <div class="right-line"></div>
         <div class="top-sec-container custom-container d-flex flex-column justify-content-start">
 
@@ -34,22 +34,23 @@
           <div class="breadcrumb-wrapper d-none d-lg-block">
             <nav class="breadcrumb d-flex align-items-center justify-content-start">
               <a class="breadcrumb-item d-flex align-items-center justify-content-center" href="../home/index.html">מינהל הרכש הממשלתי<span>››</span></a>
-              <a class="breadcrumb-item d-flex align-items-center justify-content-center" href="#">צור קשר <!-- <span>››</span> --></a>
+              <a class="breadcrumb-item d-flex align-items-center justify-content-center" href="#">פטורים <span>››</span></a>
+              <a class="breadcrumb-item d-flex align-items-center justify-content-center" href="#">הגשת השגה</a>
             </nav>
           </div>
 
           <!-- top-sec-content -->
           <div class="p-sec flex-column flex-lg-row d-flex align-items-start">
             <div class="icon-wrapper">
-              <img src="../common/img/contact-us-icon.svg"
-              class="icon" alt="paper-plane">
+              <img src="../common/img/exemption-icon.svg"
+              class="icon" alt="exemption-icon">
             </div>
             <div class="p-wrapper">
               <h1 class="main-head">
-                צור קשר
+                פטורים
               </h1>
               <p class="main-p">
-                לורם איפסום קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבכי, צמככוקו בלוקריה.
+                בקשה לפטור ממכרז
               </p>
             </div>
           </div>
@@ -58,62 +59,74 @@
 
       <!-- main-content -->
       <section class="body d-flex flex-column align-items-center">
-        <div class="body-wrapper custom-container d-flex flex-column flex-lg-row justify-content-between">
+        <div class="body-wrapper custom-container d-flex flex-column">
+
+          <!-- details section -->
+          <div class="details-wrapper d-flex flex-column flex-lg-row">
+            <div class="tender-number d-flex align-items-center">
+              מספר מכרז: 2-2013 
+            </div>
+            <div class="type d-flex align-items-center">
+              סוג הקריאה: פרסום כוונה
+            </div>
+          </div>
 
           <!-- form section -->
-          <form class="form-wrapper" id="contactUsForm" data-parsley-validate>
-            <div class="d-flex flex-column flex-lg-row name-email-wrapper">
+          <form class="form-wrapper" id="exemptionForm" data-parsley-validate>
 
-              <!-- name and email sec -->
-              <div class="form-group name-and-email d-flex flex-column flex-lg-row">
-                <!-- <div class="input-bullet"></div> -->
+            <!-- name and company number sec -->
+            <div class="d-flex flex-column flex-lg-row name-number-wrapper">
 
-                <div class="first-last-name-wrapper d-flex">
-
-                  <!--first name input -->
-                  <div class="form-group first-name">
-                    <input class="form-control" type="text" placeholder= "שם פרטי" id="nameInputReg" name="name" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty>
-                    <label class="sr-only" for="nameInputReg"></label>
-                    <div class="input-bullet"></div>
-                  </div>
-
-                  <!--last name input -->
-                  <div class="form-group last-name">
-                    <input class="form-control" type="text" placeholder= "שם משפחה" id="lastNameInputReg" name="lastName" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty>
-                    <label class="sr-only" for="lastNameInputReg"></label>
-                    <div class="input-bullet"></div>
-                  </div>
-                </div>
-                <div class="form-group email">
-
-                  <!-- mail input -->
-                  <input type="email" class="form-control" id="inputEmail" placeholder="דוא״ל"   id="inputEmailContactUs" class="form-control email-input" name="email" data-required="" data-parsley-validate-if-empty data-parsley-error-message="אימייל חייב להכיל @">
-                  <label class="sr-only" for="inputEmailContactUs"></label>
+                <!--first name input -->
+                <div class="form-group first-name">
+                  <input class="form-control" type="text" placeholder= "שם פרטי" id="nameInput" name="name" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty>
+                  <label class="sr-only" for="nameInput"></label>
                   <div class="input-bullet"></div>
                 </div>
-              </div>   
+
+                <!--last name input -->
+                <div class="form-group last-name">
+                  <input class="form-control" type="text" placeholder= "שם משפחה" id="lastNameInput" name="lastName" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty>
+                  <label class="sr-only" for="lastNameInput"></label>
+                  <div class="input-bullet"></div>
+                </div>
+
+                <!--company name input -->
+                <div class="form-group company-name">
+                  <input class="form-control" type="text" placeholder= "שם חברה" id="companyName" name="lastName" data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty>
+                  <label class="sr-only" for="companyName"></label>
+                  <!-- <div class="input-bullet"></div> -->
+                </div>
+
+                <!--company number input -->
+                <div class="form-group company-number">
+                  <input class="form-control" type="text" placeholder= "מספר ח.פ" id="companyNumber" name="lastName" data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty>
+                  <label class="sr-only" for="companyNumber"></label>
+                  <!-- <div class="input-bullet"></div> -->
+                </div>  
             </div> 
-            <div class="form-group subject-phone-wrapper d-flex flex-column flex-lg-row">
+
+            <!-- email address and phone sec -->
+            <div class="form-group email-phone-wrapper d-flex flex-column flex-lg-row">
+
+              <!-- mail input -->
+              <div class="form-group email">
+                <input type="email" class="form-control" id="inputEmail" placeholder="דוא״ל"   id="inputEmail" class="form-control email-input" name="email" data-required="" data-parsley-validate-if-empty data-parsley-error-message="אימייל חייב להכיל @">
+                <label class="sr-only" for="inputEmail"></label>
+                <div class="input-bullet"></div>
+              </div>
 
               <!-- phone number input -->
               <div class="form-group phone-number">
-                <input type="tel" class="form-control" id="phoneNumber" placeholder="טלפון" data-parsley-error-message="מספר לא תקין" minlength="9" maxlength="10" required>
+                <input type="tel" class="form-control" id="phoneNumber" placeholder="טלפון" data-parsley-error-message="מספר לא תקין" minlength="9" maxlength="10">
                 <label class="sr-only" for="phoneNumber"></label>
               </div>
 
-              <!-- subject input -->
-              <div class="form-group subject">
-                <div class="blue-arrow"></div>
-
-                <!-- subject select -->
-                <select class="form-control subject-select" id="subjectSelect" placeholder= "נושא הפנייה" data-parsley-error-message="שדה חובה" required>
-
-                  <!-- subjects options -->
-                  <option value="" disabled selected hidden class="placeholder-subject-select">נושא הפנייה</option>
-                  <option class="subject-select-option-1 subject-select-option">נושא-1</option>
-                  <option class="subject-select-option-2 subject-select-option">נושא-2</option>
-                </select>
-                <div class="input-bullet"></div>
+              <!-- address input -->
+              <div class="form-group address">
+                <input type="text" class="form-control" id="addressInput" placeholder="כתובת"   id="addressInput" class="form-control email-input" name="email" data-required="" data-parsley-validate-if-empty data-parsley-error-message="אימייל חייב להכיל @">
+                <label class="sr-only" for="addressInput"></label>
+                <!-- <div class="input-bullet"></div> -->
               </div>
             </div> 
 
@@ -132,8 +145,9 @@
                   <br>
                   כמה קבצים שתרצו עם מגבלה של 15MB לכל הקבצים יחד
                 </small>
-                <div class="file-button-wrapper">
-                  <span class="file-button-text">צרף מסמך</span>
+                <div class="file-button-wrapper d-flex d-lg-block align-items-center">
+                  <span class="file-button-text">צרף מסמך</span> 
+                  <span class="file-button-light-text d-lg-none">קבצים מסוג <span lang="en">PDF, JPEG, PNG</span></span> 
                   <label class="sr-only" for="customFile"></label>
                   <input type="file" class="custom-file-input" id="customFile" name="" multiple>
                   <div class="three-upload-file-dots d-flex justify-content-between d-lg-none"> 
@@ -150,7 +164,7 @@
 
             <!-- save details button -->
             <div class="save-details-button d-flex justify-content-end">
-              <button class="btn btn-primary" type="submit" form="contactUsForm" value="Submit" data-target="#myModal" data-toggle="modal">שלח
+              <button class="btn btn-primary" type="submit" form="exemptionForm" value="Submit" data-target="#myModal" data-toggle="modal">שלח
               </button>
             </div>
           </form>
@@ -164,7 +178,7 @@
     </div>
 
    <!-- error message 
-    <div class="modal fade error" id="contactModalError" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade error" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-body d-flex flex-column align-items-center justify-content-end">
@@ -174,7 +188,7 @@
             </div>
             <h4>הודעת שגיאה</h4>
             <p>לורם איפסום קינץ תתיח לרעחלת צשחמי צש בליא, מנסוטו צמלח לביקו ננביצמוקו בלוקריה שיצמה ברורק. קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח.</p>
-            <button class="btn btn-primary close-btn" type="button" data-target="#contactModalError" data-toggle="modal">
+            <button class="btn btn-primary" type="button" data-target="#myModal" data-toggle="modal">
               אישור
             </button>
           </div>
@@ -183,7 +197,7 @@
     </div>-->
 
     <!-- success message 
-    <div class="modal fade" id="contactModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-body d-flex flex-column align-items-center">
@@ -191,7 +205,7 @@
               class="dialog-icon" alt="dialog-success-icon">
             <h4>פנייתך התקבלה בהצלחה!</h4>
             <p>לורם איפסום קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבכי, צמככוקו בלוקריה.</p>
-            <button class="btn btn-primary close-btn " type="button" data-target="#contactModalSuccess" data-toggle="modal">
+            <button class="btn btn-primary" type="button" data-target="#myModal" data-toggle="modal">
               אישור
             </button>
           </div>
