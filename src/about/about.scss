@@ -129,12 +129,8 @@
 					color: #4e5665;
 					margin: 0 0 0 40px;
 
-					@media (min-width: $screen-md-min) {
-						max-width: 600px;
-					}	
-
 					@media (min-width: $screen-lg-min) {
-						max-width: 1222px;
+						max-width: 755px;
 						font-size: 3.2rem;
 						line-height: normal;
 						letter-spacing: normal;
@@ -562,12 +558,6 @@
 					.download-arrow {
 						height: 20px;
 						width: 15px;
-					}
-
-					.printer-icon {
-						height: 20px;
-						width: 18px;
-						margin: 0 15px 0 0;
 					}
 				}
 			}
