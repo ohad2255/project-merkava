@@ -2,6 +2,10 @@ require('../common/common');
 
 $(document).ready(function() {
 
+    if(!$(".forgot-password-c").length){
+        return;
+    }
+
     var passwordInputs = [
         {
             input: '#inputPassword',
