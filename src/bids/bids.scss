@@ -40,6 +40,7 @@
 			right: 0;
 			width: 5px;
 			height: 100%;
+			border-radius: 4px 0 0 4px;
 			background-color: $bids-dark-blue;
 
 			@media (min-width: $screen-lg-min) {
@@ -93,7 +94,7 @@
 					max-width: 260px;
 
 					@media (min-width: $screen-lg-min) {
-						max-width: 570px;
+						max-width: 785px;
 						margin: 0 24px 0 0;
 					}
 
@@ -258,7 +259,7 @@
 				margin: 0 0 7px 0;
 
 				@media (min-width: $screen-lg-min) {
-					margin: 0 0 0 84px;
+					//margin: 0 0 0 84px;
 				}
 			}
 
@@ -266,7 +267,27 @@
 				margin: 0 0 0 60px;
 
 				@media (min-width: $screen-lg-min) {
-					margin: 0;
+					//margin: 0 0 0 70px;
+					width: 100%;
+				}
+
+				@media (min-width: $screen-xl-min) {
+					margin: 0 0 0 80px;
+					//width: 100%;
+				}
+			}
+
+			.left-side-wrapper {
+				@media (min-width: $screen-lg-min) {
+					width: 100%;
+				}
+			}
+
+			.date, .update-date {
+				margin: 0;
+
+				@media (min-width: $screen-lg-min) {
+					margin: 0 0 0 auto;
 				}
 			}
 		}

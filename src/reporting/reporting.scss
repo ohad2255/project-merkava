@@ -22,20 +22,38 @@
 
 	.reporting-top-sec {
 		position: relative;
-		background-image:  url('../common/img/reporting-top-sec-background@3x.png');
-		height: fit-content;
 		padding: 0;
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
-		background-repeat: no-repeat;
-		background-size: contain;
-		height: 205px;
-		background-position: bottom left;
+		min-height: 205px;
 
 		@media (min-width: $screen-lg-min) {
-            background-image: url('../common/img/reporting-top-sec-background.png');
+            background-image: url('../common/img/reporting-header-visuals.png');
             min-height: 308px;
-            background-position: bottom left;
+            background-position: left;
+            background-repeat: no-repeat;
+			background-size: contain;
        	}
+
+       	.reporting-breadcrumb-wrapper {	
+
+				@media (min-width: $screen-lg-min) {
+					margin: 31px 0 21px 0;
+				}
+
+				.breadcrumb {
+					margin: 0;	
+				}
+
+				.breadcrumb-item  {
+					color: $cobalt;
+					font-size: 1.6rem;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.75;
+					letter-spacing: normal;
+				}
+			}
 
        	.right-line {
 			position: absolute;
@@ -58,7 +76,7 @@
 			z-index: 2;
 
 			@media (min-width: $screen-lg-min) {
-                padding: 80px 20px;
+                padding: 0 20px;
     			//max-width: 1344px;
     			max-width: 1262px;
            	}
@@ -94,7 +112,7 @@
 
 
 					@media (min-width: $screen-lg-min) {
-	                    margin: 17px 0 0 0;
+	                    margin: 10px 0 0 0;
 	               	}
 				}
 

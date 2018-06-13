@@ -26,11 +26,9 @@
       ${require("../common/header/header.html")}
 
       <!-- top-section -->
-      <section class="dictionary-top-sec d-flex align-items-center">
+      <section class="dictionary-top-sec d-flex align-items-lg-center">
         <div class="right-line"></div>
-        <div class="d-lg-flex align-items-center custom-container mx-auto">
-          <img src="../common/img/dictionary-icon.svg" class="dictionary-top-icon" alt="magnifying-glass-icon">
-          <div class="top-sec-container  d-flex flex-column justify-content-start">
+          <div class="top-sec-container d-flex flex-column justify-content-start mx-auto">
 
             <!-- breadcrumbs -->
             <div class="dictionary-breadcrumb-wrapper d-none d-lg-block">
@@ -40,13 +38,14 @@
                 <a class="breadcrumb-item breadcrumb-item-2 d-flex align-items-center justify-content-center" href="#">מילון מונחים <!-- <span>››</span> --></a>
               </nav>
             </div>
-            <div class="dictionary-p-sec d-flex align-items-start">
+            <div class="dictionary-p-sec d-flex align-items-start flex-column flex-lg-row">
+              <img src="../common/img/dictionary-icon.svg" class="dictionary-top-icon" alt="magnifying-glass-icon">
               <div class="dictionary-p-container d-flex flex-column flex-lg-row align-items-start align-items-lg-center">
                   <div class="dictionary-p-wrapper d-flex flex-column">
                     <h1 class="dictionary-head">
                         מילון מונחים
                     </h1>
-                    <p class="dictionary-top-p">
+                    <p class="dictionary-top-p d-lg-none">
                         מנגנון שאלות ותשובות שלפניכם, מאפשר נגישות גבוהה לעובדי מינהל הרכש הממשלתי לצורך הפצה של מידע רלוונטי והעלאת סוגיות שונות ע"י המשתתפים.  
                     </p>
                   </div>
@@ -58,7 +57,6 @@
                 ${require("dictionary-alphabet-nav.html")} 
             </div>
           </div>
-        </div>
       </section>
 
       <!-- main-content -->

@@ -22,20 +22,19 @@
 	.websites-links-2-top-sec {
 		position: relative;
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
-		background-image: url('../common/img/header-visuals-milon.png');
-		background-repeat: no-repeat;
-		background-size: contain;
 		margin: 0 0 5px 0;
-		padding:0 ;
+		padding: 20px 20px 0;
 		min-height: 205px;
-		background-position: left bottom;
 
 		@media (min-width: $screen-lg-min) {
+			background-image: url('../common/img/links-header-visuals.png');
 			margin: 0;
-			padding:0 0 18px 0;
+			padding: 0;
 			min-height: 308px;
 			height: auto;
-			background-position: 16px bottom;
+			background-position: left;
+			background-size: auto;
+			background-repeat: no-repeat;
 		}
 
 		.right-line {
@@ -45,11 +44,32 @@
 			top: 0;
 			width: 5px;
 			height: 100%;
-			border-radius: 4px;
+			border-radius: 4px 0 0 4px;
 			background-color: $main-purple;
 
 			@media (min-width: $screen-lg-min) {
 				width: 11px;
+			}
+		}
+
+		.websites-links-2-breadcrumb-wrapper {
+
+			@media (min-width: $screen-lg-min) {
+				margin: 30px 0 31px 0;
+			}
+
+			.breadcrumb {
+				margin: 0;	
+			}
+
+			.breadcrumb-item  {
+				color: $main-purple;
+				font-size: 1.6rem;
+				font-weight: 500;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.75;
+				letter-spacing: normal;
 			}
 		}
 
@@ -61,29 +81,10 @@
 			position: relative;
 
 			@media (min-width: $screen-lg-min) {
-				padding: 31px 24px 10px 30px;
+				//padding: 31px 24px 10px 30px;
 			}
 
-			.websites-links-2-breadcrumb-wrapper {
-
-				@media (min-width: $screen-lg-min) {
-					margin: 0 0 29px 0;
-				}
-
-				.breadcrumb {
-					margin: 0;	
-				}
-
-				.breadcrumb-item  {
-					color: $main-purple;
-					font-size: 1.6rem;
-					font-weight: 500;
-					font-style: normal;
-					font-stretch: normal;
-					line-height: 1.75;
-					letter-spacing: normal;
-				}
-			}
+			
 
 			.websites-links-2-p-sec {
 
@@ -144,7 +145,7 @@
 						letter-spacing: normal;
 						padding: 0 0 0 30px;
 						margin: 0;
-						max-width: 894px;
+						max-width: 757px;
 					}	
 				}
 			}
@@ -159,7 +160,7 @@
 			@media (min-width: $screen-lg-min) {
 				width: 116px;
 				height: 116px;
-				margin: 0;
+				margin: 0 0 0 24px;
 			}
 		}	
 	}

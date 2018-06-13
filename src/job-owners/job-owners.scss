@@ -21,18 +21,15 @@
 		height: 205px;
 		background-color: $main-white;
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
-		background-image: url('../common/img/job-owners-background@3x.png');
-		background-repeat: no-repeat;
-		background-size: contain;
-		background-position: top left;
 
 		@media (min-width: $screen-lg-min) {
-			background-image: url('../common/img/job-owners-background.png');
+			background-image: url('../common/img/job-owners-header-visuals.png');
 			height: auto;
 			padding: 0 20px;
 			min-height: 308px;
 			background-size: auto;
-			background-position: bottom left;
+			background-repeat: no-repeat;
+			background-position: left;
 		}
 
 		@media (max-width: 340px) {
@@ -47,7 +44,7 @@
 			top: 0;
 			width: 5px;
 			height: 104%;
-			border-radius: 4px;
+			border-radius: 4px 0 0 4px;
 			background-color: #1c6897;
 
 			@media (min-width: $screen-lg-min) {

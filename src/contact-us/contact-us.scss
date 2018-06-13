@@ -13,20 +13,17 @@
 
 	.contact-us-top-sec {
 		position: relative;
-		background-image: url('../common/img/header-visuals-contact@3x.png');
-		height: fit-content;
+		height: auto;
 		padding: 0;
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
-		background-repeat: no-repeat;
-		background-size: contain;
 		min-height: 205px;
-		background-position: left;
 
 		@media (min-width: $screen-lg-min) {
-            background-image: url('../common/img/header-visuals-contact.png');
+            background-image: url('../common/img/contact-us-header-visuals.png');
+			background-repeat: no-repeat;
             min-height: 308px;
             background-size: auto;
-            background-position: left center;
+            background-position: left;
        	}
        	
        	.right-line {
@@ -35,7 +32,7 @@
 			left: auto;
 			width: 5px;
 			height: 100%;
-			border-radius: 4px;
+			border-radius: 4px 0 0 4px;
 			background-color: $cobalt;
 
 			@media (min-width: $screen-lg-min) {
@@ -67,7 +64,7 @@
 				}
 
 				.breadcrumb-item  {
-					color: $header-blue;
+					color: $cobalt;
 					font-size: 1.6rem;
 					font-weight: 500;
 					font-style: normal;

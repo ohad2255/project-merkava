@@ -28,18 +28,16 @@
 		position: relative;
 		background-color: $main-white;
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
-		background-image: url('../common/img/q-and-a-background-img@3x.png');
-		background-repeat: no-repeat;
-		background-size: contain;
 		margin: 0 0 5px 0;
-		background-position: left top;
 
 		@media (min-width: $screen-lg-min) {
 			height: auto;
 			margin: 0 0 53px 0;
 			padding: 0;
 			background-position: left bottom;
-			background-image: url('../common/img/q-and-a-background-img.png');
+			background-repeat: no-repeat;
+			background-size: auto;
+			background-image: url('../common/img/q-and-a-header-visuals.png');
 		}
 
 		.right-line {
@@ -49,7 +47,7 @@
 			top: 0;
 			width: 5px;
 			height: 100%;
-			border-radius: 4px;
+			border-radius: 4px 0 0 4px;
 			background-color: $main-purple;
 
 			@media (min-width: $screen-lg-min) {
@@ -72,7 +70,7 @@
 			.q-and-a-breadcrumb-wrapper {
 
 				@media (min-width: $screen-lg-min) {
-					margin: 0 160px 35px 0;
+					margin: 0 0 31px 0;
 				}
 
 				.breadcrumb {
@@ -160,9 +158,9 @@
 						font-size: 3rem;
 						line-height: normal;
 						letter-spacing: normal;
-						padding: 0 0 0 30px;
+						//padding: 0 0 0 30px;
 						margin: 0;
-						max-width: 894px;
+						max-width: 762px;
 					}	
 				}
 			}
