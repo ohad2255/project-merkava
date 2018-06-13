@@ -194,16 +194,14 @@ button {
   letter-spacing: 0.6px;
   text-align: right;
   color: #6a768a;
-  margin: -8px 25px 0 0;
+  margin: 3px 25px 0 0;
   position: absolute;
   display: none;
   color: #4e5665;
-  bottom: -16px;
-
-  @media (min-width: $screen-lg-min) {
-      margin: 3px 25px 0 0;
-  }
+  top: 100%;
 }
+
+.parsley-errors-list.filled
 
 input.parsley-error, .has-error input {
   box-shadow: none;
@@ -217,6 +215,10 @@ input.parsley-error, .has-error input {
 
   ~.help-block{
     display:none;
+  }
+
+  ~ .hint {
+    top: calc(100% + 1.2em);
   }
 }
 
