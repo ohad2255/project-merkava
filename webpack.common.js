@@ -33,7 +33,8 @@ module.exports = {
         'forgot-password-c-from-link/forgot-password-c-from-link': ["./src/forgot-password-c-from-link/forgot-password-c-from-link.scss", "./src/forgot-password-c-from-link/forgot-password-c-from-link.js"],
         'websites-links-2/websites-links-2': ["./src/websites-links-2/websites-links-2.scss", "./src/websites-links-2/websites-links-2.js"],
         'tender-exemption-form/tender-exemption-form': ["./src/tender-exemption-form/tender-exemption-form.scss", "./src/tender-exemption-form/tender-exemption-form.js"],
-        'tender-exemption/tender-exemption': ["./src/tender-exemption/tender-exemption.scss", "./src/tender-exemption/tender-exemption.js"]
+        'tender-exemption/tender-exemption': ["./src/tender-exemption/tender-exemption.scss", "./src/tender-exemption/tender-exemption.js"],
+        'error-page/error-page': ["./src/error-page/error-page.scss", "./src/error-page/error-page.js"]
     },
     output: {
         filename: "[name].min.js",
@@ -235,6 +236,11 @@ module.exports = {
             chunks: ['tender-exemption/tender-exemption'],
             filename: path.resolve(__dirname, "dist/tender-exemption/index.html"),
             template: path.resolve(__dirname, "src/tender-exemption/index.html")
+        }),
+        new HtmlWebpackPlugin({
+            chunks: ['error-page/error-page'],
+            filename: path.resolve(__dirname, "dist/error-page/index.html"),
+            template: path.resolve(__dirname, "src/error-page/index.html")
         }),
         new WebpackRTLPlugin({
             
