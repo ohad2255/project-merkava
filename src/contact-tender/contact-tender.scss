@@ -149,6 +149,24 @@
     		margin: 0 0 144px 0;
        	}
 
+       	.error-p {
+       		font-size: 12px;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: normal;
+			letter-spacing: 0.6px;
+			text-align: right;
+			color: #d53b4a;
+			max-width: 705px;
+			margin: -4px 0 20px 0;
+
+			@media (min-width: $screen-lg-min) {
+	    		margin: -10px 0 20px 0;
+	       	}
+       	}
+       	
+
        	.bid-number, .job-owner-name {
 			width: 340px;
 			height: 50px;
@@ -232,7 +250,12 @@
 			}
 
 			.first-name {
-				margin: 0 0 0 10px;
+
+				margin-bottom: 25px;
+
+				@media (min-width: $screen-lg-min) {
+					margin-bottom: 0;
+               	}
 			}
 
 

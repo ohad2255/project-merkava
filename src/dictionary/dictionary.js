@@ -22,6 +22,9 @@ $(document).ready(function() {
     // Highlight the first letter
     $('.alphabet-item').first().addClass('active')
 
+    // Highlight the first letter
+    $('.alphabet-mobile ul .alphabet-item').first().addClass('active')
+
     $('.alphabet-item').on('click', function() {
     	$('.expression-container').hide();
     	var letter = $(this).data('letter');

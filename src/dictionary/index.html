@@ -45,9 +45,9 @@
                     <h1 class="dictionary-head">
                         מילון מונחים
                     </h1>
-                    <p class="dictionary-top-p d-lg-none">
+                    <!-- <p class="dictionary-top-p d-lg-none">
                         מנגנון שאלות ותשובות שלפניכם, מאפשר נגישות גבוהה לעובדי מינהל הרכש הממשלתי לצורך הפצה של מידע רלוונטי והעלאת סוגיות שונות ע"י המשתתפים.  
-                    </p>
+                    </p> -->
                   </div>
               </div>
             </div>
@@ -60,14 +60,11 @@
       </section>
 
       <!-- main-content -->
-      <section class="dictionary-body d-flex flex-lg-column align-items-start align-items-lg-center custom-container">
+      <section class="dictionary-body d-flex flex-column align-items-start align-items-lg-center custom-container">
 
-        <!--mobile alphabet navbar -->
-        <div class="alphabet-mobile d-lg-none">
-            ${require("dictionary-alphabet-nav.html")} 
-        </div>
+        
 
-        <div class="body-p-wrapper d-none d-lg-block">
+        <div class="body-p-wrapper">
 
           <!-- body top head -->
           <h3 class="body-head">חובת הפרסום - רשימות מציעים</h3>
@@ -79,87 +76,36 @@
           </p>
         </div>
 
-        <!-- expressions container -->
-        <div class="cards-wrapper" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="w-100 d-flex">
 
-          <div class="card expression-container" data-letter="a">
-
-            <!-- A collapse expression -->
-            <a class="collapsed d-flex flex-column collapsed-p panel-collapse" data-parent="#accordion" data-toggle="collapse" data-target="#collapse1A"
-              href="#collapse1A"
-              aria-expanded="true" aria-controls="collapse1A">
-              <div class="card-header d-flex align-items-center align-items-lg-center" role="tab" id="heading1">
-                <span class="closed">+</span>
-                <span class="open"></span>
-                <div class="expression-wrapper d-lg-flex flex-column justify-content-center">
-                    <div class="expression">​
-                    אומדן
-                    </div>
-                </div>
-                <img src="../common/img/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
-              </div>
-            </a>
-            <div id="collapse1A" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
-
-              <!-- A expression collapsed answer -->
-              <div class="card-block answer">
-                לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית להאמית קרהשק סכעיט דז מא, מנכם למטכין נשואי מנורך. ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. קלאצי נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף לפרומי בלוף קינץ תתיח לרעח. 
-
-                לכנוץ בעריר גק ליץ, ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.
-
-                הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף. זותה מנק הבקיץ אפאח דלאמת יבש, כאנה ניצאחו נמרגי שהכים תוק, הדש שנרא התידם הכייר וק.
-              </div>
-            </div>
+          <!--mobile alphabet navbar -->
+          <div class="alphabet-mobile d-lg-none">
+              ${require("dictionary-alphabet-nav.html")} 
           </div>
-          <div class="card expression-container" data-letter="a">
 
-            <!-- A collapse expression -->
-            <a class="collapsed d-flex flex-column collapsed-p panel-collapse" data-parent="#accordion" data-toggle="collapse" data-target="#collapse2A"
-              href="#collapse2A"
-              aria-expanded="true" aria-controls="collapse2A">
-              <div class="card-header d-flex align-items-center align-items-lg-center" role="tab" id="heading1">
-                <span class="closed">+</span>
-                <span class="open"></span>
-                <div class="expression-wrapper d-lg-flex flex-column justify-content-center">
-                    <div class="expression">​
-                    אומדן
-                    </div>
+          <!-- expressions container -->
+          <div class="cards-wrapper d-inline-block" id="accordion" role="tablist" aria-multiselectable="true">
+
+            <div class="card expression-container" data-letter="a">
+
+              <!-- A collapse expression -->
+              <a class="collapsed d-flex flex-column collapsed-p panel-collapse" data-parent="#accordion" data-toggle="collapse" data-target="#collapse1A"
+                href="#collapse1A"
+                aria-expanded="true" aria-controls="collapse1A">
+                <div class="card-header d-flex align-items-center align-items-lg-center" role="tab" id="heading1">
+                  <span class="closed">+</span>
+                  <span class="open"></span>
+                  <div class="expression-wrapper d-lg-flex flex-column justify-content-center">
+                      <div class="expression">​
+                      אומדן
+                      </div>
+                  </div>
+                  <img src="../common/img/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
                 </div>
-                <img src="../common/img/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
-              </div>
-            </a>
-            <div id="collapse2A" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
+              </a>
+              <div id="collapse1A" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
 
-              <!-- A expression collapsed answer -->
-              <div class="card-block answer">
-                לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית להאמית קרהשק סכעיט דז מא, מנכם למטכין נשואי מנורך. ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. קלאצי נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף לפרומי בלוף קינץ תתיח לרעח. 
-
-                לכנוץ בעריר גק ליץ, ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.
-
-                הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף. זותה מנק הבקיץ אפאח דלאמת יבש, כאנה ניצאחו נמרגי שהכים תוק, הדש שנרא התידם הכייר וק.
-              </div>
-            </div>
-          </div>
-          <div class="card expression-container" data-letter="a">
-
-            <!-- A collapse expression -->
-            <a class="collapsed d-flex flex-column collapsed-p panel-collapse" data-parent="#accordion" data-toggle="collapse" data-target="#collapse3A"
-              href="#collapse3A"
-              aria-expanded="true" aria-controls="collapse3A">
-              <div class="card-header d-flex align-items-center align-items-lg-center" role="tab" id="heading1">
-                <span class="closed">+</span>
-                <span class="open"></span>
-                <div class="expression-wrapper d-lg-flex flex-column justify-content-center">
-                    <div class="expression">​
-                    אומדן
-                    </div>
-                </div>
-                <img src="../common/img/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
-              </div>
-            </a>
-
-            <!-- A expression answer-->
-            <div id="collapse3A" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
+                <!-- A expression collapsed answer -->
                 <div class="card-block answer">
                   לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית להאמית קרהשק סכעיט דז מא, מנכם למטכין נשואי מנורך. ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. קלאצי נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף לפרומי בלוף קינץ תתיח לרעח. 
 
@@ -167,56 +113,28 @@
 
                   הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף. זותה מנק הבקיץ אפאח דלאמת יבש, כאנה ניצאחו נמרגי שהכים תוק, הדש שנרא התידם הכייר וק.
                 </div>
-            </div>
-          </div>
-          <div class="card expression-container" data-letter="b">
-
-            <!-- B collapse expression -->
-            <a class="collapsed d-flex flex-column collapsed-p panel-collapse" data-parent="#accordion" data-toggle="collapse" data-target="#collapse1B" href="#collapse1B"
-              aria-expanded="true" aria-controls="collapse1B">
-              <div class="card-header d-flex align-items-center align-items-lg-center" role="tab" id="heading1">
-                <span class="closed">+</span>
-                <span class="open"></span>
-                <div class="expression-wrapper d-lg-flex flex-column justify-content-center">
-                    <div class="expression">​
-                    בבב
-                    </div>
-                </div>
-                <img src="../common/img/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
-              </div>
-            </a>
-
-            <!-- B expression answer--> 
-            <div id="collapse1B" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
-              <div class="card-block answer">
-                לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית להאמית קרהשק סכעיט דז מא, מנכם למטכין נשואי מנורך. ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. קלאצי נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף לפרומי בלוף קינץ תתיח לרעח. 
-
-                לכנוץ בעריר גק ליץ, ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.
-
-                הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף. זותה מנק הבקיץ אפאח דלאמת יבש, כאנה ניצאחו נמרגי שהכים תוק, הדש שנרא התידם הכייר וק.
               </div>
             </div>
-          </div>
-          <div class="card expression-container" data-letter="b">
+            <div class="card expression-container" data-letter="a">
 
-            <!-- B collapse expression -->
-            <a class="collapsed d-flex flex-column collapsed-p panel-collapse" data-parent="#accordion" data-toggle="collapse" data-target="#collapse2B"
-              href="#collapse2B"
-              aria-expanded="true" aria-controls="collapse2B">
-              <div class="card-header d-flex align-items-center align-items-lg-center" role="tab" id="heading1">
-                <span class="closed">+</span>
-                <span class="open"></span>
-                <div class="expression-wrapper d-lg-flex flex-column justify-content-center">
-                    <div class="expression">​
-                    בבב
-                    </div>
+              <!-- A collapse expression -->
+              <a class="collapsed d-flex flex-column collapsed-p panel-collapse" data-parent="#accordion" data-toggle="collapse" data-target="#collapse2A"
+                href="#collapse2A"
+                aria-expanded="true" aria-controls="collapse2A">
+                <div class="card-header d-flex align-items-center align-items-lg-center" role="tab" id="heading1">
+                  <span class="closed">+</span>
+                  <span class="open"></span>
+                  <div class="expression-wrapper d-lg-flex flex-column justify-content-center">
+                      <div class="expression">​
+                      אומדן
+                      </div>
+                  </div>
+                  <img src="../common/img/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
                 </div>
-                <img src="../common/img/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
-              </div>
-            </a>
+              </a>
+              <div id="collapse2A" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
 
-            <!-- B expression answer-->
-            <div id="collapse2B" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
+                <!-- A expression collapsed answer -->
                 <div class="card-block answer">
                   לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית להאמית קרהשק סכעיט דז מא, מנכם למטכין נשואי מנורך. ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. קלאצי נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף לפרומי בלוף קינץ תתיח לרעח. 
 
@@ -224,28 +142,56 @@
 
                   הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף. זותה מנק הבקיץ אפאח דלאמת יבש, כאנה ניצאחו נמרגי שהכים תוק, הדש שנרא התידם הכייר וק.
                 </div>
-            </div>
-          </div>
-          <div class="card expression-container" data-letter="b">
-
-            <!-- B collapse expression -->
-            <a class="collapsed d-flex flex-column collapsed-p panel-collapse" data-parent="#accordion" data-toggle="collapse" data-target="#collapse3B"
-              href="#collapse3B"
-              aria-expanded="true" aria-controls="collapse3B">
-              <div class="card-header d-flex align-items-center align-items-lg-center" role="tab" id="heading1">
-                <span class="closed">+</span>
-                <span class="open"></span>
-                <div class="expression-wrapper d-lg-flex flex-column justify-content-center">
-                    <div class="expression">​
-                    בבב
-                    </div>
-                </div>
-                <img src="../common/img/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
               </div>
-            </a>
+            </div>
+            <div class="card expression-container" data-letter="a">
 
-            <!-- B expression answer-->
-            <div id="collapse3B" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
+              <!-- A collapse expression -->
+              <a class="collapsed d-flex flex-column collapsed-p panel-collapse" data-parent="#accordion" data-toggle="collapse" data-target="#collapse3A"
+                href="#collapse3A"
+                aria-expanded="true" aria-controls="collapse3A">
+                <div class="card-header d-flex align-items-center align-items-lg-center" role="tab" id="heading1">
+                  <span class="closed">+</span>
+                  <span class="open"></span>
+                  <div class="expression-wrapper d-lg-flex flex-column justify-content-center">
+                      <div class="expression">​
+                      אומדן
+                      </div>
+                  </div>
+                  <img src="../common/img/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
+                </div>
+              </a>
+
+              <!-- A expression answer-->
+              <div id="collapse3A" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="card-block answer">
+                    לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית להאמית קרהשק סכעיט דז מא, מנכם למטכין נשואי מנורך. ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. קלאצי נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף לפרומי בלוף קינץ תתיח לרעח. 
+
+                    לכנוץ בעריר גק ליץ, ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.
+
+                    הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף. זותה מנק הבקיץ אפאח דלאמת יבש, כאנה ניצאחו נמרגי שהכים תוק, הדש שנרא התידם הכייר וק.
+                  </div>
+              </div>
+            </div>
+            <div class="card expression-container" data-letter="b">
+
+              <!-- B collapse expression -->
+              <a class="collapsed d-flex flex-column collapsed-p panel-collapse" data-parent="#accordion" data-toggle="collapse" data-target="#collapse1B" href="#collapse1B"
+                aria-expanded="true" aria-controls="collapse1B">
+                <div class="card-header d-flex align-items-center align-items-lg-center" role="tab" id="heading1">
+                  <span class="closed">+</span>
+                  <span class="open"></span>
+                  <div class="expression-wrapper d-lg-flex flex-column justify-content-center">
+                      <div class="expression">​
+                      בבב
+                      </div>
+                  </div>
+                  <img src="../common/img/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
+                </div>
+              </a>
+
+              <!-- B expression answer--> 
+              <div id="collapse1B" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
                 <div class="card-block answer">
                   לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית להאמית קרהשק סכעיט דז מא, מנכם למטכין נשואי מנורך. ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. קלאצי נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף לפרומי בלוף קינץ תתיח לרעח. 
 
@@ -253,97 +199,155 @@
 
                   הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף. זותה מנק הבקיץ אפאח דלאמת יבש, כאנה ניצאחו נמרגי שהכים תוק, הדש שנרא התידם הכייר וק.
                 </div>
-            </div>
-          </div>
-          <div class="card expression-container" data-letter="c">
-            
-            <!-- C collapse expression -->
-            <a class="collapsed d-flex flex-column collapsed-p panel-collapse" data-parent="#accordion" data-toggle="collapse" data-target="#collapse1C"
-              href="#collapse1C"
-              aria-expanded="true" aria-controls="collapse1C">
-              <div class="card-header d-flex align-items-center align-items-lg-center" role="tab" id="heading1">
-                <span class="closed">+</span>
-                <span class="open"></span>
-                <div class="expression-wrapper d-lg-flex flex-column justify-content-center">
-                    <div class="expression">​
-                    גגג
-                    </div>
-                </div>
-                <img src="../common/img/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
-              </div>
-            </a>
-            <div id="collapse1C" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
-                
-              <!-- C expression collapsed answer -->
-              <div class="card-block answer">
-                לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית להאמית קרהשק סכעיט דז מא, מנכם למטכין נשואי מנורך. ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. קלאצי נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף לפרומי בלוף קינץ תתיח לרעח. 
-
-                לכנוץ בעריר גק ליץ, ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.
-
-                הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף. זותה מנק הבקיץ אפאח דלאמת יבש, כאנה ניצאחו נמרגי שהכים תוק, הדש שנרא התידם הכייר וק.
               </div>
             </div>
-          </div>
-          <div class="card expression-container" data-letter="c">
-            
-            <!-- C collapse expression -->
-            <a class="collapsed d-flex flex-column collapsed-p panel-collapse" data-parent="#accordion" data-toggle="collapse" data-target="#collapse2C"
-              href="#collapse2C"
-              aria-expanded="true" aria-controls="collapse2C">
-              <div class="card-header d-flex align-items-center align-items-lg-center" role="tab" id="heading1">
-                <span class="closed">+</span>
-                <span class="open"></span>
-                <div class="expression-wrapper d-lg-flex flex-column justify-content-center">
-                    <div class="expression">​
-                    גגג
-                    </div>
+            <div class="card expression-container" data-letter="b">
+
+              <!-- B collapse expression -->
+              <a class="collapsed d-flex flex-column collapsed-p panel-collapse" data-parent="#accordion" data-toggle="collapse" data-target="#collapse2B"
+                href="#collapse2B"
+                aria-expanded="true" aria-controls="collapse2B">
+                <div class="card-header d-flex align-items-center align-items-lg-center" role="tab" id="heading1">
+                  <span class="closed">+</span>
+                  <span class="open"></span>
+                  <div class="expression-wrapper d-lg-flex flex-column justify-content-center">
+                      <div class="expression">​
+                      בבב
+                      </div>
+                  </div>
+                  <img src="../common/img/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
                 </div>
-                <img src="../common/img/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
-              </div>
-            </a>
-            <div id="collapse2C" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
-                
-              <!-- C expression collapsed answer -->
-              <div class="card-block answer">
-                לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית להאמית קרהשק סכעיט דז מא, מנכם למטכין נשואי מנורך. ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. קלאצי נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף לפרומי בלוף קינץ תתיח לרעח. 
+              </a>
 
-                לכנוץ בעריר גק ליץ, ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.
+              <!-- B expression answer-->
+              <div id="collapse2B" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="card-block answer">
+                    לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית להאמית קרהשק סכעיט דז מא, מנכם למטכין נשואי מנורך. ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. קלאצי נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף לפרומי בלוף קינץ תתיח לרעח. 
 
-                הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף. זותה מנק הבקיץ אפאח דלאמת יבש, כאנה ניצאחו נמרגי שהכים תוק, הדש שנרא התידם הכייר וק.
+                    לכנוץ בעריר גק ליץ, ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.
+
+                    הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף. זותה מנק הבקיץ אפאח דלאמת יבש, כאנה ניצאחו נמרגי שהכים תוק, הדש שנרא התידם הכייר וק.
+                  </div>
               </div>
             </div>
-          </div>
-          <div class="card expression-container" data-letter="c">
-            
-            <!-- C collapse expression -->
-            <a class="collapsed d-flex flex-column collapsed-p panel-collapse" data-parent="#accordion" data-toggle="collapse" data-target="#collapse3C"
-              href="#collapse3C"
-              aria-expanded="true" aria-controls="collapse3C">
-              <div class="card-header d-flex align-items-center align-items-lg-center" role="tab" id="heading1">
-                <span class="closed">+</span>
-                <span class="open"></span>
-                <div class="expression-wrapper d-lg-flex flex-column justify-content-center">
-                    <div class="expression">​
-                    גגג
-                    </div>
+            <div class="card expression-container" data-letter="b">
+
+              <!-- B collapse expression -->
+              <a class="collapsed d-flex flex-column collapsed-p panel-collapse" data-parent="#accordion" data-toggle="collapse" data-target="#collapse3B"
+                href="#collapse3B"
+                aria-expanded="true" aria-controls="collapse3B">
+                <div class="card-header d-flex align-items-center align-items-lg-center" role="tab" id="heading1">
+                  <span class="closed">+</span>
+                  <span class="open"></span>
+                  <div class="expression-wrapper d-lg-flex flex-column justify-content-center">
+                      <div class="expression">​
+                      בבב
+                      </div>
+                  </div>
+                  <img src="../common/img/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
                 </div>
-                <img src="../common/img/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
+              </a>
+
+              <!-- B expression answer-->
+              <div id="collapse3B" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="card-block answer">
+                    לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית להאמית קרהשק סכעיט דז מא, מנכם למטכין נשואי מנורך. ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. קלאצי נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף לפרומי בלוף קינץ תתיח לרעח. 
+
+                    לכנוץ בעריר גק ליץ, ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.
+
+                    הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף. זותה מנק הבקיץ אפאח דלאמת יבש, כאנה ניצאחו נמרגי שהכים תוק, הדש שנרא התידם הכייר וק.
+                  </div>
               </div>
-            </a>
-            <div id="collapse3C" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
-                
-              <!-- C expression collapsed answer -->
-              <div class="card-block answer">
-                לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית להאמית קרהשק סכעיט דז מא, מנכם למטכין נשואי מנורך. ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. קלאצי נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף לפרומי בלוף קינץ תתיח לרעח. 
+            </div>
+            <div class="card expression-container" data-letter="c">
+              
+              <!-- C collapse expression -->
+              <a class="collapsed d-flex flex-column collapsed-p panel-collapse" data-parent="#accordion" data-toggle="collapse" data-target="#collapse1C"
+                href="#collapse1C"
+                aria-expanded="true" aria-controls="collapse1C">
+                <div class="card-header d-flex align-items-center align-items-lg-center" role="tab" id="heading1">
+                  <span class="closed">+</span>
+                  <span class="open"></span>
+                  <div class="expression-wrapper d-lg-flex flex-column justify-content-center">
+                      <div class="expression">​
+                      גגג
+                      </div>
+                  </div>
+                  <img src="../common/img/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
+                </div>
+              </a>
+              <div id="collapse1C" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
+                  
+                <!-- C expression collapsed answer -->
+                <div class="card-block answer">
+                  לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית להאמית קרהשק סכעיט דז מא, מנכם למטכין נשואי מנורך. ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. קלאצי נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף לפרומי בלוף קינץ תתיח לרעח. 
 
-                לכנוץ בעריר גק ליץ, ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.
+                  לכנוץ בעריר גק ליץ, ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.
 
-                הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף. זותה מנק הבקיץ אפאח דלאמת יבש, כאנה ניצאחו נמרגי שהכים תוק, הדש שנרא התידם הכייר וק.
+                  הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף. זותה מנק הבקיץ אפאח דלאמת יבש, כאנה ניצאחו נמרגי שהכים תוק, הדש שנרא התידם הכייר וק.
+                </div>
+              </div>
+            </div>
+            <div class="card expression-container" data-letter="c">
+              
+              <!-- C collapse expression -->
+              <a class="collapsed d-flex flex-column collapsed-p panel-collapse" data-parent="#accordion" data-toggle="collapse" data-target="#collapse2C"
+                href="#collapse2C"
+                aria-expanded="true" aria-controls="collapse2C">
+                <div class="card-header d-flex align-items-center align-items-lg-center" role="tab" id="heading1">
+                  <span class="closed">+</span>
+                  <span class="open"></span>
+                  <div class="expression-wrapper d-lg-flex flex-column justify-content-center">
+                      <div class="expression">​
+                      גגג
+                      </div>
+                  </div>
+                  <img src="../common/img/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
+                </div>
+              </a>
+              <div id="collapse2C" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
+                  
+                <!-- C expression collapsed answer -->
+                <div class="card-block answer">
+                  לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית להאמית קרהשק סכעיט דז מא, מנכם למטכין נשואי מנורך. ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. קלאצי נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף לפרומי בלוף קינץ תתיח לרעח. 
+
+                  לכנוץ בעריר גק ליץ, ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.
+
+                  הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף. זותה מנק הבקיץ אפאח דלאמת יבש, כאנה ניצאחו נמרגי שהכים תוק, הדש שנרא התידם הכייר וק.
+                </div>
+              </div>
+            </div>
+            <div class="card expression-container" data-letter="c">
+              
+              <!-- C collapse expression -->
+              <a class="collapsed d-flex flex-column collapsed-p panel-collapse" data-parent="#accordion" data-toggle="collapse" data-target="#collapse3C"
+                href="#collapse3C"
+                aria-expanded="true" aria-controls="collapse3C">
+                <div class="card-header d-flex align-items-center align-items-lg-center" role="tab" id="heading1">
+                  <span class="closed">+</span>
+                  <span class="open"></span>
+                  <div class="expression-wrapper d-lg-flex flex-column justify-content-center">
+                      <div class="expression">​
+                      גגג
+                      </div>
+                  </div>
+                  <img src="../common/img/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
+                </div>
+              </a>
+              <div id="collapse3C" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
+                  
+                <!-- C expression collapsed answer -->
+                <div class="card-block answer">
+                  לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית להאמית קרהשק סכעיט דז מא, מנכם למטכין נשואי מנורך. ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. קלאצי נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף לפרומי בלוף קינץ תתיח לרעח. 
+
+                  לכנוץ בעריר גק ליץ, ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.
+
+                  הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף. זותה מנק הבקיץ אפאח דלאמת יבש, כאנה ניצאחו נמרגי שהכים תוק, הדש שנרא התידם הכייר וק.
+                </div>
               </div>
             </div>
           </div>
         </div>
-
         <!-- open/close/all buttons-->
         <div class="collapse-buttons-wrapper d-none d-lg-flex ">
 

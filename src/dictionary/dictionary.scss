@@ -28,7 +28,7 @@
 		min-height: 205px;
 
 		@media (min-width: $screen-lg-min) {
-			margin: 0 0 66px 0;
+			margin: 0 0 40px 0;
 			//padding:0 0 18px 0;
 			min-height: 308px;
 			height: auto;
@@ -172,7 +172,7 @@
 			.alphabet-lg {
 				position: absolute;
 				width: 100%;
-				max-width: 935px;
+				max-width: 900px;
 				bottom: 0;
 				right: 0;
 				left: auto;
@@ -233,7 +233,7 @@
 
 		.body-p-wrapper {
 			padding: 0 20px;
-			margin: 0 0 40px 0;
+			margin: 15px 0 30px 0;
 			width: 100%;
 
 			@media (min-width: $screen-lg-min) {
@@ -256,11 +256,15 @@
 				font-weight: normal;
 				font-style: normal;
 				font-stretch: normal;
-				line-height: 1.75;
+				line-height: 1.25;
 				letter-spacing: normal;
 				color: $text-dark-grey;
-				margin: 0 0 20px 0;
+				margin: 0;
 				max-width: 1180px;
+
+				@media (min-width: $screen-lg-min) {
+					line-height: 1.75;
+				}
 			}
 
 			button {
@@ -318,6 +322,7 @@
 					text-align: center;
 					color: #6266a6;
 					display: inline-block;
+					margin-top: 0!important;
 
 					&:active, &:focus {
 
@@ -325,6 +330,7 @@
 						font-weight: 500;
 						background-color: $main-purple;
 						background-position: center;
+
 			        }
 				}
 			}
@@ -356,6 +362,7 @@
 				height: 59px;
 				border-bottom: solid 1px $main-purple;
 				font-weight: 500;
+				border-top: solid 1px $bottom-border-question;
 		
 			    @media (min-width: $screen-lg-min) {
 					padding: 0 10px 0 0;
@@ -445,6 +452,16 @@
 		   .card-header {
 		   		width: 100%;
 				border-bottom: solid 1px $bottom-border-question;
+
+				&:first-child {
+					border: solid $bottom-border-question;
+					border-width: 1px 0;
+
+					@media (min-width: $screen-lg-min) {
+						border: solid $bottom-border-question;
+						border-width: 0 0 1px 0;
+					}
+				}
 			}	
 
 			.open {
@@ -497,7 +514,7 @@
 			position: absolute;
 			left: 0;
 			right: auto;
-			top: -41px;
+			top: -35px;
 			padding: 0 10px;
 			margin:0 0 0 10px;
 

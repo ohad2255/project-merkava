@@ -79,7 +79,8 @@
 			}
 
 			.bids-head-wrapper {
-				margin: 73px 0 0 0;
+				margin: 20px 0 0 0;
+				padding-bottom: 20px;
 
 				@media (min-width: $screen-lg-min) {
 					margin:0;
@@ -87,12 +88,20 @@
 				}
 
 				img {
-					height: 92px;
-					width: 92px;
+					width: 49px;
+					height: 51px;
+					margin-bottom: 3px;
+					
+					@media (min-width: $screen-lg-min) {
+						height: 92px;
+						width: 92px;
+						margin-bottom: 0;
+					}
 				}
 
 				.bids-h-wrapper {
-					max-width: 260px;
+					//max-width: 260px;
+					//padding: 0 0 0 20px;
 
 					@media (min-width: $screen-lg-min) {
 						max-width: 740px;

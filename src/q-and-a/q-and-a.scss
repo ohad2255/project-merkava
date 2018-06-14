@@ -28,7 +28,7 @@
 		position: relative;
 		background-color: $main-white;
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
-		margin: 0 0 5px 0;
+		margin: 0;
 
 		@media (min-width: $screen-lg-min) {
 			height: auto;
@@ -36,7 +36,7 @@
 			padding: 0;
 			background-position: left bottom;
 			background-repeat: no-repeat;
-			background-size: auto;
+			background-size: contain;
 			background-image: url('../common/img/q-and-a-header-visuals.png');
 		}
 
@@ -160,7 +160,7 @@
 						letter-spacing: normal;
 						//padding: 0 0 0 30px;
 						margin: 0;
-						max-width: 762px;
+						max-width: 740px;
 					}	
 				}
 			}
@@ -181,11 +181,12 @@
 
 		.body-p-wrapper {
 			padding: 0 20px;
-			margin: 0 0 40px 0;
+			margin: 0 0 63px 0;
 
 			@media (min-width: $screen-lg-min) {
 				padding: 0;
 				max-width: 1222px;
+				margin: 0 0 40px 0;
 			}	
 
 			.body-head {
@@ -207,13 +208,18 @@
 				line-height: 1.75;
 				letter-spacing: normal;
 				color: $text-dark-grey;
-				margin: 0 0 20px 0;
+				margin: 0 0 48px 0;
 				max-width: 1262px;
-				padding: 0 0 0 40px;
+				padding: 0;
+
+				@media (min-width: $screen-lg-min) {
+	                padding: 0 0 0 40px;
+	                margin: 0 0 20px 0;
+	           	}
 			}
 
 			button {
-				width: 180px;
+				width: 100%;
 				height: 50px;
 				object-fit: contain;
 				border-radius: 3px;
@@ -230,7 +236,7 @@
 
 
 				@media (min-width: $screen-lg-min) {
-	                
+	                width: 180px;
 	           	}
 
 				&:active, &:focus {

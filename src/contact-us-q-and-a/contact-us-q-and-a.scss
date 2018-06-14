@@ -317,6 +317,10 @@
 				margin: 0 0 25px 0;
 				position: relative;
 
+				@media (min-width: $screen-lg-min) {
+                    margin: 0 0 40px 0;
+               	}
+
 				textarea {
 					height: 100%;
 					font-size: 1.5rem;
