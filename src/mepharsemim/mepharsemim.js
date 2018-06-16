@@ -151,7 +151,6 @@ $(document).ready(function() {
 	function updateMyList() {
 		var $subjects = $();
 		var myListToggleHistory = {};
-		debugger
 		$elements.myList.find(".my-list-subjects-list-subject").each(function(index, item) {
 			var id = $(item).find(".my-list-item").data().relatedCheckboxId;
 			var isOpen = $(item).find(".my-list-options-wrapper").prop("class").indexOf("d-none") === -1;
@@ -217,7 +216,6 @@ $(document).ready(function() {
 		if (myList.$elements.subjects.length === 0) {
 			$elements.myListSubjectsList.html("")			
 		} else {
-			debugger
 			$elements.myListSubjectsList.html($subjects)
 		}
 	}

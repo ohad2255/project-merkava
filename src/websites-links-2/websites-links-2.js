@@ -15,6 +15,7 @@ $(document).ready(function() {
     	var number = $(this).data('number');
     	$(`.tab-content[data-number=${number}]`).show();
     	$('.tab').removeClass('active');
+        $(this).addClass('active');
         $(this).find(".grey-arrow").toggleClass("rotate");
         $(this).next().toggleClass("d-none");
     });
