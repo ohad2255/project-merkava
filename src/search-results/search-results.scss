@@ -21,14 +21,12 @@
 		height: 205px;
 		background-color: $main-white;
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
-		background-image: url('../common/img/search-results-top-background@3x.png');
-		background-repeat: no-repeat;
-		background-size: contain;
 
 		@media (min-width: $screen-lg-min) {
-			background-image: url('../common/img/search-results-top-background.png');
+			background-image: url('../common/img/bids-header-visuals.png');
 			height: 308px;
-			background-size: contain;
+			background-size: auto;
+			background-repeat: no-repeat;
 		}
 
 		@media (max-width: 340px) {

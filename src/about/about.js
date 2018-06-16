@@ -15,14 +15,12 @@ $(document).ready(function() {
 	// a.download = fileName;
 	// a.innerHTML = 'test link';
 
-	$("#download-arrow").on('click', function(){
+	$("#download-arrow").on('click', function(e){
+		debugger;
         var x=new XMLHttpRequest();
 		x.open("GET", "", true);
 		x.responseType = 'blob';
 		x.onload=function(e){download(x.response, "dlBinAjax.png", "image/png" ); }
 		x.send();
     });
-
-	
-
 });

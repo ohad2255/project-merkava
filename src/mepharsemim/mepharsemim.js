@@ -151,13 +151,11 @@ $(document).ready(function() {
 	function updateMyList() {
 		var $subjects = $();
 		var myListToggleHistory = {};
+		debugger
 		$elements.myList.find(".my-list-subjects-list-subject").each(function(index, item) {
 			var id = $(item).find(".my-list-item").data().relatedCheckboxId;
 			var isOpen = $(item).find(".my-list-options-wrapper").prop("class").indexOf("d-none") === -1;
-			var rotate = $(item).find(".my-list-item").data().relatedCheckboxId;
-			var isRotate = $(item).find(".my-list-options-wrapper").prop("class").indexOf("rotate") === -1;
 			myListToggleHistory[id] = isOpen;
-			myListToggleHistory[rotate] = isRotate;
 		});
 
 		myList.$elements.subjects.each(function(index, subject) {
