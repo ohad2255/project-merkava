@@ -411,13 +411,14 @@ input::-ms-clear, input::-ms-reveal {
   }
 
   button {
-    border: 0;
-    background-color: none;
-    height: 8px;
+    border: 0 !important;
+    background-color: none !important;
+    height: 12px;
     width: 8px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-size: 100% !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    margin: 0 5px 0 0;
   }
 }
 

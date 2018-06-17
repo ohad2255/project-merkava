@@ -1,6 +1,6 @@
 @import "../util/util.scss";
 
-.contact-us-q-and-a {
+.contact-us-q-and-a, .contact-from-suppliers {
 	min-width: 330px;
 
 	.nav-item-text-9 {
@@ -11,7 +11,7 @@
 			 }
 		}
 
-	.contact-us-q-and-a-top-sec {
+	.contact-us-q-and-a-top-sec, .contact-from-suppliers-top-sec {
 		position: relative;
 		height: auto;
 		padding: 0;

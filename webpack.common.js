@@ -19,6 +19,7 @@ module.exports = {
         'contact-tender/contact-tender': ["./src/contact-tender/contact-tender.scss", "./src/contact-tender/contact-tender.js"],
         'contact-us-q-and-a/contact-us-q-and-a': ["./src/contact-us-q-and-a/contact-us-q-and-a.scss", "./src/contact-us-q-and-a/contact-us-q-and-a.js"],
         'contact-job-owners/contact-job-owners': ["./src/contact-job-owners/contact-job-owners.scss", "./src/contact-job-owners/contact-job-owners.js"],
+        'contact-from-suppliers/contact-from-suppliers': ["./src/contact-from-suppliers/contact-from-suppliers.scss", "./src/contact-from-suppliers/contact-from-suppliers.js"],
         'dictionary/dictionary': ["./src/dictionary/dictionary.scss", "./src/dictionary/dictionary.js"],
         'sapakim/sapakim': ["./src/sapakim/sapakim.scss", "./src/sapakim/sapakim.js"],
         'mepharsemim/mepharsemim': ["./src/mepharsemim/mepharsemim.scss", "./src/mepharsemim/mepharsemim.js"],
@@ -161,6 +162,11 @@ module.exports = {
             chunks: ['contact-job-owners/contact-job-owners'],
             filename: path.resolve(__dirname, "dist/contact-job-owners/index.html"),
             template: path.resolve(__dirname, "src/contact-job-owners/index.html")
+        }),
+        new HtmlWebpackPlugin({
+            chunks: ['contact-from-suppliers/contact-from-suppliers'],
+            filename: path.resolve(__dirname, "dist/contact-from-suppliers/index.html"),
+            template: path.resolve(__dirname, "src/contact-from-suppliers/index.html")
         }),
         new HtmlWebpackPlugin({
             chunks: ['dictionary/dictionary'],
