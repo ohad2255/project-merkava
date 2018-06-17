@@ -389,6 +389,37 @@ input.parsley-error, .has-error input {
   }
 }
 
+input::-ms-clear, input::-ms-reveal {
+  display: none;
+}
+
+#selectedFiles {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.07;
+  letter-spacing: normal;
+  color: #0a7bb6;
+
+  .file-name {
+    margin-bottom: 24px;
+
+    @media (min-width: $screen-lg-min) {
+      margin-bottom: 15px;
+    }
+  }
+
+  button {
+    border: 0;
+    background-color: none;
+    height: 8px;
+    width: 8px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
 
   
 

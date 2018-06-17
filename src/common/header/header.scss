@@ -76,6 +76,14 @@ header {
         margin: 0 0 3px 177px;
       }
 
+      a {
+        display: inline-block;
+
+        &:first-child {
+          margin: 0 8px 0 0;
+        }
+      }
+
       .Abig {
         object-fit: contain;
         font-size: 2.6rem;

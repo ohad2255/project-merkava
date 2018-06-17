@@ -663,6 +663,7 @@
 		line-height: 1.13;
 		letter-spacing: normal;
 		color: $bids-links!important;
+		text-decoration: underline;
 
 		@media (min-width: $screen-lg-min) {
 			font-size: 2rem;
@@ -921,6 +922,7 @@
 	}
 
 	.subject-wrapper {
+		opacity: 0.8;
 		width: 165px;
 		height: 37px;
 		border-radius: 2px;
