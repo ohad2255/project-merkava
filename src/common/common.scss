@@ -422,6 +422,27 @@ input::-ms-clear, input::-ms-reveal {
   }
 }
 
+// tender status colors
+.new {
+  color: $new !important;
+}
+
+.updated {
+  color: $updated !important;
+}
+
+.closed {
+  color: $closed !important;
+}
+
+.pre-committees-decision {
+  color: $pre-committees-decision !important;
+}
+
+.cancelled {
+  color: $cancelled !important;
+}
+
   
 
 

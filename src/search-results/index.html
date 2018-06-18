@@ -58,55 +58,73 @@
           <div class="search-results-filter-container d-none d-lg-block">
             <div class="search-results-filter-wrapper">
 
-              <!-- filter subject close -->
-              <div class="type-filter-close close-filter-container d-flex align-items-center justify-content-between">
-                <h3>סוג</h3>
+              <!-- filter status close -->
+              <div class="status-filter-close close-filter-container d-flex align-items-center justify-content-between">
+                <h3>סטטוס</h3>
                 <div class="filter-arrow"></div>
               </div>
 
-              <!-- filter subject open -->
-              <div class="type-filter-wrapper d-none">
+              <!-- filter status open -->
+              <div class="status-filter-wrapper d-none">
                 <div class="checkbox">
                   <label><input type="checkbox" class="icheck" id="main-checkbox">
-                    <span class="main-label">מכרזים</span>
-                  </label>
-                </div>
-                <div class="sub-checkboxs-wrapper">
-                  <div class="checkbox">
-                    <label><input type="checkbox" class="icheck sub-checkbox" id="subCheckbox1">
-                      <span>RFI</span>
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" class="icheck sub-checkbox" id="subCheckbox2">
-                      <span>הסכם מסגרת</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="checkbox">
-                  <label><input type="checkbox" class="icheck">
-                    <span class="main-label">הודעת פטור</span>
+                    <span class="main-label updated">מעודכן</span>
                   </label>
                 </div>
                 <div class="checkbox">
                   <label><input type="checkbox" class="icheck">
-                    <span class="main-label">מכרזי מינהל הרשת</span>
+                    <span class="main-label new">חדש</span>
                   </label>
                 </div>
                 <div class="checkbox">
                   <label><input type="checkbox" class="icheck">
-                    <span class="main-label">מידע מקצועי</span>
+                    <span class="main-label closed">סגור</span>
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" class="icheck">
+                    <span class="main-label pre-committees-decision">טרום החלטת ועדה</span>
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" class="icheck">
+                    <span class="main-label cancelled">מבוטל</span>
                   </label>
                 </div>
               </div>
 
-              <!-- filter subject close -->
-              <div class="date-filter-close close-filter-container d-flex align-items-center justify-content-between">
-                <h3>תאריך פרסום</h3>
+              <!-- filter office close -->
+              <div class="office-filter-close close-filter-container d-flex align-items-center justify-content-between">
+                <h3>משרד</h3>
                 <div class="filter-arrow"></div>
               </div>
 
-              <!-- filter subject open -->
+              <!-- filter office open -->
+              <div class="office-filter-wrapper d-none">
+                <div class="checkbox">
+                  <label><input type="checkbox" class="icheck" id="main-checkbox">
+                    <span class="main-label">אפשרות-1</span>
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" class="icheck">
+                    <span class="main-label">אפשרות-2</span>
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" class="icheck">
+                    <span class="main-label">אפשרות-3</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- filter update date close -->
+              <div class="date-filter-close close-filter-container d-flex align-items-center justify-content-between">
+                <h3>תאריך עדכון</h3>
+                <div class="filter-arrow"></div>
+              </div>
+
+              <!-- filter update date open -->
               <div class="date-filter-wrapper d-none">
                 <div class="input-group input-group-1 date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input1" id="datepicker1">
                   <div class="input-wrapper">
@@ -124,48 +142,42 @@
                 <input type="hidden" id="dtp_input2" value=""> 
               </div>
 
-              <!-- filter subject close -->
-              <div class="status-filter-close close-filter-container d-flex align-items-center justify-content-between">
-                <h3>סטטוס</h3>
+              <!-- filter last date close -->
+              <div class="last-date-close close-filter-container d-flex align-items-center justify-content-between">
+                <h3>מועד אחרון להגשה</h3>
                 <div class="filter-arrow"></div>
               </div>
 
-              <!-- filter subject open -->
-              <div class="status-filter-wrapper">
-                
+              <!-- filter last date open -->
+              <div class="last-date-filter-wrapper d-none">
+                <div class="input-group input-group-1 date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input1" id="datepicker1">
+                  <div class="input-wrapper">
+                    <input type="text" class="form-control datepicker" placeholder="מתאריך" data-date-format="mm/dd/yyyy" id="datepicker">
+                    <img src="../common/img/date-img.svg" class="date-picker-icon glyphicon glyphicon-calendar" alt="calendar-icon">
+                  </div>
+                </div>
+                <input type="hidden" id="dtp_input1" value="">
+                <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input2" id="datepicker2">
+                  <div class="input-wrapper">
+                    <input type="text" class="form-control datepicker" placeholder="עד תאריך">
+                    <img src="../common/img/date-img.svg" class="date-picker-icon glyphicon glyphicon-calendar" alt="calendar-icon">
+                  </div>
+                </div>
+                <input type="hidden" id="dtp_input2" value=""> 
               </div>
 
-              <!-- filter subject close -->
-              <div class="contact-topics-filter-close close-filter-container d-flex align-items-center justify-content-between">
-                <h3>תחומי התקשרות</h3>
+              <!-- filter tags close -->
+              <div class="tags-filter-close close-filter-container d-flex align-items-center justify-content-between">
+                <h3>תגיות</h3>
                 <div class="filter-arrow"></div>
               </div>
 
-              <!-- filter subject open -->
-              <div class="contact-topics-filter-wrapper">
-                
-              </div>
-
-              <!-- filter subject close -->
-              <div class="office-filter-close close-filter-container d-flex align-items-center justify-content-between">
-                <h3>משרד</h3>
-                <div class="filter-arrow"></div>
-              </div>
-
-              <!-- filter subject open -->
-              <div class="office-filter-wrapper">
-                
-              </div>
-
-              <!-- filter subject close -->
-              <div class="more-filter-close close-filter-container d-flex align-items-center justify-content-between">
-                <h3>עוד</h3>
-                <div class="filter-arrow"></div>
-              </div>
-
-              <!-- filter subject open -->
-              <div class="more-filter-wrapper">
-                
+              <!-- filter tags open -->
+              <div class="tags-filter-wrapper d-none">
+                <div class="tags-wrapper d-flex flex-column"> 
+                  <a href="#" class="tag-wrapper d-flex align-items-center justify-content-center"><span>מחשוב ותקשורת</span></a>
+                  <a href="#" class="tag-wrapper d-flex align-items-center justify-content-center"><span>מדפסות</span></a>
+                </div>
               </div>
             </div>
           </div>
@@ -174,111 +186,204 @@
           <div class="search-results-content d-lg-block">
 
             <!-- search result -->
-            <div class="result-container-1">
+            <div class="result-container">
               <div class="right-line"></div>
               <div class="content-wrapper d-flex justify-content-between align-items-start align-items-lg-center h-100">
 
                 <!-- search result details-->
-                <div class="details-wrapper">
+                <div class="details-main-wrapper">
                   <img src="../common/img/health-department-logo.svg" class="health-department-logo" alt="logo">
                   <div>
                     <h3 class="d-lg-none search-result-sub-head">מכרזים</h3>
                     <h2>אספקת מחשבים עבור משרדי ממשלה</h2>
-                    <span>מפרסם:</span> משרד האוצר- מנהל הרכש הממשלתי <br>
-                    <span>תאריך פרסום:</span> 28/08/2017<br class="d-lg-none"><span class="d-none d-lg-inline-block">&nbsp&nbsp|&nbsp&nbsp</span><span>מועד אחרון להגשה:</span> 07/10/2013, 23:59 <br>
-                    <span>סטטוס:</span> עודכן<br class="d-lg-none"><span class="d-none d-lg-inline-block">&nbsp&nbsp|&nbsp&nbsp</span><span>מס׳ המכרז:</span> 18-2017 
+
+
+                    <div class="details-wrapper">
+                      <!-- name -->
+                      <span>מפרסם: </span><span class="font-weight-normal">משרד האוצר- מנהל הרכש הממשלתי</span><br>
+
+                      <!-- number -->
+                      <span>מספר פרסום: </span><span class="font-weight-normal number">24987</span><br class="d-lg-none"> |
+
+                      <!-- status (Change class according to status and color changes: new, updated, closed, pre-committees-decision, cancelled) -->
+                      <span>סטטוס: </span><span class="status updated font-weight-normal">מעודכן</span> | 
+
+                      <!-- process number -->
+                      <span>מספר הליך: </span><span class="font-weight-normal number">18-2017</span> | 
+
+                      <!-- release date -->
+                      <span>תאריך פרסום: </span><span class="font-weight-normal number">28/08/2017</span><br>
+                      <!-- <br class="d-lg-none"><span class="d-none d-lg-inline-block"> -->
+
+                      <!-- deadline for submission -->
+                      <span>תאריך עדכון אחרון: </span><span class="font-weight-normal number">28/08/2018</span> |
+
+                      <!-- deadline for submission -->
+                      <span class="last-date">מועד אחרון להגשה: </span><span class="font-weight-normal number last-date">23:59, 07/10/2013</span>
+                    </div>
                   </div> 
                 </div>
                 <div class="logo-container d-lg-flex flex-column align-items-center">
-                  <img src="../common/img/tender-icon.svg" class="result-container-1-logo" alt="icon">
+
+                  <!-- tender img (default)-->
+                  <img src="../common/img/tender-icon.svg" class="tender-icon" alt="icon">
+
+                  <!-- central tender img -->
+                  <!-- move d-none to tender-icon to show central-tender-icon -->
+                  <img src="../common/img/central-tender-icon.svg" class="central-tender-icon d-none" alt="icon">
                   <h3 class="d-none d-lg-block search-result-sub-head">מכרזים</h3>
                 </div>
               </div>
             </div>
 
             <!-- search result -->
-            <div class="result-container-1">
+            <div class="result-container">
               <div class="right-line"></div>
               <div class="content-wrapper d-flex justify-content-between align-items-start align-items-lg-center h-100">
 
                 <!-- search result details-->
-                <div class="details-wrapper">
+                <div class="details-main-wrapper">
                   <img src="../common/img/health-department-logo.svg" class="health-department-logo" alt="logo">
                   <div>
                     <h3 class="d-lg-none search-result-sub-head">מכרזים</h3>
                     <h2>אספקת מחשבים עבור משרדי ממשלה</h2>
-                    <span>מפרסם:</span> משרד האוצר- מנהל הרכש הממשלתי <br>
-                    <span>תאריך פרסום:</span> 28/08/2017<br class="d-lg-none"><span class="d-none d-lg-inline-block">&nbsp&nbsp|&nbsp&nbsp</span><span>מועד אחרון להגשה:</span> 07/10/2013, 23:59 <br>
-                    <span>סטטוס:</span> עודכן<br class="d-lg-none"><span class="d-none d-lg-inline-block">&nbsp&nbsp|&nbsp&nbsp</span><span>מס׳ המכרז:</span> 18-2017 
+
+
+                    <div class="details-wrapper">
+                      <!-- name -->
+                      <span>מפרסם: </span><span class="font-weight-normal">משרד האוצר- מנהל הרכש הממשלתי</span><br>
+
+                      <!-- number -->
+                      <span>מספר פרסום: </span><span class="font-weight-normal number">24987</span><br class="d-lg-none"> |
+
+                      <!-- status (Change class according to status and color changes: new, updated, closed, pre-committees-decision, cancelled) -->
+                      <span>סטטוס: </span><span class="status updated font-weight-normal">מעודכן</span> | 
+
+                      <!-- process number -->
+                      <span>מספר הליך: </span><span class="font-weight-normal number">18-2017</span> | 
+
+                      <!-- release date -->
+                      <span>תאריך פרסום: </span><span class="font-weight-normal number">28/08/2017</span><br>
+                      <!-- <br class="d-lg-none"><span class="d-none d-lg-inline-block"> -->
+
+                      <!-- deadline for submission -->
+                      <span>תאריך עדכון אחרון: </span><span class="font-weight-normal number">28/08/2018</span> |
+
+                      <!-- deadline for submission -->
+                      <span class="last-date">מועד אחרון להגשה: </span><span class="font-weight-normal number last-date">23:59, 07/10/2013</span>
+                    </div>
                   </div> 
                 </div>
                 <div class="logo-container d-lg-flex flex-column align-items-center">
-                  <img src="../common/img/tender-icon.svg" class="result-container-1-logo" alt="icon">
+
+                  <!-- tender img (default)-->
+                  <img src="../common/img/tender-icon.svg" class="tender-icon" alt="icon">
+
+                  <!-- central tender img -->
+                  <!-- move d-none to tender-icon to show central-tender-icon -->
+                  <img src="../common/img/central-tender-icon.svg" class="central-tender-icon d-none" alt="icon">
                   <h3 class="d-none d-lg-block search-result-sub-head">מכרזים</h3>
                 </div>
               </div>
             </div>
 
             <!-- search result -->
-            <div class="result-container-2 d-lg-flex flex-column justify-content-center">
-              <div class="right-line"></div>
-              <div class="content-wrapper d-flex justify-content-between align-items-center h-100">
-                
-                <!-- search result details-->
-                <div class="details-wrapper">
-                  <h3 class="d-lg-none search-result-sub-head">רכש ירוק</h3>
-                  <h2>הצעת פתרונות ירוקים לממשלה</h2>
-                  <p>מינהל הרכש הממשלתי והמשרד להגנת הסביבה מעוניינים לבחון פתרונות המסייעים לשיפור הביצועים הסביבתיים של הממשלה, כחלק מהמהלכים לעידוד חדשנות ולפיתוח מנגנוני דיאלוג עם השוק …</p>
-                </div>
-                <div class="logo-container d-lg-flex flex-column align-items-center">
-                  <img src="../common/img/green-top-icon.svg" class="result-container-2-icon" alt="icon">
-                  <h3 class="d-none d-lg-block search-result-sub-head">רכש ירוק</h3>
-                </div>
-              </div>
-            </div>
-
-            <!-- search result -->
-            <div class="result-container-3 result-container-3 d-lg-flex flex-column justify-content-center">
+            <div class="result-container">
               <div class="right-line"></div>
               <div class="content-wrapper d-flex justify-content-between align-items-start align-items-lg-center h-100">
 
                 <!-- search result details-->
-                <div class="details-wrapper">
-                  <div>
-                    <h3 class="d-lg-none search-result-sub-head">מילון</h3>
-                    <h2>מפת״ח (נוהל)</h2>
-                    <p>מינהל הרכש הממשלתי והמשרד להגנת הסביבה מעוניינים לבחון פתרונות המסייעים לשיפור הביצועים הסביבתיים של הממשלה, כחלק מהמהלכים לעידוד חדשנות ולפיתוח מנגנוני דיאלוג עם השוק …</p>
-                  </div> 
-                </div>
-                <div class="logo-container d-lg-flex flex-column align-items-center">
-                  <img src="../common/img/dictionary-icon.svg" class="result-container-3-icon" alt="icon">
-                  <h3 class="d-none d-lg-block search-result-sub-head">מילון</h3>
-                </div>
-              </div>
-            </div>
-
-            <!-- search result -->
-            <div class="result-container-4">
-              <div class="right-line"></div>
-              <div class="content-wrapper d-flex justify-content-between align-items-start align-items-lg-center h-100">
-
-                <!-- search result details-->
-                <div class="details-wrapper">
+                <div class="details-main-wrapper">
                   <img src="../common/img/health-department-logo.svg" class="health-department-logo" alt="logo">
                   <div>
                     <h3 class="d-lg-none search-result-sub-head">מכרזים</h3>
                     <h2>אספקת מחשבים עבור משרדי ממשלה</h2>
-                    <span>מספר הפרסום במנו״ף: </span> 2-2013 
-                    <span class="d-none d-lg-inline-block">&nbsp&nbsp|&nbsp&nbsp</span><br class="d-lg-none">
-                    <span>סטטוס: </span> עודכן <br>
-                    <span>תאריך פרסום: </span> 28/08/2017 <br class="d-lg-none">
-                    <span class="d-none d-lg-inline-block">&nbsp&nbsp|&nbsp&nbsp</span>
-                    <span>מועד עדכון אחרון: </span> 27/11/2017 <br>
-                    <span>מועד אחרון להגשה: </span> 07/10/2013, 23:59 
+
+
+                    <div class="details-wrapper">
+                      <!-- name -->
+                      <span>מפרסם: </span><span class="font-weight-normal">משרד האוצר- מנהל הרכש הממשלתי</span><br>
+
+                      <!-- number -->
+                      <span>מספר פרסום: </span><span class="font-weight-normal number">24987</span><br class="d-lg-none"> |
+
+                      <!-- status (Change class according to status and color changes: new, updated, closed, pre-committees-decision, cancelled) -->
+                      <span>סטטוס: </span><span class="status updated font-weight-normal">מעודכן</span> | 
+
+                      <!-- process number -->
+                      <span>מספר הליך: </span><span class="font-weight-normal number">18-2017</span> | 
+
+                      <!-- release date -->
+                      <span>תאריך פרסום: </span><span class="font-weight-normal number">28/08/2017</span><br>
+                      <!-- <br class="d-lg-none"><span class="d-none d-lg-inline-block"> -->
+
+                      <!-- deadline for submission -->
+                      <span>תאריך עדכון אחרון: </span><span class="font-weight-normal number">28/08/2018</span> |
+
+                      <!-- deadline for submission -->
+                      <span class="last-date">מועד אחרון להגשה: </span><span class="font-weight-normal number last-date">23:59, 07/10/2013</span>
+                    </div>
                   </div> 
                 </div>
                 <div class="logo-container d-lg-flex flex-column align-items-center">
-                  <img src="../common/img/ptorim-icon.svg" class="result-container-4-icon" alt="icon">
+
+                  <!-- tender img (default)-->
+                  <img src="../common/img/tender-icon.svg" class="tender-icon" alt="icon">
+
+                  <!-- central tender img -->
+                  <!-- move d-none to tender-icon to show central-tender-icon -->
+                  <img src="../common/img/central-tender-icon.svg" class="central-tender-icon d-none" alt="icon">
+                  <h3 class="d-none d-lg-block search-result-sub-head">מכרזים</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- search result -->
+            <div class="result-container">
+              <div class="right-line"></div>
+              <div class="content-wrapper d-flex justify-content-between align-items-start align-items-lg-center h-100">
+
+                <!-- search result details-->
+                <div class="details-main-wrapper">
+                  <img src="../common/img/health-department-logo.svg" class="health-department-logo" alt="logo">
+                  <div>
+                    <h3 class="d-lg-none search-result-sub-head">מכרזים</h3>
+                    <h2>אספקת מחשבים עבור משרדי ממשלה</h2>
+
+
+                    <div class="details-wrapper">
+                      <!-- name -->
+                      <span>מפרסם: </span><span class="font-weight-normal">משרד האוצר- מנהל הרכש הממשלתי</span><br>
+
+                      <!-- number -->
+                      <span>מספר פרסום: </span><span class="font-weight-normal number">24987</span><br class="d-lg-none"> |
+
+                      <!-- status (Change class according to status and color changes: new, updated, closed, pre-committees-decision, cancelled) -->
+                      <span>סטטוס: </span><span class="status updated font-weight-normal">מעודכן</span> | 
+
+                      <!-- process number -->
+                      <span>מספר הליך: </span><span class="font-weight-normal number">18-2017</span> | 
+
+                      <!-- release date -->
+                      <span>תאריך פרסום: </span><span class="font-weight-normal number">28/08/2017</span><br>
+                      <!-- <br class="d-lg-none"><span class="d-none d-lg-inline-block"> -->
+
+                      <!-- deadline for submission -->
+                      <span>תאריך עדכון אחרון: </span><span class="font-weight-normal number">28/08/2018</span> |
+
+                      <!-- deadline for submission -->
+                      <span class="last-date">מועד אחרון להגשה: </span><span class="font-weight-normal number last-date">23:59, 07/10/2013</span>
+                    </div>
+                  </div> 
+                </div>
+                <div class="logo-container d-lg-flex flex-column align-items-center">
+
+                  <!-- tender img (default)-->
+                  <img src="../common/img/tender-icon.svg" class="tender-icon" alt="icon">
+
+                  <!-- central tender img -->
+                  <!-- move d-none to tender-icon to show central-tender-icon -->
+                  <img src="../common/img/central-tender-icon.svg" class="central-tender-icon d-none" alt="icon">
                   <h3 class="d-none d-lg-block search-result-sub-head">מכרזים</h3>
                 </div>
               </div>
