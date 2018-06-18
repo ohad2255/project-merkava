@@ -715,7 +715,7 @@
 		width: 100%;
 
 		@media (min-width: $screen-lg-min) {
-			bottom: 148px;
+			bottom: 127px;
 		}
 
 		.swiper-slide {
@@ -728,7 +728,7 @@
 		}
 
 		@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-			bottom: 146px;
+			bottom: 125px;
 		}
 	}
 
@@ -752,6 +752,8 @@
 
 		@media (min-width: $screen-lg-min) {
 			margin: 0;
+			position: absolute;
+			bottom: 127px;
 		}
 	}
 
