@@ -53,3 +53,24 @@ function changeValidations() {
             }
         });
 }  
+
+
+$('#companyName').keyup(function() {
+    if( $(this).val().length === 0 ) {
+        $('html').find($('#companyNumber')).prop('required',false);
+        $('html').find($('#bulletCompanyNumber')).addClass('d-none');
+    } else {
+        $('html').find($('#companyNumber')).prop('required',true);
+        $('html').find($('#bulletCompanyNumber')).removeClass('d-none');
+    }
+});
+
+$('#companyNumber').keyup(function() {
+    if( $(this).val().length === 0 ) {
+        $('html').find($('#companyName')).prop('required',false);
+        $('html').find($('#bulletCompanyName')).addClass('d-none');
+    } else {
+        $('html').find($('#companyName')).prop('required',true); 
+        $('html').find($('#bulletCompanyName')).removeClass('d-none');
+    }
+});

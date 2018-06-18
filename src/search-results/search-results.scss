@@ -23,10 +23,11 @@
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
 
 		@media (min-width: $screen-lg-min) {
-			background-image: url('../common/img/bids-header-visuals.png');
+			background-image: url('../common/img/search-results-header-visuals.png');
 			height: 308px;
 			background-size: auto;
 			background-repeat: no-repeat;
+			padding: 120px 0 0 0;
 		}
 
 		@media (max-width: 340px) {
@@ -54,9 +55,6 @@
 			width: 100%;
 			margin: 0 auto;
 			//padding: 0 20px;
-		}
-
-		.search-results-wrapper {
 
 			h1 {
 
@@ -73,6 +71,16 @@
 					letter-spacing: normal;
 					text-align: center;
 				}
+			}
+
+			p {
+				font-size: 3rem;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: normal;
+				letter-spacing: normal;
+				color: #4e5665;
 			}
 		}
 	}
