@@ -26,6 +26,7 @@ module.exports = {
         'job-owners/job-owners': ["./src/job-owners/job-owners.scss", "./src/job-owners/job-owners.js"],
         'bids/bids': ["./src/bids/bids.scss", "./src/bids/bids.js"],
         'search-results/search-results': ["./src/search-results/search-results.scss", "./src/search-results/search-results.js"],
+        'search-results-exemption/search-results-exemption': ["./src/search-results-exemption/search-results-exemption.scss", "./src/search-results-exemption/search-results-exemption.js"],
         'regulation/regulation': ["./src/regulation/regulation.scss", "./src/regulation/regulation.js"],
         'news/news': ["./src/news/news.scss", "./src/news/news.js"],
         'sitemap/sitemap': ["./src/sitemap/sitemap.scss", "./src/sitemap/sitemap.js"],
@@ -197,6 +198,11 @@ module.exports = {
             chunks: ['search-results/search-results'],
             filename: path.resolve(__dirname, "dist/search-results/index.html"),
             template: path.resolve(__dirname, "src/search-results/index.html")
+        }),
+        new HtmlWebpackPlugin({
+            chunks: ['search-results-exemption/search-results-exemption'],
+            filename: path.resolve(__dirname, "dist/search-results-exemption/index.html"),
+            template: path.resolve(__dirname, "src/search-results-exemption/index.html")
         }),
         new HtmlWebpackPlugin({
             chunks: ['regulation/regulation'],
