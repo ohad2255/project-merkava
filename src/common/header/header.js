@@ -1,8 +1,10 @@
 require('../common');
 
-$("#inputErrorP").hide();
 
 $(document).ready(function() {
+
+	$("#inputErrorP").hide();
+
 	$('.logged-in-name').on('click', function () {
 
 		$(this).next(".ent-dropdown-items-container").toggleClass("d-none");

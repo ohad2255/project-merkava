@@ -319,6 +319,9 @@ header {
           padding: 1px 26px 0 20px;
           height: 100%;
           border-left: rgba(102, 102, 102, 0.3) solid 1px;
+          appearance: none;
+          -moz-appearance: none;
+          -webkit-appearance: none;
 
           &::-ms-expand {
               display: none;
@@ -419,10 +422,11 @@ header {
 
     #inputErrorP {
       position: absolute;
-      width: 669px;
-      height: 38px;
+      width: 325px;
+      height: 46px;
       background-color: #f2f2f2;
-      font-size: 12px;
+      border: solid 1px #cccccc;
+      font-size: 1.3rem;
       font-weight: normal;
       font-style: normal;
       font-stretch: normal;
@@ -430,11 +434,20 @@ header {
       letter-spacing: 0.5px;
       text-align: center;
       color: #505050;
-      right: 275px;
+      right: 50%;
       left: auto;
       bottom: -26px;
       z-index: 10000;
       display: flex;
+      margin: 0 -162px 0 0;
+
+      @media (min-width: $screen-lg-min) {
+        width: 669px;
+        height: 38px;
+        //right: 275px;
+        font-size: 1.2rem;
+        margin: 0 -335px 0 0;
+      }
     }
   }
 }

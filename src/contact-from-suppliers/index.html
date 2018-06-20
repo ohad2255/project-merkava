@@ -73,7 +73,8 @@
 
                   <!--first name input -->
                   <div class="form-group first-name">
-                    <input class="form-control" type="text" placeholder= "שם פרטי" id="nameInput" name="name" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty>
+                    <input class="form-control" type="text" placeholder= "שם פרטי" id="nameInput" name="name" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty data-parsley-errors-container="#error1">
+                    <span id="error1" role="alert"></span>
                     <label class="sr-only" for="nameInput"></label>
                     <div class="input-bullet"></div>
                   </div>
