@@ -108,12 +108,14 @@
             <!-- search input dropdown -->
             <div class="dropdown input-dropdown d-flex align-items-center justify-content-center">
                 <div class="input-toggle-arrow"></div>
-                <select class="form-control input-toggle" type="button" id="inputToggle" title="שפה">
+                <select class="form-control input-toggle-select" type="button" id="inputToggle" title="בחר" placeholder= "בחר">
 
                     <!-- search options -->
-                    <option class="input-dropdown-item">הכל</option>
-                    <option class="input-dropdown-item">נושא-1</option>
-                    <option class="input-dropdown-item">נושא-2</option>
+                    <option class="input-dropdown-defult-item" value="0" disabled selected hidden>בחר</option>
+                    <option class="input-dropdown-item" value="1">מכרזים</option>
+                    <option class="input-dropdown-item" value="2">פטורים</option>
+                    <option class="input-dropdown-item" value="3">אחר</option>
+                    <option class="input-dropdown-item" value="4">דף זה</option>
                 </select>
             </div>
 
@@ -121,9 +123,14 @@
             <input type="text" name="search" placeholder="חפש" class="main-input" id="mainInput">
             <label class="sr-only" for="mainInput">search</label>
 
+            <!-- error p -->
+            <div id="inputErrorP" class="align-items-center justify-content-center">
+                לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קונדימנטום קורוס בליקרה, נונסטי קלובר בריקנה סטום, לפריקך תצטריק
+            </div>
+
             <!-- search button -->
             <button class="d-flex align-items-center search-input" id="searchInput">
-                <img src="../img/search-icn.svg" class="SearchIcn">
+                <img src="../img/search-icon.svg" class="SearchIcon">
             </button>
         </div>
     </div>

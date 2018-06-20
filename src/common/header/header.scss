@@ -288,6 +288,7 @@ header {
     .input-container {
       background-color: $main-white;
       width: 100%;
+      position: relative;
 
       .input-dropdown {
         height: 100%;
@@ -303,7 +304,7 @@ header {
           width: 142px;
         }
 
-        .input-toggle {
+        .input-toggle-select {
           object-fit: contain;
           font-size: 2rem;
           font-weight: normal;
@@ -325,7 +326,7 @@ header {
 
           @media (min-width: $screen-lg-min) {
             font-size: 2.4rem;
-            line-height: 0.67;
+            line-height: normal;
             padding-top: 0;
           }
 
@@ -414,6 +415,26 @@ header {
           height: 19px;
         }
       }
+    }
+
+    #inputErrorP {
+      position: absolute;
+      width: 669px;
+      height: 38px;
+      background-color: #f2f2f2;
+      font-size: 12px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: 0.5px;
+      text-align: center;
+      color: #505050;
+      right: 275px;
+      left: auto;
+      bottom: -26px;
+      z-index: 10000;
+      display: flex;
     }
   }
 }

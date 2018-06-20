@@ -1,5 +1,7 @@
 require('../common');
 
+$("#inputErrorP").hide();
+
 $(document).ready(function() {
 	$('.logged-in-name').on('click', function () {
 
@@ -14,6 +16,23 @@ $(document).ready(function() {
 		$(this).clear()
 	  }
 	});   
+});
+
+
+
+$('#searchInput').on('click', function () {
+	//debugger
+	var Option0 = $(".input-dropdown-defult-item");
+	var mainInput = $("#mainInput");
+
+
+    if (mainInput.val().length && !$('.input-toggle-select').val()) {
+    	//console.log('Entered if')
+        // $(".input-error-p").removeClass("d-none");
+        $("#inputErrorP").show();
+    } else {
+        $("#inputErrorP").hide();
+    }
 });
 
 
