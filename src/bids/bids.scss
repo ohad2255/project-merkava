@@ -515,13 +515,42 @@
 			max-width: 1222px;
 		}
 
+		// changed (add) ////////////////////////////////////////
+
+
+		.winning-bidder-main-wrppaer:nth-child(3n+1) {
+
+			.winning-bidder-container {
+				background-color: $bids-purple;
+			}
+		}
+
+		.winning-bidder-main-wrppaer:nth-child(3n+2) {
+
+			.winning-bidder-container {
+				background-color: rgba(223, 110, 17, 0.15);
+			}
+			
+		}
+
+		.winning-bidder-main-wrppaer:nth-child(3n+3) {
+
+			.winning-bidder-container {
+				background-color: rgba(51,163,141,.15);
+			}
+		}
+
+		// change and ////////////////////////////////////////
+
 		.winning-bidder-main-wrppaer {
 
 			@media (min-width: $screen-lg-min) {
 				width: 50%;
 				min-width: 601px;
-			}
+			}	
 		}
+
+
 
 		.swiper-button-next, .swiper-button-prev {
 			margin: -6px 0 0 0;
@@ -578,24 +607,26 @@
 	}
 
 	.winning-bidder-container {
-		height: 552px;
-	    background-color: $bids-purple;
+		//min-height: 552px;
+	    //background-color: $bids-purple;
 	    padding: 26px 0 0 0;
 	    margin: 0 20px;
 	    border-radius: 3px;
 
 	    @media (min-width: $screen-lg-min) {
 			max-width: 601px;
-			height: 556px;
+			min-height: 556px;
 			border-radius: 8px;
 			margin: 0;
 		}
 
 	    .winning-bidders-content-wrapper {
 	    	padding: 0 24px 0 20px;
+	    	margin-bottom: 192px;
 
 	    	 @media (min-width: $screen-lg-min) {
 				padding: 0 30px 25px;
+				margin-bottom: 165px;
 			}
 	    }
 
@@ -654,6 +685,14 @@
 	    }
 	}
 
+	.winning-bidder-container-single .winning-bidders-content-wrapper {
+		margin-bottom: 0;
+
+		@media (min-width: $screen-lg-min) {
+			margin-bottom: 165px;
+		}
+	}
+
 
 	.a {
     	font-size: 1.6rem;
@@ -671,17 +710,17 @@
 		}
     }
 
-    .winning-bidder-container-2 {
-		background-color: rgba(223, 110, 17, 0.15);
+//     .winning-bidder-container:nth-child(2n+2) {
+// 		//background-color: rgba(223, 110, 17, 0.15);
+// background-color: red;
+// 		 @media (min-width: $screen-lg-min) {
+// 			margin: 0 0 0 0;
+// 		}
+// 	}
 
-		 @media (min-width: $screen-lg-min) {
-			margin: 0 0 0 0;
-		}
-	}
-
-	.winning-bidder-container-3 {
-		background-color: rgba(51,163,141,.15);
-	}
+	// .winning-bidder-container-3 {
+	// 	background-color: rgba(51,163,141,.15);
+	// }
 
     .hour-link {
 		text-decoration: underline!important;
@@ -710,12 +749,12 @@
 
 	.winning-bidders-swiper-wrapper, .single-slide {
 		position: absolute;
-		bottom: 120px;
+		top: 273px;
 		height: 140px;
 		width: 100%;
 
 		@media (min-width: $screen-lg-min) {
-			bottom: 127px;
+			top: 238px;
 		}
 
 		.swiper-slide {
@@ -771,18 +810,19 @@
 	}
 
 	.winning-bidders-links {
-		position: absolute;
-		bottom: 12px;
-		padding: 0 24px 5px 55px;
+		padding: 0 24px 20px 55px;
 		margin: 20px 0 0 0;
 
 		@media (min-width: $screen-lg-min) {
-			padding: 0 30px 0 40px;
-			bottom: 18px;
+			padding: 0 30px 30px 40px;
 		}	
 
 		a {
-			line-height: 1.15;
+			line-height: 1.4;
+
+			@media (min-width: $screen-lg-min) {
+				line-height: 1.8;
+			}
 		}
 
 		span {
