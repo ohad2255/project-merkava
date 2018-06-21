@@ -18,9 +18,18 @@ $(document).ready(function() {
     .each(function() {
       new Swiper(this, {
         slidesPerView: "auto",
-        // slidesOffsetBefore: "-45",
+        slidesOffsetBefore: "-45",
         loop: true,
         spaceBetween: 10,
+        breakpoints: {
+          3000: {
+            spaceBetween: 15
+          },
+          992: {
+            spaceBetween: 10,
+            slidesOffsetBefore: "0"
+          }
+        },
         pagination: {
           el: $(this).siblings(".swiper-pagination"),
           clickable: true
@@ -31,17 +40,6 @@ $(document).ready(function() {
         }
       });
     });
-
-  // new Swiper('.swiper-container.winning-bidders-swiper', {
-  // 	slidesOffsetBefore: '-45',
-  // 	crossFade: true,
-  // 	virtualTranslate: false,
-  // });
-
-  // new Swiper('.swiper-container.winning-bidders-swiper-3', {
-  // 	slidesOffsetBefore: '-45',
-  //     spaceBetween: 10,
-  // });
 
   new Swiper(".swiper-container.related-bids-swiper", {
     spaceBetween: 10,
