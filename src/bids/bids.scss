@@ -515,7 +515,7 @@
 			max-width: 1222px;
 		}
 
-		// changed (add) ////////////////////////////////////////
+// changed //////////////////////////////////////// 
 
 
 		.winning-bidder-main-wrppaer:nth-child(3n+1) {
@@ -540,7 +540,7 @@
 			}
 		}
 
-		// change and ////////////////////////////////////////
+// change and ////////////////////////////////////////
 
 		.winning-bidder-main-wrppaer {
 
@@ -606,9 +606,10 @@
 		
 	}
 
+
+// changed ////////////////////////////////////////
+
 	.winning-bidder-container {
-		//min-height: 552px;
-	    //background-color: $bids-purple;
 	    padding: 26px 0 0 0;
 	    margin: 0 20px;
 	    border-radius: 3px;
@@ -629,6 +630,8 @@
 				margin-bottom: 165px;
 			}
 	    }
+
+// change end ////////////////////////////////////////
 
 	    .winning-bidders-content-head {
 	    	margin: 0 0 13px 0;
@@ -685,6 +688,9 @@
 	    }
 	}
 
+
+// changed ////////////////////////////////////////
+
 	.winning-bidder-container-single .winning-bidders-content-wrapper {
 		margin-bottom: 0;
 
@@ -693,6 +699,7 @@
 		}
 	}
 
+// change end ////////////////////////////////////////
 
 	.a {
     	font-size: 1.6rem;
@@ -708,22 +715,6 @@
 			font-size: 2rem;
 			line-height: 1;
 		}
-    }
-
-//     .winning-bidder-container:nth-child(2n+2) {
-// 		//background-color: rgba(223, 110, 17, 0.15);
-// background-color: red;
-// 		 @media (min-width: $screen-lg-min) {
-// 			margin: 0 0 0 0;
-// 		}
-// 	}
-
-	// .winning-bidder-container-3 {
-	// 	background-color: rgba(51,163,141,.15);
-	// }
-
-    .hour-link {
-		text-decoration: underline!important;
     }
 
 
@@ -747,11 +738,17 @@
 		}
 	}
 
+	// changed ///////////////////////////////////////////////
+
 	.winning-bidders-swiper-wrapper, .single-slide {
 		position: absolute;
 		top: 273px;
 		height: 140px;
 		width: 100%;
+
+		@media (min-width: $screen-md-min) {
+			top: 180px;
+		}
 
 		@media (min-width: $screen-lg-min) {
 			top: 238px;
@@ -765,6 +762,8 @@
 				left: auto;
 			}
 		}
+
+	// change end ////////////////////////////////////////
 
 		@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 			bottom: 125px;
@@ -809,6 +808,9 @@
 		}
 	}
 
+
+	// changed ///////////////////////////////////////////////
+
 	.winning-bidders-links {
 		padding: 0 24px 20px 55px;
 		margin: 20px 0 0 0;
@@ -831,6 +833,8 @@
 			color: $bids-links;
 		}
 	}
+
+	// change end ////////////////////////////////////////
 
 	.winning-bidders-links-right-side, .winning-bidders-links-left-side {
 		display: inline;
