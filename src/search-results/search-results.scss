@@ -159,6 +159,10 @@
 				width: 100%;
 				flex: 1;
 
+				@media (min-width: $screen-lg-min) {
+					margin: 0 0 0 25px;
+				}
+
 				.search-results-filter-wrapper {
 
 					@media (min-width: $screen-lg-min) {
@@ -545,7 +549,7 @@
 					color: $header-blue;
 
 					@media (min-width: $screen-lg-min) {
-						max-width: none;
+						max-width: 520px;
 					}
 				}
 				
