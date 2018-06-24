@@ -186,7 +186,7 @@ button {
 
 .hint {
   opacity: 0.51;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -199,18 +199,21 @@ button {
   display: none;
   color: #4e5665;
   top: 100%;
+
+  @media (min-width: $screen-lg-min) {
+    font-size: 1.2rem;
+  }
 }
 
-.parsley-errors-list.filled
 
 input.parsley-error, .has-error input {
-  box-shadow: none;
-  border-bottom: solid 2px #d53b4a;
+  box-shadow: none !important;
+  border-bottom: solid 2px #d53b4a !important;
 }
 
 .parsley-errors-list.filled {
   margin: 2px 0 0 0;
-  background-color: $main-white;
+  //background-color: $main-white;
   z-index: 100;
 
   ~.help-block{
@@ -219,7 +222,12 @@ input.parsley-error, .has-error input {
 
   ~ .hint {
     top: calc(100% + 1.2em);
+    visibility: hidden;
   }
+}
+
+input.parsley-error + .hint {
+  
 }
 
 .modal {
