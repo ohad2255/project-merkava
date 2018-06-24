@@ -43,6 +43,10 @@ $(document).ready(function() {
 
   new Swiper(".swiper-container.related-bids-swiper", {
     spaceBetween: 10,
+    direction: "horizontal",
+    loop: true,
+    speed: 1000,
+    slidesPerView: "auto",
     slidesOffsetBefore: "20",
 
     pagination: {
