@@ -15,12 +15,12 @@ $(document).ready(function() {
 
     var passwordInputs = [
         {
-            input: '#inputPasswordReg',
+            input: '#inputPassword',
             inactiveEye: '#showPasswordEye',
             activeEye: '#showPasswordEyeShow'
         },
         {
-            input: '#inputPasswordConfirmReg',
+            input: '#inputPasswordConfirm',
             inactiveEye: '#showPasswordEyeConfirm',
             activeEye: '#showPasswordEyeConfirmShow'
         }
