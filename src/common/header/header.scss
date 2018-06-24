@@ -292,7 +292,7 @@ header {
 
       .input-dropdown {
         height: 100%;
-        width: 114px;
+        width: 150px;
         padding: 14px 0;
         position: relative;
         min-width: 100px;
@@ -301,7 +301,7 @@ header {
 
         @media (min-width: $screen-lg-min) {
           height: 60px;
-          width: 142px;
+          width: 180px;
         }
 
         .input-toggle-select {
@@ -316,7 +316,7 @@ header {
           background-color: $main-white;
           border: none;
           border-radius: 0;
-          padding: 1px 26px 0 20px;
+          padding: 1px 15px 0 20px;
           height: 100%;
           border-left: rgba(102, 102, 102, 0.3) solid 1px;
           appearance: none;
@@ -330,7 +330,7 @@ header {
           @media (min-width: $screen-lg-min) {
             font-size: 2.4rem;
             line-height: normal;
-            padding-top: 0;
+            padding: 0 26px 0 20px;
           }
 
           @media (max-width: 340px) {
@@ -391,7 +391,7 @@ header {
         border: 0;
         padding: 0 20px;
         flex: 1;
-        width: 139px;
+        width: 100%;
         opacity: 0.8;
 
         @media (min-width: $screen-lg-min) {
@@ -407,7 +407,7 @@ header {
         background-color: transparent;
         padding: 0;
         border: 0;
-        padding: 0 22px;
+        padding: 0 10px 0 20px;
 
         @media (min-width: $screen-lg-min) {
           padding: 0 22px;
