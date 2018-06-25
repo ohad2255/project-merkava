@@ -45,7 +45,7 @@ $(document).ready(function() {
     spaceBetween: 10,
     direction: "horizontal",
     loop: true,
-    speed: 1000,
+    //speed: 1000,
     slidesPerView: "auto",
     slidesOffsetBefore: "20",
 
