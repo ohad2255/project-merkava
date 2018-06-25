@@ -644,5 +644,134 @@
 	.footer {
 			padding: 67px 0 0;
 	}
+
+	.modal {
+		background-color: rgba(10, 123, 182, 0.9);;
+
+		.modal-dialog {
+			margin: 156px 20px 0;
+
+			@media (min-width: $screen-sm-min) {
+				margin: 246px auto 0;
+			}
+
+			@media (min-width: $screen-lg-min) {
+				
+				max-width: 924px;
+				min-height: 425px;
+			}
+		}
+
+		.modal-content {
+			width: 100%;
+			height: auto;
+			border-radius: 3px;
+			background-color: #ffffff;
+			box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+			margin: 0;
+			position: relative;
+
+			.close-btn {
+				width: 235px;
+				height: 50px;
+				object-fit: contain;
+				border-radius: 3px;
+				background-color: $header-blue;
+				box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
+				font-size: 2rem;
+				font-weight: 500;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: normal;
+				letter-spacing: 0.5px;
+				text-align: center;
+				color: $main-white;
+
+				@media (min-width: $screen-lg-min) {
+                    width: 180px;
+               	}
+			}
+		}
+
+		.modal-body {
+
+			padding: 0 9px 47px;
+			//height: 333px;
+			width: 100%;
+
+			@media (min-width: $screen-lg-min) {
+				height: auto;
+				width: auto;
+				padding: 0 22px 72px;
+			}
+
+
+			.dialog-icon {
+				width: auto;
+				height: 134px;
+				margin: -37px 0 21px 0;
+
+				@media (min-width: $screen-lg-min) {
+					width: auto;
+  					height: 192px;
+  					margin: -61px 0 21px 0;
+				}
+			}
+
+			h4 {
+				font-size: 3rem;
+				font-weight: 500;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: normal;
+				letter-spacing: normal;
+				text-align: center;
+				color: $header-blue;
+
+				@media (min-width: $screen-lg-min) {
+					font-size: 6.2rem;
+				}
+			}
+
+			.first-p {
+				font-size: 2rem;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				letter-spacing: normal;
+				text-align: center;
+				color: #4e5665;
+				max-width: 292px;
+				line-height: 1.25;
+				font-weight: 500 !important;
+				margin: 15px 0 0 !important; 
+
+				@media (min-width: $screen-lg-min) {
+					max-width: 100%;
+					line-height: 0.78;
+					font-size: 3.2rem;
+					margin: 20px 0 10px !important;
+				}
+			}
+
+			.second-p {
+				font-size: 1.6rem;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				letter-spacing: normal;
+				text-align: center;
+				color: #4e5665;
+				max-width: 292px;
+				margin: 0 0 55px 0;
+
+				@media (min-width: $screen-lg-min) {
+					max-width: 100%;
+					line-height: 0.78;
+					font-size: 2rem;
+				}
+			}
+		}
+	}
 }	
 
