@@ -17,7 +17,13 @@ $(document).ready(function() {
 	    $("html").find(".ent-dropdown-items-container").toggleClass("d-none");
 		$(this).clear()
 	  }
-	});   
+	}); 
+
+	$( document ).on( 'keydown', function(e) {
+        if ( e.keyCode === 27 ) { // ESC
+             $('.main-nav-item-dropdown').removeClass('focus');
+        }
+    });  
 });
 
 

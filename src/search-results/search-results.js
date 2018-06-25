@@ -87,4 +87,10 @@ $(document).ready(function() {
 	$('.datepicker').each(function() {
 	    $(this).data('pikaday', new Pikaday({ field: this }));
 	});
+
+	$(".close-filter-container").keyup(function(event) {
+	    if (event.keyCode === 13) {
+	        $(this).click();
+	    }
+	});
 });

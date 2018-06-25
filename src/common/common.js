@@ -18,6 +18,18 @@ $(document).ready(function() {
     $('.main-menu-mobile-container .nav-item').off("click.toggleNavItem").on("click.toggleNavItem", function() {
        this.classList.toggle("open");
     });
+
+    $(".password-eye").keyup(function(event) {
+        if (event.keyCode === 13) {
+          $(this).click();
+        }
+    });
+
+    $(".password-eye").keyup(function(event) {
+        if (event.keyCode === 13) {
+          $(this).click();
+        }
+    });
 });
 
 
