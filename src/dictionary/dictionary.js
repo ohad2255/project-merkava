@@ -39,4 +39,12 @@ $(document).ready(function() {
         $('.alphabet-item.active').removeClass('active');
         $(this).addClass('button-active'); 
     });
+
+    $('.alphabet-item').keypress(function (e) {
+        var key = e.which;
+        if (key == 13) {
+            $(this).click();
+            return false;
+        }
+    });
 });
