@@ -160,7 +160,7 @@
 						letter-spacing: normal;
 						//padding: 0 0 0 30px;
 						margin: 0;
-						max-width: 740px;
+						max-width: 640px;
 					}	
 				}
 			}
@@ -305,7 +305,7 @@
 				font-weight: 500;
 			}
 
-			.closed {
+			.closed-icon {
 				display: none;
 			}
 
@@ -378,7 +378,7 @@
 				display: none;
 			}
 
-			.closed {
+			.closed-icon {
 				display: none;
 
 				@media (min-width: $screen-lg-min) {
@@ -399,7 +399,7 @@
 			}
 		}
 
-		.closed  {
+		.closed-icon  {
 			font-size: 2.1rem;
 			height: 24px;
 			line-height: 0;
