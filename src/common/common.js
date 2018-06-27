@@ -19,17 +19,13 @@ $(document).ready(function() {
        this.classList.toggle("open");
     });
 
-    $(".password-eye").keyup(function(event) {
-        if (event.keyCode === 13) {
-          $(this).click();
-        }
-    });
-
-    $(".password-eye").keyup(function(event) {
-        if (event.keyCode === 13) {
-          $(this).click();
-        }
-    });
+    // $('.password-eye').keypress(function (e) {
+    //     var key = e.which;
+    //     if (key == 13) {
+    //         $(this).click();
+    //         return false;
+    //     }
+    // });
 });
 
 

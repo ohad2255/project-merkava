@@ -58,6 +58,21 @@ $(document).ready(function() {
         //     input.attr("type", "password");
         // }
     });
+
+    $('#activeAccount').keypress(function (e) {
+        var key = e.which;
+        if (key == 13) {
+            $('input[name= check]').click();
+            event.preventDefault();
+            return false;
+        }
+    });  
+
+    // $( document ).on( 'keydown', function(e) {
+    //     if ( e.keyCode === 27 ) { // ESC
+    //          $('.main-nav-item-dropdown').removeClass('focus');
+    //     }
+    // }); 
 });
 
 

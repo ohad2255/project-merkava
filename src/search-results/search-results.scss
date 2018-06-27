@@ -83,6 +83,7 @@
 				line-height: normal;
 				letter-spacing: normal;
 				color: #4e5665;
+				max-width: 640px;
 			}
 		}
 	}
@@ -177,6 +178,7 @@
 					border-width: 1px 0 0 0;
 					padding: 0 0 0 24px;
 					margin: 0 20px 0 0;
+					outline: none;
 
 					@media (min-width: $screen-lg-min) {
 						border: solid #dddddd;
@@ -192,6 +194,11 @@
 
 					&:first-child {
 						border: 0;
+					}
+
+					&:focus {
+						outline: auto;
+						outline-color: #80bdff;
 					}
 
 					h3 {
@@ -268,6 +275,10 @@
 				.tags-filter-wrapper {
 					@media (min-width: $screen-lg-min) {
 						padding-bottom: 35px;
+					}
+
+					&:last-child {
+						border-bottom: 1px solid #dddddd;
 					}
 				}
 
@@ -590,113 +601,7 @@
 		}
 	}
 
-	// .search-results-footer {
-	// 	padding: 69px 0 0 0;
-	// 	margin: 0 46px 0;
-	// 	border-top: solid 2px $footer-border;
-
-	// 	@media (min-width: $screen-lg-min) {
-	// 		margin: 0 auto;
-	// 		max-width: 1271px;
-	// 		padding: 50px 0 0 0;
-	// 	}	
-	// }
-
-	// .calender-block {
-	//   padding-left: 0;
-	//   padding-right: 0;
-
-	//   @media (min-width: $screen-sm-min) and (max-width: $screen-md-max) {
-	//     overflow-x: scroll;
-	//   }
-	// }
-
-	// .user-calendar-activities {
-	//   .str-truncated {
-	//     max-width: 70%;
-	//   }
-
-	//   .user-calendar-activities-loading {
-	//     font-size: 24px;
-	//   }
-	// }
-
-	// .user-calendar {
-	//   text-align: center;
-
-	//   .calendar {
-	//     display: inline-block;
-	//   }
-	// }
-
-	// .user-contrib-cell {
-	//   &:hover {
-	//     cursor: pointer;
-	//     stroke: $black;
-	//   }
-	// }
-
-	// .user-contrib-text {
-	//   font-size: 12px;
-	//   //fill: $calendar-user-contrib-text;
-	// }
-
-	// .calendar-hint {
-	//   margin-top: -23px;
-	//   float: right;
-	//   font-size: 12px;
-	// }
-
-	// .pika-single.gitlab-theme {
-	//   .pika-label {
-	//     //color: $gl-gray;
-	//     font-size: 14px;
-	//     font-weight: normal;
-	//   }
-
-	//   th {
-	//     padding: 2px 0;
-	//     //color: $note-disabled-comment-color;
-	//     font-weight: normal;
-	//     text-transform: lowercase;
-	//     //border-top: 1px solid $calendar-border-color;
-	//   }
-
-	//   abbr {
-	//     cursor: default;
-	//   }
-
-	//   td {
-	//     //border: 1px solid $calendar-border-color;
-
-	//     &:first-child {
-	//       border-left: 0;
-	//     }
-
-	//     &:last-child {
-	//       border-right: 0;
-	//     }
-	//   }
-
-	//   .pika-day {
-	//     border-radius: 0;
-	//     //background-color: $white-light;
-	//     text-align: center;
-	//   }
-
-	//   .is-today {
-	//     .pika-day {
-	//       color: inherit;
-	//       font-weight: normal;
-	//     }
-	//   }
-
-	//   .is-selected .pika-day,
-	//   .pika-day:hover,
-	//   .is-today .pika-day:hover {
-	//     //background: $gl-primary;
-	//     //color: $white-light;
-	//     box-shadow: none;
-	//   }
-	// }
+	footer {
+		background-color: $main-white
+	}
 }

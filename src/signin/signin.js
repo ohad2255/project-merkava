@@ -23,6 +23,12 @@ $(document).ready(function() {
             } else {
                 input.attr('type', 'password');
             }
+
+            var key = e.which;
+            if (key == 13) {
+                $(this).click();
+                return false;
+            }
         })
 
         $(pwdBundle.activeEye).on('click', function() {
@@ -30,6 +36,12 @@ $(document).ready(function() {
                 input.attr('type', 'text');
             } else {
                 input.attr('type', 'password');
+            }
+
+            var key = e.which;
+            if (key == 13) {
+                $(this).click();
+                return false;
             }
     
             $('html').find($(pwdBundle.inactiveEye)).toggleClass('d-none');
