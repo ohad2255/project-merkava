@@ -197,8 +197,12 @@
 					}
 
 					&:focus {
-						outline: auto;
-						outline-color: #80bdff;
+						outline: none;
+
+						@media (min-width: $screen-lg-min) {
+							outline: auto;
+							outline-color: #80bdff;
+						}
 					}
 
 					h3 {
