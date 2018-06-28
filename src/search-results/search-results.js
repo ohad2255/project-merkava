@@ -12,7 +12,7 @@ $(document).ready(function() {
 	});
 
 	$('.filter-mobile-wrapper').click(function() {
-		$('.search-results-filter-container').toggleClass('d-none');
+		$('.filters-wrapper').toggleClass('d-none');
 		$('.search-results-content').toggleClass('d-none');
 	});
 

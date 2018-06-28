@@ -153,6 +153,13 @@
 				}
 			}
 
+			.filters-wrapper {
+
+				@media (min-width: $screen-lg-min) {
+					margin: 0 0 0 70px;
+				}
+			}
+
 			.search-results-filter-container {
 				min-height: 500px;
 				min-width: 274px;
@@ -160,9 +167,6 @@
 				width: 100%;
 				flex: 1;
 
-				@media (min-width: $screen-lg-min) {
-					margin: 0 0 0 25px;
-				}
 
 				.search-results-filter-wrapper {
 
@@ -427,7 +431,7 @@
 					font-size: 2rem;
 					line-height: 1;
 					font-weight: normal;
-					margin: 0 0 20px 0;
+					margin: 0 0 20px 20px;
 
 					@media (min-width: $screen-lg-min) {
 						font-size: 3.2rem;
@@ -447,14 +451,13 @@
 				font-weight: normal;
 				font-style: normal;
 				font-stretch: normal;
-				line-height: 1.44;
+				line-height: 1.5;
 				letter-spacing: normal;
 				color: #505050;
 
 				@media (min-width: $screen-lg-min) {
 					margin: 0 0 24px 0;
 					font-size: 2rem;
-					line-height: 1.5;
 				}
 
 				span {
@@ -477,10 +480,12 @@
 				font-stretch: normal;
 				line-height: normal;
 				letter-spacing: normal;
+				max-width: 250px;
 
 				@media (min-width: $screen-lg-min) {
 					font-size: 3.2rem;
 					text-align: center;
+					max-width: 120px;
 				}
 			}
 
@@ -560,7 +565,7 @@
 				}
 
 				h2 {
-					max-width: 210px;
+					max-width: 255px;
 					color: $header-blue;
 
 					@media (min-width: $screen-lg-min) {
@@ -583,6 +588,16 @@
 					@media (min-width: $screen-lg-min) {
 						height: 92px;
 						width: 92px;
+					}
+				}
+
+				.exemption-card-icon {
+					height: 52px;
+					width: 52px;
+
+					@media (min-width: $screen-lg-min) {
+						height: 92px;
+				    	width: 83px;
 					}
 				}
 
@@ -609,3 +624,51 @@
 		background-color: $main-white
 	}
 }
+
+.search-results-exemption {
+
+		.right-line {
+			background-color: $exemption-orange !important;
+		}
+
+		.search-result-sub-head {
+			color: $exemption-orange !important;
+		}
+
+		.logo-container {
+
+			@media (min-width: $screen-lg-min) {
+				position: absolute !important;
+				top: 20px !important;
+				left: 20px !important;
+				right: auto !important;
+				margin: 0 !important;
+			}
+		}
+
+		.exemption-card-icon {
+			height: 52px;
+			width: 52px;
+
+			@media (min-width: $screen-lg-min) {
+				height: 92px;
+		    	width: 83px;
+			}
+		}
+
+		.content-wrapper {
+			width: 100% !important;
+
+			.details-main-wrapper {
+				width: 100% !important; 
+			}
+
+			.details-wrapper {
+				max-width: 100% !important;
+			}
+		}
+
+		.last-date {
+			color: $exemption-orange !important;
+		}
+	}
