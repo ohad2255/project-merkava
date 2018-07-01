@@ -402,6 +402,7 @@ input::-ms-clear, input::-ms-reveal {
 }
 
 #selectedFiles {
+  //margin-top: 15px;
   font-size: 1.5rem;
   font-weight: bold;
   font-style: normal;
@@ -409,12 +410,15 @@ input::-ms-clear, input::-ms-reveal {
   line-height: 1.07;
   letter-spacing: normal;
   color: #0a7bb6;
+  //padding-top: 15px; 
 
   .file-name {
-    margin-bottom: 24px;
+    line-height: 1.6;
+    //margin-bottom: 24px;
 
     @media (min-width: $screen-lg-min) {
-      margin-bottom: 15px;
+      //margin-bottom: 15px;
+      line-height: 1.7;
     }
   }
 

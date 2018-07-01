@@ -76,4 +76,9 @@ $(document).ready(function () {
     }).focusout(function () {
         $('.hint').hide();
     });
+
+    // function focusMethod() {
+    //     aField = document.getElementByClassName('file-button-text');
+    //     setTimeout("aField.focus()", 50);
+    // }
 })

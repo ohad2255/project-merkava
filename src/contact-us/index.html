@@ -133,17 +133,18 @@
                   כמה קבצים שתרצו עם מגבלה של 15MB לכל הקבצים יחד
                 </small>
                 <div class="file-button-wrapper">
+                  <span class="file-button-light-text d-lg-none">קבצים מסוג <span lang="en">PDF, JPEG, PNG</span></span> 
                   <label class="sr-only" for="customFile"></label>
-                  <input type="file" class="custom-file-input" id="customFile" name="" multiple>
+                  <input type="file" class="custom-file-input" id="customFile" name="" multiple tabindex="0">
                   <span class="file-button-text">צרף מסמך</span>
                   <div class="three-upload-file-dots d-flex justify-content-between d-lg-none"> 
                     <span class="upload-file-dot"></span> 
                     <span class="upload-file-dot"></span> 
                     <span class="upload-file-dot"></span>
                   </div>
-                  <div id="selectedFiles"></div>
                   <div id="maxSize-error" style="color:#d53b4a; display:none">קובץ גדול מדי יש לעלות קובץ עד 15 MB</div>
                 </div>
+                 <div id="selectedFiles"></div>
                 <span class="dropzone-previews">
                 </span>
               </div>
