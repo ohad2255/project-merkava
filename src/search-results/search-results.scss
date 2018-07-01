@@ -182,7 +182,7 @@
 					border-width: 1px 0 0 0;
 					padding: 0 0 0 24px;
 					margin: 0 20px 0 0;
-					outline: none;
+					//outline: none;
 
 					@media (min-width: $screen-lg-min) {
 						border: solid #dddddd;
@@ -201,11 +201,13 @@
 					}
 
 					&:focus {
-						outline: none;
+						//outline: none;
 
 						@media (min-width: $screen-lg-min) {
-							outline: auto;
+							//outline: inherit;
 							outline-color: #80bdff;
+							outline-width: 2px;
+							outline-style: solid;
 						}
 					}
 
@@ -375,7 +377,7 @@
 					padding: 0 20px 21px 24px;
 
 					@media (min-width: $screen-lg-min) {
-						margin: 0 0 44px 0;
+						margin: 6px 0 44px 0;
 						padding: 0;
 					}
 
@@ -623,52 +625,99 @@
 	footer {
 		background-color: $main-white
 	}
+
+	.facet {
+		padding: 0 45px;
+		margin: 10px auto 25px;
+		max-width: 400px;
+
+		@media (min-width: $screen-lg-min) {
+			padding: 0 0 15px 0;
+			margin: 0;
+			max-width: 100%;
+		}
+
+		h3 {
+			margin-bottom: 10px;
+			font-size: 2rem;
+			color: $text-dark-grey;
+			text-align: left;
+		}	
+
+		ul {
+		    direction: ltr;
+		    text-align: left;
+		}
+
+		li {
+			font-size: 1.6rem;
+		    font-weight: normal;
+		    font-style: normal;
+		    font-stretch: normal;
+		    letter-spacing: 0.3px;
+		    color: #1c6897;
+		    font-weight: 500;
+		    line-height: 1.8;
+		    text-align: left;
+		}
+	}
 }
 
 .search-results-exemption {
 
-		.right-line {
-			background-color: $exemption-orange !important;
-		}
+	.right-line {
+		background-color: $exemption-orange !important;
+	}
 
-		.search-result-sub-head {
-			color: $exemption-orange !important;
-		}
+	.search-result-sub-head {
+		color: $exemption-orange !important;
+	}
 
-		.logo-container {
+	.logo-container {
 
-			@media (min-width: $screen-lg-min) {
-				position: absolute !important;
-				top: 20px !important;
-				left: 20px !important;
-				right: auto !important;
-				margin: 0 !important;
-			}
-		}
-
-		.exemption-card-icon {
-			height: 52px;
-			width: 52px;
-
-			@media (min-width: $screen-lg-min) {
-				height: 92px;
-		    	width: 83px;
-			}
-		}
-
-		.content-wrapper {
-			width: 100% !important;
-
-			.details-main-wrapper {
-				width: 100% !important; 
-			}
-
-			.details-wrapper {
-				max-width: 100% !important;
-			}
-		}
-
-		.last-date {
-			color: $exemption-orange !important;
+		@media (min-width: $screen-lg-min) {
+			position: absolute !important;
+			top: 20px !important;
+			left: 20px !important;
+			right: auto !important;
+			margin: 0 !important;
 		}
 	}
+
+	.exemption-card-icon {
+		height: 52px;
+		width: 52px;
+
+		@media (min-width: $screen-lg-min) {
+			height: 92px;
+	    	width: 83px;
+		}
+	}
+
+	.content-wrapper {
+		width: 100% !important;
+
+		.details-main-wrapper {
+			width: 100% !important; 
+		}
+
+		.details-wrapper {
+			max-width: 100% !important;
+		}
+	}
+
+	.last-date {
+		color: $exemption-orange !important;
+	}
+}
+
+*:focus {
+	//outline: none;
+
+	@media (min-width: $screen-lg-min) {
+		//outline: inherit;
+		outline-color: #80bdff;
+		outline-width: 2px;
+		outline-style: solid;
+	}
+}
