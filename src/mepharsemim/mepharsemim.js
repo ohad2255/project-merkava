@@ -164,7 +164,7 @@ $(document).ready(function() {
 			var subjectClass = $subject.prop("class");
 			var collapseClass = myListToggleHistory[subjectId] ? "" : "d-none";
 			var rotateClass = myListToggleHistory[subjectId] ? "rotate" : "" ;
-			var subjectName = $subject.next().text();
+			var subjectName = $subject.find('label');
 			var $subjectOptions = $subject.parents(".subject-wrapper").find(".subject-option");
 
 			var $options = $();
@@ -417,11 +417,22 @@ $(document).ready(function() {
             updateUI();
 		}
 	}
+
 	function toggleMyList() {
 		$(".my-list").toggleClass("d-block");
 		$elements.closeListButtonWrapper.addClass("d-none");
 		$elements.mainBodyWapper.toggleClass("d-none");
 	}
+
+	// $(".my-list").keypress(function (e) {
+ //        var key = e.which;
+
+ //        if (key == 13) {
+ //            $(this).click();
+ //            $(".my-list").toggleClass("d-block");
+ //            return false;
+ //        }
+ //    });
 
 	function closeListWithButtonLg() {
 		$elements.myList.removeClass("d-block");
@@ -490,6 +501,34 @@ $(document).ready(function() {
 		$(this).next(".my-list-options-wrapper").toggleClass("d-none");
 		$(this).find($(".blue-arrow")).toggleClass("rotate");
 	});
+
+	var inputCheck = $("form input:checkbox"); 
+
+	inputCheck.keypress(function (e) {
+        var key = e.which;
+        if (key == 13) {
+            $(this).click();
+            event.preventDefault();
+            return false;
+        }
+    });
+
+    $('.count-checkboxes-wrapper').keypress(function (e) {
+        var key = e.which;
+        if (key == 13) {
+            $(this).click();
+            event.preventDefault();
+            return false;
+        }
+    });
+
+    $('.list-wrapper').keypress(function (e) {
+        var key = e.which;
+        if (key == 13) {
+            $(this).click();
+            return false;
+        }
+    });
 });
 
 	
