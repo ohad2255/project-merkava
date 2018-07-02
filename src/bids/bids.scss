@@ -640,16 +640,17 @@
 
 	    .winning-bidders-content-wrapper {
 	    	padding: 0 24px 0 20px;
-	    	//margin-bottom: 192px;
+	    	margin-bottom: 192px;
 
 
 			@media (min-width: $screen-md-min) {
 				//padding: 0 30px 25px;
-				//margin-bottom: 250px;
+				
 			}
 
 	    	 @media (min-width: $screen-lg-min) {
 				padding: 0 30px 25px;
+				margin-bottom: 150px;
 			}
 	    }
 
@@ -719,7 +720,7 @@
 		margin-bottom: 0;
 
 		@media (min-width: $screen-lg-min) {
-
+			margin-bottom: 150px;
 		}
 	}
 
@@ -834,6 +835,7 @@
 	.winning-bidders-links {
 		padding: 0 24px 20px 55px;
 		margin: auto 0 0 0;
+		align-self: flex-end;
 
 		@media (min-width: $screen-lg-min) {
 			padding: 0 30px 30px 40px;
@@ -1133,7 +1135,7 @@
 	.related-bids-main-container {
 
 		@media (min-width: $screen-lg-min) {
-			min-height: 447px;
+			min-height: 427px;
 			background-color: #f4f5f7;
 			padding: 54px 0 0 0;
 			width: 100%;
@@ -1145,6 +1147,11 @@
 	}
 
 	.related-bids-desktop-container	{
+		flex-wrap: wrap;
+
+		a {
+			margin-bottom: 25px;
+		}
 
 		.related-bid-wrapper {
 			padding: 23px 34px 11px 16px;
@@ -1194,5 +1201,9 @@
 
 	.cancelled {
 		color: $cancelled !important;
+	}
+
+	a:focus {
+		outline: solid 1px #4286f4;
 	}
 }

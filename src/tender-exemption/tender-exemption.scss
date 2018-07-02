@@ -948,7 +948,7 @@
 	.related-exemptions-main-container {
 
 		@media (min-width: $screen-lg-min) {
-			min-height: 447px;
+			min-height: 427px;
 			background-color: #f4f5f7;
 			padding: 54px 0 0 0;
 			width: 100%;
@@ -960,6 +960,12 @@
 	}
 
 	.related-exemptions-desktop-container	{
+
+		flex-wrap: wrap;
+
+		a {
+			margin-bottom: 25px;
+		}
 
 		.related-bid-wrapper {
 			padding: 23px 34px 11px 16px;
@@ -1032,5 +1038,9 @@
 
 	.cancelled {
 		color: $cancelled !important;
+	}
+
+	a:focus {
+		outline: solid 1px #4286f4;
 	}
 }
