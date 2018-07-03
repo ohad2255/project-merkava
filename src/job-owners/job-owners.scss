@@ -446,6 +446,14 @@
 					@media (min-width: $screen-lg-min) {
 						margin: 0;
 					}
+
+					span {
+						pointer-events: none;
+ 						cursor: default;
+  						text-decoration: none;
+  						color: $text-dark-grey !important;
+  						undeline: none;
+					}
 				}
 
 				.mail-td, .related-documents-td {
