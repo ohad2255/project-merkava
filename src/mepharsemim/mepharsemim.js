@@ -164,7 +164,7 @@ $(document).ready(function() {
 			var subjectClass = $subject.prop("class");
 			var collapseClass = myListToggleHistory[subjectId] ? "" : "d-none";
 			var rotateClass = myListToggleHistory[subjectId] ? "rotate" : "" ;
-			var subjectName = $subject.find('label');
+			var subjectName = $subject.parent().find("label").text();
 			var $subjectOptions = $subject.parents(".subject-wrapper").find(".subject-option");
 
 			var $options = $();
@@ -174,14 +174,16 @@ $(document).ready(function() {
 
 				if ($subjectOption.prop("checked")) {
 					var subjectOptionId = $subjectOption.prop("id");
-					var subjectOptionName = $subjectOption.next().text()
+					var subjectOptionName = $subjectOption.parent().find("label").text()
 					var subjectOptionTemplate = `
 					  <div class="my-list-option-wrapper d-flex align-items-center">
 						  <div 
 						    class="my-list-item my-list-option-delete" 
 						    data-related-checkbox-id="${subjectOptionId}"
 						    data-type="option"
-						  ><img src="../common/img/x.svg" class="delete-img" alt="delete-x"></div>
+						  >
+						  	<img src="../common/img/x.svg" class="delete-img" alt="delete-x">
+						  </div>
 						  <div class="my-list-option-name">${subjectOptionName}</div>
 					  </div>
 					`
@@ -522,11 +524,26 @@ $(document).ready(function() {
         }
     });
 
+    // $(".my-list-subjects-list").on("click", ".my-list-subject-wrapper", function() {
+    // 	$(".my-list-subject-wrapper").keypress(function (e) {
+	   //      var key = e.which;
+	   //      if (key == 13) {
+	   //          openCloseSubjectsInList();
+	   //      }
+	   //  });
+    // })
+
     $('.list-wrapper').keypress(function (e) {
         var key = e.which;
         if (key == 13) {
-            $(this).click();
-            return false;
+            openCloseSubjectsInList();
+        }
+    });
+
+    $('.subject-item').keypress(function (e) {
+        var key = e.which;
+        if (key == 13) {
+            (this).click()
         }
     });
 });
