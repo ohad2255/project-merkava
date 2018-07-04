@@ -18,6 +18,8 @@ body {
   height: 100%;
 }
 
+
+
 .custom-container {
   padding: 0 20px;
 
@@ -43,7 +45,6 @@ a:hover {
 
 p {
   font-family: $main-font;
-  text-align: right;
 }
 
 button {
@@ -456,5 +457,50 @@ input::-ms-clear, input::-ms-reveal {
 }
 
   
+html:lang(en) {
+  font-family: fbagol !important;
+
+  body {
+    font-family: fbagol !important;
+  }
+
+  ul {
+    font-family: fbagol !important;
+  }
+
+  p {
+    font-family: fbagol !important;
+    //text-align: left !important;
+  }
+
+  button {
+    font-family: fbagol !important;
+  }
+
+  header {
+    font-family: fbagol !important;
+  }
+}
+
+
+html:lang(ar) {
+  font-family: fbagol !important;
+
+  body {
+    font-family: fbagol !important;
+  }
+
+  ul {
+    font-family: fbagol !important;
+  }
+
+  p {
+    font-family: fbagol !important;
+  }
+
+  button {
+    font-family: fbagol !important;
+  }
+}
 
 
