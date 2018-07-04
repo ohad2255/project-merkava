@@ -43,7 +43,7 @@
 
                                 <!-- slide 1 -->
                                 <div class="swiper-slide d-flex justify-content-end flex-column">
-                                    <a href="">
+                                    <a href="" tabindex="0">
                                         <div class="main-gallery-wrapper-s-1 d-flex flex-column justify-content-end">
 
                                             <!-- slide 1 image -->
@@ -70,7 +70,7 @@
 
                                 <!-- slide 2 -->
                                 <div class="swiper-slide d-flex justify-content-end flex-column">
-                                    <a href="" class="swiper-a-wrapper">
+                                    <a href="" class="swiper-a-wrapper" tabindex="0">
 
                                         <!-- slide 2 image -->
                                         <img src="../common/img/banner-big.png" class="img-slide-2" alt="img-slide-2">
@@ -101,12 +101,12 @@
 
                                 <!-- slide 3 -->
                                 <div class="swiper-slide d-flex justify-content-end flex-column">
-                                    <a href="" class="swiper-a-wrapper">
+                                    <a href="" class="swiper-a-wrapper" tabindex="0">
+
+                                        <!-- slide 3 image -->
+                                        <img src="../common/img/banner-big.png" class="img-slide-3" alt="img-slide-3">
                                         <div class="swiper-slide-container">
                                             <div class="swiper-slide-wrapper d-lg-flex flex-column justify-content-end">
-
-                                                <!-- slide 3 image -->
-                                                <img src="../common/img/banner-big.png" class="img-slide-3" alt="img-slide-3">
                                                 <div class="main-gallery-wrapper-s d-flex flex-column justify-content-lg-start justify-content-end">
                                                     <div class="main-gallery-container-p-s d-flex flex-column justify-content-lg-end">
 
@@ -132,12 +132,11 @@
 
                                 <!-- slide 4 -->
                                 <div class="swiper-slide d-flex justify-content-end flex-column">
-                                    <a href="" class="swiper-a-wrapper">
+                                    <a href="" class="swiper-a-wrapper" tabindex="0">
+                                        <!-- slide 4 image -->
+                                        <img src="../common/img/banner-big.png" class="img-slide-4" alt="img-slide-4">
                                         <div class="swiper-slide-container">
                                             <div class="swiper-slide-wrapper d-lg-flex flex-column justify-content-end">
-
-                                                <!-- slide 4 image -->
-                                                <img src="../common/img/banner-big.png" class="img-slide-4" alt="img-slide-4">
                                                 <div class="main-gallery-wrapper-s d-flex flex-column justify-content-lg-start justify-content-end">
                                                     <div class="main-gallery-container-p-s d-flex flex-column justify-content-lg-end">
 
@@ -163,12 +162,12 @@
 
                                 <!-- slide 5 -->
                                 <div class="swiper-slide d-flex justify-content-end flex-column">
-                                    <a href="" class="swiper-a-wrapper">
+                                    <a href="" class="swiper-a-wrapper" tabindex="0">
+                                        <!-- slide 5 image -->
+                                        <img src="../common/img/banner-big.png" class="img-slide-5" alt="img-slide-5">
                                         <div class="swiper-slide-container">
                                             <div class="swiper-slide-wrapper d-lg-flex flex-column justify-content-end">
 
-                                                <!-- slide 5 image -->
-                                                <img src="../common/img/banner-big.png" class="img-slide-5" alt="img-slide-5">
                                                 <div class="main-gallery-wrapper-s d-flex flex-column justify-content-lg-start justify-content-end">
                                                     <div class="main-gallery-container-p-s d-flex flex-column justify-content-lg-end">
 
@@ -197,7 +196,7 @@
 
                     <!-- first img row second img -->
                     <div class="first-img-row-img">
-                        <a href="">
+                        <a href="" tabindex="0">
                             <div class="top-sec-left-img d-flex flex-column justify-content-end">
 
                                 <!-- top left section image-->
@@ -229,7 +228,9 @@
 
                         <!-- second row sign up image -->
                         <div class="img-container" id="signUp">
-                            <a href="">
+
+                            <!-- Functions as <a> tag, put your link in "location.href"  -->
+                            <div class="sign-up-a" tabindex="0" onclick="location.href = '../registration/index.html'" role="link" type="link">
                                 <div class="img-wrapper d-flex flex-column justify-content-end">
 
                                     <!-- second row image 1 -->
@@ -239,19 +240,22 @@
                                     <div class="img-p-wrapper d-flex flex-column justify-content-start">
                                         <h2 class="img-head">הרשמה למרכז ההתראות</h2>
                                         <p class="img-p">את או ממשלה באלה הציבור את בידיו
-                                            והיא ומכהנת סמכויות, מורכבת של כלל האחראית הקיים הביצועיות.
+                                            והיא ומכהנת סמכויות, מורכבת של כלל האחראית.
                                         </p>
-                                        <button class="sign-up-button">
+                                        <!-- <button class="sign-up-button" onclick="location.href = '../about/index.html';" tabindex="1">
                                             הרשמה&nbsp;>
-                                        </button>
+                                        </button> -->
+                                        <a href="../registration/index.html" class="sign-up-button" tabindex="0" role="button">
+                                            הרשמה&nbsp;>      
+                                        </a>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
 
                         <!-- second row second image -->
                         <div class="img-container">
-                            <a href="">
+                            <a href="../signin/index.html" tabindex="0">
                                 <div class="img-wrapper d-flex flex-column justify-content-end">
 
                                     <!-- second row image 2 -->
@@ -270,7 +274,7 @@
 
                         <!-- second row third image -->
                         <div class="img-container">
-                            <a href="">
+                            <a href="" tabindex="0">
                                 <div class="img-wrapper d-flex flex-column justify-content-end">
 
                                     <!-- second row image 3 -->
@@ -301,7 +305,7 @@
                 <div class="row-with-p-under-img d-flex flex-column flex-lg-row">
 
                     <!-- third img row img container-->
-                    <a href="" class="third-img-row-a">
+                    <a href="" class="third-img-row-a" tabindex="0">
                         <div class="bottom-sec-link-wrapper">
                             <div class="bottom-sec-img">
 
@@ -319,7 +323,7 @@
                     </a>
 
                     <!-- third img row img container-->
-                    <a href="" class="third-img-row-a">
+                    <a href="" class="third-img-row-a" tabindex="0">
                         <div class="bottom-sec-link-wrapper">
                             <div class="bottom-sec-img">
 
@@ -337,7 +341,7 @@
                     </a>
 
                     <!-- third img row img container-->
-                    <a href="" class="third-img-row-a">
+                    <a href="" class="third-img-row-a" tabindex="0">
                         <div class="bottom-sec-link-wrapper">
 
                             <!-- bottom section image 2 -->

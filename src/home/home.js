@@ -11,4 +11,19 @@ $(document).ready(function() {
             clickable: true,
         }
     });
+
+    $('.sign-up-a').keydown(function (e) {
+        var key = e.which;
+        if (key == 13) {
+            $(this).click();
+            return false;
+        }
+    });
+
+ //    $("a").keydown(function (e) {    
+	//   if (e.which == 9) {      
+	//     $(this).focus();
+	//     e.preventDefault();
+	//   }
+	// });
 });
