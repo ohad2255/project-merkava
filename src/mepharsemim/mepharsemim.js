@@ -30,9 +30,6 @@ $(document).ready(function() {
 		checkbox: $('.form-checkbox'),
 		formCheckboxWrapper: $('.form-item'),
 		bodyCheckboxesWrapper: $('.body-checkboxes-wrapper'),
-		singleSubject: $('.single-subject-wrapper'),
-		singleSubjectInputs: $("single-subject-wrapper > .subject")
-
 	}
 
 	// All the data for the UI
@@ -44,9 +41,9 @@ $(document).ready(function() {
 			mepharsemim: $(),
 			subjects: $(),
 			subjectOptions: $(),
-			singleSubjectInputs : $()
 		}
 	};
+
 	var lists = {
 		openSubjectIndex: -1
 	};
@@ -100,7 +97,6 @@ $(document).ready(function() {
 
 			// Restore all subjects to default
 			$elements.subjectWrapper.removeClass("disabled active");
-			$elements.singleSubject.removeClass("disabled active");
 			$elements.subjectWrapper.find(".subject-options").removeClass("d-flex");
             $elements.subjectWrapper.find(".blue-arrow").removeClass("rotate");
             $elements.mainBodyWapper.find($(".save-list-button")).removeClass("d-none");
@@ -124,9 +120,10 @@ $(document).ready(function() {
 		})
 
 		// Update count
-		myList.selectedSubjectOptions = myList.$elements.subjectOptions.length + myList.$elements.singleSubjectInputs.length;
+		//debugger
+		//myList.$elements.subjects.filter(".single-subject")
+		myList.selectedSubjectOptions = myList.$elements.subjectOptions.length + myList.$elements.subjects.filter(".single-subject").length;
 		$elements.myListCount.html(myList.selectedSubjectOptions);
-		//$elements.myListCount.html(myList.singleSubjectInputs);
 
 		// Update toggleAll checkboxes
 		$elements.toggleAllMepharsemim.prop('checked', isAllSubjectsOptionsSelected);
@@ -162,16 +159,18 @@ $(document).ready(function() {
 			var isOpen = $(item).find(".my-list-options-wrapper").prop("class").indexOf("d-none") === -1;
 			myListToggleHistory[id] = isOpen;
 		});
-
+		//debugger
 		myList.$elements.subjects.each(function(index, subject) {
-			//debugger
+			
 			var $subject = $(subject);
+			var isSingle = $subject.hasClass("single-subject");
 			var subjectId = $subject.prop("id");
 			var subjectClass = $subject.prop("class");
 			var collapseClass = myListToggleHistory[subjectId] ? "" : "d-none";
 			var rotateClass = myListToggleHistory[subjectId] ? "rotate" : "" ;
 			var subjectName = $subject.parent().find("label").text();
 			var $subjectOptions = $subject.parents(".subject-wrapper").find(".subject-option");
+			var arrow = isSingle ? "" : `<div class= "blue-arrow ${rotateClass}"/>`;
 
 			var $options = $();
 			$subjectOptions.each(function(index, subjectOption) {
@@ -207,7 +206,7 @@ $(document).ready(function() {
 		                data-type="subject"
 		              ><img src="../common/img/x.svg" alt="delete-x"></div>
 		              <div class="my-list-subject-name">${subjectName}</div>
-		              <div class="blue-arrow ${rotateClass}"></div>
+		              ${arrow}
 		            </div>
 		            <div class="my-list-options-wrapper ${collapseClass}">
 		            	
