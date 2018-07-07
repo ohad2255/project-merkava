@@ -29,18 +29,22 @@ $(document).ready(function() {
 		body: $("body"),
 		checkbox: $('.form-checkbox'),
 		formCheckboxWrapper: $('.form-item'),
-		bodyCheckboxesWrapper: $('.body-checkboxes-wrapper')
-
+		bodyCheckboxesWrapper: $('.body-checkboxes-wrapper'),
+		singleSubject: $('.single-subject-wrapper'),
+		singleSubjectInputs: $("single-subject-wrapper > .subject")
 
 	}
 
 	// All the data for the UI
 	var myList = {
 		selectedSubjectOptions: 0,
+		selectedsingleSubjectInputs: 0,
+
 		$elements: {
 			mepharsemim: $(),
 			subjects: $(),
-			subjectOptions: $()
+			subjectOptions: $(),
+			singleSubjectInputs : $()
 		}
 	};
 	var lists = {
@@ -96,6 +100,7 @@ $(document).ready(function() {
 
 			// Restore all subjects to default
 			$elements.subjectWrapper.removeClass("disabled active");
+			$elements.singleSubject.removeClass("disabled active");
 			$elements.subjectWrapper.find(".subject-options").removeClass("d-flex");
             $elements.subjectWrapper.find(".blue-arrow").removeClass("rotate");
             $elements.mainBodyWapper.find($(".save-list-button")).removeClass("d-none");
@@ -119,8 +124,9 @@ $(document).ready(function() {
 		})
 
 		// Update count
-		myList.selectedSubjectOptions = myList.$elements.subjectOptions.length;
+		myList.selectedSubjectOptions = myList.$elements.subjectOptions.length + myList.$elements.singleSubjectInputs.length;
 		$elements.myListCount.html(myList.selectedSubjectOptions);
+		//$elements.myListCount.html(myList.singleSubjectInputs);
 
 		// Update toggleAll checkboxes
 		$elements.toggleAllMepharsemim.prop('checked', isAllSubjectsOptionsSelected);
@@ -188,7 +194,7 @@ $(document).ready(function() {
 					  </div>
 					`
 
-					$.merge($options, $(subjectOptionTemplate))
+					$.merge($options, $(subjectOptionTemplate) )
 				}
 			})
 

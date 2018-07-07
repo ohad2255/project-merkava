@@ -280,7 +280,7 @@
 
 					.card-block {
 
-						p, ul {
+						p {
 							font-size: 1.5rem;
 							font-weight: normal;
 							font-style: normal;
@@ -297,24 +297,6 @@
 								font-size: 1.6rem;
 								line-height: 1.75;
 								padding: 0 0 40px 10px;
-								width: auto;
-								max-width: 918px;
-							}
-						}
-
-						li {
-							font-size: 1.5rem;
-							font-weight: normal;
-							font-style: normal;
-							font-stretch: normal;
-							line-height: 1.33;
-							letter-spacing: normal;
-							color: $main-text-grey;
-							font-family: $main-font;
-
-							@media (min-width: $screen-lg-min) {
-								font-size: 1.6rem;
-								line-height: 1.75;
 								width: auto;
 								max-width: 918px;
 							}
@@ -345,7 +327,6 @@
 					// }
 
 					p {
-
 						font-size: 1.6rem;
 						font-weight: 500;
 						font-style: normal;
@@ -396,7 +377,7 @@
 					}
 				}
 
-				li, .p-with-line {
+				.p-with-line {
 					margin: 0;
 					margin: 0;
 					line-height: 1.75;
@@ -472,6 +453,46 @@
 				.show + .collapse-arrow {
 					transform: rotate(90deg);
 				}	
+
+				ul {
+					font-size: 1.5rem;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.33;
+					letter-spacing: normal;
+					color: $main-text-grey;
+					font-family: $main-font;
+					margin:0 14px 0 25px; 
+					padding: 0 0 40px 0;
+
+					@media (min-width: $screen-lg-min) {
+						margin: 0 91.5px 0 0;
+						font-size: 1.6rem;
+						line-height: 1.75;
+						padding: 0 0 40px 10px;
+						width: auto;
+						max-width: 918px;
+					}
+				}
+
+				li {
+					font-size: 1.5rem !important;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.33 !important;
+					letter-spacing: normal;
+					color: $main-text-grey;
+					font-family: $main-font;
+
+					@media (min-width: $screen-lg-min) {
+						font-size: 1.6rem !important;
+						line-height: 1.75 !important;
+						width: auto;
+						max-width: 918px;
+					}
+				}
 			}
 
 			.video-sec-head, .tutorials-head, .links-head, .video-sec-wrapper {
