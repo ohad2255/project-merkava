@@ -120,7 +120,6 @@ $(document).ready(function() {
 		})
 
 		// Update count
-		//debugger
 		//myList.$elements.subjects.filter(".single-subject")
 		myList.selectedSubjectOptions = myList.$elements.subjectOptions.length + myList.$elements.subjects.filter(".single-subject").length;
 		$elements.myListCount.html(myList.selectedSubjectOptions);
@@ -131,7 +130,6 @@ $(document).ready(function() {
 	}
 
 	function removeFromMyList() {
-		//debugger
 		var $clicked = $(this);
 		var type = $clicked.data("type");
 		var relatedCheckboxId = $clicked.data("related-checkbox-id");
@@ -139,7 +137,7 @@ $(document).ready(function() {
 		var isChecked = $relatedCheckbox.prop("checked");
 
 		if (isChecked) {
-			//debugger
+
 			$relatedCheckbox.prop("checked", false);
 			if (type === "subject") {
 				toggleSubject($relatedCheckbox)
@@ -159,9 +157,7 @@ $(document).ready(function() {
 			var isOpen = $(item).find(".my-list-options-wrapper").prop("class").indexOf("d-none") === -1;
 			myListToggleHistory[id] = isOpen;
 		});
-		//debugger
 		myList.$elements.subjects.each(function(index, subject) {
-			
 			var $subject = $(subject);
 			var isSingle = $subject.hasClass("single-subject");
 			var subjectId = $subject.prop("id");
@@ -174,7 +170,6 @@ $(document).ready(function() {
 
 			var $options = $();
 			$subjectOptions.each(function(index, subjectOption) {
-				//debugger
 				var $subjectOption = $(subjectOption);
 
 				if ($subjectOption.prop("checked")) {
@@ -546,6 +541,13 @@ $(document).ready(function() {
     });
 
     $('.subject-item').keypress(function (e) {
+        var key = e.which;
+        if (key == 13) {
+            (this).click()
+        }
+    });
+
+    $('.delete-button-lg').keypress(function (e) {
         var key = e.which;
         if (key == 13) {
             (this).click()
