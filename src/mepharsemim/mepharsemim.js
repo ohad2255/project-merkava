@@ -410,12 +410,13 @@ $(document).ready(function() {
 		updateUI()
 	}
 
-	function toggleSubjectOptions() {
+	function toggleSubjectOptions(event) {
 		
 		if (event.target.classList.contains("subject-item")) {
 			var $subjectWrapper = $(this);
 			var shouldClose = $subjectWrapper.hasClass("active");
 			lists.openSubjectIndex = shouldClose ? -1 : $subjectWrapper.index();
+			event.preventDefault();
             updateUI();
 		}
 	}

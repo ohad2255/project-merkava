@@ -74,3 +74,9 @@ $('#companyNumber').keyup(function() {
         $('html').find($('#bulletCompanyName')).removeClass('d-none');
     }
 });
+
+$(".custom-file-input").focusin(function() {
+    $(this).next(".file-button-text").addClass("focused");
+}).focusout(function () {
+    $(this).next(".file-button-text").removeClass("focused");
+});
