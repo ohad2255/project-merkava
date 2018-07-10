@@ -27,6 +27,7 @@
 			height: 308px;
 			background-size: auto;
 			background-repeat: no-repeat;
+			background-position: left;
 			//padding: 120px 0 0 0;
 		}
 
@@ -634,19 +635,19 @@
 		@media (min-width: $screen-lg-min) {
 			padding: 0 0 15px 0;
 			margin: 0;
-			max-width: 100%;
+			max-width: 270px;
 		}
 
 		h3 {
 			margin-bottom: 10px;
 			font-size: 2rem;
 			color: $text-dark-grey;
-			text-align: left;
+			//text-align: left;
 		}	
 
 		ul {
-		    direction: ltr;
-		    text-align: left;
+		    //direction: ltr;
+		   	//text-align: left;
 		}
 
 		li {
@@ -659,6 +660,7 @@
 		    font-weight: 500;
 		    line-height: 1.8;
 		    text-align: left;
+		    display: inline-block;
 		}
 	}
 }

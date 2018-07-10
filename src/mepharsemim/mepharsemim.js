@@ -29,20 +29,21 @@ $(document).ready(function() {
 		body: $("body"),
 		checkbox: $('.form-checkbox'),
 		formCheckboxWrapper: $('.form-item'),
-		bodyCheckboxesWrapper: $('.body-checkboxes-wrapper')
-
-
+		bodyCheckboxesWrapper: $('.body-checkboxes-wrapper'),
 	}
 
 	// All the data for the UI
 	var myList = {
 		selectedSubjectOptions: 0,
+		selectedsingleSubjectInputs: 0,
+
 		$elements: {
 			mepharsemim: $(),
 			subjects: $(),
-			subjectOptions: $()
+			subjectOptions: $(),
 		}
 	};
+
 	var lists = {
 		openSubjectIndex: -1
 	};
@@ -119,7 +120,8 @@ $(document).ready(function() {
 		})
 
 		// Update count
-		myList.selectedSubjectOptions = myList.$elements.subjectOptions.length;
+		//myList.$elements.subjects.filter(".single-subject")
+		myList.selectedSubjectOptions = myList.$elements.subjectOptions.length + myList.$elements.subjects.filter(".single-subject").length;
 		$elements.myListCount.html(myList.selectedSubjectOptions);
 
 		// Update toggleAll checkboxes
@@ -128,7 +130,6 @@ $(document).ready(function() {
 	}
 
 	function removeFromMyList() {
-		//debugger
 		var $clicked = $(this);
 		var type = $clicked.data("type");
 		var relatedCheckboxId = $clicked.data("related-checkbox-id");
@@ -136,7 +137,7 @@ $(document).ready(function() {
 		var isChecked = $relatedCheckbox.prop("checked");
 
 		if (isChecked) {
-			//debugger
+
 			$relatedCheckbox.prop("checked", false);
 			if (type === "subject") {
 				toggleSubject($relatedCheckbox)
@@ -156,20 +157,19 @@ $(document).ready(function() {
 			var isOpen = $(item).find(".my-list-options-wrapper").prop("class").indexOf("d-none") === -1;
 			myListToggleHistory[id] = isOpen;
 		});
-
 		myList.$elements.subjects.each(function(index, subject) {
-			//debugger
 			var $subject = $(subject);
+			var isSingle = $subject.hasClass("single-subject");
 			var subjectId = $subject.prop("id");
 			var subjectClass = $subject.prop("class");
 			var collapseClass = myListToggleHistory[subjectId] ? "" : "d-none";
 			var rotateClass = myListToggleHistory[subjectId] ? "rotate" : "" ;
 			var subjectName = $subject.parent().find("label").text();
 			var $subjectOptions = $subject.parents(".subject-wrapper").find(".subject-option");
+			var arrow = isSingle ? "" : `<div class= "blue-arrow ${rotateClass}"/>`;
 
 			var $options = $();
 			$subjectOptions.each(function(index, subjectOption) {
-				//debugger
 				var $subjectOption = $(subjectOption);
 
 				if ($subjectOption.prop("checked")) {
@@ -188,7 +188,7 @@ $(document).ready(function() {
 					  </div>
 					`
 
-					$.merge($options, $(subjectOptionTemplate))
+					$.merge($options, $(subjectOptionTemplate) )
 				}
 			})
 
@@ -201,7 +201,7 @@ $(document).ready(function() {
 		                data-type="subject"
 		              ><img src="../common/img/x.svg" alt="delete-x"></div>
 		              <div class="my-list-subject-name">${subjectName}</div>
-		              <div class="blue-arrow ${rotateClass}"></div>
+		              ${arrow}
 		            </div>
 		            <div class="my-list-options-wrapper ${collapseClass}">
 		            	
@@ -410,12 +410,13 @@ $(document).ready(function() {
 		updateUI()
 	}
 
-	function toggleSubjectOptions() {
+	function toggleSubjectOptions(event) {
 		
 		if (event.target.classList.contains("subject-item")) {
 			var $subjectWrapper = $(this);
 			var shouldClose = $subjectWrapper.hasClass("active");
 			lists.openSubjectIndex = shouldClose ? -1 : $subjectWrapper.index();
+			event.preventDefault();
             updateUI();
 		}
 	}
@@ -465,7 +466,7 @@ $(document).ready(function() {
 	}
 
 	function checkItemsForSubmitButton() {
-		if (myList.$elements.subjectOptions.length>0) {
+		if (myList.$elements.subjectOptions.length + myList.$elements.subjects.filter(".single-subject").length>0) {
 			$(".save-list-button").removeClass("disabled");
 		} else {
 			$(".save-list-button").addClass("disabled");
@@ -541,6 +542,13 @@ $(document).ready(function() {
     });
 
     $('.subject-item').keypress(function (e) {
+        var key = e.which;
+        if (key == 13) {
+            (this).click()
+        }
+    });
+
+    $('.delete-button-lg').keypress(function (e) {
         var key = e.which;
         if (key == 13) {
             (this).click()

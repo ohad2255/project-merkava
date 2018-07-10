@@ -4,18 +4,28 @@ $(document).ready(function() {
     if (!$(".signin").length){
         return;
     }
+
+    
     var passwordInputs = [
         {
             input: '#inputPassword',
             inactiveEye: '#showPasswordEye',
             activeEye: '#showPasswordEyeShow'
+        },
+        {
+            input: '#inputPasswordConfirm',
+            inactiveEye: '#showPasswordEyeConfirm',
+            activeEye: '#showPasswordEyeConfirmShow'
         }
     ]
 
     passwordInputs.map(function (pwdBundle) {
         var input = $(pwdBundle.input)
 
-        $(pwdBundle.inactiveEye).on('click', function () {
+        $(pwdBundle.inactiveEye).on('click keyup', function (e) {
+            if (e.keyCode && e.keyCode !== 13) {
+                return;
+            }
             if (input.attr('type') === 'password') {
                 input.attr('type', 'text');
                 $(this).toggleClass('d-none');
@@ -23,25 +33,16 @@ $(document).ready(function() {
             } else {
                 input.attr('type', 'password');
             }
-
-            var key = e.which;
-            if (key == 13) {
-                $(this).click();
-                return false;
-            }
         })
 
-        $(pwdBundle.activeEye).on('click', function() {
+        $(pwdBundle.activeEye).on('click keyup', function(e) {
+            if (e.keyCode && e.keyCode !== 13) {
+                return;
+            }
             if (input.attr('type') === 'password') {
                 input.attr('type', 'text');
             } else {
                 input.attr('type', 'password');
-            }
-
-            var key = e.which;
-            if (key == 13) {
-                $(this).click();
-                return false;
             }
     
             $('html').find($(pwdBundle.inactiveEye)).toggleClass('d-none');
@@ -53,7 +54,7 @@ $(document).ready(function() {
         }).focusout(function () {
             $('.hint').hide();
         });
-    })
+    });
 
     // var query = window.location.search.substring(1);
     // var qs = parse_query_string(query);

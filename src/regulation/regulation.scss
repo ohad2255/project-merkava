@@ -212,10 +212,10 @@
 					}
 
 					.top-sec-card-header {
-						padding: 0 14px 20px 0;
+						padding: 44px 0 20px 60px;
 
 						@media (min-width: $screen-lg-min) {
-							padding: 0 91.5px 20px 0;
+							padding: 0 0 20px 0;
 						}	
 
 						img.icon-first-collaps-p {
@@ -264,7 +264,7 @@
 						padding: 17px 0 0 66px;
 						height: fit-content;
 						margin: 0;
-						max-width: 200px;
+						//max-width: 200px;
 
 						@media (min-width: $screen-lg-min) {
 							padding: 0;
@@ -278,29 +278,55 @@
 						}
 					}
 
-					.card-with-bullets-head-p, .card-head-p, .card-block {
-						font-size: 1.5rem;
-						font-weight: normal;
-						font-style: normal;
-						font-stretch: normal;
-						line-height: 1.33;
-						letter-spacing: normal;
-						color: $main-text-grey;
-						font-family: $main-font;
-						margin:0 14px 0 25px; 
-						padding: 0 0 40px 0;
+					.card-block {
 
-						@media (min-width: $screen-lg-min) {
-							margin: 0 91.5px 0 0;
-							font-size: 1.6rem;
-							line-height: 1.75;
-							padding: 0 0 40px 10px;
-							width: auto;
-							max-width: 918px;
+						p {
+							font-size: 1.5rem;
+							font-weight: normal;
+							font-style: normal;
+							font-stretch: normal;
+							line-height: 1.33;
+							letter-spacing: normal;
+							color: $main-text-grey;
+							font-family: $main-font;
+							margin:0 14px 0 25px; 
+							padding: 0 0 40px 0;
+
+							@media (min-width: $screen-lg-min) {
+								margin: 0 91.5px 0 0;
+								font-size: 1.6rem;
+								line-height: 1.75;
+								padding: 0 0 40px 10px;
+								width: auto;
+								max-width: 918px;
+							}
+						}
+
+						.sub-p-wrapper {
+							padding: 0;
+							margin: 0 15px 0 0;
 						}	
 					}
 
-					.card-with-bullets-head-p {
+					// .card-with-bullets-head-p {
+					// 	font-size: 1.6rem;
+					// 	font-weight: 500;
+					// 	font-style: normal;
+					// 	font-stretch: normal;
+					// 	line-height: 1.33;
+					// 	letter-spacing: normal;
+					// 	text-align: right;
+					// 	color: #4e5665;
+					// 	padding: 0 0 40px 10px;
+
+					// 	@media (min-width: $screen-lg-min) {
+					// 		font-size: 2rem;
+					// 		line-height: 1.4;
+					// 		width: 100%;
+					// 	}
+					// }
+
+					p {
 						font-size: 1.6rem;
 						font-weight: 500;
 						font-style: normal;
@@ -312,14 +338,46 @@
 						padding: 0 0 40px 10px;
 
 						@media (min-width: $screen-lg-min) {
+						    font-size: 1.6rem;
+						    line-height: 1.75;
+						    padding: 0 0 40px 10px;
+						    width: auto;
+						    max-width: 918px;
+					    }
+					} 
+				}
+
+				.card-header-wrapper {
+					width: 100%;
+					padding: 0 0 40px 30px;
+					margin: 0 14px 0 25px;
+
+					@media (min-width: $screen-lg-min) {
+					    margin: 0 91.5px 0 0;
+					    padding: 0 0 0 30px;
+				    }
+
+					p {
+						font-size: 1.6rem;
+						font-weight: 500;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: 1.33;
+						letter-spacing: normal;
+						text-align: right;
+						color: #4e5665;
+						padding: 0 0 0 20px;
+						
+						@media (min-width: $screen-lg-min) {
 							font-size: 2rem;
 							line-height: 1.4;
 							width: 100%;
+							padding: 0 0 40px 10px;
 						}
 					}
 				}
 
-				.card-p-with-bullet, .p-with-line {
+				.p-with-line {
 					margin: 0;
 					margin: 0;
 					line-height: 1.75;
@@ -395,6 +453,46 @@
 				.show + .collapse-arrow {
 					transform: rotate(90deg);
 				}	
+
+				ul {
+					font-size: 1.5rem;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.33;
+					letter-spacing: normal;
+					color: $main-text-grey;
+					font-family: $main-font;
+					margin:0 14px 0 25px; 
+					padding: 0 0 40px 0;
+
+					@media (min-width: $screen-lg-min) {
+						margin: 0 91.5px 0 0;
+						font-size: 1.6rem;
+						line-height: 1.75;
+						padding: 0 0 40px 10px;
+						width: auto;
+						max-width: 918px;
+					}
+				}
+
+				li {
+					font-size: 1.5rem !important;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.33 !important;
+					letter-spacing: normal;
+					color: $main-text-grey;
+					font-family: $main-font;
+
+					@media (min-width: $screen-lg-min) {
+						font-size: 1.6rem !important;
+						line-height: 1.75 !important;
+						width: auto;
+						max-width: 918px;
+					}
+				}
 			}
 
 			.video-sec-head, .tutorials-head, .links-head, .video-sec-wrapper {

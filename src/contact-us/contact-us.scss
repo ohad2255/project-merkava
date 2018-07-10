@@ -536,13 +536,13 @@
 		               	}
 					}
 
-					.custom-file-input:focus + .file-button-text {
-						//color: #495057;
-					    background-color: #fff;
-					    border-color: #80bdff;
-					    outline: 0;
-					    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
-					}
+					// .custom-file-input:focus + .file-button-text, .custom-file-input:active + .file-button-text {
+					// 	//color: #495057;
+					//     background-color: #fff !important;
+					//     border-color: #80bdff!important;
+					//     outline: 0!important;
+					//     box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25)!important;
+					// }
 				}
 
 				.dropzone-previews {

@@ -886,6 +886,14 @@
 					}
 				}
 
+				.single-subject-wrapper {
+					pointer-events: none;
+
+					input {
+						pointer-events: all;
+					}
+				}
+
 				.subject-option-container {
 					@media (min-width: $screen-lg-min) {
 						position: absolute!important;

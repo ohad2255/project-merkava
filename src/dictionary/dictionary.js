@@ -40,7 +40,7 @@ $(document).ready(function() {
         $(this).addClass('button-active'); 
     });
 
-    $('.alphabet-item').keypress(function (e) {
+    $('.alphabet-item').keydown(function (e) {
         var key = e.which;
         if (key == 13) {
             $(this).click();

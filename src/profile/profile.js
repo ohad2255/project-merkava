@@ -18,7 +18,10 @@ $(document).ready(function() {
     passwordInputs.map(function (pwdBundle) {
         var input = $(pwdBundle.input)
 
-        $(pwdBundle.inactiveEye).on('click', function () {
+        $(pwdBundle.inactiveEye).on('click keyup', function (e) {
+            if (e.keyCode && e.keyCode !== 13) {
+                return;
+            }
             if (input.attr('type') === 'password') {
                 input.attr('type', 'text');
                 $(this).toggleClass('d-none');
@@ -28,7 +31,10 @@ $(document).ready(function() {
             }
         })
 
-        $(pwdBundle.activeEye).on('click', function() {
+        $(pwdBundle.activeEye).on('click keyup', function(e) {
+            if (e.keyCode && e.keyCode !== 13) {
+                return;
+            }
             if (input.attr('type') === 'password') {
                 input.attr('type', 'text');
             } else {
@@ -44,7 +50,7 @@ $(document).ready(function() {
         }).focusout(function () {
             $('.hint').hide();
         });
-    })
+    });
 
     $("#activeAccount").on('click', function(){
         $("html").find($(".input-first-label")).toggleClass("input-first-label-active");

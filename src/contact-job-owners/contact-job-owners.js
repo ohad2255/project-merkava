@@ -29,3 +29,9 @@ function handleFileSelect(e) {
 
     selDiv.innerHTML = fileNames.join("")
 }
+
+$(".custom-file-input").focusin(function() {
+    $(this).next(".file-button-text").addClass("focused");
+}).focusout(function () {
+    $(this).next(".file-button-text").removeClass("focused");
+});

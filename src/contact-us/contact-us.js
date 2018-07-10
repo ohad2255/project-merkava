@@ -81,4 +81,10 @@ $(document).ready(function () {
     //     aField = document.getElementByClassName('file-button-text');
     //     setTimeout("aField.focus()", 50);
     // }
+
+    $(".custom-file-input").focusin(function() {
+        $(this).next(".file-button-text").addClass("focused");
+    }).focusout(function () {
+        $(this).next(".file-button-text").removeClass("focused");
+    });
 })
