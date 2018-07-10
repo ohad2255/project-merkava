@@ -99,7 +99,7 @@ module.exports = {
 
     plugins: [
         new CopyWebpackPlugin([
-            { from: "src/common/img", to: "common/img" },
+            { from: "src/common/images", to: "common/images" },
             { from: "src/fonts", to: "fonts" },
             { from: "src/common/fonts.scss", to: "common/fonts.css" },
             { from: "src/mailing", to: "mailing" }

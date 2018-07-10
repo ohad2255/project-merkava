@@ -24,7 +24,7 @@ function handleFileSelect(e) {
     for (var i = 0; i < files.length; i++) {
         var currFile = files[i];
 
-        fileNames.push('<div class= "file-name">' + currFile.name + '<button type= "button" style="background: url(../common/img/file-close-x.svg)"/>' + '</div>')
+        fileNames.push('<div class= "file-name">' + currFile.name + '<button type= "button" style="background: url(../common/images/file-close-x.svg)"/>' + '</div>')
     }
 
     selDiv.innerHTML = fileNames.join("")
