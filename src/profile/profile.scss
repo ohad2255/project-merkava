@@ -224,7 +224,7 @@
 
 				#languageReg {
 					width: 100%;
-					height: 43px;
+					height: 43px !important;
 					font-size: 1.5rem;
 					font-weight: normal;
 					font-style: normal;
@@ -232,12 +232,13 @@
 					line-height: normal;
 					letter-spacing: 0.5px;
 					color: rgba(106,118,138,0.8);
-					-webkit-appearance: none;
-					-moz-appearance: none;
+					appearance: none !important;
+					-webkit-appearance: none !important;
+					-moz-appearance: none !important;
 					padding:0 25px 0 0;
 
 					@media (min-width: $screen-lg-min) {
-			    		height: 50px;
+			    		height: 50px !important;
 			       	}
 
 					&::-ms-expand {
