@@ -460,6 +460,18 @@ input::-ms-clear, input::-ms-reveal {
 html:lang(en) {
   font-family: fbagol !important;
 
+  // .logo {
+  //   img {
+  //     -moz-transform: scaleX(-1 )!important;
+  //     -o-transform: scaleX(-1) !important;
+  //     -webkit-transform: scaleX(-1) !important;
+  //     transform: scaleX(-1) !important;
+  //     filter: FlipH !important;
+  //     -ms-filter: "FlipH" !important;
+  //   }
+  // }
+
+
   body {
     font-family: fbagol !important;
   }
@@ -501,6 +513,13 @@ html:lang(ar) {
   button {
     font-family: fbagol !important;
   }
+}
+
+.focused {
+  background-color: #fff !important;
+  border-color: #80bdff !important;
+  outline: 0 !important;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25) !important; 
 }
 
 
