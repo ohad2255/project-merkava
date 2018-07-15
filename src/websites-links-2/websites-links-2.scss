@@ -4,7 +4,7 @@
 	min-width: 330px;
 
 	#searchInput {
-		 padding: 0 0 0 22px;
+		 //padding: 0 0 0 22px;
 	}
 
 	.custom-container {
@@ -191,7 +191,6 @@
 
 			@media (min-width: $screen-lg-min) {
 				max-width: 1222px;
-				width: auto;
 			}
 
 			.tab {
