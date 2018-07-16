@@ -4,12 +4,12 @@ $(document).ready(function() {
 
     var passwordInputs = [
         {
-            input: '#inputPassword',
+            input: '#inputPasswordAcc',
             inactiveEye: '#showPasswordEye',
             activeEye: '#showPasswordEyeShow'
         },
         {
-            input: '#inputPasswordConfirm',
+            input: '#inputPasswordConfirmAcc',
             inactiveEye: '#showPasswordEyeConfirm',
             activeEye: '#showPasswordEyeConfirmShow'
         }
