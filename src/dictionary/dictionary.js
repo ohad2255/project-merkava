@@ -16,14 +16,14 @@ $(document).ready(function() {
     // });
 
     // Show all the expressions which belong to the first available letter
-    var firstLetter = $('.expression-container').first().data('letter')
-    $(`.expression-container[data-letter=${firstLetter}]`).show()
+    //var firstLetter = $('.expression-container').first().data('letter')
+    $(".expression-container").show()
 
     // Highlight the first letter
-    $('.alphabet-item').first().addClass('active')
+    //$('.alphabet-item').first().addClass('active')
 
     // Highlight the first letter
-    $('.alphabet-mobile ul .alphabet-item').first().addClass('active')
+    $('.alphabet-mobile ul .alphabet-item').addClass('active')
 
     $('.alphabet-item').on('click', function() {
     	$('.expression-container').hide();
