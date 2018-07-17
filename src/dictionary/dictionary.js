@@ -23,7 +23,7 @@ $(document).ready(function() {
     //$('.alphabet-item').first().addClass('active')
 
     // Highlight the first letter
-    $('.alphabet-mobile ul .alphabet-item').addClass('active')
+    //$('.alphabet-mobile ul .alphabet-item').addClass('active')
 
     $('.alphabet-item').on('click', function() {
     	$('.expression-container').hide();
