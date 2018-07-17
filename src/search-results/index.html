@@ -62,7 +62,7 @@
           </div>
 
           <div class="filters-wrapper d-none d-lg-block">
-            <div class="facet js-facet">
+            <!-- <div class="facet js-facet">
               <div class="facet__name js-facet-name">
                   <span class="glyphicon facet__arrow"></span>
                   <h3><span tabindex="0">Applied Facets</span></h3>
@@ -83,7 +83,7 @@
                     </li>
                   </ul>
               </div>
-            </div>
+            </div> -->
 
             <!-- main search-results filter container -->
             <div class="search-results-filter-container">
@@ -362,7 +362,7 @@
           </div>
 
           <!-- search results content -->
-          <div class="search-results-content d-lg-block">
+          <div class="search-results-content-with-results d-none">
 
             <!-- search result -->
             <a class="result-a-wrapper" href="../bids/index.html" tabindex="0">
@@ -549,7 +549,17 @@
                 </div>
               </div>
             </a>
-          </div> 
+          </div>
+
+           <!-- search results no results -->
+           <!-- remove d-none to search results content if no results -->
+          <div class="search-results-content-no-results ">
+              <div class="no-results-wrapper">
+                לא נמצאו תוצאות חיפוש
+                נסה ערך דומה
+                <img src="../common/images/no-results-icon.svg" class="no-results-icon" alt="no-results-icon">
+              </div>
+          </div>
         </div>
       </section>
 

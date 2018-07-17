@@ -13,7 +13,7 @@ $(document).ready(function() {
 
 	$('.filter-mobile-wrapper').click(function() {
 		$('.filters-wrapper').toggleClass('d-none');
-		$('.search-results-content').toggleClass('d-none');
+		$('.search-results-content-with-results').toggleClass('d-none');
 	});
 
  
