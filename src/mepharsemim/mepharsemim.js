@@ -468,9 +468,9 @@ $(document).ready(function() {
 	function checkItemsForSubmitButton() {
 		if (myList.$elements.subjectOptions.length + myList.$elements.subjects.filter(".single-subject").length>0) {
 			$(".save-list-button").removeClass("disabled");
-		} else {
-			$(".save-list-button").addClass("disabled");
-		}
+		} //else {
+			//$(".save-list-button").addClass("disabled");
+		//}
 	}
 
 	function backToSubjects() {
