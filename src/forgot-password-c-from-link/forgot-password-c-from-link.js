@@ -65,6 +65,13 @@ $(document).ready(function() {
     
             $('html').find($(pwdBundle.inactiveEye)).toggleClass('d-none');
             $(this).toggleClass('d-none');
+            $(window).keydown(function(event){
+                if(event.keyCode == 13) {
+                    event.preventDefault();
+                    return false;
+                    event.returnValue = false;
+                }
+            });
         });
 
         input.focusin(function() {
@@ -72,8 +79,6 @@ $(document).ready(function() {
         }).focusout(function () {
             $('.hint').hide();
         });
-    });
-
 
     //  $('#inputPassword').on('change', function () {
     //     var inputVal = $('#inputPassword').val();
@@ -86,7 +91,9 @@ $(document).ready(function() {
     //         $('html').find($('.password-placeholder')).show();
     //     }
     // })
+    });
 });
+
 
 
 
