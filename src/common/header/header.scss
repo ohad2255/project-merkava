@@ -156,7 +156,8 @@ header {
         margin: 7px 0 0 0;
 
         @media (min-width: $screen-lg-min) {
-          margin: 5px 0 0 0;
+          margin: 0;
+          border-top: solid 5px $header-blue; 
         }
       }
 
@@ -507,8 +508,24 @@ header {
   // }
 }
 
+.logged-in-name:hover + .ent-dropdown-items-container {
+  @media (min-width: $screen-lg-min) {
+    display: block !important;
+  }
+}
+
+.ent-dropdown-items-container:hover {
+  @media (min-width: $screen-lg-min) {
+    display: block !important;
+  }
+}
+
+.none {
+  display: none !important;
+}
+
 body:not(.user-is-tabbing) button:focus,
-//body:not(.user-is-tabbing) input:focus,
+body:not(.user-is-tabbing) div:focus,
 body:not(.user-is-tabbing) select:focus,
 body:not(.user-is-tabbing) textarea:focus,
 body:not(.user-is-tabbing) a:focus {

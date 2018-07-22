@@ -1,20 +1,41 @@
 require('../common');
 
-
+$('#inputErrorP').hide();
 $(document).ready(function() {
 
-	$("#inputErrorP").hide();
+	//$('.logged-in-name').hover().trigger('click');
+	//$('.logged-in-name').mouseover().trigger('click');
+	//$('.logged-in-name').mouseout().trigger('click');
+
+	// function handler(event) {
+
+		
+	// 	   $('.logged-in-name').mouseover().next(".ent-dropdown-items-container").removeClass("d-none");
+	
+	// 	if (event.type == 'mouseout') {
+	// 	    $('.logged-in-name').next('.ent-dropdown-items-container').addClass('d-none');
+	// 	}
+	// }
+
+	// $('.logged-in-name').on('mouseover', function() {
+ //        $('.logged-in-name').next('.ent-dropdown-items-container').removeClass('none');
+ //    });
+
+    // $('.logged-in-name, .ent-dropdown-item-wrapper').on('mouseout', function() {
+    //     $('.logged-in-name').next('.ent-dropdown-items-container').addClass('d-none');
+    // });
 
 	$('.logged-in-name').on('click', function () {
 
-		$(this).next(".ent-dropdown-items-container").toggleClass("d-none");
-		$(this).clear()
+		$(this).next('.ent-dropdown-items-container').toggleClass('none');
+		$(this).clear();
 	});
+
 
 	$('.logged-in-name').keypress(function (e) {
 	  var key = e.which;
 	  if (key == 13) { 
-	    $("html").find(".ent-dropdown-items-container").toggleClass("d-none");
+	    $('html').find('.ent-dropdown-items-container').toggleClass('d-none');
 		$(this).clear()
 	  }
 	}); 
