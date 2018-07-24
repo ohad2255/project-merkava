@@ -298,3 +298,24 @@
 .mobile-menu-open .main-menu-mobile-container {
   visibility: visible;
 }
+
+html:lang(en) {
+  .navbar {
+    max-width: 1290px !important;
+  }
+
+  .nav-item-text {
+    @media (min-width: $screen-lg-min) {
+      padding: 0 15px !important;
+      line-height: 1 !important;
+    }
+  }
+
+  .nav-item {   
+    @media (min-width: $screen-lg-min) {
+      //width: 100% !important;
+      //min-width: 140px !important;
+    }
+  }
+}
+
