@@ -532,14 +532,11 @@
 		background-color: rgba(10, 123, 182, 0.9);;
 
 		.modal-dialog {
-			margin: 156px 20px 0;
-
-			@media (min-width: $screen-sm-min) {
-				margin: 246px auto 0;
-			}
+			margin: 156px auto 0;
+			max-width: 335px;
 
 			@media (min-width: $screen-lg-min) {
-				
+				margin: 100px auto 0;
 				max-width: 924px;
 				min-height: 425px;
 			}
