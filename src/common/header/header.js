@@ -1,20 +1,23 @@
 require('../common');
 
-
+$('#inputErrorP').hide();
 $(document).ready(function() {
 
-	$("#inputErrorP").hide();
 
-	$('.logged-in-name').on('click', function () {
+	$(window).resize(function(){
+	    if ($(window).width() <= 992){  
+	        $('.logged-in-name').on('click', function () {
+				$(this).next('.ent-dropdown-items-container').toggleClass('none');
+				$(this).clear();
+			});
+	    }   
+	}); 
 
-		$(this).next(".ent-dropdown-items-container").toggleClass("d-none");
-		$(this).clear()
-	});
 
 	$('.logged-in-name').keypress(function (e) {
 	  var key = e.which;
 	  if (key == 13) { 
-	    $("html").find(".ent-dropdown-items-container").toggleClass("d-none");
+	    $('html').find('.ent-dropdown-items-container').toggleClass('none');
 		$(this).clear()
 	  }
 	}); 
@@ -24,6 +27,15 @@ $(document).ready(function() {
              $('.main-nav-item-dropdown').removeClass('focus');
         }
     });  
+
+    function handleFirstTab(e) {
+	    if (e.keyCode === 9) { // the "Tab" key
+	        document.body.classList.add('user-is-tabbing');
+	        window.removeEventListener('keydown', handleFirstTab);
+	    }
+	}
+
+	window.addEventListener('keydown', handleFirstTab);
 });
 
 

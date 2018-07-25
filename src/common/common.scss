@@ -485,4 +485,12 @@ html:lang(ar) {
   box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25) !important; 
 }
 
+body:not(.user-is-tabbing) button:focus,
+body:not(.user-is-tabbing) div:focus,
+body:not(.user-is-tabbing) select:focus,
+body:not(.user-is-tabbing) textarea:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 
