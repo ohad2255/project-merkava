@@ -414,6 +414,13 @@ header {
           padding: 0 22px;
         }
 
+        &:active, &:focus {
+          border: solid 1px #80bdff !important;
+          outline: 0 !important;
+          box-sizing: border-box;
+          //box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25) !important; 
+        }
+
         img {
           width: 20px;
           height: 19px;

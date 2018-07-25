@@ -495,7 +495,7 @@
 				}
 			}
 
-			.video-sec-head, .tutorials-head, .links-head, .video-sec-wrapper {
+			.video-sec-head, .related-documents-head, .links-head, .video-sec-wrapper {
 				margin: 0 0 13px 0;
 
 				@media (min-width: $screen-lg-min) {
@@ -536,11 +536,6 @@
 					margin-bottom: 20px;
 				}
 
-				.single-video-wrapper {
-					display: flex;
-					flex-direction: column;
-				}
-
 				.video {
 					height: auto;
 					border-radius: 4px;
@@ -572,6 +567,8 @@
 
 				.single-video-wrapper {
 					width: 100%;
+					display: flex;
+					flex-direction: column;
 
 					&:last-child {
 						margin-bottom: 0;
@@ -579,7 +576,7 @@
 				}
 			}
 		
-			.tutorials-container {
+			.related-documents-container {
 				margin: 0 10px 40px;
 				padding: 0 0 40px 0;
 				border: solid #dddddd;
@@ -590,9 +587,9 @@
 					padding: 0 0 80px 0;
 				}
 
-				.tutorials-wrapper {
+				.related-documents-wrapper {
 
-					.tutorial-wrapper {
+					.related-document-wrapper {
 						border-radius: 2.1px;
 						background-color: #fff;
 						box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15);
@@ -606,7 +603,7 @@
 							margin: 0;
 						}
 
-						.tutorial-content {
+						.related-document-content {
 							font-size: 20px;
 							font-weight: normal;
 							font-style: normal;
@@ -624,7 +621,7 @@
 					}
 				}
 
-				.tutorials-arrow {
+				.related-documents-arrow {
 					border: solid #4e5665;
 					border-width: 0 2px 2px 0;
 					display: inline-block;
@@ -715,15 +712,15 @@
 		height: 1px;
 	}
 
-	.tutorials-wrapper-mobile {
+	.related-documents-wrapper-mobile {
 		padding: 0 15px 0 0;
 		margin: 0 0 200px 0;
 
-		.tutorial-wrapper {
+		.related-document-wrapper {
 			margin: 0 0 10px 10px;
 		}
 
-		.tutorial-date {
+		.related-document-date {
 			font-size: 1.4rem;
 			font-weight: normal;
 			font-style: normal;
@@ -734,7 +731,7 @@
 			margin: 0 0 3px 0;
 		}
 
-		.tutorial-head {
+		.related-document-head {
 			//margin: 0 0 23px 0;
 
 			h3 {
