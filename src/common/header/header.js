@@ -53,6 +53,14 @@ $('#searchInput').on('click', function () {
     } else {
         $("#inputErrorP").hide();
     }
+
+    $('.dictionary .card-block em').parents('.collapse').collapse('show');
+});
+
+$("#mainInput").on('keyup', function (e) {
+    if (e.keyCode == 13) {
+        $('#searchInput').click();
+    }
 });
 
 
