@@ -458,7 +458,9 @@
 					display: block;
 				}
 			}
-
+			.search-results-content-no-results{
+				max-width:none;
+			}
 			.no-results-wrapper {
 				font-size: 62px;
 				font-weight: 500;
