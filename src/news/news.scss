@@ -473,6 +473,45 @@
 					letter-spacing: normal;
 					color: $main-text-grey;
 				}
+
+				.video {
+					height: auto;
+					border-radius: 4px;
+					background-color: #ffffff;
+					box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+					padding: 16px;
+					//max-width: auto;
+					margin-bottom: 20px;
+					flex-grow: 1;
+
+					@media (min-width: $screen-lg-min) {
+						padding: 29px;
+					}
+
+					.video-wrapper {
+						margin-bottom: 18px;
+					}
+
+					p {
+						font-size: 1.6rem;
+						font-weight: normal;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: 1.75;
+						letter-spacing: normal;
+						color: $main-text-grey;
+					}
+				}
+
+				.single-video-wrapper {
+					width: 100%;
+					display: flex;
+					flex-direction: column;
+
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
 			}
 		
 			.related-documents-container {
