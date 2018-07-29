@@ -133,12 +133,8 @@
 					margin: 0 0 0 40px;
 					max-width: 300px;
 
-					@media (min-width: $screen-md-min) {
-						max-width: 600px;
-					}	
-
 					@media (min-width: $screen-lg-min) {
-						max-width: 1222px;
+						max-width: 600px;
 						font-size: 3.2em;
 						line-height: normal;
 						letter-spacing: normal;

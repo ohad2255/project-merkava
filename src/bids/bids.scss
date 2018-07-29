@@ -642,12 +642,6 @@
 	    	padding: 0 24px 0 20px;
 	    	margin-bottom: 192px;
 
-
-			@media (min-width: $screen-md-min) {
-				//padding: 0 30px 25px;
-				
-			}
-
 	    	 @media (min-width: $screen-lg-min) {
 				padding: 0 30px 25px;
 				margin-bottom: 150px;
@@ -911,9 +905,10 @@
 
 	.swiper-pagination {
         position: absolute;
-        width: auto;
+        //width: auto;
         z-index: 10;
         margin: 10px 0 0 0;
+        width: 100%;
 
         .swiper-pagination-bullet {
         	height: 8px;
