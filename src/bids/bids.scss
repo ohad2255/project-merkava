@@ -30,7 +30,7 @@
 			background-image: url('../common/images/bids-header-visuals.png');
 			min-height: 260px;
 			background-repeat: no-repeat;
-			background-size: 30% 100%;
+			background-size: 30%;
 			//background-size: auto;
 			background-position: left;
 		}
@@ -465,18 +465,35 @@
 
 		@media (min-width: $screen-lg-min) {
 			border: 0;
-			margin: 0 0 20px;
+			margin: 0 auto 20px;
 			min-height: auto;
 			pointer-events: none;
 			padding: 0;
+			max-width: 1010px;
+		}
+
+		@media (min-width: $screen-xl-min) {
 			max-width: 1222px;
 		}
 	}
 
 	.related-bids-container-close {
 		margin: 0 auto 20px;
-		max-width: 1262px;
+		
 		padding: 0 20px;
+
+		@media (min-width: $screen-lg-min) {
+			border: 0;
+			margin: 0 auto 20px;
+			min-height: auto;
+			pointer-events: none;
+			padding: 0 20px 0 0;
+			max-width: 1010px;
+		}
+
+		@media (min-width: $screen-xl-min) {
+			max-width: 1262px;
+		}
 	}
 
 	.border-none {
