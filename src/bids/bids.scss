@@ -28,10 +28,15 @@
 
 		@media (min-width: $screen-lg-min) {
 			background-image: url('../common/images/bids-header-visuals.png');
-			min-height: 308px;
+			min-height: 260px;
 			background-repeat: no-repeat;
-			background-size: auto;
+			background-size: 30% 100%;
+			//background-size: auto;
 			background-position: left;
+		}
+
+		@media (min-width: $screen-xl-min) {
+			min-height: 308px;
 		}
 
 
@@ -49,12 +54,16 @@
 		}
 
 		.top-sec-container {
-			max-width: 1262px;
+			//max-width: 1262px;
 			width: 100%;
 			padding: 0 20px;
 
 			@media (min-width: $screen-lg-min) {
+				max-width: 1010px;
+			}
 
+			@media (min-width: $screen-xl-min) {
+				max-width: 1262px;
 			}
 
 			.bids-breadcrumb-wrapper {
@@ -93,6 +102,11 @@
 					margin-bottom: 3px;
 					
 					@media (min-width: $screen-lg-min) {
+						height: 74px;
+						width: 74px;
+					}
+
+					@media (min-width: $screen-xl-min) {
 						height: 92px;
 						width: 92px;
 						margin-bottom: 0;
@@ -104,7 +118,7 @@
 					//padding: 0 0 0 20px;
 
 					@media (min-width: $screen-lg-min) {
-						max-width: 740px;
+						max-width: 755px;
 						margin: 0 24px 0 0;
 					}
 
@@ -163,7 +177,11 @@
 		.body-wrapper {
 
 			@media (min-width: $screen-lg-min) {
+				max-width: 1010px;
 				padding: 0 20px;
+			}
+
+			@media (min-width: $screen-xl-min) {
 				max-width: 1262px;
 			}
 		}
@@ -642,9 +660,14 @@
 	    	padding: 0 24px 0 20px;
 	    	margin-bottom: 192px;
 
+		 //    @media (min-width: $screen-md-min) {
+			// 	margin-bottom: 220px;
+			// }
+
 	    	 @media (min-width: $screen-lg-min) {
 				padding: 0 30px 25px;
 				margin-bottom: 150px;
+				min-height: 240px;
 			}
 	    }
 

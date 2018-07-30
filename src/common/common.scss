@@ -10,6 +10,14 @@ html {
   font-size: 10px;
   text-align: right;
   font-family: $main-font;
+
+  @media (min-width: $screen-lg-min) {
+    font-size: 8px;
+  }
+
+  @media (min-width: $screen-xl-min) {
+    font-size: 10px;
+  }
 }
 
 body {
@@ -24,6 +32,10 @@ body {
   padding: 0 20px;
 
   @media (min-width: $screen-lg-min) {
+    max-width: 1010px;
+  }
+
+  @media (min-width: $screen-xl-min) {
     max-width: 1262px;
   }
 }
@@ -490,7 +502,7 @@ body:not(.user-is-tabbing) div:focus,
 body:not(.user-is-tabbing) select:focus,
 body:not(.user-is-tabbing) textarea:focus {
   outline: none !important;
-  box-shadow: none !important;
+  //box-shadow: none !important;
 }
 
 

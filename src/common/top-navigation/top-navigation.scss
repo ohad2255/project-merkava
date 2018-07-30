@@ -10,9 +10,18 @@
 
 .main-nav {
   margin: 0 auto;
-  max-width: 1320px !important;
+  //max-width: 1320px !important;
   padding: 0 20px;
   min-height: 74px;
+
+  @media (min-width: $screen-lg-min) {
+    max-width: 1040px !important;
+    
+  }
+
+  @media (min-width: $screen-xl-min) {
+    max-width: 1320px !important;
+  }
 
  
   .navbar-nav {
@@ -79,6 +88,10 @@
         @media (min-width: $screen-lg-min) {
           height: 50px;
           text-align: center;
+          padding: 0 20px;
+        }
+
+        @media (min-width: $screen-xl-min) {
           padding: 0 30px;
         }
       }
