@@ -55,22 +55,22 @@ function changeValidations() {
 }  
 
 
-$('#companyName').keyup(function() {
+$('.company-name input').keyup(function() {
     if( $(this).val().length === 0 ) {
-        $('html').find($('#companyNumber')).prop('required',false);
+        $('html').find($('.company-number input')).prop('required',false);
         $('html').find($('#bulletCompanyNumber')).addClass('d-none');
     } else {
-        $('html').find($('#companyNumber')).prop('required',true);
+        $('html').find($('.company-number input')).prop('required',true);
         $('html').find($('#bulletCompanyNumber')).removeClass('d-none');
     }
 });
 
-$('#companyNumber').keyup(function() {
+$('.company-number input').keyup(function() {
     if( $(this).val().length === 0 ) {
-        $('html').find($('#companyName')).prop('required',false);
+        $('html').find($('.company-name input')).prop('required',false);
         $('html').find($('#bulletCompanyName')).addClass('d-none');
     } else {
-        $('html').find($('#companyName')).prop('required',true); 
+        $('html').find($('.company-name input')).prop('required',true); 
         $('html').find($('#bulletCompanyName')).removeClass('d-none');
     }
 });
