@@ -16,15 +16,18 @@
 		height: fit-content;
 		padding: 0;
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
-		background-size: contain;
 		min-height: 205px;
 
 		@media (min-width: $screen-lg-min) {
             background-image: url('../common/images/exemption-header-visuals.png');
-            min-height: 308px;
-            background-size: contain;
+            min-height: 260px;
+            background-size: 30%;
             background-position: left;
             background-repeat: no-repeat;
+       	}
+
+       	@media (min-width: $screen-xl-min) {
+            min-height: 308px;
        	}
        	
        	.right-line {
@@ -50,14 +53,21 @@
 
 			@media (min-width: $screen-lg-min) {
                 padding: 0 20px 0;
-    			//max-width: 1344px;
+    			max-width: 1010px;
+           	}
+
+           	@media (min-width: $screen-xl-min) {
     			max-width: 1262px;
            	}
 
            	.breadcrumb-wrapper {
 
 				@media (min-width: $screen-lg-min) {
-					margin: 30px 0 60px 0px;
+					margin: 24px 0 34px 0px;
+				}
+
+				@media (min-width: $screen-xl-min) {
+					margin: 30px 0 42px 0px;
 				}
 
 				.breadcrumb {
@@ -92,9 +102,13 @@
 					img {
 						width: 49px;
   						height: 51px;
-  						//object-fit: contain;
 
 						@media (min-width: $screen-lg-min) {
+		                    width: 78px;
+  							height: 95px;
+		               	}
+
+		               	@media (min-width: $screen-xl-min) {
 		                    width: 97px;
   							height: 119px;
 		               	}
@@ -139,6 +153,7 @@
 					@media (min-width: $screen-lg-min) {
 	                    font-size: 4rem;
 	                    margin:0 0 10px 0;
+	                    max-width: 595px;
 	               	}
 				}
 			}
@@ -152,6 +167,10 @@
 		@media (min-width: $screen-lg-min) {
     		//height: 567px;
     		padding: 0;
+    		margin: 0 0 115px 0;
+       	}
+
+       	@media (min-width: $screen-xl-min) {
     		margin: 0 0 144px 0;
        	}
 

@@ -337,6 +337,11 @@ header {
           @media (max-width: 340px) {
             padding: 1px 10px 0 20px;
           }
+
+          option {
+            width: inherit !important;
+            font-size: inherit !important;
+          }
         }
 
         .input-toggle-arrow {
@@ -454,6 +459,10 @@ header {
         height: 38px;
         //right: 275px;
         font-size: 1.2rem;
+        margin: 0 -268px 0 0;
+      }
+
+      @media (min-width: $screen-xl-min) {
         margin: 0 -335px 0 0;
       }
     }

@@ -24,11 +24,15 @@
 
 		@media (min-width: $screen-lg-min) {
 			background-image: url('../common/images/search-results-header-visuals.png');
-			height: 308px;
+			height: 260px;
 			background-size: auto;
 			background-repeat: no-repeat;
-			bacckground-position: left;
-			//padding: 120px 0 0 0;
+			background-position: left;
+			background-size: 30%;
+		}
+
+		@media (min-width: $screen-xl-min) {
+			height: 308px;
 		}
 
 		@media (max-width: 340px) {
@@ -56,6 +60,10 @@
 			padding-top: 73px;
 
 			@media (min-width: $screen-lg-min) {
+				padding-top: 96px;
+			}
+
+			@media (min-width: $screen-xl-min) {
 				padding-top: 120px;
 			}
 

@@ -27,10 +27,13 @@
 				width: 100%;
 				padding: 0 18px; 
 
-
 				@media (min-width: $screen-lg-min) {
-					height: 601px;
+					height: 520px;
 					border-radius:8px;
+				}
+
+				@media (min-width: $screen-xl-min) {
+					height: 601px;
 				}
 
 				.registration-p-wrapper {

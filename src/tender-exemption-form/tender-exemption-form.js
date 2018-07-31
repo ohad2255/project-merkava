@@ -57,21 +57,21 @@ function changeValidations() {
 
 $('.company-name input').keyup(function() {
     if( $(this).val().length === 0 ) {
-        $('html').find($('.company-number input')).prop('required',false);
-        $('html').find($('#bulletCompanyNumber')).addClass('d-none');
+        ($('.company-number input')).prop('required',false);
+        ($('#bulletCompanyNumber')).addClass('d-none');
     } else {
-        $('html').find($('.company-number input')).prop('required',true);
-        $('html').find($('#bulletCompanyNumber')).removeClass('d-none');
+        ($('.company-number input')).prop('required',true);
+        ($('#bulletCompanyNumber')).removeClass('d-none');
     }
 });
 
 $('.company-number input').keyup(function() {
     if( $(this).val().length === 0 ) {
-        $('html').find($('.company-name input')).prop('required',false);
-        $('html').find($('#bulletCompanyName')).addClass('d-none');
+        ($('.company-name input')).prop('required',false);
+        ($('#bulletCompanyName')).addClass('d-none');
     } else {
-        $('html').find($('.company-name input')).prop('required',true); 
-        $('html').find($('#bulletCompanyName')).removeClass('d-none');
+        ($('.company-name input')).prop('required',true); 
+        ($('#bulletCompanyName')).removeClass('d-none');
     }
 });
 

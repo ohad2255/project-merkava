@@ -27,12 +27,15 @@
 
 		@media (min-width: $screen-lg-min) {
 			height: auto;
-			min-height: 308px;
-			background-size: auto;
+			min-height: 260px;
+			background-size: 30%;
 			background-image: url('../common/images/site-map-header-visuals.png');
 			background-repeat: no-repeat;
 			background-position: left;
+		}
 
+		@media (min-width: $screen-xl-min) {
+			min-height: 308px;
 		}
 
 		.right-line {
@@ -51,20 +54,28 @@
 		}
 
 		.top-sec-container {
-			max-width: 1262px;
 			width: 100%;
 			padding: 0;
 			height: auto;
 			margin: 0;
 
 			@media (min-width: $screen-lg-min) {
-				padding: 29px 20px 0;
+				max-width: 1010px;
+				padding: 0 20px;
+			}
+
+			@media (min-width: $screen-xl-min) {
+				max-width: 1262px;
 			}
 
 			.sitemap-breadcrumb-wrapper {	
 
 				@media (min-width: $screen-lg-min) {
-					margin: 0 0 30px 0;
+					 margin: 26px 0 23px 0;
+				}
+
+				@media (min-width: $screen-xl-min) {
+					 margin: 32px 0 29px 0;
 				}
 
 				.breadcrumb {
@@ -131,12 +142,17 @@
 					letter-spacing: normal;
 					color: #4e5665;
 					margin: 0 0 0 40px;
+					max-width: 500px;
 
 					@media (min-width: $screen-lg-min) {
 						max-width: 757px;
 						font-size: 3.2rem;
 						line-height: normal;
 						letter-spacing: normal;
+					}
+
+					@media (min-width: $screen-xl-min) {
+						max-width: 800px;
 					}	
 				}
 			}
@@ -175,8 +191,12 @@
 			height: 67px;
 			
 			@media (min-width: $screen-lg-min) {
-				width: 591px;
+				width: 460px;
 				object-fit: contain;
+			}
+
+			@media (min-width: $screen-xl-min) {
+				width: 591px;
 			}
 		}
 

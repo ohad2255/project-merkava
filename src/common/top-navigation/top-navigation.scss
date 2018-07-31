@@ -15,7 +15,7 @@
   min-height: 74px;
 
   @media (min-width: $screen-lg-min) {
-    max-width: 1040px !important;
+    max-width: 1060px !important;
     
   }
 
@@ -45,6 +45,7 @@
         height: auto;
         border-bottom: 0;
         padding: 12px 0;
+        min-width: 100px;
 
         &:active, &:hover, &:focus {
           .nav-item-text {
@@ -150,8 +151,12 @@
           outline: none;
 
           @media (min-width: $screen-lg-min) {
-            padding: 0 30px;
+            padding: 0 20px;
             height: 63px;
+          }
+
+          @media (min-width: $screen-xl-min) {
+            padding: 0 30px;
           }
         }
 
@@ -314,20 +319,47 @@
 
 html:lang(en) {
   .navbar {
-    max-width: 1290px !important;
+   
+    @media (min-width: $screen-lg-min) {
+      max-width: 1040px !important;
+    }
+
+    @media (min-width: $screen-xl-min) {
+       max-width: 1290px !important;
+    }
   }
 
   .nav-item-text {
+    white-space: normal;
+    line-height: 1 !important;
+
     @media (min-width: $screen-lg-min) {
       padding: 0 15px !important;
-      line-height: 1 !important;
     }
   }
 
   .nav-item {   
+
     @media (min-width: $screen-lg-min) {
-      //width: 100% !important;
+      max-width: 140px !important;
+      //min-width: none !important;
+    }
+
+    @media (min-width: $screen-xl-min) {
+      width: auto !important;
+      min-width: inherit !important;
+      max-width: 180px !important;
+      min-width: 120px !important;
+
       //min-width: 140px !important;
+    }
+
+    &:first-child {
+      .nav-item-text {
+        @media (min-width: $screen-lg-min) {
+          //white-space: nowrap;
+        }
+      }
     }
   }
 }

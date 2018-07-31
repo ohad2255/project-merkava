@@ -23,9 +23,14 @@
 
 		@media (min-width: $screen-lg-min) {
 			background-image: url('../common/images/about-header-visuals.png');
-			min-height: 308px;
+			min-height: 260px;
+			background-size: 30%;
 			background-position: left;
 			background-repeat: no-repeat;
+		}
+
+		@media (min-width: $screen-xl-min) {
+			min-height: 308px;
 		}
 
 		@media (max-width: 340px) {
@@ -55,18 +60,26 @@
 		}
 
 		.top-sec-container {
-			max-width: 1262px; 
 			width: 100%;
 			padding: 0;
 
 			@media (min-width: $screen-lg-min) {
 				padding: 0 20px;
+				max-width: 1010px; 
+			}
+
+			@media (min-width: $screen-xl-min) {
+				max-width: 1262px; 
 			}
 
 			.breadcrumb-wrapper {
 
 				@media (min-width: $screen-lg-min) {
-					margin: 30px 0;
+					 margin: 26px 0 23px 0;
+				}
+
+				@media (min-width: $screen-xl-min) {
+					 margin: 32px 0 29px 0;
 				}
 
 				.breadcrumb {
@@ -128,13 +141,18 @@
 					letter-spacing: normal;
 					color: #4e5665;
 					margin: 0 0 0 40px;
+					max-width: 500px;
 
 					@media (min-width: $screen-lg-min) {
-						max-width: 650px;
+						max-width: 700px;
 						font-size: 3.2rem;
 						line-height: normal;
 						letter-spacing: normal;
-					}	
+					}
+
+					@media (min-width: $screen-xl-min) {
+						max-width: 850px;
+					}		
 				}
 			}
 		}
@@ -172,21 +190,28 @@
 
 					img.icon-first-collaps-p {
 						height: 44px;
+						width: 44px;
 						position: absolute;
 						left: 10px;
 						top: 10px;
 
 						@media (min-width: $screen-lg-min) {
-							height: 141px;
+							height: 113px;
+							width: 113px;
 							position: initial;
 							margin: 30px;
 							flex-shrink: 0;
+						}
+
+						@media (min-width: $screen-xl-min) {
+							height: 141px;
+							width: 141px;
 						}
 					}
 
 					@media (min-width: $screen-lg-min) {
 						min-height: 264px;
-						padding: 0 10px;
+						//padding: 0 10px;
 						border-width: 0 9px 0 0;
 						margin: 0 0 32px 0;
 

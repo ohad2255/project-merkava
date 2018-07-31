@@ -31,11 +31,13 @@
 
 		@media (min-width: $screen-lg-min) {
 			background-image: url('../common/images/green-rechesh-header-visuals.png');
-			height: 308px;
-			/*@media all and (min-width:992px)*/
+			height: 260px;
 			background-position: left;
-			background-size: auto;
+			background-size: 30%;
+		}
 
+		@media (min-width: $screen-xl-min) {
+			height: 308px;
 		}
 
 		@media (ma2018x-width: 340px) {
@@ -67,11 +69,16 @@
 		margin: 0 0 6px 0;
 
 		@media (min-width: $screen-lg-min) {
-			width: 88px;
-			height: 116px;
+			width: 70px;
+			height: 93px;
 			order: -1;
 			margin: 0 0 0 35px !important;
 			//margin-top: -85px;
+		}
+
+		@media (min-width: $screen-xl-min) {
+			width: 88px;
+			height: 116px;
 		}
 	}
 
@@ -104,6 +111,11 @@
  			height: 41px !important;
 
  			@media (min-width: $screen-lg-min) {
+				width: 125px !important;
+				height: 112px !important;
+			}
+
+			@media (min-width: $screen-xl-min) {
 				width: 156px !important;
 				height: 140px !important;
 			}

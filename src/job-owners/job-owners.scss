@@ -24,12 +24,15 @@
 
 		@media (min-width: $screen-lg-min) {
 			background-image: url('../common/images/job-owners-header-visuals.png');
-			height: auto;
 			padding: 0 20px;
-			min-height: 308px;
-			background-size: auto;
+			min-height: 260px;
+			background-size: 30%;
 			background-repeat: no-repeat;
 			background-position: left;
+		}
+
+		@media (min-width: $screen-xl-min) {
+			min-height: 308px;
 		}
 
 		@media (max-width: 340px) {
@@ -58,19 +61,25 @@
 			}
 		}
 
-		.top-sec-container {
-			max-width: 1262px; 
+		.top-sec-container { 
 			width: 100%;
 
 			@media (min-width: $screen-lg-min) {
+				max-width: 1010px;
+				padding: 0 20px;
+			}
+
+			@media (min-width: $screen-xl-min) {
+				max-width: 1262px;
 				padding: 0 20px;
 			}
 
 			.job-owners-breadcrumb-wrapper {
-				margin: 0 34px 0 0;	
 
-				@media (min-width: $screen-lg-min) {
-					margin: 31px 0 0 0;
+				margin: 26px 0 23px 0;
+
+				@media (min-width: $screen-xl-min) {
+					 margin: 32px 0 29px 0;
 				}
 
 				.breadcrumb {
@@ -98,7 +107,6 @@
 				.job-owners-p-wrapper {
 
 					@media (min-width: $screen-lg-min) {
-						margin:29px 0 116px 0;
 					}	
 				}	
 
@@ -138,6 +146,10 @@
 						font-size: 3.2em;
 						line-height: normal;
 						letter-spacing: normal;
+					}
+
+					@media (min-width: $screen-xl-min) {
+						max-width: 750px;
 					}	
 				}
 			}
@@ -152,9 +164,13 @@
 			padding: 12px 5px 0;
 
 			@media (min-width: $screen-lg-min) {
-				max-width: 1262px;
+				max-width: 1010px;
 				margin:0 0 230px 0;
 				padding: 34px 20px 0;
+			}
+
+			@media (min-width: $screen-xl-min) {
+				max-width: 1262px;
 			}
 
 			.h2-wrapper {
@@ -315,8 +331,11 @@
 
 				.th-name {
 
-
 					@media (min-width: $screen-lg-min) {
+						min-width: 216px;
+					}
+
+					@media (min-width: $screen-xl-min) {
 						min-width: 270px;
 					}
 				}
@@ -423,9 +442,13 @@
 					padding: 0 15px;
 
 					@media (min-width: $screen-lg-min) {
-						min-width: 270px;
+						min-width: 216px;
 						height: auto;
 						padding: 0;
+					}
+
+					@media (min-width: $screen-xl-min) {
+						min-width: 270px;
 					}
 				}
 

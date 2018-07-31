@@ -31,6 +31,19 @@
 			//padding: 120px 0 0 0;
 		}
 
+		@media (min-width: $screen-lg-min) {
+			background-image: url('../common/images/search-results-header-visuals.png');
+			height: 260px;
+			background-size: auto;
+			background-repeat: no-repeat;
+			background-position: left;
+			background-size: 30%;
+		}
+
+		@media (min-width: $screen-xl-min) {
+			height: 308px;
+		}
+
 		@media (max-width: 340px) {
 			height: 240px;
 			box-shadow: none;
@@ -56,6 +69,10 @@
 			padding-top: 73px;
 
 			@media (min-width: $screen-lg-min) {
+				padding-top: 96px;
+			}
+
+			@media (min-width: $screen-xl-min) {
 				padding-top: 120px;
 			}
 

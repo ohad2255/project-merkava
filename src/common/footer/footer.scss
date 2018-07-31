@@ -25,11 +25,15 @@
 
     @media (min-width: $screen-lg-min) {
       margin: 0;
-      max-width: 1271px;
+      max-width: 1030px;
       min-height: 110px;
       padding: 0;
       height: 32px;
       //padding: 58px 0 0 0;
+    }
+
+    @media (min-width: $screen-xl-min) {
+      max-width: 1271px;
     }
     // max-width: 250px;
     // margin:0 0 75px 0;

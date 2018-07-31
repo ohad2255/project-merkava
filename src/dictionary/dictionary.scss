@@ -30,12 +30,12 @@
 		@media (min-width: $screen-lg-min) {
 			margin: 0 0 40px 0;
 			//padding:0 0 18px 0;
-			min-height: 308px;
+			//min-height: 308px;
 			height: auto;
 			background-position: left;
 			background-image: url('../common/images/dictionary-header-visuals.png');
 			background-repeat: no-repeat;
-			background-size: contain;
+			background-size: 30%;
 		}
 
 		.right-line {
@@ -58,24 +58,33 @@
 			@media (min-width: $screen-lg-min) {
 				width: 100%;
 				height: 100%;
-				min-height: 290px;
+				//min-height: 290px;
 			}
 		}
 
-		.top-sec-container {
-			max-width: 1262px; 
+		.top-sec-container { 
 			width: 100%;
 			padding: 0 20px;
 			height: auto;
 			position: relative;
 
 			@media (min-width: $screen-lg-min) {
+				min-height: 260px;
+				max-width: 1010px;
+			}
+
+			@media (min-width: $screen-xl-min) {
 				min-height: 308px;
+				max-width: 1262px;
 			}
 
 			.dictionary-breadcrumb-wrapper {
 
 				@media (min-width: $screen-lg-min) {
+					margin: 26px 0 29px 0;
+				}
+
+				@media (min-width: $screen-xl-min) {
 					margin: 32px 0 36px 0;
 				}
 
@@ -172,12 +181,17 @@
 			.alphabet-lg {
 				position: absolute;
 				width: 100%;
-				max-width: 900px;
+				max-width: 800px;
 				bottom: 0;
 				right: 0;
 				left: auto;
 				padding: 0 25px 0;
-				margin: 0 136px 18px 0;
+				margin: 0 113px 5px 0;
+
+				@media (min-width: $screen-xl-min) {
+					margin: 0 136px 18px 0;
+					max-width: 900px;
+				}
 
 				ul {
 					width: 100%;
@@ -212,9 +226,14 @@
 			margin: 0 0 6px 0;
 
 			@media (min-width: $screen-lg-min) {
+				width: 93px;
+				height: 93px;
+				margin: 0;
+			}
+
+			@media (min-width: $screen-xl-min) {
 				width: 116px;
 				height: 116px;
-				margin: 0;
 			}
 		}	
 	}
@@ -227,8 +246,12 @@
 		@media (min-width: $screen-lg-min) {
 			padding: 0 20px 0;
 			margin: 0px auto 308px;
-			max-width: 1262px;
+			max-width: 1010px;
 			min-height: 100%;
+		}
+
+		@media (min-width: $screen-xl-min) {
+			max-width: 1262px;
 		}
 
 		.body-p-wrapper {

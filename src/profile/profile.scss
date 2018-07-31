@@ -12,12 +12,16 @@
         height: auto;
 
 		@media (min-width: $screen-lg-min) {
-            min-height: 308px;
+            min-height: 260px;
             background-position: left;
         	background-image: url('../common/images/profile-header-visuals.png');
         	object-fit: contain;
-			background-size: auto;
+			background-size: 30%;
 			background-repeat: no-repeat;
+       	}
+
+       	@media (min-width: $screen-xl-min) {
+            min-height: 308px;
        	}
 
 		.top-sec-container {
@@ -27,11 +31,11 @@
 
 			@media (min-width: $screen-lg-min) {
                 padding: 0 20px;
-                max-width: 1262px; 
+                max-width: 1010px; 
            	}
 
            	@media (min-width: $screen-xl-min) {
-                //padding: 0 20px;
+                max-width: 1262px;
            	}
 
 			.profile-breadcrumb-wrapper {
@@ -43,10 +47,14 @@
 				top: 16px;
 
 				@media (min-width: $screen-lg-min) {
-                    margin: 29px 0 33px 0;
+                    margin: 23px 0 26px 0;
                     font-size: 1.6rem;
                     position: static;
                     width: 100%;
+               	}
+
+               	@media (min-width: $screen-xl-min) {
+                    margin: 29px 0 33px 0;
                	}
 
                	.breadcrumb {
@@ -85,6 +93,11 @@
 						width: 32px;
 
 						@media (min-width: $screen-lg-min) {
+		                	width: 68px;
+  							height: 93px;
+		               	}
+
+		               	@media (min-width: $screen-xl-min) {
 		                	width: 85px;
   							height: 116px;
 		               	}
@@ -117,12 +130,17 @@
 					text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 					padding: 0 0 0 20px;
 					margin:0 0 20px 0;
+					max-width: 500px;
 
 					@media (min-width: $screen-lg-min) {
 	                    font-size: 3rem;
 	                    margin:0 0 10px 0;
-	                    max-width: 750px;
+	                    max-width: 625px;
 	                    padding: 0 0 0 20px;
+	               	}
+
+	               	@media (min-width: $screen-xl-min) {
+	                    max-width: 800px;
 	               	}
 				}
 			}
@@ -384,11 +402,11 @@
 			}
 
 			.phone-number {
-				max-width: 420px;
 				margin: 0 0 20px 0;
 
 				@media (min-width: $screen-lg-min) {
                     margin: 0;
+                    max-width: 420px;
                	}
 			}
 

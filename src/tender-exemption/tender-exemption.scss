@@ -24,15 +24,18 @@
 		height: fit-content;
 		padding: 0;
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
-		background-size: contain;
 		min-height: 205px;
 
 		@media (min-width: $screen-lg-min) {
             background-image: url('../common/images/exemption-header-visuals.png');
-            min-height: 308px;
-            background-size: contain;
+            min-height: 260px;
+            background-size: 30%;
             background-position: left;
             background-repeat: no-repeat;
+       	}
+
+       	@media (min-width: $screen-xl-min) {
+            min-height: 308px;
        	}
        	
        	.right-line {
@@ -58,13 +61,20 @@
 
 			@media (min-width: $screen-lg-min) {
                 padding: 0 20px 0;
-    			//max-width: 1344px;
+    			max-width: 1010px;
+           	}
+
+           	@media (min-width: $screen-xl-min) {
     			max-width: 1262px;
            	}
 
            	.breadcrumb-wrapper {
 
 				@media (min-width: $screen-lg-min) {
+					margin: 24px 0 34px 0px;
+				}
+
+				@media (min-width: $screen-xl-min) {
 					margin: 30px 0 42px 0px;
 				}
 
@@ -100,9 +110,13 @@
 					img {
 						width: 49px;
   						height: 51px;
-  						//object-fit: contain;
 
 						@media (min-width: $screen-lg-min) {
+		                    width: 78px;
+  							height: 95px;
+		               	}
+
+		               	@media (min-width: $screen-xl-min) {
 		                    width: 97px;
   							height: 119px;
 		               	}
@@ -161,6 +175,10 @@
 
 			@media (min-width: $screen-lg-min) {
 				padding: 0 20px;
+				max-width: 1010px;
+			}
+
+			@media (min-width: $screen-xl-min) {
 				max-width: 1262px;
 			}
 		}
@@ -170,10 +188,13 @@
 			margin:0 0 77px 0;
 
 			@media (min-width: $screen-lg-min) {
-				margin:0 0 55px 0;
+				margin: 0 0 44px 0;
 				border-bottom: solid 1px rgb(224, 224, 224);
 				padding: 0;
-				max-width: 1222px;
+			}
+
+			@media (min-width: $screen-xl-min) {
+				margin: 0 0 55px 0;
 			}
 		}
 
@@ -353,8 +374,13 @@
 			padding: 10px 20px 33px;
 
 			@media (min-width: $screen-lg-min) {
-				margin: 0 0 55px 0;
+				margin: 0 0 44px 0;
 				border-bottom: solid 1px rgb(224, 224, 224);
+				padding: 0 0 44px 0 !important;
+			}
+
+			@media (min-width: $screen-xl-min) {
+				margin: 0 0 55px 0;
 				padding: 0 0 55px 0 !important;
 			}
 
@@ -591,8 +617,12 @@
 
 	.related-exemptions-container-close {
 		margin: 0 auto 20px;
-		max-width: 1262px;
+		max-width: 1010px;
 		padding: 0 20px;
+
+		@media (min-width: $screen-xl-min) {
+			max-width: 1262px;
+		}
 	}
 
 	.border-none {
@@ -631,9 +661,14 @@
 
 		@media (min-width: $screen-lg-min) {
 			border-bottom: solid 1px $bids-border;
+			margin: 0 0 42px;
+			padding: 0 0 40px;
+		}
+
+		@media (min-width: $screen-xl-min) {
 			margin: 0 0 53px;
 			padding: 0 0 50px;
-			max-width: 1222px;
+
 		}
 	}
 
@@ -795,9 +830,13 @@
 		border-bottom: solid 1px $bids-border;
 
 		@media (min-width: $screen-lg-min) {
-			margin: 0 auto 62px;
+			margin: 0 auto 50px;
 			padding: 0;
 			border-bottom: 0;
+		}
+
+		@media (min-width: $screen-xl-min) {
+			margin: 0 auto 62px;
 		}
 	}
 
@@ -822,9 +861,13 @@
 		color: $text-dark-grey!important;
 
 		@media (min-width: $screen-lg-min) {
-			width: 190px;
-			height: 57px;
+			max-width: 152px;
+			min-height: 57px;
 			margin: 0 0 12px 12px;
+		}
+
+		@media (min-width: $screen-xl-min) {
+			max-width: 190px;
 		}
 
 		&:last-child {
@@ -952,7 +995,11 @@
 			background-color: #f4f5f7;
 			padding: 54px 0 0 0;
 			width: 100%;
-		}	
+		}
+
+		@media (min-width: $screen-xl-min) {
+			padding: 44px 0 0 0;
+		}		
 	}
 
 	.margin-open {

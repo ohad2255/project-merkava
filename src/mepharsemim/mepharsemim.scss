@@ -35,11 +35,15 @@
 	.mepharsemim-top-sec {
 		
 		@media (min-width: $screen-lg-min) {
-			height: 248px;
+			height: 220px;
 			background-color: $cobalt;
 			padding: 0;
 			position: relative;
 			width: 100%;
+		}
+
+		@media (min-width: $screen-xl-min) {
+			height: 248px;
 		}
 
 		.top-sec-container {
@@ -51,9 +55,12 @@
 				//padding: 33px 0 0 0;
 				padding: 34px 20px 0;
 				width: 100%;
-				//max-width: 1322px;
-				max-width: 1262px;
+				max-width: 1010px;
 				min-height: 0;
+			}
+
+			@media (min-width: $screen-xl-min) {
+				max-width: 1262px;
 			}
 
 			.mepharsemim-breadcrumb-wrapper {
@@ -122,10 +129,15 @@
 				}	
 
 				.mepharsemim-top-icon-lg {
-					width: 79px;
-  					height: 116px;
+					width: 63px;
+  					height: 72px;
 					margin: 0 ;
 					margin: 0 0 0 24px;
+
+					@media (min-width: $screen-lg-min) {
+						width: 79px;
+  						height: 90px;
+					}
 				}
 
 				.mepharsemim-head {
@@ -164,6 +176,11 @@
 						padding: 0 0 0 30px;
 						margin: 0;
 						color: $main-white;
+						max-width: 455px;
+					}
+
+
+					@media (min-width: $screen-xl-min) {
 						max-width: 500px;
 					}
 				}
@@ -183,9 +200,13 @@
 		.mepharsemim-main-body-wrapper {
 
 			@media (min-width: $screen-lg-min) {
-				max-width: 1262px;
+				max-width: 1010px;
 				margin: 0 auto;
 				padding: 0 20px 150px;
+			}
+
+			@media (min-width: $screen-xl-min) {
+				max-width: 1262px;
 			}
 		}
 
@@ -897,12 +918,17 @@
 				.subject-option-container {
 					@media (min-width: $screen-lg-min) {
 						position: absolute!important;
-						max-width: 591px;
-						right: 596px;
+						max-width: 410px;
+						right: 100%;
 						left: auto;
 						top: 0;
 						background-color: $main-white;
 						z-index: 20;
+						margin: 0 5px 0 0;
+					}
+
+					@media (min-width: $screen-xl-min) {
+						max-width: 591px;
 					}
 				}
 

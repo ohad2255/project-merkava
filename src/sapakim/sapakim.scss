@@ -26,16 +26,19 @@
 		margin: 0 0 5px 0;
 		min-height: 205px;
 
-
 		@media (min-width: $screen-lg-min) {
 			background-image: url('../common/images/sapakim-header-visuals.png');
 			height: auto;
-			min-height: 308px;
-			margin: 0 0 53px 0;
+			min-height: 260px;
+			margin: 0 0 42px 0;
 			background-position: left;
 			background-repeat: no-repeat;
+			background-size: 30%;
+		}
 
-			//padding:0 100px 0 0;
+		@media (min-width: $screen-xl-min) {
+			min-height: 308px;
+			margin: 0 0 53px 0;
 		}
 
 		.right-line {
@@ -60,14 +63,21 @@
 			position: relative;
 
 			@media (min-width: $screen-lg-min) {
+				max-width: 1010px; 
+			}
+
+			@media (min-width: $screen-xl-min) {
 				max-width: 1262px; 
-				//padding: 31px 111px 81px 30px;
 			}
 
 			.sapakim-breadcrumb-wrapper {
 
 				@media (min-width: $screen-lg-min) {
-					margin: 31px 0 32px 0;
+					 margin: 26px 0 23px 0;
+				}
+
+				@media (min-width: $screen-xl-min) {
+					 margin: 32px 0 29px 0;
 				}
 
 				.breadcrumb {
@@ -125,10 +135,15 @@
 					margin: 0 0 6px 0;
 
 					@media (min-width: $screen-lg-min) {
-						width: 116px;
-  						height: 116px;
+						width: 93px;
+  						height: 93px;
 						margin: 0;
 						margin-top: 15px;
+					}
+
+					@media (min-width: $screen-lg-min) {
+						width: 116px;
+  						height: 116px;
 					}
 				}	
 
@@ -158,6 +173,7 @@
 					letter-spacing: normal;
 					color: #4e5665;
 					margin: 0 0 0 40px;
+					max-width: 500px;
 
 					@media (min-width: $screen-lg-min) {
 						font-size: 3rem;
@@ -165,12 +181,11 @@
 						letter-spacing: normal;
 						//padding: 0 0 0 30px;
 						margin: 0;
-						max-width: 640px;
+						max-width: 600px;
 					}	
 
 					@media (min-width: $screen-xl-min) {
-						//padding: 0 0 0 165px;
-						//max-width: 1262px;
+						max-width: 750px;
 					}	
 				}
 			}
@@ -185,6 +200,10 @@
 
 		@media (min-width: $screen-lg-min) {
 			padding: 0 20px 0;
+			margin: 0px auto 158px;
+		}
+
+		@media (min-width: $screen-xl-min) {
 			margin: 0px auto 198px;
 		}
 
@@ -192,9 +211,12 @@
 			margin: 21px 0 40px 0;
 
 			@media (min-width: $screen-lg-min) {
-				margin: 0 0 61px 0;
+				margin: 0 0 49px 0;
 				padding: 0;
-				max-width: 1222px;
+			}
+
+			@media (min-width: $screen-xl-min) {
+				margin: 0 0 61px 0;
 			}
 
 			h2 {

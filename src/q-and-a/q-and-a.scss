@@ -11,9 +11,12 @@
 		padding: 0 20px;
 
 		@media (min-width: $screen-lg-min) {
-			max-width: 1262px; 
-			//margin: 0 auto;
+			max-width: 1010px; 
 		} 
+
+		@media (min-width: $screen-xl-min) {
+			max-width: 1262px; 
+		}
 	}
 
 	.nav-item-text-6 {
@@ -36,7 +39,7 @@
 			padding: 0;
 			background-position: left;
 			background-repeat: no-repeat;
-			background-size: contain;
+			background-size: 30%;
 			background-image: url('../common/images/q-and-a-header-visuals.png');
 		}
 
@@ -62,15 +65,23 @@
 			min-height: 205px;
 
 			@media (min-width: $screen-lg-min) {
-				padding: 32px 20px 29px;
-				height: 308px;
+				padding: 0 20px 29px;
+				height: 260px;
 				margin: 0 auto;
+			}
+
+			@media (min-width: $screen-xl-min) {
+				height: 308px;
 			}
 
 			.q-and-a-breadcrumb-wrapper {
 
 				@media (min-width: $screen-lg-min) {
-					margin: 0 0 31px 0;
+					 margin: 26px 0 23px 0;
+				}
+
+				@media (min-width: $screen-xl-min) {
+					 margin: 32px 0 29px 0;
 				}
 
 				.breadcrumb {
@@ -117,13 +128,18 @@
 				.q-and-a-top-icon {
 					order: 1;
 					width: 55px;
-					height: auto;
+					height: 47px;
 					margin: 0 0 6px 0;
 
 					@media (min-width: $screen-lg-min) {
-						width: 136px;
-						height: auto;
+						width: 109px;
+						height: 93px;
 						margin: 0 0 0 24px;
+					}
+
+					@media (min-width: $screen-xl-min) {
+						width: 136px;
+						height: 116px;
 					}
 				}	
 
@@ -153,14 +169,18 @@
 					letter-spacing: normal;
 					color: #4e5665;
 					margin: 0 0 0 40px;
+					max-width: 500px;
 
 					@media (min-width: $screen-lg-min) {
 						font-size: 3rem;
 						line-height: normal;
 						letter-spacing: normal;
-						//padding: 0 0 0 30px;
 						margin: 0;
-						max-width: 640px;
+						max-width: 560px;
+					}	
+
+					@media (min-width: $screen-xl-min) {
+						max-width: 700px;
 					}	
 				}
 			}
@@ -176,6 +196,10 @@
 		@media (min-width: $screen-lg-min) {
 			padding: 0 20px 0;
 			margin: 0px auto 107px;
+			max-width: 1010px;
+		}
+
+		@media (min-width: $screen-xl-min) {
 			max-width: 1262px;
 		}	
 
@@ -390,6 +414,10 @@
 				padding: 0;
 
 				@media (min-width: $screen-lg-min) {
+					padding: 0 12px 32px 0!important;
+				}
+
+				@media (min-width: $screen-xl-min) {
 					padding: 0 12px 40px 0!important;
 				}
 			}

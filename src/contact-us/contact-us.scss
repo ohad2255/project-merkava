@@ -21,9 +21,13 @@
 		@media (min-width: $screen-lg-min) {
             background-image: url('../common/images/contact-us-header-visuals.png');
 			background-repeat: no-repeat;
-            min-height: 308px;
-            background-size: auto;
+            min-height: 260px;
+            background-size: 30%;
             background-position: left;
+       	}
+
+       	@media (min-width: $screen-xl-min) {
+            min-height: 308px;
        	}
        	
        	.right-line {
@@ -49,6 +53,10 @@
 			@media (min-width: $screen-lg-min) {
                 padding: 34px 20px 0;
     			//max-width: 1344px;
+    			max-width: 1010px;
+           	}
+
+           	@media (min-width: $screen-xl-min) {
     			max-width: 1262px;
            	}
 
@@ -93,9 +101,14 @@
   						height: 51px;
 
 						@media (min-width: $screen-lg-min) {
+		                    width: 86px;
+							height: 93px;
+							object-fit: contain;
+		               	}
+
+		               	@media (min-width: $screen-xl-min) {
 		                    width: 111px;
 							height: 116px;
-							object-fit: contain;
 		               	}
 					}
 				}
@@ -133,6 +146,10 @@
 	                    font-size: 3.2rem;
 	                    margin:0 0 10px 0;
 	                    color: $cobalt;
+	               	}
+
+	               	@media (min-width: $screen-xl-min) {
+	                    max-width: 750px;
 	               	}
 				}
 			}

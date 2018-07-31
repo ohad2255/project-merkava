@@ -15,23 +15,20 @@
 
 		}	
 
-		// .main-content {
-		// 	@media (min-width: $screen-lg-min) {
-		// 		min-height: 601px;
-		// 	}
-		// }
-
-
 		.signin-container {
 			width: 100%;
 			margin: 40px 0;
 
 			@media (min-width: $screen-lg-min) {
+				max-width: 1010px;
+				margin: 106px 0 165px 0;
+				min-height: 601px;
+			}
+
+			@media (min-width: $screen-xl-min) {
 				max-width: 1262px;
 				margin: 133px 0 206px 0;
-				min-height: 601px;
 			}	
-
 
 			.signin-sec-wrapper {
 				height: auto;
@@ -45,13 +42,11 @@
 					padding-bottom: 56px;
 				}	
 
-				
-
 				.signin-p-wrapper {
 					margin: 24px 20px 17px;
 
 					@media (min-width: $screen-lg-min) {
-						margin: 53px 70px 0 0;
+						margin: 53px 60px 0 0;
 						padding: 0 0 0 10px;
 					}	
 
@@ -85,9 +80,13 @@
 						font-size: 1.6rem;
 
 						@media (min-width: $screen-lg-min) {
-							max-width: 396px;
+							max-width: 317px;
 							line-height: 1.75;
 							margin-bottom: 0;
+						}
+
+						@media (min-width: $screen-xl-min) {
+							max-width: 396px;
 						}	
 					}
 				}
@@ -96,7 +95,7 @@
 					margin: 0 18px;
 
 					@media (min-width: $screen-lg-min) {
-						margin:19px 70px 0 0;
+						margin:19px 56px 0 0;
 						width: 365px;
 						padding: 0 0 0 10px;
 					}
@@ -310,7 +309,7 @@
 					margin: 26px auto 12px;
 
 					@media (min-width: $screen-lg-min) {
-						margin: 53px 74px 0 0;
+						margin: 53px 40px 0 0;
 						//max-width: 436px;
 					}	
 
@@ -346,8 +345,14 @@
 						@media (min-width: $screen-lg-min) {
 							line-height: 1.75;
 							margin-bottom: 0;
-							max-width: 436px;
+							max-width: 317px;
 						}	
+
+						@media (min-width: $screen-xl-min) {
+							max-width: 396px;
+							line-height: 1.75;
+							margin-bottom: 0;
+						}
 					}
 				}
 

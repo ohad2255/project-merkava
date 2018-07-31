@@ -25,9 +25,12 @@ body {
 
 .custom-container {
   padding: 0 20px;
+
+  //////test
   @media (min-width: $screen-lg-min) {
     max-width: 1010px;
   }
+
   @media (min-width: $screen-xl-min) {
     max-width: 1262px;
   }
@@ -455,5 +458,6 @@ body:not(.user-is-tabbing) button:focus,
 body:not(.user-is-tabbing) div:focus,
 body:not(.user-is-tabbing) select:focus,
 body:not(.user-is-tabbing) textarea:focus {
-  outline: none !important; //box-shadow: none !important;
+  outline: none !important; 
+  //box-shadow: none !important;
 }
