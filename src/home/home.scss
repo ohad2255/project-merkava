@@ -526,14 +526,16 @@
               @media (min-width: $screen-lg-min) {
                 margin: 0;
                 height: auto;
-                min-height: 118px;
+                min-height: 100px;
                 background-color: $background-p-img;
                 max-width: 100%;
                 width: 100%;
                 padding: 3px 30px 4px;
               }
 
-              
+              @media (min-width: $screen-xl-min) {
+                min-height: 118px;
+              }
 
               .img-head {
                 object-fit: contain;
@@ -754,4 +756,15 @@
   //   visibility: visible;
   // }
 }  
+
+body.user-is-tabbing {
+  .swiper-slide-duplicate-prev, .swiper-slide-duplicate-next, .swiper-slide-prev, .swiper-slide-next {
+    display: hidden !important;
+    background-image: none;
+  }
+
+  // .swiper-slide.swiper-slide-duplicate-active {
+  //   visibility: visible !important;
+  // }
+}
 
