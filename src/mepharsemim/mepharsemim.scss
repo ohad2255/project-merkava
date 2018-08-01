@@ -339,12 +339,17 @@
 					}
 
 					img {
-						width: 29px;
-						height: 21px;
-						margin: 3px 16px 0 0;
+
+						@media (min-width: $screen-lg-min) {
+							width: 23px;
+							height: 18px;
+							margin: 3px 12px 0 0;
+						}
 
 						@media (min-width: $screen-xl-min) {
 					    	margin: 8px 16px 0 0;
+							width: 29px;
+							height: 21px;
 						}
 					}
 
@@ -1060,7 +1065,7 @@
 					    opacity: 0.35;
   						background-color: rgba(233, 235, 240, 0.5);
 					    pointer-events: none;
-					    display: block!important;
+					    display: block !important;
 					}
 				}
 
@@ -1187,10 +1192,12 @@
 		letter-spacing: normal;
 		color: $main-white;
 		z-index: 100;
+		pointer-events: none;
 
 
 		&:not(.disabled) {
 			background-color: $header-blue;
+			pointer-events: all;
 
 			&:active, &:focus {
 	          background-color: $cobalt;

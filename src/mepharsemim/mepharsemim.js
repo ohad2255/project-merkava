@@ -7,6 +7,7 @@ $(document).ready(function() {
 		mepharsemim: $(".mepharsemim"),
 		subjects: $(".subject"),
 		subjectOptions: $(".subject-option"),
+		singleSubject: $(".single-subject"),
 		toggleAllMepharsemim: $(".toggle-all-mepharsemim"),
 		toggleAllSubjectsOptions: $(".toggle-all-subject-options"),
 		myListCount: $(".my-list-count"),
@@ -107,7 +108,12 @@ $(document).ready(function() {
 	}
 
 	function updateCheckBoxes() {
-		var isAllSubjectsOptionsSelected = $elements.subjectOptions.length === myList.$elements.subjectOptions.length;
+
+		var totalCount = $elements.subjectOptions.length + $elements.singleSubject.length;
+		var totalCountMyList = myList.$elements.subjectOptions.length + myList.$elements.subjects.filter(".single-subject").length;
+		var isAllSelected = totalCount === totalCountMyList;
+
+		//var isAllSubjectsOptionsSelected = $elements.subjectOptions.length === myList.$elements.subjectOptions.length;
 
 		// Empty everything before updating the UI
 		Object.keys($elements).forEach(function(elementKey) {
@@ -125,8 +131,7 @@ $(document).ready(function() {
 		$elements.myListCount.html(myList.selectedSubjectOptions);
 
 		// Update toggleAll checkboxes
-		$elements.toggleAllMepharsemim.prop('checked', isAllSubjectsOptionsSelected);
-		$elements.toggleAllSubjectsOptions.prop('checked', isAllSubjectsOptionsSelected);
+		$elements.toggleAllSubjectsOptions.prop('checked', isAllSelected);
 	}
 
 	function removeFromMyList() {
