@@ -808,5 +808,19 @@
 			}
 		}
 	}
+}
+.contact-job-owners {
+	.body .form-wrapper{ 
+		.first-name{
+			margin-bottom:0;
+			margin-left:10px;
+		}
+		.email{
+			margin: 0 0 25px 0;
+			@media (min-width: $screen-lg-min) {
+				margin:0;
+			}
+		}
+	}
 }	
 

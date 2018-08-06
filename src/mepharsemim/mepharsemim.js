@@ -8,6 +8,7 @@ $(document).ready(function() {
 		subjects: $(".subject"),
 		subjectOptions: $(".subject-option"),
 		singleSubject: $(".single-subject"),
+		singleWrappers: $(".single-subject-wrapper"),
 		toggleAllMepharsemim: $(".toggle-all-mepharsemim"),
 		toggleAllSubjectsOptions: $(".toggle-all-subject-options"),
 		myListCount: $(".my-list-count"),
@@ -79,6 +80,7 @@ $(document).ready(function() {
 
             // Close all subjects
             $elements.subjectWrapper.addClass("disabled").removeClass("active");
+            $elements.singleWrappers.addClass("disabled").removeClass("active");
             $elements.subjectWrapper.find(".subject-options").removeClass("d-flex");
             $elements.subjectWrapper.find(".blue-arrow").removeClass("rotate");
 
@@ -98,6 +100,7 @@ $(document).ready(function() {
 
 			// Restore all subjects to default
 			$elements.subjectWrapper.removeClass("disabled active");
+			$elements.singleWrappers.removeClass("disabled active");
 			$elements.subjectWrapper.find(".subject-options").removeClass("d-flex");
             $elements.subjectWrapper.find(".blue-arrow").removeClass("rotate");
             $elements.mainBodyWapper.find($(".save-list-button")).removeClass("d-none");
@@ -136,8 +139,8 @@ $(document).ready(function() {
 
 	function removeFromMyList() {
 		var $clicked = $(this);
-		var type = $clicked.data("type");
-		var relatedCheckboxId = $clicked.data("related-checkbox-id");
+		var type = $clicked.attr("data-type");	
+		var relatedCheckboxId = $clicked.attr("data-related-checkbox-id");
 		var $relatedCheckbox = $("#" + relatedCheckboxId);
 		var isChecked = $relatedCheckbox.prop("checked");
 
@@ -297,7 +300,7 @@ $(document).ready(function() {
 		// take the clicked element
 		var myListDelete = $clicked.length > 0;
 		var $clicked = myListDelete ? $clicked : $(this);
-		var mepharsemId = $clicked.data("mepharsem-id");
+		var mepharsemId = $clicked.attr("data-mepharsem-id");
 		var $mepharsem = $("#" + mepharsemId);
 		var mepharsemSubjectsOptions = $clicked.parents(".subject-wrapper").find(".subject-option")
 		var isMepharsemInMyList = myList.$elements.mepharsemim.get().indexOf($mepharsem.get(0)) > -1;
@@ -349,7 +352,7 @@ $(document).ready(function() {
 		var myListDelete = $clicked.length > 0;
 		var $clicked = myListDelete ? $clicked : $(this);
 		var $subject = $clicked.parents(".subject-wrapper").find(".subject");
-		var mepharsemId = $subject.data("mepharsem-id");
+		var mepharsemId = $subject.attr("data-mepharsem-id");
 		var $mepharsem = $("#" + mepharsemId);
 		var isMepharsemInMyList = myList.$elements.mepharsemim.get().indexOf($mepharsem.get(0)) > -1;
 		var isSubjectInMyList = myList.$elements.subjects.get().indexOf($subject.get(0)) > -1;
@@ -375,7 +378,7 @@ $(document).ready(function() {
 
 			$.merge(myList.$elements.subjectOptions, $clicked.get())
 
-			if (myList.$elements.subjectOptions.length === $elements.subjectOptions.length) {
+			if (myList.$elements.subjectOptions.length === $elements.subjectOptions.length && myList.$elements.subjects.filter(".single-subject").length === $elements.subjects.filter(".single-subject").length) {
 				Object.keys(myList.$elements).forEach(function(elementKey) {
 					myList.$elements[elementKey] = $elements[elementKey];
 				})
