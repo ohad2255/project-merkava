@@ -37,7 +37,7 @@ $(document).ready(function() {
 	});
 	  
 	var hasMore=true;
-	var container=$('.search-results-content');
+	var container=$('.search-results-content-with-results');
 	container.infiniteScrollHelper({
 	  loadMore: function(page,done) {
 		  if(!hasMore){
