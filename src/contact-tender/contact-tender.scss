@@ -285,7 +285,7 @@
 			.first-name, .last-name {
 
 				@media (min-width: $screen-lg-min) {
-                   	width: 205px;
+                   	min-width: 205px;
 					margin: 0 0 0 10px;
                	}
 			}
@@ -815,6 +815,24 @@
 			margin-bottom:0;
 			margin-left:10px;
 		}
+		.email{
+			margin: 0 0 25px 0;
+			@media (min-width: $screen-lg-min) {
+				margin:0;
+			}
+		}
+	}
+}	
+
+.contact-job-owners {
+
+	.body .form-wrapper{ 
+
+		.first-name {
+			margin-bottom:0;
+			margin-left:10px;
+		}
+
 		.email{
 			margin: 0 0 25px 0;
 			@media (min-width: $screen-lg-min) {
