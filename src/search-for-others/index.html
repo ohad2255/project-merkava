@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>תוצאות חיפוש</title>
+    ${require("../common/common-stylesheet.html")}
+    <link rel="stylesheet" href="/common/common.css">
+    <link rel="stylesheet" href="/common/fonts.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../common.rtl/common.css"> -->
+  </head>
+
+  <!-- body -->
+  <!-- add to the body "search-results-exemption" class to change the design to search results exemption design -->
+  <body class="search-for-others">
+    <!-- <link href="../search-for-others.rtl/search-for-others.css" type="text/css" rel="stylesheet"> -->
+
+    <!-- mobile-menu -->
+    <div class="main-menu-mobile-container d-lg-none" aria-labelledby="mainMobileNavTrigger">
+      <div class="main-menu-mobile-wrapper"></div>
+      ${require("../common/top-navigation/top-navigation.html")}
+    </div>
+    <div class="main-content-wrapper">
+
+      <!-- header -->
+      ${require("../common/header/header.html")}
+
+      <!-- top-section -->
+      <section class="search-for-others-top-sec">
+        <div class="right-line"></div>
+        <div class="search-results-container custom-container">
+          <div class="search-results-head-wrapper d-flex justify-content-start flex-column">
+              <h1 class="search-results-head d-flex justify-content-start ">
+                  תוצאות חיפוש
+              </h1>
+
+              <!-- search results main p -->
+              <p class="head-p">נמצאו 10 תוצאות לחיפוש "מחשבים" במכרזים</p>
+
+              <!-- search results exemption main p -->
+              <!-- move d-none to search results main p to show -->
+              <p class="head-p d-none">נמצאו 10 תוצאות לחיפוש “אספקה” בפטורים</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- main-content -->
+      <section class="search-for-others-body d-flex justify-content-between custom-container ">
+        <div class="options-wrapper">
+          <h3 class="options-head">סנן תוצאות לפני נושא:</h3>
+          <div class="checkbox-wrapper">
+          <label>
+            <input type="checkbox" class="icheck others-checkbox select-all-checkbox">
+            <span class="main-label">הכל</span>
+          </label>
+          </div>
+          <div class="checkbox-wrapper">
+            <label>
+
+              <!-- add "possible-option" class to relevant inputs (example)-->
+              <input type="checkbox" class="icheck others-checkbox possible-option">
+              <span class="main-label">שאלות ותשובות</span>
+            </label>
+          </div>
+          <div class="checkbox-wrapper">
+            <label>
+
+              <!-- add disabled attribute to relevant inputs (example)-->
+              <input type="checkbox" class="icheck others-checkbox" disabled>
+              <span class="main-label">מילון מונחים</span>
+            </label>
+          </div>
+          <div class="checkbox-wrapper">
+            <label>
+              <input type="checkbox" class="icheck others-checkbox">
+              <span class="main-label">רשימת ספקים</span>
+            </label>
+          </div>
+          <div class="checkbox-wrapper">
+            <label>
+
+              <!-- add "possible-option" class to relevant input (example)-->
+              <input type="checkbox" class="icheck others-checkbox possible-option">
+              <span class="main-label">חדשות ועידכונים</span>
+            </label>
+          </div>
+          <div class="checkbox-wrapper">
+            <label>
+              <input type="checkbox" class="icheck others-checkbox">
+              <span class="main-label">אירגונים ממשלתיים</span>
+            </label>
+          </div>
+          <div class="checkbox-wrapper">
+            <label>
+              <input type="checkbox" class="icheck others-checkbox">
+              <span class="main-label">רכש ירוק</span>
+            </label>
+          </div>
+          <div class="checkbox-wrapper">
+            <label>
+              <input type="checkbox" class="icheck others-checkbox">
+              <span class="main-label">רגולציה</span>
+            </label>
+          </div>
+        </div>
+        <div class="results-wrapper">
+
+          <!-- q-and-a search result example-->
+          <a class="result-a-wrapper" href="#" tabindex="0">
+            <div class="result-container d-flex justify-content-between align-items-start h-100">
+              <div class="right-line"></div>
+              
+              <!-- search result details-->
+              <div class="details-main-wrapper">
+                <div>
+                  <h2>שאלות ותשובות</h2>
+                  <p>מתודולוגיה לפיתוח ולתחזוקה של טכנולוגיית המידע …</p>
+                  
+                </div> 
+              </div>
+              <div class="logo-container d-lg-flex flex-column align-items-center">
+                <img src="../common/images/q-and-a-icon.svg" class="result-logo" alt="search-result-logo">
+
+                <h3 class="search-result-sub-head">שאלות<br>ותשובות</h3>
+              </div>
+            </div>
+          </a>
+
+          <!-- dictionary search result example -->
+          <a class="result-a-wrapper" href="#" tabindex="0">
+            <div class="result-container d-flex justify-content-between align-items-start h-100">
+              <div class="right-line"></div>
+              
+              <!-- search result details-->
+              <div class="details-main-wrapper">
+                <div>
+                  <h2>מילון מונחים</h2>
+                  <p>מתודולוגיה לפיתוח ולתחזוקה של טכנולוגיית המידע …</p>
+                  
+                </div> 
+              </div>
+              <div class="logo-container d-lg-flex flex-column align-items-center">
+                <img src="../common/images/dictionary-icon.svg" class="result-logo" alt="search-result-logo">
+
+                <h3 class="search-result-sub-head">מילון<br>מונחים</h3>
+              </div>
+            </div>
+          </a>
+
+          <!-- add "results-divider" span after every group of search-results -->
+          <span class="results-divider"></span>
+
+          <!-- sapakim search result example -->
+          <a class="result-a-wrapper" href="#" tabindex="0">
+            <div class="result-container d-flex justify-content-between align-items-start h-100">
+              <div class="right-line"></div>
+              
+              <!-- search result details-->
+              <div class="details-main-wrapper">
+                <div>
+                  <h2>רשימת ספקים</h2>
+                  <p>מתודולוגיה לפיתוח ולתחזוקה של טכנולוגיית המידע …</p>
+                  
+                </div> 
+              </div>
+              <div class="logo-container d-lg-flex flex-column align-items-center">
+                <img src="../common/images/sapakim-icon.svg" class="result-logo" alt="search-result-logo">
+
+                <h3 class="search-result-sub-head">רשימת<br>ספקים</h3>
+              </div>
+            </div>
+          </a>
+
+          <!-- news search result example -->
+          <a class="result-a-wrapper" href="#" tabindex="0">
+            <div class="result-container d-flex justify-content-between align-items-start h-100">
+              <div class="right-line"></div>
+              
+              <!-- search result details-->
+              <div class="details-main-wrapper">
+                <div>
+                  <h2>חדשות ועידכונים</h2>
+                  <p>מתודולוגיה לפיתוח ולתחזוקה של טכנולוגיית המידע …</p>
+                  
+                </div> 
+              </div>
+              <div class="logo-container d-lg-flex flex-column align-items-center">
+                <img src="../common/images/news-card-icon.svg" class="result-logo" alt="search-result-logo">
+
+                <h3 class="search-result-sub-head">חדשות<br>ועידכונים</h3>
+              </div>
+            </div>
+          </a>
+
+          <!-- add "results-divider" span after every group of search-results -->
+          <span class="results-divider"></span>
+
+          <!-- green-rechesh search result example -->
+          <a class="result-a-wrapper green-result" href="#" tabindex="0">
+            <div class="result-container d-flex justify-content-between align-items-start h-100">
+              <div class="right-line"></div>
+              
+              <!-- search result details-->
+              <div class="details-main-wrapper">
+                <div>
+                  <h2>רכש ירוק</h2>
+                  <p>מתודולוגיה לפיתוח ולתחזוקה של טכנולוגיית המידע …</p>
+                  
+                </div> 
+              </div>
+              <div class="logo-container d-lg-flex flex-column align-items-center">
+                <img src="../common/images/green-top-icon.svg" class="result-logo" alt="search-result-logo">
+
+                <h3 class="search-result-sub-head">רכש<br>ירוק</h3>
+              </div>
+            </div>
+          </a>
+
+          <!-- regulation search result example -->
+          <a class="result-a-wrapper" href="#" tabindex="0">
+            <div class="result-container d-flex justify-content-between align-items-start h-100">
+              <div class="right-line"></div>
+              
+              <!-- search result details-->
+              <div class="details-main-wrapper">
+                <div>
+                  <h2>רגולציה</h2>
+                  <p>מתודולוגיה לפיתוח ולתחזוקה של טכנולוגיית המידע …</p>
+                  
+                </div> 
+              </div>
+              <div class="logo-container d-lg-flex flex-column align-items-center">
+                <img src="../common/images/regulation-card-icon.svg" class="result-logo" alt="search-result-logo">
+
+                <h3 class="search-result-sub-head">רגולציה</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="search-results-footer d-flex justify-content-center">
+          ${require("../common/footer/footer.html")}
+      </footer>
+    </div>
+    ${require("../common/common.html")}
+    <script type="text/javascript" src='/common/common.min.js'></script>
+  </body>
+</html>
