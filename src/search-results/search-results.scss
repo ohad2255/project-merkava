@@ -155,7 +155,7 @@
 			}
 
 			.deselect-all-filters-wrapper {
-				min-width: 169px;
+				//min-width: 169px;
 				height: 38px;
 				border-radius: 2.2px;
 				background-color: $header-blue;
@@ -516,20 +516,38 @@
 						margin: 0 0 -1px 15px;
 					}
 
-					input[type="checkbox"]:checked {
-						 display:inline-block;
+					// input[type="checkbox"]:checked {
+					// 	 display:inline-block;
   
-						&:after{
-							content: '';
-							display: block;
-							margin: 0 auto;
-							width: 6px;
-							height: 10px;
-							border: solid $cobalt;
-							border-width: 0 2px 2px 0;
-							transform: rotate(45deg);
-						}
+					// 	&:after{
+					// 		content: '';
+					// 		display: block;
+					// 		margin: 0 auto;
+					// 		width: 6px;
+					// 		height: 10px;
+					// 		border: solid $cobalt;
+					// 		border-width: 0 2px 2px 0;
+					// 		transform: rotate(45deg);
+					// 	}
+					// }
+
+					input[type="checkbox"]:checked {
+					display:inline-block;
+					background-color: $cobalt;
+					border: none;
+
+					&:after{
+						content: '';
+						display: block;
+						margin: 2px auto;
+						width: 4px;
+						height: 8px;
+						border: solid $main-white;
+						border-width: 0 1.5px 1.5px 0;
+						transform: rotate(45deg);
+						//background-color: $cobalt;
 					}
+				}
 				}
 
 				.date-filter-wrapper, .last-date-filter-wrapper, .currency-filter-wrapper {
