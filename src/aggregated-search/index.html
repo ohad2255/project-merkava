@@ -42,28 +42,36 @@
       </section>
 
       <!-- main-content -->
-      <section class="search-for-others-body d-flex justify-content-between custom-container ">
-        <div class="options-wrapper">
+      <section class="search-for-others-body d-flex justify-content-between custom-container js-stickybit-parent">
+        <div class="options-wrapper js-is-sticky">
           <h3 class="options-head">סנן תוצאות לפני נושא:</h3>
 
           <!-- filter-option -->
           <div class="filter-option-wrapper">
-            <button class="filter-option-btn">מכרזים</button>
+            <a href="#" tabindex="0" class="filter-option-btn">
+              מכרזים
+            </a>
           </div>
 
           <!-- filter-option -->
           <div class="filter-option-wrapper">
-            <button class="filter-option-btn">מכרזים מרכזיים</button>
+            <a href="#" tabindex="0" class="filter-option-btn">
+              מכרזים מרכזיים
+            </a>
           </div>
 
           <!-- filter-option -->
           <div class="filter-option-wrapper">
-            <button class="filter-option-btn">פטורים</button>
+            <a href="#" tabindex="0" class="filter-option-btn">
+              פטורים
+            </a>
           </div>
 
           <!-- filter-option -->
           <div class="filter-option-wrapper">
-            <button class="filter-option-btn">אחר</button>
+            <a href="#" tabindex="0" class="filter-option-btn">
+              אחר
+            </a>
           </div>
           
         </div>
@@ -270,5 +278,6 @@
     </div>
     ${require("../common/common.html")}
     <script type="text/javascript" src='/common/common.min.js'></script>
+    <script type="text/javascript" src='../dist/stickybits.min.js'></script>
   </body>
 </html>
