@@ -119,7 +119,7 @@
 
 			@media (min-width: $screen-lg-min) {
 				margin: 0 0 32px 0;
-				padding: 0 20px 0 10px;
+				padding: 0 20px;
 			}
 
 			h3 {
@@ -127,10 +127,10 @@
 			}	
 
 			ul {
-			    
+			   max-width: 906px; 
 			}
 
-			li,  {
+			li {
 				border-radius: 2.2px;
   				background-color: $filters-selection-background;	
   				min-height: 38px;
@@ -150,7 +150,7 @@
 				align-items: center;
 
 				&:last-child {
-					margin: 0;
+					//margin: 0;
 				}
 			}
 
@@ -169,6 +169,7 @@
 				color: $main-white;
 				padding: 0 14px 0 9px;
 				margin: 0 141px 0 0;
+				display: none;
 			}
 
 			.deselect-filter-btn, .deselect-all-filters-btn {

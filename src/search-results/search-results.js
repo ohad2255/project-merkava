@@ -3,6 +3,7 @@ var Pikaday = require('pikaday');
 require('pikaday/scss/pikaday.scss');
 require('../common/common');
 //require('jquery-infinite-scroll-helper');
+
 $(document).ready(function() {
 
 	$('.close-filter-container').click(function() {
@@ -207,4 +208,114 @@ $(document).ready(function() {
 	// 	  return decodeURI(results[1]) || 0;
 	// 	  }
 	//   }
+
+	// $('.icheck').change(function() {
+	// 	//debugger
+	//     // Get the checkbox
+	//     //var checkBox = $('.icheck');
+	//     // Get the output text
+	// 	var filtersItem = $('.deselect-all-filters-wrapper');
+
+	// 	// If the checkbox is checked, display the output text
+	// 	if ($(this).prop("checked")){
+	// 		filtersItem.removeClass("d-none");
+	// 		filtersItem.addClass("d-flex");
+	// 	} else {
+	// 		filtersItem.removeClass("d-flex");
+	// 		filtersItem.addClass("d-none");
+	// 	}
+	// });
+
+
+
+
+
+	
+	// var $filterOption = $(".icheck");
+	// var $filtersOptions = $();
+
+	// $('.icheck').change(function() {
+	// 	var $this = $(this);
+	// 	var $filtersList = $(".filters-list");
+
+	// 	debugger
+	// 	$filterOption.each(function(index, filterOption) {
+
+	// 		if ($this.prop("checked")) {
+	// 			// var $body = $("search-results-body");
+
+	// 			var $label = $(".main-label")
+	// 			var filtersItemId = $this.prop("id");
+	// 			var filtersItemName = $this.next($label).text();
+	// 			var filtersItemTemplate = 
+	// 			// <div class="my-list-subjects-list-subject">
+	// 		 //        <div class="my-list-subject-wrapper d-flex align-items-center">  
+	// 		 //          <div 
+	// 		 //            class="my-list-item my-list-subject-delete" 
+	// 		 //            data-related-checkbox-id="${subjectId}"
+	// 		 //            data-type="subject"
+	// 		 //          ><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxzdmcgd2lkdGg9IjEzcHgiIGhlaWdodD0iMTNweCIgdmlld0JveD0iMCAwIDEzIDEzIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPg0KICAgIDwhLS0gR2VuZXJhdG9yOiBza2V0Y2h0b29sIDQ4LjIgKDQ3MzI3KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4NCiAgICA8dGl0bGU+Q0NDNDNEOTYtQTcxQS00QTMxLUE1MEMtMDY2RDQ0MThGMDEyPC90aXRsZT4NCiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggc2tldGNodG9vbC48L2Rlc2M+DQogICAgPGRlZnM+PC9kZWZzPg0KICAgIDxnIGlkPSIwNF9teS1saXN0X29wZW4iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0zNDEuMDAwMDAwLCAtNjA2LjAwMDAwMCkiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+DQogICAgICAgIDxnIGlkPSJiZyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIwMS4wMDAwMDAsIDUwNi4wMDAwMDApIiBzdHJva2U9IiM0RTU2NjUiIHN0cm9rZS13aWR0aD0iMS41Ij4NCiAgICAgICAgICAgIDxnIGlkPSLXoNeV16nXkC3XodeS15XXqCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMDAwMDAsIDcyLjAwMDAwMCkiPg0KICAgICAgICAgICAgICAgIDxnIGlkPSJHcm91cC0xMSI+DQogICAgICAgICAgICAgICAgICAgIDxnIGlkPSJHcm91cC0yIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMDMuMDAwMDAwLCAyNS4wMDAwMDApIj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxnIGlkPSJ4IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNDAuMDAwMDAwLCA0LjAwMDAwMCkiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwb2x5bGluZSBpZD0iUGF0aC01MzIiIHBvaW50cz0iMCAwIDUuNDUxMzU3MDIgNS41IDExIDAuMDU1MDY3MzE2OCI+PC9wb2x5bGluZT4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8cG9seWxpbmUgaWQ9IlBhdGgtNTMyIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1LjUwMDAwMCwgOC4yNTAwMDApIHNjYWxlKDEsIC0xKSB0cmFuc2xhdGUoLTUuNTAwMDAwLCAtOC4yNTAwMDApICIgcG9pbnRzPSIwIDUuNSA1LjQ1MTM1NzAyIDExIDExIDUuNTU1MDY3MzIiPjwvcG9seWxpbmU+DQogICAgICAgICAgICAgICAgICAgICAgICA8L2c+DQogICAgICAgICAgICAgICAgICAgIDwvZz4NCiAgICAgICAgICAgICAgICA8L2c+DQogICAgICAgICAgICA8L2c+DQogICAgICAgIDwvZz4NCiAgICA8L2c+DQo8L3N2Zz4=" alt="delete-x"></div>
+	// 		 //          <div class="my-list-subject-name">${subjectName}</div>
+	// 		 //          ${arrow}
+	// 		 //        </div>
+	// 		 //        <div class="my-list-options-wrapper ${collapseClass}">
+			        	
+	// 		 //        	<!-- DYNAMIC CONTENT -->
+
+	// 		 //        </div>
+	// 		 //    </div>
+	// 		    `
+	// 				<li class="filters-list-item" data-related-checkbox-id="${filtersItemId}" data-type="filters-Item">
+	// 						${filtersItemName}
+	// 						<button class="deselect-filter-btn"></button>
+	// 				</li>
+	// 		    `
+
+	// 		    $.merge($filtersOptions, $(filtersItemTemplate) )
+	// 		}
+	// 	});
+
+	// 	$("html").find($filtersList).append($filtersOptions);
+	// });
+	
+	// $('.icheck').click(function() {
+	// 	var $this = $(this);
+	// 	//debugger
+	// 	if ($this.prop("checked")) {
+	// 		// var $body = $("search-results-body");
+	// 		var $label = $(".main-label")
+	// 		var filtersItemId = $this.prop("id");
+	// 		var filtersItemName = $this.next($label).text();
+	// 		var $filtersList = $(".filters-list");
+	// 		var filtersItemTemplate = 
+	// 		// <div class="my-list-subjects-list-subject">
+	// 	 //        <div class="my-list-subject-wrapper d-flex align-items-center">  
+	// 	 //          <div 
+	// 	 //            class="my-list-item my-list-subject-delete" 
+	// 	 //            data-related-checkbox-id="${subjectId}"
+	// 	 //            data-type="subject"
+	// 	 //          ><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxzdmcgd2lkdGg9IjEzcHgiIGhlaWdodD0iMTNweCIgdmlld0JveD0iMCAwIDEzIDEzIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPg0KICAgIDwhLS0gR2VuZXJhdG9yOiBza2V0Y2h0b29sIDQ4LjIgKDQ3MzI3KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4NCiAgICA8dGl0bGU+Q0NDNDNEOTYtQTcxQS00QTMxLUE1MEMtMDY2RDQ0MThGMDEyPC90aXRsZT4NCiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggc2tldGNodG9vbC48L2Rlc2M+DQogICAgPGRlZnM+PC9kZWZzPg0KICAgIDxnIGlkPSIwNF9teS1saXN0X29wZW4iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0zNDEuMDAwMDAwLCAtNjA2LjAwMDAwMCkiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+DQogICAgICAgIDxnIGlkPSJiZyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIwMS4wMDAwMDAsIDUwNi4wMDAwMDApIiBzdHJva2U9IiM0RTU2NjUiIHN0cm9rZS13aWR0aD0iMS41Ij4NCiAgICAgICAgICAgIDxnIGlkPSLXoNeV16nXkC3XodeS15XXqCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMDAwMDAsIDcyLjAwMDAwMCkiPg0KICAgICAgICAgICAgICAgIDxnIGlkPSJHcm91cC0xMSI+DQogICAgICAgICAgICAgICAgICAgIDxnIGlkPSJHcm91cC0yIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMDMuMDAwMDAwLCAyNS4wMDAwMDApIj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxnIGlkPSJ4IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNDAuMDAwMDAwLCA0LjAwMDAwMCkiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwb2x5bGluZSBpZD0iUGF0aC01MzIiIHBvaW50cz0iMCAwIDUuNDUxMzU3MDIgNS41IDExIDAuMDU1MDY3MzE2OCI+PC9wb2x5bGluZT4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8cG9seWxpbmUgaWQ9IlBhdGgtNTMyIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1LjUwMDAwMCwgOC4yNTAwMDApIHNjYWxlKDEsIC0xKSB0cmFuc2xhdGUoLTUuNTAwMDAwLCAtOC4yNTAwMDApICIgcG9pbnRzPSIwIDUuNSA1LjQ1MTM1NzAyIDExIDExIDUuNTU1MDY3MzIiPjwvcG9seWxpbmU+DQogICAgICAgICAgICAgICAgICAgICAgICA8L2c+DQogICAgICAgICAgICAgICAgICAgIDwvZz4NCiAgICAgICAgICAgICAgICA8L2c+DQogICAgICAgICAgICA8L2c+DQogICAgICAgIDwvZz4NCiAgICA8L2c+DQo8L3N2Zz4=" alt="delete-x"></div>
+	// 	 //          <div class="my-list-subject-name">${subjectName}</div>
+	// 	 //          ${arrow}
+	// 	 //        </div>
+	// 	 //        <div class="my-list-options-wrapper ${collapseClass}">
+		        	
+	// 	 //        	<!-- DYNAMIC CONTENT -->
+
+	// 	 //        </div>
+	// 	 //    </div>
+	// 	    `
+	// 			<li class="filters-list-item" data-related-checkbox-id="${filtersItemId}" data-type="filters-Item">
+	// 					${filtersItemName}
+	// 					<button class="deselect-filter-btn"></button>
+	// 			</li>
+	// 	    `
+
+	// 	    $("html").find($filtersList).append(filtersItemTemplate);
+	// 	}
+	// });
 });
+
+
+
+

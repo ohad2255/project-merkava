@@ -50,14 +50,14 @@
 
         <!-- new //////////////////////////////////////////////////////////////////////////-->
 
-        <div class="facet js-facet custom-container d-flex">
-          <div class="all-filters-wrapper">
+        <div class="facet js-facet custom-container d-flex w-100">
+          <div class="all-filters-wrapper d-flex">
             <ul class="filters-list d-flex flex-wrap">
-              <li class="filters-list-item">
+              <!-- <li class="filters-list-item d-none">
                 מעודכן
                 <button class="deselect-filter-btn"></button>
-              </li>
-              <li class="filters-list-item">
+              </li> -->
+              <!-- <li class="filters-list-item">
                 משרד הפנים
                 <button class="deselect-filter-btn"></button>
               </li>
@@ -71,19 +71,18 @@
               </li>
               <li class="filters-list-item">
                 לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. 
-קלאצי סחטיר בלובק. תצטנפל בלינדו למרקל אס לכימפו, דול, צוט ומעיוט  לפתיעם ברשג  ולתיעם גודישי קוון
+                קלאצי סחטיר בלובק. תצטנפל בלינדו למרקל אס לכימפו, דול, צוט ומעיוט  לפתיעם ברשג  ולתיעם גודישי קוון
               <button class="deselect-filter-btn"></button>
               </li>
               <li class="filters-list-item">
                 מדפסות
                 <button class="deselect-filter-btn"></button>
-              </li>
-              
+              </li> -->
             </ul>
-          </div>
-          <div class="deselect-all-filters-wrapper d-flex align-items-center justify-content-center">
-            <div>בטל את כל הסינונים</div>
-            <button class="deselect-all-filters-btn"></button>
+            <div class="deselect-all-filters-wrapper align-items-center justify-content-center">
+              <div>בטל את כל הסינונים</div>
+              <button class="deselect-all-filters-btn"></button>
+            </div>
           </div>
         </div>
 
@@ -140,27 +139,28 @@
                 <!-- filter status open -->
                 <div class="status-filter-wrapper d-none">
                   <div class="checkbox">
-                    <label><input type="checkbox" class="icheck status-checkbox">
+                    <label>
+                      <input type="checkbox" class="icheck status-checkbox" id="filterCheckbox1">
                       <span class="main-label updated">מעודכן</span>
                     </label>
                   </div>
                   <div class="checkbox">
-                    <label><input type="checkbox" class="icheck status-checkbox">
+                    <label><input type="checkbox" class="icheck status-checkbox" id="filterCheckbox2">
                       <span class="main-label new">חדש</span>
                     </label>
                   </div>
                   <div class="checkbox">
-                    <label><input type="checkbox" class="icheck status-checkbox">
+                    <label><input type="checkbox" class="icheck status-checkbox" id="filterCheckbox3">
                       <span class="main-label closed">סגור</span>
                     </label>
                   </div>
                   <div class="checkbox">
-                    <label><input type="checkbox" class="icheck status-checkbox">
+                    <label><input type="checkbox" class="icheck status-checkbox" id="filterCheckbox4">
                       <span class="main-label pre-committees-decision">טרום החלטת ועדה</span>
                     </label>
                   </div>
                   <div class="checkbox">
-                    <label><input type="checkbox" class="icheck status-checkbox">
+                    <label><input type="checkbox" class="icheck status-checkbox" id="filterCheckbox5">
                       <span class="main-label cancelled">מבוטל</span>
                     </label>
                   </div>
