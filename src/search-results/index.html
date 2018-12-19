@@ -45,50 +45,16 @@
         </div>
       </section>
 
-      <!-- main-content -->
-      <section class="search-results-body d-flex flex-column align-items-center">
 
-        <!-- new //////////////////////////////////////////////////////////////////////////-->
+      <div class="body-container">
 
-        <div class="facet js-facet custom-container d-flex w-100">
-          <div class="all-filters-wrapper d-flex">
-            <ul class="filters-list d-flex flex-wrap">
-              <!-- <li class="filters-list-item d-none">
-                מעודכן
-                <button class="deselect-filter-btn"></button>
-              </li> -->
-              <!-- <li class="filters-list-item">
-                משרד הפנים
-                <button class="deselect-filter-btn"></button>
-              </li>
-              <li class="filters-list-item">
-                סכום מ-6,000 עד 600,000 ₪
-                <button class="deselect-filter-btn"></button>
-              </li>
-              <li class="filters-list-item">
-                תאריך עידכון מ-20/11/2018 עד 25/11/2018
-                <button class="deselect-filter-btn"></button>
-              </li>
-              <li class="filters-list-item">
-                לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. 
-                קלאצי סחטיר בלובק. תצטנפל בלינדו למרקל אס לכימפו, דול, צוט ומעיוט  לפתיעם ברשג  ולתיעם גודישי קוון
-              <button class="deselect-filter-btn"></button>
-              </li>
-              <li class="filters-list-item">
-                מדפסות
-                <button class="deselect-filter-btn"></button>
-              </li> -->
-            </ul>
-            <div class="deselect-all-filters-wrapper align-items-center justify-content-center">
-              <div>בטל את כל הסינונים</div>
-              <button class="deselect-all-filters-btn"></button>
-            </div>
-          </div>
+        <div class="grey-overlay d-lg-none">
         </div>
 
-        <!-- end new //////////////////////////////////////////////////////////////////////////-->
+        <!-- main-content -->
+        <section class="search-results-body d-flex flex-column align-items-center">
 
-        <div class="search-results-body-wrapper custom-container d-lg-flex justify-content-end w-100">
+          <!-- changed place //////////////////////////////////////-->
 
           <!-- open filter mobile button -->
           <div class="filter-mobile-container d-flex flex-column align-items-center justify-content-center d-lg-none">
@@ -102,419 +68,463 @@
             </div>
           </div>
 
-          <div class="filters-wrapper d-none d-lg-block">
-            <!-- <div class="facet js-facet">
-              <div class="facet__name js-facet-name">
-                  <span class="glyphicon facet__arrow"></span>
-                  <h3><span tabindex="0">Applied Facets</span></h3>
-              </div>
-              <div class="facet__values js-facet-values">
-                  <ul class="facet__list">
-                    <li>
-                      פילטר 1&nbsp;<a href="/ilgstorefront/en/search?q=%3A%3Atype%3A4" aria-label="search.nav.applied.facets.removeOffice Name 4"><span class="glyphicon glyphicon-remove"></span></a>
-                    </li>
-                    <li>
-                      פילטר 1&nbsp;<a href="/ilgstorefront/en/search?q=%3A%3Atype%3A4" aria-label="search.nav.applied.facets.removeOffice Name 4"><span class="glyphicon glyphicon-remove"></span></a>
-                    </li>
-                    <li>
-                      Office Name 4&nbsp;<a href="/ilgstorefront/en/search?q=%3A%3Atype%3A4" aria-label="search.nav.applied.facets.removeOffice Name 4"><span class="glyphicon glyphicon-remove"></span></a>
-                    </li>
-                    <li>
-                      Office Name 4&nbsp;<a href="/ilgstorefront/en/search?q=%3A%3Atype%3A4" aria-label="search.nav.applied.facets.removeOffice Name 4"><span class="glyphicon glyphicon-remove"></span></a>
-                    </li>
-                  </ul>
-              </div>
-            </div> -->
+          <!-- end changed place //////////////////////////////////////-->
 
-            <!-- main search-results filter container -->
-            <div class="search-results-filter-container">
-              <div class="search-results-filter-wrapper">
-               
-                <!-- filter status close -->
-                <div class="status-filter-close close-filter-container d-flex align-items-center justify-content-between" role ="button" tabindex="0"> 
-                  <h3>סטטוס</h3>
-                  <div class="filter-arrow"></div>
-                </div>
+          <!-- new //////////////////////////////////////////////////////////////////////////-->
 
-                <!-- filter status open -->
-                <div class="status-filter-wrapper d-none">
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox" class="icheck status-checkbox" id="filterCheckbox1">
-                      <span class="main-label updated">מעודכן</span>
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" class="icheck status-checkbox" id="filterCheckbox2">
-                      <span class="main-label new">חדש</span>
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" class="icheck status-checkbox" id="filterCheckbox3">
-                      <span class="main-label closed">סגור</span>
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" class="icheck status-checkbox" id="filterCheckbox4">
-                      <span class="main-label pre-committees-decision">טרום החלטת ועדה</span>
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" class="icheck status-checkbox" id="filterCheckbox5">
-                      <span class="main-label cancelled">מבוטל</span>
-                    </label>
-                  </div>
-                </div>
-
-                <!-- filter office close -->
-                <div class="office-filter-close close-filter-container d-flex align-items-center justify-content-between" role ="button" tabindex="0">
-                  <h3>משרד</h3>
-                  <div class="filter-arrow"></div>
-                </div>
-
-                <!-- filter office open -->
-                <div class="office-filter-wrapper d-none">
-                  <div class="checkbox">
-                    <label><input type="checkbox" class="icheck" id="main-checkbox">
-                      <span class="main-label">אפשרות-1</span>
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" class="icheck">
-                      <span class="main-label">אפשרות-2</span>
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" class="icheck">
-                      <span class="main-label">אפשרות-3</span>
-                    </label>
-                  </div>
-
-                  <!-- new /////////////////////////////////////////////////////////////////////////////////-->
-
-                  <div class="d-none more-options-container">
-                    <div class="checkbox">
-                      <label><input type="checkbox" class="icheck tags-checkbox">
-                        <span class="main-label">אפשרות-5</span>
-                      </label>
-                    </div>
-                    <div class="checkbox">
-                      <label><input type="checkbox" class="icheck tags-checkbox">
-                        <span class="main-label">
-                          דוגמא לטקסט לורם 
-                          איפסום ארוך מרוד של 
-                          יותר משתי שורות…
-                        </span>
-                      </label>
-                    </div>
-                    <div class="checkbox">
-                      <label><input type="checkbox" class="icheck tags-checkbox">
-                        <span class="main-label">
-                          אפשרות-7
-                        </span>
-                      </label>
-                    </div>
-                  </div>
-
-
-                  <button id="showMoreButton1" class="show-more-button">הצג עוד</button>
-
-                  <!-- end new /////////////////////////////////////////////////////////////////////////////////-->
-                </div>
-
-                <!-- filter update date close -->
-                <div class="date-filter-close close-filter-container d-flex align-items-center justify-content-between" role ="button" tabindex="0">
-                  <h3>תאריך עדכון</h3>
-                  <div class="filter-arrow"></div>
-                </div>
-
-                <!-- filter update date open -->
-                <div class="date-filter-wrapper d-none">
-                  <div class="input-group input-group-1 date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input1" id="datepicker1">
-                    <div class="input-wrapper">
-                      <input type="text" class="form-control datepicker" placeholder="מתאריך" data-date-format="mm/dd/yyyy" id="datepicker">
-                      <img src="../common/images/date-img.svg" class="date-picker-icon glyphicon glyphicon-calendar" alt="calendar-icon">
-                    </div>
-                  </div>
-                  <input type="hidden" id="dtp_input1" value="">
-                  <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input2" id="datepicker2">
-                    <div class="input-wrapper">
-                      <input type="text" class="form-control datepicker" placeholder="עד תאריך">
-                      <img src="../common/images/date-img.svg" class="date-picker-icon glyphicon glyphicon-calendar" alt="calendar-icon">
-                    </div>
-                  </div>
-                  <input type="hidden" id="dtp_input2" value=""> 
-
-                  <!-- new //////////////////////////////////////////////////////////////////////////-->
-
-                  <button onclick="" id="commitButton">החל</button>
-
-                  <!-- end new //////////////////////////////////////////////////////////////////////////-->
-                </div>
-
-                <!-- filter last date close -->
-                <div class="last-date-close close-filter-container d-flex align-items-center justify-content-between" role ="button" tabindex="0">
-                  <h3>מועד אחרון להגשה</h3>
-                  <div class="filter-arrow"></div>
-                </div>
-
-                <!-- filter last date open -->
-                <div class="last-date-filter-wrapper d-none">
-                  <div class="input-group input-group-1 date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input1" id="datepicker1">
-                    <div class="input-wrapper">
-                      <input type="text" class="form-control datepicker" placeholder="תאריך" data-date-format="mm/dd/yyyy" id="datepicker">
-                      <img src="../common/images/date-img.svg" class="date-picker-icon glyphicon glyphicon-calendar" alt="calendar-icon">
-                    </div>
-                  </div>
-                  <input type="hidden" id="dtp_input1" value="">
-                  <!-- new //////////////////////////////////////////////////////////////////////////-->
-
-                  <button onclick="" id="commitButton">החל</button>
-
-                  <!-- end new //////////////////////////////////////////////////////////////////////////-->
-                </div>
-
-                <!-- new //////////////////////////////////////////////////////////////////////////-->
-
-                <!-- filter currency close -->
-                <div class="currency-filter-close close-filter-container d-flex align-items-center justify-content-between" role ="button" tabindex="0">
-                  <h3>סכום</h3>
-                  <div class="filter-arrow"></div>
-                </div>
-
-                <!-- filter currency open -->
-                <div class="currency-filter-wrapper d-none">
-                  <div class="input-group currency-container">
-                    <div class="input-wrapper">
-                      <!-- <label for="currencyInput"></label>
-                      <input type="number" placeholder="מסכום" class="currency" id="currencyInput" /> -->
-                        <label for="currency-field"></label>
-                        <input type="text" name="currency-field" id="currencyField" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="מסכום">
-                    </div>
-                  </div>
-                  <div class="input-group currency-container">
-                    <div class="input-wrapper">
-                      <label for="currency-field"></label>
-                        <input type="text" name="currency-field" id="currencyField2" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="עד סכום">
-                    </div>
-                  </div>
-                  <button onclick="" id="commitButton">החל</button>
-                </div>
-
-                <!-- end new //////////////////////////////////////////////////////////////////////////-->
-
-                <!-- filter tags close -->
-                <div class="tags-filter-close close-filter-container d-flex align-items-center justify-content-between" role ="button" tabindex="0">
-                  <h3>תגיות</h3>
-                  <div class="filter-arrow"></div>
-                </div>
-
-                <!-- filter tags open -->
-                <div class="tags-filter-wrapper d-none">
-
-                  <!-- changes /////////////////////////////////////////////////////////////////////////////////-->
-
-                  <div class="checkbox">
-                    <label><input type="checkbox" class="icheck tags-checkbox">
-                      <span class="main-label">אפשרות-1</span>
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" class="icheck tags-checkbox">
-                      <span class="main-label">
-                        דוגמא לטקסט לורם 
-                        איפסום ארוך מרוד של 
-                        יותר משתי שורות…
-                      </span>
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" class="icheck tags-checkbox">
-                      <span class="main-label">
-                        אפשרות-3
-                      </span>
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" class="icheck tags-checkbox">
-                      <span class="main-label long-text-checkbox">
-                        דוגמא לטקסט לורם 
-                        איפסום ארוך מרוד של 
-                        יותר משתי שורות…
-                      </span>
-                    </label>
-                  </div>
-
-                  <!-- new /////////////////////////////////////////////////////////////////////////////////-->
-
-                  <div class="d-none more-options-container">
-                    <div class="checkbox">
-                      <label><input type="checkbox" class="icheck tags-checkbox">
-                        <span class="main-label">אפשרות-5</span>
-                      </label>
-                    </div>
-                    <div class="checkbox">
-                      <label><input type="checkbox" class="icheck tags-checkbox">
-                        <span class="main-label">
-                          דוגמא לטקסט לורם 
-                          איפסום ארוך מרוד של 
-                          יותר משתי שורות…
-                        </span>
-                      </label>
-                    </div>
-                    <div class="checkbox">
-                      <label><input type="checkbox" class="icheck tags-checkbox">
-                        <span class="main-label">
-                          אפשרות-7
-                        </span>
-                      </label>
-                    </div>
-                  </div>
-
-                  <button id="showMoreButton2" class="show-more-button">הצג עוד</button>
-
-                  <!-- end new/////////////////////////////////////////////////////////////////////////////////-->
-
-                  <!-- end changes/////////////////////////////////////////////////////////////////////////////////-->
-                </div>
-              </div>
-            </div>
-
-            <!-- exemption search results filter container -->
-            <!-- move d-none to main search-results filter container to show in search results exemption -->
-            <div class="search-results-filter-container search-results-exemption-filter-container d-none">
-              <div class="search-results-filter-wrapper">
-
-                <!-- filter status close -->
-                <div class="status-filter-close close-filter-container d-flex align-items-center justify-content-between" role ="button" tabindex="0">
-                  <h3>סטטוס</h3>
-                  <div class="filter-arrow"></div>
-                </div>
-
-                <!-- filter status open -->
-                <div class="status-filter-wrapper d-none">
-                  <div class="checkbox">
-                    <label><input type="checkbox" class="icheck" id="main-checkbox">
-                      <span class="main-label updated">מעודכן</span>
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" class="icheck">
-                      <span class="main-label new">חדש</span>
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" class="icheck">
-                      <span class="main-label closed">סגור</span>
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" class="icheck">
-                      <span class="main-label pre-committees-decision">טרום החלטת ועדה</span>
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" class="icheck">
-                      <span class="main-label cancelled">מבוטל</span>
-                    </label>
-                  </div>
-                </div>
-
-                <!-- filter office close -->
-                <div class="office-filter-close close-filter-container d-flex align-items-center justify-content-between" role ="button" tabindex="0">
-                  <h3>משרד</h3>
-                  <div class="filter-arrow"></div>
-                </div>
-
-                <!-- filter office open -->
-                <div class="office-filter-wrapper d-none">
-                  <div class="checkbox">
-                    <label><input type="checkbox" class="icheck" id="main-checkbox">
-                      <span class="main-label">אפשרות-1</span>
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" class="icheck">
-                      <span class="main-label">אפשרות-2</span>
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" class="icheck">
-                      <span class="main-label">אפשרות-3</span>
-                    </label>
-                  </div>
-                </div>
-
-                <!-- filter last date close -->
-                <div class="last-date-close close-filter-container d-flex align-items-center justify-content-between" role ="button" tabindex="0">
-                  <h3>מועד אחרון להגשה</h3>
-                  <div class="filter-arrow"></div>
-                </div>
-
-                <!-- filter last date open -->
-                <div class="last-date-filter-wrapper d-none">
-                  <div class="input-group input-group-1 date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input1" id="datepicker1">
-                    <div class="input-wrapper">
-                      <input type="text" class="form-control datepicker" placeholder="תאריך" data-date-format="mm/dd/yyyy" id="datepicker">
-                      <img src="../common/images/date-img.svg" class="date-picker-icon glyphicon glyphicon-calendar" alt="calendar-icon">
-                    </div>
-                  </div>
-                  <input type="hidden" id="dtp_input1" value="">
-                  <!-- <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input2" id="datepicker2">
-                    <div class="input-wrapper">
-                      <input type="text" class="form-control datepicker" placeholder="עד תאריך">
-                      <img src="../common/images/date-img.svg" class="date-picker-icon glyphicon glyphicon-calendar" alt="calendar-icon">
-                    </div>
-                  </div>
-                  <input type="hidden" id="dtp_input2" value="">  -->
-                </div>
-
-                <!-- filter update date close -->
-                <div class="date-filter-close close-filter-container d-flex align-items-center justify-content-between" role ="button" tabindex="0">
-                  <h3>תאריך עדכון</h3>
-                  <div class="filter-arrow"></div>
-                </div>
-
-                <!-- filter update date open -->
-                <div class="date-filter-wrapper d-none">
-                  <div class="input-group input-group-1 date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input1" id="datepicker1">
-                    <div class="input-wrapper">
-                      <input type="text" class="form-control datepicker" placeholder="מתאריך" data-date-format="mm/dd/yyyy" id="datepicker">
-                      <img src="../common/images/date-img.svg" class="date-picker-icon glyphicon glyphicon-calendar" alt="calendar-icon">
-                    </div>
-                  </div>
-                  <input type="hidden" id="dtp_input1" value="">
-                  <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input2" id="datepicker2">
-                    <div class="input-wrapper">
-                      <input type="text" class="form-control datepicker" placeholder="עד תאריך">
-                      <img src="../common/images/date-img.svg" class="date-picker-icon glyphicon glyphicon-calendar" alt="calendar-icon">
-                    </div>
-                  </div>
-                  <input type="hidden" id="dtp_input2" value=""> 
-                </div>
-
-                <!-- filter tags close -->
-                <div class="tags-filter-close close-filter-container d-flex align-items-center justify-content-between" role ="button" tabindex="0">
-                  <h3>תגיות</h3>
-                  <div class="filter-arrow"></div>
-                </div>
-
-                <!-- filter tags open -->
-                <div class="tags-filter-wrapper d-none">
-                  <div class="tags-wrapper d-flex flex-column align-items-center"> 
-                    <a href="#" class="tag-wrapper d-flex align-items-center justify-content-center"><span>מחשוב ותקשורת</span></a>
-                    <a href="#" class="tag-wrapper d-flex align-items-center justify-content-center"><span>מדפסות</span></a>
-                  </div>
-                </div>
+          <div class="facet js-facet custom-container d-flex w-100">
+            <div class="all-filters-wrapper d-flex">
+              <ul class="filters-list d-flex flex-wrap">
+                <!-- <li class="filters-list-item d-none">
+                  מעודכן
+                  <button class="deselect-filter-btn"></button>
+                </li> -->
+                <!-- <li class="filters-list-item">
+                  משרד הפנים
+                  <button class="deselect-filter-btn"></button>
+                </li>
+                <li class="filters-list-item">
+                  סכום מ-6,000 עד 600,000 ₪
+                  <button class="deselect-filter-btn"></button>
+                </li>
+                <li class="filters-list-item">
+                  תאריך עידכון מ-20/11/2018 עד 25/11/2018
+                  <button class="deselect-filter-btn"></button>
+                </li>
+                <li class="filters-list-item">
+                  לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. 
+                  קלאצי סחטיר בלובק. תצטנפל בלינדו למרקל אס לכימפו, דול, צוט ומעיוט  לפתיעם ברשג  ולתיעם גודישי קוון
+                <button class="deselect-filter-btn"></button>
+                </li>
+                <li class="filters-list-item">
+                  מדפסות
+                  <button class="deselect-filter-btn"></button>
+                </li> -->
+              </ul>
+              <div class="deselect-all-filters-wrapper align-items-center justify-content-center">
+                <div>בטל את כל הסינונים</div>
+                <button class="deselect-all-filters-btn"></button>
               </div>
             </div>
           </div>
 
-          <!-- search results content -->
-          <div class="search-results-content-with-results">
+          <!-- end new //////////////////////////////////////////////////////////////////////////-->
 
-            <!-- search result -->
-            <a class="result-a-wrapper" href="../bids/index.html" tabindex="0">
+          <div class="search-results-body-wrapper custom-container d-lg-flex justify-content-end w-100">
+
+            <div class="filters-wrapper d-none d-lg-block">
+              <!-- <div class="facet js-facet">
+                <div class="facet__name js-facet-name">
+                    <span class="glyphicon facet__arrow"></span>
+                    <h3><span tabindex="0">Applied Facets</span></h3>
+                </div>
+                <div class="facet__values js-facet-values">
+                    <ul class="facet__list">
+                      <li>
+                        פילטר 1&nbsp;<a href="/ilgstorefront/en/search?q=%3A%3Atype%3A4" aria-label="search.nav.applied.facets.removeOffice Name 4"><span class="glyphicon glyphicon-remove"></span></a>
+                      </li>
+                      <li>
+                        פילטר 1&nbsp;<a href="/ilgstorefront/en/search?q=%3A%3Atype%3A4" aria-label="search.nav.applied.facets.removeOffice Name 4"><span class="glyphicon glyphicon-remove"></span></a>
+                      </li>
+                      <li>
+                        Office Name 4&nbsp;<a href="/ilgstorefront/en/search?q=%3A%3Atype%3A4" aria-label="search.nav.applied.facets.removeOffice Name 4"><span class="glyphicon glyphicon-remove"></span></a>
+                      </li>
+                      <li>
+                        Office Name 4&nbsp;<a href="/ilgstorefront/en/search?q=%3A%3Atype%3A4" aria-label="search.nav.applied.facets.removeOffice Name 4"><span class="glyphicon glyphicon-remove"></span></a>
+                      </li>
+                    </ul>
+                </div>
+              </div> -->
+
+              <!-- main search-results filter container -->
+              <div class="search-results-filter-container">
+                <div class="search-results-filter-wrapper">
+                 
+                  <!-- filter status close -->
+                  <div class="status-filter-close close-filter-container d-flex align-items-center justify-content-between" role ="button" tabindex="0"> 
+                    <h3>סטטוס</h3>
+                    <div class="filter-arrow"></div>
+                  </div>
+
+                  <!-- filter status open -->
+                  <div class="status-filter-wrapper d-none">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" class="icheck status-checkbox" id="filterCheckbox1">
+                        <span class="main-label updated">מעודכן</span>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" class="icheck status-checkbox" id="filterCheckbox2">
+                        <span class="main-label new">חדש</span>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" class="icheck status-checkbox" id="filterCheckbox3">
+                        <span class="main-label closed">סגור</span>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" class="icheck status-checkbox" id="filterCheckbox4">
+                        <span class="main-label pre-committees-decision">טרום החלטת ועדה</span>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" class="icheck status-checkbox" id="filterCheckbox5">
+                        <span class="main-label cancelled">מבוטל</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <!-- filter office close -->
+                  <div class="office-filter-close close-filter-container d-flex align-items-center justify-content-between" role ="button" tabindex="0">
+                    <h3>משרד</h3>
+                    <div class="filter-arrow"></div>
+                  </div>
+
+                  <!-- filter office open -->
+                  <div class="office-filter-wrapper d-none">
+                    <div class="checkbox">
+                      <label><input type="checkbox" class="icheck" id="main-checkbox">
+                        <span class="main-label">אפשרות-1</span>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" class="icheck">
+                        <span class="main-label">אפשרות-2</span>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" class="icheck">
+                        <span class="main-label">אפשרות-3</span>
+                      </label>
+                    </div>
+
+                    <!-- new /////////////////////////////////////////////////////////////////////////////////-->
+
+                    <div class="d-none more-options-container">
+                      <div class="checkbox">
+                        <label><input type="checkbox" class="icheck tags-checkbox">
+                          <span class="main-label">אפשרות-5</span>
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" class="icheck tags-checkbox">
+                          <span class="main-label">
+                            דוגמא לטקסט לורם 
+                            איפסום ארוך מרוד של 
+                            יותר משתי שורות…
+                          </span>
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" class="icheck tags-checkbox">
+                          <span class="main-label">
+                            אפשרות-7
+                          </span>
+                        </label>
+                      </div>
+                    </div>
+
+
+                    <button id="showMoreButton1" class="show-more-button">הצג עוד</button>
+
+                    <!-- end new /////////////////////////////////////////////////////////////////////////////////-->
+                  </div>
+
+                  <!-- filter update date close -->
+                  <div class="date-filter-close close-filter-container d-flex align-items-center justify-content-between" role ="button" tabindex="0">
+                    <h3>תאריך עדכון</h3>
+                    <div class="filter-arrow"></div>
+                  </div>
+
+                  <!-- filter update date open -->
+                  <div class="date-filter-wrapper d-none">
+                    <div class="input-group input-group-1 date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input1" id="datepicker1">
+                      <div class="input-wrapper">
+                        <input type="text" class="form-control datepicker" placeholder="מתאריך" data-date-format="mm/dd/yyyy" id="datepicker">
+                        <img src="../common/images/date-img.svg" class="date-picker-icon glyphicon glyphicon-calendar" alt="calendar-icon">
+                      </div>
+                    </div>
+                    <input type="hidden" id="dtp_input1" value="">
+                    <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input2" id="datepicker2">
+                      <div class="input-wrapper">
+                        <input type="text" class="form-control datepicker" placeholder="עד תאריך">
+                        <img src="../common/images/date-img.svg" class="date-picker-icon glyphicon glyphicon-calendar" alt="calendar-icon">
+                      </div>
+                    </div>
+                    <input type="hidden" id="dtp_input2" value=""> 
+
+                    <!-- new //////////////////////////////////////////////////////////////////////////-->
+
+                    <button onclick="" id="commitButton">החל</button>
+
+                    <!-- end new //////////////////////////////////////////////////////////////////////////-->
+                  </div>
+
+                  <!-- filter last date close -->
+                  <div class="last-date-close close-filter-container d-flex align-items-center justify-content-between" role ="button" tabindex="0">
+                    <h3>מועד אחרון להגשה</h3>
+                    <div class="filter-arrow"></div>
+                  </div>
+
+                  <!-- filter last date open -->
+                  <div class="last-date-filter-wrapper d-none">
+                    <div class="input-group input-group-1 date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input1" id="datepicker1">
+                      <div class="input-wrapper">
+                        <input type="text" class="form-control datepicker" placeholder="תאריך" data-date-format="mm/dd/yyyy" id="datepicker">
+                        <img src="../common/images/date-img.svg" class="date-picker-icon glyphicon glyphicon-calendar" alt="calendar-icon">
+                      </div>
+                    </div>
+                    <input type="hidden" id="dtp_input1" value="">
+
+                    <!-- new //////////////////////////////////////////////////////////////////////////-->
+
+                    <button onclick="" id="commitButton">החל</button>
+
+                    <!-- end new //////////////////////////////////////////////////////////////////////////-->
+                  </div>
+
+                  <!-- new //////////////////////////////////////////////////////////////////////////-->
+
+                  <!-- filter currency close -->
+                  <div class="currency-filter-close close-filter-container d-flex align-items-center justify-content-between" role ="button" tabindex="0">
+                    <h3>סכום</h3>
+                    <div class="filter-arrow"></div>
+                  </div>
+
+                  <!-- filter currency open -->
+                  <div class="currency-filter-wrapper d-none">
+                    <div class="input-group currency-container">
+                      <div class="input-wrapper">
+                        <!-- <label for="currencyInput"></label>
+                        <input type="number" placeholder="מסכום" class="currency" id="currencyInput" /> -->
+                          <label for="currency-field"></label>
+                          <input type="text" name="currency-field" id="currencyField" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="מסכום">
+                      </div>
+                    </div>
+                    <div class="input-group currency-container">
+                      <div class="input-wrapper">
+                        <label for="currency-field"></label>
+                          <input type="text" name="currency-field" id="currencyField2" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="עד סכום">
+                      </div>
+                    </div>
+                    <button onclick="" id="commitButton">החל</button>
+                  </div>
+
+                  <!-- end new //////////////////////////////////////////////////////////////////////////-->
+
+                  <!-- filter tags close -->
+                  <div class="tags-filter-close close-filter-container d-flex align-items-center justify-content-between" role ="button" tabindex="0">
+                    <h3>תגיות</h3>
+                    <div class="filter-arrow"></div>
+                  </div>
+
+                  <!-- filter tags open -->
+                  <div class="tags-filter-wrapper d-none">
+
+                    <!-- changes /////////////////////////////////////////////////////////////////////////////////-->
+
+                    <div class="checkbox">
+                      <label><input type="checkbox" class="icheck tags-checkbox">
+                        <span class="main-label">אפשרות-1</span>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" class="icheck tags-checkbox">
+                        <span class="main-label">
+                          דוגמא לטקסט לורם 
+                          איפסום ארוך מרוד של 
+                          יותר משתי שורות…
+                        </span>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" class="icheck tags-checkbox">
+                        <span class="main-label">
+                          אפשרות-3
+                        </span>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" class="icheck tags-checkbox">
+                        <span class="main-label long-text-checkbox">
+                          דוגמא לטקסט לורם 
+                          איפסום ארוך מרוד של 
+                          יותר משתי שורות…
+                        </span>
+                      </label>
+                    </div>
+
+                    <!-- new /////////////////////////////////////////////////////////////////////////////////-->
+
+                    <div class="d-none more-options-container">
+                      <div class="checkbox">
+                        <label><input type="checkbox" class="icheck tags-checkbox">
+                          <span class="main-label">אפשרות-5</span>
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" class="icheck tags-checkbox">
+                          <span class="main-label">
+                            דוגמא לטקסט לורם 
+                            איפסום ארוך מרוד של 
+                            יותר משתי שורות…
+                          </span>
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" class="icheck tags-checkbox">
+                          <span class="main-label">
+                            אפשרות-7
+                          </span>
+                        </label>
+                      </div>
+                    </div>
+
+                    <button id="showMoreButton2" class="show-more-button">הצג עוד</button>
+
+                    <!-- end new/////////////////////////////////////////////////////////////////////////////////-->
+
+                    <!-- end changes/////////////////////////////////////////////////////////////////////////////////-->
+                  </div>
+                </div>
+              </div>
+
+              <!-- exemption search results filter container -->
+              <!-- move d-none to main search-results filter container to show in search results exemption -->
+              <div class="search-results-filter-container search-results-exemption-filter-container d-none">
+                <div class="search-results-filter-wrapper">
+
+                  <!-- filter status close -->
+                  <div class="status-filter-close close-filter-container d-flex align-items-center justify-content-between" role ="button" tabindex="0">
+                    <h3>סטטוס</h3>
+                    <div class="filter-arrow"></div>
+                  </div>
+
+                  <!-- filter status open -->
+                  <div class="status-filter-wrapper d-none">
+                    <div class="checkbox">
+                      <label><input type="checkbox" class="icheck" id="main-checkbox">
+                        <span class="main-label updated">מעודכן</span>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" class="icheck">
+                        <span class="main-label new">חדש</span>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" class="icheck">
+                        <span class="main-label closed">סגור</span>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" class="icheck">
+                        <span class="main-label pre-committees-decision">טרום החלטת ועדה</span>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" class="icheck">
+                        <span class="main-label cancelled">מבוטל</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <!-- filter office close -->
+                  <div class="office-filter-close close-filter-container d-flex align-items-center justify-content-between" role ="button" tabindex="0">
+                    <h3>משרד</h3>
+                    <div class="filter-arrow"></div>
+                  </div>
+
+                  <!-- filter office open -->
+                  <div class="office-filter-wrapper d-none">
+                    <div class="checkbox">
+                      <label><input type="checkbox" class="icheck" id="main-checkbox">
+                        <span class="main-label">אפשרות-1</span>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" class="icheck">
+                        <span class="main-label">אפשרות-2</span>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" class="icheck">
+                        <span class="main-label">אפשרות-3</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <!-- filter last date close -->
+                  <div class="last-date-close close-filter-container d-flex align-items-center justify-content-between" role ="button" tabindex="0">
+                    <h3>מועד אחרון להגשה</h3>
+                    <div class="filter-arrow"></div>
+                  </div>
+
+                  <!-- filter last date open -->
+                  <div class="last-date-filter-wrapper d-none">
+                    <div class="input-group input-group-1 date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input1" id="datepicker1">
+                      <div class="input-wrapper">
+                        <input type="text" class="form-control datepicker" placeholder="תאריך" data-date-format="mm/dd/yyyy" id="datepicker">
+                        <img src="../common/images/date-img.svg" class="date-picker-icon glyphicon glyphicon-calendar" alt="calendar-icon">
+                      </div>
+                    </div>
+                    <input type="hidden" id="dtp_input1" value="">
+                    <!-- <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input2" id="datepicker2">
+                      <div class="input-wrapper">
+                        <input type="text" class="form-control datepicker" placeholder="עד תאריך">
+                        <img src="../common/images/date-img.svg" class="date-picker-icon glyphicon glyphicon-calendar" alt="calendar-icon">
+                      </div>
+                    </div>
+                    <input type="hidden" id="dtp_input2" value="">  -->
+                  </div>
+
+                  <!-- filter update date close -->
+                  <div class="date-filter-close close-filter-container d-flex align-items-center justify-content-between" role ="button" tabindex="0">
+                    <h3>תאריך עדכון</h3>
+                    <div class="filter-arrow"></div>
+                  </div>
+
+                  <!-- filter update date open -->
+                  <div class="date-filter-wrapper d-none">
+                    <div class="input-group input-group-1 date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input1" id="datepicker1">
+                      <div class="input-wrapper">
+                        <input type="text" class="form-control datepicker" placeholder="מתאריך" data-date-format="mm/dd/yyyy" id="datepicker">
+                        <img src="../common/images/date-img.svg" class="date-picker-icon glyphicon glyphicon-calendar" alt="calendar-icon">
+                      </div>
+                    </div>
+                    <input type="hidden" id="dtp_input1" value="">
+                    <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input2" id="datepicker2">
+                      <div class="input-wrapper">
+                        <input type="text" class="form-control datepicker" placeholder="עד תאריך">
+                        <img src="../common/images/date-img.svg" class="date-picker-icon glyphicon glyphicon-calendar" alt="calendar-icon">
+                      </div>
+                    </div>
+                    <input type="hidden" id="dtp_input2" value=""> 
+                  </div>
+
+                  <!-- filter tags close -->
+                  <div class="tags-filter-close close-filter-container d-flex align-items-center justify-content-between" role ="button" tabindex="0">
+                    <h3>תגיות</h3>
+                    <div class="filter-arrow"></div>
+                  </div>
+
+                  <!-- filter tags open -->
+                  <div class="tags-filter-wrapper d-none">
+                    <div class="tags-wrapper d-flex flex-column align-items-center"> 
+                      <a href="#" class="tag-wrapper d-flex align-items-center justify-content-center"><span>מחשוב ותקשורת</span></a>
+                      <a href="#" class="tag-wrapper d-flex align-items-center justify-content-center"><span>מדפסות</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- search results content -->
+            <div class="search-results-content-with-results">
+
+              <!-- search result -->
               <div class="result-container">
                 <div class="right-line"></div>
                 <div class="content-wrapper d-flex justify-content-between align-items-start h-100">
@@ -524,9 +534,11 @@
                     <img src="../common/images/health-department-logo.svg" class="health-department-logo" alt="logo">
                     <div>
                       <h3 class="d-lg-none search-result-sub-head">מכרזים</h3>
-                      <h2>אספקת מחשבים עבור משרדי ממשלה</h2>
 
-
+                      <!-- result link -->
+                      <a class="result-link" href="../bids/index.html" tabindex="0">
+                        <h2>אספקת מחשבים עבור משרדי ממשלה</h2>
+                      </a>
                       <div class="details-wrapper">
                         <!-- name -->
                         <span>מפרסם: </span><span class="font-weight-normal">משרד האוצר- מנהל הרכש הממשלתי</span><br>
@@ -573,10 +585,9 @@
                   </div>
                 </div>
               </div>
-            </a>
+              
 
-            <!-- search result -->
-            <a class="result-a-wrapper" href="../bids/index.html" tabindex="0">
+              <!-- search result -->
               <div class="result-container">
                 <div class="right-line"></div>
                 <div class="content-wrapper d-flex justify-content-between align-items-start h-100">
@@ -586,8 +597,11 @@
                     <img src="../common/images/health-department-logo.svg" class="health-department-logo" alt="logo">
                     <div>
                       <h3 class="d-lg-none search-result-sub-head">מכרזים</h3>
-                      <h2>אספקת מחשבים עבור משרדי ממשלה</h2>
 
+                      <!-- result link -->
+                      <a class="result-link" href="../bids/index.html" tabindex="0">
+                        <h2>אספקת מחשבים עבור משרדי ממשלה</h2>
+                      </a>
 
                       <div class="details-wrapper">
                         <!-- name -->
@@ -635,11 +649,10 @@
                   </div>
                 </div>
               </div>
-            </a>
 
-            <!-- search result -->
-            <a class="result-a-wrapper" href="../bids/index.html" tabindex="0">
-              <div class="result-container">
+              <!-- search result -->
+              <!-- add class "exemption-result" to make exemption orenge -->
+              <div class="result-container exemption-result">
                 <div class="right-line"></div>
                 <div class="content-wrapper d-flex justify-content-between align-items-start h-100">
 
@@ -648,8 +661,11 @@
                     <img src="../common/images/health-department-logo.svg" class="health-department-logo" alt="logo">
                     <div>
                       <h3 class="d-lg-none search-result-sub-head">פטור</h3>
-                      <h2>אספקת מחשבים עבור משרדי ממשלה</h2>
 
+                      <!-- result link -->
+                      <a class="result-link" href="../bids/index.html" tabindex="0">
+                        <h2>אספקת מחשבים עבור משרדי ממשלה</h2>
+                      </a>
 
                       <div class="details-wrapper">
                         <!-- name -->
@@ -697,25 +713,26 @@
                   </div>
                 </div>
               </div>
-            </a>
+            </div>
+
+            <!-- search results no results 
+            <!-- remove d-none to search results content if no results 
+            < div class="search-results-content-no-results d-none">
+                <div class="no-results-wrapper">
+                  לא נמצאו תוצאות חיפוש
+                  נסה ערך דומה
+                  <img src="../common/images/no-results-icon.svg" class="no-results-icon" alt="no-results-icon">
+                </div>
+            </div>-->
           </div>
+        </section>
 
-          <!-- search results no results 
-          <!-- remove d-none to search results content if no results 
-          < div class="search-results-content-no-results d-none">
-              <div class="no-results-wrapper">
-                לא נמצאו תוצאות חיפוש
-                נסה ערך דומה
-                <img src="../common/images/no-results-icon.svg" class="no-results-icon" alt="no-results-icon">
-              </div>
-          </div>-->
-        </div>
-      </section>
-
-      <!-- footer -->
-      <footer class="search-results-footer d-flex justify-content-center">
-          ${require("../common/footer/footer.html")}
-      </footer>
+        <!-- footer -->
+        <footer class="search-results-footer d-flex justify-content-center">
+            ${require("../common/footer/footer.html")}
+        </footer>
+      </div>
+      
     </div>
     ${require("../common/common.html")}
     <script type="text/javascript" src='/common/common.min.js'></script>
