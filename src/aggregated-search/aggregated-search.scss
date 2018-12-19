@@ -258,20 +258,8 @@
 				}
 			}	
 
-			.result-a-wrapper {
-				margin: 0 0 30px 0;
-				display: block;
-
-				@media (min-width: $screen-lg-min) {
-					margin: 0 0 50px 0;
-				}
-
-				&:last-child {
-					margin: 0;
-				}
-			}
-
 			.result-container {
+				margin: 0 0 30px 0;
 				height: auto;
 				border-radius: 4px;
 				background-color: #ffffff;
@@ -281,6 +269,11 @@
 
 				@media (min-width: $screen-lg-min) {
 					min-height: 265px;
+					margin: 0 0 50px 0;
+				}
+
+				&:last-child {
+					margin: 0;
 				}
 
 				.right-line {
@@ -314,6 +307,10 @@
 					}
 				}
 				
+				h3 {
+					color: $bids-dark-blue;
+				}
+
 				.right-line {
 					background-color: $bids-dark-blue;
 				}
