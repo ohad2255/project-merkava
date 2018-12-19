@@ -141,7 +141,9 @@
 		.facet {
 			z-index: 103;
     		background-color: white;
-    		margin-top: 105px;
+    		margin-top: 96px;
+    		width: 100%;
+    		//padding-bottom: 15px;
     		//padding: 0 20px;
 
 			@media (min-width: $screen-lg-min) {
@@ -150,12 +152,22 @@
 				background-color: transparent;
 			}
 
+			.all-filters-wrapper {
+				width: 100%;
+			}
+
 			h3 {
 				
 			}	
 
 			ul {
 			   max-width: 906px; 
+			   width: 100%;
+			   //padding-bottom: 15px;
+
+			   @media (min-width: $screen-lg-min) {
+					padding-bottom: 0;
+				}
 			}
 
 			li {
@@ -195,9 +207,16 @@
 				letter-spacing: 0.4px;
 				white-space: nowrap;
 				color: $main-white;
-				padding: 0 14px 0 9px;
-				margin: 0 141px 0 0;
-				display: none;
+				padding: 0 10px;
+				margin: 0;
+				display: flex;
+				max-width: 200px;
+				margin: 10px 0 25px 0;
+
+				@media (min-width: $screen-lg-min) {
+					margin: 0 141px 0 0;
+					padding: 0 14px 0 9px;
+				}
 			}
 
 			.deselect-filter-btn, .deselect-all-filters-btn {
@@ -217,6 +236,19 @@
 				color: $main-white;
 				margin: 0 13px 0 0;
 			}
+		}
+
+		.padding-top-d {
+			margin-top: 90px!important;
+			//padding-top: 15px;
+
+			@media (min-width: $screen-lg-min) {
+				margin: 0;
+			}
+		}
+
+		.padding-top-facet .padding-top-facet-filters-list {
+			padding-top: 15px;
 		}
 
 		.search-results-body-wrapper {
@@ -273,6 +305,10 @@
 				}
 			}
 
+			// .filters-wrapper.d-none {
+			// 	padding: 0;
+			// }
+
 			#commitButton {
 				width: 90px;
 			    height: 32px;
@@ -310,10 +346,12 @@
 
 				.search-results-filter-wrapper {
 					//margin-top: 101px;
+					padding-top: 5px;
 
 					@media (min-width: $screen-lg-min) {
 						max-width: 270px;
 						margin-top: 0;
+						padding-top: 0;
 					}
 				}
 
@@ -339,7 +377,16 @@
 					}
 
 					&:first-child {
-						border: 0;
+						border: solid #dddddd;
+						border-width: 1px 0 0 0;
+
+						@media (min-width: $screen-lg-min) {
+							border: none;
+						}
+					}
+
+					&:last-child {
+						border-bottom: 0;
 					}
 
 					&:focus {
@@ -386,10 +433,7 @@
 					}
 				}
 
-				.tags-filter-close {
-					border: solid #dddddd;
-					border-width: 1px 0;
-				}
+				
 
 				.tags-wrapper {
 					padding-bottom: 25px;
@@ -852,7 +896,7 @@
 		}
 
 		.filter-mobile-container {
-				height: 106px;
+				height: 95px;
 				width: 100%;
 				background-color: $main-white;
 				position: absolute;
@@ -867,10 +911,11 @@
 					}
 				}
 
-				span {
+
+				.mobile-filter-arrow {
 					width: 8px;
 					height: 8px;
-					border: solid #4e5665;
+					border: solid $search-results-mobile-arrow-color;
 					border-width: 0 2px 2px 0;	
 				    display: inline-block;
 				    transform: rotate(45deg);
@@ -892,6 +937,10 @@
 					line-height: 1.38;
 					letter-spacing: normal;
 					color: $cobalt;
+				}
+
+				.mobile-filter-arrows-wrapper.rotate {
+					transform: rotate(180deg);
 				}
 			}
 

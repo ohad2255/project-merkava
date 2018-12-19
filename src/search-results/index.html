@@ -72,8 +72,8 @@
 
           <!-- new //////////////////////////////////////////////////////////////////////////-->
 
-          <div class="facet js-facet custom-container d-flex w-100">
-            <div class="all-filters-wrapper d-flex">
+          <div class="facet js-facet custom-container d-flex">
+            <div class="all-filters-wrapper d-flex flex-column flex-lg-row">
               <ul class="filters-list d-flex flex-wrap">
                 <!-- <li class="filters-list-item d-none">
                   מעודכן
@@ -101,7 +101,10 @@
                   <button class="deselect-filter-btn"></button>
                 </li> -->
               </ul>
-              <div class="deselect-all-filters-wrapper align-items-center justify-content-center">
+
+              <!-- deselect all button wrapper -->
+              <!-- remove d-none to show (if there is ANY checked filters!) -->
+              <div class="deselect-all-filters-wrapper align-items-center justify-content-center d-none">
                 <div>בטל את כל הסינונים</div>
                 <button class="deselect-all-filters-btn"></button>
               </div>
@@ -143,11 +146,11 @@
                   <!-- filter status close -->
                   <div class="status-filter-close close-filter-container d-flex align-items-center justify-content-between" role ="button" tabindex="0"> 
                     <h3>סטטוס</h3>
-                    <div class="filter-arrow"></div>
+                    <span class="filter-arrow rotate"></span>
                   </div>
 
                   <!-- filter status open -->
-                  <div class="status-filter-wrapper d-none">
+                  <div class="status-filter-wrapper">
                     <div class="checkbox">
                       <label>
                         <input type="checkbox" class="icheck status-checkbox" id="filterCheckbox1">
@@ -179,11 +182,11 @@
                   <!-- filter office close -->
                   <div class="office-filter-close close-filter-container d-flex align-items-center justify-content-between" role ="button" tabindex="0">
                     <h3>משרד</h3>
-                    <div class="filter-arrow"></div>
+                    <span class="filter-arrow rotate"></span>
                   </div>
 
                   <!-- filter office open -->
-                  <div class="office-filter-wrapper d-none">
+                  <div class="office-filter-wrapper">
                     <div class="checkbox">
                       <label><input type="checkbox" class="icheck" id="main-checkbox">
                         <span class="main-label">אפשרות-1</span>
@@ -235,11 +238,11 @@
                   <!-- filter update date close -->
                   <div class="date-filter-close close-filter-container d-flex align-items-center justify-content-between" role ="button" tabindex="0">
                     <h3>תאריך עדכון</h3>
-                    <div class="filter-arrow"></div>
+                    <span class="filter-arrow rotate"></span>
                   </div>
 
                   <!-- filter update date open -->
-                  <div class="date-filter-wrapper d-none">
+                  <div class="date-filter-wrapper">
                     <div class="input-group input-group-1 date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input1" id="datepicker1">
                       <div class="input-wrapper">
                         <input type="text" class="form-control datepicker" placeholder="מתאריך" data-date-format="mm/dd/yyyy" id="datepicker">
@@ -265,11 +268,11 @@
                   <!-- filter last date close -->
                   <div class="last-date-close close-filter-container d-flex align-items-center justify-content-between" role ="button" tabindex="0">
                     <h3>מועד אחרון להגשה</h3>
-                    <div class="filter-arrow"></div>
+                    <span class="filter-arrow rotate"></span>
                   </div>
 
                   <!-- filter last date open -->
-                  <div class="last-date-filter-wrapper d-none">
+                  <div class="last-date-filter-wrapper">
                     <div class="input-group input-group-1 date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input1" id="datepicker1">
                       <div class="input-wrapper">
                         <input type="text" class="form-control datepicker" placeholder="תאריך" data-date-format="mm/dd/yyyy" id="datepicker">
@@ -290,11 +293,11 @@
                   <!-- filter currency close -->
                   <div class="currency-filter-close close-filter-container d-flex align-items-center justify-content-between" role ="button" tabindex="0">
                     <h3>סכום</h3>
-                    <div class="filter-arrow"></div>
+                    <span class="filter-arrow rotate"></span>
                   </div>
 
                   <!-- filter currency open -->
-                  <div class="currency-filter-wrapper d-none">
+                  <div class="currency-filter-wrapper">
                     <div class="input-group currency-container">
                       <div class="input-wrapper">
                         <!-- <label for="currencyInput"></label>
@@ -317,11 +320,11 @@
                   <!-- filter tags close -->
                   <div class="tags-filter-close close-filter-container d-flex align-items-center justify-content-between" role ="button" tabindex="0">
                     <h3>תגיות</h3>
-                    <div class="filter-arrow"></div>
+                    <span class="filter-arrow rotate"></span>
                   </div>
 
                   <!-- filter tags open -->
-                  <div class="tags-filter-wrapper d-none">
+                  <div class="tags-filter-wrapper">
 
                     <!-- changes /////////////////////////////////////////////////////////////////////////////////-->
 
@@ -399,7 +402,7 @@
                   <!-- filter status close -->
                   <div class="status-filter-close close-filter-container d-flex align-items-center justify-content-between" role ="button" tabindex="0">
                     <h3>סטטוס</h3>
-                    <div class="filter-arrow"></div>
+                    <span class="filter-arrow rotate"></span>
                   </div>
 
                   <!-- filter status open -->
@@ -434,7 +437,7 @@
                   <!-- filter office close -->
                   <div class="office-filter-close close-filter-container d-flex align-items-center justify-content-between" role ="button" tabindex="0">
                     <h3>משרד</h3>
-                    <div class="filter-arrow"></div>
+                    <span class="filter-arrow rotate"></span>
                   </div>
 
                   <!-- filter office open -->
@@ -459,7 +462,7 @@
                   <!-- filter last date close -->
                   <div class="last-date-close close-filter-container d-flex align-items-center justify-content-between" role ="button" tabindex="0">
                     <h3>מועד אחרון להגשה</h3>
-                    <div class="filter-arrow"></div>
+                    <span class="filter-arrow rotate"></span>
                   </div>
 
                   <!-- filter last date open -->
@@ -483,7 +486,7 @@
                   <!-- filter update date close -->
                   <div class="date-filter-close close-filter-container d-flex align-items-center justify-content-between" role ="button" tabindex="0">
                     <h3>תאריך עדכון</h3>
-                    <div class="filter-arrow"></div>
+                    <span class="filter-arrow rotate"></span>
                   </div>
 
                   <!-- filter update date open -->
@@ -507,7 +510,7 @@
                   <!-- filter tags close -->
                   <div class="tags-filter-close close-filter-container d-flex align-items-center justify-content-between" role ="button" tabindex="0">
                     <h3>תגיות</h3>
-                    <div class="filter-arrow"></div>
+                    <span class="filter-arrow rotate"></span>
                   </div>
 
                   <!-- filter tags open -->
@@ -586,7 +589,6 @@
                 </div>
               </div>
               
-
               <!-- search result -->
               <div class="result-container">
                 <div class="right-line"></div>
