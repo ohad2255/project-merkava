@@ -256,11 +256,13 @@ $(document).ready(function() {
 				var $label = $(".main-label")
 				var filtersItemId = currIndex.prop("id");
 				var filtersItemName = currIndex.next($label).text();
-				var filtersItemTemplate = 
-				
+
+				// filters list item template ///////////////////////////////////////
+				var filtersItemTemplate =
+
 			    `
-					<li class="filters-list-item" data-related-checkbox-id="${filtersItemId}" data-type="filters-Item">
-							${filtersItemName}
+					<li class="filters-list-item d-flex align-items-center" data-related-checkbox-id="${filtersItemId}" data-type="filters-Item">
+							<span>${filtersItemName}</span>
 							<button class="deselect-filter-btn"></button>
 					</li>
 			    `
