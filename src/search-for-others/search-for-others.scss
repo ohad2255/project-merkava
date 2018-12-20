@@ -3,6 +3,28 @@
 
 .search-for-others {
 	min-width: 330px;
+
+	.body-container {
+		position: relative;
+
+		@media (min-width: $screen-lg-min) {
+			position: static;
+		}
+
+		.grey-overlay {
+			position: absolute; 
+			display: none; 
+			width: 100%;
+			height: 100%; 
+			top: 101px; 
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+			z-index: 10;
+			//pointer-events: none;
+		}
+	}
 	
 	.custom-container {
 		padding: 0 20px;
@@ -21,6 +43,7 @@
 		min-height: 205px;
 		background-color: $main-white;
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+		margin-bottom: 4px;
 
 		@media (min-width: $screen-lg-min) {
 			background-image: url('../common/images/search-results-header-visuals.png');
@@ -28,6 +51,7 @@
 			background-size: auto;
 			background-repeat: no-repeat;
 			background-position: left;
+			margin-bottom: 0;
 			//padding: 120px 0 0 0;
 		}
 
@@ -66,18 +90,13 @@
 		.search-results-container {
 			width: 100%;
 			margin: 0 auto;
-			padding-top: 73px;
+			padding-top: 96px;
 
 			@media (min-width: $screen-lg-min) {
-				padding-top: 96px;
-			}
-
-			@media (min-width: $screen-xl-min) {
 				padding-top: 120px;
 			}
 
 			h1 {
-
 				font-size: 2.5rem;
 				font-weight: 500;
 				line-height: 1;
@@ -108,19 +127,43 @@
 
 	.search-for-others-body {
 		position: relative;
+		margin-bottom: 77px;
 
 		@media (min-width: $screen-lg-min) {
 			padding: 67px 20px 0;
 			margin: 0 auto 91px;
 		} 
 
-		.options-wrapper {
-		    position: sticky;
-		    top: 70px;
-		    display: inline-table;
+		.options-container {
+			position: absolute;
+		    background-color: $main-white;
+		    top: 0;
+		    width: 100%;
+		    z-index: 999;
+		    right: 0;
+		    left: auto;
+		    padding: 0 20px 0;
+		    margin-top: 96px;
+		    display: none;
+		    //display: contents;
 
 			@media (min-width: $screen-lg-min) {
 				width: 293px;
+		    	position: sticky;
+		    	top: 70px;
+		    	display: inline-table;
+		    	margin-top: 0;
+			} 
+		}
+
+		.options-wrapper {		   
+			background-color: $main-white;
+		    width: 293px;
+		    //display: contents;
+		    padding-top: 20px;
+
+			@media (min-width: $screen-lg-min) {
+				padding-top: 0;
 			} 
 
 			h3 {
@@ -151,6 +194,7 @@
 					margin: 0;
 					display: flex;
 					align-items: center;
+					height: 89px;
 				}
 
 				span {
@@ -163,7 +207,10 @@
 					text-align: right;
 					color: #9b9b9b;
 					white-space: nowrap;
-					display: inline-block;
+					display: flex;
+					padding-top: 2px;
+					align-items: center;
+
 				}
 
 				input.possible-option + span {
@@ -236,32 +283,28 @@
 
 		.results-wrapper {
 			padding: 13px 0 0 0;
+			max-width: 870px;
+    		width: 100%;
+    		margin-top: 106px;
 
-			.result-a-wrapper {
-				//margin: 0 0 30px 0;
-				display: block;
-
-				@media (min-width: $screen-lg-min) {
-					//margin: 0 0 50px 0;
-				}
-
-				&:last-child {
-					margin: 0;
-				}
-			}
+    		@media (min-width: $screen-lg-min) {
+    			margin-top: 0;
+			} 
 
 			.result-container {
 				height: auto;
 				border-radius: 4px;
 				background-color: #ffffff;
 				box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
-				margin: 0 0 41px 0;
+				margin: 0 0 20px 0;
 				position: relative;
+				width: 100%;
+				padding: 15px 23px 25px 15px;
+				min-height: 155px;
 				
 				@media (min-width: $screen-lg-min) {
 					min-height: 265px;
 					padding: 20px 39px 5px 20px;
-					width: 870px;
 					margin: 0 0 50px 0;
 				}
 
@@ -278,7 +321,7 @@
 
 				h2 {
 					max-width: 255px;
-					font-size: 3.2rem;
+					font-size: 2rem;
 					font-weight: normal;
 					font-style: normal;
 					font-stretch: normal;
@@ -288,11 +331,13 @@
 
 					@media (min-width: $screen-lg-min) {
 						max-width: 520px;
+						font-size: 3.2rem;
 					}
 				}
 				
 				h3 {
 					color: $main-purple;
+					text-align: center;
 				}
 
 				.search-result-sub-head {
@@ -312,28 +357,34 @@
 				}
 
 				.logo-container {
-					position: absolute;
-					top: 10px;
-					left: 10px;
-					right: auto;
+					//position: absolute;
+					//top: 10px;
+					//left: 10px;
+					//right: auto;
 
 					@media (min-width: $screen-lg-min) {
 						position: static;
+						//width: 120px;
+						margin: 0 auto 0 0;
 					}
 				}
 
 				.result-logo {
-					width: 57px;
-	  				height: 71px;
-	  				position: absolute;
-	  				bottom: 0;
-	  				left: 10px;
-	  				right: auto;
+					// width: 57px;
+	  				// height: 71px;
+	  				width: auto;
+					height: 41px;
+	  				//position: absolute;
+	  				//bottom: 0;
+	  				//left: 10px;
+	  				//right: auto;
+	  				display: inherit;
+	  				margin: 0 auto;
 
 					@media (min-width: $screen-lg-min) {
-						width: auto;
+						// width: auto;
 						height: 92px;
-						position: static;
+						//position: static;
 					}
 				}
 
@@ -372,14 +423,32 @@
 				line-height: 1.5;
 				letter-spacing: normal;
 				color: #505050;
+				align-self: center;
 
 				@media (min-width: $screen-lg-min) {
 					font-size: 2rem;
 					margin: 94px 0 0 0;
+					align-self: inherit;
 				}
 
 				span {
 					font-weight: 500;
+				}
+
+				p {
+					font-size: 1.6rem;
+				    font-weight: normal;
+				    font-style: normal;
+				    font-stretch: normal;
+				    line-height: 1.5;
+				    letter-spacing: normal;
+				    color: #505050;
+				    padding: 0 0 0 40px;
+
+	    			@media (min-width: $screen-lg-min) {
+						font-size: 2rem;
+						line-height: 1.4;
+					}
 				}
 
 				// .font-weight-normal {
@@ -396,8 +465,70 @@
 			width: 100%;
 			height: 1px;
 			display: block;
-			margin: 50px 0;
+			margin: 30px 0;
 			background-color: #505050;
+
+			@media (min-width: $screen-lg-min) {
+				margin: 50px 0;
+			}
+		}
+	}
+
+	.filter-mobile {
+		height: 95px;
+		width: 100%;
+		background-color: $main-white;
+		position: absolute;
+		top: 3px;
+    	right: 0;
+    	left: auto;
+		z-index: 1000;
+
+		.filter-mobile-container {
+			height: 100%;
+			margin-right: 20px;
+			border-bottom: 1px solid #dddddd;
+		}
+
+		.filter-mobile-wrapper {
+			width: 100px;
+			margin-right: -20px;
+
+			h3 {
+				margin: 0;
+			}
+		}
+
+
+		.mobile-filter-arrow {
+			width: 8px;
+			height: 8px;
+			border: solid $cobalt;     
+			border-width: 0 2px 2px 0;	
+		    display: inline-block;
+		    transform: rotate(45deg);
+		    pointer-events: none;
+		}
+		
+
+		.filter-icon {
+			width: 23px;
+			height: 22px;
+			margin: 0 0 3px 0;
+		}
+
+		.mobile-filter-head {
+			font-size: 1.6rem;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1.38;
+			letter-spacing: normal;
+			color: $cobalt;
+		}
+
+		.mobile-filter-arrows-wrapper.rotate {
+			transform: rotate(180deg);
 		}
 	}
 }

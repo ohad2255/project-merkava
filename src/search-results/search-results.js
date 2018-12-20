@@ -15,10 +15,19 @@ $(document).ready(function() {
 	$('.filter-mobile-wrapper').click(function() {
 		$('.filters-wrapper').toggleClass('d-none');
 		$('.grey-overlay').toggleClass('d-block');
-		$(this).parent().toggleClass('add-border');
+		//$(this).parent().toggleClass('add-border');
+		$(this).find($('.mobile-filter-arrows-wrapper')).toggleClass('rotate');
+		$('.facet').toggleClass('padding-top-facet');
+		$('.filters-list').toggleClass('padding-top-filters-list');
+		//$(".facet").css("margin-top", "90px");
+		//$('.mobile-filter-arrows-wrapper').hasClass('rotate');
 	});
 
- 
+	// $('.filter-mobile-wrapper').change(function() {
+	// 	debugger
+	// 	$(".search-results-filter-wrapper").css( "padding-top", 0);
+	// });
+
 	$('.datepicker').each(function() {
 	    $(this).data('pikaday', new Pikaday({ field: this }));
 	});
@@ -126,7 +135,7 @@ $(document).ready(function() {
 		var moreOptionsContainer = $('.more-options-container');
 		var thisMoreOptionsContainer = btn.prev(moreOptionsContainer);
 		var numberOfOptions = $('[thisMoreOptionsContainer] > div').length;
-		//debugger
+		//
 
 		thisMoreOptionsContainer.toggleClass('d-block text-toggle');
 
@@ -143,7 +152,7 @@ $(document).ready(function() {
 		// if (moreOptionsContainer.length > 0) {
 			
 	 //    }
-		// debugger
+		// 
 		// if (moreOptionsContainer.length > 0) {
 		// 	btn.prev(moreOptionsContainer).toggleClass('d-block text-toggle');
 		// 	btn.text('הצג פחות');
@@ -211,7 +220,7 @@ $(document).ready(function() {
 	//   }
 
 	// $('.icheck').change(function() {
-	// 	//debugger
+	// 	//
 	//     // Get the checkbox
 	//     //var checkBox = $('.icheck');
 	//     // Get the output text
@@ -229,11 +238,12 @@ $(document).ready(function() {
 
 
 	$('.icheck').change(function() {
-		debugger
+		
 		var $filterOption = $(".icheck");
 		var $filtersOptions = $();
 		var $this = $(this);
 		var $filtersList = $(".filters-list");
+		var $deselectAllWrapper = $("deselect-all-filters-wrapper");
 		//var currIndex = $filterOption.eq(index);
 		
 		$filterOption.each(function(index, filtersItemId) {
@@ -246,11 +256,13 @@ $(document).ready(function() {
 				var $label = $(".main-label")
 				var filtersItemId = currIndex.prop("id");
 				var filtersItemName = currIndex.next($label).text();
-				var filtersItemTemplate = 
-				
+
+				// filters list item template ///////////////////////////////////////
+				var filtersItemTemplate =
+
 			    `
-					<li class="filters-list-item" data-related-checkbox-id="${filtersItemId}" data-type="filters-Item">
-							${filtersItemName}
+					<li class="filters-list-item d-flex align-items-center" data-related-checkbox-id="${filtersItemId}" data-type="filters-Item">
+							<span>${filtersItemName}</span>
 							<button class="deselect-filter-btn"></button>
 					</li>
 			    `
@@ -263,34 +275,25 @@ $(document).ready(function() {
 
 
 		$("html").find($filtersList).append($filtersOptions);
+
+		if($filterOption.prop("checked").length != 0){
+			
+		} else {
+
+		};
+
+		//$("deselect-all-filters-wrapper").css("display", "flex");
 	});
 
-	// $('.deselect-filter-btn').click(function(){
-	// 	debugger
-	// 	var $clicked = $(this);
-	// 	var type = $clicked.attr("data-type");	
-	// 	var relatedCheckboxId = $clicked.attr("data-related-checkbox-id");
-	// 	var $relatedCheckbox = $("#" + relatedCheckboxId);
-	// 	var isChecked = $relatedCheckbox.prop("checked");
-
-	// 	if (isChecked) {
-
-	// 		$relatedCheckbox.prop("checked", false);
-	// 		// if (type === "subject") {
-	// 		// 	toggleSubject($relatedCheckbox)
-	// 		// } else if (type === "option") {
-	// 		// 	toggleSubjectOption($relatedCheckbox)
-	// 		// } //else if (type === "mepharsem") {
-	// 			//toggleMepharsem($relatedCheckbox)
-	// 		//}
-	// 	}
+	// $('.icheck').click(function(){
+	// 	$("deselect-all-filters-wrapper").css("display", "flex");
 	// })
 	
 
 
 
 	// $(".deselect-filter-btn").click(function() {
-	// 	debugger
+	// 	
 	// 	var $clicked = $(this);
 	// 	var type = $clicked.attr("data-type");	
 	// 	var relatedCheckboxId = $clicked.attr("data-related-checkbox-id");
@@ -314,7 +317,7 @@ $(document).ready(function() {
 	
 	// $('.icheck').click(function() {
 	// 	var $this = $(this);
-	// 	//debugger
+	// 	//
 	// 	if ($this.prop("checked")) {
 	// 		// var $body = $("search-results-body");
 	// 		var $label = $(".main-label")
