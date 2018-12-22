@@ -1,8 +1,30 @@
 
 @import "../util/util.scss";
 
-.search-for-others {
+.aggregated-search {
 	min-width: 330px;
+
+	.body-container {
+		position: relative;
+
+		@media (min-width: $screen-lg-min) {
+			position: static;
+		}
+
+		.grey-overlay {
+			position: absolute; 
+			display: none; 
+			width: 100%;
+			height: 100%; 
+			top: 101px; 
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba(0,0,0,0.5);
+			z-index: 10;
+			//pointer-events: none;
+		}
+	}
 	
 	.custom-container {
 		padding: 0 20px;
@@ -16,7 +38,7 @@
 	// 	}
 	// }
 
-	.search-for-others-top-sec {
+	.aggregated-search-top-sec {
 		position: relative;
 		min-height: 205px;
 		background-color: $main-white;
@@ -78,7 +100,7 @@
 
 			h1 {
 
-				font-size: 2.5rem;
+				font-size: 3rem;
 				font-weight: 500;
 				line-height: 1;
 				color: $cobalt;
@@ -90,36 +112,68 @@
 					line-height: normal;
 					letter-spacing: normal;
 					text-align: center;
+					margin-bottom: 13px;
 				}
 			}
 
 			p {
-				font-size: 3rem;
+				font-size: 1.6rem;
 				font-weight: normal;
 				font-style: normal;
 				font-stretch: normal;
-				line-height: normal;
 				letter-spacing: normal;
 				color: #4e5665;
 				max-width: 640px;
+				line-height: 1.25;
+
+				@media (min-width: $screen-lg-min) {
+					font-size: 3rem;
+					line-height: normal;
+				}
 			}
 		}
 	}
 
-	.search-for-others-body {
+	.aggregated-search-body {
 		position: relative;
+		padding: 0 10px 97px;
 
 		@media (min-width: $screen-lg-min) {
-			padding: 67px 20px 0;
-			margin: 0 auto 91px;
+			padding: 67px 20px 129px;
+			margin: 0 auto 0;
 		} 
 
-		.options-wrapper {
-		    position: sticky;
-		    top: 70px;
-		    display: inline-table;
+		.options-container {
+			position: absolute;
+		    background-color: $main-white;
+		    top: 0;
+		    width: 100%;
+		    z-index: 999;
+		    right: 0;
+		    left: auto;
+		    padding: 0 20px 0 0;
+		    margin: 96px 0 0 46px;
+		    display: none;
+		    //display: contents;
 
 			@media (min-width: $screen-lg-min) {
+				width: 293px;
+		    	position: sticky;
+		    	top: 70px;
+		    	display: inline-table;
+		    	margin-top: 0;
+		    	padding: 0;
+			} 
+		}
+
+		.options-wrapper {
+		    background-color: $main-white;
+		    width: 100%;
+		    //display: contents;
+		    padding-top: 20px;
+
+			@media (min-width: $screen-lg-min) {
+				padding-top: 0;
 				width: 293px;
 			} 
 
@@ -141,10 +195,12 @@
 				border-bottom: $bottom-border-question 1px solid;
 
 				@media (min-width: $screen-lg-min) {
+
 				}
 
 				&:last-of-type {
 					margin: 0;
+					border: none;
 				}
 
 
@@ -161,15 +217,25 @@
 					border: none;
 					box-shadow: none;
 					padding: 0;
+
+					@media (min-width: $screen-lg-min) {
+		    			display: flex;
+		    			height: 88px;
+		    			align-items: center;
+					}
 				}
 			}
 		}
 
 		.results-wrapper {
-			padding: 13px 0 0 0;
+			//padding: 13px 0 0 0;
 			max-width: 870px;
     		width: 100%;
+    		margin: 100px 0 0 0;
 
+    		@media (min-width: $screen-lg-min) {
+    			margin: 0;
+			} 
 
 			.details-main-wrapper {
 				font-size: 1.6rem;
@@ -199,6 +265,13 @@
 			}
 
 			.search-results-content-head {
+
+				font-size: 2rem;
+				line-height: 1;
+				font-weight: normal;
+				margin: 0 0 20px 70px;
+				//max-width: 255px;
+    			color: #0a7bb6;
 		
   				@media (min-width: $screen-lg-min) {
 					font-size: 3.2rem;
@@ -212,6 +285,8 @@
 				}
 
 			}
+
+
 
 			.search-result-sub-head {
 				font-size: 1.6rem;
@@ -229,6 +304,8 @@
 					max-width: 120px;
 				}
 			}
+
+
 
 			.logo-container {
 				position: absolute;
@@ -308,7 +385,7 @@
 				}
 				
 				h3 {
-					color: $bids-dark-blue;
+					//color: $bids-dark-blue;
 				}
 
 				.right-line {
@@ -346,6 +423,12 @@
 				}
 			}
 
+			.result-container.exemption-result {
+				h3 {
+					color: $exemption-orange;
+				}
+			}
+
 			.exemption-search-result {
     			.right-line {
 					background-color: $exemption-orange !important;
@@ -361,8 +444,74 @@
 			width: 100%;
 			height: 1px;
 			display: block;
-			margin: 50px 0;
+			margin: 30px 0;
 			background-color: #505050;
+
+			@media (min-width: $screen-lg-min) {
+				margin: 50px 0;
+			}
+		}
+	}
+
+	.filter-mobile {
+		height: 95px;
+		width: 100%;
+		background-color: $main-white;
+		position: absolute;
+		top: 3px;
+    	right: 0;
+    	left: auto;
+		z-index: 1000;
+
+		.filter-mobile-container {
+			height: 100%;
+			margin: 0 20px 0 0;
+			//border-bottom: 1px solid #dddddd;
+		}
+
+		.filter-mobile-container.border-b {
+			border-bottom: 1px solid #dddddd;
+		}
+
+		.filter-mobile-wrapper {
+			width: 100px;
+			margin: 0 -20px 0 0;
+
+			h3 {
+				margin: 0;
+			}
+		}
+
+
+		.mobile-filter-arrow {
+			width: 8px;
+			height: 8px;
+			border: solid $cobalt;     
+			border-width: 0 2px 2px 0;	
+		    display: inline-block;
+		    transform: rotate(45deg);
+		    pointer-events: none;
+		}
+		
+
+		.filter-icon {
+			width: 23px;
+			height: 22px;
+			margin: 0 0 3px 0;
+		}
+
+		.mobile-filter-head {
+			font-size: 1.6rem;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1.38;
+			letter-spacing: normal;
+			color: $cobalt;
+		}
+
+		.mobile-filter-arrows-wrapper.rotate {
+			transform: rotate(180deg);
 		}
 	}
 }

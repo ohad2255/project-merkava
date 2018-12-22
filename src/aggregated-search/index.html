@@ -13,8 +13,8 @@
 
   <!-- body -->
   <!-- add to the body "search-results-exemption" class to change the design to search results exemption design -->
-  <body class="search-for-others">
-    <!-- <link href="../search-for-others.rtl/search-for-others.css" type="text/css" rel="stylesheet"> -->
+  <body class="aggregated-search">
+    <!-- <link href="../aggregated-search.rtl/aggregated-search.css" type="text/css" rel="stylesheet"> -->
 
     <!-- mobile-menu -->
     <div class="main-menu-mobile-container d-lg-none" aria-labelledby="mainMobileNavTrigger">
@@ -27,7 +27,7 @@
       ${require("../common/header/header.html")}
 
       <!-- top-section -->
-      <section class="search-for-others-top-sec">
+      <section class="aggregated-search-top-sec">
         <div class="right-line"></div>
         <div class="search-results-container custom-container">
           <div class="search-results-head-wrapper d-flex justify-content-start flex-column">
@@ -41,177 +41,197 @@
         </div>
       </section>
 
-      <!-- main-content -->
-      <section class="search-for-others-body d-flex justify-content-between custom-container js-stickybit-parent">
-        <div class="options-wrapper js-is-sticky">
-          <h3 class="options-head">סנן תוצאות לפני נושא:</h3>
+      <div class="body-container">
 
-          <!-- filter-option -->
-          <div class="filter-option-wrapper">
-            <a href="#" tabindex="0" class="filter-option-btn">
-              מכרזים
-            </a>
-          </div>
-
-          <!-- filter-option -->
-          <div class="filter-option-wrapper">
-            <a href="#" tabindex="0" class="filter-option-btn">
-              מכרזים מרכזיים
-            </a>
-          </div>
-
-          <!-- filter-option -->
-          <div class="filter-option-wrapper">
-            <a href="#" tabindex="0" class="filter-option-btn">
-              פטורים
-            </a>
-          </div>
-
-          <!-- filter-option -->
-          <div class="filter-option-wrapper">
-            <a href="#" tabindex="0" class="filter-option-btn">
-              אחר
-            </a>
-          </div>
-          
+        <div class="grey-overlay d-lg-none">
         </div>
-        <div class="results-wrapper">
 
-          <!-- search result -->
-          <div class="result-container">
-            <div class="right-line"></div>
-            <div class="content-wrapper d-flex justify-content-between align-items-start h-100">
+        <!-- main-content -->
+        <section class="aggregated-search-body d-flex justify-content-between custom-container flex-column flex-lg-row js-stickybit-parent">
 
-              <!-- search result details-->
-              <div class="details-main-wrapper">
-                <img src="../common/images/health-department-logo.svg" class="bid-result-right-logo" alt="logo">
-                <div>
-                  <h3 class="d-lg-none search-result-sub-head">מכרזים</h3>
-                  <!-- result link -->
-                  <a class="result-link" href="../bids/index.html" tabindex="0">
-                    <h3 class="search-results-content-head">אספקת מחשבים עבור משרדי ממשלה</h3>
-                  </a>
-
-                  <div class="details-wrapper">
-                    <!-- name -->
-                    <span>מפרסם: </span><span class="font-weight-normal">משרד האוצר- מנהל הרכש הממשלתי</span><br>
-
-                    <!-- status (Change class according to status and color changes: new, updated, closed, pre-committees-decision, cancelled) -->
-                    <span>סטטוס: </span><span class="status updated font-weight-normal">מעודכן</span>
-                    <span class="font-weight-normal"> | </span>  
-
-                    <!-- process number -->
-                    <span>מספר הליך: </span><span class="font-weight-normal number">18-2017</span> <span class="font-weight-normal d-none d-lg-inline-block">|</span> 
-                    <br class="d-lg-none">
-
-                    <!-- release date -->
-                    <span>תאריך פרסום: </span><span class="font-weight-normal number">28/08/2017</span><br>
-                    <!-- <br class="d-lg-none"><span class="d-none d-lg-inline-block"> -->
-
-                    <!-- deadline for submission -->
-                    <span>תאריך עדכון אחרון: </span><span class="font-weight-normal number">28/08/2018</span> 
-                    <span class="font-weight-normal d-none d-lg-inline-block">|</span>
-                    <br class="d-lg-none">
-
-                    <!-- deadline for submission -->
-                    <span class="last-date">מועד אחרון להגשה: 
-                    </span>
-                    <span class="font-weight-normal number last-date">07/10/2013
-                    </span>
-                  </div>
-                </div> 
-              </div>
-              <div class="logo-container d-lg-flex flex-column align-items-center">
-
-                <!-- Move class to the two irrelevant images -->
-
-                <!-- tender img (default)-->
-                <img src="../common/images/tender-icon.svg" class="tender-icon" alt="icon">
-
-                <!-- central tender img -->
-                <img src="../common/images/central-tender-icon.svg" class="central-tender-icon d-none" alt="icon">
-
-                <!-- exemption img -->
-                <img src="../common/images/exemption-card-icon.svg" class="exemption-card-icon d-none" alt="icon">
-
-                <h3 class="d-none d-lg-block search-result-sub-head">מכרזים</h3>
-              </div>
-            </div>
-          </div>
-          
-          <!-- add "results-divider" span after every group of search-results -->
-          <span class="results-divider"></span>
-
-          <!-- search result -->
-          <div class="result-container">
-            <div class="right-line"></div>
-            <div class="content-wrapper d-flex justify-content-between align-items-start h-100">
-
-              <!-- search result details-->
-              <div class="details-main-wrapper">
-                <img src="../common/images/health-department-logo.svg" class="bid-result-right-logo" alt="logo">
-                <div>
-                  <h3 class="d-lg-none search-result-sub-head">מכרזים</h3>
-
-                  <!-- result link -->
-                  <a class="result-link" href="../bids/index.html" tabindex="0">
-                    <h3 class="search-results-content-head">אספקת מחשבים עבור משרדי ממשלה</h3>
-                  </a>
-
-
-                  <div class="details-wrapper">
-                    <!-- name -->
-                    <span>מפרסם: </span><span class="font-weight-normal">משרד האוצר- מנהל הרכש הממשלתי</span><br>
-
-                    <!-- status (Change class according to status and color changes: new, updated, closed, pre-committees-decision, cancelled) -->
-                    <span>סטטוס: </span><span class="status updated font-weight-normal">מעודכן</span>
-                    <span class="font-weight-normal"> | </span>  
-
-                    <!-- process number -->
-                    <span>מספר הליך: </span><span class="font-weight-normal number">18-2017</span> <span class="font-weight-normal d-none d-lg-inline-block">|</span> 
-                    <br class="d-lg-none">
-
-                    <!-- release date -->
-                    <span>תאריך פרסום: </span><span class="font-weight-normal number">28/08/2017</span><br>
-                    <!-- <br class="d-lg-none"><span class="d-none d-lg-inline-block"> -->
-
-                    <!-- deadline for submission -->
-                    <span>תאריך עדכון אחרון: </span><span class="font-weight-normal number">28/08/2018</span> 
-                    <span class="font-weight-normal d-none d-lg-inline-block">|</span>
-                    <br class="d-lg-none">
-
-                    <!-- deadline for submission -->
-                    <span class="last-date">מועד אחרון להגשה: 
-                    </span>
-                    <span class="font-weight-normal number last-date">07/10/2013
-                    </span>
-                  </div>
-                </div> 
-              </div>
-              <div class="logo-container d-lg-flex flex-column align-items-center">
-
-                <!-- Move class to the two irrelevant images -->
-
-                <!-- tender img (default)-->
-                <img src="../common/images/tender-icon.svg" class="tender-icon d-none" alt="icon">
-
-                <!-- central tender img -->
-                <img src="../common/images/central-tender-icon.svg" class="central-tender-icon" alt="icon">
-
-                <!-- exemption img -->
-                <img src="../common/images/exemption-card-icon.svg" class="exemption-card-icon d-none" alt="icon">
-
-                <h3 class="d-none d-lg-block search-result-sub-head">מכרזים</h3>
+          <!-- open filter mobile button -->
+          <div class="filter-mobile d-lg-none"> 
+            <div class="filter-mobile-container d-flex flex-column align-items-center justify-content-center">
+              <div class="filter-mobile-wrapper d-flex flex-column align-items-center justify-content-center h-100">
+                <img src="../common/images/filter-icon.svg" class="filter-icon" alt="filter-icon">
+                <h3 class="mobile-filter-head">סנן תוצאות לפי</h3>
+                <div class="mobile-filter-arrows-wrapper d-flex flex-column">
+                  <span class="mobile-filter-arrow"></span>
+                  <span class="mobile-filter-arrow"></span>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- add "results-divider" span after every group of search-results -->
-          <span class="results-divider"></span>
+          <div class="options-container">
+            <div class="options-wrapper js-is-sticky">
+              <h3 class="options-head">סנן תוצאות לפני נושא:</h3>
 
-          <!-- search result -->
-          <!-- add "exemption-search-result" class to adjust the color to exemption search result color -->
-          
+              <!-- filter-option -->
+              <div class="filter-option-wrapper">
+                <a href="#" tabindex="0" class="filter-option-btn">
+                  מכרזים
+                </a>
+              </div>
+
+              <!-- filter-option -->
+              <div class="filter-option-wrapper">
+                <a href="#" tabindex="0" class="filter-option-btn">
+                  מכרזים מרכזיים
+                </a>
+              </div>
+
+              <!-- filter-option -->
+              <div class="filter-option-wrapper">
+                <a href="#" tabindex="0" class="filter-option-btn">
+                  פטורים
+                </a>
+              </div>
+
+              <!-- filter-option -->
+              <div class="filter-option-wrapper">
+                <a href="#" tabindex="0" class="filter-option-btn">
+                  אחר
+                </a>
+              </div>          
+            </div>
+          </div>
+          <div class="results-wrapper">
+
+            <!-- search result -->
+            <div class="result-container">
+              <div class="right-line"></div>
+              <div class="content-wrapper d-flex justify-content-between align-items-start h-100">
+
+                <!-- search result details-->
+                <div class="details-main-wrapper">
+                  <img src="../common/images/health-department-logo.svg" class="bid-result-right-logo" alt="logo">
+                  <div>
+                    <h3 class="d-lg-none search-result-sub-head">מכרזים</h3>
+                    <!-- result link -->
+                    <a class="result-link" href="../bids/index.html" tabindex="0">
+                      <h3 class="search-results-content-head">אספקת מחשבים עבור משרדי ממשלה</h3>
+                    </a>
+
+                    <div class="details-wrapper">
+                      <!-- name -->
+                      <span>מפרסם: </span><span class="font-weight-normal">משרד האוצר- מנהל הרכש הממשלתי</span><br>
+
+                      <!-- status (Change class according to status and color changes: new, updated, closed, pre-committees-decision, cancelled) -->
+                      <span>סטטוס: </span><span class="status updated font-weight-normal">מעודכן</span>
+                      <span class="font-weight-normal"> | </span>  
+
+                      <!-- process number -->
+                      <span>מספר הליך: </span><span class="font-weight-normal number">18-2017</span> <span class="font-weight-normal d-none d-lg-inline-block">|</span> 
+                      <br class="d-lg-none">
+
+                      <!-- release date -->
+                      <span>תאריך פרסום: </span><span class="font-weight-normal number">28/08/2017</span><br>
+                      <!-- <br class="d-lg-none"><span class="d-none d-lg-inline-block"> -->
+
+                      <!-- deadline for submission -->
+                      <span>תאריך עדכון אחרון: </span><span class="font-weight-normal number">28/08/2018</span> 
+                      <span class="font-weight-normal d-none d-lg-inline-block">|</span>
+                      <br class="d-lg-none">
+
+                      <!-- deadline for submission -->
+                      <span class="last-date">מועד אחרון להגשה: 
+                      </span>
+                      <span class="font-weight-normal number last-date">07/10/2013
+                      </span>
+                    </div>
+                  </div> 
+                </div>
+                <div class="logo-container d-lg-flex flex-column align-items-center">
+
+                  <!-- Move class to the two irrelevant images -->
+
+                  <!-- tender img (default)-->
+                  <img src="../common/images/tender-icon.svg" class="tender-icon" alt="icon">
+
+                  <!-- central tender img -->
+                  <img src="../common/images/central-tender-icon.svg" class="central-tender-icon d-none" alt="icon">
+
+                  <!-- exemption img -->
+                  <img src="../common/images/exemption-card-icon.svg" class="exemption-card-icon d-none" alt="icon">
+
+                  <h3 class="d-none d-lg-block search-result-sub-head">מכרזים</h3>
+                </div>
+              </div>
+            </div>
+            
+            <!-- add "results-divider" span after every group of search-results -->
+            <span class="results-divider"></span>
+
+            <!-- search result -->
+            <div class="result-container">
+              <div class="right-line"></div>
+              <div class="content-wrapper d-flex justify-content-between align-items-start h-100">
+
+                <!-- search result details-->
+                <div class="details-main-wrapper">
+                  <img src="../common/images/health-department-logo.svg" class="bid-result-right-logo" alt="logo">
+                  <div>
+                    <h3 class="d-lg-none search-result-sub-head">מכרזים</h3>
+
+                    <!-- result link -->
+                    <a class="result-link" href="../bids/index.html" tabindex="0">
+                      <h3 class="search-results-content-head">אספקת מחשבים עבור משרדי ממשלה</h3>
+                    </a>
+
+
+                    <div class="details-wrapper">
+                      <!-- name -->
+                      <span>מפרסם: </span><span class="font-weight-normal">משרד האוצר- מנהל הרכש הממשלתי</span><br>
+
+                      <!-- status (Change class according to status and color changes: new, updated, closed, pre-committees-decision, cancelled) -->
+                      <span>סטטוס: </span><span class="status updated font-weight-normal">מעודכן</span>
+                      <span class="font-weight-normal"> | </span>  
+
+                      <!-- process number -->
+                      <span>מספר הליך: </span><span class="font-weight-normal number">18-2017</span> <span class="font-weight-normal d-none d-lg-inline-block">|</span> 
+                      <br class="d-lg-none">
+
+                      <!-- release date -->
+                      <span>תאריך פרסום: </span><span class="font-weight-normal number">28/08/2017</span><br>
+                      <!-- <br class="d-lg-none"><span class="d-none d-lg-inline-block"> -->
+
+                      <!-- deadline for submission -->
+                      <span>תאריך עדכון אחרון: </span><span class="font-weight-normal number">28/08/2018</span> 
+                      <span class="font-weight-normal d-none d-lg-inline-block">|</span>
+                      <br class="d-lg-none">
+
+                      <!-- deadline for submission -->
+                      <span class="last-date">מועד אחרון להגשה: 
+                      </span>
+                      <span class="font-weight-normal number last-date">07/10/2013
+                      </span>
+                    </div>
+                  </div> 
+                </div>
+                <div class="logo-container d-lg-flex flex-column align-items-center">
+
+                  <!-- Move class to the two irrelevant images -->
+
+                  <!-- tender img (default)-->
+                  <img src="../common/images/tender-icon.svg" class="tender-icon d-none" alt="icon">
+
+                  <!-- central tender img -->
+                  <img src="../common/images/central-tender-icon.svg" class="central-tender-icon" alt="icon">
+
+                  <!-- exemption img -->
+                  <img src="../common/images/exemption-card-icon.svg" class="exemption-card-icon d-none" alt="icon">
+
+                  <h3 class="d-none d-lg-block search-result-sub-head">מכרזים</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- add "results-divider" span after every group of search-results -->
+            <span class="results-divider"></span>
+
+            <!-- search result -->
+            <!-- add "exemption-search-result" class to adjust the color to exemption search result color -->
             <div class="result-container exemption-search-result">
               <div class="right-line"></div>
               <div class="content-wrapper d-flex justify-content-between align-items-start h-100">
@@ -274,14 +294,14 @@
                 </div>
               </div>
             </div>
-          </a>
-        </div>
-      </section>
+          </div>
+        </section>
 
-      <!-- footer -->
-      <footer class="search-results-footer d-flex justify-content-center">
-          ${require("../common/footer/footer.html")}
-      </footer>
+        <!-- footer -->
+        <footer class="search-results-footer d-flex justify-content-center">
+            ${require("../common/footer/footer.html")}
+        </footer>
+      </div>
     </div>
     ${require("../common/common.html")}
     <script type="text/javascript" src='/common/common.min.js'></script>
