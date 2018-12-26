@@ -1,13 +1,12 @@
 require('../common/common');
 var stickybits = require('stickybits');
 
-
-
-// stickybits($('.options-wrapper'), { stickyBitStickyOffset: 20 })
-
 $(document).ready(function() {
-	//stickybits($('.options-wrapper'));
 
+	stickybits.default('.options-container', { 
+		useStickyClasses: true
+	});
+	
 	$('.icheck').keypress(function (e) {
         var key = e.which;
         if (key == 13) {
