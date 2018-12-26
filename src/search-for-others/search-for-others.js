@@ -1,7 +1,14 @@
-
 require('../common/common');
+var stickybits = require('stickybits');
 
 $(document).ready(function() {
+	
+	stickybits.default('.options-container', { 
+		//stickyBitStickyOffset: 20,
+		verticalPosition: 'top',
+		useStickyClasses: true
+	});
+
 	$('.icheck').keypress(function (e) {
         var key = e.which;
         if (key == 13) {
@@ -16,8 +23,6 @@ $(document).ready(function() {
 		$('.grey-overlay').toggleClass('d-block');
 		//$(this).parent().toggleClass('add-border');
 		$(this).find($('.mobile-filter-arrows-wrapper')).toggleClass('rotate');
-		$('.facet').toggleClass('padding-top-facet');
-		$('.filters-list').toggleClass('padding-top-filters-list');
 		//$(".facet").css("margin-top", "90px");
 		//$('.mobile-filter-arrows-wrapper').hasClass('rotate');
 	});

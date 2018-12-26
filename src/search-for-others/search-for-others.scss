@@ -20,7 +20,7 @@
 			left: 0;
 			right: 0;
 			bottom: 0;
-			background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+			background-color: rgba(0,0,0,0.5);
 			z-index: 10;
 			//pointer-events: none;
 		}
@@ -90,14 +90,15 @@
 		.search-results-container {
 			width: 100%;
 			margin: 0 auto;
-			padding-top: 96px;
+			padding-top: 73px;
 
 			@media (min-width: $screen-lg-min) {
 				padding-top: 120px;
+				padding-top: 96px;
 			}
 
 			h1 {
-				font-size: 2.5rem;
+				font-size: 3rem;
 				font-weight: 500;
 				line-height: 1;
 				color: $cobalt;
@@ -109,18 +110,24 @@
 					line-height: normal;
 					letter-spacing: normal;
 					text-align: center;
+					margin-bottom: 13px;
 				}
 			}
 
 			p {
-				font-size: 3rem;
+				font-size: 1.6rem;
 				font-weight: normal;
 				font-style: normal;
 				font-stretch: normal;
-				line-height: normal;
 				letter-spacing: normal;
 				color: #4e5665;
 				max-width: 640px;
+				line-height: 1.25;
+
+				@media (min-width: $screen-lg-min) {
+					font-size: 3rem;
+					line-height: normal;
+				}
 			}
 		}
 	}
@@ -130,8 +137,8 @@
 		margin-bottom: 77px;
 
 		@media (min-width: $screen-lg-min) {
-			padding: 67px 20px 0;
-			margin: 0 auto 91px;
+			padding: 0 20px 0;
+			margin: 67px auto 91px;
 		} 
 
 		.options-container {
@@ -150,10 +157,18 @@
 			@media (min-width: $screen-lg-min) {
 				width: 293px;
 		    	position: sticky;
-		    	top: 70px;
+		    	top: 0;
 		    	display: inline-table;
 		    	margin-top: 0;
+		    	right: auto;
 			} 
+		}
+
+		.options-container.js-is-sticky {
+			@media (min-width: $screen-lg-min) {
+				top: 67px!important;
+				margin-top: 0;
+			}
 		}
 
 		.options-wrapper {		   
@@ -161,6 +176,10 @@
 		    width: 293px;
 		    //display: contents;
 		    padding-top: 20px;
+
+		    @media (min-width: $screen-md-min) {
+				width: 100%;
+			}
 
 			@media (min-width: $screen-lg-min) {
 				padding-top: 0;
@@ -174,6 +193,7 @@
 				line-height: normal;
 				letter-spacing: normal;
 				color: $text-dark-grey;
+				margin: 0;
 			}
 
 			.checkbox-wrapper {
@@ -361,11 +381,12 @@
 					//top: 10px;
 					//left: 10px;
 					//right: auto;
+					max-width: 120px;
+					margin: 0 auto 0 0;
 
 					@media (min-width: $screen-lg-min) {
 						position: static;
 						//width: 120px;
-						margin: 0 auto 0 0;
 					}
 				}
 
@@ -486,13 +507,13 @@
 
 		.filter-mobile-container {
 			height: 100%;
-			margin-right: 20px;
+			margin: 0 20px 0 0;
 			border-bottom: 1px solid #dddddd;
 		}
 
 		.filter-mobile-wrapper {
 			width: 100px;
-			margin-right: -20px;
+			margin: 0 -20px 0 0;
 
 			h3 {
 				margin: 0;
