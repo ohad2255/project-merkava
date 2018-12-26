@@ -137,8 +137,8 @@
 		margin-bottom: 77px;
 
 		@media (min-width: $screen-lg-min) {
-			padding: 67px 20px 0;
-			margin: 0 auto 91px;
+			padding: 0 20px 0;
+			margin: 67px auto 91px;
 		} 
 
 		.options-container {
@@ -157,10 +157,18 @@
 			@media (min-width: $screen-lg-min) {
 				width: 293px;
 		    	position: sticky;
-		    	top: 70px;
+		    	top: 0;
 		    	display: inline-table;
 		    	margin-top: 0;
+		    	right: auto;
 			} 
+		}
+
+		.options-container.js-is-sticky {
+			@media (min-width: $screen-lg-min) {
+				top: 67px!important;
+				margin-top: 0;
+			}
 		}
 
 		.options-wrapper {		   
@@ -185,6 +193,7 @@
 				line-height: normal;
 				letter-spacing: normal;
 				color: $text-dark-grey;
+				margin: 0;
 			}
 
 			.checkbox-wrapper {

@@ -1,7 +1,14 @@
-
 require('../common/common');
+var stickybits = require('stickybits');
 
 $(document).ready(function() {
+	
+	stickybits.default('.options-container', { 
+		//stickyBitStickyOffset: 20,
+		verticalPosition: 'top',
+		useStickyClasses: true
+	});
+
 	$('.icheck').keypress(function (e) {
         var key = e.which;
         if (key == 13) {
