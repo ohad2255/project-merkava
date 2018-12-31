@@ -2,7 +2,7 @@
 var Pikaday = require('pikaday');
 require('pikaday/scss/pikaday.scss');
 require('../common/common');
-//require('jquery-infinite-scroll-helper');
+require('jquery-infinite-scroll-helper');
 
 $(document).ready(function() {
 
@@ -65,20 +65,21 @@ $(document).ready(function() {
 
 
 	function formatCurrency(input, blur) {
-	  var input_val = input.val();
-	  var isrCurrency = `&#8362;`;
+	  var inputVal = input.val();
 	  
-	  if (input_val === "") { return; }
+	  if (inputVal === "") { 
+	  	return; 
+	  }
 	  
-	  var original_len = input_val.length;
+	  var original_len = inputVal.length;
 
 	  var caret_pos = input.prop("selectionStart");
 	    
-	  if (input_val.indexOf(".") >= 0) {
-	    var decimal_pos = input_val.indexOf(".");
+	  if (inputVal.indexOf(".") >= 0) {
+	    var decimal_pos = inputVal.indexOf(".");
 
-	    var left_side = input_val.substring(0, decimal_pos);
-	    var right_side = input_val.substring(decimal_pos);
+	    var left_side = inputVal.substring(0, decimal_pos);
+	    var right_side = inputVal.substring(decimal_pos);
 
 	    left_side = formatNumber(left_side);
 
@@ -90,19 +91,21 @@ $(document).ready(function() {
 	    
 	    right_side = right_side.substring(0, 2);
 
-	    input_val =+ isrCurrency + left_side + '.' + right_side;
+	    inputVal =+ "₪" + left_side + '.' + right_side;
 
 	  } else {
-	    input_val = formatNumber(input_val);
-	    input_val = input_val + isrCurrency;
+	    inputVal = formatNumber(inputVal);
+	    inputVal = "₪" + inputVal;
 	    
 	    if (blur === "blur") {
-	      input_val;
+	      inputVal;
 	    }
 	  }
-	  input.val(input_val);
+
+
+	  input.val(inputVal);
 	  
-	  var updated_len = input_val.length;
+	  var updated_len = inputVal.length;
 	  caret_pos = updated_len - original_len + caret_pos;
 	  input[0].setSelectionRange(caret_pos, caret_pos);
 	}
@@ -124,94 +127,71 @@ $(document).ready(function() {
 		if (numberOfOptions.length != 0) {
 			
 	    }
-		
-
-		// if (moreOptionsContainer.length > 0) {
-			
-	 //    }
-		// 
-		// if (moreOptionsContainer.length > 0) {
-		// 	btn.prev(moreOptionsContainer).toggleClass('d-block text-toggle');
-		// 	btn.text('הצג פחות');
-		// } else {
-		// 	btn.text('הצג עוד');
-		// }
-	   
-
-
-		// if ($('.filters-wrapper').hasClass('d-none')) {
-		// 	var moreOptionsContainer = $('.more-options-container');
-		//     moreOptionsContainer.addClass('d-block');
-		//     btn.value  = "הצג פחות"; 
-		// } else {
-		// 	moreOptionsContainer.style.display = "none";
-		//     btn.value = "הצג עוד"; 
-		// } 
 	});
 	
 	  
-	// var hasMore=true;
-	// var container=$('.search-results-content-with-results');
-	// container.infiniteScrollHelper({
-	//   loadMore: function(page,done) {
-	// 	  if(!hasMore){
-	// 		  return;
-	// 	  }
-	// 	  $.get('ajaxHtml/?s='+$.urlParam('s')+'&text='+$.urlParam('text')+'&page=' + page, function(data) {
-	// 		  // parse json data and create new html then append
-	// 		 	 var htmlData=$("<div>"+data+"</div>");
-	// 			var ajaxData=htmlData.find("#ajaxData");
-	// 			var totalResults=ajaxData.find("#totalResults").html();
-	// 			var numberOfPages=ajaxData.find("#numberOfPages").html();
-	// 			var currentPage=ajaxData.find("#currentPage").html();
-	// 			var pageSize=ajaxData.find("#pageSize").html();
+	var hasMore=true;
+	var container=$('.search-results-content-with-results');
+	container.infiniteScrollHelper({
+	  loadMore: function(page,done) {
+		  if(!hasMore){
+			  return;
+		  }
+		  $.get('ajaxHtml/?s='+$.urlParam('s')+'&text='+$.urlParam('text')+'&page=' + page, function(data) {
+			  // parse json data and create new html then append
+			 	 var htmlData=$("<div>"+data+"</div>");
+				var ajaxData=htmlData.find("#ajaxData");
+				var totalResults=ajaxData.find("#totalResults").html();
+				var numberOfPages=ajaxData.find("#numberOfPages").html();
+				var currentPage=ajaxData.find("#currentPage").html();
+				var pageSize=ajaxData.find("#pageSize").html();
 
-	// 			if (currentPage + 1 >= numberOfPages) {
-	// 			hasMore = false;
-	// 			}
+				if (currentPage + 1 >= numberOfPages) {
+				hasMore = false;
+				}
 
-	// 			loadResults(htmlData.find("#ajaxResults"));
-	// 	  });
-	//   },
-	//   startingPageCount:0,
-	//   bottomBuffer:500,
-	//   doneLoading: function() {
-	// 	  // return true if you are done doing your thing, false otherwise
-	// 	  return false;
-	//   }
-	//   });
-	//   function loadResults(htmlResults){
-	// 	  container.append(htmlResults);
-	//   }
-	//   function buildSearchResults(result){
+				loadResults(htmlData.find("#ajaxResults"));
+		  });
+	  },
+	  startingPageCount:0,
+	  bottomBuffer:500,
+	  doneLoading: function() {
+		  // return true if you are done doing your thing, false otherwise
+		  return false;
+	  }
+	  });
+	  function loadResults(htmlResults){
+		  container.append(htmlResults);
+	  }
+	  function buildSearchResults(result){
   
-	//   }
-	//   $.urlParam = function(name){
-	// 	  var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
-	// 	  if (results==null){
-	// 	  return null;
-	// 	  }
-	// 	  else{
-	// 	  return decodeURI(results[1]) || 0;
-	// 	  }
-	//   }
+	  }
+	  $.urlParam = function(name){
+		  var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+		  if (results==null){
+		  return null;
+		  }
+		  else{
+		  return decodeURI(results[1]) || 0;
+		  }
+	  }
 
-	// $('.icheck').change(function() {
-	// 	//
-	//     // Get the checkbox
-	//     //var checkBox = $('.icheck');
-	//     // Get the output text
-	// 	var filtersItem = $('.deselect-all-filters-wrapper');
+	$('.icheck').change(function() {
+		//
+	    // Get the checkbox
+	    //var checkBox = $('.icheck');
+	    // Get the output text
+		var filtersItem = $('.deselect-all-filters-wrapper');
 
-	// 	// If the checkbox is checked, display the output text
-	// 	if ($(this).prop("checked")){
-	// 		filtersItem.removeClass("d-none");
-	// 		filtersItem.addClass("d-flex");
-	// 	} else {
-	// 		filtersItem.removeClass("d-flex");
-	// 		filtersItem.addClass("d-none");
-	// 	}
-	// });
+		// If the checkbox is checked, display the output text
+		if ($(this).prop("checked")){
+			filtersItem.removeClass("d-none");
+			filtersItem.addClass("d-flex");
+		} else {
+			filtersItem.removeClass("d-flex");
+			filtersItem.addClass("d-none");
+		}
+	});
 
 
 	$('.icheck').change(function() {
@@ -258,76 +238,7 @@ $(document).ready(function() {
 		} else {
 
 		};
-
-		//$("deselect-all-filters-wrapper").css("display", "flex");
 	});
-
-	// $('.icheck').click(function(){
-	// 	$("deselect-all-filters-wrapper").css("display", "flex");
-	// })
-	
-
-
-
-	// $(".deselect-filter-btn").click(function() {
-	// 	
-	// 	var $clicked = $(this);
-	// 	var type = $clicked.attr("data-type");	
-	// 	var relatedCheckboxId = $clicked.attr("data-related-checkbox-id");
-	// 	var $relatedCheckbox = $("#" + relatedCheckboxId);
-	// 	var isChecked = $relatedCheckbox.prop("checked");
-
-	// 	if (isChecked) {
-
-	// 		$relatedCheckbox.prop("checked", false);
-	// 		// if (type === "subject") {
-	// 		// 	toggleSubject($relatedCheckbox)
-	// 		// } else if (type === "option") {
-	// 		// 	toggleSubjectOption($relatedCheckbox)
-	// 		// } //else if (type === "mepharsem") {
-	// 			//toggleMepharsem($relatedCheckbox)
-	// 		//}
-	// 	}
-	// });
-
-	
-	
-	// $('.icheck').click(function() {
-	// 	var $this = $(this);
-	// 	//
-	// 	if ($this.prop("checked")) {
-	// 		// var $body = $("search-results-body");
-	// 		var $label = $(".main-label")
-	// 		var filtersItemId = $this.prop("id");
-	// 		var filtersItemName = $this.next($label).text();
-	// 		var $filtersList = $(".filters-list");
-	// 		var filtersItemTemplate = 
-	// 		// <div class="my-list-subjects-list-subject">
-	// 	 //        <div class="my-list-subject-wrapper d-flex align-items-center">  
-	// 	 //          <div 
-	// 	 //            class="my-list-item my-list-subject-delete" 
-	// 	 //            data-related-checkbox-id="${subjectId}"
-	// 	 //            data-type="subject"
-	// 	 //          ><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxzdmcgd2lkdGg9IjEzcHgiIGhlaWdodD0iMTNweCIgdmlld0JveD0iMCAwIDEzIDEzIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPg0KICAgIDwhLS0gR2VuZXJhdG9yOiBza2V0Y2h0b29sIDQ4LjIgKDQ3MzI3KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4NCiAgICA8dGl0bGU+Q0NDNDNEOTYtQTcxQS00QTMxLUE1MEMtMDY2RDQ0MThGMDEyPC90aXRsZT4NCiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggc2tldGNodG9vbC48L2Rlc2M+DQogICAgPGRlZnM+PC9kZWZzPg0KICAgIDxnIGlkPSIwNF9teS1saXN0X29wZW4iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0zNDEuMDAwMDAwLCAtNjA2LjAwMDAwMCkiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+DQogICAgICAgIDxnIGlkPSJiZyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIwMS4wMDAwMDAsIDUwNi4wMDAwMDApIiBzdHJva2U9IiM0RTU2NjUiIHN0cm9rZS13aWR0aD0iMS41Ij4NCiAgICAgICAgICAgIDxnIGlkPSLXoNeV16nXkC3XodeS15XXqCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMDAwMDAsIDcyLjAwMDAwMCkiPg0KICAgICAgICAgICAgICAgIDxnIGlkPSJHcm91cC0xMSI+DQogICAgICAgICAgICAgICAgICAgIDxnIGlkPSJHcm91cC0yIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMDMuMDAwMDAwLCAyNS4wMDAwMDApIj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxnIGlkPSJ4IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNDAuMDAwMDAwLCA0LjAwMDAwMCkiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwb2x5bGluZSBpZD0iUGF0aC01MzIiIHBvaW50cz0iMCAwIDUuNDUxMzU3MDIgNS41IDExIDAuMDU1MDY3MzE2OCI+PC9wb2x5bGluZT4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8cG9seWxpbmUgaWQ9IlBhdGgtNTMyIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1LjUwMDAwMCwgOC4yNTAwMDApIHNjYWxlKDEsIC0xKSB0cmFuc2xhdGUoLTUuNTAwMDAwLCAtOC4yNTAwMDApICIgcG9pbnRzPSIwIDUuNSA1LjQ1MTM1NzAyIDExIDExIDUuNTU1MDY3MzIiPjwvcG9seWxpbmU+DQogICAgICAgICAgICAgICAgICAgICAgICA8L2c+DQogICAgICAgICAgICAgICAgICAgIDwvZz4NCiAgICAgICAgICAgICAgICA8L2c+DQogICAgICAgICAgICA8L2c+DQogICAgICAgIDwvZz4NCiAgICA8L2c+DQo8L3N2Zz4=" alt="delete-x"></div>
-	// 	 //          <div class="my-list-subject-name">${subjectName}</div>
-	// 	 //          ${arrow}
-	// 	 //        </div>
-	// 	 //        <div class="my-list-options-wrapper ${collapseClass}">
-		        	
-	// 	 //        	<!-- DYNAMIC CONTENT -->
-
-	// 	 //        </div>
-	// 	 //    </div>
-	// 	    `
-	// 			<li class="filters-list-item" data-related-checkbox-id="${filtersItemId}" data-type="filters-Item">
-	// 					${filtersItemName}
-	// 					<button class="deselect-filter-btn"></button>
-	// 			</li>
-	// 	    `
-
-	// 	    $("html").find($filtersList).append(filtersItemTemplate);
-	// 	}
-	// });
 });
 
 
