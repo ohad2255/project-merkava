@@ -49,8 +49,8 @@
                     </button>
 
                     <!-- english option -->
-                    <div class="dropdown-menu lng-dropdown-menu" role="button" tabindex="0" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item lng-dropdown-item-1" href="#" lang="en">En</a>
+                    <div class="dropdown-menu lng-dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item lng-dropdown-item-1" href="#" lang="en" role="button" tabindex="0">En</a>
                     </div>
                 </div>
                 <div class="font-size-container font-size-container-desktop d-lg-flex align-items-baseline d-none">
@@ -129,8 +129,9 @@
             </div>
 
             <!-- search button -->
+            <label class="sr-only" for="searchInput">search</label>
             <button class="d-flex align-items-center search-input" id="searchInput">
-                <img src="../images/search-icon.svg" class="SearchIcon">
+                <img src="../images/search-icon.svg" class="SearchIcon" alt="search-icon">
             </button>
         </div>
     </div>

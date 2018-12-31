@@ -3,9 +3,12 @@ var stickybits = require('stickybits');
 
 $(document).ready(function() {
 
-	stickybits.default('.options-container', { 
-		useStickyClasses: true
-	});
+	var width = $( window ).width();
+  	if(width > 992){
+		stickybits.default('.options-container', { 
+			useStickyClasses: true
+		});
+	};
 	
 	$('.icheck').keypress(function (e) {
         var key = e.which;

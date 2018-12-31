@@ -246,9 +246,9 @@ header {
             margin-top: 3px;
             //font-family: fbagol, OpenSans;
 
-            &:hover {
+            &:hover, &:focus {
               background-color: #1c6897;
-              color: #0a7bb6;
+              //color: #0a7bb6;
               border: 0;
             }
           }

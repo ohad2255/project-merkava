@@ -2,12 +2,16 @@ require('../common/common');
 var stickybits = require('stickybits');
 
 $(document).ready(function() {
-	
-	stickybits.default('.options-container', { 
-		//stickyBitStickyOffset: 20,
-		verticalPosition: 'top',
-		useStickyClasses: true
-	});
+
+	var width = $( window ).width();
+  	if(width > 992){
+		stickybits.default('.options-container', { 
+			useStickyClasses: true,
+			customVerticalPosition: true,
+			//stickyBitStickyOffset: 20,
+			verticalPosition: 'top' 
+		});
+	};
 
 	$('.icheck').keypress(function (e) {
         var key = e.which;
