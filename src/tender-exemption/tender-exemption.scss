@@ -394,8 +394,8 @@
 				color: $text-dark-grey;
 
 				@media (min-width: $screen-lg-min) {
-					font-size: 2.4rem;
-					line-height: 1.25;
+					font-size: 2rem;
+					line-height: 1.5;
 				}
 			}
 
@@ -453,6 +453,7 @@
 
 				li {
 					margin: 0 0 13px auto;
+					max-width: 355px;
 
 					@media (min-width: $screen-lg-min) {
 						margin: 0 0 33px auto;
@@ -522,7 +523,7 @@
 				min-height: 254px;
 				height: 100%;
 				border-radius: 2.1px;
-				padding: 17px 40px 20px 11px;
+				padding: 25px 32px 20px 20px;
 			}
 
 			.right-line {
@@ -539,7 +540,7 @@
 			.logo-wrapper {
 				height: 78px;
 				width: 78px;
-				margin: 0 0 13px 0;
+				margin: 0 0 12px 0;
 
 				@media (min-width: $screen-lg-min) {
 					width: 88px;
@@ -571,7 +572,7 @@
 			}
 
 			.bid-contact-mail, .bid-contact-name {
-				font-size: 1.5rem;
+				font-size: 1.4rem;
 				font-weight: normal;
 				font-style: normal;
 				font-stretch: normal;
@@ -582,6 +583,12 @@
 
 				a {
 					color: #1f86bc;
+				}
+			}
+
+			.bid-contact-mail {
+				a {
+					font-size: 1.3rem;
 				}
 			}
 
@@ -810,7 +817,7 @@
 	.document-head {
 
 		h3 {
-			font-size: 2.4rem;
+			font-size: 2rem;
 			font-weight: normal;
 			font-style: normal;
 			font-stretch: normal;
@@ -826,28 +833,22 @@
 	}
 
 	.subjects-container {
-		padding: 18px 0 34px 0;
+		padding: 18px 20px 34px;
 		border-bottom: solid 1px $bids-border;
 
 		@media (min-width: $screen-lg-min) {
-			margin: 0 auto 50px;
+			margin: 0 auto 41px;
 			padding: 0;
 			border-bottom: 0;
 		}
-
-		@media (min-width: $screen-xl-min) {
-			margin: 0 auto 62px;
-		}
 	}
 
-	.subjects-wrapper-right {
-		margin: 0 0 0 5px;
-	}
 
 	.subject-wrapper {
 		opacity: 0.8;
-		width: 165px;
-		height: 37px;
+		min-width: 165px;
+		//max-width: 335px;
+		min-height: 37px;
 		border-radius: 2px;
 		background-color: rgba(233, 235, 240, 0.5);
 		margin: 0 0 5px 0;
@@ -859,19 +860,39 @@
 		letter-spacing: normal;
 		text-align: center;
 		color: $text-dark-grey!important;
+		padding: 5px 25px;
+		margin: 0 0 5px 0;
 
-		@media (min-width: $screen-lg-min) {
-			max-width: 152px;
-			min-height: 57px;
-			margin: 0 0 12px 12px;
+		@media (min-width: $screen-md-min) {
+			
 		}
 
-		@media (min-width: $screen-xl-min) {
-			max-width: 190px;
+		@media (min-width: $screen-lg-min) {
+			min-width: 108px;
+			max-width: none;
+			min-height: 57px;
+			line-height: 2.7;
+			padding: 0 30px;
+			margin: 0 0 12px 12px;
+			font-size: 2rem;
+		}
+
+		&:nth-child(odd) {
+			
+
+			@media (min-width: $screen-lg-min) {
+				//width: 190px;
+				//height: 57px;
+				//margin: 0 0 12px 12px;
+			}
 		}
 
 		&:last-child {
-			margin: 0 0 12px 0; 
+
+
+			@media (min-width: $screen-lg-min) {
+				margin: 0 0 12px 0; 
+			}
 		}
 	}
 
@@ -919,12 +940,19 @@
 
 		.related-bid-wrapper {
 			padding: 23px 21px 25px 37px;
+			min-height: 253px;
+		    display: flex;
+		    flex-direction: column;
+
+		    @media (min-width: $screen-lg-min) {
+		    	min-height: 239px;
+			}
 
 			h3 {
 				font-size: 2rem;
-				line-height: 1;
 				color: $main-orange;
 				font-weight: normal;
+				line-height: 1.25;
 				margin: 0;
 			}
 
@@ -935,15 +963,14 @@
 				font-stretch: normal;
 				line-height: 1.25;
 				letter-spacing: normal;
-				margin: 0;
+				margin-bottom: 5px;
 			}
 
 			.middle-p {
 				line-height: 1.23;
-				margin: 15px 0 0 0;
+				margin: 0;
 
 				@media (min-width: $screen-lg-min) {
-					margin: 25px 0 0 0;
 				}
 			}
 		}
@@ -954,7 +981,7 @@
 			font-stretch: normal;
 			line-height: 1;
 			letter-spacing: normal;
-			margin: 15px 0 0 0;
+			margin: auto 0 0 0;
 
 			h3 {
 				color: $text-dark-grey;
@@ -1050,6 +1077,7 @@
 
 		@media (min-width: $screen-lg-min) {
 			font-size: 2rem;
+			line-height: 1.5;
 		}
 	}
 
@@ -1089,5 +1117,21 @@
 
 	a:focus {
 		outline: solid 1px #4286f4;
+	}
+
+	.add-margin {
+		margin: 0 0 5px 5px;
+	}
+
+	.orange {
+		color: $main-orange;
+	}
+
+	.related-bid-top-sec {
+		min-height: none;
+
+		@media (min-width: $screen-lg-min) {
+			min-height: 70px;
+		}
 	}
 }
