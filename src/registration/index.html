@@ -55,14 +55,14 @@
 
                       <!--first name input -->
                       <input class="form-control" type="text" placeholder= "שם פרטי" id="nameInputReg" name="name" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty>
-                      <label class="sr-only" for="nameInputReg"></label>
+                      <label class="sr-only" for="nameInputReg">name-input-reg</label>
                     </div>
                     <div class="form-group last-name">
                       <div class="input-bullet"></div>
                       
                       <!--last name input -->
                       <input class="form-control" type="text" placeholder= "שם משפחה" id="lastNameInputReg" name="lastName" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty>
-                      <label class="sr-only" for="lastNameInputReg"></label>
+                      <label class="sr-only" for="lastNameInputReg">last-name-input-reg</label>
                     </div>
                   </div>
 
@@ -86,14 +86,14 @@
 
                     <!-- email input -->
                     <input type="email" class="form-control" id="inputEmailReg" class="form-control email-input" placeholder="דוא״ל" name="email" data-required="" data-parsley-validate-if-empty data-parsley-error-message="אימייל חייב להכיל @">
-                    <label class="sr-only" for="inputEmailReg"></label>
+                    <label class="sr-only" for="inputEmailReg">input-email-reg</label>
                   </div>
                   <div class="form-group email-confirm">
                     <div class="input-bullet"></div>
 
                     <!-- email confirm input -->
                     <input type="email" class="form-control" id="inputEmailConfirmReg" data-match="inputEmailReg" data-parsley-error-message="דוא״ל לא תואם" placeholder="אימות דוא״ל" data-parsley-equalto="#inputEmailReg" required>
-                    <label class="sr-only" for="inputEmailConfirmReg"></label>
+                    <label class="sr-only" for="inputEmailConfirmReg">input-email-confirm-reg</label>
                   </div>
                 </div>    
                 <div class="form-group password-wrapper d-flex flex-lg-row name-lng-wrapper flex-column">
@@ -111,7 +111,7 @@
                     </div>
 
                     <!-- password input -->
-                    <label class="sr-only" for="inputPasswordReg"></label>
+                    <label class="sr-only" for="inputPasswordReg">input-password-reg</label>
                     <input type="password" id="inputPasswordReg" type="password" pattern="(?=.*\d)(?=.*[A-Z]).{8,}" class="form-control password-input" id="InputPassword" placeholder="סיסמא" data-toggle="password" data-required="" data-parsley-validate-if-empty data-parsley-error-message="סיסמא צריכה להכיל 8 תווים לפחות, לכלול מספרים, תווים ולפחות אות אחת גדולה">
                     <p class="hint">
                       סיסמא צריכה להיות בת 8 תוים עם סיפרה וסימן מיוחד
@@ -133,7 +133,7 @@
 
                     <!-- confirm password input -->
                     <input type="password" class="form-control" id="inputPasswordConfirmReg"  placeholder="אימות סיסמא"  data-parsley-error-message="סיסמא אינה תואמת"  data-parsley-equalto="#inputPassword" required>
-                    <label class="sr-only" for="inputPasswordConfirmReg"></label>
+                    <label class="sr-only" for="inputPasswordConfirmReg">input-password-confirm-reg</label>
                   </div>
                 </div>
 

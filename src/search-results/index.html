@@ -243,20 +243,28 @@
 
                   <!-- filter update date open -->
                   <div class="date-filter-wrapper">
+
+                    <!-- start date input -->
                     <div class="input-group input-group-1 date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input1" id="datepicker1">
                       <div class="input-wrapper">
-                        <input type="text" class="form-control datepicker" placeholder="מתאריך" data-date-format="mm/dd/yyyy" id="datepicker">
+                        <input type="text" class="form-control datepicker" placeholder="מתאריך" data-date-format="mm/dd/yyyy" id="datepickerInput1">
+                        <label class="sr-only" for="datepickerInput1">start-date</label>
                         <img src="../common/images/date-img.svg" class="date-picker-icon glyphicon glyphicon-calendar" alt="calendar-icon">
                       </div>
                     </div>
                     <input type="hidden" id="dtp_input1" value="">
+                    <label class="sr-only" for="dtp_input1"></label>
+
+                    <!-- end date input -->
                     <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input2" id="datepicker2">
                       <div class="input-wrapper">
-                        <input type="text" class="form-control datepicker" placeholder="עד תאריך">
+                        <input type="text" class="form-control datepicker" placeholder="עד תאריך" id="datepickerInput2">
+                        <label class="sr-only" for="datepickerInput2">end-date</label>
                         <img src="../common/images/date-img.svg" class="date-picker-icon glyphicon glyphicon-calendar" alt="calendar-icon">
                       </div>
                     </div>
                     <input type="hidden" id="dtp_input2" value=""> 
+                    <label class="sr-only" for="dtp_input2"></label>
 
                     <!-- new //////////////////////////////////////////////////////////////////////////-->
 
@@ -273,13 +281,15 @@
 
                   <!-- filter last date open -->
                   <div class="last-date-filter-wrapper">
-                    <div class="input-group input-group-1 date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input1" id="datepicker1">
+                    <div class="input-group input-group-1 date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input3" id="datepicker3">
                       <div class="input-wrapper">
-                        <input type="text" class="form-control datepicker" placeholder="תאריך" data-date-format="mm/dd/yyyy" id="datepicker">
+                        <input type="text" class="form-control datepicker" placeholder="תאריך" data-date-format="mm/dd/yyyy" id="datepickerInput3">
+                        <label class="sr-only" for="datepickerInput3">end-date</label>
                         <img src="../common/images/date-img.svg" class="date-picker-icon glyphicon glyphicon-calendar" alt="calendar-icon">
                       </div>
                     </div>
-                    <input type="hidden" id="dtp_input1" value="">
+                    <input type="hidden" id="dtp_input3" value="">
+                    <label class="sr-only" for="dtp_input3">last-date</label>
 
                     <!-- new //////////////////////////////////////////////////////////////////////////-->
 
@@ -467,20 +477,17 @@
 
                   <!-- filter last date open -->
                   <div class="last-date-filter-wrapper d-none">
-                    <div class="input-group input-group-1 date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input1" id="datepicker1">
+                    <div class="input-group input-group-1 date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input4" id="datepicker4">
+
+                      <!-- date exemption search results -->
                       <div class="input-wrapper">
-                        <input type="text" class="form-control datepicker" placeholder="תאריך" data-date-format="mm/dd/yyyy" id="datepicker">
+                        <input type="text" class="form-control datepicker" placeholder="תאריך" data-date-format="mm/dd/yyyy" id="datepickerInput4">
+                        <label class="sr-only" for="datepickerInput4">last-date-exemption</label>
                         <img src="../common/images/date-img.svg" class="date-picker-icon glyphicon glyphicon-calendar" alt="calendar-icon">
                       </div>
                     </div>
-                    <input type="hidden" id="dtp_input1" value="">
-                    <!-- <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input2" id="datepicker2">
-                      <div class="input-wrapper">
-                        <input type="text" class="form-control datepicker" placeholder="עד תאריך">
-                        <img src="../common/images/date-img.svg" class="date-picker-icon glyphicon glyphicon-calendar" alt="calendar-icon">
-                      </div>
-                    </div>
-                    <input type="hidden" id="dtp_input2" value="">  -->
+                    <input type="hidden" id="dtp_input4" value="">
+                    <label class="sr-only" for="dtp_input4">date-exemption</label>
                   </div>
 
                   <!-- filter update date close -->
@@ -491,20 +498,28 @@
 
                   <!-- filter update date open -->
                   <div class="date-filter-wrapper d-none">
-                    <div class="input-group input-group-1 date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input1" id="datepicker1">
+                    <div class="input-group input-group-1 date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input5" id="datepicker5">
+
+                      <!-- start date exemption search results -->
                       <div class="input-wrapper">
-                        <input type="text" class="form-control datepicker" placeholder="מתאריך" data-date-format="mm/dd/yyyy" id="datepicker">
+                        <input type="text" class="form-control datepicker" placeholder="מתאריך" data-date-format="mm/dd/yyyy" id="datepickerInput5">
+                        <label class="sr-only" for="datepickerInput5">start-date-exemption</label>
                         <img src="../common/images/date-img.svg" class="date-picker-icon glyphicon glyphicon-calendar" alt="calendar-icon">
                       </div>
                     </div>
-                    <input type="hidden" id="dtp_input1" value="">
-                    <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input2" id="datepicker2">
+                    <input type="hidden" id="dtp_input5" value="">
+                    <label class="sr-only" for="dtp_input5"></label>
+                    <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input6" id="datepicker2">
+
+                      <!-- end date exemption search results -->
                       <div class="input-wrapper">
-                        <input type="text" class="form-control datepicker" placeholder="עד תאריך">
+                        <input type="text" class="form-control datepicker" placeholder="עד תאריך" id="datepickerInput6">
+                        <label class="sr-only" for="datepickerInput6">end-date-exemption</label>
                         <img src="../common/images/date-img.svg" class="date-picker-icon glyphicon glyphicon-calendar" alt="calendar-icon">
                       </div>
                     </div>
-                    <input type="hidden" id="dtp_input2" value=""> 
+                    <input type="hidden" id="dtp_input6" value="">
+                    <label class="sr-only" for="dtp_input6"></label>
                   </div>
 
                   <!-- filter tags close -->

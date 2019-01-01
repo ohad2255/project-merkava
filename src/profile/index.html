@@ -66,14 +66,14 @@
                 <!-- first name input -->
                 <div class="first-name-wrapper form-group d-none">
                   <input class="form-control" type="text" placeholder="שם פרטי" id="firstNameInputProfile" name="firstName" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty>
-                  <label class="sr-only" for="firstNameInputProfile"></label>
+                  <label class="sr-only" for="firstNameInputProfile">firstName</label>
                   <div class="input-bullet"></div>
                 </div>
 
                 <!-- last name input -->
                 <div class="last-name-wrapper form-group">
                   <input class="form-control" type="text" placeholder="שם פרטי ומשפחה" id="lastNameInputProfile" name="lastName" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty>
-                  <label class="sr-only" for="lastNameInputProfile"></label>
+                  <label class="sr-only" for="lastNameInputProfile">lastName</label>
                   <div class="input-bullet"></div>
                 </div>
               </div>
@@ -96,14 +96,14 @@
 
                 <!-- email input -->
                 <input type="email" class="form-control" id="inputEmailProfile" class="form-control email-input" placeholder="דוא״ל" name="email" data-required="" data-parsley-validate-if-empty data-parsley-error-message="אימייל חייב להכיל @">
-                <label class="sr-only" for="inputEmailProfile"></label>
+                <label class="sr-only" for="inputEmailProfile">Email</label>
                 <div class="input-bullet"></div>
               </div>
               <div class="form-group email-confirm">
 
                 <!-- email confirm input -->
                 <input type="email" class="form-control" id="inputEmailConfirmProfile" data-match="inputEmailReg" data-parsley-error-message="דוא״ל לא תואם" placeholder="אימות דוא״ל" data-parsley-equalto="#inputEmailProfile" required>
-                <label class="sr-only" for="inputEmailConfirmProfile"></label>
+                <label class="sr-only" for="inputEmailConfirmProfile">EmailConfirm</label>
                 <div class="input-bullet"></div>
               </div>
             </div>    
@@ -116,13 +116,15 @@
                 <div id="showPasswordEye" class="password-eye" role="button" tabindex="0">
                   <img src="../common/images/password-eye-disabled.svg">
                 </div>
+                <label class="sr-only" for="showPasswordEye"></label>
 
                 <div id="showPasswordEyeShow" class="d-none password-eye" role="button" tabindex="0">
                   <img src="../common/images/password-eye-show.svg">
                 </div>
+                <label class="sr-only" for="showPasswordEyeShow"></label>
 
                 <!-- password input -->
-                <label class="sr-only" for="inputPassword"></label>
+                <label class="sr-only" for="inputPasswordAcc">Password</label>
                 <input type="password" id="inputPasswordAcc" type="password" pattern="(?=.*\d)(?=.*[A-Z]).{8,}" class="form-control password-input" placeholder="סיסמא" data-toggle="password" data-required="" data-parsley-validate-if-empty data-parsley-error-message="סיסמא צריכה להכיל 8 תווים לפחות, לכלול מספרים, תווים ולפחות אות אחת גדולה">
                 <p class="hint">
                   סיסמא צריכה להיות בת 8 תוים עם סיפרה וסימן מיוחד
@@ -137,10 +139,12 @@
                 <div id="showPasswordEyeConfirm" class="password-eye" role="button" tabindex="0">
                   <img src="../common/images/password-eye-disabled.svg">
                 </div>
+                <label class="sr-only" for="showPasswordEyeConfirm"></label>
 
                 <div id="showPasswordEyeConfirmShow" class="d-none password-eye" role="button" tabindex="0">
                   <img src="../common/images/password-eye-show.svg">
                 </div>
+                <label class="sr-only" for="showPasswordEyeConfirmShow"></label>
 
                 <!-- confirm password input -->
                 <input type="password" class="form-control" id="inputPasswordConfirmAcc"  placeholder="אימות סיסמא"  data-parsley-error-message="סיסמא אינה תואמת"  data-parsley-equalto="#inputPasswordAcc" required>
