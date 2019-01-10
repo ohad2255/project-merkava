@@ -182,7 +182,7 @@ button {
   }
 }
 
-.hint {
+#hint {
   opacity: 0.51;
   font-size: 1.1rem;
   font-weight: normal;
@@ -214,13 +214,13 @@ input.parsley-error,
   ~.help-block {
     display: none;
   }
-  ~.hint {
+  ~#hint {
     top: calc(100% + 1.2em);
     visibility: hidden;
   }
 }
 
-input.parsley-error+.hint {}
+input.parsley-error+#hint {}
 
 .modal {
   background-color: rgba(10, 123, 182, 0.9);
