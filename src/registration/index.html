@@ -26,7 +26,7 @@
       ${require("../common/header/header.html")} 
 
       <!-- main-content -->
-      <section class="d-flex align-items-center justify-content-center">
+      <section id="mainContent"  class="d-flex align-items-center justify-content-center">
         <div class="registration-container d-flex custom-container">
           <div class="registration-wrapper d-flex flex-column align-items-center">
 
@@ -54,15 +54,19 @@
                       <div class="input-bullet"></div>
 
                       <!--first name input -->
-                      <input class="form-control" type="text" placeholder= "שם פרטי" id="nameInputReg" name="name" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty>
-                      <label class="sr-only" for="nameInputReg">name-input-reg</label>
+                      <input class="form-control" type="text" placeholder= "שם פרטי" id="nameInputReg" name="name" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty aria-label="first-name" aria-describedby="firstNameLabel">
+                      <label id="firstNameLabel" class="sr-only" for="nameInputReg">
+                      שדה חובה
+                      </label>
                     </div>
                     <div class="form-group last-name">
                       <div class="input-bullet"></div>
                       
                       <!--last name input -->
-                      <input class="form-control" type="text" placeholder= "שם משפחה" id="lastNameInputReg" name="lastName" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty>
-                      <label class="sr-only" for="lastNameInputReg">last-name-input-reg</label>
+                      <input class="form-control" type="text" placeholder= "שם משפחה" id="lastNameInputReg" name="lastName" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty aria-label="last-name" aria-describedby="lastNameLabel">
+                      <label id="lastNameLabel" class="sr-only" for="lastNameInputReg">
+                      שדה חובה
+                      </label>
                     </div>
                   </div>
 
@@ -72,12 +76,15 @@
                     <div class="blue-arrow"></div>
 
                     <!-- language select -->
-                    <select class="form-control language-select" id="languagReg" title="שפה" required data-parsley-error-message="שדה חובה">
+                    <select class="form-control language-select" id="languagReg" title="שפה" required data-parsley-error-message="שדה חובה" aria-label="language-select" aria-describedby="languageSelectLabel">
 
                       <!-- language select options -->
                       <option selected>עברית</option>
                       <option>אנגלית</option>
                     </select>
+                    <label id="languageSelectLabel" class="sr-only" for="languagReg">
+                      שדה חובה
+                    </label>
                   </div>
                 </div> 
                 <div class="form-group email-wrapper d-flex flex-lg-row name-lng-wrapper flex-column">
@@ -85,15 +92,17 @@
                     <div class="input-bullet"></div>
 
                     <!-- email input -->
-                    <input type="email" class="form-control" id="inputEmailReg" class="form-control email-input" placeholder="דוא״ל" name="email" data-required="" data-parsley-validate-if-empty data-parsley-error-message="אימייל חייב להכיל @">
-                    <label class="sr-only" for="inputEmailReg">input-email-reg</label>
+                    <input type="email" class="form-control" id="inputEmailReg" class="form-control email-input" placeholder="דוא״ל" name="email" data-required="" data-parsley-validate-if-empty data-parsley-error-message="אימייל חייב להכיל @" aria-label="email-address" aria-describedby="emailAddressLabel">
+                    <label id="emailAddressLabel" class="sr-only" for="inputEmailReg">
+                    אימייל חייב להכיל @
+                    </label>
                   </div>
                   <div class="form-group email-confirm">
                     <div class="input-bullet"></div>
 
                     <!-- email confirm input -->
-                    <input type="email" class="form-control" id="inputEmailConfirmReg" data-match="inputEmailReg" data-parsley-error-message="דוא״ל לא תואם" placeholder="אימות דוא״ל" data-parsley-equalto="#inputEmailReg" required>
-                    <label class="sr-only" for="inputEmailConfirmReg">input-email-confirm-reg</label>
+                    <input type="email" class="form-control" id="inputEmailConfirmReg" data-match="inputEmailReg" data-parsley-error-message="דוא״ל לא תואם" placeholder="אימות דוא״ל" data-parsley-equalto="#inputEmailReg" required aria-label="email-address-confirm" aria-describedby="emailAddressConfirmLabel">
+                    <label id="emailAddressConfirmLabel" class="sr-only" for="inputEmailConfirmReg">שדה חובה</label>
                   </div>
                 </div>    
                 <div class="form-group password-wrapper d-flex flex-lg-row name-lng-wrapper flex-column">
@@ -111,9 +120,9 @@
                     </div>
 
                     <!-- password input -->
-                    <label class="sr-only" for="inputPasswordReg">input-password-reg</label>
-                    <input type="password" id="inputPasswordReg" type="password" pattern="(?=.*\d)(?=.*[A-Z]).{8,}" class="form-control password-input" id="InputPassword" placeholder="סיסמא" data-toggle="password" data-required="" data-parsley-validate-if-empty data-parsley-error-message="סיסמא צריכה להכיל 8 תווים לפחות, לכלול מספרים, תווים ולפחות אות אחת גדולה">
-                    <p class="hint">
+                    <label class="sr-only" for="inputPasswordReg"></label>
+                    <input type="password" id="inputPasswordReg" type="password" pattern="(?=.*\d)(?=.*[A-Z]).{8,}" class="form-control password-input" id="InputPassword" placeholder="סיסמא" data-toggle="password" data-required="" data-parsley-validate-if-empty data-parsley-error-message="סיסמא צריכה להכיל 8 תווים לפחות, לכלול מספרים, תווים ולפחות אות אחת גדולה"  aria-label="password-input" aria-describedby="hint">
+                    <p id="hint">
                       סיסמא צריכה להיות בת 8 תוים עם סיפרה וסימן מיוחד
                     </p>
                   </div>
@@ -132,8 +141,8 @@
                     </div>
 
                     <!-- confirm password input -->
-                    <input type="password" class="form-control" id="inputPasswordConfirmReg"  placeholder="אימות סיסמא"  data-parsley-error-message="סיסמא אינה תואמת"  data-parsley-equalto="#inputPassword" required>
-                    <label class="sr-only" for="inputPasswordConfirmReg">input-password-confirm-reg</label>
+                    <input type="password" class="form-control" id="inputPasswordConfirmReg"  placeholder="אימות סיסמא"  data-parsley-error-message="סיסמא אינה תואמת"  data-parsley-equalto="#inputPassword" aria-describedby="passwordConfirmLabel aria-label="confirm-password-input" required>
+                    <label id="passwordConfirmLabel" class="sr-only" for="inputPasswordConfirmReg">שדה חובה</label>
                   </div>
                 </div>
 

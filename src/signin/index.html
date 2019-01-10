@@ -26,7 +26,7 @@
       ${require("../common/header/header.html")} 
 
       <!-- main-content -->
-      <section class="main-content d-flex align-items-center justify-content-center">
+      <section id="mainContent"  class="main-content d-flex align-items-center justify-content-center">
         <div class="signin-container d-flex custom-container flex-column flex-lg-row">
 
           <!-- sign in section -->
@@ -45,8 +45,10 @@
               <div class="form-group">
 
                 <!-- email input -->
-                <input id="InputEmailSign" type="email" class="form-control email-input" placeholder="דוא״ל" name="email" data-required="" data-parsley-validate-if-empty data-parsley-error-message="כתובת האימייל חייבת להכיל את התו @">
-                <label class="sr-only" for="InputEmailSign" data-parsley-error-message="אימייל חייב להכיל @"></label>
+                <input id="InputEmailSign" type="email" class="form-control email-input" placeholder="דוא״ל" name="email" data-required="" data-parsley-validate-if-empty data-parsley-error-message="כתובת האימייל חייבת להכיל את התו @" aria-label="email-address" aria-describedby="emailAddressLabel">
+                <label id="emailAddressLabel" class="sr-only" for="InputEmailSign">
+                  כתובת האימייל חייבת להכיל את התו @
+                </label>
               </div>
 
               ${require("../common/password-with-eye/password-with-eye.html")}

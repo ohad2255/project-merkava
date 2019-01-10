@@ -26,7 +26,7 @@
       ${require("../common/header/header.html")} 
 
       <!-- main-content -->
-      <section class="d-flex align-items-center justify-content-center">
+      <section id="mainContent" class="d-flex align-items-center justify-content-center">
         <div class="forgot-password-a-container d-flex custom-container">
           <div class="forgot-password-a-wrapper d-flex flex-column align-items-center">
 
@@ -50,8 +50,10 @@
                   <div class="form-group email">
 
                     <!-- email input -->
-                    <input type="email" class="form-control" id="inputEmailForgotPassword" class="form-control email-input" placeholder="כתובת דוא״ל" name="email" data-required="" data-parsley-validate-if-empty data-parsley-error-message="אימייל חייב להכיל @">
-                    <label class="sr-only" for="inputEmailForgotPassword"></label>
+                    <input type="email" class="form-control" id="inputEmailForgotPassword" class="form-control email-input" placeholder="כתובת דוא״ל" name="email" data-required="" data-parsley-validate-if-empty data-parsley-error-message="אימייל חייב להכיל @" aria-label="email-address" aria-describedby="emailAddressLabel">
+                    <label id="emailAddressLabel" class="sr-only" for="inputEmailForgotPassword">
+                      אימייל חייב להכיל @
+                    </label>
                   </div>
                 </div>    
                 <div class="forgot-password-a-button">
