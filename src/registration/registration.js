@@ -57,9 +57,9 @@ $(document).ready(function() {
         });
 
         input.focusin(function() {
-            $('.hint').show();
+            $('#hint').show();
         }).focusout(function () {
-            $('.hint').hide();
+            $('#hint').hide();
         });
     });
 });

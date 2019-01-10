@@ -72,9 +72,9 @@ $(document).ready(function () {
     }
 
     $('#subjectTextarea').focusin(function() {
-        $('.hint').show();
+        $('#hint').show();
     }).focusout(function () {
-        $('.hint').hide();
+        $('#hint').hide();
     });
 
     // function focusMethod() {

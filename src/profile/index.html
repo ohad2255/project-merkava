@@ -55,7 +55,7 @@
       </section>
 
       <!-- main-content -->
-      <section class="profile-body d-flex flex-column align-items-center">
+      <section id="mainContent"  class="profile-body d-flex flex-column align-items-center">
         <div class="profile-body-wrapper custom-container">
 
           <!-- profile form -->
@@ -65,15 +65,19 @@
 
                 <!-- first name input -->
                 <div class="first-name-wrapper form-group d-none">
-                  <input class="form-control" type="text" placeholder="שם פרטי" id="firstNameInputProfile" name="firstName" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty>
-                  <label class="sr-only" for="firstNameInputProfile">firstName</label>
+                  <input class="form-control" type="text" placeholder="שם פרטי" id="firstNameInputProfile" name="firstName" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty aria-label="first-name" aria-describedby="firstNameLabel">
+                  <label id="firstNameLabel" class="sr-only" for="firstNameInputProfile">
+                    שדה חובה
+                  </label>
                   <div class="input-bullet"></div>
                 </div>
 
                 <!-- last name input -->
                 <div class="last-name-wrapper form-group">
-                  <input class="form-control" type="text" placeholder="שם פרטי ומשפחה" id="lastNameInputProfile" name="lastName" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty>
-                  <label class="sr-only" for="lastNameInputProfile">lastName</label>
+                  <input class="form-control" type="text" placeholder="שם פרטי ומשפחה" id="lastNameInputProfile" name="lastName" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty aria-label="last-name" aria-describedby="lastNameLabel">
+                  <label id="lastNameLabel" class="sr-only" for="lastNameInputProfile">
+                    שדה חובה                  
+                  </label>
                   <div class="input-bullet"></div>
                 </div>
               </div>
@@ -81,7 +85,10 @@
                 <div class="blue-arrow"></div>
 
                 <!-- language select -->
-                <select class="form-control language-select" id="languageReg" placeholder= "שפה" required data-parsley-error-message="שדה חובה">
+                <label id="languageSelectLabel" class="sr-only" for="languageReg">
+                  שדה חובה 
+                </label>
+                <select class="form-control language-select" id="languageReg" placeholder= "שפה" required data-parsley-error-message="שדה חובה" aria-label="language-select" aria-describedby="languageSelectLabel">
 
                   <!-- language options -->
                   <option value="0" disabled selected hidden>שפה</option>
@@ -95,15 +102,19 @@
               <div class="form-group email">
 
                 <!-- email input -->
-                <input type="email" class="form-control" id="inputEmailProfile" class="form-control email-input" placeholder="דוא״ל" name="email" data-required="" data-parsley-validate-if-empty data-parsley-error-message="אימייל חייב להכיל @">
-                <label class="sr-only" for="inputEmailProfile">Email</label>
+                <input type="email" class="form-control" id="inputEmailProfile" class="form-control email-input" placeholder="דוא״ל" name="email" data-required="" data-parsley-validate-if-empty data-parsley-error-message="אימייל חייב להכיל @" aria-label="email-address" aria-describedby="emailAddressLabel">
+                <label class="sr-only" for="inputEmailProfile">
+                  אימייל חייב להכיל @
+                </label>
                 <div class="input-bullet"></div>
               </div>
               <div class="form-group email-confirm">
 
                 <!-- email confirm input -->
-                <input type="email" class="form-control" id="inputEmailConfirmProfile" data-match="inputEmailReg" data-parsley-error-message="דוא״ל לא תואם" placeholder="אימות דוא״ל" data-parsley-equalto="#inputEmailProfile" required>
-                <label class="sr-only" for="inputEmailConfirmProfile">EmailConfirm</label>
+                <input type="email" class="form-control" id="inputEmailConfirmProfile" data-match="inputEmailReg" data-parsley-error-message="דוא״ל לא תואם" placeholder="אימות דוא״ל" data-parsley-equalto="#inputEmailProfile" required aria-label="confirm-email-address" aria-describedby="confirmEmailAddressLabel">
+                <label id="confirmEmailAddressLabel" class="sr-only" for="inputEmailConfirmProfile">
+                  אימות דוא״ל
+                </label>
                 <div class="input-bullet"></div>
               </div>
             </div>    
@@ -124,9 +135,11 @@
                 <label class="sr-only" for="showPasswordEyeShow"></label>
 
                 <!-- password input -->
-                <label class="sr-only" for="inputPasswordAcc">Password</label>
-                <input type="password" id="inputPasswordAcc" type="password" pattern="(?=.*\d)(?=.*[A-Z]).{8,}" class="form-control password-input" placeholder="סיסמא" data-toggle="password" data-required="" data-parsley-validate-if-empty data-parsley-error-message="סיסמא צריכה להכיל 8 תווים לפחות, לכלול מספרים, תווים ולפחות אות אחת גדולה">
-                <p class="hint">
+                <label class="sr-only" for="inputPasswordAcc">
+                  סיסמא צריכה להכיל 8 תווים לפחות, לכלול מספרים, תווים ולפחות אות אחת גדולה
+                </label>
+                <input type="password" id="inputPasswordAcc" type="password" pattern="(?=.*\d)(?=.*[A-Z]).{8,}" class="form-control password-input" placeholder="סיסמא" data-toggle="password" data-required="" data-parsley-validate-if-empty data-parsley-error-message="סיסמא צריכה להכיל 8 תווים לפחות, לכלול מספרים, תווים ולפחות אות אחת גדולה" aria-label="password-input" aria-describedby="hint">
+                <p id="hint">
                   סיסמא צריכה להיות בת 8 תוים עם סיפרה וסימן מיוחד
                 </p>
               </div>
@@ -147,16 +160,20 @@
                 <label class="sr-only" for="showPasswordEyeConfirmShow"></label>
 
                 <!-- confirm password input -->
-                <input type="password" class="form-control" id="inputPasswordConfirmAcc"  placeholder="אימות סיסמא"  data-parsley-error-message="סיסמא אינה תואמת"  data-parsley-equalto="#inputPasswordAcc" required>
-                <label class="sr-only" for="inputPasswordConfirm"></label>
+                <input type="password" class="form-control" id="inputPasswordConfirmAcc"  placeholder="אימות סיסמא"  data-parsley-error-message="סיסמא אינה תואמת"  data-parsley-equalto="#inputPasswordAcc" required aria-label="confirm-password-input" aria-label="confirm-password" aria-describedby="confirmPasswordlabel">
+                <label class="sr-only" for="inputPasswordConfirm" id="confirmPasswordlabel">
+                  אימות סיסמא
+                </label>
               </div>
               
             </div>
 
             <!-- phone number input -->
             <div class="form-group phone-number">
-              <input type="tel" class="form-control" id="phoneNumber" placeholder="טלפון" data-parsley-error-message="מספר לא תקין" minlength="9" maxlength="10">
-              <label class="sr-only" for="phoneNumber"></label>
+              <input type="tel" class="form-control" id="phoneNumber" placeholder="טלפון" data-parsley-error-message="מספר לא תקין" minlength="9" maxlength="10" aria-label="phone-number" aria-describedby="phoneNumberlabel">
+              <label id="phoneNumberlabel" class="sr-only" for="phoneNumber">
+                טלפון
+              </label>
               <!-- <div class="input-bullet"></div> -->
             </div>
 
@@ -164,8 +181,10 @@
 
               <!-- active checkbox input -->
               <div class="checkbox-input-wrapper">
-                <input type="checkbox" class="form-checkbox" id="activeAccount" name="check">
-                <label class="sr-only" for="activeAccount"></label>
+                <input type="checkbox" class="form-checkbox" id="activeAccount" name="check"aria-label="active-account-checkbox" aria-describedby="activeAccountLabel">
+                <label id="activeAccountLabel" class="sr-only" for="activeAccount">
+                  סימון חשבונך כלא פעיל יחסום את חשבונך מלקבל עדכונים שוטפים בנושאים שבחרת.  
+                </label>
               </div>
               <div class="input-label">
 
