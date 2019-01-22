@@ -28,19 +28,20 @@ $(document).ready(function() {
 		$(this).find($('.mobile-filter-arrows-wrapper')).toggleClass('rotate');
 		$('.facet').toggleClass('padding-top-facet');
 	});
-	let cancelButton = `
+	
+
+	let datepicker = $('.datepicker');
+
+	datepicker.each(function() {
+		//$(this).datepicker();
+
+		let cancelButton = `
 						<div>
 					    	<button class= "cancel-button-datepicker">src/common/images/cancel-button-datepicker.svg
 							<img src="../common/images/cancel-button-datepicker.svg" class="filter-icon" alt="filter-icon">
 						    	</button>
 					    </div>
 				    ` ;
-
-	// let picker = [];
-	let datepicker = $('.datepicker');
-
-	datepicker.each(function() {
-		//$(this).datepicker();
 		
 		let picker =  new Pikaday({ 
 				field: this, 
@@ -52,24 +53,13 @@ $(document).ready(function() {
 				    weekdays      : ['ראשון','שני','שלישי','רביעי','חמישי','שישי','שבת'],
 				    weekdaysShort : ['א','ב','ג','ד','ה','ו','ש'],
 				    isRTL: true,
-				    // addButton: {
-				    //     text: mmm, //set text 1 to 10
-				    //     id: 'cancelButton_'+i,
-				    //     class: 'cancel-button',
-				    //     click: function () { picker.hide(); }
-				    // });
-				    // onSelect: function() {		        
-    				// 	$('.pika-lendar').append(cancelButton);
-				    // }
 				},
-				//onOpen: $('html').find($('.pika-lendar')).append(cancelButton),
+				onOpen: function() {		      
+					$(this).find($('.pika-lendar')).append(cancelButton);
+			    }
 			});
 
 		    $(this).data('pikaday', picker);
-
-		    //$(this).append(cancelButton);
-	
-		    //$('.pika-lendar').css('background-color', 'red!important')
 	});
 
 
