@@ -1127,276 +1127,656 @@
 	}
 }
 
-.pika-single {
-    z-index: 9999;
-    display: block;
-    position: relative;
-    color: #333;
-    background: #fff;
-    border: 1px solid #ccc;
-    border-bottom-color: #bbb;
-    font-family: $main-font!important;
-    //display: block!important;
-    //position: absolute!important;
-    //top: 1000px!important;
-   // right: 0!important;
+
+// tiny-date-picker ////////////////////////////////////////////
+
+.dp-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.75);
 }
 
-/*
-clear child float (pika-lendar), using the famous micro clearfix hack
-http://nicolasgallagher.com/micro-clearfix-hack/
-*/
-.pika-single:before,
-.pika-single:after {
-    content: " ";
-    display: table;
-}
-.pika-single:after { clear: both }
-
-.pika-single.is-hidden {
-    display: none;
+.dp {
+  position: relative;
+  background: #FFF;
+  box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.25);
+  line-height: 1.4;
+  border-radius: 4px;
+  max-height: 400px;
+  z-index: 1000;
+  padding-top: 20px;
+  overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
 }
 
-.pika-single.is-bound {
-    position: absolute;
-    box-shadow: 0 5px 15px -5px rgba(0,0,0,.5);
-    //width: 449px;
-  	//height: 313px;
- 	border-radius: 4px;
-  	box-shadow: 0 0 12px 0 #d4d4d4;
-  	background-color: var(--white);
+.dp:before {
+  
 }
 
-.pika-lendar {
-    float: left;
-    width: 449px!important;
-    height: 313px!important;
-    margin: 10px 20px!important;
+.dp-permanent .dp {
+  padding-top: 0;
+  border: 1px solid #EEE;
+  box-shadow: none;
 }
 
-.pika-title {
-	margin-top: 10px;
-    position: relative;
-    text-align: center;
+.dp-permanent .dp:before {
+  display: none;
 }
 
-.pika-label {
-    display: inline-block;
-    position: relative;
-    z-index: 9999;
-    overflow: hidden;
-    margin: 0;
-    padding: 0!important;
-    font-weight: normal!important;
-    background-color: #fff;
-    font-size: 1.6rem!important;
-	font-weight: normal!important;
-	font-style: normal!important;
-	font-stretch: normal!important;
-	line-height: normal!important;
-	letter-spacing: normal!important;
-	text-align: center!important;
-	color: #505050!important;
-
-	&:first-child {
-		margin: 0 0 0 3px!important;
-	}
-}
-.pika-title select {
-    cursor: pointer;
-    position: absolute;
-    z-index: 9998;
-    margin: 0;
-    left: 0;
-    top: 5px;
-    opacity: 0;
+.dp-cal {
+  //min-height: 300px;
 }
 
-.pika-prev,
-.pika-next {
-    display: block;
-    cursor: pointer;
-    position: relative;
-    outline: none;
-    border: 0;
-    padding: 0;
-    width: 20px;
-    height: 30px;
-    /* hide text using text-indent trick, using width value (it's enough) */
-    text-indent: 20px;
-    white-space: nowrap;
-    overflow: hidden;
-    background-color: transparent;
-    background-position: center center;
-    background-repeat: no-repeat;
-	opacity: 1!important;
-    border: solid #1f86bc!important;
-	border-width: 0 1.5px 1.5px 0!important;
-	height: 10px!important;
-	width: 10px!important;
-	background-image: none!important;
-	display: inline-block!important;
-	top: 4px;
+.dp-below {
+	position: absolute;
+	font-size: 1.6rem;
+	//width: 400px;
+	max-width: 100vw;
+	width: 449px;
+	height: 313px;
+	margin: 10px 20px;
 }
 
-.pika-prev:hover,
-.pika-next:hover {
-    opacity: 1;
+.dp-permanent {
+  position: relative;
+  font-size: 0.8em;
+  width: 400px;
+  max-width: 100vw;
 }
 
-.pika-prev,
-.is-rtl .pika-next {
-    float: left;
-	transform: rotate(135deg)!important;
+.dp-permanent .dp{
+  z-index: 0;
 }
 
-.pika-next,
-.is-rtl .pika-prev {
-	float: right;
-	transform: rotate(-45deg)!important;
+.dp-modal .dp {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 600px;
+  width: calc(100% - 4em);
+  transform: translate(-50%, -50%);
+  animation: slide-up 0.3s forwards;
 }
 
-.pika-prev.is-disabled,
-.pika-next.is-disabled {
-    cursor: default;
-    opacity: .2;
+.dp-months {
+  padding: 24px;
 }
 
-.pika-select {
-    display: inline-block;
+.dp-years {
+  box-sizing: border-box;
+  max-height: 400px;
+  padding: 8px 0;
+  overflow: auto !important; /* HACK for Chrome on Android */
 }
 
-.pika-table {
-    width: 100%;
-    border-collapse: collapse;
-    border-spacing: 0;
-    border: 0;
+.dp-cal-month,
+.dp-cal-year,
+.dp-day,
+.dp-month,
+.dp-year {
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  color: #3B404D;
+  border-radius: 2px;
+  border: 0;
+  background: transparent;
 }
 
-.pika-table th,
-.pika-table td {
-    width: 58px!important;
-  	height: 24px!important;
-  	//margin: 8px 1px!important;
-  	border: $main-white solid!important;
-  	border-width: 10px 0 10px 2px!important;
-    padding: 0;
+.dp-cal-header {
+  	position: relative;
+  	text-align: center;
+  	//padding-bottom: 16px;
+	background: $main-white;
 }
 
-.pika-table th {
-    color: #999;
-    font-size: 12px;
-    line-height: 25px;
-    font-weight: bold;
-    text-align: center;
+.dp-next,
+.dp-prev {
+	position: absolute;
+	width: 22px;
+    height: 20px;
+	overflow: hidden;
+	top: 14px;
+	//color: #777;
+	border-radius: 2px;
+	border: 0;
+	background: transparent;
+	padding: 0;
+
+	// border: solid #1f86bc!important;
+	// border-width: 0 1.5px 1.5px 0!important;
+	// height: 10px!important;
+	// width: 10px!important;
 }
 
-.pika-button {
-    cursor: pointer;
-    display: block;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    outline: none;
-    border: 0;
-    margin: 0;
-    width: 100%;
-    padding: 5px;
-    color: #666;
-    font-size: 12px;
-    line-height: 15px;
-    text-align: right;
-    background-color: $main-white!important;
-  	text-align: center!important;
+.dp-next:focus,
+.dp-prev:focus,
+.dp-next:hover,
+.dp-prev:hover {
+  outline: none;
+  color: inherit;
 }
 
-.pika-week {
-    font-size: 11px;
-    color: #999;
+.dp-prev {
+  left: 20px;
+  right: auto;
+  top: 0;
 }
 
-.is-today .pika-button {
-    color: #33aaff;
-    font-weight: bold;
+.dp-next {
+  right: 20px;
+  left: auto;
+  top: 0;
 }
 
-.is-selected .pika-button,
-.has-event .pika-button {
-    color: $main-white;
-    font-weight: normal!important;
-    border-radius: 2px!important;
-    box-shadow: 0 2px 6px 0 rgba(171, 171, 171, 0.5)!important;
-  	background: #1f86bc!important;
+.dp-prev:before,
+.dp-next:before {
+  content: '';
+  border: 1.5px solid;
+  width: 10px;
+  height: 10px;
+  border-color: #1f86bc;
+  display: inline-block;
+  transform: rotate(-45deg);
+  transition: border-color 0.2s;
+  overflow: hidden;
+  //margin: 9px 0 40px 4px;
 }
 
-.has-event .pika-button {
-    background: #005da9;
-    box-shadow: inset 0 1px 3px #0076c9;
+.dp-prev:before {
+  border-right: 0;
+  border-bottom: 0;
 }
 
-.is-disabled .pika-button,
-.is-inrange .pika-button {
-    background: #D5E9F7;
+.dp-next:before {
+  border-left: 0;
+  border-top: 0;
+  margin-left: 0;
+  margin-right: 4px;
 }
 
-.is-startrange .pika-button {
-    color: #fff;
-    background: #6CB31D;
-    box-shadow: none;
-    border-radius: 3px;
+.dp-cal-month,
+.dp-cal-year {
+  display: inline-block;
+  font-size: 1.6rem;
+  padding: 0 4px;
+  outline: none;
 }
 
-.is-endrange .pika-button {
-    color: #fff;
-    background: #33aaff;
-    box-shadow: none;
-    border-radius: 3px;
+.dp-cal-footer {
+  text-align: end;
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: end;
+  color: #2c3135;
 }
 
-.is-disabled .pika-button {
-    pointer-events: none;
-    cursor: default;
-    color: #999;
-    opacity: .3;
+.dp-day-today:after {
+  content: '';
+  height: 0;
+  width: 0;
+  //border: 7px solid #227BD7;
+  //border-bottom-color: transparent;
+  //border-left-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
-.is-outside-current-month .pika-button {
-    color: #999;
-    opacity: .3;
+
+.dp-day-today:not(:active),
+.dp-day-today:not(:hover),
+.dp-day-today:not(:focus), {
+	font-weight: 500;
+	color: #1f86bc;
+	background-color: transparent;
 }
 
-.is-selection-disabled {
-    pointer-events: none;
-    cursor: default;
+.dp-close {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 33%;
+  padding: 8px;
+  text-decoration: none;
+  color: inherit;
+  border: 0;
+  background: transparent;
 }
 
-.pika-button:hover,
-.pika-row.pick-whole-week:hover .pika-button {
-    color: #fff;
-    border-radius: 2px!important;
-    box-shadow: 0 2px 6px 0 rgba(171, 171, 171, 0.5)!important;
-  	background: #1f86bc!important;
+.dp-permanent .dp-close,
+.dp-permanent .dp-clear {
+  display: none;
 }
 
-/* styling for abbr */
-.pika-table abbr {
-    border-bottom: none;
-    cursor: help;
+.dp-today:active,{
+  background: #1f86bc;
+  color: white;
 }
 
-.cancel-button-datepicker {
-	font-size: 12px;
+@media screen and (min-device-width: 1200px) {
+  .dp-clear:hover,
+  .dp-clear:focus,
+  .dp-today:hover,
+  .dp-today:focus {
+    background: #1f86bc;
+    color: white;
+  }
+}
+
+.dp-close { 
+	background-image: url('../common/images/cancel-button-datepicker.svg');
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: left;
+	height: 20px;
+	width: auto;
+	color: transparent;
+	margin: 32px 20px 20px; 
+	padding:0;
+	//margin: 0 18px 0 0;
+}
+
+.dp-close:after {
+	content: 'בטל';
+	font-size: 1.2rem;
 	font-weight: normal;
 	font-style: normal;
 	font-stretch: normal;
 	line-height: normal;
 	letter-spacing: normal;
-	text-align: center;
+	text-align: start;
 	color: #2c3135;
-	background: red;
-	height: 100px;
-	width: 100px;
-	position: absolute;
-	bottom: 10px; 
-	left: 10px; 
-	right: auto;
+	padding: 0 0 0 26px;
 }
+
+.dp-col-header,
+.dp-day {
+	display: inline-block;
+	margin: 4px 1px;
+	text-align: center;
+	width: 58px;
+	height: 24px;
+	font-size: 1.2rem;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 0.83;
+	letter-spacing: normal;
+	text-align: center;
+	color: #505050;
+}
+
+.dp-col-header {
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 8px 0;
+}
+
+.dp-month {
+  width: 33%;
+  display: inline-block;
+  padding: 8px;
+}
+
+.dp-year {
+  display: block;
+  padding: 8px 40px;
+  width: 100%;
+}
+
+.dp-edge-day {
+  color: #AAA;
+}
+
+.dp-day:hover,
+.dp-month:hover,
+.dp-year:hover,
+.dp-current:hover,
+.dp-day:focus,
+.dp-month:focus,
+.dp-year:focus {
+  	outline: none;
+  	//background: #75BCFC;
+  	color: $main-white;
+  	border-radius: 2px;
+	box-shadow: 0 2px 6px 0 rgba(171, 171, 171, 0.5);
+	background: #1f86bc;
+}
+
+.dp-selected:hover,
+.dp-selected:focus,
+.dp-selected {
+  background: #1f86bc;
+  color: $main-white;
+}
+
+.dp-day-disabled {
+  background: transparent;
+  color: #DDD;
+}
+
+.dp-day-disabled:focus,
+.dp-day-disabled:hover {
+  background: #DDD;
+}
+
+.dp-focuser {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+}
+
+/* Responsive overrides */
+@media (max-width: 480px), (max-height: 480px) {
+  .dp-modal .dp {
+    font-size: 0.9em;
+    width: auto;
+    width: 100%;
+  }
+
+  .dp-day-of-week,
+  .dp-day {
+    padding: 8px;
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translate(-50%, 100%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+.dp-clear,
+.dp-today {
+	display: none;
+}
+
+
+
+// pickaday ////////////////////////////////////////////////
+
+							.pika-single {
+							    z-index: 9999;
+							    display: block;
+							    position: relative;
+							    color: #333;
+							    background: #fff;
+							    border: 1px solid #ccc;
+							    border-bottom-color: #bbb;
+							    font-family: $main-font!important;
+							    //display: block!important;
+							    //position: absolute!important;
+							    //top: 1000px!important;
+							   // right: 0!important;
+							}
+
+							/*
+							clear child float (pika-lendar), using the famous micro clearfix hack
+							http://nicolasgallagher.com/micro-clearfix-hack/
+							*/
+							.pika-single:before,
+							.pika-single:after {
+							    content: " ";
+							    display: table;
+							}
+							.pika-single:after { clear: both }
+
+							.pika-single.is-hidden {
+							    display: none;
+							}
+
+							.pika-single.is-bound {
+							    position: absolute;
+							    box-shadow: 0 5px 15px -5px rgba(0,0,0,.5);
+							    //width: 449px;
+							  	//height: 313px;
+							 	border-radius: 4px;
+							  	box-shadow: 0 0 12px 0 #d4d4d4;
+							  	background-color: var(--white);
+							}
+
+							.pika-lendar {
+							    float: left;
+							    width: 449px!important;
+							    height: 313px!important;
+							    margin: 10px 20px!important;
+							}
+
+							.pika-title {
+								margin-top: 10px;
+							    position: relative;
+							    text-align: center;
+							}
+
+							.pika-label {
+							    display: inline-block;
+							    position: relative;
+							    z-index: 9999;
+							    overflow: hidden;
+							    margin: 0;
+							    padding: 0!important;
+							    font-weight: normal!important;
+							    background-color: #fff;
+							    font-size: 1.6rem!important;
+								font-weight: normal!important;
+								font-style: normal!important;
+								font-stretch: normal!important;
+								line-height: normal!important;
+								letter-spacing: normal!important;
+								text-align: center!important;
+								color: #505050!important;
+
+								&:first-child {
+									margin: 0 0 0 3px!important;
+								}
+							}
+							.pika-title select {
+							    cursor: pointer;
+							    position: absolute;
+							    z-index: 9998;
+							    margin: 0;
+							    left: 0;
+							    top: 5px;
+							    opacity: 0;
+							}
+
+							.pika-prev,
+							.pika-next {
+							    display: block;
+							    cursor: pointer;
+							    position: relative;
+							    outline: none;
+							    border: 0;
+							    padding: 0;
+							    width: 20px;
+							    height: 30px;
+							    /* hide text using text-indent trick, using width value (it's enough) */
+							    text-indent: 20px;
+							    white-space: nowrap;
+							    overflow: hidden;
+							    background-color: transparent;
+							    background-position: center center;
+							    background-repeat: no-repeat;
+								opacity: 1!important;
+							    border: solid #1f86bc!important;
+								border-width: 0 1.5px 1.5px 0!important;
+								height: 10px!important;
+								width: 10px!important;
+								background-image: none!important;
+								display: inline-block!important;
+								top: 4px;
+							}
+
+							.pika-prev:hover,
+							.pika-next:hover {
+							    opacity: 1;
+							}
+
+							.pika-prev,
+							.is-rtl .pika-next {
+							    float: left;
+								transform: rotate(135deg)!important;
+							}
+
+							.pika-next,
+							.is-rtl .pika-prev {
+								float: right;
+								transform: rotate(-45deg)!important;
+							}
+
+							.pika-prev.is-disabled,
+							.pika-next.is-disabled {
+							    cursor: default;
+							    opacity: .2;
+							}
+
+							.pika-select {
+							    display: inline-block;
+							}
+
+							.pika-table {
+							    width: 100%;
+							    border-collapse: collapse;
+							    border-spacing: 0;
+							    border: 0;
+							}
+
+							.pika-table th,
+							.pika-table td {
+							    width: 58px!important;
+							  	height: 24px!important;
+							  	//margin: 8px 1px!important;
+							  	border: $main-white solid!important;
+							  	border-width: 10px 0 10px 2px!important;
+							    padding: 0;
+							}
+
+							.pika-table th {
+							    color: #999;
+							    font-size: 12px;
+							    line-height: 25px;
+							    font-weight: bold;
+							    text-align: center;
+							}
+
+							.pika-button {
+							    cursor: pointer;
+							    display: block;
+							    box-sizing: border-box;
+							    -moz-box-sizing: border-box;
+							    outline: none;
+							    border: 0;
+							    margin: 0;
+							    width: 100%;
+							    padding: 5px;
+							    color: #666;
+							    font-size: 12px;
+							    line-height: 15px;
+							    text-align: right;
+							    background-color: $main-white!important;
+							  	text-align: center!important;
+							}
+
+							.pika-week {
+							    font-size: 11px;
+							    color: #999;
+							}
+
+							.is-today .pika-button {
+							    color: #33aaff;
+							    font-weight: bold;
+							}
+
+							.is-selected .pika-button,
+							.has-event .pika-button {
+							    color: $main-white;
+							    font-weight: normal!important;
+							    border-radius: 2px!important;
+							    box-shadow: 0 2px 6px 0 rgba(171, 171, 171, 0.5)!important;
+							  	background: #1f86bc!important;
+							}
+
+							.has-event .pika-button {
+							    background: #005da9;
+							    box-shadow: inset 0 1px 3px #0076c9;
+							}
+
+							.is-disabled .pika-button,
+							.is-inrange .pika-button {
+							    background: #D5E9F7;
+							}
+
+							.is-startrange .pika-button {
+							    color: #fff;
+							    background: #6CB31D;
+							    box-shadow: none;
+							    border-radius: 3px;
+							}
+
+							.is-endrange .pika-button {
+							    color: #fff;
+							    background: #33aaff;
+							    box-shadow: none;
+							    border-radius: 3px;
+							}
+
+							.is-disabled .pika-button {
+							    pointer-events: none;
+							    cursor: default;
+							    color: #999;
+							    opacity: .3;
+							}
+
+							.is-outside-current-month .pika-button {
+							    color: #999;
+							    opacity: .3;
+							}
+
+							.is-selection-disabled {
+							    pointer-events: none;
+							    cursor: default;
+							}
+
+							.pika-button:hover,
+							.pika-row.pick-whole-week:hover .pika-button {
+							    color: #fff;
+							    border-radius: 2px!important;
+							    box-shadow: 0 2px 6px 0 rgba(171, 171, 171, 0.5)!important;
+							  	background: #1f86bc!important;
+							}
+
+							/* styling for abbr */
+							.pika-table abbr {
+							    border-bottom: none;
+							    cursor: help;
+							}
+
+							.cancel-button-datepicker {
+								font-size: 12px;
+								font-weight: normal;
+								font-style: normal;
+								font-stretch: normal;
+								line-height: normal;
+								letter-spacing: normal;
+								text-align: center;
+								color: #2c3135;
+								background: red;
+								height: 100px;
+								width: 100px;
+								position: absolute;
+								bottom: 10px; 
+								left: 10px; 
+								right: auto;
+							}
