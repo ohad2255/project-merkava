@@ -47,6 +47,7 @@
     "jquery-infinite-scroll-helper": "^1.2.4",
     "parsleyjs": "^2.8.0",
     "pikaday": "^1.7.0",
+    "tiny-date-picker": "^3.2.8",
     "webpack-rtl-plugin": "^1.6.0"
   }
 }

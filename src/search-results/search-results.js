@@ -1,6 +1,5 @@
 
-var Pikaday = require('pikaday');
-require('pikaday/scss/pikaday.scss');
+var TinyDatePicker = require('tiny-date-picker');
 require('../common/common');
 require('jquery-infinite-scroll-helper');
 
@@ -29,39 +28,18 @@ $(document).ready(function() {
 		$('.facet').toggleClass('padding-top-facet');
 	});
 	
-
 	let datepicker = $('.datepicker');
 
 	datepicker.each(function() {
-		//$(this).datepicker();
 
-		let cancelButton = `
-						<div>
-					    	<button class= "cancel-button-datepicker">src/common/images/cancel-button-datepicker.svg
-							<img src="../common/images/cancel-button-datepicker.svg" class="filter-icon" alt="filter-icon">
-						    	</button>
-					    </div>
-				    ` ;
-		
-		let picker =  new Pikaday({ 
-				field: this, 
-				i18n: {
-					format: 'D/M/YYYY',
-				    previousMonth : 'Previous Month',
-				    nextMonth     : 'Next Month',
-				    months        : ['	ינואר','פברואר','מרץ','	אפריל','מאי','יוני','	יולי','אוגוסט','ספטמבר','אוקטובר','	נובמבר','	דצמבר'],
-				    weekdays      : ['ראשון','שני','שלישי','רביעי','חמישי','שישי','שבת'],
-				    weekdaysShort : ['א','ב','ג','ד','ה','ו','ש'],
-				    isRTL: true,
-				},
-				onOpen: function() {		      
-					$(this).find($('.pika-lendar')).append(cancelButton);
-			    }
-			});
-
-		    $(this).data('pikaday', picker);
+		TinyDatePicker(this, {
+		  lang: {
+		  	months        : ['	ינואר','פברואר','מרץ','	אפריל','מאי','יוני','	יולי','אוגוסט','ספטמבר','אוקטובר','	נובמבר','	דצמבר'],
+		    days : ['א','ב','ג','ד','ה','ו','ש'],
+		  },
+		  mode: 'dp-below',
+		});
 	});
-
 
 	$(".close-filter-container").keyup(function(event) {
 	    if (event.keyCode === 13) {
