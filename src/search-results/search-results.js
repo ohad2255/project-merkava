@@ -151,14 +151,11 @@ $(document).ready(function() {
 				}
 
 				loadResults(htmlData.find("#ajaxResults"));
+				done()
 		  });
 	  },
 	  startingPageCount:0,
 	  bottomBuffer:500,
-	  doneLoading: function() {
-		  // return true if you are done doing your thing, false otherwise
-		  return false;
-	  }
 	  });
 	  function loadResults(htmlResults){
 		  container.append(htmlResults);
