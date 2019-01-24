@@ -1,6 +1,5 @@
 
-var Pikaday = require('pikaday');
-require('pikaday/scss/pikaday.scss');
+var TinyDatePicker = require('tiny-date-picker');
 require('../common/common');
 require('jquery-infinite-scroll-helper');
 
@@ -28,9 +27,18 @@ $(document).ready(function() {
 		$(this).find($('.mobile-filter-arrows-wrapper')).toggleClass('rotate');
 		$('.facet').toggleClass('padding-top-facet');
 	});
+	
+	let datepicker = $('.datepicker');
 
-	$('.datepicker').each(function() {
-	    $(this).data('pikaday', new Pikaday({ field: this }));
+	datepicker.each(function() {
+
+		TinyDatePicker(this, {
+		  lang: {
+		  	months        : ['	ינואר','פברואר','מרץ','	אפריל','מאי','יוני','	יולי','אוגוסט','ספטמבר','אוקטובר','	נובמבר','	דצמבר'],
+		    days : ['א','ב','ג','ד','ה','ו','ש'],
+		  },
+		  mode: 'dp-below',
+		});
 	});
 
 	$(".close-filter-container").keyup(function(event) {
