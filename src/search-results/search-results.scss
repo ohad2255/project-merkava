@@ -1178,6 +1178,8 @@
 	width: 449px;
 	height: 313px;
 	margin: 10px 20px;
+	transform: translateX(calc(-100% + 203px)); 
+	z-index: 500;
 }
 
 .dp-permanent {
