@@ -513,13 +513,14 @@
 		}
 
 		.closed-symbol  {
-			font-size: 2.1rem;
+			font-size: 3.5rem;
 			height: 24px;
 			width: auto;
 			line-height: 0;
 			padding: 11px 0 0 0;
-			font-family:  Serif;
+			font-family: FbReforma-sign!important;
 			color: $header-blue;
+			font-weight: lighter;
 		}
 
 		.open {
@@ -528,7 +529,7 @@
 			@media (min-width: $screen-lg-min) {
 				display: block;
 				width: 12px;
-				height: 1px;
+				height: 1.5px;
 				background-color: $header-blue;
 			}
 		}
