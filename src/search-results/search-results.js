@@ -30,7 +30,12 @@ $(document).ready(function() {
 	
 	let datepicker = $('.datepicker');
 
+	
+
 	datepicker.each(function() {
+
+		let maxDate = $(this).hasClass('startDate')? Date.now().toString() : null;
+		let minDate = $(this).hasClass('endDate') ? Date.now().toString() :null;
 
 		TinyDatePicker(this, {
 		  lang: {
@@ -38,6 +43,8 @@ $(document).ready(function() {
 		    days : ['א','ב','ג','ד','ה','ו','ש'],
 		  },
 		  mode: 'dp-below',
+		  min: minDate,
+		  max: maxDate
 		});
 	});
 
@@ -150,8 +157,8 @@ $(document).ready(function() {
 			 	 var htmlData=$("<div>"+data+"</div>");
 				var ajaxData=htmlData.find("#ajaxData");
 				var totalResults=ajaxData.find("#totalResults").html();
-				var numberOfPages=ajaxData.find("#numberOfPages").html();
-				var currentPage=ajaxData.find("#currentPage").html();
+				var numberOfPages=intParse(ajaxData.find("#numberOfPages").html());
+				var currentPage=intParse(ajaxData.find("#currentPage").html());
 				var pageSize=ajaxData.find("#pageSize").html();
 
 				if (currentPage + 1 >= numberOfPages) {
@@ -159,14 +166,11 @@ $(document).ready(function() {
 				}
 
 				loadResults(htmlData.find("#ajaxResults"));
+				done()
 		  });
 	  },
 	  startingPageCount:0,
 	  bottomBuffer:500,
-	  doneLoading: function() {
-		  // return true if you are done doing your thing, false otherwise
-		  return false;
-	  }
 	  });
 	  function loadResults(htmlResults){
 		  container.append(htmlResults);
