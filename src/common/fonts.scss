@@ -8,9 +8,10 @@
   ;
 }
 
+
 @font-face {
   font-family: 'FbReforma';
-  src: url("../fonts/FbReforma-Mediumwebfont.woff") format("woff");
+  src: url("../fonts/reforma-mediumwebfont.woff") format("woff");
   font-weight: 500;
   unicode-range: U+0590-05FF, U+0000-003F;
   ;
@@ -23,6 +24,23 @@
   unicode-range: U+0590-05FF, U+0000-003F;
   ;
 }
+
+@font-face {
+  font-family: 'FbReforma-sign';
+  src: url("../fonts/reforma-regularwebfont.woff") format("woff");
+  font-weight: 400;
+  unicode-range: U+0590-05FF, U+0000-003F;
+  ;
+}
+
+@font-face {
+  font-family: 'FbReforma-sign';
+  src: url("../fonts/FbReforma-lightwebfont.woff") format("woff");
+  font-weight: 300;
+  unicode-range: U+0590-05FF, U+0000-003F;
+  ;
+}
+
 
 @font-face {
   font-family: 'FbReforma_en';
