@@ -1,5 +1,6 @@
 
 var TinyDatePicker = require('tiny-date-picker');
+var moment = require('moment');
 require('../common/common');
 require('jquery-infinite-scroll-helper');
 
@@ -34,8 +35,12 @@ $(document).ready(function() {
 
 		TinyDatePicker(this, {
 		  lang: {
-		  	months        : ['	ינואר','פברואר','מרץ','	אפריל','מאי','יוני','	יולי','אוגוסט','ספטמבר','אוקטובר','	נובמבר','	דצמבר'],
-		    days : ['א','ב','ג','ד','ה','ו','ש'],
+		  	months: ['	ינואר','פברואר','מרץ','	אפריל','מאי','יוני','	יולי','אוגוסט','ספטמבר','אוקטובר','	נובמבר','	דצמבר'],
+		    days: ['א','ב','ג','ד','ה','ו','ש'],
+
+		  },
+		  format: function format(date){
+		  	return moment(date).format("DD/MM/YYYY");
 		  },
 		  mode: 'dp-below',
 		});
