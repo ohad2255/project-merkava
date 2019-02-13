@@ -222,10 +222,8 @@ $(document).ready(function() {
 		
 		$filterOption.each(function(index, filtersItemId) {
 			var currIndex = $this.eq(index);
-			//$( "div" ).eq( "1" )
 
 			if (currIndex.prop("checked")) {
-				// var $body = $("search-results-body");
 
 				var $label = $(".main-label")
 				var filtersItemId = currIndex.prop("id");
@@ -237,7 +235,8 @@ $(document).ready(function() {
 			    `
 					<li class="filters-list-item d-flex align-items-center" data-related-checkbox-id="${filtersItemId}" data-type="filters-Item">
 							<span>${filtersItemName}</span>
-							<button class="deselect-filter-btn"></button>
+							<button class="deselect-filter-btn" id="deselectFilterBtn"></button>
+							<label class="sr-only" for="deselectFilterBtn">deselect filter button</label>
 					</li>
 			    `
 
