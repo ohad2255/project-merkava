@@ -26,6 +26,23 @@ $(document).ready(function() {
     //         return false;
     //     }
     // });
+
+    //var listItem = $('.list-item')
+    
+    //$(".footer-nav > a li")
+
+    function footerFunc (){
+
+      var lastElement = false;
+      $(".footer-nav > a").each(function() {
+          if (lastElement && lastElement.offset().top != $(this).offset().top) {
+              lastElement.addClass("last-in-line");
+          }
+          lastElement = $(this);
+      }).last().addClass("last-in-line");
+    }
+
+    setTimeout(footerFunc, 50);
 });
 
 

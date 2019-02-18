@@ -94,21 +94,24 @@
         }
       }
 
-      a:last-child {
+      .last-in-line {
+        .footer-item {
+          border: 0!important;
+          padding: 0!important;
+          margin: 0 0 10px 0;
 
-        .footer-item:last-child {
-          border: 0;
-          padding: 0;
-          margin: 0;
+          @media (min-width: $screen-lg-min) {
+            margin: 0;
+          }
         }
       }
 
       a:nth-child(even) {
 
         .footer-item {
-          border: 0;
-          padding: 0;
-          margin: 0 0 10px 0;
+          //border: 0;
+          //padding: 0;
+          //margin: 0 0 10px 0;
 
           @media (min-width: $screen-lg-min) {
             border: solid $header-blue;
