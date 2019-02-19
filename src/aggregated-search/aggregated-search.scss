@@ -132,6 +132,49 @@
 				}
 			}
 		}
+
+		
+	}
+
+	.search-results-content-no-results{
+		max-width:none;
+		@media (min-width: $screen-lg-min) {
+			margin: 0 auto;
+		}
+	}
+
+	.no-results-wrapper {
+		font-size: 62px;
+		font-weight: 500;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		text-align: center;
+		color: #1f86bc;
+		position: relative;
+
+		@media (min-width: $screen-lg-min) {
+			font-size: 62px;
+			font-weight: 500;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			text-align: center;
+			color: #1f86bc;
+			max-width: 600px;
+			margin: 0;		
+		}
+
+		img {
+			position: absolute;
+
+			@media (min-width: $screen-lg-min) {
+				width: 106px;
+				height: 124px;
+			}
+		}
 	}
 
 	.aggregated-search-body {
