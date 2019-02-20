@@ -18,6 +18,11 @@ html {
   @media (min-width: $screen-xl-min) {
     font-size: 10px;
   }
+
+  .eng-in-heb {
+    font-size: 80%;
+    font-weight: inherit;
+  }
 }
 
 body {

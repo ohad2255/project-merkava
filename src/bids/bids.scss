@@ -1170,7 +1170,7 @@
 				margin: 15px 0 0 0;
 
 				@media (min-width: $screen-lg-min) {
-					margin: 25px 0 0 0;
+					//margin: 25px 0 0 0;
 				}
 			}
 		}
@@ -1237,17 +1237,36 @@
 		}
 
 		.related-bid-wrapper {
-			padding: 23px 34px 11px 16px;
+			padding: 23px 34px 23px 16px;
+
+			@media (min-width: $screen-lg-min) {
+				padding: 23px 30px 16px 16px;
+			}
+
+			@media (min-width: $screen-xl-min) {
+				padding: 23px 40px 16px 16px;
+			}	
 		}
 
 		.slide {
-			width: 293px;
-			min-height: 239px;
+			width: 100%;
+			max-width: 293px;
+			//min-height: 239px;
 			border-radius: 2.1px;
 			background-color: $main-white;
 			box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15);
 			position: relative;
 			margin: 0 0 0 10px;
+
+			@media (min-width: $screen-lg-min) {
+				max-width: 230px;
+				//min-height: 220px;
+			}
+
+			@media (min-width: $screen-xl-min) {
+				max-width: 293px;
+				//min-height: 239px;
+			}	
 
 			&:last-child {
 				margin: 0;
