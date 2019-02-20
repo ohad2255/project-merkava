@@ -693,17 +693,21 @@
 					font-size: 2rem;
 					line-height: 1;
 					font-weight: normal;
-					margin: 0 0 20px 70px;
+					margin: 0 0 8px 70px;
 
 					@media (min-width: $screen-lg-min) {
 						font-size: 3.2rem;
 						font-style: normal;
 						font-stretch: normal;
-						line-height: 0.78;
+						//line-height: 0.78;
 						letter-spacing: normal;
 						color: $text-dark-grey;
-						margin: 0 0 14px 0;
+						margin: 0 0 4px 0;
 						max-width: none;
+					}
+
+					.eng-in-heb {
+						font-weight: normal;
 					}
 				}
 			}
@@ -765,7 +769,7 @@
 				color: #505050;
 
 				@media (min-width: $screen-lg-min) {
-					margin: 0 0 24px 0;
+					margin: 0 0 24px 50px;
 					font-size: 2rem;
 				}
 
@@ -864,7 +868,7 @@
 				}
 
 				.details-wrapper {
-					max-width: 695px;
+					//max-width: 695px;
 				}
 
 				h2 {
@@ -872,7 +876,7 @@
 					color: $header-blue;
 
 					@media (min-width: $screen-lg-min) {
-						max-width: 520px;
+						//max-width: 520px;
 					}
 				}
 				
