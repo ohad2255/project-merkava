@@ -33,13 +33,18 @@ $(document).ready(function() {
 
     function footerFunc (){
 
-      var lastElement = false;
-      $(".footer-nav > a").each(function() {
+      let lastElement = false;
+      let navItemLength = $('.footer-nav li a');
+
+      $('.footer-nav > li').each(function() {
+        //debugger
           if (lastElement && lastElement.offset().top != $(this).offset().top) {
-              lastElement.addClass("last-in-line");
+              lastElement.addClass('last-in-line');
           }
+
           lastElement = $(this);
-      }).last().addClass("last-in-line");
+
+      }).last().addClass('last-in-line');
     }
 
     setTimeout(footerFunc, 50);
