@@ -450,6 +450,19 @@
 					margin: 0;
 				}
 
+				&:nth-child(2) {
+					li:first-child {
+						@media (min-width: $screen-lg-min) {
+							margin: 0 0 33px 40px;
+							max-width: 355px;
+						}
+
+						@media (min-width: $screen-xl-min) {
+							margin: 0 0 33px auto;
+						}
+					}
+				}
+
 
 				li {
 					margin: 0 0 13px auto;
