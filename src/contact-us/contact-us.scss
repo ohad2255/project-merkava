@@ -377,7 +377,7 @@
 				width: 100%;
 				min-height: 43px;
 				border: solid 1px #d4d4d4;
-				margin: 0 0 48px 0;
+				margin: 0 0 78px 0;
 
 				@media (min-width: $screen-lg-min) {
                     min-height: 102px;
@@ -386,6 +386,7 @@
 					border: dashed 1px #d4d4d4;
 					color: #6a768a;
 					padding: 0px 23px 4px;
+					margin: 0 0 48px 0;
 				}
 				
 				#selectedFiles {
@@ -440,10 +441,14 @@
 						color: #4e5665;
 						margin: 0 0 13.5px 0;
 						display: block;
-						top: 15px;
-						right: 23px;
+						top: calc(100% + 5px);
+						right: 0;
 						left: auto;
 						width: 100%;
+						@media (min-width: $screen-lg-min) {
+							top: 15px;
+							right: 23px;
+						   }
 					}
 				}
 
