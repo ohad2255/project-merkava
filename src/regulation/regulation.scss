@@ -314,15 +314,19 @@
 							color: $main-text-grey;
 							font-family: $main-font;
 							margin:0 14px 0 25px; 
-							padding: 0 0 40px 0;
-
+							padding: 0 0 0 0;
+							
 							@media (min-width: $screen-lg-min) {
 								margin: 0 91.5px 0 0;
 								font-size: 1.6rem;
 								line-height: 1.75;
-								padding: 0 0 40px 10px;
+								padding: 0 0 0 10px;
 								width: auto;
 								max-width: 918px;
+							}
+
+							&:last-of-type{
+								padding-bottom:40px;
 							}
 						}
 
@@ -359,15 +363,18 @@
 						letter-spacing: normal;
 						text-align: right;
 						color: #4e5665;
-						padding: 0 0 40px 10px;
+						padding: 0 0 0 10px;
 
 						@media (min-width: $screen-lg-min) {
 						    font-size: 1.6rem;
 						    line-height: 1.75;
-						    padding: 0 0 40px 10px;
+						    padding: 0 0 0 10px;
 						    width: auto;
 						    max-width: 918px;
-					    }
+						}
+						&:last-of-type{
+							padding-bottom:40px;
+						}
 					} 
 				}
 
@@ -396,7 +403,12 @@
 							font-size: 2rem;
 							line-height: 1.4;
 							width: 100%;
-							padding: 0 0 40px 10px;
+							padding: 0 0 0 10px;
+
+
+							&:last-of-type{
+								padding-bottom:40px;
+							}
 						}
 					}
 				}
