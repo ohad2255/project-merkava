@@ -31,8 +31,6 @@ $(document).ready(function() {
 	
 	let datepicker = $('.datepicker');
 
-	
-
 	datepicker.each(function() {
 
 		let maxDate = $(this).hasClass('startDate')? Date.now().toString() : null;
@@ -148,6 +146,30 @@ $(document).ready(function() {
 			
 	    }
 	});
+
+	
+
+	// $('input[type="text"]').change(function() { 
+	// debugger
+	// 	$('input[type="text"]').each(function(){
+	// 	   if($(this).val()!=""){
+	// 	   	$(this).first(".commit-button").removeClass("disabled");
+	// 	   } 
+	// 	   //else {
+	// 	   // 	$(this).next(".commit-button").addClass("disabled");
+	// 	   // }
+	// 	})
+	// });
+
+	   $('input[type="text"]').change(function(e){
+	   	let button = $(e.target).parent().parent().siblings(".commit-button");
+	      if($(e.target).val()!=""){
+		   	button.removeClass("disabled");
+		  } else {
+		  	button.addClass("disabled");
+		  }
+	   });
+	   
 	
 	  
 	var hasMore=true;
