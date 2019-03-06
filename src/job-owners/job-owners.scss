@@ -494,6 +494,12 @@
 						@media (min-width: $screen-lg-min) {
 							padding: 0 20px 0 10px;
 						}
+
+						span {
+							@media (min-width: $screen-lg-min) {
+								font-weight: normal;
+							}
+						}
 					}
 				}
 
