@@ -2,9 +2,8 @@ require('./header/header');
 
 $(document).ready(function() {
     $("#mainMobileNavTrigger").off("click.toggleMenu").on("click.toggleMenu", function() {
-        //debugger
         $("body").toggleClass("mobile-menu-open");
-        //$("body").removeClass("mobile-menu-open");
+        $(".navbar-nav").focus();
     })
 
     // $("#mainMobileNavTrigger").off("click.toggleMenu").on("click.toggleMenu", function() {

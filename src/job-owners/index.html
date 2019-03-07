@@ -60,15 +60,16 @@
             <!-- table wrapper 1-->
             <div class="table-wrapper">
 
-              <!-- table head -->
-              <caption>
-                <div class="h2-wrapper d-flex align-items-center d-lg-block">
-                  <h2>הנהלה</h2>
-                </div>
-              </caption>
-
+              <!-- table header -->
+              <div class="h2-wrapper d-flex align-items-center d-lg-block">
+                <h2>הנהלה</h2>
+              </div>
+              
               <!-- desktop-table -->
               <table class="desktop-table-wrapper d-none d-lg-block">
+                <caption class="sr-only">
+                  הנהלה
+                </caption>
 
                 <!-- table head -->
                 <thead>
@@ -87,21 +88,37 @@
 
                   <!-- job owner -->
                   <tr>
+
+                    <!-- name -->
                     <td class="name-td" aria-label="name"><a href="#" class="name">אביתר פרץ</a></td>
-                    <td class="position-td" aria-label="position">מנהל תחום ניהול התקשריות</td> 
+
+                    <!-- position -->
+                    <td class="position-td" aria-label="position">
+                      <span tabindex="0" role="presentation">
+                      מנהל תחום ניהול התקשריות
+                      </span>
+                    </td> 
+
+                    <!-- phone number -->
                     <td class="table-row" aria-label="phone-number">
                       <a href="tel:02-6663424">
                         <span>02-6663424</span>
                       </a>
                     </td>
+
+                    <!-- fax-number -->
                     <td class="fax-td" aria-label="fax-number">
-                      <span>02-5695368</span>
+                      <span tabindex="0" role="presentation">02-5695368</span>
                     </td>
+
+                    <!-- related documents -->
                     <td class="related-documents-td" align="center" aria-label="related-documents">
                       <a href="">
                         <img src="../common/images/related-documents-icon.svg" alt="ballot-box">
                       </a>
                     </td>
+
+                    <!-- contact job owner -->
                     <td class="mail-td" align="center" aria-label="contact-job-owner">
                       <a href="mailto:webmaster@example.com">
                         <img src="../common/images/mail-icon.svg" class="email-icon" alt="email-icon">
@@ -111,24 +128,38 @@
 
                   <!-- job owner -->
                   <tr>
+
+                    <!-- name -->
                     <td class="name-td" aria-label="name"><a href="#" class="name">איריס גידיץ
                     </a></td>
+
+                    <!-- position -->
                     <td class="position-td" aria-label="position">
-                    מנהל תחום ניהול התקשריות
+                      <span tabindex="0" role="presentation">
+                      מנהל תחום ניהול התקשריות
+                      </span>
                     </td> 
+
+                    <!-- phone number -->
                     <td class="table-row" aria-label="phone-number">
                       <a href="tel:02-6663424">
                         <span>02-6663424</span>
                       </a>
                     </td>
+
+                    <!-- fax-number -->
                     <td class="fax-td" aria-label="fax-number">
-                      <span>02-5695368</span>
+                      <span tabindex="0" role="presentation">02-5695368</span>
                     </td>
+
+                    <!-- related documents -->
                     <td class="related-documents-td" align="center" aria-label="related-documents">
                       <a href="">
                         <img src="../common/images/related-documents-icon.svg" alt="ballot-box">
                       </a>
                     </td>
+
+                    <!-- contact job owner -->
                     <td class="mail-td" align="center" aria-label="contact-job-owner">
                       <a href="mailto:webmaster@example.com">
                         <img src="../common/images/mail-icon.svg" class="email-icon" alt="email-icon">
@@ -146,7 +177,10 @@
                     </td>
 
                     <!-- position -->
-                    <td class="position-td" aria-label="position">מנהל תחום ניהול התקשריות
+                    <td class="position-td" aria-label="position">
+                      <span tabindex="0" role="presentation">
+                      מנהל תחום ניהול התקשריות
+                      </span>
                     </td> 
 
                     <!-- phone number -->
@@ -158,7 +192,7 @@
 
                     <!-- fax-number -->
                     <td class="fax-td" aria-label="fax-number">
-                      <span>02-5695368</span>
+                      <span tabindex="0" role="presentation">02-5695368</span>
                     </td>
 
                     <!-- related documents -->
@@ -219,7 +253,7 @@
                       <div class="mobil-toggle-wrapper d-none d-lg-flex flex-column flex-lg-row w-100">
 
                         <!-- position -->
-                        <div class="td position-td d-flex align-items-center w-100">
+                        <div class="td position-td d-flex align-items-center w-100" tabindex="0" role="presentation">
                           <div class="th-mobile">
                           תפקיד:&nbsp
                           </div>
@@ -235,15 +269,21 @@
 
                           <!-- fax number -->
                           <div class="th-fax">פקס:&nbsp
-                          </div><span>02-5695368</span>
+                          </div>
+                          <span tabindex="0" role="presentation">02-5695368</span>
                         </div>
 
                         <!-- related documents -->
-                        <div class="td related-documents-td d-lg-flex align-items-center justify-content-center"><a href=""><img src="../common/images/related-documents-icon.svg" alt="email-icon"></a>
+                        <div class="td related-documents-td d-lg-flex align-items-center justify-content-center">
+                          <a href=""><img src="../common/images/related-documents-icon.svg" alt="email-icon">
+                          </a>
                         </div>
 
                         <!-- contact job owner -->
-                        <div class="td mail-td d-lg-flex align-items-center justify-content-center"><a href="mailto:webmaster@example.com"><img src="../common/images/mail-icon.svg" class="email-icon" alt="email-icon"></a>
+                        <div class="td mail-td d-lg-flex align-items-center justify-content-center">
+                          <a href="mailto:webmaster@example.com">
+                            <img src="../common/images/mail-icon.svg" class="email-icon" alt="email-icon">
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -261,20 +301,39 @@
                         </div>
                       </div>
                       <div class="mobil-toggle-wrapper d-none d-lg-flex flex-column flex-lg-row w-100">
-                        <div class="td position-td d-flex align-items-center w-100">
-                        <div class="th-mobile d-lg-none">תפקיד:&nbsp</div>מנהל תחום ניהול התקשריות
+                        <!-- position -->
+                        <div class="td position-td d-flex align-items-center w-100" tabindex="0" role="presentation">
+                          <div class="th-mobile">
+                          תפקיד:&nbsp
+                          </div>
+                          מנהל תחום ניהול התקשריות
                         </div>
                         <div class="td tel-td d-flex align-items-center">
-                          <div class="th-mobile d-lg-none">טלפון:&nbsp</div>
+                          <div class="th-mobile">טלפון:&nbsp</div>
+
+                          <!-- phone number -->
                           <a href="tel:02-6663424"><span>02-6663424</span></a>
                         </div>
                         <div class="td fax-td d-flex align-items-center">
-                          <div class="th-mobile d-lg-none">פקס:&nbsp
-                          </div><span>02-5695368</span>
+
+                          <!-- fax number -->
+                          <div class="th-fax">פקס:&nbsp
+                          </div>
+                          <span tabindex="0" role="presentation">02-5695368</span>
                         </div>
-                        <div class="td related-documents-td d-lg-flex align-items-center justify-content-center"><a href=""><img src="../common/images/related-documents-icon.svg" alt="email-icon"></a>
+
+                        <!-- related documents -->
+                        <div class="td related-documents-td d-lg-flex align-items-center justify-content-center">
+                          <a href=""><img src="../common/images/related-documents-icon.svg" alt="email-icon">
+                          </a>
                         </div>
-                        <div class="td mail-td d-lg-flex align-items-center justify-content-center"><a href="mailto:webmaster@example.com"><img src="../common/images/mail-icon.svg" class="email-icon" alt="email-icon"></a></div>
+
+                        <!-- contact job owner -->
+                        <div class="td mail-td d-lg-flex align-items-center justify-content-center">
+                          <a href="mailto:webmaster@example.com">
+                            <img src="../common/images/mail-icon.svg" class="email-icon" alt="email-icon">
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -289,20 +348,39 @@
                         </div>
                       </div>
                       <div class="mobil-toggle-wrapper d-none d-lg-flex flex-column flex-lg-row w-100">
-                        <div class="td position-td d-flex align-items-center w-100">
-                        <div class="th-mobile d-lg-none">תפקיד:&nbsp</div>מנהל תחום ניהול התקשריות
+                        <!-- position -->
+                        <div class="td position-td d-flex align-items-center w-100" tabindex="0" role="presentation">
+                          <div class="th-mobile">
+                          תפקיד:&nbsp
+                          </div>
+                          מנהל תחום ניהול התקשריות
                         </div>
                         <div class="td tel-td d-flex align-items-center">
-                          <div class="th-mobile d-lg-none">טלפון:&nbsp</div>
+                          <div class="th-mobile">טלפון:&nbsp</div>
+
+                          <!-- phone number -->
                           <a href="tel:02-6663424"><span>02-6663424</span></a>
                         </div>
                         <div class="td fax-td d-flex align-items-center">
-                          <div class="th-mobile d-lg-none">פקס:&nbsp
-                          </div><span>02-5695368</span>
+
+                          <!-- fax number -->
+                          <div class="th-fax">פקס:&nbsp
+                          </div>
+                          <span tabindex="0" role="presentation">02-5695368</span>
                         </div>
-                        <div class="td related-documents-td d-lg-flex align-items-center justify-content-center"><a href=""><img src="../common/images/related-documents-icon.svg" alt="email-icon"></a>
+
+                        <!-- related documents -->
+                        <div class="td related-documents-td d-lg-flex align-items-center justify-content-center">
+                          <a href=""><img src="../common/images/related-documents-icon.svg" alt="email-icon">
+                          </a>
                         </div>
-                        <div class="td mail-td d-lg-flex align-items-center justify-content-center"><a href="mailto:webmaster@example.com"><img src="../common/images/mail-icon.svg" class="email-icon" alt="email-icon"></a></div>
+
+                        <!-- contact job owner -->
+                        <div class="td mail-td d-lg-flex align-items-center justify-content-center">
+                          <a href="mailto:webmaster@example.com">
+                            <img src="../common/images/mail-icon.svg" class="email-icon" alt="email-icon">
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -313,15 +391,17 @@
             <!-- table wrapper 2-->
             <div class="table-wrapper">
 
-              <!-- table head -->
-              <caption>
-                <div class="h2-wrapper d-flex align-items-center d-lg-block">
-                  <h2>עורכי מכרזים</h2>
-                </div>
-              </caption>
+              <!-- table header -->
+              <div class="h2-wrapper d-flex align-items-center d-lg-block">
+                <h2>עורכי מכרזים</h2>
+              </div>
 
               <!-- desktop-table -->
               <table class="desktop-table-wrapper d-none d-lg-block">
+
+                <caption class="sr-only">
+                  עורכי מכרזים
+                </caption>
 
                 <!-- table head -->
                 <thead>
@@ -340,21 +420,37 @@
 
                   <!-- job owner -->
                   <tr>
+
+                    <!-- name -->
                     <td class="name-td" aria-label="name"><a href="#" class="name">אביתר פרץ</a></td>
-                    <td class="position-td" aria-label="position">מנהל תחום ניהול התקשריות</td> 
+
+                    <!-- position -->
+                    <td class="position-td" aria-label="position">
+                      <span tabindex="0" role="presentation">
+                      מנהל תחום ניהול התקשריות
+                      </span>
+                    </td> 
+
+                    <!-- phone number -->
                     <td class="table-row" aria-label="phone-number">
                       <a href="tel:02-6663424">
                         <span>02-6663424</span>
                       </a>
                     </td>
+
+                    <!-- fax-number -->
                     <td class="fax-td" aria-label="fax-number">
-                      <span>02-5695368</span>
+                      <span tabindex="0" role="presentation">02-5695368</span>
                     </td>
+
+                    <!-- related documents -->
                     <td class="related-documents-td" align="center" aria-label="related-documents">
                       <a href="">
                         <img src="../common/images/related-documents-icon.svg" alt="ballot-box">
                       </a>
                     </td>
+
+                    <!-- contact job owner -->
                     <td class="mail-td" align="center" aria-label="contact-job-owner">
                       <a href="mailto:webmaster@example.com">
                         <img src="../common/images/mail-icon.svg" class="email-icon" alt="email-icon">
@@ -364,24 +460,38 @@
 
                   <!-- job owner -->
                   <tr>
+
+                    <!-- name -->
                     <td class="name-td" aria-label="name"><a href="#" class="name">איריס גידיץ
                     </a></td>
+
+                    <!-- position -->
                     <td class="position-td" aria-label="position">
-                    מנהל תחום ניהול התקשריות
+                      <span tabindex="0" role="presentation">
+                      מנהל תחום ניהול התקשריות
+                      </span>
                     </td> 
+
+                    <!-- phone number -->
                     <td class="table-row" aria-label="phone-number">
                       <a href="tel:02-6663424">
                         <span>02-6663424</span>
                       </a>
                     </td>
+
+                    <!-- fax-number -->
                     <td class="fax-td" aria-label="fax-number">
-                      <span>02-5695368</span>
+                      <span tabindex="0" role="presentation">02-5695368</span>
                     </td>
+
+                    <!-- related documents -->
                     <td class="related-documents-td" align="center" aria-label="related-documents">
                       <a href="">
                         <img src="../common/images/related-documents-icon.svg" alt="ballot-box">
                       </a>
                     </td>
+
+                    <!-- contact job owner -->
                     <td class="mail-td" align="center" aria-label="contact-job-owner">
                       <a href="mailto:webmaster@example.com">
                         <img src="../common/images/mail-icon.svg" class="email-icon" alt="email-icon">
@@ -399,7 +509,10 @@
                     </td>
 
                     <!-- position -->
-                    <td class="position-td" aria-label="position">מנהל תחום ניהול התקשריות
+                    <td class="position-td" aria-label="position">
+                      <span tabindex="0" role="presentation">
+                      מנהל תחום ניהול התקשריות
+                      </span>
                     </td> 
 
                     <!-- phone number -->
@@ -411,7 +524,7 @@
 
                     <!-- fax-number -->
                     <td class="fax-td" aria-label="fax-number">
-                      <span>02-5695368</span>
+                      <span tabindex="0" role="presentation">02-5695368</span>
                     </td>
 
                     <!-- related documents -->
@@ -472,7 +585,7 @@
                       <div class="mobil-toggle-wrapper d-none d-lg-flex flex-column flex-lg-row w-100">
 
                         <!-- position -->
-                        <div class="td position-td d-flex align-items-center w-100">
+                        <div class="td position-td d-flex align-items-center w-100" tabindex="0" role="presentation">
                           <div class="th-mobile">
                           תפקיד:&nbsp
                           </div>
@@ -488,15 +601,21 @@
 
                           <!-- fax number -->
                           <div class="th-fax">פקס:&nbsp
-                          </div><span>02-5695368</span>
+                          </div>
+                          <span tabindex="0" role="presentation">02-5695368</span>
                         </div>
 
                         <!-- related documents -->
-                        <div class="td related-documents-td d-lg-flex align-items-center justify-content-center"><a href=""><img src="../common/images/related-documents-icon.svg" alt="email-icon"></a>
+                        <div class="td related-documents-td d-lg-flex align-items-center justify-content-center">
+                          <a href=""><img src="../common/images/related-documents-icon.svg" alt="email-icon">
+                          </a>
                         </div>
 
                         <!-- contact job owner -->
-                        <div class="td mail-td d-lg-flex align-items-center justify-content-center"><a href="mailto:webmaster@example.com"><img src="../common/images/mail-icon.svg" class="email-icon" alt="email-icon"></a>
+                        <div class="td mail-td d-lg-flex align-items-center justify-content-center">
+                          <a href="mailto:webmaster@example.com">
+                            <img src="../common/images/mail-icon.svg" class="email-icon" alt="email-icon">
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -514,20 +633,39 @@
                         </div>
                       </div>
                       <div class="mobil-toggle-wrapper d-none d-lg-flex flex-column flex-lg-row w-100">
-                        <div class="td position-td d-flex align-items-center w-100">
-                        <div class="th-mobile d-lg-none">תפקיד:&nbsp</div>מנהל תחום ניהול התקשריות
+                        <!-- position -->
+                        <div class="td position-td d-flex align-items-center w-100" tabindex="0" role="presentation">
+                          <div class="th-mobile">
+                          תפקיד:&nbsp
+                          </div>
+                          מנהל תחום ניהול התקשריות
                         </div>
                         <div class="td tel-td d-flex align-items-center">
-                          <div class="th-mobile d-lg-none">טלפון:&nbsp</div>
+                          <div class="th-mobile">טלפון:&nbsp</div>
+
+                          <!-- phone number -->
                           <a href="tel:02-6663424"><span>02-6663424</span></a>
                         </div>
                         <div class="td fax-td d-flex align-items-center">
-                          <div class="th-mobile d-lg-none">פקס:&nbsp
-                          </div><span>02-5695368</span>
+
+                          <!-- fax number -->
+                          <div class="th-fax">פקס:&nbsp
+                          </div>
+                          <span tabindex="0" role="presentation">02-5695368</span>
                         </div>
-                        <div class="td related-documents-td d-lg-flex align-items-center justify-content-center"><a href=""><img src="../common/images/related-documents-icon.svg" alt="email-icon"></a>
+
+                        <!-- related documents -->
+                        <div class="td related-documents-td d-lg-flex align-items-center justify-content-center">
+                          <a href=""><img src="../common/images/related-documents-icon.svg" alt="email-icon">
+                          </a>
                         </div>
-                        <div class="td mail-td d-lg-flex align-items-center justify-content-center"><a href="mailto:webmaster@example.com"><img src="../common/images/mail-icon.svg" class="email-icon" alt="email-icon"></a></div>
+
+                        <!-- contact job owner -->
+                        <div class="td mail-td d-lg-flex align-items-center justify-content-center">
+                          <a href="mailto:webmaster@example.com">
+                            <img src="../common/images/mail-icon.svg" class="email-icon" alt="email-icon">
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -542,20 +680,39 @@
                         </div>
                       </div>
                       <div class="mobil-toggle-wrapper d-none d-lg-flex flex-column flex-lg-row w-100">
-                        <div class="td position-td d-flex align-items-center w-100">
-                        <div class="th-mobile d-lg-none">תפקיד:&nbsp</div>מנהל תחום ניהול התקשריות
+                        <!-- position -->
+                        <div class="td position-td d-flex align-items-center w-100" tabindex="0" role="presentation">
+                          <div class="th-mobile">
+                          תפקיד:&nbsp
+                          </div>
+                          מנהל תחום ניהול התקשריות
                         </div>
                         <div class="td tel-td d-flex align-items-center">
-                          <div class="th-mobile d-lg-none">טלפון:&nbsp</div>
+                          <div class="th-mobile">טלפון:&nbsp</div>
+
+                          <!-- phone number -->
                           <a href="tel:02-6663424"><span>02-6663424</span></a>
                         </div>
                         <div class="td fax-td d-flex align-items-center">
-                          <div class="th-mobile d-lg-none">פקס:&nbsp
-                          </div><span>02-5695368</span>
+
+                          <!-- fax number -->
+                          <div class="th-fax">פקס:&nbsp
+                          </div>
+                          <span tabindex="0" role="presentation">02-5695368</span>
                         </div>
-                        <div class="td related-documents-td d-lg-flex align-items-center justify-content-center"><a href=""><img src="../common/images/related-documents-icon.svg" alt="email-icon"></a>
+
+                        <!-- related documents -->
+                        <div class="td related-documents-td d-lg-flex align-items-center justify-content-center">
+                          <a href=""><img src="../common/images/related-documents-icon.svg" alt="email-icon">
+                          </a>
                         </div>
-                        <div class="td mail-td d-lg-flex align-items-center justify-content-center"><a href="mailto:webmaster@example.com"><img src="../common/images/mail-icon.svg" class="email-icon" alt="email-icon"></a></div>
+
+                        <!-- contact job owner -->
+                        <div class="td mail-td d-lg-flex align-items-center justify-content-center">
+                          <a href="mailto:webmaster@example.com">
+                            <img src="../common/images/mail-icon.svg" class="email-icon" alt="email-icon">
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -566,15 +723,17 @@
             <!-- table wrapper 3-->
             <div class="table-wrapper">
 
-              <!-- table head -->
-              <caption>
-                <div class="h2-wrapper d-flex align-items-center d-lg-block">
-                  <h2>מחלקת רכש</h2>
-                </div>
-              </caption>
+              <!-- table header -->
+              <div class="h2-wrapper d-flex align-items-center d-lg-block">
+                <h2>מחלקת רכש</h2>
+              </div>
 
               <!-- desktop-table -->
               <table class="desktop-table-wrapper d-none d-lg-block">
+
+                <caption class="sr-only">
+                מחלקת רכש
+                </caption>
 
                 <!-- table head -->
                 <thead>
@@ -593,21 +752,37 @@
 
                   <!-- job owner -->
                   <tr>
+
+                    <!-- name -->
                     <td class="name-td" aria-label="name"><a href="#" class="name">אביתר פרץ</a></td>
-                    <td class="position-td" aria-label="position">מנהל תחום ניהול התקשריות</td> 
+
+                    <!-- position -->
+                    <td class="position-td" aria-label="position">
+                      <span tabindex="0" role="presentation">
+                      מנהל תחום ניהול התקשריות
+                      </span>
+                    </td> 
+
+                    <!-- phone number -->
                     <td class="table-row" aria-label="phone-number">
                       <a href="tel:02-6663424">
                         <span>02-6663424</span>
                       </a>
                     </td>
+
+                    <!-- fax-number -->
                     <td class="fax-td" aria-label="fax-number">
-                      <span>02-5695368</span>
+                      <span tabindex="0" role="presentation">02-5695368</span>
                     </td>
+
+                    <!-- related documents -->
                     <td class="related-documents-td" align="center" aria-label="related-documents">
                       <a href="">
                         <img src="../common/images/related-documents-icon.svg" alt="ballot-box">
                       </a>
                     </td>
+
+                    <!-- contact job owner -->
                     <td class="mail-td" align="center" aria-label="contact-job-owner">
                       <a href="mailto:webmaster@example.com">
                         <img src="../common/images/mail-icon.svg" class="email-icon" alt="email-icon">
@@ -617,24 +792,38 @@
 
                   <!-- job owner -->
                   <tr>
+
+                    <!-- name -->
                     <td class="name-td" aria-label="name"><a href="#" class="name">איריס גידיץ
                     </a></td>
+
+                    <!-- position -->
                     <td class="position-td" aria-label="position">
-                    מנהל תחום ניהול התקשריות
+                      <span tabindex="0" role="presentation">
+                      מנהל תחום ניהול התקשריות
+                      </span>
                     </td> 
+
+                    <!-- phone number -->
                     <td class="table-row" aria-label="phone-number">
                       <a href="tel:02-6663424">
                         <span>02-6663424</span>
                       </a>
                     </td>
+
+                    <!-- fax-number -->
                     <td class="fax-td" aria-label="fax-number">
-                      <span>02-5695368</span>
+                      <span tabindex="0" role="presentation">02-5695368</span>
                     </td>
+
+                    <!-- related documents -->
                     <td class="related-documents-td" align="center" aria-label="related-documents">
                       <a href="">
                         <img src="../common/images/related-documents-icon.svg" alt="ballot-box">
                       </a>
                     </td>
+
+                    <!-- contact job owner -->
                     <td class="mail-td" align="center" aria-label="contact-job-owner">
                       <a href="mailto:webmaster@example.com">
                         <img src="../common/images/mail-icon.svg" class="email-icon" alt="email-icon">
@@ -652,7 +841,10 @@
                     </td>
 
                     <!-- position -->
-                    <td class="position-td" aria-label="position">מנהל תחום ניהול התקשריות
+                    <td class="position-td" aria-label="position">
+                      <span tabindex="0" role="presentation">
+                      מנהל תחום ניהול התקשריות
+                      </span>
                     </td> 
 
                     <!-- phone number -->
@@ -664,7 +856,7 @@
 
                     <!-- fax-number -->
                     <td class="fax-td" aria-label="fax-number">
-                      <span>02-5695368</span>
+                      <span tabindex="0" role="presentation">02-5695368</span>
                     </td>
 
                     <!-- related documents -->
@@ -725,7 +917,7 @@
                       <div class="mobil-toggle-wrapper d-none d-lg-flex flex-column flex-lg-row w-100">
 
                         <!-- position -->
-                        <div class="td position-td d-flex align-items-center w-100">
+                        <div class="td position-td d-flex align-items-center w-100" tabindex="0" role="presentation">
                           <div class="th-mobile">
                           תפקיד:&nbsp
                           </div>
@@ -741,15 +933,21 @@
 
                           <!-- fax number -->
                           <div class="th-fax">פקס:&nbsp
-                          </div><span>02-5695368</span>
+                          </div>
+                          <span tabindex="0" role="presentation">02-5695368</span>
                         </div>
 
                         <!-- related documents -->
-                        <div class="td related-documents-td d-lg-flex align-items-center justify-content-center"><a href=""><img src="../common/images/related-documents-icon.svg" alt="email-icon"></a>
+                        <div class="td related-documents-td d-lg-flex align-items-center justify-content-center">
+                          <a href=""><img src="../common/images/related-documents-icon.svg" alt="email-icon">
+                          </a>
                         </div>
 
                         <!-- contact job owner -->
-                        <div class="td mail-td d-lg-flex align-items-center justify-content-center"><a href="mailto:webmaster@example.com"><img src="../common/images/mail-icon.svg" class="email-icon" alt="email-icon"></a>
+                        <div class="td mail-td d-lg-flex align-items-center justify-content-center">
+                          <a href="mailto:webmaster@example.com">
+                            <img src="../common/images/mail-icon.svg" class="email-icon" alt="email-icon">
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -767,20 +965,40 @@
                         </div>
                       </div>
                       <div class="mobil-toggle-wrapper d-none d-lg-flex flex-column flex-lg-row w-100">
-                        <div class="td position-td d-flex align-items-center w-100">
-                        <div class="th-mobile d-lg-none">תפקיד:&nbsp</div>מנהל תחום ניהול התקשריות
+
+                        <!-- position -->
+                        <div class="td position-td d-flex align-items-center w-100" tabindex="0" role="presentation">
+                          <div class="th-mobile">
+                          תפקיד:&nbsp
+                          </div>
+                          מנהל תחום ניהול התקשריות
                         </div>
                         <div class="td tel-td d-flex align-items-center">
-                          <div class="th-mobile d-lg-none">טלפון:&nbsp</div>
+                          <div class="th-mobile">טלפון:&nbsp</div>
+
+                          <!-- phone number -->
                           <a href="tel:02-6663424"><span>02-6663424</span></a>
                         </div>
                         <div class="td fax-td d-flex align-items-center">
-                          <div class="th-mobile d-lg-none">פקס:&nbsp
-                          </div><span>02-5695368</span>
+
+                          <!-- fax number -->
+                          <div class="th-fax">פקס:&nbsp
+                          </div>
+                          <span tabindex="0" role="presentation">02-5695368</span>
                         </div>
-                        <div class="td related-documents-td d-lg-flex align-items-center justify-content-center"><a href=""><img src="../common/images/related-documents-icon.svg" alt="email-icon"></a>
+
+                        <!-- related documents -->
+                        <div class="td related-documents-td d-lg-flex align-items-center justify-content-center">
+                          <a href=""><img src="../common/images/related-documents-icon.svg" alt="email-icon">
+                          </a>
                         </div>
-                        <div class="td mail-td d-lg-flex align-items-center justify-content-center"><a href="mailto:webmaster@example.com"><img src="../common/images/mail-icon.svg" class="email-icon" alt="email-icon"></a></div>
+
+                        <!-- contact job owner -->
+                        <div class="td mail-td d-lg-flex align-items-center justify-content-center">
+                          <a href="mailto:webmaster@example.com">
+                            <img src="../common/images/mail-icon.svg" class="email-icon" alt="email-icon">
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -795,20 +1013,40 @@
                         </div>
                       </div>
                       <div class="mobil-toggle-wrapper d-none d-lg-flex flex-column flex-lg-row w-100">
-                        <div class="td position-td d-flex align-items-center w-100">
-                        <div class="th-mobile d-lg-none">תפקיד:&nbsp</div>מנהל תחום ניהול התקשריות
+                        
+                        <!-- position -->
+                        <div class="td position-td d-flex align-items-center w-100" tabindex="0" role="presentation">
+                          <div class="th-mobile">
+                          תפקיד:&nbsp
+                          </div>
+                          מנהל תחום ניהול התקשריות
                         </div>
                         <div class="td tel-td d-flex align-items-center">
-                          <div class="th-mobile d-lg-none">טלפון:&nbsp</div>
+                          <div class="th-mobile">טלפון:&nbsp</div>
+
+                          <!-- phone number -->
                           <a href="tel:02-6663424"><span>02-6663424</span></a>
                         </div>
                         <div class="td fax-td d-flex align-items-center">
-                          <div class="th-mobile d-lg-none">פקס:&nbsp
-                          </div><span>02-5695368</span>
+
+                          <!-- fax number -->
+                          <div class="th-fax">פקס:&nbsp
+                          </div>
+                          <span tabindex="0" role="presentation">02-5695368</span>
                         </div>
-                        <div class="td related-documents-td d-lg-flex align-items-center justify-content-center"><a href=""><img src="../common/images/related-documents-icon.svg" alt="email-icon"></a>
+
+                        <!-- related documents -->
+                        <div class="td related-documents-td d-lg-flex align-items-center justify-content-center">
+                          <a href=""><img src="../common/images/related-documents-icon.svg" alt="email-icon">
+                          </a>
                         </div>
-                        <div class="td mail-td d-lg-flex align-items-center justify-content-center"><a href="mailto:webmaster@example.com"><img src="../common/images/mail-icon.svg" class="email-icon" alt="email-icon"></a></div>
+
+                        <!-- contact job owner -->
+                        <div class="td mail-td d-lg-flex align-items-center justify-content-center">
+                          <a href="mailto:webmaster@example.com">
+                            <img src="../common/images/mail-icon.svg" class="email-icon" alt="email-icon">
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -819,15 +1057,17 @@
             <!-- table wrapper 4-->
             <div class="table-wrapper">
 
-              <!-- table head -->
-              <caption>
-                <div class="h2-wrapper d-flex align-items-center d-lg-block">
-                  <h2>הנהלה</h2>
-                </div>
-              </caption>
+              <!-- table header -->
+              <div class="h2-wrapper d-flex align-items-center d-lg-block">
+                <h2>הנהלה</h2>
+              </div>
 
               <!-- desktop-table -->
               <table class="desktop-table-wrapper d-none d-lg-block">
+
+                <caption class="sr-only">
+               הנהלה
+                </caption>
 
                 <!-- table head -->
                 <thead>
@@ -846,21 +1086,37 @@
 
                   <!-- job owner -->
                   <tr>
+
+                    <!-- name -->
                     <td class="name-td" aria-label="name"><a href="#" class="name">אביתר פרץ</a></td>
-                    <td class="position-td" aria-label="position">מנהל תחום ניהול התקשריות</td> 
+
+                    <!-- position -->
+                    <td class="position-td" aria-label="position">
+                      <span tabindex="0" role="presentation">
+                      מנהל תחום ניהול התקשריות
+                      </span>
+                    </td> 
+
+                    <!-- phone number -->
                     <td class="table-row" aria-label="phone-number">
                       <a href="tel:02-6663424">
                         <span>02-6663424</span>
                       </a>
                     </td>
+
+                    <!-- fax-number -->
                     <td class="fax-td" aria-label="fax-number">
-                      <span>02-5695368</span>
+                      <span tabindex="0" role="presentation">02-5695368</span>
                     </td>
+
+                    <!-- related documents -->
                     <td class="related-documents-td" align="center" aria-label="related-documents">
                       <a href="">
                         <img src="../common/images/related-documents-icon.svg" alt="ballot-box">
                       </a>
                     </td>
+
+                    <!-- contact job owner -->
                     <td class="mail-td" align="center" aria-label="contact-job-owner">
                       <a href="mailto:webmaster@example.com">
                         <img src="../common/images/mail-icon.svg" class="email-icon" alt="email-icon">
@@ -870,24 +1126,38 @@
 
                   <!-- job owner -->
                   <tr>
+
+                    <!-- name -->
                     <td class="name-td" aria-label="name"><a href="#" class="name">איריס גידיץ
                     </a></td>
+
+                    <!-- position -->
                     <td class="position-td" aria-label="position">
-                    מנהל תחום ניהול התקשריות
+                      <span tabindex="0" role="presentation">
+                      מנהל תחום ניהול התקשריות
+                      </span>
                     </td> 
+
+                    <!-- phone number -->
                     <td class="table-row" aria-label="phone-number">
                       <a href="tel:02-6663424">
                         <span>02-6663424</span>
                       </a>
                     </td>
+
+                    <!-- fax-number -->
                     <td class="fax-td" aria-label="fax-number">
-                      <span>02-5695368</span>
+                      <span tabindex="0" role="presentation">02-5695368</span>
                     </td>
+
+                    <!-- related documents -->
                     <td class="related-documents-td" align="center" aria-label="related-documents">
                       <a href="">
                         <img src="../common/images/related-documents-icon.svg" alt="ballot-box">
                       </a>
                     </td>
+
+                    <!-- contact job owner -->
                     <td class="mail-td" align="center" aria-label="contact-job-owner">
                       <a href="mailto:webmaster@example.com">
                         <img src="../common/images/mail-icon.svg" class="email-icon" alt="email-icon">
@@ -905,7 +1175,10 @@
                     </td>
 
                     <!-- position -->
-                    <td class="position-td" aria-label="position">מנהל תחום ניהול התקשריות
+                    <td class="position-td" aria-label="position">
+                      <span tabindex="0" role="presentation">
+                      מנהל תחום ניהול התקשריות
+                      </span>
                     </td> 
 
                     <!-- phone number -->
@@ -917,7 +1190,7 @@
 
                     <!-- fax-number -->
                     <td class="fax-td" aria-label="fax-number">
-                      <span>02-5695368</span>
+                      <span tabindex="0" role="presentation">02-5695368</span>
                     </td>
 
                     <!-- related documents -->
@@ -978,7 +1251,7 @@
                       <div class="mobil-toggle-wrapper d-none d-lg-flex flex-column flex-lg-row w-100">
 
                         <!-- position -->
-                        <div class="td position-td d-flex align-items-center w-100">
+                        <div class="td position-td d-flex align-items-center w-100" tabindex="0" role="presentation">
                           <div class="th-mobile">
                           תפקיד:&nbsp
                           </div>
@@ -994,15 +1267,21 @@
 
                           <!-- fax number -->
                           <div class="th-fax">פקס:&nbsp
-                          </div><span>02-5695368</span>
+                          </div>
+                          <span tabindex="0" role="presentation">02-5695368</span>
                         </div>
 
                         <!-- related documents -->
-                        <div class="td related-documents-td d-lg-flex align-items-center justify-content-center"><a href=""><img src="../common/images/related-documents-icon.svg" alt="email-icon"></a>
+                        <div class="td related-documents-td d-lg-flex align-items-center justify-content-center">
+                          <a href=""><img src="../common/images/related-documents-icon.svg" alt="email-icon">
+                          </a>
                         </div>
 
                         <!-- contact job owner -->
-                        <div class="td mail-td d-lg-flex align-items-center justify-content-center"><a href="mailto:webmaster@example.com"><img src="../common/images/mail-icon.svg" class="email-icon" alt="email-icon"></a>
+                        <div class="td mail-td d-lg-flex align-items-center justify-content-center">
+                          <a href="mailto:webmaster@example.com">
+                            <img src="../common/images/mail-icon.svg" class="email-icon" alt="email-icon">
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -1020,20 +1299,40 @@
                         </div>
                       </div>
                       <div class="mobil-toggle-wrapper d-none d-lg-flex flex-column flex-lg-row w-100">
-                        <div class="td position-td d-flex align-items-center w-100">
-                        <div class="th-mobile d-lg-none">תפקיד:&nbsp</div>מנהל תחום ניהול התקשריות
+
+                        <!-- position -->
+                        <div class="td position-td d-flex align-items-center w-100" tabindex="0" role="presentation">
+                          <div class="th-mobile">
+                          תפקיד:&nbsp
+                          </div>
+                          מנהל תחום ניהול התקשריות
                         </div>
                         <div class="td tel-td d-flex align-items-center">
-                          <div class="th-mobile d-lg-none">טלפון:&nbsp</div>
+                          <div class="th-mobile">טלפון:&nbsp</div>
+
+                          <!-- phone number -->
                           <a href="tel:02-6663424"><span>02-6663424</span></a>
                         </div>
                         <div class="td fax-td d-flex align-items-center">
-                          <div class="th-mobile d-lg-none">פקס:&nbsp
-                          </div><span>02-5695368</span>
+
+                          <!-- fax number -->
+                          <div class="th-fax">פקס:&nbsp
+                          </div>
+                          <span tabindex="0" role="presentation">02-5695368</span>
                         </div>
-                        <div class="td related-documents-td d-lg-flex align-items-center justify-content-center"><a href=""><img src="../common/images/related-documents-icon.svg" alt="email-icon"></a>
+
+                        <!-- related documents -->
+                        <div class="td related-documents-td d-lg-flex align-items-center justify-content-center">
+                          <a href=""><img src="../common/images/related-documents-icon.svg" alt="email-icon">
+                          </a>
                         </div>
-                        <div class="td mail-td d-lg-flex align-items-center justify-content-center"><a href="mailto:webmaster@example.com"><img src="../common/images/mail-icon.svg" class="email-icon" alt="email-icon"></a></div>
+
+                        <!-- contact job owner -->
+                        <div class="td mail-td d-lg-flex align-items-center justify-content-center">
+                          <a href="mailto:webmaster@example.com">
+                            <img src="../common/images/mail-icon.svg" class="email-icon" alt="email-icon">
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1048,20 +1347,40 @@
                         </div>
                       </div>
                       <div class="mobil-toggle-wrapper d-none d-lg-flex flex-column flex-lg-row w-100">
-                        <div class="td position-td d-flex align-items-center w-100">
-                        <div class="th-mobile d-lg-none">תפקיד:&nbsp</div>מנהל תחום ניהול התקשריות
+
+                        <!-- position -->
+                        <div class="td position-td d-flex align-items-center w-100" tabindex="0" role="presentation">
+                          <div class="th-mobile">
+                          תפקיד:&nbsp
+                          </div>
+                          מנהל תחום ניהול התקשריות
                         </div>
                         <div class="td tel-td d-flex align-items-center">
-                          <div class="th-mobile d-lg-none">טלפון:&nbsp</div>
+                          <div class="th-mobile">טלפון:&nbsp</div>
+
+                          <!-- phone number -->
                           <a href="tel:02-6663424"><span>02-6663424</span></a>
                         </div>
                         <div class="td fax-td d-flex align-items-center">
-                          <div class="th-mobile d-lg-none">פקס:&nbsp
-                          </div><span>02-5695368</span>
+
+                          <!-- fax number -->
+                          <div class="th-fax">פקס:&nbsp
+                          </div>
+                          <span tabindex="0" role="presentation">02-5695368</span>
                         </div>
-                        <div class="td related-documents-td d-lg-flex align-items-center justify-content-center"><a href=""><img src="../common/images/related-documents-icon.svg" alt="email-icon"></a>
+
+                        <!-- related documents -->
+                        <div class="td related-documents-td d-lg-flex align-items-center justify-content-center">
+                          <a href=""><img src="../common/images/related-documents-icon.svg" alt="email-icon">
+                          </a>
                         </div>
-                        <div class="td mail-td d-lg-flex align-items-center justify-content-center"><a href="mailto:webmaster@example.com"><img src="../common/images/mail-icon.svg" class="email-icon" alt="email-icon"></a></div>
+
+                        <!-- contact job owner -->
+                        <div class="td mail-td d-lg-flex align-items-center justify-content-center">
+                          <a href="mailto:webmaster@example.com">
+                            <img src="../common/images/mail-icon.svg" class="email-icon" alt="email-icon">
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>

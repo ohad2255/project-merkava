@@ -1506,3 +1506,11 @@ input {
 input.currency-field {
 	font-family: FbReforma-sign!important;
 }
+
+.disabled {
+	background-color: #e8e8e8!important;
+	color: #9b9b9b!important;
+	pointer-events: none;
+	box-shadow: none!important;
+	opacity: 0.8;
+}
