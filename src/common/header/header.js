@@ -28,6 +28,14 @@ $(document).ready(function() {
         }
     });  
 
+    $('.main-nav-item-link').on( 'keydown', function(e) {
+		let navItemParent = $(this).parent();
+        if ( e.keyCode === 27 ) { // ESC
+        	$(this).focusout();
+            navItemParent.children(":first").focus();
+        }
+    });  
+
     function handleFirstTab(e) {
 	    if (e.keyCode === 9) { // the "Tab" key
 	        document.body.classList.add('user-is-tabbing');
