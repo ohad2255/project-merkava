@@ -769,7 +769,7 @@
 				color: #505050;
 
 				@media (min-width: $screen-lg-min) {
-					margin: 0 0 24px 50px;
+					margin: 0 0 24px 10px;
 					font-size: 2rem;
 				}
 
@@ -876,7 +876,7 @@
 					color: $header-blue;
 
 					@media (min-width: $screen-lg-min) {
-						//max-width: 520px;
+						margin: 0 0 4px 40px;
 					}
 				}
 				
