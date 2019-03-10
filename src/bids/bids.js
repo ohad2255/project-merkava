@@ -115,12 +115,17 @@ $(document).ready(function() {
     $(".bids-footer").toggleClass("footer-border");
     $(".related-bids-main-container").toggleClass("margin-open");
   });
-
+  var isMobile = $(window).width() < 996
   $(window).on("resize", function() {
-    $(".winning-bidders-main-container, .related-bids-container").toggleClass(
-      "hidden",
-      $(window).width() < 996
-    );
+    if ($(window).width() < 996 && !isMobile) {
+      $(".winning-bidders-main-container, .related-bids-container").addClass(
+        "hidden");
+    }
+    if ($(window).width() >= 996){
+      $(".winning-bidders-main-container, .related-bids-container").removeClass(
+        "hidden");
+    }
+    isMobile = $(window).width() < 996;
   });
 
   var alterClass = function() {

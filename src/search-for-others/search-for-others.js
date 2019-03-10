@@ -34,7 +34,7 @@ $(document).ready(function() {
 	     
 	});
 
-	$('.filter-mobile-wrapper').click(function() {
+	$('.search-for-others .filter-mobile-wrapper').click(function() {
 		$('.options-container').toggleClass('d-block');
 		$('.grey-overlay').toggleClass('d-block');
 		//$(this).parent().toggleClass('add-border');
