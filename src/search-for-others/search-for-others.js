@@ -22,6 +22,18 @@ $(document).ready(function() {
         }
 	});
 
+	$('.select-all-checkbox').on('change', function() {
+		if (this.checked) {
+			$('input[type=checkbox]').not(this).not($('input[disabled]')).prop('checked', true);
+		} else {
+			$('input[type=checkbox]').prop('checked', false);
+		}      
+	});
+
+	$('input.example').on('change', function() {
+	     
+	});
+
 	$('.search-for-others .filter-mobile-wrapper').click(function() {
 		$('.options-container').toggleClass('d-block');
 		$('.grey-overlay').toggleClass('d-block');
