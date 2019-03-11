@@ -77,8 +77,15 @@ $(document).ready(function() {
 		$('.related-exemptions-main-container').toggleClass('margin-open');
 	});
 
+  	var isMobile = $(window).width() < 996
 	$(window).on('resize', function () {
-	    $('.winning-bidders-main-container, .related-exemptions-container').toggleClass('hidden', $(window).width() < 996);
+		if ($(window).width() < 996 && !isMobile) {
+			$('.winning-bidders-main-container, .related-exemptions-container').addClass("hidden");
+		}
+		if ($(window).width() >= 996){
+			$('.winning-bidders-main-container, .related-exemptions-container').removeClass("hidden");
+		  }
+		isMobile = $(window).width() < 996;
 	});
 
 	var alterClass = function() {
