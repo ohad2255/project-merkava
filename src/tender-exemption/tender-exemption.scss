@@ -453,12 +453,12 @@
 				&:nth-child(2) {
 					li:first-child {
 						@media (min-width: $screen-lg-min) {
-							margin: 0 0 33px 40px;
-							max-width: 355px;
+							// margin: 0 0 33px auto;
+							width:50%;
 						}
 
 						@media (min-width: $screen-xl-min) {
-							margin: 0 0 33px auto;
+							// margin: 0 0 33px auto;
 						}
 					}
 				}
@@ -471,6 +471,9 @@
 					@media (min-width: $screen-lg-min) {
 						margin: 0 0 33px auto;
 						display: inline-block;
+						max-width:none;
+						width:25%;
+						padding-left:15px;
 					}
 	
 					&:nth-child(5) {
