@@ -469,27 +469,6 @@
 					margin: 0;
 				}
 
-				.collapse-arrow {
-			 		width: 15px;
-					height: 13px; 
-					position: absolute;
-					left: 10px;
-					right: auto;
-					bottom: 9px;
-
-					@media (min-width: $screen-lg-min) {
-						width: 30px;
-    					height: 26px;
-    					margin: 0;
-    					left: 25px;
-    					top: 226px;
-					}	 
-				}
-
-				.show + .collapse-arrow {
-					transform: rotate(90deg);
-				}	
-
 				ul {
 					font-size: 1.5rem;
 					font-weight: normal;
