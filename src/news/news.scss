@@ -293,7 +293,7 @@
 						color: $main-text-grey;
 						font-family: $main-font;
 						margin:0 14px 0 25px; 
-						padding: 0 0 40px 0;
+						padding: 0 0 20px 0;
 
 						@media (min-width: $screen-lg-min) {
 							//max-width: 600px;
@@ -379,27 +379,6 @@
 				.card-two {
 					margin: 0;
 				}
-
-				.collapse-arrow {
-			 		width: 15px;
-					height: 13px; 
-					position: absolute;
-					left: 10px;
-					right: auto;
-					bottom: 9px;
-
-					@media (min-width: $screen-lg-min) {
-						width: 30px;
-    					height: 26px;
-    					margin: 0;
-    					left: 25px;
-    					top: 226px;
-					}	 
-				}
-
-				.show + .collapse-arrow {
-					transform: rotate(90deg);
-				}	
 			}
 
 			.video-sec-head, .related-documents-head, .links-head {
