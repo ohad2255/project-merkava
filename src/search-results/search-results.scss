@@ -1134,11 +1134,14 @@
   box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.25);
   line-height: 1.4;
   border-radius: 4px;
-  max-height: 400px;
   z-index: 1000;
   padding-top: 20px;
   overflow: hidden;
   -webkit-tap-highlight-color: transparent;
+
+  	@media (min-width: $screen-lg-min) {
+		max-height: 400px;
+	}
 }
 
 .dp:before {
@@ -1216,6 +1219,7 @@
   border-radius: 2px;
   border: 0;
   background: transparent;
+  font-size: 1.6rem;
 }
 
 .dp-cal-header {
@@ -1300,7 +1304,7 @@
 
 .dp-cal-footer {
   text-align: end;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -1332,14 +1336,18 @@
 }
 
 .dp-close {
-  box-sizing: border-box;
-  display: inline-block;
-  width: 33%;
-  padding: 8px;
-  text-decoration: none;
-  color: inherit;
-  border: 0;
-  background: transparent;
+	box-sizing: border-box;
+	display: inline-block;
+	width: 33%;
+	padding: 6px;
+	text-decoration: none;
+	color: inherit;
+	border: 0;
+  	background: transparent;
+
+ 	@media (min-width: $screen-lg-min) {
+		padding: 8px; 
+	}
 }
 
 .dp-permanent .dp-close,
@@ -1377,7 +1385,7 @@
 
 .dp-close:after {
 	content: 'בטל';
-	font-size: 1.2rem;
+	font-size: 1.6rem;
 	font-weight: normal;
 	font-style: normal;
 	font-stretch: normal;
@@ -1393,9 +1401,9 @@
 	display: inline-block;
 	margin: 4px 1px;
 	text-align: center;
-	width: 58px;
+	width: 48px;
 	height: 24px;
-	font-size: 1.2rem;
+	font-size: 1.6rem;
 	font-weight: normal;
 	font-style: normal;
 	font-stretch: normal;
@@ -1403,6 +1411,13 @@
 	letter-spacing: normal;
 	text-align: center;
 	color: #505050;
+	padding: 6px;
+
+	@media (min-width: $screen-lg-min) {
+		width: 58px;
+		height: 24px;
+		padding: 8px;
+	}
 }
 
 .dp-col-header {
@@ -1412,9 +1427,15 @@
 }
 
 .dp-month {
-  width: 33%;
-  display: inline-block;
-  padding: 8px;
+  	width: 33%;
+  	display: inline-block;
+  	padding: 6px;
+
+  	@media (min-width: $screen-lg-min) {
+		width: 58px;
+		height: 24px;
+		padding: 8px;
+	}
 }
 
 .dp-year {
@@ -1476,7 +1497,11 @@
 
   .dp-day-of-week,
   .dp-day {
-    padding: 8px;
+    padding: 6px;
+
+    @media (min-width: $screen-lg-min) {
+		padding: 8px;
+	}
   }
 }
 
@@ -1495,7 +1520,11 @@
 }
 
 .dp-days {
-	padding: 5px 14px 0;
+	padding: 5px 12px 0;
+
+	@media (min-width: $screen-lg-min) {
+		padding: 5px 14px 0;
+	}
 }
 
 input {
