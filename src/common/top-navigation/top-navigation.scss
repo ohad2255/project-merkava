@@ -262,6 +262,7 @@
   overflow: auto;
   visibility: hidden;
   box-shadow: -20px 1px 70px -30px #000 inset;
+  -webkit-overflow-scrolling: touch;
 
   @media (max-width: 340px) {
     width: 300px;
