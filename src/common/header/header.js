@@ -28,11 +28,16 @@ $(document).ready(function() {
         }
     });  
 
-    $('.main-nav-item-link').on( 'keydown', function(e) {
-		let navItemParent = $(this).parent();
-        if ( e.keyCode === 27 ) { // ESC
-        	$(this).focusout();
-            navItemParent.children(":first").focus();
+    $('header .nav-item:not(:last-child) .main-nav-item-link').on( 'keyup', function(e) {
+		if ( e.keyCode === 27 ) { // ESC
+			$(this).focusout();
+
+			const nextItem = $(this).parents('.nav-item').next()
+			if (nextItem.find('.main-nav-item-dropdown').length) {
+				nextItem.find('.nav-item-text').focus();
+			} else {
+				nextItem.find('a').focus();
+			}
         }
     });  
 
