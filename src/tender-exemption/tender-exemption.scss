@@ -171,6 +171,11 @@
 	.bids-body {
 		width: 100%;
 
+		h2 {
+			font-size: 3.2rem;
+			font-weight: normal;
+		}
+
 		.body-wrapper {
 
 			@media (min-width: $screen-lg-min) {
