@@ -259,10 +259,11 @@
 			}
 
 			.details-body {
-				margin: 0 0 12px 0;
+				margin: 0 0 12px 0;				
 
 				@media (min-width: $screen-lg-min) {
 					margin: 0 0 35px 0;
+					padding-left: 100px;
 				}
 			}
 
@@ -293,6 +294,10 @@
 			.details-item-wrapper {
 				margin: 0 0 7px 0;
 
+				@media (max-width: $screen-md-min) {
+					flex-basis: 50%;
+				}
+
 				@media (min-width: $screen-lg-min) {
 					//margin: 0 0 0 84px;
 				}
@@ -320,10 +325,6 @@
 
 			.date, .update-date {
 				margin: 0;
-
-				@media (min-width: $screen-lg-min) {
-					margin: 0 0 0 auto;
-				}
 			}
 		}
 
