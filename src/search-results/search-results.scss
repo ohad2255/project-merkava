@@ -822,6 +822,10 @@
   				left: 10px;
   				right: auto;
 
+				@media (max-width: $screen-md-min) {
+					display: none;
+				}
+					
 				@media (min-width: $screen-lg-min) {
 					width: 160px;
 					height: 90px;

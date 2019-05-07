@@ -376,7 +376,11 @@
   				position: absolute;
   				bottom: 0;
   				left: 10px;
-  				right: auto;
+				right: auto;
+
+				@media (max-width: $screen-md-min) {
+					display: none;
+				}
 
 				@media (min-width: $screen-lg-min) {
 					width: 71px;
