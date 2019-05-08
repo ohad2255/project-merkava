@@ -1250,6 +1250,8 @@
 	// border-width: 0 1.5px 1.5px 0!important;
 	// height: 10px!important;
 	// width: 10px!important;
+
+	transform: rotate(180deg);
 }
 
 .dp-next:focus,
@@ -1261,14 +1263,14 @@
 }
 
 .dp-prev {
-  left: 20px;
-  right: auto;
+  right: 20px;
+  left: auto;
   top: 0;
 }
 
 .dp-next {
-  right: 20px;
-  left: auto;
+  left: 20px;
+  right: auto;
   top: 0;
 }
 

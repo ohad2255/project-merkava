@@ -251,7 +251,7 @@
 				    transform: rotate(45deg);
 				    -webkit-transform: rotate(45deg);
 				    pointer-events: none;
-				    top: 17px;
+				    top: 44px;
 				    left: 17px;
 				    right: auto;
 				}
@@ -280,7 +280,6 @@
 
 				@media (min-width: $screen-lg-min) {
                     margin:0 0 25px 0;
-                    height: 50px;
                	}
 			}
 
@@ -367,10 +366,14 @@
 				height: 6px;
 				background-color: $header-blue;
 				border-radius: 50%;
-				right: 11px;
+				right: 7px;
 				left: auto;
-				top: 21px;
+				top: 7px;
 				//margin: -5px 0 0 0;
+
+				+ label {
+					margin-right: 20px;
+				}
 			}
 		
 			.upload-file-wrapper {
@@ -619,9 +622,9 @@
 				height: 6px;
 				background-color: $header-blue;
 				border-radius: 50%;
-				right: 11px;
+				right: 7px;
 				left: auto;
-				top: 50%;
+				top: 10px;
 				margin: -3px 0 0 0;
 			}
 		}

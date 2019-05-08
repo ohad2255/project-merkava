@@ -72,30 +72,24 @@
 
                   <!--first name input -->
                   <div class="form-group first-name">
-                    <input class="form-control" type="text" placeholder= "שם פרטי" id="nameInputReg" name="name" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty aria-label="first-name" aria-describedby="firstNameLabel">
-                    <label id="firstNameLabel" class="sr-only" for="nameInputReg">
-                      שדה חובה
-                    </label>
                     <div class="input-bullet"></div>
+                    <label id="firstNameLabel" for="nameInputReg">שם פרטי</label>
+                    <input class="form-control" type="text" id="nameInputReg" name="name" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty aria-label="first-name" aria-describedby="firstNameLabel">
                   </div>
 
                   <!--last name input -->
                   <div class="form-group last-name">
-                    <input class="form-control" type="text" placeholder= "שם משפחה" id="lastNameInputReg" name="lastName" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty aria-label="last-name" aria-describedby="lastNameLabel">
-                    <label id="lastNameLabel" class="sr-only" for="lastNameInputReg">
-                      שדה חובה
-                    </label>
                     <div class="input-bullet"></div>
+                    <label id="lastNameLabel" for="lastNameInputReg">שם משפחה</label>
+                    <input class="form-control" type="text" id="lastNameInputReg" name="lastName" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty aria-label="last-name" aria-describedby="lastNameLabel">
                   </div>
                 </div>
                 <div class="form-group email">
 
                   <!-- mail input -->
-                  <input type="email" class="form-control" id="inputEmail" placeholder="דוא״ל"   id="inputEmailContactUs" class="form-control email-input" name="email" data-required="" data-parsley-validate-if-empty data-parsley-error-message="אימייל חייב להכיל @" aria-label="email-address" aria-describedby="emailAddressLabel">
-                  <label id="emailAddressLabel" class="sr-only" for="inputEmailContactUs">
-                    אימייל חייב להכיל @
-                  </label>
                   <div class="input-bullet"></div>
+                  <label id="emailAddressLabel" for="inputEmailContactUs">דוא"ל</label>
+                  <input type="email" class="form-control" id="inputEmail" id="inputEmailContactUs" class="form-control email-input" name="email" data-required="" data-parsley-validate-if-empty data-parsley-error-message="אימייל חייב להכיל @" aria-label="email-address" aria-describedby="emailAddressLabel">
                 </div>
               </div>   
             </div> 
@@ -103,10 +97,8 @@
 
               <!-- phone number input -->
               <div class="form-group phone-number">
-                <input type="tel" class="form-control" id="phoneNumber" placeholder="טלפון" data-parsley-error-message="מספר לא תקין" minlength="9" maxlength="10" aria-label="phone-number" aria-describedby="phoneNumberLabel">
-                <label id="phoneNumberLabel" class="sr-only" for="phoneNumber">
-                טלפון
-                </label>
+                <label id="phoneNumberLabel" for="phoneNumber">טלפון</label>
+                <input type="tel" class="form-control" id="phoneNumber" data-parsley-error-message="מספר לא תקין" minlength="9" maxlength="10" aria-label="phone-number" aria-describedby="phoneNumberLabel">
               </div>
 
               <!-- subject input -->
@@ -114,27 +106,23 @@
                 <div class="blue-arrow"></div>
 
                 <!-- subject select -->
-                <label id="subjectSelectLabel" class="sr-only" for="subjectSelect">
-                  שדה חובה
-                </label>
-                <select class="form-control subject-select" id="subjectSelect" placeholder="נושא הפנייה" data-parsley-error-message="שדה חובה" required aria-describedby="subjectSelectLabel">
+                <div class="input-bullet"></div>
+                <label id="subjectSelectLabel" for="subjectSelect">נושא הפנייה</label>
+                <select class="form-control subject-select" id="subjectSelect" data-parsley-error-message="שדה חובה" required aria-describedby="subjectSelectLabel">
 
                   <!-- subjects options -->
                   <option value="" disabled selected hidden class="placeholder-subject-select">נושא הפנייה</option>
                   <option class="subject-select-option-1 subject-select-option">נושא-1</option>
                   <option class="subject-select-option-2 subject-select-option">נושא-2</option>
                 </select>
-                <div class="input-bullet"></div>
               </div>
             </div> 
 
             <!-- subject textarea input -->
             <div class="form-group subject-textarea">
-              <textarea class="form-control" id="subjectTextarea" placeholder="פירוט הפנייה" required data-parsley-error-message="פירוט פנייה נדרש" aria-label="text-area" aria-describedby="textAreaLabel"></textarea>
-              <label id="textAreaLabel" class="sr-only" for="subjectTextarea">
-                פירוט הפנייה
-              </label>
               <div id="textAreaId" class="input-bullet"></div>
+              <label id="textAreaLabel" for="subjectTextarea">פירוט הפנייה</label>
+              <textarea class="form-control" id="subjectTextarea" required data-parsley-error-message="פירוט פנייה נדרש" aria-label="text-area" aria-describedby="textAreaLabel"></textarea>
             </div>
 
             <!-- upload file input -->

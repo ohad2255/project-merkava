@@ -346,7 +346,7 @@
 				    transform: rotate(45deg);
 				    -webkit-transform: rotate(45deg);
 				    pointer-events: none;
-				    top: 17px;
+				    top: 44px;
 				    left: 17px;
 				    right: auto;
 				    opacity: 0.45;
@@ -396,7 +396,6 @@
 
 				@media (min-width: $screen-lg-min) {
                     margin:0 0 25px 0;
-                    height: 50px;
                	}
 			}
 
@@ -468,9 +467,13 @@
 				height: 6px;
 				background-color: $header-blue;
 				border-radius: 50%;
-				right: 11px;
-				top: 21px;
+				right: 7px;
+				top: 7px;
 				//margin: -5px 0 0 0;
+
+				+ label {
+					margin-right: 20px;
+				}
 			}
 
 			.upload-file-wrapper {
@@ -671,9 +674,9 @@
 				height: 6px;
 				background-color: $header-blue;
 				border-radius: 50%;
-				right: 11px;
+				right: 7px;
 				left: auto;
-				top: 50%;
+				top: 10px;
 				margin: -3px 0 0 0;
 			}
 		}
@@ -811,10 +814,10 @@
 }
 .contact-job-owners {
 	.body .form-wrapper{ 
-		.first-name{
-			margin-bottom:0;
-			margin-left:10px;
-		}
+		// .first-name{
+		// 	margin-bottom:0;
+		// 	margin-left:10px;
+		// }
 		.email{
 			margin: 0 0 25px 0;
 			@media (min-width: $screen-lg-min) {
@@ -822,23 +825,4 @@
 			}
 		}
 	}
-}	
-
-.contact-job-owners {
-
-	.body .form-wrapper{ 
-
-		.first-name {
-			margin-bottom:0;
-			margin-left:10px;
-		}
-
-		.email{
-			margin: 0 0 25px 0;
-			@media (min-width: $screen-lg-min) {
-				margin:0;
-			}
-		}
-	}
-}	
-
+}

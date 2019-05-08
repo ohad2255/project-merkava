@@ -74,55 +74,45 @@
 
                 <!-- last name input -->
                 <div class="last-name-wrapper form-group">
-                  <input class="form-control" type="text" placeholder="שם פרטי ומשפחה" id="lastNameInputProfile" name="lastName" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty aria-label="last-name" aria-describedby="lastNameLabel">
-                  <label id="lastNameLabel" class="sr-only" for="lastNameInputProfile">
-                    שדה חובה                  
-                  </label>
                   <div class="input-bullet"></div>
+                  <label id="lastNameLabel" for="lastNameInputProfile">שם פרטי ומשפחה</label>
+                  <input class="form-control" type="text" id="lastNameInputProfile" name="lastName" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty aria-label="last-name" aria-describedby="lastNameLabel">
                 </div>
               </div>
               <div class="form-group language">
                 <div class="blue-arrow"></div>
 
                 <!-- language select -->
-                <label id="languageSelectLabel" class="sr-only" for="languageReg">
-                  שדה חובה 
-                </label>
-                <select class="form-control language-select" id="languageReg" placeholder= "שפה" required data-parsley-error-message="שדה חובה" aria-label="language-select" aria-describedby="languageSelectLabel">
+                <div class="input-bullet"></div>
+                <label id="languageSelectLabel" for="languageReg">שפה</label>
+                <select class="form-control language-select" id="languageReg" required data-parsley-error-message="שדה חובה" aria-label="language-select" aria-describedby="languageSelectLabel">
 
                   <!-- language options -->
                   <option value="0" disabled selected hidden>שפה</option>
                   <option>עברית</option>
                   <option>אנגלית</option>
                 </select>
-                <div class="input-bullet"></div>
               </div>
             </div> 
             <div class="form-group email-wrapper d-flex flex-column flex-lg-row">
               <div class="form-group email">
 
                 <!-- email input -->
-                <input type="email" class="form-control" id="inputEmailProfile" class="form-control email-input" placeholder="דוא״ל" name="email" data-required="" data-parsley-validate-if-empty data-parsley-error-message="אימייל חייב להכיל @" aria-label="email-address" aria-describedby="emailAddressLabel">
-                <label class="sr-only" for="inputEmailProfile">
-                  אימייל חייב להכיל @
-                </label>
                 <div class="input-bullet"></div>
+                <label for="inputEmailProfile">דוא"ל</label>
+                <input type="email" class="form-control" id="inputEmailProfile" class="form-control email-input" name="email" data-required="" data-parsley-validate-if-empty data-parsley-error-message="אימייל חייב להכיל @" aria-label="email-address" aria-describedby="emailAddressLabel">
               </div>
               <div class="form-group email-confirm">
 
                 <!-- email confirm input -->
-                <input type="email" class="form-control" id="inputEmailConfirmProfile" data-match="inputEmailReg" data-parsley-error-message="דוא״ל לא תואם" placeholder="אימות דוא״ל" data-parsley-equalto="#inputEmailProfile" required aria-label="confirm-email-address" aria-describedby="confirmEmailAddressLabel">
-                <label id="confirmEmailAddressLabel" class="sr-only" for="inputEmailConfirmProfile">
-                  אימות דוא״ל
-                </label>
                 <div class="input-bullet"></div>
+                <label id="confirmEmailAddressLabel" for="inputEmailConfirmProfile">אימות דוא"ל</label>
+                <input type="email" class="form-control" id="inputEmailConfirmProfile" data-match="inputEmailReg" data-parsley-error-message="דוא״ל לא תואם" data-parsley-equalto="#inputEmailProfile" required aria-label="confirm-email-address" aria-describedby="confirmEmailAddressLabel">
               </div>
             </div>    
             <div class="form-group password-wrapper d-flex flex-column flex-lg-row">
 
               <div class="form-group password form-group-password">
-                <div class="input-bullet"></div>
-
                 <!-- show password button -->
                 <div id="showPasswordEye" class="password-eye" role="button" tabindex="0">
                   <img src="../common/images/password-eye-disabled.svg">
@@ -135,18 +125,15 @@
                 <label class="sr-only" for="showPasswordEyeShow"></label>
 
                 <!-- password input -->
-                <label class="sr-only" for="inputPasswordAcc">
-                  סיסמא צריכה להכיל 8 תווים לפחות, לכלול מספרים, תווים ולפחות אות אחת גדולה
-                </label>
-                <input type="password" id="inputPasswordAcc" type="password" pattern="(?=.*\d)(?=.*[A-Z]).{8,}" class="form-control password-input" placeholder="סיסמא" data-toggle="password" data-required="" data-parsley-validate-if-empty data-parsley-error-message="סיסמא צריכה להכיל 8 תווים לפחות, לכלול מספרים, תווים ולפחות אות אחת גדולה" aria-label="password-input" aria-describedby="hint">
+                <div class="input-bullet"></div>
+                <label for="inputPasswordAcc">סיסמא</label>
+                <input type="password" id="inputPasswordAcc" type="password" pattern="(?=.*\d)(?=.*[A-Z]).{8,}" class="form-control password-input" data-toggle="password" data-required="" data-parsley-validate-if-empty data-parsley-error-message="סיסמא צריכה להכיל 8 תווים לפחות, לכלול מספרים, תווים ולפחות אות אחת גדולה" aria-label="password-input" aria-describedby="hint">
                 <p id="hint">
                   סיסמא צריכה להיות בת 8 תוים עם סיפרה וסימן מיוחד
                 </p>
               </div>
 
               <div class="form-group password-confirm form-group-password">
-                <div class="input-bullet"></div>
-
                 <!-- show confirm password button -->
                 <!-- <div id="showPasswordConfirm" role="button" tabindex="0">הצג סיסמא</div> -->
                 <div id="showPasswordEyeConfirm" class="password-eye" role="button" tabindex="0">
@@ -160,20 +147,17 @@
                 <label class="sr-only" for="showPasswordEyeConfirmShow"></label>
 
                 <!-- confirm password input -->
-                <input type="password" class="form-control" id="inputPasswordConfirmAcc"  placeholder="אימות סיסמא"  data-parsley-error-message="סיסמא אינה תואמת"  data-parsley-equalto="#inputPasswordAcc" required aria-label="confirm-password-input" aria-label="confirm-password" aria-describedby="confirmPasswordlabel">
-                <label class="sr-only" for="inputPasswordConfirm" id="confirmPasswordlabel">
-                  אימות סיסמא
-                </label>
+                <div class="input-bullet"></div>
+                <label for="inputPasswordConfirm" id="confirmPasswordlabel">אימות סיסמא</label>
+                <input type="password" class="form-control" id="inputPasswordConfirmAcc" data-parsley-error-message="סיסמא אינה תואמת"  data-parsley-equalto="#inputPasswordAcc" required aria-label="confirm-password-input" aria-label="confirm-password" aria-describedby="confirmPasswordlabel">
               </div>
               
             </div>
 
             <!-- phone number input -->
             <div class="form-group phone-number">
-              <input type="tel" class="form-control" id="phoneNumber" placeholder="טלפון" data-parsley-error-message="מספר לא תקין" minlength="9" maxlength="10" aria-label="phone-number" aria-describedby="phoneNumberlabel">
-              <label id="phoneNumberlabel" class="sr-only" for="phoneNumber">
-                טלפון
-              </label>
+              <label id="phoneNumberlabel" for="phoneNumber">טלפון</label>
+              <input type="tel" class="form-control" id="phoneNumber" data-parsley-error-message="מספר לא תקין" minlength="9" maxlength="10" aria-label="phone-number" aria-describedby="phoneNumberlabel">
               <!-- <div class="input-bullet"></div> -->
             </div>
 

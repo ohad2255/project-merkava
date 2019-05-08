@@ -45,10 +45,8 @@
               <div class="form-group">
 
                 <!-- email input -->
-                <input id="InputEmailSign" type="email" class="form-control email-input" placeholder="דוא״ל" name="email" data-required="" data-parsley-validate-if-empty data-parsley-error-message="כתובת האימייל חייבת להכיל את התו @" aria-label="email-address" aria-describedby="emailAddressLabel">
-                <label id="emailAddressLabel" class="sr-only" for="InputEmailSign">
-                  כתובת האימייל חייבת להכיל את התו @
-                </label>
+                <label id="emailAddressLabel" for="InputEmailSign">דוא"ל</label>
+                <input id="InputEmailSign" type="email" class="form-control email-input" name="email" data-required="" data-parsley-validate-if-empty data-parsley-error-message="כתובת האימייל חייבת להכיל את התו @" aria-label="email-address" aria-describedby="emailAddressLabel">
               </div>
 
               ${require("../common/password-with-eye/password-with-eye.html")}

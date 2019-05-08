@@ -361,10 +361,14 @@
 				height: 6px;
 				background-color: $header-blue;
 				border-radius: 50%;
-				right: 11px;
+				right: 7px;
 				left: auto;
-				top: 21px;
+				top: 7px;
 				//margin: -5px 0 0 0;
+
+				+ label {
+					margin-right: 20px;
+				}
 			}
 		
 			input.parsley-error {
@@ -396,9 +400,9 @@
 				height: 6px;
 				background-color: $header-blue;
 				border-radius: 50%;
-				right: 11px;
+				right: 7px;
 				left: auto;
-				top: 50%;
+				top: 10px;
 				margin: -3px 0 0 0;
 			}
 		}
