@@ -19,7 +19,7 @@ $(document).ready(function() {
       new Swiper(this, {
         slidesPerView: "auto",
         slidesOffsetBefore: "-45",
-        loop: true,
+        // loop: true,
         spaceBetween: 10,
         breakpoints: {
           3000: {

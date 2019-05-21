@@ -474,7 +474,7 @@
 
 		@media (min-width: $screen-lg-min) {
 			border: 0;
-			margin: 0 auto 20px;
+			margin: 0 auto;
 			min-height: auto;
 			pointer-events: none;
 			padding: 0;
@@ -559,7 +559,6 @@
 		//display: none;
 		border-bottom: solid 1px $bids-border;
 		padding: 0 0 42px 0;
-		margin: 10px 0 0 0;
 		flex-wrap: wrap;
 
 		@media (min-width: $screen-lg-min) {
@@ -570,36 +569,13 @@
 
 // changed //////////////////////////////////////// 
 
-
-		.winning-bidder-main-wrppaer:nth-child(3n+1) {
-
-			.winning-bidder-container {
-				background-color: $bids-purple;
-			}
-		}
-
-		.winning-bidder-main-wrppaer:nth-child(3n+2) {
-
-			.winning-bidder-container {
-				background-color: rgba(223, 110, 17, 0.15);
-			}
-			
-		}
-
-		.winning-bidder-main-wrppaer:nth-child(3n+3) {
-
-			.winning-bidder-container {
-				background-color: rgba(51,163,141,.15);
-			}
-		}
-
-		.winning-bidder-main-wrppaer:nth-child(1) {
+		.winning-bidder-main-wrppaer {
 
 			.winning-bidder {
 				margin: 0;
 
 				@media (min-width: $screen-lg-min) {
-					margin: 10px 0 0 0;
+					margin: 20px 0 0 0;
 				}
 			}
 		}
@@ -607,13 +583,8 @@
 // change and ////////////////////////////////////////
 
 		.winning-bidder-main-wrppaer {
-
-			//margin: 0 0 20px 0;
-
-			@media (min-width: $screen-lg-min) {
-				width: 50%;
-				min-width: 601px;
-				//margin: 0 0 10px 0;
+			&:not(:first-child) {
+				border-top: 1px solid lightgrey;
 			}	
 		}
 
@@ -670,7 +641,6 @@
 // changed ////////////////////////////////////////
 
 	.winning-bidder-container {
-	    padding: 26px 0 0 0;
 	    margin: 0 20px;
 	    border-radius: 3px;
 	    //min-height: 560px;
@@ -678,24 +648,16 @@
 	    flex-direction: column;
 
 	    @media (min-width: $screen-lg-min) {
-			max-width: 601px;
 			border-radius: 8px;
 			margin: 0;
-			min-height: 580px;
 		}
 
 	    .winning-bidders-content-wrapper {
-	    	padding: 0 24px 0 20px;
-	    	margin-bottom: 192px;
-
-		 //    @media (min-width: $screen-md-min) {
-			// 	margin-bottom: 220px;
-			// }
-
+				margin-top: 20px;
+				
 	    	 @media (min-width: $screen-lg-min) {
-				padding: 0 30px 25px;
-				margin-bottom: 150px;
 				min-height: 240px;
+				margin-top: 0;
 			}
 	    }
 
@@ -728,17 +690,15 @@
 	    }
 
 	    h3 {
-			font-size: 2.5rem;
-			font-weight: normal;
+			font-size: 1.6rem;
 			font-style: normal;
 			font-stretch: normal;
-			line-height: 1;
+			line-height: 1.25;
 			letter-spacing: normal;
 			color: $text-dark-grey;
 
 			 @media (min-width: $screen-lg-min) {
-				font-size: 3.2rem;
-				line-height: 0.94;
+				font-size: 2rem;
 			}
 	    }
 
@@ -807,26 +767,21 @@
 	// changed ///////////////////////////////////////////////
 
 	.winning-bidders-swiper-wrapper, .single-slide {
-		position: absolute;
-		top: 273px;
 		height: 140px;
 		width: 100%;
-
-		@media (min-width: $screen-md-min) {
-			top: 220px;
-		}
+		margin-bottom: 36px;
 
 		@media (min-width: $screen-lg-min) {
-			top: 238px;
-			height: 160px;
+			height: auto;
 		}
 
 		.swiper-slide {
 			width: 293px!important;
 
 			@media (min-width: $screen-lg-min) {
-				right: 45px;
 				left: auto;
+				margin-left: 10px;
+				margin-bottom: 10px;
 			}
 		}
 
@@ -838,14 +793,10 @@
 	}
 
 	.winning-bidders-swiper-wrapper {
-
-		margin: 0 43px 0 0;
-
 		@media (min-width: $screen-lg-min) {
-			width: 536px;
 			right: 30px;
 			left: auto;
-			margin: 0;
+			margin: 10px 0 20px;
 		}
 	}	
 
@@ -871,7 +822,7 @@
 	}
 
 	#winningBiddersPagination, #winningBiddersPagination2 {
-		margin: 10px -43px 0 0;
+		margin-right: -20px;
 
 		@media (min-width: $screen-lg-min) {
 			margin: 10px -10px 0 0;
@@ -881,12 +832,10 @@
 
 	// changed ///////////////////////////////////////////////
 	.winning-bidders-links {
-		padding: 10px 24px 10px 15px;
-    	margin-top: auto;
 		align-self: flex-end;
+		margin: 8px 0 20px;
 
 		@media (min-width: $screen-lg-min) {
-			padding: 0 30px 24px;
 			align-self: none;
 			margin-top: 0;
 		}
@@ -905,11 +854,14 @@
 		a {
 			line-height: 1.4;
 			text-decoration: none;
+			margin: 3px 0;
 			
 			@media (min-width: $screen-lg-min) {
 				line-height: 1.8;
 				display: block;
 				text-decoration: underline;
+				margin: 0;
+				margin-left: 25px;
 			}
 		}
 
@@ -927,13 +879,13 @@
 	}
 
 
-	.swiper-container {
+	.swiper-container, .winning-bidders-swiper {
 		height: 140px;
 		max-width: 100%;
 
 		@media (min-width: $screen-lg-min) {
 			width: 100%;
-			height: 160px;
+			height: auto;
 		}
 	
 		.swiper-wrapper {
@@ -953,6 +905,7 @@
 	}
 
 	.winning-bidders-swiper {
+		overflow: visible;
 
 		@media (min-width: $screen-lg-min) {
 			margin: 0 0 0 30px;
