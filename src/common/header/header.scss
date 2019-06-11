@@ -185,73 +185,39 @@ header {
         margin: 0;
       }
 
-      .lng-dropdown {
-        width: auto;
+      .language-select {
+        margin-left: 24px;
+        position: relative;
 
-        @media (min-width: $screen-lg-min) {
-          margin-bottom: 0;
-        }
-
-        .lng-btn {
-          padding: 0;
-          height: auto;
-          width: auto;
+        select {
+          font-size: 2rem;
+          color: white;
           background-color: transparent;
           border: none;
-          margin:0 0 0 24px;
-          object-fit: contain;
-          font-size: 2rem;
-          font-weight: normal;
-          font-style: normal;
-          font-stretch: normal;
-          line-height: 0.8;
-          letter-spacing: normal;
-          color: $main-white;
-
-          @media (min-width: $screen-lg-min) {
-            width: auto;
-            height: auto;
+          cursor: pointer;
+          height: 1.2em;
+          appearance: none;
+          padding-left: 20px;
+  
+          option {
+            background-color: $header-blue;
+            color: white;
+            border: 1px solid rgba(0, 0, 0, .15);
           }
         }
 
-        .lng-btn::after {
-          border: solid $main-white;
+        &:after {
+          content: '';
+          border: solid #fff;
           border-width: 0 1.5px 1.5px 0;
           display: inline-block;
           transform: rotate(45deg);
           height: 9px;
           width: 9px;
-          margin: 0 17px 9px 0;
-
-          @media (min-width: $screen-lg-min) {
-            margin: 0px 13px 8px 0;
-          }
-        }
-
-        .lng-dropdown-menu {
-          background-color: $header-blue;
-          min-width: 7rem;
-          padding: 0;
-
-          .lng-dropdown-item-1 {
-            font-size: 2rem;
-            font-weight: normal;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: 0.8;
-            letter-spacing: normal;
-            color: $main-white;
-            text-align: center;
-            padding: 5px;
-            margin-top: 3px;
-            //font-family: fbagol, OpenSans;
-
-            &:hover, &:focus {
-              background-color: #1c6897;
-              //color: #0a7bb6;
-              border: 0;
-            }
-          }
+          position: absolute;
+          left: 2px;
+          top: 5px;
+          pointer-events: none;
         }
       }
 

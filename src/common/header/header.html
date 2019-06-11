@@ -32,7 +32,7 @@
             </div>
         </div>
         <div class="middle-sec d-flex align-items-center flex-lg-row align-items-lg-start">
-            <div class="middle-sec-container d-flex align-items-lg-center justify-content-between align-items-start flex-lg-wrap">
+            <div class="middle-sec-container d-flex align-items-center justify-content-between align-items-start flex-lg-wrap">
                 <!--<div class="font-size-container font-size-container-mobile d-flex align-items-end d-lg-none">
 
                      font size buttons mobile 
@@ -44,17 +44,12 @@
                 <a id="mainContentLink" href="#mainContent">עבור לתוכן המרכזי</a>
 
                 <!-- language dropdown -->
-                <div class="dropdown lng-dropdown">
-
-                    <!-- hebrew option (default) -->
-                    <button class="btn btn-secondary dropdown-toggle lng-btn d-flex align-items-center justify-content-center justify-content-lg-end" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        עברית
-                    </button>
-
-                    <!-- english option -->
-                    <div class="dropdown-menu lng-dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item lng-dropdown-item-1" href="#" lang="en" role="button" tabindex="0">En</a>
-                    </div>
+                <div class="language-select">
+                    <select onchange="changeLanguage(this.value)">
+                        <option value="he" selected>עברית</option>
+                        <option value="en">English</option>
+                        <option value="ar">عربى</option>
+                    </select>
                 </div>
                 <!--<div class="font-size-container font-size-container-desktop d-lg-flex align-items-baseline d-none">
 
