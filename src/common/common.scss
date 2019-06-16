@@ -11,14 +11,6 @@ html {
   text-align: right;
   font-family: $main-font;
 
-  @media (min-width: $screen-lg-min) {
-    font-size: 8px;
-  }
-
-  @media (min-width: $screen-xl-min) {
-    font-size: 10px;
-  }
-
   .eng-in-heb {
     font-size: 80%;
     font-weight: inherit;
