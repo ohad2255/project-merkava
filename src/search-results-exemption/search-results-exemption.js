@@ -5,6 +5,10 @@ require('../common/common');
 
 $(document).ready(function() {
 
+	if (!$('.result-container').length) {
+		$('.filter-mobile-container').remove();
+	}
+
 	$('.close-filter-container').click(function() {
 		$(this).next().toggleClass('d-none');
 		$(this).toggleClass('border-none');

@@ -6,6 +6,10 @@ require('jquery-infinite-scroll-helper');
 
 $(document).ready(function() {
 
+	if (!$('.result-container').length) {
+		$('.filter-mobile-container').remove();
+	}
+
 	let closeFilterContainer = $('.close-filter-container');
 
 	let width = $(window).width();

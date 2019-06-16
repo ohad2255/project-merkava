@@ -3,6 +3,10 @@ var stickybits = require('stickybits');
 
 $(document).ready(function() {
 
+	if (!$('.result-container').length) {
+		$('.filter-mobile-container').remove();
+	}
+
 	var width = $( window ).width();
   	if(width > 992){
 		stickybits.default('.options-container', { 
