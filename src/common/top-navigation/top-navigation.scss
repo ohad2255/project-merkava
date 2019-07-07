@@ -162,6 +162,10 @@
 
         
       }
+
+      &.hide-dropdown .main-nav-item-dropdown {
+        height: 0 !important;
+      }
     }
 
     .single-nav-item {

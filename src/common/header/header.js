@@ -28,18 +28,46 @@ $(document).ready(function() {
         }
     });  
 
-    $('header .nav-item:not(:last-child) .main-nav-item-link').on( 'keyup', function(e) {
-		if ( e.keyCode === 27 ) { // ESC
-			$(this).focusout();
+	let isSkipSubMenu = false
 
-			const nextItem = $(this).parents('.nav-item').next()
-			if (nextItem.find('.main-nav-item-dropdown').length) {
-				nextItem.find('.nav-item-text').focus();
-			} else {
-				nextItem.find('a').focus();
-			}
-        }
-    });  
+	$('header .nav-item .main-nav-item-link').on('keyup', function (e) {
+		if (e.key === 'Escape') {
+			const $navItem = $(this).parents('.nav-item')
+
+			setTimeout(() => {
+				// Disable showing the dropdown sub-menu
+				$navItem.addClass('hide-dropdown')
+
+				// Focus the parent .nav-item
+				setTimeout(() => $navItem.focus())
+
+				// Re-enable showing the dropdown sub-menu
+				$navItem.one('blur', () => $navItem.removeClass('hide-dropdown'))
+			})
+
+			isSkipSubMenu = true
+		}
+	})
+
+	// Blur menu item when pressing ESC
+	$('header .nav-item').on('keyup', function (e) {
+		switch (e.key) {
+			case 'Escape':
+				$(this).blur()
+				break;
+
+			case 'Tab':
+				if (!e.shiftKey && isSkipSubMenu) {
+					// Prevent focusing the next link in the sub-menu
+					e.preventDefault()
+					// Instead, focus the next menu item
+					$(this).next().focus()
+
+					isSkipSubMenu = false
+				}
+				break;
+		}
+	})
 
     function handleFirstTab(e) {
 	    if (e.keyCode === 9) { // the "Tab" key
