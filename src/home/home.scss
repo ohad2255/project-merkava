@@ -755,6 +755,12 @@
   // .swiper-slide.swiper-slide-active {
   //   visibility: visible;
   // }
+
+  @media (max-width: $screen-md-min) {
+    #mainContent img{
+      object-fit:cover;
+    }
+  }
 }  
 
 body.user-is-tabbing {
