@@ -82,6 +82,12 @@ $(document).ready(function () {
 		toggleAriaExpanded(this)
 	});
 
+	$(".tender-exemption [role=button]").keypress(function(e){
+        if(e.which == 13){//Enter key pressed
+            $(this).click();//Trigger search button click event
+        }
+    });
+
 	$('.related-exemptions-container-close').click(function () {
 		$('.related-exemptions-container').toggleClass('hidden');
 		$(this).toggleClass('border-none');
